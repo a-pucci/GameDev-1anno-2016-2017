@@ -161,7 +161,7 @@ int main()
         }
         else
         {
-            cout << "\n\n\nCOMPLIMENTI hai vinto!" << endl;
+            cout << "\n\n\nCOMPLIMENTI hai vinto in " << turnCounter << " turni!" << endl;
             cout << "\nPUNTI VALORE: " << valor << endl;
             showTeam(team);
         }
@@ -211,9 +211,9 @@ void showTeam(vector<Tank>& team)
 int chooseMission()
 {
     cout << "\n\nScegli la Missione: "
-         << "\n  1 - Pattugliamento"
-         << "\n  2 - Attacca base nemica"
-         << "\n  3 - Rifornimento e Riparazione" << endl;
+         << "\n  1 - Pattugliamento                  (+1 Punto Valore per ogni Tank vivo)"
+         << "\n  2 - Attacca base nemica             (2 Punti Valore per ogni Tank Vivo)"
+         << "\n  3 - Rifornimento e Riparazione      (-5 Punti Valore)" << endl;
 
     int mission = 0;
     while(mission != 1 && mission != 2 && mission != 3)
