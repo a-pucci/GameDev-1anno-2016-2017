@@ -95,8 +95,9 @@ int main()
 
     //*****informazioni base****
     cout << "\n\t\tVAN HELSING vs DRACULA"
-         << "\nVesti i panni del Dottor Van Helsin con la missione di uccidere Dracula"
-         << "\nDurante il viaggio potresti pero' imbatterti nei suoi servitori" << endl;
+         << "\n\nVesti i panni del Dottor Van Helsing con la missione di uccidere Dracula"
+         << "\nDurante la ricerca potresti pero' imbatterti nei suoi seguaci."
+         << "\nIl tuo viaggio finira' se esaurisci la Salute o la Volonta'" << endl;
 
     //main loop
     while(again)
@@ -181,7 +182,7 @@ bool foundDracula(int encountersWon)
 //ok
 void draculaEncounter(Character& player, Character& dracula)
 {
-    cout << "\nHai finalmente incontarto Dracula!\n" << endl;
+    cout << "\nHai finalmente incontrato Dracula!" << endl;
 
     while(isAlive(player) && isAlive(dracula))
     {
@@ -205,7 +206,7 @@ void normalEncounter(Character& player)
         int enemy = chooseEnemy();
         if(enemy == 0)
         {
-            cout << "\nHai incontrato dei Servitori\n" << endl;
+            cout << "\nHai incontrato dei Servitori" << endl;
             Character minion1("Servitore 1", 12, 30, 12, 10);
             Character minion2("Servitore 2", 12, 30, 12, 10);
             Character minion3("Servitore 3", 12, 30, 12, 10);
@@ -235,7 +236,7 @@ void normalEncounter(Character& player)
         }
         else
         {
-            cout << "\nHai incontrato degli Spettri\n" << endl;
+            cout << "\nHai incontrato degli Spettri" << endl;
             Character spectre1("Spettro 1", 100, 12, 2, 20);
             Character spectre2("Spettro 2", 100, 12, 2, 20);
             Character spectre3("Spettro 3", 100, 12, 2, 20);
@@ -357,8 +358,8 @@ void showStats(Character& character)
 {
     if(isAlive(character))
     {
-        cout << character.GetName() << ":" << "   Health: " << character.GetHealth() << "   Will: " << character.GetWill()
-        << "   Attack: " << character.GetAttack() << "   Intimidation: " << character.GetIntim() << endl;
+        cout << character.GetName() << ":" << "   Salute: " << character.GetHealth() << "   Volonta': " << character.GetWill()
+        << "   Attacco: " << character.GetAttack() << "   Intimidazione: " << character.GetIntim() << endl;
     }
     else
     {
