@@ -132,7 +132,7 @@ int main()
     }
     return 0;
 }
-// ok
+
 int getPlayerMove()
 {
     int playerMove = 0;
@@ -149,7 +149,7 @@ int getPlayerMove()
     }
     return playerMove;
 }
-//ok
+
 int keepHunting(Character& player, Character& dracula, int encountersWon)
 {
     if(foundDracula(encountersWon))
@@ -167,7 +167,7 @@ int keepHunting(Character& player, Character& dracula, int encountersWon)
     }
     return encountersWon;
 }
-//ok
+
 bool foundDracula(int encountersWon)
 {
     int chance = rand() % 10;
@@ -179,7 +179,7 @@ bool foundDracula(int encountersWon)
 
     return found;
 }
-//ok
+
 void draculaEncounter(Character& player, Character& dracula)
 {
     cout << "\nHai finalmente incontrato Dracula!" << endl;
@@ -200,7 +200,7 @@ void draculaEncounter(Character& player, Character& dracula)
     showStats(dracula);
     cout << "\n************************************************************************\n";
 }
-//ok
+
 void normalEncounter(Character& player)
 {
         int enemy = chooseEnemy();
@@ -264,7 +264,7 @@ void normalEncounter(Character& player)
             cout << "\n************************************************************************\n";
         }
 }
-//ok
+
 void playerTurn(Character& player, Character& enemy)
 {
     cout << "\nCosa vuoi fare?"
@@ -285,7 +285,7 @@ void playerTurn(Character& player, Character& enemy)
         case 2: playerIntimidate(player, enemy); break;
     }
 }
-//ok
+
 void playerTurn(Character& player, Character& enemy1, Character& enemy2, Character& enemy3)
 {
     cout << "\nCosa vuoi fare?"
@@ -314,27 +314,27 @@ void playerTurn(Character& player, Character& enemy1, Character& enemy2, Charact
             break;
     }
 }
-//ok
+
 void playerAttack(Character& attacker, Character& defender)
 {
     defender.SetHealth(defender.GetHealth() - (attacker.GetAttack() + (rand() % 5)) );
 }
-//ok
+
 void playerIntimidate(Character& attacker, Character& defender)
 {
     defender.SetWill(defender.GetWill() - (attacker.GetIntim() + (rand() % 5)) );
 }
-//ok
+
 void enemyAttack(Character& attacker, Character& defender)
 {
     defender.SetHealth(defender.GetHealth() - attacker.GetAttack());
 }
-//ok
+
 void enemyIntimidate(Character& attacker, Character& defender)
 {
     defender.SetWill(defender.GetWill() - attacker.GetIntim());
 }
-//ok
+
 void enemyTurn(Character& player, Character& enemy)
 {
     int enemyMove = rand() % 2;
@@ -347,13 +347,13 @@ void enemyTurn(Character& player, Character& enemy)
         enemyIntimidate(enemy, player);
     }
 }
-//ok
+
 int chooseEnemy()
 {
     int enemy = rand() % 2;
     return enemy;
 }
-//ok
+
 void showStats(Character& character)
 {
     if(isAlive(character))
@@ -367,7 +367,7 @@ void showStats(Character& character)
     }
 
 }
-//ok
+
 bool isAlive(Character& character)
 {
     if(character.GetHealth() <= 0 || character.GetWill() <= 0)
@@ -379,7 +379,7 @@ bool isAlive(Character& character)
         return true;
     }
 }
-//ok
+
 void rest(Character& player)
 {
 
@@ -395,7 +395,7 @@ void rest(Character& player)
         normalEncounter(player);
     }
 }
-//ok
+
 void recover(Character& player)
 {
     int healthRecover = (rand() % 5) + 5;
