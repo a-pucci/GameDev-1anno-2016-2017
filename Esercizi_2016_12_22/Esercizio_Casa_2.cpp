@@ -210,39 +210,74 @@ void initializeBoard(vector< vector<Pawn> >& board)
 
 void showBoard(vector< vector<Pawn> >& board)
 {
-    cout << "\n\t   0    1    2    3    4    5    6    7";
     for(int i = 0; i < ROWS; i++)
     {
-        cout << "\n\t------------------------------------------\n";
-        cout << "      " << i << "\t";
+        cout << "\n\t---------------------------------------------------------\n\t";
         for(int j = 0; j < COLUMNS; j++)
         {
             cout << "|";
             if(board[i][j].GetNumber() == 0)
             {
-                cout << "    ";
+                cout << "      ";
             }
             else if(board[i][j].GetNumber() > 0)
             {
-                if(board[i][j].IsDraught())
+                if(board[i][j].GetColor() == 'w')
                 {
-                    cout << "D";
+                    if(board[i][j].IsDraught())
+                    {
+                        cout << "(";
+                    }
+                    else
+                    {
+                        cout << " ";
+                    }
+                    cout << "(" << board[i][j].GetNumber();
+                    if(board[i][j].GetNumber() < 10)
+                    {
+                        cout << " ";
+                    }
+                    cout << ")";
+                    if(board[i][j].IsDraught())
+                    {
+                        cout << ")";
+                    }
+                    else
+                    {
+                        cout << " ";
+                    }
                 }
                 else
                 {
-                    cout << " ";
-                }
-                cout << board[i][j].GetNumber();
-                cout << board[i][j].GetColor();
-                if(board[i][j].GetNumber() < 10)
-                {
-                    cout << " ";
+                    if(board[i][j].IsDraught())
+                    {
+                        cout << "[";
+                    }
+                    else
+                    {
+                        cout << " ";
+                    }
+                    cout << "[" << board[i][j].GetNumber();
+                    if(board[i][j].GetNumber() < 10)
+                    {
+                        cout << " ";
+                    }
+                    cout << "]";
+                    if(board[i][j].IsDraught())
+                    {
+                        cout << "]";
+                    }
+                    else
+                    {
+                        cout << " ";
+                    }
                 }
             }
+
         }
-        cout << " | ";
+        cout << "|";
     }
-    cout << "\n\t------------------------------------------\n";
+    cout << "\n\t---------------------------------------------------------\n";
 }
 
 bool playerMove(vector< vector<Pawn> >& board)
