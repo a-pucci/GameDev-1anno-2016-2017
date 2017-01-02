@@ -204,7 +204,7 @@ void positionShips(vector< vector<int*> >& board, bool isPlayer)
 
 void askPosition(vector< vector<int*> >& board, Ship& ship, int& row, int& col, int& direction)
 {
-    int legitMove = false;
+    bool legitMove = false;
     while(legitMove == false)
     {
         cout << "\nDove vuoi posizionare la testa della nave " << ship.GetName() << "?" << endl;
@@ -222,7 +222,7 @@ void askPosition(vector< vector<int*> >& board, Ship& ship, int& row, int& col, 
         {
             cout << "\nInserire numero colonna (0-9)" << endl;
             cin >> col;
-            if(row < 0 || row > 9)
+            if(col < 0 || col > 9)
             {
                 cout << "\nNon hai inserito una colonna corretta";
             }
