@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public float accelleration = 10.0f;
 	public Text countText;
 	public Text winText;
+	public Text loseText;
 
 	private Rigidbody2D _rb2D;
 	private int _count;
@@ -19,6 +20,8 @@ public class PlayerController : MonoBehaviour {
 		countText.text = "Count: " + _count;
 		Debug.Assert (winText != null);
 		winText.gameObject.SetActive (false);
+		Debug.Assert (loseText != null);
+		loseText.gameObject.SetActive (false);
 
 		_count = 0;
 		_rb2D = this.gameObject.GetComponent<Rigidbody2D> ();
@@ -43,7 +46,7 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) 
 	{
-		if (other.CompareTag ("PickUp")) 
+		if(other.CompareTag ("PickUp")) 
 		{
 			other.gameObject.SetActive (false);
 			_count++;
@@ -55,6 +58,13 @@ public class PlayerController : MonoBehaviour {
 				Debug.Assert (winText != null);
 				winText.gameObject.SetActive (true);
 			}
+		}
+
+		if (other.CompareTag ("Enemy")) 
+		{
+			Debug.Assert (loseText != null);
+			loseText.gameObject.SetActive (true);
+			gameObject.SetActive (false);
 		}
 	}
 
