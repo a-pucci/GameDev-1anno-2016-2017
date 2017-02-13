@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupsRotator : MonoBehaviour {
+public class PickupsRotator : MonoBehaviour 
+{
 
 	public float rotationSpeed = 20.0f;
 
