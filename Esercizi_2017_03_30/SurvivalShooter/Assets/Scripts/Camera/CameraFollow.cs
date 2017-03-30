@@ -7,21 +7,17 @@ public class CameraFollow : MonoBehaviour
 
 	public Transform playerTransform;
 	public float smoothing = 5f;
-	public float yRotation = 5f;
-	public float xRotation = 5f;
 
-	private Vector3 _positionOffset;
+	private Vector3 _offset;
+
 
 	// Use this for initialization
 	void Start () 
 	{
-		yRotation += Input.GetAxis ("Mouse Y");
-		xRotation += Input.GetAxis ("Mouse X");
-
 		
 		if(playerTransform != null)
-		{ 
-			_positionOffset = transform.position - playerTransform.position;
+		{
+			_offset = transform.position - playerTransform.position;
 		}
 	}
 	
@@ -35,10 +31,8 @@ public class CameraFollow : MonoBehaviour
 	{
 		if(playerTransform != null)
 		{
-			Vector3 newCameraPosition = playerTransform.position + _positionOffset;
+			Vector3 newCameraPosition = playerTransform.position + _offset;
 			transform.position = Vector3.Lerp (transform.position, newCameraPosition, smoothing * Time.deltaTime);
-
-			transform.eulerAngles = new Vector3 (xRotation, yRotation, 0);
 		}
 	}
 }
