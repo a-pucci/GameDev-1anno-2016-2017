@@ -1531,7 +1531,20 @@ Prefab:
     - target: {fileID: 114183629194460594, guid: 74776025792bc5a4d86e39e840dd2fe9,
         type: 2}
       propertyPath: rotationSpeed
-      value: 8
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920542583558768, guid: 74776025792bc5a4d86e39e840dd2fe9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137222916985865154, guid: 74776025792bc5a4d86e39e840dd2fe9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252469821796454, guid: 74776025792bc5a4d86e39e840dd2fe9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74776025792bc5a4d86e39e840dd2fe9, type: 2}

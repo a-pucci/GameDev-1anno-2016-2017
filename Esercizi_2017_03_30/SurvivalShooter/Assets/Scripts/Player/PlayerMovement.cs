@@ -12,12 +12,13 @@ public class PlayerMovement : MonoBehaviour
 	private Rigidbody _rg;
 	private float _camRayLenght = 100.0f;
 
-	public float rotationSpeed = 8f;
+	private float rotationSpeed = 10f;
 	private float xPos = 0.0f;
 	private float yPos = 0.0f;
 
 	void Awake()
 	{
+		Cursor.lockState = CursorLockMode.Locked;
 		_anim = GetComponent<Animator> ();
 		_rg = GetComponent<Rigidbody> ();
 
@@ -46,7 +47,9 @@ public class PlayerMovement : MonoBehaviour
 	{
 		Vector3 movement = new Vector3 (h, 0.0f, v);
 		movement = movement.normalized * speed * Time.deltaTime;
-		_rg.MovePosition (transform.position + movement);
+		Vector3 direction = transform.TransformDirection (movement);
+		_rg.MovePosition (transform.position + direction);
+
 	}
 
 	private void Rotate()
