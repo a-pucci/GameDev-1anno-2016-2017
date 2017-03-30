@@ -68,18 +68,18 @@ public class PlayerShooting : MonoBehaviour
         shootRay.origin = transform.position;
         shootRay.direction = transform.forward;
 
-        if(Physics.Raycast (shootRay, out shootHit, range, shootableMask))
-        {
+        //if(Physics.Raycast (shootRay, out shootHit, range, shootableMask))
+        //{
             EnemyHealth enemyHealth = shootHit.collider.GetComponent <EnemyHealth> ();
             if(enemyHealth != null)
             {
                 enemyHealth.TakeDamage (damagePerShot, shootHit.point);
             }
             gunLine.SetPosition (1, shootHit.point);
-        }
-        else
-        {
-            gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
-        }
+        //}
+        //else
+        //{
+        //    gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
+        //}
     }
 }
