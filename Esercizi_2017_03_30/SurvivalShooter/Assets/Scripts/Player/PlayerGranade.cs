@@ -32,6 +32,7 @@ public class PlayerGranade : MonoBehaviour {
 
 		granadeRB.AddForce (playerRB.transform.forward * throwForce, ForceMode.Impulse);
 		granadeRB.AddForce (playerRB.transform.up * throwForce, ForceMode.Impulse);
+
 	}
 		
 }

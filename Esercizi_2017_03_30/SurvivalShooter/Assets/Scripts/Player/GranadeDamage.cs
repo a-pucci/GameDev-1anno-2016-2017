@@ -8,12 +8,13 @@ public class GranadeDamage : MonoBehaviour
 	public GameObject player;
 
 	EnemyHealth enemyHealth;
+	ParticleSystem explosion;
 
 
 	// Use this for initialization
 	void Start ()
 	{
-	
+		explosion = GetComponent<ParticleSystem>();
 	}
 	
 	// Update is called once per frame
@@ -41,8 +42,16 @@ public class GranadeDamage : MonoBehaviour
 				}
 				i++;
 			}
+
 		}
-		Destroy (gameObject);
+		gameObject.AddComponent<Rigidbody> ();
+		Rigidbody granadeRB = gameObject.GetComponent <Rigidbody> ();
+		granadeRB.isKinematic = true;
+		Renderer rend = GetComponent<Renderer>();
+		rend.enabled = false;
+		explosion.Play();
+		Destroy(gameObject, explosion.duration);
 	}
+		
 }
 
