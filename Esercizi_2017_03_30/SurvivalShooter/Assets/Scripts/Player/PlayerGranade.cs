@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerGranade : MonoBehaviour {
 
-	public int damagePerShot = 40;
 	public float timeBetweenGranades = 1f;
 	public float throwForce = 6f;
 	public float explosionRadius = 10f;
@@ -12,15 +11,6 @@ public class PlayerGranade : MonoBehaviour {
 	public Rigidbody playerRB;
 
 	float timer;
-	int shootableMask;
-	int floorMask;
-
-	// Use this for initialization
-	void Awake()
-	{
-		shootableMask = LayerMask.GetMask ("Shootable");
-
-	}
 	
 	// Update is called once per frame
 	void Update () 
@@ -31,8 +21,7 @@ public class PlayerGranade : MonoBehaviour {
 		{
 			Throw ();
 		}
-	}
-		
+	}		
 
 	void Throw()
 	{

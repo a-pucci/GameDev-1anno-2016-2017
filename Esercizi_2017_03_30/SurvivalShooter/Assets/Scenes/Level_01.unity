@@ -91,11 +91,6 @@ NavMeshSettings:
     cellSize: 0.3
     accuratePlacement: 0
   m_NavMeshData: {fileID: 23800000, guid: c12516e8a3a0d2840a08ce1a8a1845e8, type: 2}
---- !u!1 &2965468 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1624183435155748, guid: 5845e759cf25cc6498d227501b8bc48c,
-    type: 2}
-  m_PrefabInternal: {fileID: 2113100573}
 --- !u!1 &25243564
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &25243565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,10 +1243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7710798789d24b74abc8ddd786d0a261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerShot: 40
   timeBetweenGranades: 1
-  throwForce: 10
-  granade: {fileID: 2965468}
+  throwForce: 6
+  explosionRadius: 10
+  granade: {fileID: 1666961467360616, guid: e46620c9192197a4c9e8d816466f8f6b, type: 2}
   playerRB: {fileID: 223241057}
 --- !u!4 &1303004263 stripped
 Transform:
@@ -1608,45 +1603,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 240, z: 0}
---- !u!1001 &2113100573
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4029512805274472, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.437
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029512805274472, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.34306216
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029512805274472, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.0754607
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029512805274472, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029512805274472, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029512805274472, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029512805274472, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4029512805274472, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5845e759cf25cc6498d227501b8bc48c, type: 2}
-  m_IsPrefabParent: 0

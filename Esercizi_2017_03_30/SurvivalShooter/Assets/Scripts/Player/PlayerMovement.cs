@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private Animator _anim;
 	private Rigidbody _rg;
-	private float _camRayLenght = 100.0f;
+	//private float _camRayLenght = 100.0f;
 
 	private float rotationSpeed = 10f;
 	private float xPos = 0.0f;
