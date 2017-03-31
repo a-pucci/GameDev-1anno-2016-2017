@@ -339,7 +339,7 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697679830234508}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.9558824, g: 0.94095284, b: 0.41468427, a: 1}
@@ -420,7 +420,7 @@ LineRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697679830234508}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 0

@@ -43,7 +43,6 @@ public class GranadeDamage : MonoBehaviour
 			}
 		}
 		Destroy (gameObject);
-
 	}
 }
 
