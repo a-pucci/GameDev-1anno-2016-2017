@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Player : MovingObject
 {
 	public int wallDamage = 1;
+	public int enemyDamage = 20;
 	public int pointsPerFood = 10;
 	public int pointsPerSoda = 20;
 	public float restartLevelDelay = 1f;
@@ -51,9 +52,9 @@ public class Player : MovingObject
 		}
 	}
 
-	protected override void AttemptMove<T1, T2> (int xDir, int yDir)
+	protected override void AttemptMove<T1, T2, T3> (int xDir, int yDir)
 	{
-		base.AttemptMove <T1, T2> (xDir, yDir);
+		base.AttemptMove <T1, T2, T3> (xDir, yDir);
 
 		_food--;
 		this.foodText.text = "Food: " + _food;
@@ -83,19 +84,33 @@ public class Player : MovingObject
 
 		if (horizontal != 0 || vertical != 0) 
 		{
-			AttemptMove<Player, Wall> (horizontal, vertical);
+			AttemptMove<Player, Wall, Enemy> (horizontal, vertical);
 		}
 	}
 
 	protected override void OnCantMove <T> (T component)
 	{
-		Wall hitWall = component as Wall;
-		if (hitWall != null) 
+		if(component.tag == "Wall")
 		{
-			hitWall.DamageWall (this.wallDamage);
-			_animator.SetTrigger ("PlayerChop");
-			SoundManager.instance.RandomizeSfx (this.chopSound1, this.chopSound2);
+			Wall hitWall = component as Wall;
+			if (hitWall != null) 
+			{
+				hitWall.DamageWall (this.wallDamage);
+				_animator.SetTrigger ("PlayerChop");
+				SoundManager.instance.RandomizeSfx (this.chopSound1, this.chopSound2);
+			}
 		}
+		else if (component.tag == "Enemy")
+		{
+			Enemy enemyHit = component as Enemy;
+			if(enemyHit != null)
+			{
+				enemyHit.TakeDamage (enemyDamage);
+				_animator.SetTrigger ("PlayerChop");
+				SoundManager.instance.RandomizeSfx (this.chopSound1, this.chopSound2);
+			}
+		}
+
 	}
 
 	protected override void OnMove ()

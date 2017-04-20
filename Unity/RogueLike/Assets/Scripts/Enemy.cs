@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MovingObject 
 {
 	public int playerDamage;
+	public int health = 50;
 
 	public AudioClip enemyAttack1;
 	public AudioClip enemyAttack2;
@@ -25,7 +26,7 @@ public class Enemy : MovingObject
 		base.Start ();
 	}
 
-	protected override void AttemptMove <T1, T2> (int xDir, int yDir)
+	protected override void AttemptMove <T1, T2, T3> (int xDir, int yDir)
 	{
 		if (_skipMove) 
 		{
@@ -33,7 +34,7 @@ public class Enemy : MovingObject
 			return;
 		}
 
-		base.AttemptMove <T1, T2> (xDir, yDir);
+		base.AttemptMove <T1, T2, T3> (xDir, yDir);
 
 		_skipMove = true;
 	}
@@ -52,7 +53,7 @@ public class Enemy : MovingObject
 			xDir = (_target.position.x < transform.position.x) ? -1 : 1;
 		}
 
-		AttemptMove<Player, Wall> (xDir, yDir);
+		AttemptMove<Player, Wall, Enemy> (xDir, yDir);
 	}
 
 	protected override void OnCantMove <T> (T component)
@@ -79,7 +80,15 @@ public class Enemy : MovingObject
 				SoundManager.instance.RandomizeSfx (this.enemyAttack1, this.enemyAttack2);
 			}
 		}
+	}
 
+	public void TakeDamage(int damage)
+	{
+		this.health -= damage;
+		if(health <= 0)
+		{
+			this.gameObject.SetActive (false);
+		}
 	}
 
 	protected override void OnMove ()
