@@ -51,9 +51,9 @@ public class Player : MovingObject
 		}
 	}
 
-	protected override void AttemptMove<T> (int xDir, int yDir)
+	protected override void AttemptMove<T1, T2> (int xDir, int yDir)
 	{
-		base.AttemptMove <T> (xDir, yDir);
+		base.AttemptMove <T1, T2> (xDir, yDir);
 
 		_food--;
 		this.foodText.text = "Food: " + _food;
@@ -83,7 +83,7 @@ public class Player : MovingObject
 
 		if (horizontal != 0 || vertical != 0) 
 		{
-			AttemptMove<Wall> (horizontal, vertical);
+			AttemptMove<Player, Wall> (horizontal, vertical);
 		}
 	}
 

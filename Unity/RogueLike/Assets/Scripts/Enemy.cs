@@ -12,6 +12,7 @@ public class Enemy : MovingObject
 	private Animator _animator;
 	private Transform _target;
 	private bool _skipMove;
+	private int _wallDamage = 1;
 
 	// Use this for initialization
 	protected override void Start () 
@@ -24,7 +25,7 @@ public class Enemy : MovingObject
 		base.Start ();
 	}
 
-	protected override void AttemptMove <T> (int xDir, int yDir)
+	protected override void AttemptMove <T1, T2> (int xDir, int yDir)
 	{
 		if (_skipMove) 
 		{
@@ -32,7 +33,7 @@ public class Enemy : MovingObject
 			return;
 		}
 
-		base.AttemptMove <T> (xDir, yDir);
+		base.AttemptMove <T1, T2> (xDir, yDir);
 
 		_skipMove = true;
 	}
@@ -51,19 +52,34 @@ public class Enemy : MovingObject
 			xDir = (_target.position.x < transform.position.x) ? -1 : 1;
 		}
 
-		AttemptMove<Player> (xDir, yDir);
+		AttemptMove<Player, Wall> (xDir, yDir);
 	}
 
 	protected override void OnCantMove <T> (T component)
 	{
-		Player hitPlayer = component as Player;
-		if (hitPlayer != null)
+		if(component.tag == "Player")
 		{
-			hitPlayer.LoseFood (this.playerDamage);
-			_animator.SetTrigger ("EnemyAttack");
+			Player hitPlayer = component as Player;
+			if (hitPlayer != null)
+			{
+				hitPlayer.LoseFood (this.playerDamage);
+				_animator.SetTrigger ("EnemyAttack");
 
-			SoundManager.instance.RandomizeSfx (this.enemyAttack1, this.enemyAttack2);
+				SoundManager.instance.RandomizeSfx (this.enemyAttack1, this.enemyAttack2);
+			}
 		}
+		else if(component.tag == "Wall")
+		{
+			Wall hitWall = component as Wall;
+			if (hitWall != null)
+			{
+				hitWall.DamageWall (_wallDamage);
+				_animator.SetTrigger ("EnemyAttack");
+
+				SoundManager.instance.RandomizeSfx (this.enemyAttack1, this.enemyAttack2);
+			}
+		}
+
 	}
 
 	protected override void OnMove ()
