@@ -32,9 +32,10 @@ public class BoardManager : MonoBehaviour
 	public GameObject[] foodTiles;
 	public GameObject[] enemyTiles;
 	public GameObject[] outerWallTiles;
+	public GameObject[] bossTiles;
 
 	private Transform _boardHolder;
-
+	private bool _spawnBoss = false;
 	private List<Vector3> _gridPositions = new List<Vector3> ();
 
 	private void InitializeGridPosition()
@@ -96,8 +97,18 @@ public class BoardManager : MonoBehaviour
 		this.InitializeGridPosition ();
 		this.LayoutObjectAtRandom (this.wallTiles, this.wallCount.minimum, this.wallCount.maximum);
 		this.LayoutObjectAtRandom (this.foodTiles, this.foodCount.minimum, this.foodCount.maximum);
-		int enemyCount = (int)Mathf.Log (level, 2f);
-		this.LayoutObjectAtRandom (this.enemyTiles, enemyCount, enemyCount);
+
+		_spawnBoss = (level % 5) == 0 ? true : false;
+		if(_spawnBoss)
+		{
+			this.LayoutObjectAtRandom (this.bossTiles, 1, 1);
+		}
+		else
+		{
+			int enemyCount = (int)Mathf.Log (level, 2f);
+			this.LayoutObjectAtRandom (this.enemyTiles, enemyCount, enemyCount);
+		}
+
 		Instantiate (this.exit, new Vector3(this.columns - 1, this.rows - 1), Quaternion.identity);
 	}
 

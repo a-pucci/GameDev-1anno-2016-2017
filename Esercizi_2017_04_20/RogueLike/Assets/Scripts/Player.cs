@@ -86,6 +86,7 @@ public class Player : MovingObject
 		{
 			AttemptMove<Player, Wall, Enemy> (horizontal, vertical);
 		}
+
 	}
 
 	protected override void OnCantMove <T> (T component)

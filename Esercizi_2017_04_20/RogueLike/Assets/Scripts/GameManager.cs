@@ -15,12 +15,12 @@ public class GameManager : MonoBehaviour
 	public float levelStartDelay = 2f;
 
 	private BoardManager _boardManager;
-	private int _level = 1;
+	private int _level = 5;
 
-	private List<Enemy> _enemies;
 	private bool _enemiesMoving;
-
+	private List<Enemy> _enemies;
 	private Text _levelText;
+	private Text _winText;
 	private GameObject _levelImage;
 	private bool _doingSetup;
 
@@ -42,6 +42,10 @@ public class GameManager : MonoBehaviour
 
 		_boardManager = GetComponent<BoardManager> ();
 		_enemies = new List<Enemy> ();
+
+
+		_winText = GameObject.Find ("WinText").GetComponent<Text> ();
+		_winText.enabled = false;
 	}
 
 	// Use this for initialization
@@ -54,6 +58,8 @@ public class GameManager : MonoBehaviour
 	{
 		_doingSetup = true;
 
+		_winText = GameObject.Find ("WinText").GetComponent<Text> ();
+		_winText.enabled = false;
 		_levelImage = GameObject.Find ("LevelImage");
 		_levelText = GameObject.Find ("LevelText").GetComponent<Text> ();
 		_levelText.text = "Day " + _level;
@@ -71,6 +77,17 @@ public class GameManager : MonoBehaviour
 		_doingSetup = false;
 	}
 
+	public int GetLevel()
+	{
+		return _level;
+	}
+
+	public void Win()
+	{
+		_winText.enabled = true;
+
+	}
+
 	public void GameOver ()
 	{
 		_levelText.text = "After " + _level + " days, you starved!";
@@ -82,18 +99,21 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+
 		if (this.playerTurn || _enemiesMoving || _doingSetup) 
 		{
 			return;
 		}
 
 		StartCoroutine (MoveEnemies ());
+
 	}
 
 	IEnumerator MoveEnemies ()
 	{
 		_enemiesMoving = true;
 		yield return new WaitForSeconds (this.turnDelay);
+
 		if (_enemies.Count == 0) 
 		{
 			yield return new WaitForSeconds (this.turnDelay);

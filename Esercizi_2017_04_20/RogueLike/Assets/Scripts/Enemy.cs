@@ -5,7 +5,8 @@ using UnityEngine;
 public class Enemy : MovingObject 
 {
 	public int playerDamage;
-	public int health = 50;
+	public int health;
+	public int wallDamage;
 
 	public AudioClip enemyAttack1;
 	public AudioClip enemyAttack2;
@@ -13,7 +14,6 @@ public class Enemy : MovingObject
 	private Animator _animator;
 	private Transform _target;
 	private bool _skipMove;
-	private int _wallDamage = 1;
 
 	// Use this for initialization
 	protected override void Start () 
@@ -74,7 +74,7 @@ public class Enemy : MovingObject
 			Wall hitWall = component as Wall;
 			if (hitWall != null)
 			{
-				hitWall.DamageWall (_wallDamage);
+				hitWall.DamageWall (wallDamage);
 				_animator.SetTrigger ("EnemyAttack");
 
 				SoundManager.instance.RandomizeSfx (this.enemyAttack1, this.enemyAttack2);
@@ -87,8 +87,14 @@ public class Enemy : MovingObject
 		this.health -= damage;
 		if(health <= 0)
 		{
+			if(GameManager.instance.GetLevel() % 5 == 0 && GameManager.instance.playerFoodPoints > 0)
+			{
+				GameManager.instance.Win ();
+			}
+
 			this.gameObject.SetActive (false);
 		}
+			
 	}
 
 	protected override void OnMove ()
