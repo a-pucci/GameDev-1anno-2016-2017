@@ -1,0 +1,117 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Fighter : Target 
+{
+	public float range;
+	public float speed;
+	public float fireRate;
+	public float projectileSpeed;
+	public int projectileDamage;
+	public int incomeIncrement;
+	public int price;
+	public int bounty;
+	public GameObject shot;
+	public Transform shotSpawn;
+
+	public Base baseOwner;
+
+	private Rigidbody rb;
+	private AudioSource fireSFX;
+
+	private Target currentTarget;
+	private float nextFire;
+	private Quaternion moveRotation;
+	private int _targetBounty;
+	private int _targetHP;
+
+
+	protected override void Awake()
+	{
+		base.Awake();
+		rb = GetComponent<Rigidbody>();
+		fireSFX = GetComponent<AudioSource>();
+		moveRotation = rb.rotation;
+	}
+	
+	// Update is called once per frame
+	void Update () 
+	{
+		if (gameController.isRunning)
+		{
+			if (currentTarget == null)
+			{
+				currentTarget = CheckForEnemies ();
+			}
+			if (currentTarget != null)
+			{
+				_targetBounty = currentTarget.gameObject.GetComponent <Fighter> ().bounty;
+				_targetHP = currentTarget.gameObject.GetComponent <Fighter> ().maxHP;
+
+				FaceOpponent ();
+				if (Time.time > nextFire)
+				{
+					nextFire = Time.time + fireRate;
+					Fire ();
+					if(currentTarget == null || _targetHP <= 0)
+					{
+						baseOwner.redeemBounty (_targetBounty);
+					}
+				}
+			}
+			else
+			{
+				MoveForward ();
+			}
+		}
+	}
+
+	public void Unleash()
+	{
+		MoveForward();
+	}
+
+	void FaceOpponent()
+	{
+		transform.LookAt(currentTarget.gameObject.transform.position);
+		rb.velocity = Vector3.zero;
+	}
+
+	void MoveForward()
+	{
+		rb.MoveRotation(moveRotation);
+		rb.velocity = transform.forward * speed;
+	}
+		
+	Target CheckForEnemies()
+	{
+		Collider[] targetColliders = Physics.OverlapSphere(transform.position, range);
+		foreach (Collider targetCollider in targetColliders)
+		{
+			Target possibleTarget = targetCollider.GetComponent<Target>();
+			if (possibleTarget != null && possibleTarget.owner.index != owner.index)
+			{
+				return possibleTarget;
+			}
+		}
+		return null;
+	}
+
+	void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Boundary"))
+		{
+			Destroy(gameObject);
+		}
+	}
+
+	void Fire ()
+	{
+		GameObject shotInstance = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as GameObject;
+		Projectile projectileScript = shotInstance.GetComponent<Projectile>();
+		projectileScript.damage = projectileDamage;
+		projectileScript.speed = projectileSpeed;
+		projectileScript.owner = owner;
+		fireSFX.Play();
+	}
+}
