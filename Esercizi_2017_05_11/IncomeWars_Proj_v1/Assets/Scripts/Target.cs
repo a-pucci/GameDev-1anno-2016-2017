@@ -40,6 +40,10 @@ public class Target : MonoBehaviour
 			if (projectile.owner.index != owner.index)
 			{
 				Loss (projectile.damage);
+				if(this.gameObject.GetComponent<Fighter> ()!= null)
+				{
+					projectile.baseOwner.redeemBounty (this.gameObject.GetComponent<Fighter> ().bounty);
+				}
 				Destroy(other.gameObject);
 			}
 		}
@@ -55,8 +59,4 @@ public class Target : MonoBehaviour
 		}
 	}
 
-	public int getHP()
-	{
-		return currentHP;
-	}
 }

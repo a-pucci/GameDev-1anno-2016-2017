@@ -75,6 +75,7 @@ public class Base : Target
 	public void redeemBounty(int bounty)
 	{
 		_currentMoney += bounty;
+		UpdateHUD ();
 	}
 		
 }

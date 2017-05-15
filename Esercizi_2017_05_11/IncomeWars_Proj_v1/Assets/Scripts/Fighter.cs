@@ -44,19 +44,13 @@ public class Fighter : Target
 				currentTarget = CheckForEnemies ();
 			}
 			if (currentTarget != null)
-			{
-				_targetBounty = currentTarget.gameObject.GetComponent <Fighter> ().bounty;
-				_targetHP = currentTarget.gameObject.GetComponent <Fighter> ().maxHP;
+			{				
 
 				FaceOpponent ();
 				if (Time.time > nextFire)
 				{
 					nextFire = Time.time + fireRate;
 					Fire ();
-					if(currentTarget == null || _targetHP <= 0)
-					{
-						baseOwner.redeemBounty (_targetBounty);
-					}
 				}
 			}
 			else
@@ -112,6 +106,7 @@ public class Fighter : Target
 		projectileScript.damage = projectileDamage;
 		projectileScript.speed = projectileSpeed;
 		projectileScript.owner = owner;
+		projectileScript.baseOwner = baseOwner;
 		fireSFX.Play();
 	}
 }
