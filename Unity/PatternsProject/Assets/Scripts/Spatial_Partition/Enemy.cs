@@ -26,13 +26,16 @@ namespace SpatialPartitionPattern
 		public override void Move()
 		{
 			soldierTrans.Translate (Vector3.forward * Time.deltaTime * walkSpeed);
-			grid.Move (this.oldPos);
+			grid.Move (this, oldPos);
 			oldPos = soldierTrans.position;
 			if((soldierTrans.position - currentTarget).magnitude < 1f)
 			{
 				GetNewTarget ();
 			}
 		}
+
+		public override void Move (Soldier soldier)
+		{}
 
 		void GetNewTarget()
 		{

@@ -21,7 +21,7 @@ namespace SpatialPartitionPattern
 		List<Soldier> closestEnemies = new List<Soldier>();
 
 		float mapWidth = 50f;
-		float cellSize = 10f;
+		int cellSize = 10;
 
 		int numberOfSoldiers = 100;
 
@@ -46,7 +46,7 @@ namespace SpatialPartitionPattern
 
 				GameObject newFriendly = Instantiate (friendlyObj, randomPos, Quaternion.identity) as GameObject;
 
-				friendlySoldiers.Add (new Friendly(newFriendly, mapWidth, grid));
+				friendlySoldiers.Add (new Friendly(newFriendly, mapWidth));
 
 				newFriendly.transform.parent  = friendlyParent;
 			}
@@ -69,7 +69,7 @@ namespace SpatialPartitionPattern
 
 			for (int i = 0; i < friendlySoldiers.Count; i++)
 			{
-				Soldier closestEnemy = grid.FindCLosestEnemy (friendlySoldiers [i]);
+				Soldier closestEnemy = grid.FindClosestEnemy (friendlySoldiers [i]);
 
 				if (closestEnemy != null)
 				{
