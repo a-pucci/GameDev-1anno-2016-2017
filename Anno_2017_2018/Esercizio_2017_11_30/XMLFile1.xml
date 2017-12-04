@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queue>
+  <identity>  
+    <firstName>Maurizio</firstName>
+    <lastName>Costanzo</lastName>
+    <birthdate>28/08/1938</birthdate>
+    <height>1,64</height>
+  </identity>
+
+  <identity>
+    <firstName>Phil</firstName>
+    <lastName>Fish</lastName>
+    <birthdate>01/11/1984</birthdate>
+    <declarations>You Suck.</declarations>
+  </identity>
+
+  <identity>
+    <firstName>Markus</firstName>
+    <lastName>Persson</lastName>
+    <weight>145</weight>
+    <country>Inghilterra</country>
+    <city>Londra</city>
+  </identity>
+
+  <identity>
+    <firstName>Alba</firstName>
+    <lastName>Parietti</lastName>
+    <height>1,75</height>
+    <country>Italia</country>
+    <city>Torino</city>
+  </identity>
+
+  <identity>
+    <firstName>Jerry</firstName>
+    <lastName>Calà</lastName>
+    <birthdate>28/06/1951</birthdate>
+    <height>1,70</height>
+    <declarations>Libidine!</declarations>
+  </identity>
+
+  <identity>
+    <firstName>Raffaella</firstName>
+    <lastName>Carrà</lastName>
+    <IDCard>0011223344</IDCard>
+    <country>Spagna</country>
+    <city>Madrid</city>
+  </identity>
+</queue>
