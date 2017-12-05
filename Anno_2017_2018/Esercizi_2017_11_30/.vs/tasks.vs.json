@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "attività-Esercizi_2017_11_30",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskName": "attività-Program",
+      "appliesTo": "ConsoleApp/ConsoleApp/Program.cs",
+      "type": "launch"
+    }
+  ]
+}
