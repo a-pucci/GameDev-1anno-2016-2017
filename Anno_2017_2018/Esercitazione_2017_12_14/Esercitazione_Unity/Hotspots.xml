@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <hotspots>
+    <hotspot name="Player">
+      <look>
+        <event>Text -"Ciccio" "Ciao!"</event>
+        <event>Wait 3</event>
+        <event>Text -"Carlo" "Ciao!"</event>
+        <event>Text -"Carmelo" "Ciao!"</event>
+        <event>Text "Ciao a te!"</event>
+      </look>
+    </hotspot>
+    <hotspot name ="Ciccio"></hotspot>
+    <hotspot name ="Carmelo"></hotspot>
+    <hotspot name ="Salvatore"></hotspot>
+  </hotspots>
+</root>
