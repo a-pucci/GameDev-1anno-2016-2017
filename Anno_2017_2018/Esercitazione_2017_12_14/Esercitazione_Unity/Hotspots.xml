@@ -4,11 +4,15 @@
     <hotspot name="Player">
       <look>
         <event>Text -"Ciccio" "Ciao!"</event>        
-        <event>Wait 3</event>
+        <event>Wait 2</event>
         <event>Text -c=blue "Ciao a te!"</event>
+        <event>Pose ul</event>
         <event>Text -"Carlo" "Ciao!"</event>
+        <event>Expression -"Ciccio" "angry"</event>
         <event>Text -c=red -"Ciccio" "Ciao!"</event>
+        <event>Pose -"Salvatore" d</event>
         <event>Text -"Carmelo" "Ciao!"</event>
+        <event>Expression "scared"</event>
         <event>Text "Ciao a te!"</event>
       </look>
     </hotspot>

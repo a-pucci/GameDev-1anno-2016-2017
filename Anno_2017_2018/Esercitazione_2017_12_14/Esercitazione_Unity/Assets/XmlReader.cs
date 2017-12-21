@@ -48,7 +48,7 @@ public class XmlReader : MonoBehaviour
                 foreach (XmlNode eventNode in nodeLook.ChildNodes)
                 {
                     ExecuteCommand(eventNode.InnerText, hotspotNames);
-                    Debug.Log("waitTime: " + waitTime);
+                    //Debug.Log("waitTime: " + waitTime);
                     yield return new WaitForSeconds(waitTime);
                 }
             }
@@ -121,6 +121,46 @@ public class XmlReader : MonoBehaviour
                 waitTime = declaration.Length * textWait;
             }
         }
+        else if (command == "Expression")
+        {
+            string firstArgument = splittedText[1];
+
+            string[] arguments = textToSplit.Split('"');
+            string speaker;
+            string expression;
+
+            if (firstArgument[0] != '-')
+            {
+                speaker = "Player";
+            }
+            else
+            {
+                speaker = arguments[1];
+            }
+            expression = arguments[arguments.Length - 2];
+            speakerScript.SetExpression(speaker, expression);
+        }
+        else if (command == "Pose")
+        {
+            string firstArgument = splittedText[1];
+
+            string[] arguments = textToSplit.Split(' ');
+            string speaker;
+            string pose;
+
+            if (firstArgument[0] != '-')
+            {
+                speaker = "Player";
+                pose = firstArgument;
+            }
+            else
+            {
+                speaker = arguments[1];
+                pose = arguments[arguments.Length - 1];
+            }
+            
+            speakerScript.SetPose(speaker, pose);
+        }
     }
 
     bool SpeakerExist(string speaker, List<string> hotspotNames)
@@ -172,6 +212,7 @@ public class XmlReader : MonoBehaviour
         }
         return newColor;
     }
+
 }
 
 
