@@ -23,6 +23,4 @@ public class SpriteProcessor : AssetPostprocessor
             AssetDatabase.Refresh();
         }
     }
-
-
 }
