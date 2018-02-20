@@ -1,0 +1,204 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/sprites/location/accampamento/animation/barbone_snorlax.tpsheet
+- Assets/sprites/location/accampamento/animation/bing_bong.tpsheet
+- Assets/sprites/location/accampamento/animation/camper.tpsheet
+- Assets/sprites/location/accampamento/animation/fuoco_barile.tpsheet
+- Assets/sprites/location/accampamento/animation/maiali.tpsheet
+- Assets/sprites/location/accampamento/animation/marionettista_idle.tpsheet
+- Assets/sprites/location/accampamento/animation/marionettista_porge_premio.tpsheet
+- Assets/sprites/location/accampamento/animation/marionettista_prende_buono.tpsheet
+- Assets/sprites/location/accampamento/animation/skinny_porge_buono.tpsheet
+- Assets/sprites/location/accampamento/animation/skinny_prende_premio.tpsheet
+- Assets/sprites/location/accampamento/animation/talkies/sheet0.tpsheet
+- Assets/sprites/location/accampamento/animation/waldo.tpsheet
+- Assets/sprites/location/accampamento/animation/writer.tpsheet
+- Assets/sprites/location/accampamento/animation/zingara_idle.tpsheet
+- Assets/sprites/location/accampamento/animation/zingara_porge_premio.tpsheet
+- Assets/sprites/location/accampamento/animation/zingara_prende_buono.tpsheet
+- Assets/sprites/location/accampamento/bitmap/sheet0.tpsheet
+- Assets/sprites/location/accampamento/bitmask/hotspot/sheet0.tpsheet
+- Assets/sprites/location/anticamera/animation/bob_cx.tpsheet
+- Assets/sprites/location/anticamera/animation/bob_dx.tpsheet
+- Assets/sprites/location/anticamera/animation/bob_sx.tpsheet
+- Assets/sprites/location/anticamera/animation/lampadina_anticamera.tpsheet
+- Assets/sprites/location/anticamera/animation/mano_autostop.tpsheet
+- Assets/sprites/location/anticamera/animation/mosche.tpsheet
+- Assets/sprites/location/anticamera/animation/porta_anticamera.tpsheet
+- Assets/sprites/location/anticamera/animation/robot_idle.tpsheet
+- Assets/sprites/location/anticamera/animation/skinny_sfonda_porta.tpsheet
+- Assets/sprites/location/anticamera/animation/talkies/sheet0.tpsheet
+- Assets/sprites/location/anticamera/bitmap/sheet0.tpsheet
+- Assets/sprites/location/anticamera/bitmask/hotspot/sheet0.tpsheet
+- Assets/sprites/location/bagno/animation/ciccione_idle.tpsheet
+- Assets/sprites/location/bagno/animation/ciccione_porge_pass.tpsheet
+- Assets/sprites/location/bagno/animation/ciccione_porge_pass_back.tpsheet
+- Assets/sprites/location/bagno/animation/ciccione_riaffiora.tpsheet
+- Assets/sprites/location/bagno/animation/ciccione_si_immerge.tpsheet
+- Assets/sprites/location/bagno/animation/ciccione_versa_sali.tpsheet
+- Assets/sprites/location/bagno/animation/ciccione_versa_sali_capsaicina.tpsheet
+- Assets/sprites/location/bagno/animation/leva.tpsheet
+- Assets/sprites/location/bagno/animation/naso.tpsheet
+- Assets/sprites/location/bagno/animation/perdite_piscina.tpsheet
+- Assets/sprites/location/bagno/animation/pesce_rosso.tpsheet
+- Assets/sprites/location/bagno/animation/piranha.tpsheet
+- Assets/sprites/location/bagno/animation/piscina_si_svuota.tpsheet
+- Assets/sprites/location/bagno/animation/skinny_prende_pass.tpsheet
+- Assets/sprites/location/bagno/animation/talkies/sheet0.tpsheet
+- Assets/sprites/location/bagno/animation/tubi_bagno.tpsheet
+- Assets/sprites/location/bagno/animation/ventilatore.tpsheet
+- Assets/sprites/location/bagno/bitmap/sheet0.tpsheet
+- Assets/sprites/location/bagno/bitmask/hotspot/sheet0.tpsheet
+- Assets/sprites/location/bagno1/animation/bidone_apertura.tpsheet
+- Assets/sprites/location/bagno1/animation/bidone_chiusura.tpsheet
+- Assets/sprites/location/bagno1/animation/freccetta_volo.tpsheet
+- Assets/sprites/location/bagno1/animation/paperella_premuta.tpsheet
+- Assets/sprites/location/bagno1/animation/perdita_lavandino_foreground.tpsheet
+- Assets/sprites/location/bagno1/animation/porta_sfondata.tpsheet
+- Assets/sprites/location/bagno1/animation/skinny_bidone_bagno.tpsheet
+- Assets/sprites/location/bagno1/animation/skinny_freccette.tpsheet
+- Assets/sprites/location/bagno1/animation/skinny_gabinetto1.tpsheet
+- Assets/sprites/location/bagno1/animation/skinny_gabinetto2.tpsheet
+- Assets/sprites/location/bagno1/animation/talkies/sheet0.tpsheet
+- Assets/sprites/location/bagno1/animation/tentativo_apertura_porta.tpsheet
+- Assets/sprites/location/bagno1/animation/traslocatore_sfonda_porta.tpsheet
+- Assets/sprites/location/bagno1/animation/traslocatore_sfonda_porta_down.tpsheet
+- Assets/sprites/location/bagno1/bitmap/sheet0.tpsheet
+- Assets/sprites/location/bagno1/bitmask/hotspot/sheet0.tpsheet
+textureFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/sprites/location/accampamento/animation/barbone_snorlax.png
+- Assets/sprites/location/accampamento/animation/bing_bong.png
+- Assets/sprites/location/accampamento/animation/camper.png
+- Assets/sprites/location/accampamento/animation/fuoco_barile.png
+- Assets/sprites/location/accampamento/animation/maiali.png
+- Assets/sprites/location/accampamento/animation/marionettista_idle.png
+- Assets/sprites/location/accampamento/animation/marionettista_porge_premio.png
+- Assets/sprites/location/accampamento/animation/marionettista_prende_buono.png
+- Assets/sprites/location/accampamento/animation/skinny_porge_buono.png
+- Assets/sprites/location/accampamento/animation/skinny_prende_premio.png
+- Assets/sprites/location/accampamento/animation/talkies/sheet0.png
+- Assets/sprites/location/accampamento/animation/waldo.png
+- Assets/sprites/location/accampamento/animation/writer.png
+- Assets/sprites/location/accampamento/animation/zingara_idle.png
+- Assets/sprites/location/accampamento/animation/zingara_porge_premio.png
+- Assets/sprites/location/accampamento/animation/zingara_prende_buono.png
+- Assets/sprites/location/accampamento/bitmap/sheet0.png
+- Assets/sprites/location/accampamento/bitmask/hotspot/sheet0.png
+- Assets/sprites/location/anticamera/animation/bob_cx.png
+- Assets/sprites/location/anticamera/animation/bob_dx.png
+- Assets/sprites/location/anticamera/animation/bob_sx.png
+- Assets/sprites/location/anticamera/animation/lampadina_anticamera.png
+- Assets/sprites/location/anticamera/animation/mano_autostop.png
+- Assets/sprites/location/anticamera/animation/mosche.png
+- Assets/sprites/location/anticamera/animation/porta_anticamera.png
+- Assets/sprites/location/anticamera/animation/robot_idle.png
+- Assets/sprites/location/anticamera/animation/skinny_sfonda_porta.png
+- Assets/sprites/location/anticamera/animation/talkies/sheet0.png
+- Assets/sprites/location/anticamera/bitmap/sheet0.png
+- Assets/sprites/location/anticamera/bitmask/hotspot/sheet0.png
+- Assets/sprites/location/bagno/animation/ciccione_idle.png
+- Assets/sprites/location/bagno/animation/ciccione_porge_pass.png
+- Assets/sprites/location/bagno/animation/ciccione_porge_pass_back.png
+- Assets/sprites/location/bagno/animation/ciccione_riaffiora.png
+- Assets/sprites/location/bagno/animation/ciccione_si_immerge.png
+- Assets/sprites/location/bagno/animation/ciccione_versa_sali.png
+- Assets/sprites/location/bagno/animation/ciccione_versa_sali_capsaicina.png
+- Assets/sprites/location/bagno/animation/leva.png
+- Assets/sprites/location/bagno/animation/naso.png
+- Assets/sprites/location/bagno/animation/perdite_piscina.png
+- Assets/sprites/location/bagno/animation/pesce_rosso.png
+- Assets/sprites/location/bagno/animation/piranha.png
+- Assets/sprites/location/bagno/animation/piscina_si_svuota.png
+- Assets/sprites/location/bagno/animation/skinny_prende_pass.png
+- Assets/sprites/location/bagno/animation/talkies/sheet0.png
+- Assets/sprites/location/bagno/animation/tubi_bagno.png
+- Assets/sprites/location/bagno/animation/ventilatore.png
+- Assets/sprites/location/bagno/bitmap/sheet0.png
+- Assets/sprites/location/bagno/bitmask/hotspot/sheet0.png
+- Assets/sprites/location/bagno1/animation/bidone_apertura.png
+- Assets/sprites/location/bagno1/animation/bidone_chiusura.png
+- Assets/sprites/location/bagno1/animation/freccetta_volo.png
+- Assets/sprites/location/bagno1/animation/paperella_premuta.png
+- Assets/sprites/location/bagno1/animation/perdita_lavandino_foreground.png
+- Assets/sprites/location/bagno1/animation/porta_sfondata.png
+- Assets/sprites/location/bagno1/animation/skinny_bidone_bagno.png
+- Assets/sprites/location/bagno1/animation/skinny_freccette.png
+- Assets/sprites/location/bagno1/animation/skinny_gabinetto1.png
+- Assets/sprites/location/bagno1/animation/skinny_gabinetto2.png
+- Assets/sprites/location/bagno1/animation/talkies/sheet0.png
+- Assets/sprites/location/bagno1/animation/tentativo_apertura_porta.png
+- Assets/sprites/location/bagno1/animation/traslocatore_sfonda_porta.png
+- Assets/sprites/location/bagno1/animation/traslocatore_sfonda_porta_down.png
+- Assets/sprites/location/bagno1/bitmap/sheet0.png
+- Assets/sprites/location/bagno1/bitmask/hotspot/sheet0.png
+normalmapFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+enableDebugOutput: 0

@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: 4f8a65c4267f2b140a41d14e28d41ceb
+timeCreated: 1518712178
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sheet0
+    21300002: orso_happy_talkie_0
+    21300004: orso_happy_talkie_1
+    21300006: orso_happy_talkie_2
+    21300008: orso_happy_talkie_3
+    21300010: orso_left_angry_talkie_0
+    21300012: orso_left_angry_talkie_1
+    21300014: orso_left_angry_talkie_2
+    21300016: orso_left_angry_talkie_3
+    21300018: orso_left_talkie_0
+    21300020: orso_left_talkie_1
+    21300022: orso_left_talkie_2
+    21300024: orso_left_talkie_3
+    21300026: orso_suffering_talkie_0
+    21300028: orso_suffering_talkie_1
+    21300030: orso_suffering_talkie_2
+    21300032: orso_suffering_talkie_3
+    21300034: orso_up_sarcastic_talkie_0
+    21300036: orso_up_sarcastic_talkie_1
+    21300038: orso_up_sarcastic_talkie_2
+    21300040: orso_up_sarcastic_talkie_3
+    21300042: orso_up_talkie_0
+    21300044: orso_up_talkie_1
+    21300046: orso_up_talkie_2
+    21300048: orso_up_talkie_3
+    21300050: orso_wc_talkie_0
+    21300052: orso_wc_talkie_1
+    21300054: orso_wc_talkie_2
+    21300056: orso_wc_talkie_3
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: orso_happy_talkie_0
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 119
+        width: 181
+        height: 135
+      alignment: 9
+      pivot: {x: -0.93370163, y: 2.148148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_happy_talkie_1
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 126
+        width: 178
+        height: 128
+      alignment: 9
+      pivot: {x: -0.994382, y: 2.1953125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_happy_talkie_2
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 123
+        width: 174
+        height: 131
+      alignment: 9
+      pivot: {x: -1.0114943, y: 2.183206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_happy_talkie_3
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 2
+        width: 171
+        height: 127
+      alignment: 9
+      pivot: {x: -1.0350877, y: 2.2047243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_left_angry_talkie_0
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 119
+        width: 176
+        height: 135
+      alignment: 9
+      pivot: {x: -0.9886364, y: 2.148148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_left_angry_talkie_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5
+        width: 181
+        height: 120
+      alignment: 9
+      pivot: {x: -0.96132594, y: 2.275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_left_angry_talkie_2
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 117
+        width: 175
+        height: 137
+      alignment: 9
+      pivot: {x: -1, y: 2.1240876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_left_angry_talkie_3
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 123
+        width: 181
+        height: 131
+      alignment: 9
+      pivot: {x: -0.97790056, y: 2.167939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_left_talkie_0
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 119
+        width: 181
+        height: 135
+      alignment: 9
+      pivot: {x: -0.93370163, y: 2.148148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_left_talkie_1
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 126
+        width: 178
+        height: 128
+      alignment: 9
+      pivot: {x: -0.994382, y: 2.1953125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_left_talkie_2
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 119
+        width: 179
+        height: 135
+      alignment: 9
+      pivot: {x: -0.9888268, y: 2.1333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_left_talkie_3
+      rect:
+        serializedVersion: 2
+        x: 3045
+        y: 6
+        width: 176
+        height: 127
+      alignment: 9
+      pivot: {x: -0.9886364, y: 2.2047243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_suffering_talkie_0
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 118
+        width: 180
+        height: 136
+      alignment: 9
+      pivot: {x: -0.98333335, y: 2.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_suffering_talkie_1
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 125
+        width: 177
+        height: 129
+      alignment: 9
+      pivot: {x: -0.9830508, y: 2.2015505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_suffering_talkie_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 117
+        width: 180
+        height: 137
+      alignment: 9
+      pivot: {x: -0.98333335, y: 2.1167884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_suffering_talkie_3
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 6
+        width: 180
+        height: 118
+      alignment: 9
+      pivot: {x: -0.9444444, y: 2.3135593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_up_sarcastic_talkie_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 121
+        width: 183
+        height: 133
+      alignment: 9
+      pivot: {x: -0.9508197, y: 2.1503758}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_up_sarcastic_talkie_1
+      rect:
+        serializedVersion: 2
+        x: 3233
+        y: 126
+        width: 178
+        height: 128
+      alignment: 9
+      pivot: {x: -0.994382, y: 2.1953125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_up_sarcastic_talkie_2
+      rect:
+        serializedVersion: 2
+        x: 3766
+        y: 124
+        width: 174
+        height: 130
+      alignment: 9
+      pivot: {x: -1.0114943, y: 2.1923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_up_sarcastic_talkie_3
+      rect:
+        serializedVersion: 2
+        x: 3052
+        y: 129
+        width: 181
+        height: 125
+      alignment: 9
+      pivot: {x: -0.9723757, y: 2.224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_up_talkie_0
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 119
+        width: 181
+        height: 135
+      alignment: 9
+      pivot: {x: -0.93370163, y: 2.148148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_up_talkie_1
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 126
+        width: 178
+        height: 128
+      alignment: 9
+      pivot: {x: -0.994382, y: 2.1953125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_up_talkie_2
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 119
+        width: 179
+        height: 135
+      alignment: 9
+      pivot: {x: -0.9888268, y: 2.1333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_up_talkie_3
+      rect:
+        serializedVersion: 2
+        x: 3223
+        y: 2
+        width: 176
+        height: 127
+      alignment: 9
+      pivot: {x: -0.9886364, y: 2.2047243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_wc_talkie_0
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 119
+        width: 181
+        height: 135
+      alignment: 9
+      pivot: {x: -0.93370163, y: 2.148148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_wc_talkie_1
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 126
+        width: 178
+        height: 128
+      alignment: 9
+      pivot: {x: -0.994382, y: 2.1953125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_wc_talkie_2
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 119
+        width: 179
+        height: 135
+      alignment: 9
+      pivot: {x: -0.9888268, y: 2.1333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: orso_wc_talkie_3
+      rect:
+        serializedVersion: 2
+        x: 3918
+        y: 88
+        width: 176
+        height: 127
+      alignment: 9
+      pivot: {x: -0.9886364, y: 2.2047243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

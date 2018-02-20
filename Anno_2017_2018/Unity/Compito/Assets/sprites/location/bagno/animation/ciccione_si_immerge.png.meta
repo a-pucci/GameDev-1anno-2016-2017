@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: def9c4b1031d922498d6b5706fd4c32a
+timeCreated: 1518712258
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ciccione_si_immerge
+    21300002: ciccione_si_immerge_0
+    21300004: ciccione_si_immerge_1
+    21300006: ciccione_si_immerge_2
+    21300008: ciccione_si_immerge_3
+    21300010: ciccione_si_immerge_4
+    21300012: ciccione_si_immerge_5
+    21300014: ciccione_si_immerge_6
+    21300016: ciccione_si_immerge_7
+    21300018: ciccione_si_immerge_8
+    21300020: ciccione_si_immerge_9
+    21300022: ciccione_si_immerge_10
+    21300024: ciccione_si_immerge_11
+    21300026: ciccione_si_immerge_12
+    21300028: ciccione_si_immerge_13
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ciccione_si_immerge_0
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 10
+        width: 349
+        height: 408
+      alignment: 9
+      pivot: {x: 0, y: 1.0171568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 5
+        width: 349
+        height: 413
+      alignment: 9
+      pivot: {x: 0, y: 1.0072639}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_2
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 5
+        width: 348
+        height: 413
+      alignment: 9
+      pivot: {x: 0, y: 1.0048426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 349
+        height: 416
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_4
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 34
+        width: 348
+        height: 377
+      alignment: 9
+      pivot: {x: -0.0028735632, y: 1.1034483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_5
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 82
+        width: 321
+        height: 336
+      alignment: 9
+      pivot: {x: -0.08722741, y: 1.2380953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_6
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 111
+        width: 287
+        height: 307
+      alignment: 9
+      pivot: {x: -0.21602787, y: 1.3550489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_7
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 62
+        width: 286
+        height: 244
+      alignment: 9
+      pivot: {x: -0.22027972, y: 1.6147541}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_8
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 210
+        width: 192
+        height: 208
+      alignment: 9
+      pivot: {x: -0.7552083, y: 1.8846154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_9
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 242
+        width: 171
+        height: 176
+      alignment: 9
+      pivot: {x: -0.8479532, y: 2.2272727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_10
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 68
+        width: 171
+        height: 140
+      alignment: 9
+      pivot: {x: -0.8187134, y: 2.807143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_11
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 309
+        width: 176
+        height: 109
+      alignment: 9
+      pivot: {x: -0.8011364, y: 3.6146789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 354
+        width: 150
+        height: 64
+      alignment: 9
+      pivot: {x: -1.0666667, y: 6.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_si_immerge_13
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 388
+        width: 121
+        height: 30
+      alignment: 9
+      pivot: {x: -1.4214876, y: 12.966666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

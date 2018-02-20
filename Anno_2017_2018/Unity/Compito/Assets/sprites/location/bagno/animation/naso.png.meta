@@ -1,0 +1,1098 @@
+fileFormatVersion: 2
+guid: 3aa993fc2d09be84eb8e47ea5c0b406f
+timeCreated: 1518712157
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: naso
+    21300002: naso_0
+    21300004: naso_1
+    21300006: naso_2
+    21300008: naso_3
+    21300010: naso_4
+    21300012: naso_5
+    21300014: naso_6
+    21300016: naso_7
+    21300018: naso_8
+    21300020: naso_9
+    21300022: naso_10
+    21300024: naso_11
+    21300026: naso_12
+    21300028: naso_13
+    21300030: naso_14
+    21300032: naso_15
+    21300034: naso_16
+    21300036: naso_17
+    21300038: naso_18
+    21300040: naso_19
+    21300042: naso_20
+    21300044: naso_21
+    21300046: naso_22
+    21300048: naso_23
+    21300050: naso_24
+    21300052: naso_25
+    21300054: naso_26
+    21300056: naso_27
+    21300058: naso_28
+    21300060: naso_29
+    21300062: naso_30
+    21300064: naso_31
+    21300066: naso_32
+    21300068: naso_33
+    21300070: naso_34
+    21300072: naso_35
+    21300074: naso_36
+    21300076: naso_37
+    21300078: naso_38
+    21300080: naso_39
+    21300082: naso_40
+    21300084: naso_41
+    21300086: naso_42
+    21300088: naso_43
+    21300090: naso_44
+    21300092: naso_45
+    21300094: naso_46
+    21300096: naso_47
+    21300098: naso_48
+    21300100: naso_49
+    21300102: naso_50
+    21300104: naso_51
+    21300106: naso_52
+    21300108: naso_53
+    21300110: naso_54
+    21300112: naso_55
+    21300114: naso_56
+    21300116: naso_57
+    21300118: naso_58
+    21300120: naso_59
+    21300122: naso_60
+    21300124: naso_61
+    21300126: naso_62
+    21300128: naso_63
+    21300130: naso_64
+    21300132: naso_65
+    21300134: naso_66
+    21300136: naso_67
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: naso_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 988
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 986
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 905
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 822
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 822
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_5
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1303
+        width: 53
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1228
+        width: 53
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1226
+        width: 53
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_8
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1147
+        width: 53
+        height: 77
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1065
+        width: 52
+        height: 78
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1144
+        width: 53
+        height: 78
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 984
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1303
+        width: 51
+        height: 75
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1225
+        width: 51
+        height: 76
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1224
+        width: 51
+        height: 77
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 87
+        width: 51
+        height: 81
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1145
+        width: 51
+        height: 78
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 907
+        width: 51
+        height: 79
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 744
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 86
+        width: 51
+        height: 81
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_20
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 86
+        width: 51
+        height: 81
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 85
+        width: 51
+        height: 81
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 51
+        height: 81
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_23
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 51
+        height: 81
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_24
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 742
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_25
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 903
+        width: 51
+        height: 79
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 903
+        width: 51
+        height: 79
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 826
+        width: 51
+        height: 79
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_28
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 824
+        width: 51
+        height: 79
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 662
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 660
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 580
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_32
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 578
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 498
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_34
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 497
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 497
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_36
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 496
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_37
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 416
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_38
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 415
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_39
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 415
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_40
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 414
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_41
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 334
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_42
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 333
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_43
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 333
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_44
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 332
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 252
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_46
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 251
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_47
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 251
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_48
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 250
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_49
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 170
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_50
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 169
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_51
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 169
+        width: 51
+        height: 80
+      alignment: 9
+      pivot: {x: -0.039215688, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_52
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 168
+        width: 53
+        height: 80
+      alignment: 9
+      pivot: {x: -0.03773585, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_53
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2
+        width: 53
+        height: 81
+      alignment: 9
+      pivot: {x: -0.03773585, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_54
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1069
+        width: 52
+        height: 78
+      alignment: 9
+      pivot: {x: -0.03846154, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_55
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 741
+        width: 53
+        height: 79
+      alignment: 9
+      pivot: {x: -0.018867925, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_56
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1305
+        width: 54
+        height: 73
+      alignment: 9
+      pivot: {x: -0.018518519, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_57
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1303
+        width: 55
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_58
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1064
+        width: 55
+        height: 78
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_59
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 984
+        width: 55
+        height: 78
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_60
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1149
+        width: 53
+        height: 77
+      alignment: 9
+      pivot: {x: -0.018867925, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_61
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1067
+        width: 52
+        height: 78
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_62
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 2
+        width: 52
+        height: 81
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_63
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 741
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_64
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 660
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_65
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 660
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_66
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 579
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: naso_67
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 579
+        width: 52
+        height: 79
+      alignment: 9
+      pivot: {x: -0.01923077, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

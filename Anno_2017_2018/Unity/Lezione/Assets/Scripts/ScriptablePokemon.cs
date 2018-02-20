@@ -1,19 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 [CreateAssetMenu(fileName = "New_Pokemon", menuName = "Pokedex/ScriptablePokemon")]
 public class ScriptablePokemon : ScriptableObject
 {
-    public Sprite sprite;
-    public int id;
+    [VerticalGroup]
+    [HideLabel]
     public string name;
+    [HideLabel]
+    [VerticalGroup]
+    [PreviewField] public Sprite sprite;
+    public int id;
 
     [Space(20)]
     public List<string> type = new List<string>();
 
     [Space(20)]
-    [Header("Stats")]
+    [MultiLineProperty]
+    public string description;
+
+    [Space(20)]
+    [Title("Stats")]
     public int HP;
     public int ATK;
     public int DEF;
@@ -22,16 +31,14 @@ public class ScriptablePokemon : ScriptableObject
     public int SDF;
 
     [Space(20)]
-    [Header("Evolutions")]
-    public List<Evolution> evolutions = new List<Evolution>();
-
-    [Space(20)]
+    [Title("Physical Attributes")]
     public string height;
     public string weight;
 
     [Space(20)]
-    [TextArea]
-    public string description;
+    [Header("Evolutions")]
+    public List<Evolution> evolutions = new List<Evolution>();
+
 }
 
 [System.Serializable]

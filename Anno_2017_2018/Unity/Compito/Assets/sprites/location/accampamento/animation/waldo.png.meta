@@ -1,0 +1,1488 @@
+fileFormatVersion: 2
+guid: fbba018e1637e5347b47f75e97611ee7
+timeCreated: 1518712276
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: waldo
+    21300002: waldo_7
+    21300004: waldo_8
+    21300006: waldo_9
+    21300008: waldo_10
+    21300010: waldo_11
+    21300012: waldo_12
+    21300014: waldo_13
+    21300016: waldo_14
+    21300018: waldo_15
+    21300020: waldo_16
+    21300022: waldo_17
+    21300024: waldo_18
+    21300026: waldo_19
+    21300028: waldo_20
+    21300030: waldo_21
+    21300032: waldo_22
+    21300034: waldo_23
+    21300036: waldo_24
+    21300038: waldo_25
+    21300040: waldo_26
+    21300042: waldo_27
+    21300044: waldo_28
+    21300046: waldo_29
+    21300048: waldo_30
+    21300050: waldo_31
+    21300052: waldo_32
+    21300054: waldo_33
+    21300056: waldo_34
+    21300058: waldo_35
+    21300060: waldo_36
+    21300062: waldo_37
+    21300064: waldo_38
+    21300066: waldo_39
+    21300068: waldo_40
+    21300070: waldo_41
+    21300072: waldo_42
+    21300074: waldo_43
+    21300076: waldo_44
+    21300078: waldo_45
+    21300080: waldo_46
+    21300082: waldo_47
+    21300084: waldo_48
+    21300086: waldo_49
+    21300088: waldo_50
+    21300090: waldo_51
+    21300092: waldo_52
+    21300094: waldo_53
+    21300096: waldo_54
+    21300098: waldo_55
+    21300100: waldo_56
+    21300102: waldo_57
+    21300104: waldo_58
+    21300106: waldo_59
+    21300108: waldo_60
+    21300110: waldo_61
+    21300112: waldo_62
+    21300114: waldo_63
+    21300116: waldo_64
+    21300118: waldo_65
+    21300120: waldo_66
+    21300122: waldo_67
+    21300124: waldo_68
+    21300126: waldo_69
+    21300128: waldo_70
+    21300130: waldo_71
+    21300132: waldo_72
+    21300134: waldo_73
+    21300136: waldo_74
+    21300138: waldo_75
+    21300140: waldo_76
+    21300142: waldo_77
+    21300144: waldo_78
+    21300146: waldo_79
+    21300148: waldo_80
+    21300150: waldo_81
+    21300152: waldo_82
+    21300154: waldo_83
+    21300156: waldo_84
+    21300158: waldo_85
+    21300160: waldo_86
+    21300162: waldo_87
+    21300164: waldo_88
+    21300166: waldo_89
+    21300168: waldo_90
+    21300170: waldo_91
+    21300172: waldo_92
+    21300174: waldo_93
+    21300176: waldo_94
+    21300178: waldo_95
+    21300180: waldo_96
+    21300182: waldo_97
+    21300184: waldo_98
+    21300186: waldo_99
+    21300188: waldo_100
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: waldo_7
+      rect:
+        serializedVersion: 2
+        x: 3123
+        y: 2
+        width: 290
+        height: 515
+      alignment: 9
+      pivot: {x: -0.0034482758, y: 1.0038835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_8
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 1612
+        width: 290
+        height: 515
+      alignment: 9
+      pivot: {x: -0.0034482758, y: 1.0038835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_9
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 2206
+        width: 290
+        height: 516
+      alignment: 9
+      pivot: {x: -0.0034482758, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_10
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 34
+        width: 303
+        height: 517
+      alignment: 9
+      pivot: {x: -0.0033003301, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_11
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 1414
+        width: 310
+        height: 510
+      alignment: 9
+      pivot: {x: -0.022580646, y: 1.0137255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_12
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 2941
+        width: 327
+        height: 499
+      alignment: 9
+      pivot: {x: -0.021406727, y: 1.0360721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_13
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 487
+        width: 335
+        height: 491
+      alignment: 9
+      pivot: {x: -0.017910447, y: 1.0529531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_14
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 862
+        width: 335
+        height: 489
+      alignment: 9
+      pivot: {x: -0.03880597, y: 1.0572597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_15
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 3408
+        width: 334
+        height: 492
+      alignment: 9
+      pivot: {x: -0.035928145, y: 1.050813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_16
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 170
+        width: 331
+        height: 500
+      alignment: 9
+      pivot: {x: -0.042296074, y: 1.034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_17
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1815
+        width: 335
+        height: 489
+      alignment: 9
+      pivot: {x: -0.03880597, y: 1.0572597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_18
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 2502
+        width: 335
+        height: 494
+      alignment: 9
+      pivot: {x: -0.032835823, y: 1.0465587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_19
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1028
+        width: 336
+        height: 495
+      alignment: 9
+      pivot: {x: -0.029761905, y: 1.0444444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3125
+        width: 339
+        height: 494
+      alignment: 9
+      pivot: {x: -0.01179941, y: 1.0465587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_21
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 534
+        width: 332
+        height: 491
+      alignment: 9
+      pivot: {x: -0.03313253, y: 1.0529531}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_22
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 2
+        width: 334
+        height: 494
+      alignment: 9
+      pivot: {x: -0.038922157, y: 1.0465587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 231
+        width: 335
+        height: 496
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0423387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_24
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 282
+        width: 335
+        height: 496
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0423387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_25
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 655
+        width: 335
+        height: 496
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0423387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_26
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 567
+        width: 335
+        height: 487
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0616016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2178
+        width: 335
+        height: 497
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_28
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 2286
+        width: 329
+        height: 494
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0465587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_29
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 3450
+        width: 329
+        height: 494
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0465587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_30
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2772
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_31
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 71
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_32
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 913
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_33
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 1867
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_34
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 1393
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_35
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 2923
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_36
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 3090
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_37
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 2619
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_38
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 3561
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_39
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 2148
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 294
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_41
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1677
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_42
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3497
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_43
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1140
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_44
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1644
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_45
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 2587
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_46
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 264
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_47
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 3058
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_48
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 3529
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_49
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 2115
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_50
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1173
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_51
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1611
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_52
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 2555
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_53
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 702
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_54
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 3026
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_55
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 735
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_56
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 2082
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_57
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1206
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_58
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 765
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_59
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1236
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_60
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1707
+        width: 334
+        height: 497
+      alignment: 9
+      pivot: {x: -0.04191617, y: 1.0402415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_61
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 2
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_62
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 3263
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_63
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 375
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_64
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 2146
+        width: 329
+        height: 493
+      alignment: 9
+      pivot: {x: -0.04255319, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_65
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1361
+        width: 331
+        height: 493
+      alignment: 9
+      pivot: {x: -0.036253776, y: 1.0486815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_66
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 917
+        width: 335
+        height: 492
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.050813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_67
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 2442
+        width: 334
+        height: 492
+      alignment: 9
+      pivot: {x: -0.038922157, y: 1.050813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_68
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3464
+        width: 336
+        height: 494
+      alignment: 9
+      pivot: {x: -0.035714287, y: 1.0465587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_69
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 545
+        width: 336
+        height: 494
+      alignment: 9
+      pivot: {x: -0.035714287, y: 1.0465587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_70
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 1672
+        width: 335
+        height: 487
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0616016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_71
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 946
+        width: 335
+        height: 487
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0616016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_72
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 2309
+        width: 335
+        height: 487
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0616016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_73
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 3414
+        width: 335
+        height: 487
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0616016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_74
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1577
+        width: 335
+        height: 496
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0423387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_75
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 2058
+        width: 335
+        height: 496
+      alignment: 9
+      pivot: {x: -0.035820894, y: 1.0423387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_76
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3595
+        width: 334
+        height: 499
+      alignment: 9
+      pivot: {x: -0.032934133, y: 1.0360721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_77
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1465
+        width: 332
+        height: 495
+      alignment: 9
+      pivot: {x: -0.030120483, y: 1.0444444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_78
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 32
+        width: 338
+        height: 487
+      alignment: 9
+      pivot: {x: -0.02366864, y: 1.0616016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_79
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 2011
+        width: 335
+        height: 492
+      alignment: 9
+      pivot: {x: -0.020895522, y: 1.050813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_80
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2649
+        width: 342
+        height: 490
+      alignment: 9
+      pivot: {x: 0, y: 1.055102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_81
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 2960
+        width: 326
+        height: 504
+      alignment: 9
+      pivot: {x: 0, y: 1.0257937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_82
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 2795
+        width: 322
+        height: 499
+      alignment: 9
+      pivot: {x: 0, y: 1.0360721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_83
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2642
+        width: 305
+        height: 510
+      alignment: 9
+      pivot: {x: 0, y: 1.0137255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_84
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 871
+        width: 298
+        height: 514
+      alignment: 9
+      pivot: {x: 0, y: 1.0058366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_85
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 463
+        width: 289
+        height: 517
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_86
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 3155
+        width: 291
+        height: 517
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_87
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 3579
+        width: 291
+        height: 515
+      alignment: 9
+      pivot: {x: 0, y: 1.0038835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_88
+      rect:
+        serializedVersion: 2
+        x: 2583
+        y: 1320
+        width: 292
+        height: 516
+      alignment: 9
+      pivot: {x: 0, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_89
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 3578
+        width: 292
+        height: 516
+      alignment: 9
+      pivot: {x: 0, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_90
+      rect:
+        serializedVersion: 2
+        x: 2885
+        y: 2381
+        width: 291
+        height: 516
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_91
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 3076
+        width: 291
+        height: 516
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_92
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 913
+        width: 291
+        height: 516
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_93
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 2556
+        width: 291
+        height: 517
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_94
+      rect:
+        serializedVersion: 2
+        x: 3037
+        y: 2903
+        width: 291
+        height: 515
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1.0038835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_95
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 2
+        width: 291
+        height: 516
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_96
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 2035
+        width: 291
+        height: 517
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_97
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 1689
+        width: 291
+        height: 516
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_98
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 1235
+        width: 291
+        height: 516
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1.001938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_99
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 554
+        width: 291
+        height: 517
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo_100
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 1862
+        width: 291
+        height: 517
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

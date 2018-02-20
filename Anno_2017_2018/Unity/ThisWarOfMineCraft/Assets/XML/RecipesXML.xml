@@ -1,0 +1,36 @@
+<root>
+  <recipe name='Cannolo' description='Il dolce siciliano per antonomasia.'>
+    <ingredient name='Farina' quantity='2.5'></ingredient>
+    <ingredient name='Zucchero' quantity='3.3'></ingredient>
+    <ingredient name='Strutto' quantity='0.5'></ingredient>
+    <ingredient name='Cioccolato' quantity='0.8'></ingredient>
+    <ingredient name='Sale' quantity='0.02'></ingredient>
+    <ingredient name='Cannella' quantity='0.02'></ingredient>
+    <ingredient name='Caffè' quantity='0.02'></ingredient>
+    <ingredient name='Uova' quantity='1'></ingredient>
+    <ingredient name='Aceto' quantity='0.3'></ingredient>
+    <ingredient name='Marsala' quantity='0.3'></ingredient>
+    <ingredient name='Ricotta' quantity='7.5'></ingredient>
+    <ingredient name='Ciliegia' quantity='24'></ingredient>
+  </recipe>
+  <recipe name='Cassata' description='Secondo dolce italiano per antonomasia. Dopo il cannolo.'>
+    <ingredient name='Uova' quantity='1'></ingredient>
+    <ingredient name='Ricotta' quantity='8'></ingredient>
+    <ingredient name='Pan di Spagna' quantity='3'></ingredient>
+    <ingredient name='Zucchero' quantity='5.5'></ingredient>
+    <ingredient name='Pasta Reale' quantity='2.5'></ingredient>
+    <ingredient name='Cioccolato' quantity='1'></ingredient>
+    <ingredient name='Rum' quantity='0.1'></ingredient>
+    <ingredient name='Limone' quantity='0.2'></ingredient>
+    <ingredient name='Burro' quantity='0.1'></ingredient>
+  </recipe>
+  <recipe name='Parfait alle mandorle' description='Dolce tipicamente del trapanese. É un semi-freddo ai più sconosciuto.'>
+    <ingredient name='Mandorla' quantity='1.7'></ingredient>
+    <ingredient name='Acqua' quantity='1'></ingredient>
+    <ingredient name='Zucchero' quantity='1.5'></ingredient>
+    <ingredient name='Burro' quantity='0.04'></ingredient>
+    <ingredient name='Panna' quantity='2.2'></ingredient>
+    <ingredient name='Uova' quantity='3'></ingredient>
+    <ingredient name='Cioccolato' quantity='1'></ingredient>
+  </recipe>
+</root>

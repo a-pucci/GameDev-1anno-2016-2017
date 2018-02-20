@@ -1,0 +1,408 @@
+fileFormatVersion: 2
+guid: 186b5b76141e04141bca001784d0491a
+timeCreated: 1518712154
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sheet0
+    21300002: bagnoschiuma
+    21300004: ciccione
+    21300006: ciccione_immerso
+    21300008: ciccione_pass
+    21300010: finestra_casa_bruciata
+    21300012: gabinetto
+    21300014: lavandino
+    21300016: maniglia
+    21300018: ombra_piscina
+    21300020: pensile_aperto
+    21300022: pensile_chiuso
+    21300024: piscina
+    21300026: piscina_no_ciccione
+    21300028: piscina_no_telo
+    21300030: piscina_vuota
+    21300032: porta_bagno_aperta
+    21300034: porta_bagno_chiusa
+    21300036: rasoio_fai_da_te
+    21300038: sali
+    21300040: sali_rossi
+    21300042: saponetta
+    21300044: struccante
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bagnoschiuma
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 2473
+        width: 46
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 321
+        width: 350
+        height: 406
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_immerso
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 885
+        width: 1
+        height: 1
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_pass
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 333
+        width: 432
+        height: 394
+      alignment: 9
+      pivot: {x: -0.0069444445, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: finestra_casa_bruciata
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 2204
+        width: 249
+        height: 399
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gabinetto
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1429
+        width: 241
+        height: 230
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lavandino
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 221
+        width: 487
+        height: 98
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maniglia
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 299
+        width: 86
+        height: 39
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ombra_piscina
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 729
+        width: 820
+        height: 535
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pensile_aperto
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 74
+        width: 415
+        height: 280
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pensile_chiuso
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 3
+        width: 213
+        height: 216
+      alignment: 9
+      pivot: {x: -0.46478873, y: 1.1203704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piscina
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1149
+        width: 787
+        height: 619
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piscina_no_ciccione
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2901
+        width: 787
+        height: 657
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piscina_no_telo
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2244
+        width: 787
+        height: 657
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piscina_vuota
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1661
+        width: 787
+        height: 657
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: porta_bagno_aperta
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 2759
+        width: 223
+        height: 799
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: porta_bagno_chiusa
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 377
+        width: 212
+        height: 799
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: rasoio_fai_da_te
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1852
+        width: 158
+        height: 502
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: sali
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 2335
+        width: 30
+        height: 55
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: sali_rossi
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 2415
+        width: 30
+        height: 55
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: saponetta
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 2698
+        width: 140
+        height: 59
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: struccante
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1639
+        width: 38
+        height: 60
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

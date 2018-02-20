@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 9239b433a560df1459a15354ee3352e2
+timeCreated: 1518712236
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zingara_idle
+    21300002: zingara_idle_7
+    21300004: zingara_idle_8
+    21300006: zingara_idle_9
+    21300008: zingara_idle_10
+    21300010: zingara_idle_11
+    21300012: zingara_idle_12
+    21300014: zingara_idle_13
+    21300016: zingara_idle_14
+    21300018: zingara_idle_15
+    21300020: zingara_idle_16
+    21300022: zingara_idle_17
+    21300024: zingara_idle_18
+    21300026: zingara_idle_19
+    21300028: zingara_idle_20
+    21300030: zingara_idle_21
+    21300032: zingara_idle_22
+    21300034: zingara_idle_23
+    21300036: zingara_idle_24
+    21300038: zingara_idle_25
+    21300040: zingara_idle_26
+    21300042: zingara_idle_27
+    21300044: zingara_idle_28
+    21300046: zingara_idle_29
+    21300048: zingara_idle_30
+    21300050: zingara_idle_31
+    21300052: zingara_idle_32
+    21300054: zingara_idle_33
+    21300056: zingara_idle_34
+    21300058: zingara_idle_35
+    21300060: zingara_idle_36
+    21300062: zingara_idle_37
+    21300064: zingara_idle_38
+    21300066: zingara_idle_39
+    21300068: zingara_idle_40
+    21300070: zingara_idle_41
+    21300072: zingara_idle_42
+    21300074: zingara_idle_43
+    21300076: zingara_idle_44
+    21300078: zingara_idle_45
+    21300080: zingara_idle_46
+    21300082: zingara_idle_47
+    21300084: zingara_idle_48
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zingara_idle_7
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 468
+        width: 256
+        height: 233
+      alignment: 9
+      pivot: {x: 0, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_8
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 3
+        width: 252
+        height: 227
+      alignment: 9
+      pivot: {x: 0, y: 1.1189427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_9
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 312
+        width: 256
+        height: 230
+      alignment: 9
+      pivot: {x: 0, y: 1.1043478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_10
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1179
+        width: 268
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_11
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1879
+        width: 282
+        height: 235
+      alignment: 9
+      pivot: {x: 0, y: 1.0808511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1620
+        width: 281
+        height: 249
+      alignment: 9
+      pivot: {x: 0, y: 1.0200803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2108
+        width: 282
+        height: 254
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_14
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 2108
+        width: 281
+        height: 254
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1862
+        width: 281
+        height: 254
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_16
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 2062
+        width: 281
+        height: 254
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_17
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 2125
+        width: 281
+        height: 237
+      alignment: 9
+      pivot: {x: 0, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_18
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1896
+        width: 282
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1389
+        width: 277
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_20
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1320
+        width: 272
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_21
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1478
+        width: 272
+        height: 239
+      alignment: 9
+      pivot: {x: 0, y: 1.0627615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_22
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1526
+        width: 272
+        height: 239
+      alignment: 9
+      pivot: {x: 0, y: 1.0627615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_23
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1573
+        width: 272
+        height: 239
+      alignment: 9
+      pivot: {x: 0, y: 1.0627615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_24
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1251
+        width: 272
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 920
+        width: 272
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_26
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1019
+        width: 272
+        height: 230
+      alignment: 9
+      pivot: {x: 0, y: 1.1043478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1154
+        width: 272
+        height: 233
+      alignment: 9
+      pivot: {x: 0, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_28
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1429
+        width: 275
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_29
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1086
+        width: 273
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_30
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1845
+        width: 263
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_31
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 544
+        width: 255
+        height: 234
+      alignment: 9
+      pivot: {x: 0, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_32
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 416
+        width: 256
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_33
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 138
+        width: 253
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_34
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 232
+        width: 252
+        height: 234
+      alignment: 9
+      pivot: {x: 0, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_35
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1127
+        width: 255
+        height: 239
+      alignment: 9
+      pivot: {x: 0, y: 1.0627615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 209
+        width: 253
+        height: 233
+      alignment: 9
+      pivot: {x: 0, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_37
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 79
+        width: 253
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_38
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 185
+        width: 256
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 444
+        width: 253
+        height: 235
+      alignment: 9
+      pivot: {x: 0, y: 1.0808511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_40
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 371
+        width: 253
+        height: 235
+      alignment: 9
+      pivot: {x: 0, y: 1.0808511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_41
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 846
+        width: 253
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_42
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 703
+        width: 253
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_43
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 780
+        width: 253
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_44
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 680
+        width: 253
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_45
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 607
+        width: 253
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_46
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 650
+        width: 253
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_47
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 887
+        width: 253
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_idle_48
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 940
+        width: 253
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

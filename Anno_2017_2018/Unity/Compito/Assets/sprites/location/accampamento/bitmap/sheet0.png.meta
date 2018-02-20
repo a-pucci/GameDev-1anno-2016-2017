@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: 257c9641cc749b448b0f0ca36f1de65b
+timeCreated: 1518715272
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sheet0
+    21300002: afk
+    21300004: barattolo
+    21300006: barbone_snorlax
+    21300008: bing_bong
+    21300010: bing_bong_perplexed
+    21300012: bomboletta_spray
+    21300014: bottiglia_rotta
+    21300016: finestra_chiosco
+    21300018: marionettista
+    21300020: murales
+    21300022: waldo
+    21300024: writer
+    21300026: zingara
+    21300028: zingara_parlante
+    21300030: zingara_parlante_angry
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: afk
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 563
+        width: 147
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barattolo
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 489
+        width: 112
+        height: 72
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 31
+        width: 490
+        height: 583
+      alignment: 9
+      pivot: {x: 0, y: 1.0034305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bing_bong
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 142
+        width: 371
+        height: 472
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bing_bong_perplexed
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 142
+        width: 371
+        height: 472
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomboletta_spray
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 233
+        width: 30
+        height: 56
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bottiglia_rotta
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 542
+        width: 160
+        height: 72
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: finestra_chiosco
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 37
+        width: 346
+        height: 342
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 151
+        width: 223
+        height: 274
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: murales
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 233
+        width: 569
+        height: 381
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: waldo
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 97
+        width: 291
+        height: 517
+      alignment: 9
+      pivot: {x: -0.0034364262, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: writer
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 187
+        width: 225
+        height: 427
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 5
+        width: 248
+        height: 226
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_parlante
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 5
+        width: 248
+        height: 226
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_parlante_angry
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 7
+        width: 248
+        height: 226
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

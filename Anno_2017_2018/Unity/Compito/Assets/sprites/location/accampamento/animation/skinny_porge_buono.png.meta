@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 63b3572c7d948fc429214bec6db810a4
+timeCreated: 1518712198
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skinny_porge_buono
+    21300002: skinny_porge_buono_3
+    21300004: skinny_porge_buono_4
+    21300006: skinny_porge_buono_5
+    21300008: skinny_porge_buono_6
+    21300010: skinny_porge_buono_7
+    21300012: skinny_porge_buono_8
+    21300014: skinny_porge_buono_9
+    21300016: skinny_porge_buono_10
+    21300018: skinny_porge_buono_11
+    21300020: skinny_porge_buono_12
+    21300022: skinny_porge_buono_13
+    21300024: skinny_porge_buono_14
+    21300026: skinny_porge_buono_15
+    21300028: skinny_porge_buono_16
+    21300030: skinny_porge_buono_17
+    21300032: skinny_porge_buono_18
+    21300034: skinny_porge_buono_19
+    21300036: skinny_porge_buono_20
+    21300038: skinny_porge_buono_21
+    21300040: skinny_porge_buono_22
+    21300042: skinny_porge_buono_23
+    21300044: skinny_porge_buono_24
+    21300046: skinny_porge_buono_25
+    21300048: skinny_porge_buono_26
+    21300050: skinny_porge_buono_27
+    21300052: skinny_porge_buono_28
+    21300054: skinny_porge_buono_29
+    21300056: skinny_porge_buono_30
+    21300058: skinny_porge_buono_31
+    21300060: skinny_porge_buono_32
+    21300062: skinny_porge_buono_33
+    21300064: skinny_porge_buono_34
+    21300066: skinny_porge_buono_35
+    21300068: skinny_porge_buono_36
+    21300070: skinny_porge_buono_37
+    21300072: skinny_porge_buono_38
+    21300074: skinny_porge_buono_39
+    21300076: skinny_porge_buono_40
+    21300078: skinny_porge_buono_41
+    21300080: skinny_porge_buono_42
+    21300082: skinny_porge_buono_43
+    21300084: skinny_porge_buono_44
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skinny_porge_buono_3
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 2222
+        width: 189
+        height: 521
+      alignment: 9
+      pivot: {x: -0.5026455, y: 1.0115163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_4
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 1718
+        width: 197
+        height: 513
+      alignment: 9
+      pivot: {x: -0.4822335, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_5
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2191
+        width: 198
+        height: 514
+      alignment: 9
+      pivot: {x: -0.46969697, y: 1.0233463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_6
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 536
+        width: 193
+        height: 508
+      alignment: 9
+      pivot: {x: -0.4818653, y: 1.031496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_7
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 516
+        width: 203
+        height: 513
+      alignment: 9
+      pivot: {x: -0.39901477, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_8
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1962
+        width: 235
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18297872, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2279
+        width: 251
+        height: 511
+      alignment: 9
+      pivot: {x: -0.11553785, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1255
+        width: 236
+        height: 513
+      alignment: 9
+      pivot: {x: -0.16949153, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_11
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 2279
+        width: 248
+        height: 511
+      alignment: 9
+      pivot: {x: -0.12903225, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_12
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 2277
+        width: 236
+        height: 513
+      alignment: 9
+      pivot: {x: -0.16949153, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_13
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 181
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_14
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 786
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_15
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1202
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_16
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 275
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_17
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 537
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_18
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 693
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 233
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_20
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 2279
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 744
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_22
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1769
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_23
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1451
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_24
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1258
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_25
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1768
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_26
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1295
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_27
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 236
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_28
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 747
+        width: 234
+        height: 511
+      alignment: 9
+      pivot: {x: -0.18803419, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1767
+        width: 238
+        height: 513
+      alignment: 9
+      pivot: {x: -0.16806723, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_30
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 175
+        width: 204
+        height: 513
+      alignment: 9
+      pivot: {x: -0.3627451, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_31
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 2277
+        width: 218
+        height: 513
+      alignment: 9
+      pivot: {x: -0.27522936, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_32
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1073
+        width: 205
+        height: 511
+      alignment: 9
+      pivot: {x: -0.35609755, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_33
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1578
+        width: 205
+        height: 511
+      alignment: 9
+      pivot: {x: -0.35609755, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_34
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 2050
+        width: 205
+        height: 511
+      alignment: 9
+      pivot: {x: -0.35609755, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_35
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 24
+        width: 220
+        height: 513
+      alignment: 9
+      pivot: {x: -0.25454545, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_36
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1550
+        width: 217
+        height: 511
+      alignment: 9
+      pivot: {x: -0.26728112, y: 1.0254403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_37
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 728
+        width: 216
+        height: 509
+      alignment: 9
+      pivot: {x: -0.2638889, y: 1.0294695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_38
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 3
+        width: 199
+        height: 514
+      alignment: 9
+      pivot: {x: -0.41708544, y: 1.0194552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_39
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1746
+        width: 192
+        height: 513
+      alignment: 9
+      pivot: {x: -0.49479166, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_40
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 678
+        width: 193
+        height: 515
+      alignment: 9
+      pivot: {x: -0.4818653, y: 1.0174757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_41
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 114
+        width: 198
+        height: 512
+      alignment: 9
+      pivot: {x: -0.46969697, y: 1.0234375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_42
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 1021
+        width: 197
+        height: 513
+      alignment: 9
+      pivot: {x: -0.4822335, y: 1.0214425}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_43
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 1234
+        width: 189
+        height: 518
+      alignment: 9
+      pivot: {x: -0.5026455, y: 1.011583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_porge_buono_44
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 24
+        width: 189
+        height: 518
+      alignment: 9
+      pivot: {x: -0.5026455, y: 1.011583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

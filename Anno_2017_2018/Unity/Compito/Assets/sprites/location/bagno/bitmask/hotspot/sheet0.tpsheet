@@ -1,0 +1,26 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:4eb2803b0710ccf82ae5dae90ef87a4b:1fe717bc4a905bc6775d860f9abeed39:5b3d6e9079860a6574b10bf337504af6$
+#
+:format=40300
+:texture=sheet0.png
+:size=1696x920
+:pivotpoints=enabled
+:borders=disabled
+
+bagno_x_primo_piano;1461;111;233;809; 0;1; 0;0;0;0
+ciccione;924;41;360;416; 0;1; 0;0;0;0
+gabinetto;797;457;412;463; 0;1; 0;0;0;0
+maniglia;797;339;96;49; 0;1; 0;0;0;0
+pensile_aperto;0;1;425;290; 0;1; 0;0;0;0
+pensile_chiuso;425;1;425;290; 0;1; 0;0;0;0
+piscina_vuota;0;291;797;629; 0;1; 0;0;0;0
+rasoio_fai_da_te;1284;181;168;512; 0;1; 0;0;0;0
+sali;850;204;40;65; 0;1; 0;0;0;0
+saponetta;797;388;127;69; 0;1; 0;0;0;0
+selfie;1209;693;252;227; 0;1; 0;0;0;0
+struccante;850;269;48;70; 0;1; 0;0;0;0

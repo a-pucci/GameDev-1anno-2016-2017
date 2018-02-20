@@ -1,0 +1,24 @@
+<location background="accampamento" foreground="True" parallax="0,0" status="0" area="accampamento" ost="gipsy_theme" indipendent="0">
+  <scene name="finestra_chiosco" shown="True" />
+  <scene name="camper" shown="True" />
+  <scene name="murales" shown="False" />
+  <scene name="bottiglia_rotta" shown="True" />
+  <scene name="barattolo" shown="True" />
+  <scene name="fuoco_barile" shown="True" />
+  <scene name="maiali" shown="True" />
+  <scene name="afk" shown="True" />
+  <hotspots>
+    <character ID="marionettista" DX="696" DY="946" mask="marionettista" X="352" Y="20" bitmap="marionettista" position="back" internal="0" CX="468" CY="692" VX="439" VY="149" shown="False" name="acc_marionettista_name_0" />
+    <character ID="zingara" DX="696" DY="946" mask="zingara" X="345" Y="382" bitmap="zingara_parlante" position="back" internal="0" CX="0" CY="0" VX="485" VY="533" shown="False" indipendent="0" TX="468" TY="382" hastalkie="True" textcolor="fuxia" name="acc_zingara_name_0" />
+    <character ID="vecchia conoscenza" DX="1766" DY="963" mask="barbone_snorlax" X="1745" Y="347" bitmap="barbone_snorlax" position="back" internal="0" CX="0" CY="0" VX="0" VY="0" shown="True" indipendent="0" name="acc_vecchia conoscenza_name_0" />
+    <item ID="bomboletta spray" DX="3199" DY="872" mask="bomboletta_spray" X="3184" Y="765" bitmap="bomboletta_spray" position="back" internal="0" CX="0" CY="0" VX="3200" VY="799" shown="False" name="acc_bomboletta spray_name_0" />
+    <character ID="writer" DX="3307" DY="872" mask="writer" X="3014" Y="407" bitmap="writer" position="back" internal="0" CX="0" CY="0" VX="3085" VY="588" shown="True" indipendent="0" TX="3077" TY="402" hastalkie="True" textcolor="lblue" name="acc_writer_name_0" />
+    <item ID="pixel morto" DX="2591" DY="1009" mask="pixel_morto" MX="2570" MY="91" bitmap="" position="back" internal="0" CX="0" CY="0" VX="2433" VY="100" shown="True" name="acc_pixel morto_name_0" />
+    <character ID="barbone" name="acc_barbone_name_0" DX="2591" DY="1009" mask="bing_bong" X="2625" Y="436" bitmap="bing_bong" position="back" internal="0" CX="0" CY="0" VX="2796" VY="654" shown="True" indipendent="0" hastalkie="True" textcolor="fuxia" TX="2751" TY="427" />
+    <character ID="Wally" name="+++" DX="2591" DY="1009" mask="null" X="2260" Y="449" bitmap="waldo" position="back" internal="0" CX="0" CY="0" VX="2345" VY="676" shown="True" indipendent="0" />
+    <item ID="mangiatoia" DX="1209" DY="964" mask="mangiatoia" MX="1000" MY="781" bitmap="" position="back" internal="0" CX="0" CY="0" VX="1244" VY="869" shown="True" name="acc_mangiatoia_name_0" />
+    <item ID="covone di paglia" DX="543" DY="1040" mask="assassin" MX="298" MY="861" bitmap="" position="fore" internal="0" CX="533" CY="1075" VX="533" VY="1005" shown="True" name="acc_covone di paglia_name_0" />
+    <item ID="scatola di Eggo" DX="1488" DY="1044" mask="eggo" MX="1376" MY="975" bitmap="" position="fore" internal="0" CX="0" CY="0" VX="1491" VY="1012" shown="True" name="acc_scatola di Eggo_name_0" />
+    <item ID="fisarmonica" DX="2922" DY="1044" mask="fisarmonica" MX="3004" MY="837" bitmap="" position="fore" internal="0" CX="0" CY="0" VX="3063" VY="942" shown="True" name="acc_fisarmonica_name_0" />
+  </hotspots>
+</location>

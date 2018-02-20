@@ -1,0 +1,678 @@
+fileFormatVersion: 2
+guid: 8c34c884e0e14594ea425373c8ef1540
+timeCreated: 1518712225
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: barbone_snorlax
+    21300002: barbone_snorlax_0
+    21300004: barbone_snorlax_1
+    21300006: barbone_snorlax_2
+    21300008: barbone_snorlax_3
+    21300010: barbone_snorlax_4
+    21300012: barbone_snorlax_5
+    21300014: barbone_snorlax_6
+    21300016: barbone_snorlax_7
+    21300018: barbone_snorlax_8
+    21300020: barbone_snorlax_9
+    21300022: barbone_snorlax_10
+    21300024: barbone_snorlax_11
+    21300026: barbone_snorlax_12
+    21300028: barbone_snorlax_13
+    21300030: barbone_snorlax_14
+    21300032: barbone_snorlax_15
+    21300034: barbone_snorlax_16
+    21300036: barbone_snorlax_17
+    21300038: barbone_snorlax_18
+    21300040: barbone_snorlax_19
+    21300042: barbone_snorlax_20
+    21300044: barbone_snorlax_21
+    21300046: barbone_snorlax_22
+    21300048: barbone_snorlax_23
+    21300050: barbone_snorlax_24
+    21300052: barbone_snorlax_25
+    21300054: barbone_snorlax_26
+    21300056: barbone_snorlax_27
+    21300058: barbone_snorlax_28
+    21300060: barbone_snorlax_29
+    21300062: barbone_snorlax_30
+    21300064: barbone_snorlax_31
+    21300066: barbone_snorlax_32
+    21300068: barbone_snorlax_33
+    21300070: barbone_snorlax_34
+    21300072: barbone_snorlax_35
+    21300074: barbone_snorlax_36
+    21300076: barbone_snorlax_37
+    21300078: barbone_snorlax_38
+    21300080: barbone_snorlax_39
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barbone_snorlax_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2351
+        width: 490
+        height: 583
+      alignment: 9
+      pivot: {x: 0, y: 1.0034305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_1
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1764
+        width: 490
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_2
+      rect:
+        serializedVersion: 2
+        x: 3442
+        y: 1176
+        width: 490
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 490
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_4
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 2
+        width: 490
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_5
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 2
+        width: 490
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_6
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1765
+        width: 491
+        height: 584
+      alignment: 9
+      pivot: {x: 0, y: 1.0017123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_7
+      rect:
+        serializedVersion: 2
+        x: 2954
+        y: 2
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_8
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 2
+        width: 489
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_9
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 1765
+        width: 489
+        height: 584
+      alignment: 9
+      pivot: {x: 0, y: 1.0017123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_10
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1763
+        width: 489
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_11
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 1763
+        width: 489
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_12
+      rect:
+        serializedVersion: 2
+        x: 3446
+        y: 1763
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1178
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_14
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1178
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_15
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1178
+        width: 489
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_16
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1178
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_17
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1177
+        width: 488
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_18
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 1176
+        width: 488
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_19
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 1176
+        width: 488
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 591
+        width: 488
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_21
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 591
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_22
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 591
+        width: 488
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_23
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 591
+        width: 488
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_24
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 590
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_25
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 589
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_26
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 589
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_27
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 589
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_28
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 2350
+        width: 489
+        height: 584
+      alignment: 9
+      pivot: {x: 0, y: 1.0017123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_29
+      rect:
+        serializedVersion: 2
+        x: 2955
+        y: 2350
+        width: 489
+        height: 584
+      alignment: 9
+      pivot: {x: 0, y: 1.0017123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_30
+      rect:
+        serializedVersion: 2
+        x: 3446
+        y: 2350
+        width: 491
+        height: 584
+      alignment: 9
+      pivot: {x: 0, y: 1.0017123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1765
+        width: 491
+        height: 584
+      alignment: 9
+      pivot: {x: 0, y: 1.0017123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_32
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 4
+        width: 489
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_33
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 4
+        width: 491
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_34
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1765
+        width: 491
+        height: 584
+      alignment: 9
+      pivot: {x: 0, y: 1.0017123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_35
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 3
+        width: 490
+        height: 585
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_36
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 2351
+        width: 490
+        height: 583
+      alignment: 9
+      pivot: {x: 0, y: 1.0034305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_37
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 2351
+        width: 490
+        height: 583
+      alignment: 9
+      pivot: {x: 0, y: 1.0034305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_38
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 2351
+        width: 491
+        height: 583
+      alignment: 9
+      pivot: {x: 0, y: 1.0034305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: barbone_snorlax_39
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 2351
+        width: 491
+        height: 583
+      alignment: 9
+      pivot: {x: 0, y: 1.0034305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

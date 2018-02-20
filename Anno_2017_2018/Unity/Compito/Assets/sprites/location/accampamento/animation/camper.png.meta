@@ -1,0 +1,558 @@
+fileFormatVersion: 2
+guid: d28fd221f610484429fd971dd8bd4109
+timeCreated: 1518712252
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: camper
+    21300002: camper_0
+    21300004: camper_1
+    21300006: camper_2
+    21300008: camper_3
+    21300010: camper_4
+    21300012: camper_5
+    21300014: camper_6
+    21300016: camper_7
+    21300018: camper_8
+    21300020: camper_9
+    21300022: camper_10
+    21300024: camper_11
+    21300026: camper_12
+    21300028: camper_13
+    21300030: camper_14
+    21300032: camper_15
+    21300034: camper_16
+    21300036: camper_17
+    21300038: camper_18
+    21300040: camper_19
+    21300042: camper_20
+    21300044: camper_21
+    21300046: camper_22
+    21300048: camper_23
+    21300050: camper_24
+    21300052: camper_25
+    21300054: camper_26
+    21300056: camper_27
+    21300058: camper_28
+    21300060: camper_29
+    21300062: camper_30
+    21300064: camper_31
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: camper_0
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 4
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_1
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 192
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_2
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 13
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_3
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 174
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_4
+      rect:
+        serializedVersion: 2
+        x: 2411
+        y: 178
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_5
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 91
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_6
+      rect:
+        serializedVersion: 2
+        x: 2512
+        y: 12
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 508
+        width: 429
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016317016, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_8
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 401
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_9
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 501
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_10
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 8
+        width: 416
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016826924, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_11
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 508
+        width: 414
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016908212, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_12
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 85
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_13
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 87
+        width: 414
+        height: 370
+      alignment: 9
+      pivot: {x: -0.014492754, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_14
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 136
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_15
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 425
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_16
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 508
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_17
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 136
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_18
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 135
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_19
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 508
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_20
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 166
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_21
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 15
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_22
+      rect:
+        serializedVersion: 2
+        x: 3303
+        y: 91
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 138
+        width: 426
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016431924, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_24
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 376
+        width: 425
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016470589, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_25
+      rect:
+        serializedVersion: 2
+        x: 3022
+        y: 489
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_26
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 392
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_27
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 508
+        width: 428
+        height: 370
+      alignment: 9
+      pivot: {x: -0.01635514, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_28
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 508
+        width: 421
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016627079, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_29
+      rect:
+        serializedVersion: 2
+        x: 3585
+        y: 465
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_30
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 94
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: camper_31
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 381
+        width: 413
+        height: 370
+      alignment: 9
+      pivot: {x: -0.016949153, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,34 @@
+<root>
+  <ingredient name='Farina' description='Farina di grano duro 00.' cost='0.79'></ingredient>
+  <ingredient name='Prezzemolo' description='É velenoso, occhio a mangiarlo in grandi quantità.' cost='1.29'></ingredient>
+  <ingredient name='Olio di oliva' description='Olio extra-vergine di oliva.' cost='4.35'></ingredient>
+  <ingredient name='Acqua' description='H20. Non distillata.' cost='0.10'></ingredient>
+  <ingredient name='Sale' description='Sale marino fino.' cost='0.59'></ingredient>
+  <ingredient name='Pepe' description='Pepe nero macinato.' cost='1.20'></ingredient>
+  <ingredient name='Latte' description='Latte di mucca non scremato.' cost='0.82'></ingredient>
+  <ingredient name='Zucchero' description='Zucchero di barbabietola.' cost='1.65'></ingredient>
+  <ingredient name='Uova' description='Uova di gallina padovana.' cost='1.29'></ingredient>
+  <ingredient name='Lievito' description='Lievito di birra.' cost='0.35'></ingredient>
+  <ingredient name='Burro' description='Lubrifica le arterie.' cost='0.50'></ingredient>
+  <ingredient name='Ricotta' description='Ricotta di capra, non dolce.' cost='1.54'></ingredient>
+  <ingredient name='Cioccolato' description='Cioccolato fondente Novi.' cost='0.88'></ingredient>
+  <ingredient name='Melanzana' description='É una melanzana, cosa non capisci?' cost='0.53'></ingredient>
+  <ingredient name='Aglio' description='Aglio rosso DOP di Nubia.' cost='3.26'></ingredient>
+  <ingredient name='Pomodoro' description='Pomodoro di Pachino DOP.' cost='0.30'></ingredient>
+  <ingredient name='Basilico' description='Quella roba verde che metti di solito nel sugo. E profuma.' cost='0.35'></ingredient>
+  <ingredient name='Strutto' description='Altro ingrediente particolarmente salutare.' cost='0.39'></ingredient>
+  <ingredient name='Caffè' description='Direttamente dalle lande peruviane. Andale!' cost='0.90'></ingredient>
+  <ingredient name='Cannella' description='Macinata, rosa. Non in stecchetto.' cost='4.90'></ingredient>
+  <ingredient name='Aceto' description='Aceto di vino bianco.' cost='1.68'></ingredient>
+  <ingredient name='Marsala' description='Liquore dalla omonima città. Delicious!' cost='2.29'></ingredient>
+  <ingredient name='Ciliegia' description='Occhio alle camicie bianche.' cost='1.60'></ingredient>
+  <ingredient name='Pan di Spagna' description='Ivana!' cost='0.83'></ingredient>
+  <ingredient name='Pasta Reale' description='Quella roba che nessuno sa cosa sia ma è buonissima. Ah, è fatta con le mandorle.' cost='2.50'></ingredient>
+  <ingredient name='Candito' description='Frutta appiccicosa che non piace a nessuno.' cost='0.45'></ingredient>
+  <ingredient name='Rum' description='PIRATI!' cost='1.42'></ingredient>
+  <ingredient name='Limone' description='Succo di limone. Meglio se limone siciliano.' cost='0.40'></ingredient>
+  <ingredient name='Budella' description='Intestini di pecora. Bella roba, eh?' cost='0.05'></ingredient>
+  <ingredient name='Cipolla' description='Pedro. Amadeus. Per me è.' cost='0.35'></ingredient>
+  <ingredient name='Mandorla' description='Ci si fa la pasta reale, sapevi?' cost='0.95'></ingredient>
+  <ingredient name='Panna' description='Panna montata. Disparate applicazioni...' cost='0.63'></ingredient>
+</root>

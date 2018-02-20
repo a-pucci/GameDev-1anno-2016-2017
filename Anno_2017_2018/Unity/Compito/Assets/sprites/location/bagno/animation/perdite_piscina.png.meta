@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 51d2c28f2b6439745b591bcffdb9a0fa
+timeCreated: 1518712182
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: perdite_piscina
+    21300002: perdite_piscina_0
+    21300004: perdite_piscina_1
+    21300006: perdite_piscina_2
+    21300008: perdite_piscina_3
+    21300010: perdite_piscina_4
+    21300012: perdite_piscina_5
+    21300014: perdite_piscina_6
+    21300016: perdite_piscina_7
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: perdite_piscina_0
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 4
+        width: 715
+        height: 190
+      alignment: 9
+      pivot: {x: -0.06013986, y: 1.0631579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: perdite_piscina_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3
+        width: 719
+        height: 191
+      alignment: 9
+      pivot: {x: -0.059805285, y: 1.0628272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: perdite_piscina_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 8
+        width: 721
+        height: 186
+      alignment: 9
+      pivot: {x: -0.058252428, y: 1.0698925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: perdite_piscina_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6
+        width: 722
+        height: 188
+      alignment: 9
+      pivot: {x: -0.056786705, y: 1.0691489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: perdite_piscina_4
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 10
+        width: 720
+        height: 184
+      alignment: 9
+      pivot: {x: -0.05277778, y: 1.0706521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: perdite_piscina_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 4
+        width: 720
+        height: 190
+      alignment: 9
+      pivot: {x: -0.055555556, y: 1.0736842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: perdite_piscina_6
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 5
+        width: 716
+        height: 185
+      alignment: 9
+      pivot: {x: -0.060055867, y: 1.0702703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: perdite_piscina_7
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 4
+        width: 716
+        height: 190
+      alignment: 9
+      pivot: {x: -0.061452515, y: 1.0631579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

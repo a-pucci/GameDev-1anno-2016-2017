@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: d8bbf48e4155dfe46a87565d1c5eed84
+timeCreated: 1518712256
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ciccione_versa_sali
+    21300002: ciccione_versa_sali_1
+    21300004: ciccione_versa_sali_2
+    21300006: ciccione_versa_sali_3
+    21300008: ciccione_versa_sali_4
+    21300010: ciccione_versa_sali_5
+    21300012: ciccione_versa_sali_6
+    21300014: ciccione_versa_sali_7
+    21300016: ciccione_versa_sali_8
+    21300018: ciccione_versa_sali_9
+    21300020: ciccione_versa_sali_10
+    21300022: ciccione_versa_sali_11
+    21300024: ciccione_versa_sali_12
+    21300026: ciccione_versa_sali_13
+    21300028: ciccione_versa_sali_14
+    21300030: ciccione_versa_sali_15
+    21300032: ciccione_versa_sali_16
+    21300034: ciccione_versa_sali_17
+    21300036: ciccione_versa_sali_18
+    21300038: ciccione_versa_sali_19
+    21300040: ciccione_versa_sali_20
+    21300042: ciccione_versa_sali_21
+    21300044: ciccione_versa_sali_22
+    21300046: ciccione_versa_sali_23
+    21300048: ciccione_versa_sali_24
+    21300050: ciccione_versa_sali_25
+    21300052: ciccione_versa_sali_26
+    21300054: ciccione_versa_sali_27
+    21300056: ciccione_versa_sali_28
+    21300058: ciccione_versa_sali_29
+    21300060: ciccione_versa_sali_30
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ciccione_versa_sali_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 285
+        width: 29
+        height: 30
+      alignment: 9
+      pivot: {x: -7.206897, y: 6.233333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 825
+        width: 72
+        height: 69
+      alignment: 9
+      pivot: {x: -2.5416667, y: 2.7826087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 343
+        width: 85
+        height: 101
+      alignment: 9
+      pivot: {x: -2.0235295, y: 1.910891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_4
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 221
+        width: 95
+        height: 122
+      alignment: 9
+      pivot: {x: -1.7368422, y: 1.5737705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 50
+        width: 99
+        height: 149
+      alignment: 9
+      pivot: {x: -1.6363636, y: 1.3020134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 49
+        width: 116
+        height: 174
+      alignment: 9
+      pivot: {x: -1.3103448, y: 1.1149426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_7
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 201
+        width: 131
+        height: 194
+      alignment: 9
+      pivot: {x: -1.0839695, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_8
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 37
+        width: 120
+        height: 194
+      alignment: 9
+      pivot: {x: -1.2666667, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_9
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 5
+        width: 111
+        height: 194
+      alignment: 9
+      pivot: {x: -1.3873874, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_10
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 86
+        width: 140
+        height: 184
+      alignment: 9
+      pivot: {x: -0.9142857, y: 1.0543479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 92
+        width: 160
+        height: 161
+      alignment: 9
+      pivot: {x: -0.6875, y: 1.2049689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 370
+        width: 184
+        height: 157
+      alignment: 9
+      pivot: {x: -0.48369566, y: 1.2356688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_13
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 389
+        width: 194
+        height: 143
+      alignment: 9
+      pivot: {x: -0.3969072, y: 1.3566433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 256
+        width: 197
+        height: 131
+      alignment: 9
+      pivot: {x: -0.3604061, y: 1.480916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_15
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 340
+        width: 198
+        height: 132
+      alignment: 9
+      pivot: {x: -0.36868685, y: 1.469697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 213
+        width: 195
+        height: 132
+      alignment: 9
+      pivot: {x: -0.33846155, y: 1.469697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_17
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 464
+        width: 229
+        height: 130
+      alignment: 9
+      pivot: {x: -0.20087336, y: 1.4923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_18
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 673
+        width: 234
+        height: 129
+      alignment: 9
+      pivot: {x: -0.14957266, y: 1.503876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_19
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 930
+        width: 251
+        height: 136
+      alignment: 9
+      pivot: {x: -0.09163347, y: 1.4264706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_20
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 796
+        width: 261
+        height: 126
+      alignment: 9
+      pivot: {x: -0.057471264, y: 1.5396825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 525
+        width: 260
+        height: 126
+      alignment: 9
+      pivot: {x: -0.011538462, y: 1.5396825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_22
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1054
+        width: 265
+        height: 136
+      alignment: 9
+      pivot: {x: -0.041509435, y: 1.4264706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1038
+        width: 258
+        height: 152
+      alignment: 9
+      pivot: {x: -0.027131783, y: 1.2763158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 915
+        width: 268
+        height: 136
+      alignment: 9
+      pivot: {x: 0, y: 1.4264706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 629
+        width: 256
+        height: 135
+      alignment: 9
+      pivot: {x: -0.0390625, y: 1.437037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 722
+        width: 268
+        height: 125
+      alignment: 9
+      pivot: {x: -0.0037313432, y: 1.552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 820
+        width: 282
+        height: 122
+      alignment: 9
+      pivot: {x: 0, y: 1.590164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_28
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 565
+        width: 252
+        height: 128
+      alignment: 9
+      pivot: {x: -0.12698413, y: 1.515625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_29
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 576
+        width: 260
+        height: 72
+      alignment: 9
+      pivot: {x: -0.1, y: 2.6805556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_versa_sali_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1007
+        width: 32
+        height: 37
+      alignment: 9
+      pivot: {x: -0.625, y: 4.189189}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

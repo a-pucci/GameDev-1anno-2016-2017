@@ -1,0 +1,26 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:e8f071d4b0dd7383f76924af3fcb3d9d:657387ce40e9f3b76aea6a3b7fd3a900:5b3d6e9079860a6574b10bf337504af6$
+#
+:format=40300
+:texture=sheet0.png
+:size=964x1060
+:pivotpoints=enabled
+:borders=disabled
+
+bagno1_x_cameretta;383;291;210;769; 0;1; 0;0;0;0
+bidone_bagno_aperto;174;328;199;377; 0;1; 0;0;0;0
+bidone_bagno_chiuso;593;306;199;377; 0;1; 0;0;0;0
+finestra_bagno;0;705;383;355; 0;1; 0;0;0;0
+freccette;0;11;115;223; 0;1; 0;0;0;0
+gabinetto;593;683;240;377; 0;1; 0;0;0;0
+motosega;730;13;170;293; 0;1; 0;0;0;0
+orso;174;2;556;289; 0;1; 0;0;0;0
+paperella;833;693;113;100; 0;1; 0;0;0;0
+pensile_bagno;792;381;159;302; 0;1; 0;0;0;0
+scarico;0;234;174;471; 0;1; 0;0;0;0
+tracolla;833;793;128;267; 0;1; 0;0;0;0

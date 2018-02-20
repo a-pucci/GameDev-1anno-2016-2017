@@ -1,0 +1,423 @@
+fileFormatVersion: 2
+guid: 1703ec9bb976b2543b689ccaa62a83e9
+timeCreated: 1518712153
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skinny_sfonda_porta
+    21300002: skinny_sfonda_porta_1
+    21300004: skinny_sfonda_porta_2
+    21300006: skinny_sfonda_porta_3
+    21300008: skinny_sfonda_porta_4
+    21300010: skinny_sfonda_porta_5
+    21300012: skinny_sfonda_porta_6
+    21300014: skinny_sfonda_porta_7
+    21300016: skinny_sfonda_porta_8
+    21300018: skinny_sfonda_porta_9
+    21300020: skinny_sfonda_porta_10
+    21300022: skinny_sfonda_porta_11
+    21300024: skinny_sfonda_porta_12
+    21300026: skinny_sfonda_porta_13
+    21300028: skinny_sfonda_porta_14
+    21300030: skinny_sfonda_porta_15
+    21300032: skinny_sfonda_porta_16
+    21300034: skinny_sfonda_porta_17
+    21300036: skinny_sfonda_porta_18
+    21300038: skinny_sfonda_porta_19
+    21300040: skinny_sfonda_porta_20
+    21300042: skinny_sfonda_porta_21
+    21300044: skinny_sfonda_porta_22
+    21300046: skinny_sfonda_porta_23
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 124
+        width: 1
+        height: 1
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 121
+        width: 1
+        height: 1
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 43
+        width: 60
+        height: 45
+      alignment: 9
+      pivot: {x: -1.1166667, y: 2.4222221}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 50
+        width: 87
+        height: 80
+      alignment: 9
+      pivot: {x: -0.4597701, y: 1.225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 170
+        width: 108
+        height: 64
+      alignment: 9
+      pivot: {x: -0.17592593, y: 1.234375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 468
+        width: 125
+        height: 56
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 527
+        width: 127
+        height: 56
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 362
+        width: 121
+        height: 57
+      alignment: 9
+      pivot: {x: 0, y: 1.0350877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1040
+        width: 126
+        height: 64
+      alignment: 9
+      pivot: {x: -0.007936508, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 715
+        width: 126
+        height: 64
+      alignment: 9
+      pivot: {x: -0.007936508, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 780
+        width: 126
+        height: 64
+      alignment: 9
+      pivot: {x: -0.007936508, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 910
+        width: 126
+        height: 64
+      alignment: 9
+      pivot: {x: -0.007936508, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 845
+        width: 126
+        height: 64
+      alignment: 9
+      pivot: {x: -0.007936508, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 975
+        width: 126
+        height: 64
+      alignment: 9
+      pivot: {x: -0.007936508, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 586
+        width: 125
+        height: 58
+      alignment: 9
+      pivot: {x: 0, y: 1.0344827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 235
+        width: 119
+        height: 57
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 646
+        width: 119
+        height: 68
+      alignment: 9
+      pivot: {x: -0.067226894, y: 1.0294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 296
+        width: 113
+        height: 64
+      alignment: 9
+      pivot: {x: -0.123893805, y: 1.265625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 109
+        width: 102
+        height: 66
+      alignment: 9
+      pivot: {x: -0.24509804, y: 1.3030303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1081
+        width: 107
+        height: 89
+      alignment: 9
+      pivot: {x: -0.18691589, y: 1.2022471}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 401
+        width: 96
+        height: 83
+      alignment: 9
+      pivot: {x: -0.32291666, y: 1.2289157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 74
+        height: 76
+      alignment: 9
+      pivot: {x: -0.7162162, y: 1.4210526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_sfonda_porta_23
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 278
+        width: 71
+        height: 57
+      alignment: 9
+      pivot: {x: -0.7887324, y: 1.9473684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,483 @@
+fileFormatVersion: 2
+guid: 00cb1bbc5052b88449614c48edcd4676
+timeCreated: 1518712140
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skinny_bidone_bagno
+    21300002: skinny_bidone_bagno_1
+    21300004: skinny_bidone_bagno_2
+    21300006: skinny_bidone_bagno_3
+    21300008: skinny_bidone_bagno_4
+    21300010: skinny_bidone_bagno_5
+    21300012: skinny_bidone_bagno_6
+    21300014: skinny_bidone_bagno_7
+    21300016: skinny_bidone_bagno_8
+    21300018: skinny_bidone_bagno_9
+    21300020: skinny_bidone_bagno_10
+    21300022: skinny_bidone_bagno_11
+    21300024: skinny_bidone_bagno_12
+    21300026: skinny_bidone_bagno_13
+    21300028: skinny_bidone_bagno_14
+    21300030: skinny_bidone_bagno_15
+    21300032: skinny_bidone_bagno_16
+    21300034: skinny_bidone_bagno_17
+    21300036: skinny_bidone_bagno_18
+    21300038: skinny_bidone_bagno_19
+    21300040: skinny_bidone_bagno_20
+    21300042: skinny_bidone_bagno_21
+    21300044: skinny_bidone_bagno_22
+    21300046: skinny_bidone_bagno_23
+    21300048: skinny_bidone_bagno_24
+    21300050: skinny_bidone_bagno_25
+    21300052: skinny_bidone_bagno_26
+    21300054: skinny_bidone_bagno_27
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 513
+        width: 210
+        height: 501
+      alignment: 9
+      pivot: {x: 0, y: 1.007984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 514
+        width: 208
+        height: 500
+      alignment: 9
+      pivot: {x: 0, y: 1.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_3
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 509
+        width: 198
+        height: 505
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 509
+        width: 183
+        height: 505
+      alignment: 9
+      pivot: {x: -0.15846995, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_5
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 2
+        width: 171
+        height: 505
+      alignment: 9
+      pivot: {x: -0.2631579, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_6
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 2
+        width: 172
+        height: 505
+      alignment: 9
+      pivot: {x: -0.25581396, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_7
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 2
+        width: 172
+        height: 505
+      alignment: 9
+      pivot: {x: -0.24418604, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_8
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 2
+        width: 173
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23699422, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_9
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 2
+        width: 173
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23699422, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_10
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 509
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_11
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 509
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_12
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 509
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_13
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 509
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_14
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 509
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_15
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 509
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_16
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 509
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_18
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 2
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_19
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 2
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_20
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 2
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_21
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 2
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_22
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 2
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.23428571, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_23
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 2
+        width: 175
+        height: 505
+      alignment: 9
+      pivot: {x: -0.21714285, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_24
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 7
+        width: 189
+        height: 505
+      alignment: 9
+      pivot: {x: -0.12698413, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_25
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 509
+        width: 183
+        height: 505
+      alignment: 9
+      pivot: {x: -0.07650273, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6
+        width: 186
+        height: 505
+      alignment: 9
+      pivot: {x: -0.016129032, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_bidone_bagno_27
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 509
+        width: 184
+        height: 505
+      alignment: 9
+      pivot: {x: -0.027173912, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+<location background="bagno1" foreground="True" parallax="0,0" status="0" area="bagno1" ost="bagno1_theme">
+  <scene name="pillole_pensile" shown="True" />
+  <scene name="perdita_lavandino_foreground" shown="True" />
+  <scene name="freccetta_bagno" shown="True" />
+  <scene name="fascio_luce" shown="True" />
+  <scene name="luce" shown="True" />
+  <hotspots>
+    <character ID="tutorial" name="+++" DX="0" DY="0" mask="null" MX="960" MY="70" bitmap="" position="fore" internal="0" CX="0" CY="0" VX="0" VY="0" shown="True" textcolor="white" textalignment="centercenter" textwidth="900" />
+    <character ID="traslocatore_scemo" name="+++" DX="0" DY="0" mask="null" X="1121" Y="409" bitmap="traslocatore_scemo" position="default" internal="0" CX="0" CY="0" VX="0" VY="0" shown="False" />
+    <item ID="motosega" DX="643" DY="964" mask="motosega" MX="243" MY="246" bitmap="" position="back" internal="0" CX="0" CY="0" VX="335" VY="455" shown="True" name="bag_motosega_name_0" />
+    <item ID="tracolla" DX="797" DY="781" mask="null" X="651" Y="270" bitmap="tracolla_chiusa" position="back" internal="0" CX="714" CY="689" VX="723" VY="476" shown="True" name="bag_tracolla_name_0" />
+    <item ID="paperella di gomma" DX="643" DY="964" mask="paperella" X="386" Y="593" bitmap="paperella" position="back" CX="448" CY="967" internal="0" shown="True" VX="436" VY="642" name="bag_paperella di gomma_name_0" />
+    <item ID="sommo trono" DX="1252" DY="757" mask="gabinetto" X="1369" Y="420" bitmap="gabinetto" position="back" CX="1479" CY="738" VX="1472" VY="617" internal="0" shown="True" name="bag_sommo trono_name_0" />
+    <item ID="scarico" DX="1252" DY="757" mask="scarico" X="1474" Y="37" bitmap="scarico" position="back" CX="1479" CY="738" VX="1520" VY="131" internal="0" shown="True" name="bag_scarico_name_0" />
+    <action ID="pensile" DX="1252" DY="757" mask="pensile_bagno" MX="1160" MY="134" bitmap="" position="back" VX="1250" VY="293" internal="0" shown="True" label="bag_pensile_label_0" name="bag_pensile_name_0" />
+    <action ID="freccette" DX="1669" DY="1038" mask="freccette" MX="1805" MY="366" bitmap="" position="back" CX="1821" CY="1020" VX="1867" VY="477" internal="0" shown="True" label="bag_freccette_label_0" name="bag_freccette_name_0" />
+    <action ID="finestra" DX="959" DY="750" mask="finestra_bagno" MX="762" MY="126" bitmap="" position="back" VX="958" VY="332" internal="0" shown="True" label="bag_finestra_label_0" name="bag_finestra_name_0" />
+    <character ID="Orso" DX="1014" DY="868" mask="orso" X="748" Y="709" bitmap="orso" position="default" CX="1014" CY="932" TX="1013" TY="860" VX="1014" VY="939" internal="0" shown="True" hastalkie="True" textcolor="yellow" name="bag_Orso_name_0" />
+    <goto ID="bagno1_x_cameretta" DX="1599" DY="884" mask="bagno1_x_cameretta" X="1611" Y="190" bitmap="porta_bagno_chiusa" position="back" CX="1706" CY="857" VX="1684" VY="588" internal="0" shown="True" />
+    <action ID="bidone" DX="1669" DY="1038" mask="bidone_bagno_chiuso" X="1731" Y="714" bitmap="bidone_bagno_chiuso" position="back" CX="1821" CY="1020" VX="1821" VY="960" internal="0" shown="True" label="bag_bidone_label_0" name="bag_bidone_name_0" />
+  </hotspots>
+</location>

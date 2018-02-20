@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: 79ca85e15ba669f408f3497eb6cedaaf
+timeCreated: 1518712209
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: piranha
+    21300002: piranha_0
+    21300004: piranha_1
+    21300006: piranha_2
+    21300008: piranha_3
+    21300010: piranha_4
+    21300012: piranha_5
+    21300014: piranha_6
+    21300016: piranha_7
+    21300018: piranha_8
+    21300020: piranha_9
+    21300022: piranha_10
+    21300024: piranha_11
+    21300026: piranha_12
+    21300028: piranha_13
+    21300030: piranha_14
+    21300032: piranha_15
+    21300034: piranha_16
+    21300036: piranha_17
+    21300038: piranha_18
+    21300040: piranha_19
+    21300042: piranha_20
+    21300044: piranha_21
+    21300046: piranha_22
+    21300048: piranha_23
+    21300050: piranha_24
+    21300052: piranha_25
+    21300054: piranha_26
+    21300056: piranha_27
+    21300058: piranha_28
+    21300060: piranha_29
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: piranha_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2006
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2006
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1148
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_3
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 576
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 290
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_5
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 290
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_6
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 290
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_7
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 290
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_9
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 4
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_10
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 2006
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_11
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 2006
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1720
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_13
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1720
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_14
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1720
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_15
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1720
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1434
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_17
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1434
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_18
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1434
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_19
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1434
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_20
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1148
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_21
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1148
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_22
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1148
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 862
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_24
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 862
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_25
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 862
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_26
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 862
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 576
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_28
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 576
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piranha_29
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 576
+        width: 465
+        height: 284
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

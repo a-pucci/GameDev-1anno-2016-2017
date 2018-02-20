@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using System.Xml;
 
-public class XMLCleaner : MonoBehaviour {
-
-    [ContextMenu("Clear XML")]
-    void ClearXML()
+public static class XMLCleaner
+{
+    [MenuItem("Pokedex/ClearXML")]
+    static void ClearXML()
     {
         string[] toRemove = { "ability", "exp", "ratio", "egg-group", "species", "moves" };
 

@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 44bdcf97e83310c44ae10c1849a0d115
+timeCreated: 1518712167
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skinny_gabinetto2
+    21300002: skinny_gabinetto2_15
+    21300004: skinny_gabinetto2_16
+    21300006: skinny_gabinetto2_17
+    21300008: skinny_gabinetto2_18
+    21300010: skinny_gabinetto2_19
+    21300012: skinny_gabinetto2_20
+    21300014: skinny_gabinetto2_21
+    21300016: skinny_gabinetto2_22
+    21300018: skinny_gabinetto2_23
+    21300020: skinny_gabinetto2_24
+    21300022: skinny_gabinetto2_25
+    21300024: skinny_gabinetto2_26
+    21300026: skinny_gabinetto2_27
+    21300028: skinny_gabinetto2_28
+    21300030: skinny_gabinetto2_29
+    21300032: skinny_gabinetto2_30
+    21300034: skinny_gabinetto2_31
+    21300036: skinny_gabinetto2_32
+    21300038: skinny_gabinetto2_33
+    21300040: skinny_gabinetto2_34
+    21300042: skinny_gabinetto2_35
+    21300044: skinny_gabinetto2_36
+    21300046: skinny_gabinetto2_37
+    21300048: skinny_gabinetto2_38
+    21300050: skinny_gabinetto2_39
+    21300052: skinny_gabinetto2_40
+    21300054: skinny_gabinetto2_41
+    21300056: skinny_gabinetto2_42
+    21300058: skinny_gabinetto2_43
+    21300060: skinny_gabinetto2_44
+    21300062: skinny_gabinetto2_45
+    21300064: skinny_gabinetto2_46
+    21300066: skinny_gabinetto2_47
+    21300068: skinny_gabinetto2_48
+    21300070: skinny_gabinetto2_49
+    21300072: skinny_gabinetto2_50
+    21300074: skinny_gabinetto2_51
+    21300076: skinny_gabinetto2_52
+    21300078: skinny_gabinetto2_53
+    21300080: skinny_gabinetto2_54
+    21300082: skinny_gabinetto2_55
+    21300084: skinny_gabinetto2_56
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skinny_gabinetto2_15
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 756
+        width: 280
+        height: 752
+      alignment: 9
+      pivot: {x: -0.014285714, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_16
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 1510
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_17
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 756
+        width: 284
+        height: 752
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_18
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 756
+        width: 281
+        height: 752
+      alignment: 9
+      pivot: {x: -0.010676157, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 2
+        width: 284
+        height: 752
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_20
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 2
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_21
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 756
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_22
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 1510
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1510
+        width: 291
+        height: 752
+      alignment: 9
+      pivot: {x: -0.01718213, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_24
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 2
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_25
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 756
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_26
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 1510
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_27
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 2
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_28
+      rect:
+        serializedVersion: 2
+        x: 2848
+        y: 756
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_29
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1510
+        width: 281
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017793594, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_30
+      rect:
+        serializedVersion: 2
+        x: 3132
+        y: 1510
+        width: 277
+        height: 752
+      alignment: 9
+      pivot: {x: -0.018050542, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_31
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 757
+        width: 276
+        height: 751
+      alignment: 9
+      pivot: {x: -0.018115941, y: 1.0013316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_32
+      rect:
+        serializedVersion: 2
+        x: 3688
+        y: 758
+        width: 273
+        height: 750
+      alignment: 9
+      pivot: {x: -0.01831502, y: 1.0026667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_33
+      rect:
+        serializedVersion: 2
+        x: 3686
+        y: 3
+        width: 273
+        height: 752
+      alignment: 9
+      pivot: {x: -0.01831502, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_34
+      rect:
+        serializedVersion: 2
+        x: 3688
+        y: 1510
+        width: 273
+        height: 752
+      alignment: 9
+      pivot: {x: -0.01831502, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_35
+      rect:
+        serializedVersion: 2
+        x: 3411
+        y: 1510
+        width: 273
+        height: 752
+      alignment: 9
+      pivot: {x: -0.01831502, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 756
+        width: 291
+        height: 752
+      alignment: 9
+      pivot: {x: -0.01718213, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_37
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 291
+        height: 752
+      alignment: 9
+      pivot: {x: -0.01718213, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_38
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 756
+        width: 281
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017793594, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_39
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 2
+        width: 276
+        height: 752
+      alignment: 9
+      pivot: {x: -0.018115941, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_40
+      rect:
+        serializedVersion: 2
+        x: 2851
+        y: 1510
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_41
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 2
+        width: 277
+        height: 752
+      alignment: 9
+      pivot: {x: -0.018050542, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_42
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1510
+        width: 289
+        height: 752
+      alignment: 9
+      pivot: {x: -0.013840831, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_43
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 2
+        width: 283
+        height: 752
+      alignment: 9
+      pivot: {x: -0.003533569, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_44
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1510
+        width: 281
+        height: 752
+      alignment: 9
+      pivot: {x: -0.010676157, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_45
+      rect:
+        serializedVersion: 2
+        x: 2848
+        y: 2
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_46
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2
+        width: 283
+        height: 752
+      alignment: 9
+      pivot: {x: -0.003533569, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_47
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 756
+        width: 284
+        height: 752
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_48
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 756
+        width: 283
+        height: 752
+      alignment: 9
+      pivot: {x: -0.003533569, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_49
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1510
+        width: 282
+        height: 752
+      alignment: 9
+      pivot: {x: -0.0070921984, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_50
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1510
+        width: 284
+        height: 752
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_51
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 2
+        width: 284
+        height: 752
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_52
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 756
+        width: 284
+        height: 752
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_53
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 2
+        width: 281
+        height: 752
+      alignment: 9
+      pivot: {x: -0.010676157, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_54
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 2
+        width: 283
+        height: 752
+      alignment: 9
+      pivot: {x: -0.003533569, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_55
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1510
+        width: 284
+        height: 752
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_gabinetto2_56
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 756
+        width: 279
+        height: 752
+      alignment: 9
+      pivot: {x: -0.017921148, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

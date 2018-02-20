@@ -1,0 +1,573 @@
+fileFormatVersion: 2
+guid: a0df13682d831a3459b481996600c256
+timeCreated: 1518712244
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: maiali
+    21300002: maiali_0
+    21300004: maiali_1
+    21300006: maiali_2
+    21300008: maiali_3
+    21300010: maiali_4
+    21300012: maiali_5
+    21300014: maiali_6
+    21300016: maiali_7
+    21300018: maiali_8
+    21300020: maiali_9
+    21300022: maiali_10
+    21300024: maiali_11
+    21300026: maiali_12
+    21300028: maiali_13
+    21300030: maiali_14
+    21300032: maiali_15
+    21300034: maiali_16
+    21300036: maiali_17
+    21300038: maiali_18
+    21300040: maiali_19
+    21300042: maiali_20
+    21300044: maiali_21
+    21300046: maiali_22
+    21300048: maiali_23
+    21300050: maiali_24
+    21300052: maiali_25
+    21300054: maiali_26
+    21300056: maiali_27
+    21300058: maiali_28
+    21300060: maiali_29
+    21300062: maiali_30
+    21300064: maiali_31
+    21300066: maiali_32
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: maiali_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1153
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3737
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3267
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1622
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_4
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2100
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 3
+        width: 382
+        height: 230
+      alignment: 9
+      pivot: {x: 0, y: 1.0130435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_6
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 468
+        width: 382
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.008658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1387
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1866
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_9
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 235
+        width: 382
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.008658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 919
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_11
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1633
+        width: 382
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.008658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 685
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_13
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1400
+        width: 382
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.008658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 451
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_15
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1167
+        width: 382
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.008658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 217
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_17
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 934
+        width: 382
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.008658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3502
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_19
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 701
+        width: 382
+        height: 231
+      alignment: 9
+      pivot: {x: 0, y: 1.008658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3032
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2797
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2562
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2327
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2092
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_25
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 3738
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1857
+        width: 382
+        height: 233
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_27
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 3504
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_28
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 3270
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_29
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 3036
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_30
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2802
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_31
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2568
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: maiali_32
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2334
+        width: 382
+        height: 232
+      alignment: 9
+      pivot: {x: 0, y: 1.0043104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,618 @@
+fileFormatVersion: 2
+guid: b1ab39ce3251ced4e833d29ba03a018d
+timeCreated: 1518712248
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skinny_prende_pass
+    21300002: skinny_prende_pass_0
+    21300004: skinny_prende_pass_1
+    21300006: skinny_prende_pass_2
+    21300008: skinny_prende_pass_3
+    21300010: skinny_prende_pass_4
+    21300012: skinny_prende_pass_5
+    21300014: skinny_prende_pass_6
+    21300016: skinny_prende_pass_7
+    21300018: skinny_prende_pass_8
+    21300020: skinny_prende_pass_9
+    21300022: skinny_prende_pass_10
+    21300024: skinny_prende_pass_11
+    21300026: skinny_prende_pass_12
+    21300028: skinny_prende_pass_13
+    21300030: skinny_prende_pass_14
+    21300032: skinny_prende_pass_15
+    21300034: skinny_prende_pass_16
+    21300036: skinny_prende_pass_17
+    21300038: skinny_prende_pass_18
+    21300040: skinny_prende_pass_19
+    21300042: skinny_prende_pass_20
+    21300044: skinny_prende_pass_21
+    21300046: skinny_prende_pass_22
+    21300048: skinny_prende_pass_23
+    21300050: skinny_prende_pass_24
+    21300052: skinny_prende_pass_25
+    21300054: skinny_prende_pass_26
+    21300056: skinny_prende_pass_27
+    21300058: skinny_prende_pass_28
+    21300060: skinny_prende_pass_29
+    21300062: skinny_prende_pass_30
+    21300064: skinny_prende_pass_31
+    21300066: skinny_prende_pass_32
+    21300068: skinny_prende_pass_33
+    21300070: skinny_prende_pass_34
+    21300072: skinny_prende_pass_35
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skinny_prende_pass_0
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1730
+        width: 184
+        height: 509
+      alignment: 9
+      pivot: {x: -0.097826086, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_1
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 2502
+        width: 191
+        height: 508
+      alignment: 9
+      pivot: {x: -0.07853403, y: 1.003937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_2
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1535
+        width: 182
+        height: 507
+      alignment: 9
+      pivot: {x: -0.10989011, y: 1.0059172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_3
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 2458
+        width: 179
+        height: 510
+      alignment: 9
+      pivot: {x: -0.13407822, y: 1.0019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_4
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 675
+        width: 208
+        height: 507
+      alignment: 9
+      pivot: {x: -0.115384616, y: 1.0059172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_5
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 2072
+        width: 245
+        height: 509
+      alignment: 9
+      pivot: {x: -0.11020408, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_6
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 686
+        width: 268
+        height: 509
+      alignment: 9
+      pivot: {x: -0.108208954, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2312
+        width: 268
+        height: 508
+      alignment: 9
+      pivot: {x: -0.1119403, y: 1.003937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1276
+        width: 271
+        height: 509
+      alignment: 9
+      pivot: {x: -0.09594096, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_9
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1746
+        width: 264
+        height: 510
+      alignment: 9
+      pivot: {x: -0.125, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_10
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 345
+        width: 250
+        height: 510
+      alignment: 9
+      pivot: {x: -0.132, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_11
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1455
+        width: 250
+        height: 510
+      alignment: 9
+      pivot: {x: -0.132, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_12
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 984
+        width: 250
+        height: 510
+      alignment: 9
+      pivot: {x: -0.132, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_13
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1499
+        width: 309
+        height: 510
+      alignment: 9
+      pivot: {x: -0.106796116, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1990
+        width: 317
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10410095, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_15
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 589
+        width: 307
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10749186, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1400
+        width: 313
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10543131, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_17
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1745
+        width: 313
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10543131, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_18
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1156
+        width: 313
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10543131, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_19
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 934
+        width: 306
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10784314, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_20
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1970
+        width: 306
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10784314, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_21
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 344
+        width: 306
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10784314, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 247
+        width: 306
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10784314, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_23
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2
+        width: 306
+        height: 510
+      alignment: 9
+      pivot: {x: -0.10784314, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2501
+        width: 317
+        height: 509
+      alignment: 9
+      pivot: {x: -0.08201893, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2502
+        width: 325
+        height: 508
+      alignment: 9
+      pivot: {x: -0.092307694, y: 1.003937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 868
+        width: 309
+        height: 509
+      alignment: 9
+      pivot: {x: -0.097087376, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_27
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 40
+        width: 295
+        height: 509
+      alignment: 9
+      pivot: {x: -0.06779661, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_28
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 4
+        width: 238
+        height: 508
+      alignment: 9
+      pivot: {x: -0.084033616, y: 1.003937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_29
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 722
+        width: 179
+        height: 508
+      alignment: 9
+      pivot: {x: -0.12849163, y: 1.003937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_30
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1130
+        width: 191
+        height: 507
+      alignment: 9
+      pivot: {x: -0.083769634, y: 1.0059172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_31
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 169
+        width: 184
+        height: 510
+      alignment: 9
+      pivot: {x: -0.097826086, y: 1.0019608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_32
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1227
+        width: 184
+        height: 509
+      alignment: 9
+      pivot: {x: -0.097826086, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_33
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 37
+        width: 184
+        height: 509
+      alignment: 9
+      pivot: {x: -0.097826086, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_34
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 625
+        width: 184
+        height: 509
+      alignment: 9
+      pivot: {x: -0.097826086, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_pass_35
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2160
+        width: 184
+        height: 509
+      alignment: 9
+      pivot: {x: -0.097826086, y: 1.0019647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

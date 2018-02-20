@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 01e32b78639578c4481487b018cf9dc0
+timeCreated: 1518712142
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ciccione_riaffiora
+    21300002: ciccione_riaffiora_23
+    21300004: ciccione_riaffiora_24
+    21300006: ciccione_riaffiora_25
+    21300008: ciccione_riaffiora_26
+    21300010: ciccione_riaffiora_27
+    21300012: ciccione_riaffiora_28
+    21300014: ciccione_riaffiora_29
+    21300016: ciccione_riaffiora_30
+    21300018: ciccione_riaffiora_31
+    21300020: ciccione_riaffiora_32
+    21300022: ciccione_riaffiora_33
+    21300024: ciccione_riaffiora_34
+    21300026: ciccione_riaffiora_35
+    21300028: ciccione_riaffiora_36
+    21300030: ciccione_riaffiora_37
+    21300032: ciccione_riaffiora_38
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ciccione_riaffiora_23
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 897
+        width: 122
+        height: 39
+      alignment: 9
+      pivot: {x: -1.4180328, y: 9.974359}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1883
+        width: 165
+        height: 76
+      alignment: 9
+      pivot: {x: -0.94545454, y: 5.1842103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 166
+        height: 106
+      alignment: 9
+      pivot: {x: -0.939759, y: 3.6698112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_26
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 83
+        width: 178
+        height: 147
+      alignment: 9
+      pivot: {x: -0.78089887, y: 2.680272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_27
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 223
+        width: 172
+        height: 169
+      alignment: 9
+      pivot: {x: -0.8488372, y: 2.331361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 216
+        width: 191
+        height: 199
+      alignment: 9
+      pivot: {x: -0.7382199, y: 1.9547739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 403
+        width: 239
+        height: 233
+      alignment: 9
+      pivot: {x: -0.44769874, y: 1.695279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 628
+        width: 270
+        height: 285
+      alignment: 9
+      pivot: {x: -0.29259259, y: 1.4596491}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 907
+        width: 302
+        height: 322
+      alignment: 9
+      pivot: {x: -0.15562914, y: 1.2919254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1217
+        width: 342
+        height: 355
+      alignment: 9
+      pivot: {x: -0.020467836, y: 1.171831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1563
+        width: 349
+        height: 381
+      alignment: 9
+      pivot: {x: 0, y: 1.0918635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3170
+        width: 349
+        height: 413
+      alignment: 9
+      pivot: {x: 0, y: 1.0048426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2761
+        width: 349
+        height: 411
+      alignment: 9
+      pivot: {x: 0, y: 1.0097324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3582
+        width: 349
+        height: 416
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_37
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2350
+        width: 349
+        height: 411
+      alignment: 9
+      pivot: {x: 0, y: 1.0121654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_riaffiora_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1940
+        width: 349
+        height: 408
+      alignment: 9
+      pivot: {x: 0, y: 1.0171568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 3adc581fc902b9b4d813d03df86f78c4
+timeCreated: 1518712159
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skinny_prende_premio
+    21300002: skinny_prende_premio_4
+    21300004: skinny_prende_premio_5
+    21300006: skinny_prende_premio_6
+    21300008: skinny_prende_premio_7
+    21300010: skinny_prende_premio_8
+    21300012: skinny_prende_premio_9
+    21300014: skinny_prende_premio_10
+    21300016: skinny_prende_premio_11
+    21300018: skinny_prende_premio_12
+    21300020: skinny_prende_premio_13
+    21300022: skinny_prende_premio_14
+    21300024: skinny_prende_premio_15
+    21300026: skinny_prende_premio_16
+    21300028: skinny_prende_premio_17
+    21300030: skinny_prende_premio_18
+    21300032: skinny_prende_premio_19
+    21300034: skinny_prende_premio_20
+    21300036: skinny_prende_premio_21
+    21300038: skinny_prende_premio_22
+    21300040: skinny_prende_premio_23
+    21300042: skinny_prende_premio_24
+    21300044: skinny_prende_premio_25
+    21300046: skinny_prende_premio_26
+    21300048: skinny_prende_premio_27
+    21300050: skinny_prende_premio_28
+    21300052: skinny_prende_premio_29
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skinny_prende_premio_4
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 2
+        width: 199
+        height: 518
+      alignment: 9
+      pivot: {x: -0.6482412, y: 1.0019305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 8
+        width: 198
+        height: 512
+      alignment: 9
+      pivot: {x: -0.6515151, y: 1.0136719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 8
+        width: 237
+        height: 512
+      alignment: 9
+      pivot: {x: -0.37130803, y: 1.0136719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_7
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 522
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_8
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 522
+        width: 294
+        height: 511
+      alignment: 9
+      pivot: {x: -0.071428575, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_9
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 522
+        width: 294
+        height: 511
+      alignment: 9
+      pivot: {x: -0.05782313, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_10
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 6
+        width: 292
+        height: 514
+      alignment: 9
+      pivot: {x: -0.06849315, y: 1.0097276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1035
+        width: 295
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06440678, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_12
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1035
+        width: 295
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06440678, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_13
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1035
+        width: 301
+        height: 511
+      alignment: 9
+      pivot: {x: -0.04318937, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_14
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1035
+        width: 294
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06802721, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_15
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1035
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_16
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 1035
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_17
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1035
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_18
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1035
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 522
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 522
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_21
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 522
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_22
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 522
+        width: 296
+        height: 511
+      alignment: 9
+      pivot: {x: -0.06081081, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_23
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 6
+        width: 294
+        height: 514
+      alignment: 9
+      pivot: {x: -0.06122449, y: 1.0097276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_24
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 522
+        width: 303
+        height: 511
+      alignment: 9
+      pivot: {x: -0.026402641, y: 1.0156556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_25
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 7
+        width: 316
+        height: 513
+      alignment: 9
+      pivot: {x: 0, y: 1.0116959}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_26
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 7
+        width: 238
+        height: 513
+      alignment: 9
+      pivot: {x: -0.34453782, y: 1.0116959}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 198
+        height: 512
+      alignment: 9
+      pivot: {x: -0.6515151, y: 1.0136719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_28
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 2
+        width: 199
+        height: 518
+      alignment: 9
+      pivot: {x: -0.6482412, y: 1.0019305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_prende_premio_29
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 2
+        width: 189
+        height: 518
+      alignment: 9
+      pivot: {x: -0.6931217, y: 1.0019305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

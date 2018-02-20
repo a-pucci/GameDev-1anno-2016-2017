@@ -1,0 +1,918 @@
+fileFormatVersion: 2
+guid: 626f9f0b894b9014c87cdb39142dc6a6
+timeCreated: 1518712194
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: marionettista_porge_premio
+    21300002: marionettista_106
+    21300004: marionettista_107
+    21300006: marionettista_108
+    21300008: marionettista_109
+    21300010: marionettista_110
+    21300012: marionettista_111
+    21300014: marionettista_112
+    21300016: marionettista_113
+    21300018: marionettista_114
+    21300020: marionettista_115
+    21300022: marionettista_116
+    21300024: marionettista_117
+    21300026: marionettista_118
+    21300028: marionettista_119
+    21300030: marionettista_120
+    21300032: marionettista_121
+    21300034: marionettista_122
+    21300036: marionettista_123
+    21300038: marionettista_124
+    21300040: marionettista_125
+    21300042: marionettista_126
+    21300044: marionettista_127
+    21300046: marionettista_128
+    21300048: marionettista_129
+    21300050: marionettista_130
+    21300052: marionettista_131
+    21300054: marionettista_132
+    21300056: marionettista_133
+    21300058: marionettista_134
+    21300060: marionettista_135
+    21300062: marionettista_136
+    21300064: marionettista_137
+    21300066: marionettista_138
+    21300068: marionettista_139
+    21300070: marionettista_140
+    21300072: marionettista_141
+    21300074: marionettista_142
+    21300076: marionettista_143
+    21300078: marionettista_144
+    21300080: marionettista_145
+    21300082: marionettista_146
+    21300084: marionettista_147
+    21300086: marionettista_148
+    21300088: marionettista_149
+    21300090: marionettista_150
+    21300092: marionettista_151
+    21300094: marionettista_152
+    21300096: marionettista_153
+    21300098: marionettista_154
+    21300100: marionettista_155
+    21300102: marionettista_156
+    21300104: marionettista_157
+    21300106: marionettista_158
+    21300108: marionettista_159
+    21300110: marionettista_160
+    21300112: marionettista_161
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: marionettista_106
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 405
+        width: 239
+        height: 295
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0779661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_107
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 566
+        width: 238
+        height: 293
+      alignment: 9
+      pivot: {x: -0.071428575, y: 1.0784982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_108
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 1434
+        width: 248
+        height: 296
+      alignment: 9
+      pivot: {x: -0.044354837, y: 1.070946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_109
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 931
+        width: 238
+        height: 306
+      alignment: 9
+      pivot: {x: -0.0882353, y: 1.0751634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_110
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 178
+        width: 244
+        height: 283
+      alignment: 9
+      pivot: {x: -0.06147541, y: 1.0742049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_111
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1164
+        width: 241
+        height: 283
+      alignment: 9
+      pivot: {x: -0.0746888, y: 1.0812721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_112
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1420
+        width: 247
+        height: 310
+      alignment: 9
+      pivot: {x: -0.032388665, y: 1.067742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_113
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 886
+        width: 236
+        height: 311
+      alignment: 9
+      pivot: {x: -0.08050848, y: 1.0675241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_114
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 790
+        width: 248
+        height: 292
+      alignment: 9
+      pivot: {x: -0.06451613, y: 1.0719178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_115
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 469
+        width: 241
+        height: 294
+      alignment: 9
+      pivot: {x: -0.0746888, y: 1.0748299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_116
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1437
+        width: 251
+        height: 293
+      alignment: 9
+      pivot: {x: -0.05179283, y: 1.0750853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_117
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1171
+        width: 241
+        height: 312
+      alignment: 9
+      pivot: {x: -0.0746888, y: 1.073718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_118
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 322
+        width: 238
+        height: 292
+      alignment: 9
+      pivot: {x: -0.0882353, y: 1.0787672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_119
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 439
+        width: 240
+        height: 294
+      alignment: 9
+      pivot: {x: -0.079166666, y: 1.0680273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_120
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 638
+        width: 248
+        height: 291
+      alignment: 9
+      pivot: {x: -0.044354837, y: 1.0790378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_121
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1078
+        width: 247
+        height: 290
+      alignment: 9
+      pivot: {x: -0.048582997, y: 1.0793103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_122
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1427
+        width: 248
+        height: 303
+      alignment: 9
+      pivot: {x: -0.048387095, y: 1.0759076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_123
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1175
+        width: 239
+        height: 292
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0719178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_124
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 922
+        width: 238
+        height: 311
+      alignment: 9
+      pivot: {x: -0.0882353, y: 1.0610932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_125
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1027
+        width: 244
+        height: 294
+      alignment: 9
+      pivot: {x: -0.06147541, y: 1.0714285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_126
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 958
+        width: 237
+        height: 314
+      alignment: 9
+      pivot: {x: -0.07594936, y: 1.066879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_127
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1419
+        width: 234
+        height: 311
+      alignment: 9
+      pivot: {x: -0.08974359, y: 1.0675241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_128
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1174
+        width: 239
+        height: 312
+      alignment: 9
+      pivot: {x: -0.07949791, y: 1.0608975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_129
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1212
+        width: 242
+        height: 311
+      alignment: 9
+      pivot: {x: -0.07024793, y: 1.0739549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_130
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 363
+        width: 236
+        height: 283
+      alignment: 9
+      pivot: {x: -0.097457625, y: 1.0777385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_131
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 665
+        width: 236
+        height: 309
+      alignment: 9
+      pivot: {x: -0.097457625, y: 1.0647249}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_132
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 914
+        width: 231
+        height: 288
+      alignment: 9
+      pivot: {x: -0.103896104, y: 1.0798612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_133
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 613
+        width: 238
+        height: 285
+      alignment: 9
+      pivot: {x: -0.0882353, y: 1.0561403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_134
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 382
+        width: 240
+        height: 291
+      alignment: 9
+      pivot: {x: -0.079166666, y: 1.0687286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_135
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 2
+        width: 232
+        height: 288
+      alignment: 9
+      pivot: {x: -0.09913793, y: 1.0798612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_136
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 80
+        width: 233
+        height: 290
+      alignment: 9
+      pivot: {x: -0.094420604, y: 1.0689656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_137
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 135
+        width: 232
+        height: 294
+      alignment: 9
+      pivot: {x: -0.11637931, y: 1.0782313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_138
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 110
+        width: 228
+        height: 277
+      alignment: 9
+      pivot: {x: -0.118421055, y: 1.0830325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_139
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 954
+        width: 232
+        height: 312
+      alignment: 9
+      pivot: {x: -0.11637931, y: 1.0673077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_140
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 676
+        width: 235
+        height: 278
+      alignment: 9
+      pivot: {x: -0.10212766, y: 1.0827339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_141
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 280
+        width: 236
+        height: 293
+      alignment: 9
+      pivot: {x: -0.08050848, y: 1.0682594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_142
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 136
+        width: 244
+        height: 280
+      alignment: 9
+      pivot: {x: -0.08196721, y: 1.0785714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_143
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 838
+        width: 249
+        height: 291
+      alignment: 9
+      pivot: {x: -0.060240965, y: 1.0721649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_144
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 22
+        width: 242
+        height: 281
+      alignment: 9
+      pivot: {x: -0.0661157, y: 1.0747331}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_145
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 139
+        width: 236
+        height: 291
+      alignment: 9
+      pivot: {x: -0.059322033, y: 1.0756013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_146
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 653
+        width: 247
+        height: 298
+      alignment: 9
+      pivot: {x: -0.06882591, y: 1.0771812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_147
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 234
+        width: 245
+        height: 283
+      alignment: 9
+      pivot: {x: -0.07755102, y: 1.0812721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_148
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 546
+        width: 244
+        height: 292
+      alignment: 9
+      pivot: {x: -0.045081966, y: 1.0753424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_149
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 1445
+        width: 232
+        height: 285
+      alignment: 9
+      pivot: {x: -0.077586204, y: 1.0807017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_150
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 751
+        width: 238
+        height: 303
+      alignment: 9
+      pivot: {x: -0.071428575, y: 1.0726073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_151
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1179
+        width: 238
+        height: 306
+      alignment: 9
+      pivot: {x: -0.071428575, y: 1.0751634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_152
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 418
+        width: 236
+        height: 309
+      alignment: 9
+      pivot: {x: -0.08050848, y: 1.0744337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_153
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 716
+        width: 239
+        height: 304
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0756578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_154
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 664
+        width: 239
+        height: 300
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0766667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_155
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 366
+        width: 239
+        height: 294
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0782313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_156
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1439
+        width: 239
+        height: 291
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0790378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_157
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 175
+        width: 239
+        height: 289
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0795847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_158
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 867
+        width: 239
+        height: 292
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0787672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_159
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1419
+        width: 241
+        height: 311
+      alignment: 9
+      pivot: {x: -0.058091287, y: 1.0739549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_160
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1420
+        width: 241
+        height: 310
+      alignment: 9
+      pivot: {x: -0.058091287, y: 1.0741936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: marionettista_161
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 432
+        width: 239
+        height: 295
+      alignment: 9
+      pivot: {x: -0.066945605, y: 1.0779661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

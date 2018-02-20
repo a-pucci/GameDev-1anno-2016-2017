@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: d7a1907fab7e5b24799d9af79c11b935
+timeCreated: 1518712254
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ciccione_porge_pass
+    21300002: ciccione_porge_pass_0
+    21300004: ciccione_porge_pass_1
+    21300006: ciccione_porge_pass_2
+    21300008: ciccione_porge_pass_3
+    21300010: ciccione_porge_pass_4
+    21300012: ciccione_porge_pass_5
+    21300014: ciccione_porge_pass_6
+    21300016: ciccione_porge_pass_7
+    21300018: ciccione_porge_pass_8
+    21300020: ciccione_porge_pass_9
+    21300022: ciccione_porge_pass_10
+    21300024: ciccione_porge_pass_11
+    21300026: ciccione_porge_pass_12
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ciccione_porge_pass_0
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 8
+        width: 370
+        height: 412
+      alignment: 9
+      pivot: {x: -0.2027027, y: 1.0048543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_1
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 4
+        width: 370
+        height: 413
+      alignment: 9
+      pivot: {x: -0.2027027, y: 1.0048426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_2
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 4
+        width: 370
+        height: 413
+      alignment: 9
+      pivot: {x: -0.2027027, y: 1.0048426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_3
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 11
+        width: 364
+        height: 409
+      alignment: 9
+      pivot: {x: -0.22252747, y: 1.00489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 16
+        width: 385
+        height: 404
+      alignment: 9
+      pivot: {x: -0.15584415, y: 1.0049505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_5
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 419
+        width: 432
+        height: 398
+      alignment: 9
+      pivot: {x: -0.030092593, y: 1.0050251}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_6
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 819
+        width: 444
+        height: 395
+      alignment: 9
+      pivot: {x: -0.0022522523, y: 1.0050633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 422
+        width: 442
+        height: 395
+      alignment: 9
+      pivot: {x: -0.0067873304, y: 1.0050633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_8
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 422
+        width: 439
+        height: 395
+      alignment: 9
+      pivot: {x: -0.013667426, y: 1.0050633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_9
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 422
+        width: 440
+        height: 395
+      alignment: 9
+      pivot: {x: -0.011363637, y: 1.0050633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 819
+        width: 443
+        height: 395
+      alignment: 9
+      pivot: {x: -0.004514673, y: 1.0050633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_11
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 819
+        width: 443
+        height: 395
+      alignment: 9
+      pivot: {x: -0.006772009, y: 1.0050633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ciccione_porge_pass_12
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 819
+        width: 442
+        height: 395
+      alignment: 9
+      pivot: {x: -0.0067873304, y: 1.0050633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

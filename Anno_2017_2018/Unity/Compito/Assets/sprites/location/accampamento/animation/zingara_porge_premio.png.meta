@@ -1,0 +1,798 @@
+fileFormatVersion: 2
+guid: f8b3d0f8754e4334097caace22c1758d
+timeCreated: 1518712269
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zingara_porge_premio
+    21300002: zingara_porge_premio_6
+    21300004: zingara_porge_premio_7
+    21300006: zingara_porge_premio_8
+    21300008: zingara_porge_premio_9
+    21300010: zingara_porge_premio_10
+    21300012: zingara_porge_premio_11
+    21300014: zingara_porge_premio_12
+    21300016: zingara_porge_premio_13
+    21300018: zingara_porge_premio_14
+    21300020: zingara_porge_premio_15
+    21300022: zingara_porge_premio_16
+    21300024: zingara_porge_premio_17
+    21300026: zingara_porge_premio_18
+    21300028: zingara_porge_premio_19
+    21300030: zingara_porge_premio_20
+    21300032: zingara_porge_premio_21
+    21300034: zingara_porge_premio_22
+    21300036: zingara_porge_premio_23
+    21300038: zingara_porge_premio_24
+    21300040: zingara_porge_premio_25
+    21300042: zingara_porge_premio_26
+    21300044: zingara_porge_premio_27
+    21300046: zingara_porge_premio_28
+    21300048: zingara_porge_premio_29
+    21300050: zingara_porge_premio_30
+    21300052: zingara_porge_premio_31
+    21300054: zingara_porge_premio_32
+    21300056: zingara_porge_premio_33
+    21300058: zingara_porge_premio_34
+    21300060: zingara_porge_premio_35
+    21300062: zingara_porge_premio_36
+    21300064: zingara_porge_premio_37
+    21300066: zingara_porge_premio_38
+    21300068: zingara_porge_premio_39
+    21300070: zingara_porge_premio_40
+    21300072: zingara_porge_premio_41
+    21300074: zingara_porge_premio_42
+    21300076: zingara_porge_premio_43
+    21300078: zingara_porge_premio_44
+    21300080: zingara_porge_premio_45
+    21300082: zingara_porge_premio_46
+    21300084: zingara_porge_premio_47
+    21300086: zingara_porge_premio_48
+    21300088: zingara_porge_premio_49
+    21300090: zingara_porge_premio_50
+    21300092: zingara_porge_premio_51
+    21300094: zingara_porge_premio_52
+    21300096: zingara_porge_premio_53
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zingara_porge_premio_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 345
+        width: 255
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_7
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 335
+        width: 252
+        height: 234
+      alignment: 9
+      pivot: {x: 0, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_8
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 578
+        width: 255
+        height: 236
+      alignment: 9
+      pivot: {x: 0, y: 1.0762712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_9
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 580
+        width: 258
+        height: 234
+      alignment: 9
+      pivot: {x: 0, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_10
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 180
+        width: 251
+        height: 233
+      alignment: 9
+      pivot: {x: 0, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_11
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 234
+        width: 249
+        height: 227
+      alignment: 9
+      pivot: {x: -0.016064256, y: 1.1189427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_12
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 149
+        width: 244
+        height: 237
+      alignment: 9
+      pivot: {x: -0.028688524, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_13
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 99
+        width: 243
+        height: 234
+      alignment: 9
+      pivot: {x: -0.03292181, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_14
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 378
+        width: 237
+        height: 234
+      alignment: 9
+      pivot: {x: -0.06329114, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 20
+        width: 242
+        height: 236
+      alignment: 9
+      pivot: {x: -0.041322313, y: 1.0762712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_16
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 159
+        width: 242
+        height: 236
+      alignment: 9
+      pivot: {x: -0.041322313, y: 1.0762712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_17
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 580
+        width: 239
+        height: 234
+      alignment: 9
+      pivot: {x: -0.050209206, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_18
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 42
+        width: 241
+        height: 234
+      alignment: 9
+      pivot: {x: -0.041493777, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_19
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 529
+        width: 242
+        height: 232
+      alignment: 9
+      pivot: {x: -0.037190083, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_20
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 442
+        width: 241
+        height: 233
+      alignment: 9
+      pivot: {x: -0.041493777, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_21
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 278
+        width: 241
+        height: 235
+      alignment: 9
+      pivot: {x: -0.041493777, y: 1.0808511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_22
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 2
+        width: 238
+        height: 233
+      alignment: 9
+      pivot: {x: -0.05462185, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_23
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 162
+        width: 248
+        height: 228
+      alignment: 9
+      pivot: {x: -0.02016129, y: 1.1140351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_24
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 27
+        width: 250
+        height: 228
+      alignment: 9
+      pivot: {x: -0.024, y: 1.1140351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_25
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 580
+        width: 241
+        height: 234
+      alignment: 9
+      pivot: {x: -0.045643155, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_26
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 580
+        width: 223
+        height: 234
+      alignment: 9
+      pivot: {x: -0.13452914, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_27
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 581
+        width: 215
+        height: 233
+      alignment: 9
+      pivot: {x: -0.1767442, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_28
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 264
+        width: 212
+        height: 243
+      alignment: 9
+      pivot: {x: -0.1981132, y: 1.0452675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_29
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 302
+        width: 209
+        height: 236
+      alignment: 9
+      pivot: {x: -0.20574163, y: 1.0762712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_30
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 540
+        width: 212
+        height: 234
+      alignment: 9
+      pivot: {x: -0.2028302, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_31
+      rect:
+        serializedVersion: 2
+        x: 3294
+        y: 543
+        width: 211
+        height: 231
+      alignment: 9
+      pivot: {x: -0.19905214, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_32
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 577
+        width: 211
+        height: 237
+      alignment: 9
+      pivot: {x: -0.21800947, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_33
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 119
+        width: 214
+        height: 228
+      alignment: 9
+      pivot: {x: -0.20093457, y: 1.1140351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_34
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 398
+        width: 209
+        height: 239
+      alignment: 9
+      pivot: {x: -0.22488038, y: 1.0627615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_35
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 309
+        width: 215
+        height: 233
+      alignment: 9
+      pivot: {x: -0.2139535, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_36
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 31
+        width: 212
+        height: 237
+      alignment: 9
+      pivot: {x: -0.20754717, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_37
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 264
+        width: 214
+        height: 227
+      alignment: 9
+      pivot: {x: -0.19626169, y: 1.1189427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_38
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 117
+        width: 214
+        height: 232
+      alignment: 9
+      pivot: {x: -0.20560747, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_39
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 587
+        width: 218
+        height: 227
+      alignment: 9
+      pivot: {x: -0.17431192, y: 1.1189427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_40
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 164
+        width: 216
+        height: 232
+      alignment: 9
+      pivot: {x: -0.19444445, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_41
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 343
+        width: 219
+        height: 233
+      alignment: 9
+      pivot: {x: -0.16438356, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_42
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 351
+        width: 216
+        height: 230
+      alignment: 9
+      pivot: {x: -0.17592593, y: 1.1043478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_43
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 62
+        width: 215
+        height: 232
+      alignment: 9
+      pivot: {x: -0.19069767, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_44
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 353
+        width: 212
+        height: 232
+      alignment: 9
+      pivot: {x: -0.20754717, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_45
+      rect:
+        serializedVersion: 2
+        x: 3096
+        y: 71
+        width: 214
+        height: 231
+      alignment: 9
+      pivot: {x: -0.19158879, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_46
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 60
+        width: 237
+        height: 233
+      alignment: 9
+      pivot: {x: -0.07594936, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_47
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 392
+        width: 253
+        height: 233
+      alignment: 9
+      pivot: {x: 0, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 115
+        width: 252
+        height: 228
+      alignment: 9
+      pivot: {x: 0, y: 1.1140351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_49
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 578
+        width: 258
+        height: 236
+      alignment: 9
+      pivot: {x: 0, y: 1.0762712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_50
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 258
+        width: 250
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_51
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 515
+        width: 253
+        height: 237
+      alignment: 9
+      pivot: {x: 0, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_52
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 257
+        width: 252
+        height: 233
+      alignment: 9
+      pivot: {x: 0, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_porge_premio_53
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 463
+        width: 255
+        height: 234
+      alignment: 9
+      pivot: {x: 0, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

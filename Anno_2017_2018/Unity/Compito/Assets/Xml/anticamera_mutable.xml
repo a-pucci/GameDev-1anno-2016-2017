@@ -1,0 +1,18 @@
+<location background="anticamera" foreground="True" parallax="0,0" status="0" area="anticamera" ost="ingresso_theme" indipendent="0">
+  <scene name="lampadina_anticamera" shown="True" />
+  <scene name="porta_scantinato" shown="False" />
+  <scene name="parete_scantinato" shown="True" />
+  <scene name="mosche" shown="True" />
+  <hotspots>
+    <item ID="carta moschicida" DX="363" DY="836" mask="carta_moschicida" MX="212" MY="347" bitmap="" position="back" internal="0" CX="259" CY="714" VX="0" VY="0" shown="True" name="ant_carta moschicida_name_0" />
+    <item ID="bara" DX="425" DY="1130" mask="bara" MX="238" MY="920" bitmap="" position="fore" internal="0" CX="0" CY="0" VX="427" VY="1039" shown="True" name="ant_bara_name_0" />
+    <character ID="mano autostoppista" DX="1488" DY="1015" mask="mano_autostop" X="1702" Y="478" bitmap="mano_autostop" position="fore" CX="1900" CY="1015" internal="0" shown="True" indipendent="0" VX="1780" VY="696" name="ant_mano autostoppista_name_0" />
+    <character ID="ritratto" DX="784" DY="910" mask="ritratto_zeno" MX="1252" MY="131" bitmap="" position="back" CX="1375" CY="910" internal="0" shown="True" VX="1345" VY="399" name="ant_ritratto_name_0" />
+    <character ID="robot" DX="615" DY="817" mask="robot" X="387" Y="545" bitmap="robot" position="back" internal="0" shown="True" indipendent="0" hastalkie="True" VX="541" VY="645" name="ant_robot_name_0" />
+    <goto ID="anticamera_x_scantinato" DX="980" DY="777" mask="anticamera_x_scantinato" MX="850" MY="399" bitmap="" position="back" CX="1000" CY="777" internal="0" shown="True" VX="894" VY="601" />
+    <goto ID="anticamera_x_ingresso" DX="199" DY="900" mask="anticamera_x_ingresso" MX="53" MY="353" bitmap="" position="back" CX="17" CY="893" internal="0" shown="True" VX="131" VY="661" />
+    <goto ID="anticamera_x_cucina" DX="1550" DY="981" mask="anticamera_x_cucina" MX="1466" MY="376" bitmap="" position="back" CX="1600" CY="930" internal="0" shown="True" />
+    <goto ID="anticamera_x_salotto" DX="1287" DY="907" mask="anticamera_x_salotto" MX="814" MY="0" bitmap="" position="back" VX="996" VY="154" internal="0" shown="True" />
+    <item ID="sveglia" DX="1415" DY="1130" mask="sveglia" X="1455" Y="886" bitmap="sveglia" position="divine" CX="1420" CY="1135" VX="1535" VY="945" internal="0" shown="True" name="ant_sveglia_name_0" />
+  </hotspots>
+</location>

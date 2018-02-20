@@ -1,0 +1,408 @@
+fileFormatVersion: 2
+guid: 8b1a1b2641afc894bb5a843a9c5df54f
+timeCreated: 1518712219
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tentativo_apertura_porta
+    21300002: tentativo_apertura_porta_0
+    21300004: tentativo_apertura_porta_1
+    21300006: tentativo_apertura_porta_2
+    21300008: tentativo_apertura_porta_3
+    21300010: tentativo_apertura_porta_4
+    21300012: tentativo_apertura_porta_5
+    21300014: tentativo_apertura_porta_6
+    21300016: tentativo_apertura_porta_7
+    21300018: tentativo_apertura_porta_8
+    21300020: tentativo_apertura_porta_9
+    21300022: tentativo_apertura_porta_10
+    21300024: tentativo_apertura_porta_11
+    21300026: tentativo_apertura_porta_12
+    21300028: tentativo_apertura_porta_13
+    21300030: tentativo_apertura_porta_14
+    21300032: tentativo_apertura_porta_15
+    21300034: tentativo_apertura_porta_16
+    21300036: tentativo_apertura_porta_17
+    21300038: tentativo_apertura_porta_18
+    21300040: tentativo_apertura_porta_19
+    21300042: tentativo_apertura_porta_20
+    21300044: tentativo_apertura_porta_21
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3035
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2274
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1513
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_3
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 755
+        width: 200
+        height: 758
+      alignment: 9
+      pivot: {x: 0, y: 1.0013193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_4
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1521
+        width: 200
+        height: 755
+      alignment: 9
+      pivot: {x: 0, y: 1.005298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_5
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 3036
+        width: 200
+        height: 758
+      alignment: 9
+      pivot: {x: 0, y: 1.0013193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 2274
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1513
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_8
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 752
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 3035
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1513
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 752
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_12
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 2278
+        width: 200
+        height: 756
+      alignment: 9
+      pivot: {x: 0, y: 1.0039682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 3
+        width: 200
+        height: 750
+      alignment: 9
+      pivot: {x: 0, y: 1.012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_14
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 2275
+        width: 200
+        height: 758
+      alignment: 9
+      pivot: {x: 0, y: 1.0013193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_15
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 3035
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_16
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 765
+        width: 200
+        height: 754
+      alignment: 9
+      pivot: {x: 0, y: 1.0066313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_17
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1515
+        width: 200
+        height: 758
+      alignment: 9
+      pivot: {x: 0, y: 1.0013193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_18
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 9
+        width: 200
+        height: 754
+      alignment: 9
+      pivot: {x: 0, y: 1.0066313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_19
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 2274
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_20
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 752
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tentativo_apertura_porta_21
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 3035
+        width: 200
+        height: 759
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

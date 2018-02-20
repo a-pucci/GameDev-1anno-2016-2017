@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: 766e192faba4a2442b6893c529940db8
+timeCreated: 1518712205
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mano_autostop
+    21300002: mano_autostop_5
+    21300004: mano_autostop_6
+    21300006: mano_autostop_7
+    21300008: mano_autostop_8
+    21300010: mano_autostop_9
+    21300012: mano_autostop_10
+    21300014: mano_autostop_11
+    21300016: mano_autostop_12
+    21300018: mano_autostop_13
+    21300020: mano_autostop_14
+    21300022: mano_autostop_15
+    21300024: mano_autostop_16
+    21300026: mano_autostop_17
+    21300028: mano_autostop_18
+    21300030: mano_autostop_19
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mano_autostop_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 858
+        width: 194
+        height: 439
+      alignment: 9
+      pivot: {x: -0.072164945, y: 1.022779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1292
+        width: 193
+        height: 443
+      alignment: 9
+      pivot: {x: -0.07253886, y: 1.013544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_7
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 184
+        width: 193
+        height: 435
+      alignment: 9
+      pivot: {x: -0.07253886, y: 1.0321839}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1730
+        width: 193
+        height: 441
+      alignment: 9
+      pivot: {x: -0.07253886, y: 1.0181406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_9
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 636
+        width: 195
+        height: 437
+      alignment: 9
+      pivot: {x: -0.071794875, y: 1.02746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_10
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2163
+        width: 209
+        height: 431
+      alignment: 9
+      pivot: {x: -0.066985644, y: 1.0417633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2160
+        width: 206
+        height: 434
+      alignment: 9
+      pivot: {x: -0.067961164, y: 1.0345622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_12
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 2
+        width: 192
+        height: 436
+      alignment: 9
+      pivot: {x: -0.072916664, y: 1.0298165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 393
+        width: 194
+        height: 437
+      alignment: 9
+      pivot: {x: -0.067010306, y: 1.02746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_14
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1103
+        width: 193
+        height: 443
+      alignment: 9
+      pivot: {x: -0.07253886, y: 1.013544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1729
+        width: 200
+        height: 437
+      alignment: 9
+      pivot: {x: -0.075, y: 1.02746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_16
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 433
+        width: 194
+        height: 437
+      alignment: 9
+      pivot: {x: -0.072164945, y: 1.02746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_17
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 863
+        width: 192
+        height: 441
+      alignment: 9
+      pivot: {x: -0.072916664, y: 1.0181406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_18
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1296
+        width: 199
+        height: 435
+      alignment: 9
+      pivot: {x: -0.07035176, y: 1.0321839}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mano_autostop_19
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1539
+        width: 192
+        height: 444
+      alignment: 9
+      pivot: {x: -0.072916664, y: 1.0112612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

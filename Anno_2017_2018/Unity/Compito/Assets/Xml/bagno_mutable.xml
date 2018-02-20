@@ -1,0 +1,25 @@
+<location background="bagno" foreground="True" parallax="0,0" status="1" area="bagno" ost="party_theme:2" indipendent="1">
+  <scene name="ombra_piscina" shown="True" />
+  <scene name="gabinetto" shown="True" />
+  <scene name="pesce_rosso" shown="True" />
+  <scene name="piranha" shown="True" />
+  <scene name="lavandino" shown="True" />
+  <scene name="naso" shown="True" />
+  <scene name="finestra_casa_bruciata" shown="False" />
+  <scene name="bagnoschiuma" shown="False" />
+  <scene name="tubi_bagno" shown="True" />
+  <scene name="perdite_piscina" shown="True" />
+  <hotspots>
+    <item ID="telone" DX="954" DY="891" mask="piscina_vuota" X="1082" Y="424" bitmap="piscina" position="back" internal="0" CX="0" CY="0" VX="1164" VY="759" shown="True" name="bag_telone_name_0" />
+    <item ID="sali" DX="994" DY="760" mask="sali" X="1327" Y="478" bitmap="sali" position="default" internal="1" CX="1348" CY="776" VX="0" VY="0" shown="True" name="bag_sali_name_0" />
+    <item ID="saponetta" DX="671" DY="800" mask="saponetta" X="609" Y="699" bitmap="saponetta" position="back" internal="0" CX="0" CY="0" VX="673" VY="720" shown="True" name="bag_saponetta_name_0" />
+    <item ID="selfie" DX="671" DY="800" mask="selfie" MX="567" MY="158" bitmap="" position="back" internal="0" CX="0" CY="0" VX="676" VY="279" shown="True" name="bag_selfie_name_0" />
+    <item ID="rasoio fai da te" DX="671" DY="800" mask="rasoio_fai_da_te" X="449" Y="243" bitmap="rasoio_fai_da_te" position="back" internal="0" CX="530" CY="713" VX="519" VY="490" shown="True" indipendent="0" name="bag_rasoio fai da te_name_0" />
+    <action ID="pensile" DX="939" DY="754" mask="pensile_chiuso" X="737" Y="109" bitmap="pensile_chiuso" position="default" internal="0" CX="0" CY="0" VX="0" VY="0" shown="True" label="bag_pensile_label_0" name="bag_pensile_name_0" />
+    <item ID="struccante" DX="939" DY="754" mask="null:struccante" X="972" Y="285" bitmap="struccante" position="back" internal="0" CX="0" CY="0" VX="0" VY="0" shown="True" name="bag_struccante_name_0" />
+    <character ID="ciccione" DX="954" DY="891" mask="ciccione" X="1311" Y="273" bitmap="ciccione" position="default" internal="0" CX="1515" CY="920" VX="1508" VY="527" shown="True" indipendent="0" TX="1544" TY="276" hastalkie="True" textcolor="lblue" name="bag_ciccione_name_0" />
+    <action ID="maniglia" DX="1211" DY="1059" mask="maniglia" X="1321" Y="666" bitmap="maniglia" position="default" internal="0" CX="1352" CY="913" VX="1364" VY="687" shown="True" label="bag_maniglia_label_0" name="bag_maniglia_name_0" />
+    <goto ID="bagno_x_primo_piano" DX="458" DY="867" mask="bagno_x_primo_piano" X="164" Y="191" bitmap="porta_bagno_aperta" position="back" internal="0" CX="257" CY="848" VX="270" VY="574" shown="True" />
+    <item ID="gabinetto" DX="513" DY="1079" mask="gabinetto" MX="0" MY="617" bitmap="" position="default" internal="0" CX="245" CY="1080" VX="240" VY="963" shown="True" name="bag_gabinetto_name_0" />
+  </hotspots>
+</location>

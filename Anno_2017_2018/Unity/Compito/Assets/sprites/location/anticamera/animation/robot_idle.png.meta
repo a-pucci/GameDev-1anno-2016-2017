@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: f0a835bc1257fcb47acfe76a65df1523
+timeCreated: 1518712266
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: robot_idle
+    21300002: robot_idle_2
+    21300004: robot_idle_3
+    21300006: robot_idle_4
+    21300008: robot_idle_5
+    21300010: robot_idle_6
+    21300012: robot_idle_7
+    21300014: robot_idle_8
+    21300016: robot_idle_9
+    21300018: robot_idle_10
+    21300020: robot_idle_11
+    21300022: robot_idle_12
+    21300024: robot_idle_13
+    21300026: robot_idle_14
+    21300028: robot_idle_15
+    21300030: robot_idle_16
+    21300032: robot_idle_17
+    21300034: robot_idle_18
+    21300036: robot_idle_19
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: robot_idle_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 229
+        width: 267
+        height: 249
+      alignment: 9
+      pivot: {x: -0.059925094, y: 1.0722891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 244
+        width: 267
+        height: 249
+      alignment: 9
+      pivot: {x: -0.059925094, y: 1.0722891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 264
+        height: 247
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1.0809717}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1979
+        width: 266
+        height: 262
+      alignment: 9
+      pivot: {x: -0.060150377, y: 1.019084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 969
+        width: 267
+        height: 256
+      alignment: 9
+      pivot: {x: -0.059925094, y: 1.0273438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1217
+        width: 264
+        height: 262
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1.019084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_8
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1739
+        width: 266
+        height: 257
+      alignment: 9
+      pivot: {x: -0.05263158, y: 1.0155642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_9
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 2242
+        width: 264
+        height: 260
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1.0269231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2240
+        width: 267
+        height: 262
+      alignment: 9
+      pivot: {x: -0.059925094, y: 1.0038168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1725
+        width: 264
+        height: 262
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1.019084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1994
+        width: 267
+        height: 256
+      alignment: 9
+      pivot: {x: -0.056179777, y: 1.0234375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_13
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1226
+        width: 264
+        height: 258
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1.0348837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_14
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1483
+        width: 268
+        height: 254
+      alignment: 9
+      pivot: {x: -0.05597015, y: 1.035433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1471
+        width: 264
+        height: 262
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1.019084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_16
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 480
+        width: 264
+        height: 252
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1.0357143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_17
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 728
+        width: 266
+        height: 251
+      alignment: 9
+      pivot: {x: -0.060150377, y: 1.063745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_18
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 981
+        width: 264
+        height: 253
+      alignment: 9
+      pivot: {x: -0.060606062, y: 1.0316205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: robot_idle_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 486
+        width: 267
+        height: 249
+      alignment: 9
+      pivot: {x: -0.059925094, y: 1.0722891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

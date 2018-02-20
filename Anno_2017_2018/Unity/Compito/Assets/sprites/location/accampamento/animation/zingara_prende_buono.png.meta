@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: 91987282c41a81c4ab965a6cc44f1ab8
+timeCreated: 1518712233
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zingara_prende_buono
+    21300002: zingara_prende_buono_23
+    21300004: zingara_prende_buono_24
+    21300006: zingara_prende_buono_25
+    21300008: zingara_prende_buono_26
+    21300010: zingara_prende_buono_27
+    21300012: zingara_prende_buono_28
+    21300014: zingara_prende_buono_29
+    21300016: zingara_prende_buono_30
+    21300018: zingara_prende_buono_31
+    21300020: zingara_prende_buono_32
+    21300022: zingara_prende_buono_33
+    21300024: zingara_prende_buono_34
+    21300026: zingara_prende_buono_35
+    21300028: zingara_prende_buono_36
+    21300030: zingara_prende_buono_37
+    21300032: zingara_prende_buono_38
+    21300034: zingara_prende_buono_39
+    21300036: zingara_prende_buono_40
+    21300038: zingara_prende_buono_41
+    21300040: zingara_prende_buono_42
+    21300042: zingara_prende_buono_43
+    21300044: zingara_prende_buono_44
+    21300046: zingara_prende_buono_45
+    21300048: zingara_prende_buono_46
+    21300050: zingara_prende_buono_47
+    21300052: zingara_prende_buono_48
+    21300054: zingara_prende_buono_49
+    21300056: zingara_prende_buono_50
+    21300058: zingara_prende_buono_51
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zingara_prende_buono_23
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 873
+        width: 251
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_24
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 963
+        width: 257
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_25
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1066
+        width: 257
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1271
+        width: 257
+        height: 235
+      alignment: 9
+      pivot: {x: 0, y: 1.0808511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 802
+        width: 239
+        height: 229
+      alignment: 9
+      pivot: {x: -0.08368201, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_28
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 467
+        width: 216
+        height: 231
+      alignment: 9
+      pivot: {x: -0.19444445, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_29
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 355
+        width: 212
+        height: 234
+      alignment: 9
+      pivot: {x: -0.2028302, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_30
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 494
+        width: 212
+        height: 236
+      alignment: 9
+      pivot: {x: -0.1981132, y: 1.0762712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_31
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 46
+        width: 210
+        height: 232
+      alignment: 9
+      pivot: {x: -0.20476191, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_32
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 591
+        width: 214
+        height: 238
+      alignment: 9
+      pivot: {x: -0.20093457, y: 1.0672269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_33
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 700
+        width: 220
+        height: 233
+      alignment: 9
+      pivot: {x: -0.16363636, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_34
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 255
+        width: 209
+        height: 237
+      alignment: 9
+      pivot: {x: -0.22488038, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_35
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1245
+        width: 217
+        height: 232
+      alignment: 9
+      pivot: {x: -0.20276497, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_36
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1116
+        width: 212
+        height: 237
+      alignment: 9
+      pivot: {x: -0.20754717, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_37
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 5
+        width: 214
+        height: 227
+      alignment: 9
+      pivot: {x: -0.19626169, y: 1.1189427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 334
+        width: 214
+        height: 232
+      alignment: 9
+      pivot: {x: -0.20560747, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_39
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 126
+        width: 218
+        height: 227
+      alignment: 9
+      pivot: {x: -0.17431192, y: 1.1189427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 568
+        width: 216
+        height: 232
+      alignment: 9
+      pivot: {x: -0.19444445, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_41
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1202
+        width: 218
+        height: 234
+      alignment: 9
+      pivot: {x: -0.16513762, y: 1.0854701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_42
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 174
+        width: 216
+        height: 229
+      alignment: 9
+      pivot: {x: -0.17592593, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_43
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 405
+        width: 215
+        height: 232
+      alignment: 9
+      pivot: {x: -0.19069767, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_44
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 101
+        width: 212
+        height: 231
+      alignment: 9
+      pivot: {x: -0.20754717, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_45
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 234
+        width: 214
+        height: 231
+      alignment: 9
+      pivot: {x: -0.19158879, y: 1.099567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_46
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 639
+        width: 237
+        height: 232
+      alignment: 9
+      pivot: {x: -0.07594936, y: 1.0948275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_47
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 831
+        width: 253
+        height: 233
+      alignment: 9
+      pivot: {x: 0, y: 1.0901288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_48
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1166
+        width: 252
+        height: 237
+      alignment: 9
+      pivot: {x: 0, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_49
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 936
+        width: 258
+        height: 228
+      alignment: 9
+      pivot: {x: 0, y: 1.1140351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_50
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 732
+        width: 252
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.1091703}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: zingara_prende_buono_51
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1032
+        width: 253
+        height: 237
+      alignment: 9
+      pivot: {x: 0, y: 1.0717299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

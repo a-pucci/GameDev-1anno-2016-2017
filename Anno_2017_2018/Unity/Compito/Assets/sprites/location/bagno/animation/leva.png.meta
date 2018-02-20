@@ -1,0 +1,363 @@
+fileFormatVersion: 2
+guid: fd7d69e2e3c93354dafef263d579a03d
+timeCreated: 1518712284
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: leva
+    21300002: leva_4
+    21300004: leva_5
+    21300006: leva_6
+    21300008: leva_7
+    21300010: leva_8
+    21300012: leva_9
+    21300014: leva_10
+    21300016: leva_11
+    21300018: leva_12
+    21300020: leva_13
+    21300022: leva_14
+    21300024: leva_15
+    21300026: leva_16
+    21300028: leva_17
+    21300030: leva_18
+    21300032: leva_19
+    21300034: leva_20
+    21300036: leva_21
+    21300038: leva_22
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: leva_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 76
+        width: 103
+        height: 51
+      alignment: 9
+      pivot: {x: -0.34951457, y: 1.3137255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_5
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 15
+        width: 90
+        height: 58
+      alignment: 9
+      pivot: {x: -0.4888889, y: 1.3275862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 45
+        width: 87
+        height: 65
+      alignment: 9
+      pivot: {x: -0.51724136, y: 1.3692307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 144
+        width: 93
+        height: 84
+      alignment: 9
+      pivot: {x: -0.3548387, y: 1.1547619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 111
+        width: 86
+        height: 76
+      alignment: 9
+      pivot: {x: -0.45348838, y: 1.2763158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 261
+        width: 87
+        height: 85
+      alignment: 9
+      pivot: {x: -0.35632184, y: 1.1882353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 257
+        width: 95
+        height: 89
+      alignment: 9
+      pivot: {x: -0.30526316, y: 1.1235955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_11
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 196
+        width: 85
+        height: 79
+      alignment: 9
+      pivot: {x: -0.44705883, y: 1.2531645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 127
+        width: 85
+        height: 79
+      alignment: 9
+      pivot: {x: -0.44705883, y: 1.2531645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_13
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 115
+        width: 85
+        height: 79
+      alignment: 9
+      pivot: {x: -0.44705883, y: 1.2531645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 267
+        width: 85
+        height: 79
+      alignment: 9
+      pivot: {x: -0.44705883, y: 1.2531645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_15
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 184
+        width: 85
+        height: 79
+      alignment: 9
+      pivot: {x: -0.44705883, y: 1.2531645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 257
+        width: 95
+        height: 89
+      alignment: 9
+      pivot: {x: -0.30526316, y: 1.1235955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_17
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 193
+        width: 87
+        height: 85
+      alignment: 9
+      pivot: {x: -0.35632184, y: 1.1882353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 92
+        width: 86
+        height: 76
+      alignment: 9
+      pivot: {x: -0.45348838, y: 1.2763158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 201
+        width: 93
+        height: 84
+      alignment: 9
+      pivot: {x: -0.3548387, y: 1.1547619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_20
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 9
+        width: 87
+        height: 65
+      alignment: 9
+      pivot: {x: -0.51724136, y: 1.3692307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5
+        width: 90
+        height: 58
+      alignment: 9
+      pivot: {x: -0.4888889, y: 1.3275862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leva_22
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 71
+        width: 103
+        height: 51
+      alignment: 9
+      pivot: {x: -0.34951457, y: 1.3137255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

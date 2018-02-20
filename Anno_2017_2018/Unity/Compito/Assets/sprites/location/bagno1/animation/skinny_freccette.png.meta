@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: 8810c3de6bc618540a557de8ab161503
+timeCreated: 1518712217
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skinny_freccette
+    21300002: skinny_freccette_0
+    21300004: skinny_freccette_1
+    21300006: skinny_freccette_2
+    21300008: skinny_freccette_3
+    21300010: skinny_freccette_4
+    21300012: skinny_freccette_5
+    21300014: skinny_freccette_6
+    21300016: skinny_freccette_7
+    21300018: skinny_freccette_8
+    21300020: skinny_freccette_9
+    21300022: skinny_freccette_10
+    21300024: skinny_freccette_11
+    21300026: skinny_freccette_12
+    21300028: skinny_freccette_13
+    21300030: skinny_freccette_14
+    21300032: skinny_freccette_15
+    21300034: skinny_freccette_16
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skinny_freccette_0
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 505
+        width: 182
+        height: 501
+      alignment: 9
+      pivot: {x: -0.03846154, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_1
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 2
+        width: 182
+        height: 501
+      alignment: 9
+      pivot: {x: -0.03846154, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_2
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 2
+        width: 179
+        height: 501
+      alignment: 9
+      pivot: {x: -0.022346368, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_3
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 5
+        width: 183
+        height: 501
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_4
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 505
+        width: 232
+        height: 501
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2
+        width: 240
+        height: 501
+      alignment: 9
+      pivot: {x: -0.0125, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_6
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 5
+        width: 188
+        height: 501
+      alignment: 9
+      pivot: {x: -0.07446808, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_7
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 506
+        width: 214
+        height: 500
+      alignment: 9
+      pivot: {x: -0.1682243, y: 1.002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_8
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 507
+        width: 231
+        height: 499
+      alignment: 9
+      pivot: {x: -0.25974026, y: 1.004008}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_9
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 508
+        width: 236
+        height: 498
+      alignment: 9
+      pivot: {x: -0.23305085, y: 1.0060241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_10
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 508
+        width: 240
+        height: 498
+      alignment: 9
+      pivot: {x: -0.2125, y: 1.0060241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_11
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 2
+        width: 248
+        height: 501
+      alignment: 9
+      pivot: {x: -0.14112903, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 266
+        height: 501
+      alignment: 9
+      pivot: {x: -0.02631579, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 505
+        width: 270
+        height: 501
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_14
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 505
+        width: 247
+        height: 501
+      alignment: 9
+      pivot: {x: -0.008097166, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_15
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 2
+        width: 179
+        height: 501
+      alignment: 9
+      pivot: {x: -0.039106146, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: skinny_freccette_16
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 2
+        width: 181
+        height: 501
+      alignment: 9
+      pivot: {x: -0.03314917, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

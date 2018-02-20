@@ -1,0 +1,26 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:e3f0a2117697505ce0d40dd6f76a0e8d:3dcd6cea633dbae09e247bc9919142a7:5b3d6e9079860a6574b10bf337504af6$
+#
+:format=40300
+:texture=sheet0.png
+:size=1340x972
+:pivotpoints=enabled
+:borders=disabled
+
+accampamento_x_mappa;0;106;281;866; 0;1; 0;0;0;0
+assassin;281;158;520;219; 0;1; 0;0;0;0
+barbone_snorlax;281;377;501;595; 0;1; 0;0;0;0
+bing_bong;782;490;381;482; 0;1; 0;0;0;0
+bomboletta_spray;739;92;40;66; 0;1; 0;0;0;0
+eggo;0;1;215;105; 0;1; 0;0;0;0
+fisarmonica;1163;781;176;191; 0;1; 0;0;0;0
+mangiatoia;281;11;458;147; 0;1; 0;0;0;0
+marionettista;1037;245;232;245; 0;1; 0;0;0;0
+pixel_morto;782;477;12;13; 0;1; 0;0;0;0
+writer;801;53;236;437; 0;1; 0;0;0;0
+zingara;1037;21;258;224; 0;1; 0;0;0;0

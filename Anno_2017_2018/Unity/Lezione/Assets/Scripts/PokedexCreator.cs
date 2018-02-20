@@ -6,10 +6,10 @@ using System.Linq;
 using System.Xml;
 using System.IO;
 
-public class PokedexCreator : MonoBehaviour
+public static class PokedexCreator
 {
-    [ContextMenu("Create Pokedex")]
-    void CreatePokedex()
+    [MenuItem("Pokedex/Create")]
+    static void CreatePokedex()
     {
         XmlDocument xData = new XmlDocument();
         xData.Load("Assets/pokedata_clear.xml");
@@ -33,6 +33,12 @@ public class PokedexCreator : MonoBehaviour
                 {
                     case "name":
                         pokemonObj.name = xChild.InnerText;
+
+                        // add enum value
+                        string codeText = File.ReadAllText("Assets/Scripts/PokemonEnum.cs");
+                        int markerIndex = codeText.LastIndexOf("//#MARKER#");
+                        File.WriteAllText("Assets/Scripts/PokemonEnum.cs", codeText.Insert(markerIndex, pokemonObj.name + ",\n\t"));
+
                         break;
 
                     case "type":
@@ -101,6 +107,7 @@ public class PokedexCreator : MonoBehaviour
                 }
             }
         }
+        AssetDatabase.Refresh();
         Debug.Log("Pokedex Created");
     }
 }

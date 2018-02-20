@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: e17b7faa855b05f4f994da6e976ce5ec
+timeCreated: 1518712260
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: traslocatore_sfonda_porta
+    21300002: traslocatore_sfonda_porta_0
+    21300004: traslocatore_sfonda_porta_1
+    21300006: traslocatore_sfonda_porta_2
+    21300008: traslocatore_sfonda_porta_3
+    21300010: traslocatore_sfonda_porta_4
+    21300012: traslocatore_sfonda_porta_5
+    21300014: traslocatore_sfonda_porta_6
+    21300016: traslocatore_sfonda_porta_7
+    21300018: traslocatore_sfonda_porta_8
+    21300020: traslocatore_sfonda_porta_9
+    21300022: traslocatore_sfonda_porta_10
+    21300024: traslocatore_sfonda_porta_11
+    21300026: traslocatore_sfonda_porta_12
+    21300028: traslocatore_sfonda_porta_13
+    21300030: traslocatore_sfonda_porta_14
+    21300032: traslocatore_sfonda_porta_15
+    21300034: traslocatore_sfonda_porta_16
+    21300036: traslocatore_sfonda_porta_17
+    21300038: traslocatore_sfonda_porta_18
+    21300040: traslocatore_sfonda_porta_19
+    21300042: traslocatore_sfonda_porta_20
+    21300044: traslocatore_sfonda_porta_21
+    21300046: traslocatore_sfonda_porta_22
+    21300048: traslocatore_sfonda_porta_23
+    21300050: traslocatore_sfonda_porta_24
+    21300052: traslocatore_sfonda_porta_25
+    21300054: traslocatore_sfonda_porta_26
+    21300056: traslocatore_sfonda_porta_27
+    21300058: traslocatore_sfonda_porta_28
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_0
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 131
+        width: 177
+        height: 317
+      alignment: 9
+      pivot: {x: -3.5141244, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_1
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 131
+        width: 300
+        height: 317
+      alignment: 9
+      pivot: {x: -1.6633333, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1283
+        width: 494
+        height: 403
+      alignment: 9
+      pivot: {x: -0.61740893, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1688
+        width: 623
+        height: 586
+      alignment: 9
+      pivot: {x: -0.28250402, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_4
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1967
+        width: 532
+        height: 307
+      alignment: 9
+      pivot: {x: -0.118421055, y: 1.6286645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 634
+        height: 184
+      alignment: 9
+      pivot: {x: 0, y: 3.0434783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_6
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1229
+        width: 620
+        height: 194
+      alignment: 9
+      pivot: {x: -0.0016129032, y: 2.9175258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_7
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 215
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_8
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1838
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_9
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1619
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_10
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 2057
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_11
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1748
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1064
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 845
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 626
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 407
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 188
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_17
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1529
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_18
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1310
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_19
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1091
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_20
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 872
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_21
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 653
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_22
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 434
+        width: 609
+        height: 217
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.700461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_23
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 18
+        width: 610
+        height: 195
+      alignment: 9
+      pivot: {x: -0.016393442, y: 2.8923078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_24
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 1425
+        width: 610
+        height: 192
+      alignment: 9
+      pivot: {x: -0.016393442, y: 2.921875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_25
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1032
+        width: 609
+        height: 195
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.8923078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_26
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 838
+        width: 609
+        height: 192
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.921875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_27
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 644
+        width: 609
+        height: 192
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.921875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: traslocatore_sfonda_porta_28
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 450
+        width: 609
+        height: 192
+      alignment: 9
+      pivot: {x: -0.018062398, y: 2.921875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,738 @@
+fileFormatVersion: 2
+guid: 4df0cab2f5bdd5a45876f79d96e9ca12
+timeCreated: 1518712175
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ventilatore
+    21300002: ventilatore_0
+    21300004: ventilatore_1
+    21300006: ventilatore_2
+    21300008: ventilatore_3
+    21300010: ventilatore_4
+    21300012: ventilatore_5
+    21300014: ventilatore_6
+    21300016: ventilatore_7
+    21300018: ventilatore_8
+    21300020: ventilatore_9
+    21300022: ventilatore_10
+    21300024: ventilatore_11
+    21300026: ventilatore_12
+    21300028: ventilatore_13
+    21300030: ventilatore_14
+    21300032: ventilatore_15
+    21300034: ventilatore_16
+    21300036: ventilatore_17
+    21300038: ventilatore_18
+    21300040: ventilatore_19
+    21300042: ventilatore_20
+    21300044: ventilatore_21
+    21300046: ventilatore_22
+    21300048: ventilatore_23
+    21300050: ventilatore_24
+    21300052: ventilatore_25
+    21300054: ventilatore_26
+    21300056: ventilatore_27
+    21300058: ventilatore_28
+    21300060: ventilatore_29
+    21300062: ventilatore_30
+    21300064: ventilatore_31
+    21300066: ventilatore_32
+    21300068: ventilatore_33
+    21300070: ventilatore_34
+    21300072: ventilatore_35
+    21300074: ventilatore_36
+    21300076: ventilatore_37
+    21300078: ventilatore_38
+    21300080: ventilatore_39
+    21300082: ventilatore_40
+    21300084: ventilatore_41
+    21300086: ventilatore_42
+    21300088: ventilatore_43
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ventilatore_0
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 141
+        width: 158
+        height: 480
+      alignment: 9
+      pivot: {x: 0, y: 1.0479167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_1
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 125
+        width: 158
+        height: 497
+      alignment: 9
+      pivot: {x: 0, y: 1.0120724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_2
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 819
+        width: 158
+        height: 496
+      alignment: 9
+      pivot: {x: 0, y: 1.014113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1176
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 568
+        width: 158
+        height: 501
+      alignment: 9
+      pivot: {x: 0, y: 1.003992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 587
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_6
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1120
+        width: 158
+        height: 501
+      alignment: 9
+      pivot: {x: 0, y: 1.003992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_7
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 265
+        width: 158
+        height: 498
+      alignment: 9
+      pivot: {x: 0, y: 1.0100402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_8
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1155
+        width: 158
+        height: 492
+      alignment: 9
+      pivot: {x: 0, y: 1.0223577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_9
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 174
+        width: 158
+        height: 493
+      alignment: 9
+      pivot: {x: 0, y: 1.0202839}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_10
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1350
+        width: 158
+        height: 485
+      alignment: 9
+      pivot: {x: 0, y: 1.0371134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_11
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 865
+        width: 158
+        height: 483
+      alignment: 9
+      pivot: {x: 0, y: 1.0414078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1114
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 81
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1361
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_15
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1114
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_16
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1477
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 796
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_18
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 77
+        width: 158
+        height: 501
+      alignment: 9
+      pivot: {x: 0, y: 1.003992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 18
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_20
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 629
+        width: 158
+        height: 500
+      alignment: 9
+      pivot: {x: 0, y: 1.006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_21
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 881
+        width: 158
+        height: 495
+      alignment: 9
+      pivot: {x: 0, y: 1.0161616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_22
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 827
+        width: 158
+        height: 498
+      alignment: 9
+      pivot: {x: 0, y: 1.0100402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_23
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 322
+        width: 158
+        height: 495
+      alignment: 9
+      pivot: {x: 0, y: 1.0161616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_24
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1627
+        width: 158
+        height: 495
+      alignment: 9
+      pivot: {x: 0, y: 1.0161616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_25
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1611
+        width: 158
+        height: 497
+      alignment: 9
+      pivot: {x: 0, y: 1.0120724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_26
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1475
+        width: 158
+        height: 498
+      alignment: 9
+      pivot: {x: 0, y: 1.0100402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_27
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 151
+        width: 158
+        height: 502
+      alignment: 9
+      pivot: {x: 0, y: 1.001992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_28
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 5
+        width: 158
+        height: 501
+      alignment: 9
+      pivot: {x: 0, y: 1.003992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_29
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 666
+        width: 158
+        height: 489
+      alignment: 9
+      pivot: {x: 0, y: 1.0286299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_30
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 954
+        width: 158
+        height: 497
+      alignment: 9
+      pivot: {x: 0, y: 1.0120724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_31
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 29
+        width: 158
+        height: 489
+      alignment: 9
+      pivot: {x: 0, y: 1.0286299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_32
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1337
+        width: 158
+        height: 502
+      alignment: 9
+      pivot: {x: 0, y: 1.001992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_33
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 679
+        width: 158
+        height: 502
+      alignment: 9
+      pivot: {x: 0, y: 1.001992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1619
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 609
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 104
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 856
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_38
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 313
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_39
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 252
+        width: 158
+        height: 503
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_40
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1233
+        width: 158
+        height: 502
+      alignment: 9
+      pivot: {x: 0, y: 1.001992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_41
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1622
+        width: 158
+        height: 500
+      alignment: 9
+      pivot: {x: 0, y: 1.006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_42
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 151
+        width: 158
+        height: 498
+      alignment: 9
+      pivot: {x: 0, y: 1.0100402}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ventilatore_43
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1420
+        width: 158
+        height: 496
+      alignment: 9
+      pivot: {x: 0, y: 1.014113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
