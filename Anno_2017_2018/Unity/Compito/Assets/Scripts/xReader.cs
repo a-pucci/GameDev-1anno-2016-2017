@@ -14,24 +14,24 @@ public static class xReader
     public static void CreateScenes()
     {
         string[] xDocuments = Directory.GetFiles("Assets/Xml", "*.xml");
-        Debug.Log(xDocuments.Length);
+
         for (int k = 0; k < xDocuments.Length; k++)
         {
             XmlDocument xData = new XmlDocument();
-            xData.Load(xDocuments[k]);  
+            xData.Load(xDocuments[k]);
 
             Scene newScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
-           // EditorSceneManager.LoadScene(newScene.name);
             GameObject mainCamera = new GameObject("Main Camera");
             mainCamera.AddComponent<Camera>();
+            mainCamera.GetComponent<Camera>().orthographic = true;
             mainCamera.GetComponent<Camera>().orthographicSize = 540;
             mainCamera.GetComponent<Camera>().transform.position = new Vector3(960, -540, -10);
+            mainCamera.tag = "MainCamera";
 
-
-            /*
-             * MANCA LA CREAZIONE DELLE SCENE
-             */
+            GameObject maskChecker = new GameObject();
+            maskChecker.name = "MaskChecker";
+            maskChecker.AddComponent<MaskCheck>();
 
             XmlNode xLocation = xData.SelectSingleNode("location");
 
@@ -42,6 +42,7 @@ public static class xReader
             bg.name = BGName + "_bg";
             bg.AddComponent<SpriteRenderer>().sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/sprites/location/"
                 + BGName + "/background/" + BGName + ".png");
+            bg.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
             bg.transform.position = Vector2.zero;
 
@@ -53,6 +54,7 @@ public static class xReader
 
                 fg.AddComponent<SpriteRenderer>().sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/sprites/location/"
                 + BGName + "/foreground/" + BGName + ".png");
+                fg.GetComponent<SpriteRenderer>().sortingOrder = 0;
                 fg.transform.position = Vector2.zero;
             }
 
@@ -78,7 +80,6 @@ public static class xReader
                     string name = xChild.Attributes["name"].Value;
 
                     // Position
-                    newChar.AddComponent<Transform>();
                     Vector2 spritePos = new Vector2();
                     if (xChild.Attributes["X"] != null && xChild.Attributes["Y"] != null)
                     {
@@ -102,6 +103,7 @@ public static class xReader
                             }
                         }
                         newChar.GetComponent<SpriteRenderer>().sprite = bitmapSprite;
+                        newChar.GetComponent<SpriteRenderer>().sortingOrder = 1;
 
                         bool shown = bool.Parse(xChild.Attributes["shown"].Value);
                         if (!shown) { newChar.GetComponent<SpriteRenderer>().enabled = false; }
@@ -114,6 +116,7 @@ public static class xReader
                         GameObject charMask = new GameObject();
                         charMask.name = maskName + "_mask";
                         charMask.transform.SetParent(newChar.transform);
+                        charMask.tag = "Mask";
                         charMask.AddComponent<SpriteRenderer>();
 
                         Sprite bitmaskSprite = new Sprite();
@@ -125,9 +128,17 @@ public static class xReader
                             }
                         }
                         charMask.GetComponent<SpriteRenderer>().sprite = bitmaskSprite;
-                        charMask.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.5f);
+                        charMask.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.3f);
+                        charMask.GetComponent<SpriteRenderer>().sortingOrder = 1;
 
-                        charMask.AddComponent<Transform>();
+                        charMask.AddComponent<BoxCollider2D>();
+                        if(bitmaskSprite != null)
+                        {
+                            charMask.GetComponent<BoxCollider2D>().size = bitmaskSprite.rect.size;
+                        }                        
+                        charMask.GetComponent<BoxCollider2D>().isTrigger = true;
+
+
                         if (xChild.Attributes["MX"] != null && xChild.Attributes["MY"] != null)
                         {
                             Vector2 maskPos = new Vector2();
@@ -142,7 +153,7 @@ public static class xReader
                     }
                 }
             }
-            EditorSceneManager.SaveScene(newScene, "Assets/Scenes/" + xData.Name + ".unity");
-        }        
+            EditorSceneManager.SaveScene(newScene, "Assets/Scenes/" + BGName + ".unity");
+        }
     }
 }
