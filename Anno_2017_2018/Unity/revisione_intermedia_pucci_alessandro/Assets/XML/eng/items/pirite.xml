@@ -1,0 +1,12 @@
+<object name="pyrite">
+  <description>
+    <command>text "The maximum displeasure you can give to a gold miner."</command>
+  </description>
+  <inventory />
+  <location name="bonus">
+    <hotspot ID="parete di vetro">
+      <command>pose d</command>
+      <command>text "This glass is bulletproof." $151</command>
+    </hotspot>
+  </location>
+</object>

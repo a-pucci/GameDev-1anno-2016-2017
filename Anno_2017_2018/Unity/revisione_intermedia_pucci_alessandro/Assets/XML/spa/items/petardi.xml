@@ -1,0 +1,48 @@
+<object name="petardos">
+  <description>
+    <command>text "Esperaba que dejaran caramelos, pero tendré que conformarme con los petardos."</command>
+  </description>
+  <inventory>
+    <object name="bomba_disinnescata">
+      <command>wait 0,5</command>
+      <command>text "Primero extraemos la pólvora..."</command>
+      <command>wait 1</command>
+      <command>throw "petardi"</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "Y ahora..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="bambola voodoo funzionante">
+      <command>text "Ni fuentes de calor ni extremidades amputadas, ¿vale?" $24</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>expression "sarcastic"</command>
+      <command>text "A duras penas aguantaría el susto..." $125</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>expression "sarcastic"</command>
+      <command>text "Solo lo iba a empeorar." $142</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>expression "sarcastic"</command>
+      <command>text "Dudo de que unos petardos sean suficiente." $143</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="bomba disinnescata">
+      <command>text "Primero tendría que cogerlo." $95</command>
+    </hotspot>
+  </location>
+</object>

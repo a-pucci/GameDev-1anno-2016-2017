@@ -1,0 +1,113 @@
+<location>
+  <script>
+    <command>0 expression "perplexed"</command>
+    <command>0 screen -w=5 -fo=1500</command>
+    <command>0 wait 1,5</command>
+    <command>0 text "I think I'm still tripping."</command>
+    <command>0 wait 0,5</command>
+    <command>0 pose d</command>
+    <command>0 expression "normal"</command>
+    <command>0 text "He was right, anyway: strawberry flavor."</command>
+    <command>0 animation -"inserviente_left" 00 -o=220,61 -a "inserviente_left"</command>
+    <command>0 wait 0,4</command>
+    <command>0 lookat -"inserviente_left"</command>
+    <command>0 expression "scared"</command>
+    <command>0 wait 0,5</command>
+    <command>0 expression -"inserviente_left" "happy"</command>
+    <command>0 text -"inserviente_left" -a=right "Hey, hi! Welcome to the Ashecliff Hospital."</command>
+    <command>0 expression "normal"</command>
+    <command>0 text "You gave me a bleeding fright."</command>
+    <command>0 text -"inserviente_left" -a=right "Did you come to see me?"</command>
+    <command>0 text "Actually, I don't even know what I'm doing here."</command>
+    <command>0 expression -"inserviente_left" "sad"</command>
+    <command>0 text -"inserviente_left" -a=right "Nobody comes here to visit me, always just the patients."</command>
+    <command>0 text -"inserviente_left" -a=right "Don't nobody ask for poor Amber."</command>
+    <command>0 wait 2</command>
+    <command>0 expression -"inserviente_left" "happy"</command>
+    <command>0 text -"inserviente_left" -a=right "Do you know why I'm called Amber?"</command>
+    <command>0 text "I don't care."</command>
+    <command>0 text -"inserviente_left" -a=right "It's for the color of my hair."</command>
+    <command>0 expression "sarcastic"</command>
+    <command>0 text "Compelling."</command>
+    <command>0 expression "normal"</command>
+    <command>0 expression -"inserviente_left" "angry"</command>
+    <command>0 text -"inserviente_left" -a=right "*uff*"</command>
+    <command>0 animation -"inserviente_left" 00 -o=220,61 "inserviente_left_back"</command>
+    <command>0 hide -"inserviente_left"</command>
+  </script>
+  <entry name="piano_terra" X="1490" Y="895" pose="l" />
+  <sound name="tastiera" />
+  <scene bitmap="schermo" X="588" Y="203" position="back" animated="True" loop="True" />
+  <hotspots>
+    <goto ID="bonus_x_piano_terra">
+      <go>
+        <command>goto "piano_terra"</command>
+      </go>
+    </goto>
+    <action ID="parete di vetro">
+      <act>
+        <command>sound "skinny_bussa"</command>
+        <command>animation -skinny 00 -o=29,32 "skinny_bussa"</command>
+        <command>animation -"inserviente_up" 00 -o=61,11 -a "inserviente_up"</command>
+        <command>wait 0,5</command>
+        <command>pose u</command>
+        <command>expression "scared"</command>
+        <command>expression -"inserviente_up" "happy"</command>
+        <command>text -"inserviente_up" "Were you looking for me?"</command>
+        <command>expression "normal"</command>
+        <command>text "Not at all."</command>
+        <command>text -"inserviente_up" "I can tell you about my day if you want. It's very interesting."</command>
+        <command>text "Actually, I'm trying to attract the attention of those three guys in there, but it seems they can't hear me."</command>
+        <command>expression -"inserviente_up" "sad"</command>
+        <command>text -"inserviente_up" "You only think about the patients. What did I ever do to you?"</command>
+        <command>text "Nothing, in fact. I just want to talk with them."</command>
+        <command>expression -"inserviente_up" "angry"</command>
+        <command>text -"inserviente_up" "All right, fine."</command>
+        <command>text -"inserviente_up" "FAREWELL."</command>
+        <command>animation -"inserviente_up" 00 -o=61,11 "inserviente_up_back"</command>
+        <command>hide -"inserviente_up"</command>
+        <command>wait 1</command>
+        <command>bitmap -"Francesco" "francesco_l"</command>
+        <command>wait 1</command>
+        <command>lookat -"Francesco"</command>
+        <command>text -"Francesco" "Guys, there's Skinny."</command>
+        <command>text -"Marco" "Hey."</command>
+        <command>text -"Stefano" "Hola."</command>
+        <command>expression "perplexed"</command>
+        <command>text "Do you know my name?"</command>
+        <command>text -"Francesco" "Skinny, I created you. You think I don't know your name?"</command>
+        <command>expression "normal"</command>
+        <command>dialog "sviluppatori"</command>
+      </act>
+    </action>
+    <character ID="inserviente_up">
+      <look />
+      <talk />
+    </character>
+    <character ID="inserviente_left">
+      <look />
+      <talk />
+    </character>
+    <character ID="Francesco">
+      <look />
+      <talk />
+      <indipendent>
+        <command>animation (216,141) -p=back "francesco_idle"</command>
+      </indipendent>
+    </character>
+    <character ID="Stefano">
+      <look />
+      <talk />
+      <indipendent>
+        <command>animation (481,392) -p=fore "stefano_idle"</command>
+      </indipendent>
+    </character>
+    <character ID="Marco">
+      <look />
+      <talk />
+      <indipendent>
+        <command>animation (718,230) -p=back "marco_idle"</command>
+      </indipendent>
+    </character>
+  </hotspots>
+</location>

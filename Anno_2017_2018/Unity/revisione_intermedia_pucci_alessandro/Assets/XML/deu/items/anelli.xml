@@ -1,0 +1,52 @@
+<object name="Eheringe">
+  <description>
+    <command>text "In einen der beiden Eheringe sind seltsame Zeichen eingraviert. "</command>
+  </description>
+  <inventory>
+    <object name="bibbia">
+      <command>text "Direkt aus der wöchentlichen Ausgabe des Magazins 'Ihre individuelle Hochzeit'." $53</command>
+    </object>
+  </inventory>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>if internal 1</command>
+      <command>pause -"me"</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text "Ich habe die Eheringe bei mir, meine Königin."</command>
+      <command>throw "anelli"</command>
+      <command>wait 1,5</command>
+      <command>text -"me" "Was stehst du da so rum? Hol einen Priester, damit er uns vermählen kann."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ehrlich gesagt glaube ich, dass ich bereits mehr als genug getan habe."</command>
+      <command>expression "normal"</command>
+      <command>expression -"me" "angry"</command>
+      <command>text -"me" "Das ist ein Befehl."</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" ""</command>
+      <command>text -"me" "Die Zeremonie findet drüben beim Meteor im Roswell-See statt."</command>
+      <command>bitmap -"me" "faraonessa_felice"</command>
+      <command>text -"me" "Wie romantisch ..."</command>
+      <command>wait 1</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text -"me" "Dann geh, ich muss mich fertigmachen."</command>
+      <command>internal -"cucina/Gesoo" -g 1</command>
+      <command>bitmap -"me" "faraonessa"</command>
+      <command>hide -nc -"me"</command>
+      <command>resume -"me"</command>
+      <command>fie</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Nimm DU die doch zur Frau, wenn du so sehr auf die stehst." 8</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="amante nascosto">
+      <command>text "Das wird bei ihm den gleichen Effekt haben wie bei mir die Pflaumen." $1</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>text "Ich glaube nicht, dass ein so scharfer Junggeselle wie der jemals heiraten würde." $2</command>
+    </hotspot>
+  </location>
+</object>

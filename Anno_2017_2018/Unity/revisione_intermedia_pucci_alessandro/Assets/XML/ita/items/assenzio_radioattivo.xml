@@ -1,0 +1,73 @@
+<object name="assenzio 'corretto'">
+  <description>
+    <command>text "Non che prima scherzasse... ma adesso è davvero da codice rosso."</command>
+  </description>
+  <inventory>
+    <object name="jalapeno">
+      <command>sound "pick_capsaicina"</command>
+      <command>throw "assenzio_radioattivo"</command>
+      <command>throw "jalapeno"</command>
+      <command>pick n "capsaicina"</command>
+    </object>
+    <object name="peperoncino">
+      <command>text "Temo che il peperoncino non sia abbastanza piccante." $15</command>
+    </object>
+    <object name="bomba">
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </object>
+    <object name="bomba_appiccicosa">
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </object>
+    <object name="bomba_disinnescata">
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Meglio non buttare benzina sul fuoco." $3</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="sali">
+      <command>text "Non credo che possa bastare. Serve qualcosa di più potente." $4</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="peperoncino">
+      <command>text "Temo che il peperoncino non sia abbastanza piccante." $15</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "Credo che quelle ferite gli brucino già abbastanza così." $16</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="stormtrooper">
+      <command>expression "sarcastic"</command>
+      <command>text "Peccato non sia acquaragia..." $17</command>
+    </hotspot>
+    <hotspot ID="ragazzo alticcio">
+      <command>pose d</command>
+      <command>text "A volte mi sorprendi in positivo in quanto a sadismo." $12</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Farei meglio a tenerlo per me." $18</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>text "Non credo riuscirei a scogliere il metallo con l'assenzio radioattivo." $19</command>
+    </hotspot>
+    <hotspot ID="bomba">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </hotspot>
+    <hotspot ID="pianta carnivora">
+      <command>text "Direi che può fare a meno di qualsivoglia tipo di fertilizzante." $20</command>
+    </hotspot>
+  </location>
+</object>

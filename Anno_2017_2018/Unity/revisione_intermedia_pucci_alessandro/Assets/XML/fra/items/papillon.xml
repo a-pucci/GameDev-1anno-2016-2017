@@ -1,0 +1,52 @@
+<object name="nœud papillon lance-eau">
+  <description>
+    <command>text "En y regardant de plus près, le tube est percé."</command>
+  </description>
+  <inventory>
+    <object name="cravatta">
+      <command>text "Comparaison de deux styles de vie." $96</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="barbone">
+      <command>text "Je doute que ça apporte que ce soit : il a déjà le sien." $136</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Stan">
+      <command>load "ingresso_catacomba"</command>
+      <command>sound "use_farfallino"</command>
+      <command>show +"papillon"</command>
+      <command>internal -g 1</command>
+      <command>if internal -"tomba di Oliver" 1</command>
+      <command>wait 1</command>
+      <command>ost 0.5</command>
+      <command>cutscene "ingresso_catacomba"</command>
+      <command>ost 1</command>
+      <command>screen -w=1 -fo=300 -a</command>
+      <command>hide -"tomba di Stan"</command>
+      <command>hide -"tomba di Oliver"</command>
+      <command>hide +"cravatta"</command>
+      <command>hide +"papillon"</command>
+      <command>hide +"lastre_marmo_stan_oliver"</command>
+      <command>show -"cimitero_x_catacomba"</command>
+      <command>fi</command>
+      <command>throw "papillon"</command>
+    </hotspot>
+    <hotspot ID="tomba di Oliver">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Je vois que même en grandissant, tu n'as pas appris à jouer avec les formes." $97</command>
+    </hotspot>
+  </location>
+  <location name="meteorite">
+    <hotspot ID="mummia">
+      <command>text "Je doute que ça apporte que ce soit : il a déjà le sien." $136</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="cravatta">
+      <command>text "Comparaison de deux styles de vie." $96</command>
+    </hotspot>
+  </location>
+</object>

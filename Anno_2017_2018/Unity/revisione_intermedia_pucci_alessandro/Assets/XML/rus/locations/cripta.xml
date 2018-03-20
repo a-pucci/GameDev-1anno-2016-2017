@@ -1,0 +1,124 @@
+<location>
+  <script>
+    <command>0 wait 0,5</command>
+    <command>0 lookat -"nonnina"</command>
+    <command>0 wait 1</command>
+    <command>0 pose d</command>
+    <command>0 text "Но... это же бабушка! Бабушка Рональда, я имею в виду."</command>
+    <command>0 status 1</command>
+  </script>
+  <entry name="cimitero" X="1027" Y="1027" pose="u" />
+  <scene bitmap="lumini_sx" X="488" Y="853" position="back" animated="True" loop="True" />
+  <scene bitmap="lumini_up" X="803" Y="758" position="back" animated="True" loop="True" />
+  <scene bitmap="lumini_dx" X="1304" Y="809" position="back" animated="True" loop="True" />
+  <scene bitmap="nonnino_dracula" X="662" Y="170" position="back" start="5000" stop="10000" animated="True" sound="dracula" loop="True" />
+  <scene bitmap="candelabro_sx" X="353" Y="131" position="back" animated="True" loop="True" />
+  <scene bitmap="lumiere" X="1373" Y="54" position="back" animated="True" loop="True" />
+  <scene bitmap="lumiere_occhi" X="1413" Y="151" position="back" start="2500" stop="5000" animated="True" loop="True" />
+  <scene bitmap="sedia_front" X="614" Y="686" position="default" animated="False" />
+  <hotspots>
+    <character ID="Illuminati">
+      <look>
+        <command>text "Понятия не имел, что у них есть последователи в паучьем царстве."</command>
+      </look>
+      <talk>
+        <command>text "В загробном мире очень сложно наладить какую-то либо рабочую бизнес-модель."</command>
+      </talk>
+    </character>
+    <action ID="lapide di Wilson">
+      <act>
+        <command>text "«Здесь лежит Уилсон Персиваль Хиггсбури, выдающийся ученый, смертельно порезавший себя лезвием»."</command>
+      </act>
+    </action>
+    <action ID="lapide di Woodie">
+      <act>
+        <command>text "«Здесь лежит Дровосек Вуди, задохнувшийся после того, как вдохнул порошка серебра»."</command>
+      </act>
+    </action>
+    <action ID="lapide di Wilbur">
+      <act>
+        <command>text "«Здесь лежит Уилбер, король обезьян, умерший от того, что поскользнулся на банановой кожуре»."</command>
+      </act>
+    </action>
+    <action ID="lapide di Willow">
+      <act>
+        <command>text "«Вечный покой здесь нашла Поджигательница Уиллоу, умершая от радости после огромного фейрверка»."</command>
+      </act>
+    </action>
+    <character ID="nonnina">
+      <look>
+        <command>text "*Надеюсь, что после смерти ее кротовье зрение не пришло в норму...*"</command>
+        <command>pose d</command>
+        <command>text "*...тогда я с легкостью смогу выдать себя за Рональда.*"</command>
+      </look>
+      <talk>
+        <command>0 text "Привет, бабушка, я... я Рональд."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" "&lt;непонятное бормотание&gt;"</command>
+        <command>0 text "Эм, бабушка... Я совершенно не понимаю, что ты там говоришь."</command>
+        <command>0 expression -"me" "irritated"</command>
+        <command>0 text -"me" "&lt;непонятное бормотание&gt;"</command>
+        <command>1 dialog "nonnina"</command>
+      </talk>
+    </character>
+    <item ID="gomitolo di ragnatela">
+      <look>
+        <command>text "Эта паутина такая крепкая, что по сравнению с ней кольчуга Фродо из мифрила — детская забава."</command>
+      </look>
+      <pick>
+        <command>text "Слишком липкий. В руки его я взять не смогу."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Тогда у меня получится доспех, а не свитер."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="asciugamano">
+      <look>
+        <command>text "Самый полезный предмет для путешествия автостопом по галактике."</command>
+      </look>
+      <pick>
+        <command>text "«Только в самом крайнем случае»."</command>
+      </pick>
+      <use>
+        <command>0 text "Его можно использовать как парус для мини-плота."</command>
+        <command>0 internal 1</command>
+        <command>1 text "Его можно намочить и драться им."</command>
+        <command>1 internal 2</command>
+        <command>2 text "Его можно обмотать вокруг головы, чтобы оно не пропускало вредные пары."</command>
+        <command>2 internal 3</command>
+        <command>3 text "Его можно использовать для подачи сигналов во время бедствия."</command>
+        <command>3 internal 4</command>
+        <command>4 text "И если после всего этого оно все еще будет чистым, то им можно и лицо вытереть."</command>
+        <command>4 internal 0</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Не думаю, что оно даст мне ответ на главный вопрос жизни, вселенной и всего такого."</command>
+      </talk>
+    </item>
+    <goto ID="cripta_x_cimitero" icon="d" PX="1003" PY="1376">
+      <go>
+        <command>1 wait 0,5</command>
+        <command>1 lookat -"nonnina"</command>
+        <command>1 text -"nonnina" "Постой, Рональд."</command>
+        <command>1 move (925,961)</command>
+        <command>1 wait 0,5</command>
+        <command>1 text -"nonnina" "Там так опасно. Полно атеистов."</command>
+        <command>1 text -"nonnina" "Возьми это."</command>
+        <command>1 animation -"nonnina" 00 -o=23,9 -a "nonnina_bibbia"</command>
+        <command>1 wait 0,8</command>
+        <command>1 animation -skinny 00 -o=115,32 "skinny_bibbia"</command>
+        <command>1 nolook</command>
+        <command>1 sound "pick_bibbia"</command>
+        <command>1 pick n "bibbia"</command>
+        <command>1 map y</command>
+        <command>1 internal 2</command>
+        <command>goto "cimitero"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

@@ -1,0 +1,36 @@
+<object name="bomba desactivada">
+  <description>
+    <command>text "Un dispositivo que data de la Segunda Guerra Mundial."</command>
+    <command>text "Se ha desactivado por razones de seguridad, evidentemente."</command>
+  </description>
+  <inventory>
+    <object name="petardi">
+      <command>wait 0,5</command>
+      <command>text "Primero extraemos la pólvora..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>throw "petardi"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "Y ahora..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="assenzio_radioattivo">
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </object>
+    <object name="plutonio">
+      <command>text "De verdad que no creo que esta clase de bomba lleve plutonio." $154</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "¿Con una bomba desactivada? Sería el intento de robo más estúpido de la historia." $75</command>
+    </hotspot>
+  </location>
+</object>

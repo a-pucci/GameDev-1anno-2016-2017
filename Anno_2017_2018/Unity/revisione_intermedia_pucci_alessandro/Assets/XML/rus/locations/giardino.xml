@@ -1,0 +1,244 @@
+<location>
+  <script>
+    <command>0 screen -w=500 -fo=1500</command>
+    <command>0 wait 1</command>
+    <command>0 text "Ух ты, американская вечеринка..."</command>
+    <command>0 wait 0,5</command>
+    <command>0 map "party"</command>
+    <command>0 status 1</command>
+    <command>4 stop -ost</command>
+    <command>4 screen -w=1000 -fo=300 -a</command>
+    <command>4 background &gt;"giardino" "giardino_bruciato"</command>
+    <command>4 hide -"giardino_x_casa_albero"</command>
+    <command>4 hide +"staccionata_giardino"</command>
+    <command>4 show +"staccionata_giardino_bruciato"</command>
+    <command>4 show skinny (1396,929)</command>
+    <command>4 pose u</command>
+    <command>4 wait 0,5</command>
+    <command>4 ost</command>
+    <command>4 wait 2</command>
+    <command>4 text "В этот раз я реально облажался."</command>
+    <command>4 achievement "piromane"</command>
+    <command>4 status 1</command>
+  </script>
+  <entry name="mappa" X="2473" Y="883" pose="l" />
+  <entry name="discarica" X="2473" Y="883" pose="l" />
+  <entry name="piano_terra" X="806" Y="946" pose="r" />
+  <entry name="casa_albero" X="1584" Y="872" pose="d" />
+  <entry name="cabina" X="2568" Y="952" pose="ul" />
+  <scene bitmap="corriere_armadio" X="2445" Y="440" position="back" animated="False" />
+  <scene bitmap="lampione_giardino" X="2022" Y="344" position="back" animated="True" start="1000" stop="11000" loop="True" />
+  <scene bitmap="lanterna_giardino" X="222" Y="324" position="back" animated="True" loop="True" />
+  <scene bitmap="staccionata_giardino" X="1797" Y="465" position="back" animated="False" />
+  <scene bitmap="staccionata_giardino_bruciato" X="1797" Y="465" position="back" animated="False" />
+  <scene bitmap="zucche_giardino1" X="656" Y="883" position="default" animated="True" loop="True" />
+  <scene bitmap="zucche_giardino2" X="946" Y="726" position="default" animated="True" loop="True" />
+  <scene bitmap="portico" X="0" Y="299" position="fore" animated="False" />
+  <scene bitmap="portico_superiore" X="0" Y="299" position="divine" animated="False" />
+  <scene bitmap="parete_porta" X="118" Y="462" position="default" animated="False" />
+  <scene bitmap="motore" X="2688" Y="0" position="back" animated="True" loop="True" />
+  <scene bitmap="mantello" X="2739" Y="173" position="back" animated="False" />
+  <scene bitmap="giocatore_smilzo" X="248" Y="740" position="divine" start="5500" stop="7500" animated="True" loop="True" />
+  <scene bitmap="no_ciccione" X="68" Y="0" position="back" animated="False" />
+  <hotspots>
+    <goto ID="giardino_x_cameretta_ronald">
+      <go>
+        <command>goto "cameretta_ronald"</command>
+      </go>
+    </goto>
+    <item ID="armadio">
+      <look>
+        <command>text "Подвинуть это оказалось намного сложнее, чем я думал."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "До тебя и правда доходит, как до жирафа."</command>
+      </pick>
+      <use>
+        <command>0 text "Нет, не буду этого делать, пока не найду, как добраться до Рональда."</command>
+        <command>1 text "Курьер скоро прибудет: нужно запаковать шкаф."</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>pose d</command>
+        <command>text "Думаю, я и правда начну не обращать на тебя внимания."</command>
+      </talk>
+    </item>
+    <item ID="pila di bicchieri">
+      <look>
+        <command>text "Уровень разврата на этих вечеринках и так выше некуда."</command>
+        <command>wait 0,5</command>
+        <command>text "Могли бы они хотя бы поставить стаканчики на стол."</command>
+      </look>
+      <pick>
+        <command>sound "pick_plastic_glass"</command>
+        <command>pick n "bicchiere vuoto"</command>
+      </pick>
+      <use>
+        <command>text "Они пустые и алкоголя рядом не видать."</command>
+        <command>text "Не стоит усложнять уже и так не шибко простые дела."</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Время игры в сломанный телефончик вышло, тебе так не кажется?"</command>
+      </talk>
+    </item>
+    <item ID="lapide">
+      <look>
+        <command>text "ВОТ ЭТО хорошее садовое украшение. Не то что все эти гномы!"</command>
+      </look>
+      <pick>
+        <comment>[a voce bassa]</comment>
+        <command>text "Никогда не тревожьте мертвых!"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Если ты посвятишь эту надгробную надпись мне, то я подумаю обо всем остальном..."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="Pinhead addormentato">
+      <look>
+        <command>pose d</command>
+        <command>text "Я бы никогда не подумал, что у Пинхэда трусы с сердечками."</command>
+      </look>
+      <talk>
+        <command>0 text "Давай посмотрим, смогу ли я спеть ему колыбельную."</command>
+        <command>0 wait 0,5</command>
+        <command>0 internal -g 1</command>
+        <comment>[dopo questa linea di testo parte il dialogo con pinehead]</comment>
+        <command>0-1 text "Колыбельная, колыбельная, о-о-ох, кому улыбнется сладость постельная?"</command>
+        <command>0-1 dialog "pinhead"</command>
+        <command>2 text "Моя работа здесь закончена."</command>
+      </talk>
+      <indipendent>
+        <command>sound "drunk_man_sleeps"</command>
+        <command>animation -"me" 00 -o=0,0 -c "drunk_sleeps"</command>
+      </indipendent>
+    </character>
+    <goto ID="giardino_x_piano_terra" icon="l" PX="-420" PY="681">
+      <go>
+        <command>goto "piano_terra"</command>
+      </go>
+    </goto>
+    <character ID="quarterback">
+      <look>
+        <command>wait 0,5</command>
+        <command>text "Он не очень-то умный на вид."</command>
+        <command>wait 0,5</command>
+        <command>expression "normal"</command>
+        <command>pause -"me"</command>
+        <command>text -"me" "Эй, друг, че ты бы не заткнулся, а то я из тибя все дерьмо выбю, пажалеешь, шо радился."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Задиристые наклонности и полное отсутствие базовой культуры речи."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Еще одно очко в пользу Скинни."</command>
+        <command>resume -"me"</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>text -"me" "Че те нада?"</command>
+        <command>dialog "quarterback"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "angry_quarterback"</command>
+        <command>animation -"me" 00 -o=33,23 -c "quaterback_idle"</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="cheerleader">
+      <look>
+      </look>
+      <talk>
+      </talk>
+      <indipendent>
+        <command>wait 5</command>
+        <command>sound "cheerleader"</command>
+        <command>animation -"me" 00 -o=0,30 "cheerleader_idle"</command>
+        <command>wait 5</command>
+      </indipendent>
+    </character>
+    <item ID="turbina">
+      <look>
+        <command>text "Похоже, кому-то понадобится тотальный ремонт."</command>
+        <command>wait 0,5</command>
+        <command>text "Если так... кто-нибудь выжил."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>text "Одно я знаю точно, кто-то использовал ее не по назначению."</command>
+      </use>
+      <talk>
+        <command>text "И вот, как завещала Эдна..."</command>
+        <command>text "«Никаких плащей!»"</command>
+      </talk>
+    </item>
+    <item ID="cassetta delle lettere">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Возможно, ты время от времени хочешь получать письма."</command>
+      </look>
+      <pick>
+        <command>0 sound "pick_lettera_amore"</command>
+        <command>0 pick n "lettera"</command>
+        <command>0 bitmap -"me" "cassetta_lettere_no_lettera"</command>
+        <command>0 internal 1</command>
+        <command>1 text "Следующим может прийти счет. Лучше остановиться."</command>
+      </pick>
+      <use>
+        <command>text "Мне не нужно отправлять письма."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "И моя социальная жизнь не такая уж насыщенная последние несколько лет."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="giardino_x_casa_albero" icon="u" PX="1518" PY="290">
+      <go>
+        <command>goto "casa_albero"</command>
+      </go>
+    </goto>
+    <goto ID="giardino_x_cabina" icon="dr" PX="3168" PY="1192">
+      <go>
+        <command>sound "skinny_in_the_call_box"</command>
+        <command>animation -skinny 00 -o=-27,-5 -a "skinny_cabina_in"</command>
+        <command>wait 0,54</command>
+        <command>show skinny (2900,1292)</command>
+        <command>animation -"me" 00 -o=3,5 "cabina_in"</command>
+        <command>goto "cabina"</command>
+      </go>
+    </goto>
+    <character ID="giocatore_basso">
+      <look />
+      <talk />
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=35,19 "giocatore_basso"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+  </hotspots>
+</location>

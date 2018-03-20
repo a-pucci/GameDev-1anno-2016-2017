@@ -1,0 +1,21 @@
+<object name="vendas">
+  <description>
+    <command>text "Estaban deseando consumar su noche de bodas."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="rasoio fai da te">
+      <command>text "A alguien le habría venido bien." $50</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "No es mala idea, pero primero quiero asegurarme de que he hecho todo lo necesario." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "No es que sea enfermero." $52</command>
+    </hotspot>
+  </location>
+</object>

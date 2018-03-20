@@ -1,0 +1,12 @@
+<object name="pirite">
+  <description>
+    <command>text "Il massimo dispiacere che si possa dare a un cercatore d'oro."</command>
+  </description>
+  <inventory />
+  <location name="bonus">
+    <hotspot ID="parete di vetro">
+      <command>pose d</command>
+      <command>text "Questi vetri sono a prova di proiettile." $151</command>
+    </hotspot>
+  </location>
+</object>

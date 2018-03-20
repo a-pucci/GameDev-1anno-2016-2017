@@ -1,0 +1,21 @@
+<object name="wrappings">
+  <description>
+    <command>text "They really couldn't wait to consummate their wedding night."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="rasoio fai da te">
+      <command>text "Someone could have really used it." $50</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "It's not a bad idea, but first I want to be sure I've done whatever is necessary." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "It's not like I'm a nurse." $52</command>
+    </hotspot>
+  </location>
+</object>

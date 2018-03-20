@@ -1,0 +1,38 @@
+<object name="Gutschein">
+  <description>
+    <command>text "'Gültig für einen Preis nach Wahl.'"</command>
+  </description>
+  <inventory />
+  <location name="accampamento">
+    <hotspot ID="zingara">
+      <command>pause -"me"</command>
+      <command>text "Ich habe einen Gutschein beim Karussell gewonnen."</command>
+      <command>wait 0,5</command>
+      <command>wait -"marionettista"</command>
+      <command>wait -"me"</command>
+      <command>animation -skinny 00 -o=84,13 -a "skinny_porge_buono"</command>
+      <command>wait 0,8</command>
+      <command>sound "zingara_buono"</command>
+      <command>animation -"marionettista" 00 -o=24,26 -c -a "marionettista_prende_buono"</command>
+      <command>wait 0,2</command>
+      <command>animation -"me" 00 -o=1,28 "zingara_prende_buono"</command>
+      <command>text -"me" "Wähle deinen Preis."</command>
+      <command>expression "perplexed"</command>
+      <command>wait 0,5</command>
+      <command>text "Egal, was?"</command>
+      <command>text -"me" "Egal, was."</command>
+      <command>dialog "scelta_premio"</command>
+    </hotspot>
+    <hotspot ID="marionettista">
+      <command>pose d</command>
+      <command>text "Wärmer ... " $83</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="giostraio">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "Ich hab mir das auf illegalem Wege verdient, also gehört das jetzt mir!" $84</command>
+    </hotspot>
+  </location>
+</object>

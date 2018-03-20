@@ -1,0 +1,142 @@
+<location>
+  <script>
+  </script>
+  <entry name="giardino" X="492" Y="851" pose="r" />
+  <scene bitmap="trilly" X="1528" Y="394" position="back" animated="True" start="2500" stop="6000" sound="trilly" loop="True" />
+  <scene bitmap="parete_casa_albero" X="0" Y="0" position="fore" animated="False" />
+  <hotspots>
+    <character ID="dragone">
+      <look>
+        <command>text "In der Mythologie des Orients steht der Drache für Ausgeglichenheit und Weisheit."</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Doch selbst ein 'Talisman' in dieser Größe könnte deine eigene Dummheit nicht ausgleichen."</command>
+        <command>wait 0,5</command>
+        <command>text "Mein Pech."</command>
+      </look>
+      <talk>
+        <command>0-1 text "Shenron, erwecke Krillin!" 1</command>
+        <command>0 wait 0,5</command>
+        <command>0-1 bitmap -"me" "dragone_cinese_l"</command>
+        <command>2 bitmap -"me" "dragone_metal_l"</command>
+        <command>0 text -"me" "Komm mir ja nicht mit klugen Sprüchen." 2</command>
+        <command>1 text -"me" "Wird Zeit, dass du aufhörst." 3</command>
+        <command>0 internal -g 1</command>
+        <command>0-1 dialog "dragone"</command>
+        <command>2 dialog "scelta_pezzo"</command>
+      </talk>
+    </character>
+    <item ID="manifesto">
+      <look>
+        <command>text "Da steht 'Geburtstagstorte'."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Keine Ahnung, was ich erwartet hatte, aber enttäuscht bin ich schon."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Moment mal ..."</command>
+        <command>0 wait 1</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Seit wann spreche ich denn Chinesisch?"</command>
+        <command>0 internal -"poster" -g 1</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Du warst ein sehr böser Bubi. Keine Geburtstagstorte für dich."</command>
+      </pick>
+      <use>
+        <command>text "Ich glaube, das dient ausschließlich als Deko."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="poster">
+      <look>
+        <command>text "'Ich hasse Ideogramme'."</command>
+        <command>text "Schätze mal, das ist das Erste, was man im Chinesisch-Unterricht schreiben lernt."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Moment mal ..."</command>
+        <command>0 wait 1</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Seit wann spreche ich denn Chinesisch?"</command>
+        <command>0 internal -"manifesto" -g 1</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Wenn du eins findest, das 'Tritt mir in den Arsch' bedeutet, dann schenke ich dir das."</command>
+      </pick>
+      <use>
+        <command>text "Ich glaube, das dient ausschließlich als Deko."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="pugnale">
+      <look>
+        <command>text "Den hat vermutlich ein Amateur-Killer geworfen ..."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "... also, ein Amateur-Killer mit einer krassen Sehschwäche."</command>
+      </look>
+      <pick>
+        <command>text "Zu weit oben, da komme ich nicht dran."</command>
+      </pick>
+      <use>
+        <command>text "Geht vielleicht noch schlechter, aber das wäre schwer, und ich will's lieber nicht riskieren."</command>
+        <command>pose d</command>
+        <command>text "Wenn ich so schlecht Darts spiele, dann habe ich wenigstens die Entschuldigung, dass ich gerade aus der Dusche komme."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <character ID="eremita">
+      <look>
+        <command>text "Das ist die seltsamste Art von Meditation, die ich jemals gesehen habe."</command>
+      </look>
+      <talk>
+        <command>0 text "Mmm, Verzeihung ..."</command>
+        <command>0 wait 1</command>
+        <command>0 text "&lt;hust&gt;"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Guter Mann ...?"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Ich will ja nicht stören, aber ..."</command>
+        <command>0 wait 1</command>
+        <command>0 text "VERDAMMT NOCHMAL, DU ALTER PENNER, ICH REDE MIT DIR!"</command>
+        <command>1-2 text "WACH AUF, OPA!"</command>
+        <command>pause -"me"</command>
+        <command>stop -a "eremita_idle"</command>
+        <command>wait 1</command>
+        <command>0 text -"eremita" "Dein Ansatz ist für eine zivilisierte Unterredung unter Erwachsenen wenig geeignet."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Stimmt, da bin ich wohl zu weit gegangen."</command>
+        <command>0 text -"eremita" "Ich vergebe dir."</command>
+        <command>1 text -"eremita" "Du musst nicht so brüllen."</command>
+        <command>2 text -"eremita" "Wie bereits gesagt, du musst nicht so brüllen."</command>
+        <command>1-2 wait 0,5</command>
+        <command>1-2 text "Stimmt, tut mir leid."</command>
+        <command>1-2 text -"eremita" "Schon gut."</command>
+        <command>1 internal -g 2</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "eremita"</command>
+      </talk>
+      <indipendent>
+        <command>sound "hermit"</command>
+        <command>animation -"me" 00 -o=31,12 -c "eremita_idle"</command>
+      </indipendent>
+    </character>
+    <goto ID="casa_albero_x_giardino" icon="l" PX="-582" PY="681">
+      <go>
+        <command>goto "giardino"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

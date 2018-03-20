@@ -1,0 +1,31 @@
+<object name="фонарик">
+  <description>
+    <command>text "Батарей не хватает."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>if inventory "pila" &gt; 1</command>
+      <command>sound "pick_pile_torcia"</command>
+      <command>throw "pila" "pila" "torcia_scarica"</command>
+      <command>pick n "torcia"</command>
+      <command>fie</command>
+      <command>if inventory "pila" = 1</command>
+      <command>text "Нужно две батарейки."</command>
+      <command>fie</command>
+    </object>
+  </inventory>
+  <location name="sgabuzzino">
+    <hotspot ID="Boogeyman">
+      <command>expression "sarcastic"</command>
+      <command>text "Если бы только он был заряжен..." $178</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="pila stilo">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+    <hotspot ID="batteria stilo">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,90 @@
+<object name="Nuss">
+  <description>
+    <command>text "Irgendwie schon komisch, ein Tier in seinem Brustkorb zu haben."</command>
+  </description>
+  <inventory />
+  <location name="anticamera">
+    <hotspot ID="carta moschicida">
+      <command>text -"inventory" "Sehe ich für dich vielleicht wie eine Fliege aus?" $239</command>
+    </hotspot>
+    <hotspot ID="bara">
+      <command>text -"inventory" "Das Schlimmste ist, dass ich nicht mal ironisch auf deinen Tod anspielen kann." $240</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>expression "happy"</command>
+      <command>text -"inventory" "Bär, hilf mir! Skinny hat mich gefressen!" $241</command>
+      <command>expression -"Orso" "up"</command>
+      <command>text -"Orso" "Du verlierst auch nie deinen Sinn für Humor, was, Nuss?" $242</command>
+    </hotspot>
+    <hotspot ID="bidone">
+      <command>text -"inventory" "Das geht ja wohl gar nicht!" $243</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cane">
+      <command>sound "skinny_nut"</command>
+      <command>animation -skinny 00 -o=-18,-3 -a "skinny_noce"</command>
+      <command>pause -"me"</command>
+      <command>wait 1</command>
+      <command>throw "noce"</command>
+      <command>sound "dog_ready"</command>
+      <command>animation -"me" 00 -o=0,21 "cane_attenti"</command>
+      <command>hide -"cieco"</command>
+      <command>show -"megafono"</command>
+      <command>sound "dog_run"</command>
+      <command>animation (1883,544) -p=back -a "vecchio_trascinato_no_megafono"</command>
+      <command>hide +"guinzaglio"</command>
+      <command>hide -"cane"</command>
+      <command>hide -"cieco"</command>
+    </hotspot>
+    <hotspot ID="betoniera">
+      <command>text -"inventory" "Alter, hast du nicht mehr alle Latten am Zaun?" $244</command>
+      <command>text "Ist nicht meine Schuld, mach mir keine Vorwürfe." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Verstehe ich nicht." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Vergiss es." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+    <hotspot ID="cieco">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "Ich glaube nicht, dass der sonderlich beeindruckt wäre, wo der doch BLIND ist!" $248</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text -"inventory" "Alter, hast du nicht mehr alle Latten am Zaun?" $244</command>
+      <command>text "Ist nicht meine Schuld, mach mir keine Vorwürfe." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Verstehe ich nicht." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Vergiss es." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="tana">
+      <command>text -"inventory" "Hör mal, ich bin nur ein Eichhörnchen, kein Maulwurf." $249</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "Komm, Nuss, fass!" $250</command>
+      <command>text -"inventory" "Bist du high?" $251</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="ritratto sospetto">
+      <command>text -"inventory" "Alter, hast du nicht mehr alle Latten am Zaun?" $244</command>
+      <command>text "Ist nicht meine Schuld, mach mir keine Vorwürfe." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Verstehe ich nicht." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Vergiss es." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,59 @@
+<location>
+  <script>
+    <command>0 wait 1</command>
+    <command>0 text "I sense trouble..."</command>
+    <command>0 status 1</command>
+  </script>
+  <entry name="bagno1" X="564" Y="1035" pose="u" />
+  <scene bitmap="skinny_up" X="301" Y="697" position="divine" animated="False" />
+  <scene bitmap="finestra_rotta_visuale_bagno" X="1063" Y="174" position="back" animated="False" />
+  <hotspots>
+    <item ID="furgone">
+      <look>
+        <command>text "That must be the van of the moving company..."</command>
+        <command>text "I absolutely have to find a way to get in there before they finish and leave."</command>
+      </look>
+      <pick>
+        <command>expression "sarcastic"</command>
+        <command>text "That's not a Dinky Toy. It just looks small from up here."</command>
+      </pick>
+      <use>
+        <command>text "I knew I should have taken that correspondence driver's class."</command>
+      </use>
+      <talk>
+        <comment>[con tono un po' infantile, come se parlasse ad un bambino]</comment>
+        <command>text "Listen, little van, don't move until I find a way to get out of this house. Capiche?"</command>
+      </talk>
+    </item>
+    <action ID="vicini1">
+      <act>
+        <command>text "The Murrays are really very nice people."</command>
+        <command>text "When we were children, Ronald and I often played with Cooper, but after the divorce he went to live with his mother."</command>
+      </act>
+    </action>
+    <action ID="vicini2">
+      <act>
+        <command>text "One of the countless houses of the Wayne family."</command>
+        <command>text "Mr. Wayne is not often seen here in the city. He never stops by to talk with anyone."</command>
+      </act>
+    </action>
+    <action ID="vicini3">
+      <act>
+        <command>text "That house has been for sale for years but nobody has ever seen the owners."</command>
+        <command>text "Nor is it clear if the mysterious Mr. Richards even really exists."</command>
+      </act>
+    </action>
+    <goto ID="finestra_x_bagno1a" icon="dl" PX="-387" PY="1247">
+      <go>
+        <command>sound "closing_window"</command>
+        <command>goto "bagno1"</command>
+      </go>
+    </goto>
+    <goto ID="finestra_x_bagno1b" icon="dr" PX="2209" PY="1243">
+      <go>
+        <command>sound "closing_window"</command>
+        <command>goto "bagno1"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

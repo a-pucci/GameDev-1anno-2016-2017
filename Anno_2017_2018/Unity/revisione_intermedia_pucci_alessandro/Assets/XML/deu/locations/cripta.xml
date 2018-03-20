@@ -1,0 +1,124 @@
+<location>
+  <script>
+    <command>0 wait 0,5</command>
+    <command>0 lookat -"nonnina"</command>
+    <command>0 wait 1</command>
+    <command>0 pose d</command>
+    <command>0 text "Aber ... das ist doch Oma! Also, Ronalds Oma, meine ich."</command>
+    <command>0 status 1</command>
+  </script>
+  <entry name="cimitero" X="1027" Y="1027" pose="u" />
+  <scene bitmap="lumini_sx" X="488" Y="853" position="back" animated="True" loop="True" />
+  <scene bitmap="lumini_up" X="803" Y="758" position="back" animated="True" loop="True" />
+  <scene bitmap="lumini_dx" X="1304" Y="809" position="back" animated="True" loop="True" />
+  <scene bitmap="nonnino_dracula" X="662" Y="170" position="back" start="5000" stop="10000" animated="True" sound="dracula" loop="True" />
+  <scene bitmap="candelabro_sx" X="353" Y="131" position="back" animated="True" loop="True" />
+  <scene bitmap="lumiere" X="1373" Y="54" position="back" animated="True" loop="True" />
+  <scene bitmap="lumiere_occhi" X="1413" Y="151" position="back" start="2500" stop="5000" animated="True" loop="True" />
+  <scene bitmap="sedia_front" X="614" Y="686" position="default" animated="False" />
+  <hotspots>
+    <character ID="Illuminati">
+      <look>
+        <command>text "Ich hatte ja keine Ahnung, dass die auch in der Welt der Arachniden noch Anhänger haben."</command>
+      </look>
+      <talk>
+        <command>text "Im Jenseits hättet ihr ganz schön Probleme, mit eurem Geschäftsmodell auf einen grünen Zweig zu kommen."</command>
+      </talk>
+    </character>
+    <action ID="lapide di Wilson">
+      <act>
+        <command>text "'Hier ruht Wilson Percival Higgusbury, ein außergewöhnlicher Wissenschaftler, der sich an einer Rasierklinge tödlich verletzte.'"</command>
+      </act>
+    </action>
+    <action ID="lapide di Woodie">
+      <act>
+        <command>text "'Hier ruht Woodie der Holzfäller, erstickt an einem silbrigen Pulver.'"</command>
+      </act>
+    </action>
+    <action ID="lapide di Wilbur">
+      <act>
+        <command>text "'Hier ruht Wilbur der Affenkönig, der auf einer Bananenschale ausrutschte und sofort starb.'"</command>
+      </act>
+    </action>
+    <action ID="lapide di Willow">
+      <act>
+        <command>text "'Hier ruht Willow die Pyromanin, die ihr größtes Feuerwerk nicht überlebte.'"</command>
+      </act>
+    </action>
+    <character ID="nonnina">
+      <look>
+        <command>text "*Ich hoffe, dass die auch als Tote immer noch blind wie ein Maulwurf ist.*"</command>
+        <command>pose d</command>
+        <command>text "*... Dann kann ich mich immer noch für Ronald augeben.*"</command>
+      </look>
+      <talk>
+        <command>0 text "Hallo, Oma, ich ... Ich bin's, Ronald."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" "&lt;unverständliches Gemurmel&gt;"</command>
+        <command>0 text "Ähm, Oma ... Ich kann echt nicht verstehen, was du da sagst."</command>
+        <command>0 expression -"me" "irritated"</command>
+        <command>0 text -"me" "&lt;unverständliches Gemurmel&gt;"</command>
+        <command>1 dialog "nonnina"</command>
+      </talk>
+    </character>
+    <item ID="gomitolo di ragnatela">
+      <look>
+        <command>text "Ein Spinnennetz ist aus Fäden gewebt, die so robust sind, dass selbst Frodos Mithril-Kettenpanzer daneben wie eine Rüstung aus Alufolie wirkt."</command>
+      </look>
+      <pick>
+        <command>text "Zu klebrig. Das würde ich doch niemals wieder von meinen Händen kriegen."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Das Ergebnis wäre doch wohl eher eine Rüstung als ein Oberteil."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="asciugamano">
+      <look>
+        <command>text "Der nützlichste Gegenstand, den ein intergalaktischer Anhalter überhaupt haben kann."</command>
+      </look>
+      <pick>
+        <command>text "'Nur im Notfall.'"</command>
+      </pick>
+      <use>
+        <command>0 text "Könnte ich wie das Segel eines Mini-Floßes benutzen."</command>
+        <command>0 internal 1</command>
+        <command>1 text "Könnte ich für den Nahkampf nass machen."</command>
+        <command>1 internal 2</command>
+        <command>2 text "Könnte ich mir um den Kopf wickeln, um gefährliche Dämpfe zu bannen."</command>
+        <command>2 internal 3</command>
+        <command>3 text "Ich könnte im Notfall damit auf mich aufmerksam machen."</command>
+        <command>3 internal 4</command>
+        <command>4 text "Und wenn es immer noch sauber wäre, dann könnte ich mir damit das Gesicht abwischen, klar."</command>
+        <command>4 internal 0</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Ich glaube nicht, dass es mir die Antwort auf die ultimative Frage nach dem Leben, dem Universum und dem ganzen Rest geben könnte."</command>
+      </talk>
+    </item>
+    <goto ID="cripta_x_cimitero" icon="d" PX="1003" PY="1376">
+      <go>
+        <command>1 wait 0,5</command>
+        <command>1 lookat -"nonnina"</command>
+        <command>1 text -"nonnina" "Moment mal, Ronald."</command>
+        <command>1 move (925,961)</command>
+        <command>1 wait 0,5</command>
+        <command>1 text -"nonnina" "Ist gefährlich hier draußen. Hier wimmelt es nur so von Atheisten."</command>
+        <command>1 text -"nonnina" "Hier, nimm."</command>
+        <command>1 animation -"nonnina" 00 -o=23,9 -a "nonnina_bibbia"</command>
+        <command>1 wait 0,8</command>
+        <command>1 animation -skinny 00 -o=115,32 "skinny_bibbia"</command>
+        <command>1 nolook</command>
+        <command>1 sound "pick_bibbia"</command>
+        <command>1 pick n "bibbia"</command>
+        <command>1 map y</command>
+        <command>1 internal 2</command>
+        <command>goto "cimitero"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

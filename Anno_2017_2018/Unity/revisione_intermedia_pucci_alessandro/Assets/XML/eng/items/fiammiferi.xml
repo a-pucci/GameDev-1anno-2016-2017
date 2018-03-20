@@ -1,0 +1,99 @@
+<object name="matches">
+  <description>
+    <command>text "It's surprising they didn't get mold under that tile."</command>
+  </description>
+  <inventory>
+    <object name="bambola voodoo incompleta">
+      <command>text "No heat sources, nor missing limbs, remember?" $24</command>
+    </object>
+    <object name="bibbia">
+      <command>text "Let's avoid such acts of blasphemy." $56</command>
+    </object>
+    <object name="bomba">
+      <command>text "Sometimes I'm amazed at how you can still be alive." $7</command>
+    </object>
+    <object name="bomba_appiccicosa">
+      <command>text "Sometimes I'm amazed at how you can still be alive." $7</command>
+    </object>
+    <object name="bomboletta_spray">
+      <command>text "It'd cause a historic blaze." $105</command>
+      <command>text "After the tree-house accident, maybe it's time to lay low, just for a while." $106</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="bomboletta spray">
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "It'd cause a historic blaze." $105</command>
+      <command>expression "normal"</command>
+      <command>text "After the tree-house accident, maybe it's time to lay low, just for a while." $106</command>
+    </hotspot>
+    <hotspot ID="covone di paglia">
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "It'd cause a historic blaze." $105</command>
+      <command>expression "normal"</command>
+      <command>text "After the tree-house accident, maybe it's time to lay low, just for a while." $106</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>load "accensione_catacomba"</command>
+      <command>wait 0,3</command>
+      <command>sound "torcia_fuoco"</command>
+      <command>wait 0,2</command>
+      <command>show +"torcia_grande"</command>
+      <command>wait 1,5</command>
+      <command>stop "catacomba_buio_theme"</command>
+      <command>cutscene -s "accensione_catacomba"</command>
+      <command>ost &gt;"catacomba" "catacomba_luce_theme"</command>
+      <command>pose l</command>
+      <command>hide -"oscurita"</command>
+      <command>hide +"buio_catacomba"</command>
+      <command>show -"testa in salamoia1"</command>
+      <command>show -"testa in salamoia2"</command>
+      <command>show -"testa in salamoia3"</command>
+      <command>show -"testa in salamoia4"</command>
+      <command>show -"teste in salamoia"</command>
+      <command>show -"targa antica"</command>
+      <command>show -"non_sapevo_come_chiamarlo"</command>
+      <command>show +"luci_catacomba"</command>
+      <command>show +"torcia_mini1"</command>
+      <command>show +"torcia_mini2"</command>
+      <command>show +"torcia_mini3"</command>
+      <command>show +"torcia_mini4"</command>
+      <command>show +"torcia_mini5"</command>
+      <command>internal -"fiaccola" 1</command>
+      <command>throw "fiammiferi"</command>
+      <command>nolook</command>
+    </hotspot>
+    <hotspot ID="oscurita">
+      <command>text "It'll take much more to see something in this darkness." $107</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="teppistello1">
+      <command>expression "sarcastic"</command>
+      <command>text "He already has his own." $108</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Stop embarrassing yourself with such stupid jokes." $109</command>
+    </hotspot>
+    <hotspot ID="lapide di Willow">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "NO! Giving matches to her, NO!" $110</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="moglie di Frankenstein">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "NO! Giving matches to her, NO!" $110</command>
+    </hotspot>
+  </location>
+</object>

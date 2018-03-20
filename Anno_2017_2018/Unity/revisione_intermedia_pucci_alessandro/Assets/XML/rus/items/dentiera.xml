@@ -1,0 +1,57 @@
+<object name="вставные челюсти">
+  <description>
+    <command>0 text "Grandma's toothy smile."</command>
+    <command>1 text "Какая ослепительная улыбка..."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>text "В этой жидкости их точно хранить не стоит." $193</command>
+    </object>
+    <object name="gomme_da_masticare">
+      <command>text "Так мы начнем последнюю битву между силами добра и кариесом." $223</command>
+    </object>
+  </inventory>
+  <location name="cripta">
+    <hotspot ID="nonnina">
+      <command>animation -skinny 00 -o=104,16 -a "skinny_dentiera"</command>
+      <command>wait 0,41</command>
+      <command>sound "nonna_dentiera"</command>
+      <command>animation -"me" 00 -o=23,9 "nonnina_dentiera"</command>
+      <command>bitmap -"me" "nonnina"</command>
+      <command>throw "dentiera"</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "herself"</command>
+      <command>text -"me" "*Чертова старость.*"</command>
+      <command>internal -"me" -g 1</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "happy"</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Рональд, бабушкин любимчик... ты пришел навестить меня?"</command>
+      <command>expression -"me" "sad"</command>
+      <command>text -"me" "Так исхудал. Ты хоть кушаешь?"</command>
+      <command>dialog "nonnina_risposta"</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="non_sapevo_come_chiamarlo">
+      <command>expression "sarcastic"</command>
+      <command>text "Это он тоже сможет съесть." $98</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="pianta carnivora">
+      <command>text "К сожалению, у него во рту уже два ряда острейших зубов." $99</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cieco">
+      <command>expression "sarcastic"</command>
+      <command>text "Ему бы катаракту удалить, а не зубы новые вставлять." $209</command>
+    </hotspot>
+  </location>
+  <location name="pensile">
+    <hotspot ID="dentifricio">
+      <command>text "Может, если бы он регулярно чистил зубы, то не дошел бы до такого." $210</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,39 @@
+<object name="Schaumbad">
+  <description>
+    <command>text "Die Flasche ist jetzt nicht gerade sonderlich maskulin, aber ich muss zugeben, das Zeug riecht super."</command>
+  </description>
+  <inventory />
+  <location name="primo_piano">
+    <hotspot ID="toppa">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ein wenig zu groß, um durch ein Schlüsselloch zu passen."</command>
+    </hotspot>
+    <hotspot ID="porta del bagno">
+      <command>hide -"toppa"</command>
+      <command>hide -"porta del bagno"</command>
+      <command>show -"primo_piano_x_bagno"</command>
+      <command>text "Brauchst du zufällig noch mehr Schaumbad? Ich hätte da eine Flasche dabei."</command>
+      <command>wait 1</command>
+      <command>text (1290,330) -c=lblue "Okay, du kannst rein."</command>
+      <command>wait 0,5</command>
+      <command>status 0</command>
+      <command>sound "door_open"</command>
+      <command>goto "bagno"</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Also, ein Bad könnte echt nicht schaden." $21</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="non_sapevo_come_chiamarlo">
+      <command>text "Ich fürchte, das reicht nicht, um den aus seinem Grab zu holen." $22</command>
+    </hotspot>
+    <hotspot ID="zombie">
+      <command>pose d</command>
+      <command>text "Besser nicht, das wäre doch total unhöflich." $23</command>
+    </hotspot>
+  </location>
+</object>

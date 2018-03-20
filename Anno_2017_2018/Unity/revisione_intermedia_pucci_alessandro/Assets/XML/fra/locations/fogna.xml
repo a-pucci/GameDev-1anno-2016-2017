@@ -1,0 +1,203 @@
+<location>
+  <script>
+    <command>0 show skinny (1930,0)</command>
+    <command>0 hide skinny</command>
+    <command>0 stop "fogna_theme"</command>
+    <command>0 status &gt;"bagno1" 2</command>
+    <command>0 wait 1,5</command>
+    <command>0 sound "skinny_caduta"</command>
+    <command>0 animation (1065,-4) -p=fore -s=83 "skinny_ingresso_fogna1"</command>
+    <command>0 show +"schermo_rotto"</command>
+    <command>0 animation (1065,-4) -p=fore -s=83 "skinny_ingresso_fogna2"</command>
+    <command>0 show +"skinny_spiaccicato"</command>
+    <command>0 wait 1</command>
+    <command>0 hide +"skinny_spiaccicato"</command>
+    <command>0 animation (1065,-4) -p=fore -s=83 "skinny_ingresso_fogna3"</command>
+    <command>0 screen c -fi=1500 -w=1000</command>
+    <command>0 goto "bagno1"</command>
+    <command>2 expression "sad"</command>
+    <command>2 hide +"schermo_rotto"</command>
+    <command>2 screen c -w=5 -fo=500</command>
+    <command>2 wait 0,5</command>
+    <command>2 animation -skinny 00 -o=-25,-4 -s=90 "skinny_massaggia_testa"</command>
+    <command>2 expression "perplexed"</command>
+    <command>2 wait 0,5</command>
+    <command>2 text "La tuile."</command>
+    <command>2 status &gt;"bagno1" 1</command>
+    <command>2 status 1</command>
+  </script>
+  <entry name="bagno1" X="2241" Y="761" pose="d" />
+  <entry name="scantinato" X="3271" Y="734" pose="d" />
+  <entry name="vicolo" X="2944" Y="751" pose="d" />
+  <sound name="river" />
+  <sound name="rivulet" />
+  <scene bitmap="luci_fogna" X="0" Y="0" position="fore" animated="False" />
+  <scene bitmap="fiume_fogna1" X="1" Y="822" position="back" animated="True" loop="True" />
+  <scene bitmap="fiume_fogna2" X="1923" Y="822" position="back" animated="True" loop="True" />
+  <scene bitmap="rigagnolo_fogna" X="1818" Y="454" position="back" animated="True" loop="True" />
+  <scene bitmap="asse_legno" X="1800" Y="729" position="back" animated="False" />
+  <scene bitmap="tubo_davanti" X="2175" Y="0" position="default" animated="False" />
+  <scene bitmap="tubo_scolo" X="2249" Y="52" position="default" animated="True" loop="True" />
+  <scene bitmap="tubi_sx_fogna" X="190" Y="-8" position="back" animated="True" loop="True" />
+  <scene bitmap="tubi_dx_fogna" X="2233" Y="0" position="back" animated="True" loop="True" />
+  <scene bitmap="marciapiede_fogna" X="0" Y="601" position="back" animated="False" />
+  <scene bitmap="coda_gondola" X="1041" Y="601" position="default" animated="False" />
+  <scene bitmap="coda_gondola_lenza" X="1041" Y="601" position="default" animated="False" />
+  <scene bitmap="cartello_fogna" X="2935" Y="652" position="default" animated="True" loop="True" />
+  <scene bitmap="cartello_ratatouielle" X="3538" Y="99" position="fore" animated="False" />
+  <scene bitmap="skinny_spiaccicato" X="1065" Y="-4" position="fore" animated="False" />
+  <scene bitmap="schermo_rotto" X="1057" Y="0" position="divine" animated="False" />
+  <scene bitmap="lumache" X="2962" Y="843" position="fore" animated="True" loop="True" foreground="True" />
+  <scene bitmap="tentacoli" X="3540" Y="594" position="fore" animated="True" loop="True" foreground="True" />
+  <hotspots>
+    <item ID="parchimetro">
+      <look>
+        <command>text "Ces temps de stationnement sont devenus un véritable fléau."</command>
+      </look>
+      <pick>
+        <command>0 text "Pour ça, j'aurais besoin d'un pied-de-biche et... d'un bon avocat."</command>
+        <command>1 default e -pick</command>
+      </pick>
+      <use>
+        <command>text "Ma voiture est encore garée dans l'armoire."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="calamita gigante">
+      <look>
+        <command>text "Je dirais que ça coule de source..."</command>
+      </look>
+      <pick>
+        <command>text "Passons à autre chose et considérons qu'il fait partie du paysage."</command>
+      </pick>
+      <use>
+        <command>text "Encore une fois, la physique est contre moi."</command>
+      </use>
+      <talk>
+        <command>text "Originaire de Toonville, n'est-ce pas ?"</command>
+      </talk>
+    </item>
+    <item ID="muro">
+      <look>
+        <command>text "Il a l'air plutôt abimé."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>show -"fogna_x_scantinato"</command>
+        <command>animation -skinny 00 -o=71,1 -a "skinny_muro"</command>
+        <command>wait 0,41</command>
+        <command>sound "broken_wall"</command>
+        <command>animation -"me" 00 -o=0,0 -s=41 "muro_crolla"</command>
+        <command>hide -"me"</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "C'est à peu près le sentiment qu'on a lorsqu'on s'adresse à toi."</command>
+      </talk>
+    </item>
+    <item ID="lenza">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Pas vraiment la partie de pêche la plus chanceuse que j'aie pu voir."</command>
+      </look>
+      <pick>
+        <command>sound "pick_lenza"</command>
+        <command>pick y "lenza"</command>
+        <command>hide +"coda_gondola_lenza"</command>
+        <command>show +"coda_gondola"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Je ne pense pas que pêcher dans ces eaux putrides soit une bonne idée."</command>
+      </use>
+      <talk>
+        <command>text "Je ne suis pas sûr qu'on puisse dire que la pêche a été bonne…"</command>
+      </talk>
+    </item>
+    <item ID="centralina">
+      <look>
+        <command>text "Je suppose que c'est le panneau de contrôle des feux de circulation du quartier."</command>
+        <command>text "Je trouve ça curieux qu'il soit ici. Je l'aurais imaginé sur un poteau ou quelque chose comme ça."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Tirer sur des fils à haute tension n'est peut-être pas ta meilleure idée."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Mais, hélas, pas la pire non plus."</command>
+      </pick>
+      <use>
+        <command>text "L'idée pourrait être drôle, mais je ne pense pas que les gens dans la rue apprécieraient l'humour."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="rigagnolo">
+      <look>
+        <command>text "C'est comme au parc aquatique, mais... avec des bactéries différentes."</command>
+      </look>
+      <pick>
+        <command>animation -skinny 00 -o=64,-1 "skinny_prende_acqua"</command>
+        <command>bitmap -skinny -o=64,-1 "skinny_acqua"</command>
+        <command>wait 0,5</command>
+        <command>expression "happy"</command>
+        <command>text "J'ai de l'eau dans ma main !"</command>
+        <command>wait 1,5</command>
+        <command>expression ""</command>
+        <command>text "Et maintenant j'atteins le premier stade du rhumatisme."</command>
+        <command>bitmap -skinny ""</command>
+        <command>animation -skinny 00 -o=64,-1 "skinny_prende_acqua_back"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Si par hasard tu imagines que je vais en boire, eh bien..."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "… ne compte pas là-dessus."</command>
+      </use>
+      <talk>
+        <command>text "Même si les micro-organismes y sont nombreux, je doute qu'ils puissent me répondre."</command>
+      </talk>
+    </item>
+    <character ID="coccodrillo">
+      <look>
+        <command>text -nt "*gloups*"</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>0 text "Sa-salut."</command>
+        <command>0 expression "normal"</command>
+        <command>0 expression -"me" "l"</command>
+        <command>0 text -"me" -c=rrred "Salut, petit sac d'os."</command>
+        <command>0 internal -g 1</command>
+        <command>bitmap -"me" "coccodrillo_l"</command>
+        <command>dialog "coccodrillo"</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "crocodile"</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "coccodrillo_idle"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>1 wait 5</command>
+      </indipendent>
+    </character>
+    <goto ID="fogna_x_vicolo" icon="u" PX="2947" PY="-258">
+      <go>
+        <command>goto "vicolo"</command>
+      </go>
+    </goto>
+    <goto ID="fogna_x_scantinato" icon="u" PX="3264" PY="215">
+      <go>
+        <command>goto "scantinato"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

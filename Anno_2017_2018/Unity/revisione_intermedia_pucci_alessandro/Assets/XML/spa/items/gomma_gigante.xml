@@ -1,0 +1,50 @@
+<object name="pedazo enorme de chicle">
+  <description>
+    <comment>[con aria un po' schifata]</comment>
+    <command>text "Un pedazo de chicle, ya masticado... y también un poco pegajoso."</command>
+  </description>
+  <inventory>
+    <object name="megafono">
+      <command>text "No quiero que se atasque." $215</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomma_gigante"</command>
+      <command>fie</command>
+      <command>text "No quiero que se atasque." $38</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="betoniera">
+      <command>wait 0,5</command>
+      <command>sound "cement_mixer"</command>
+      <command>animation -"me" 00 -o=0,0 "betoniera"</command>
+      <command>animation -"me" 00 -o=0,0 "betoniera"</command>
+      <command>animation -"me" 00 -o=0,0 "betoniera"</command>
+      <command>stop "cement_mixer"</command>
+      <command>wait 1</command>
+      <command>sound "pick_gum_melt"</command>
+      <command>pick n "gomma_presa_rapida"</command>
+      <command>throw "gomma_gigante"</command>
+    </hotspot>
+    <hotspot ID="megafono">
+      <command>text "No quiero que se atasque." $215</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text "Necesito algo que agarre mejor." $216</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "¡No pensarás que le voy a dar chicle mascado a nadie!" $217</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,59 @@
+<object name="polaroid">
+  <description>
+    <command>text "Il modo migliore per far eccitare un hipster."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>expression "perplexed"</command>
+      <command>text "Fare una foto a un selfie?" $159</command>
+      <command>expression "normal"</command>
+      <command>text "Sarebbe deliziosamente meta." $160</command>
+    </hotspot>
+  </location>
+  <location name="sala_telecamere">
+    <hotspot ID="sala Seconda Guerra Mondiale">
+      <command>move (550,960)</command>
+      <command>pose ur</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_foto"</command>
+      <command>animation -skinny 00 -o=49,13 "skinny_foto"</command>
+      <command>sound "pick_buono"</command>
+      <command>throw "polaroid"</command>
+      <command>pick n "foto"</command>
+      <command>wait 0,5</command>
+      <command>move (685,1062)</command>
+    </hotspot>
+    <hotspot ID="sala botanica">
+      <command>text "Mmm... non è una cattiva idea, ma a cosa mi servirebbe una foto di quella sala?" $161</command>
+    </hotspot>
+    <hotspot ID="sala vichinga">
+      <command>text "Mmm... non è una cattiva idea, ma a cosa mi servirebbe una foto di quella sala?" $161</command>
+    </hotspot>
+    <hotspot ID="sala egizia">
+      <command>text "Mmm... non è una cattiva idea, ma a cosa mi servirebbe una foto di quella sala?" $161</command>
+    </hotspot>
+    <hotspot ID="atrio principale1">
+      <command>text "Mmm... non è una cattiva idea, ma a cosa mi servirebbe una foto di quella sala?" $161</command>
+    </hotspot>
+    <hotspot ID="atrio principale2">
+      <command>text "Mmm... non è una cattiva idea, ma a cosa mi servirebbe una foto di quella sala?" $161</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>text "Preferisco non darle ulteriori spunti per manifestare la sua vanità." $162</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="Manet">
+      <command>pose d</command>
+      <command>text "No, non voglio creare crepe nel continuum spazio-temporale." $163</command>
+    </hotspot>
+    <hotspot ID="ragazzo sconsolato">
+      <command>pose d</command>
+      <command>text "No, non voglio creare crepe nel continuum spazio-temporale." $163</command>
+    </hotspot>
+  </location>
+</object>

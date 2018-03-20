@@ -1,0 +1,38 @@
+<object name="купон">
+  <description>
+    <command>text "«Для получения приза на ваш выбор»."</command>
+  </description>
+  <inventory />
+  <location name="accampamento">
+    <hotspot ID="zingara">
+      <command>pause -"me"</command>
+      <command>text "Я выиграл купон за ловлю рыбок."</command>
+      <command>wait 0,5</command>
+      <command>wait -"marionettista"</command>
+      <command>wait -"me"</command>
+      <command>animation -skinny 00 -o=84,13 -a "skinny_porge_buono"</command>
+      <command>wait 0,8</command>
+      <command>sound "zingara_buono"</command>
+      <command>animation -"marionettista" 00 -o=24,26 -c -a "marionettista_prende_buono"</command>
+      <command>wait 0,2</command>
+      <command>animation -"me" 00 -o=1,28 "zingara_prende_buono"</command>
+      <command>text -"me" "Выбирай все, что пожелаешь."</command>
+      <command>expression "perplexed"</command>
+      <command>wait 0,5</command>
+      <command>text "Прям все-все?"</command>
+      <command>text -"me" "Все."</command>
+      <command>dialog "scelta_premio"</command>
+    </hotspot>
+    <hotspot ID="marionettista">
+      <command>pose d</command>
+      <command>text "Теплее..." $83</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="giostraio">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "Я заработал это нелегально, теперь это мое!" $84</command>
+    </hotspot>
+  </location>
+</object>

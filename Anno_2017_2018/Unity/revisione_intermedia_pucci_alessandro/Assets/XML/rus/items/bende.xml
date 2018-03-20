@@ -1,0 +1,21 @@
+<object name="бинты">
+  <description>
+    <command>text "Они и правда не смогли дождаться медового месяца."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="rasoio fai da te">
+      <command>text "Кому-то они могут пригодиться." $50</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "Идея неплоха, но сначала нужно удостовериться, что я приготовил все остальное." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "Не то, чтобы я был медсестрой." $52</command>
+    </hotspot>
+  </location>
+</object>

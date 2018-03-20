@@ -1,0 +1,48 @@
+<object name="firecrackers">
+  <description>
+    <command>text "I hoped they would leave some candy behind, but I'll make do with just the fireworks."</command>
+  </description>
+  <inventory>
+    <object name="bomba_disinnescata">
+      <command>wait 0,5</command>
+      <command>text "First of all we extract the gunpowder..."</command>
+      <command>wait 1</command>
+      <command>throw "petardi"</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "And now..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="bambola voodoo funzionante">
+      <command>text "No heat sources, nor missing limbs, remember?" $24</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>expression "sarcastic"</command>
+      <command>text "He could barely take the shock of the alarm..." $125</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>expression "sarcastic"</command>
+      <command>text "He would only cause more damage." $142</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>expression "sarcastic"</command>
+      <command>text "I doubt some firecrackers would be enough." $143</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="bomba disinnescata">
+      <command>text "It'd be better to pick it up first." $95</command>
+    </hotspot>
+  </location>
+</object>

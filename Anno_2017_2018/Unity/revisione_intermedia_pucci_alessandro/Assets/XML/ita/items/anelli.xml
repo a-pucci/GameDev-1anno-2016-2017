@@ -1,0 +1,52 @@
+<object name="anelli">
+  <description>
+    <command>text "All'interno di una delle due fedi sono incisi degli strani segni..."</command>
+  </description>
+  <inventory>
+    <object name="bibbia">
+      <command>text "Direttamente dalle uscite settimanali di 'Costruisci il tuo matrimonio!'." $53</command>
+    </object>
+  </inventory>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>if internal 1</command>
+      <command>pause -"me"</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text "Ho con me le fedi, Mia Regina."</command>
+      <command>throw "anelli"</command>
+      <command>wait 1,5</command>
+      <command>text -"me" "Cosa fai ancora lì impalato? Trovaci un sacerdote per celebrare le nozze."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Veramente mi sembra di aver fatto già abbastanza."</command>
+      <command>expression "normal"</command>
+      <command>expression -"me" "angry"</command>
+      <command>text -"me" "É un ordine."</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" ""</command>
+      <command>text -"me" "Terremo la cerimonia sopra il meteorite del laghetto Roswell."</command>
+      <command>bitmap -"me" "faraonessa_felice"</command>
+      <command>text -"me" "Che location romantica..."</command>
+      <command>wait 1</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text -"me" "Adesso vai, devo prepararmi."</command>
+      <command>internal -"cucina/Gesoo" -g 1</command>
+      <command>bitmap -"me" "faraonessa"</command>
+      <command>hide -nc -"me"</command>
+      <command>resume -"me"</command>
+      <command>fie</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Prendila tu in moglie, se ti piace così tanto." 8</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="amante nascosto">
+      <command>text "Gli farebbero l'effetto che causano a me le prugne." $1</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>text "Non credo che uno scapolone d'oro come lui vorrà mai sposarsi." $2</command>
+    </hotspot>
+  </location>
+</object>

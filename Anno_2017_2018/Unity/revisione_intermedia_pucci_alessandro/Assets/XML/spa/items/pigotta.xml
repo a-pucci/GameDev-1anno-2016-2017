@@ -1,0 +1,30 @@
+<object name="muñeca de trapo">
+  <description>
+    <command>text "Las muñecas con ojos de botón siempre me dan miedo."</command>
+  </description>
+  <inventory>
+    <object name="capelli">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>text "No creo que fuera suficiente para tranquilizarla." $144</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="Chucky">
+      <command>text "¿No será tu hermana pequeña?" $145</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Dudo que siga jugando con muñecas." $146</command>
+    </hotspot>
+  </location>
+</object>

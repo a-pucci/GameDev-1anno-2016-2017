@@ -1,0 +1,21 @@
+<object name="Wecker">
+  <description>
+    <command>text "Ich fürchte, der letzte Sturz war dann doch zu viel des Guten."</command>
+  </description>
+  <inventory>
+    <object name="ingranaggi">
+      <command>sound "pick_clock_funzionante"</command>
+      <command>pick n "sveglia_funzionante"</command>
+      <command>throw "ingranaggi"</command>
+      <command>throw "sveglia"</command>
+    </object>
+  </inventory>
+  <location name="vicolo">
+    <hotspot ID="senzatetto">
+      <command>pose d</command>
+      <command>text "Ich darf dich daran erinnern, dass der Wecker im Eimer ist." $269</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Dein Aufmerksamkeitsdefizit geht mir manchmal echt gewaltig auf den Zeiger." $270</command>
+    </hotspot>
+  </location>
+</object>

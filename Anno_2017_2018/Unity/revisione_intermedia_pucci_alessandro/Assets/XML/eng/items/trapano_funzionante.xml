@@ -1,0 +1,53 @@
+<object name="drill">
+  <description>
+    <command>text "Ready and armed to the teeth, sergeant!"</command>
+  </description>
+  <inventory />
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>load "estrazione_ingranaggi"</command>
+      <command>pause -"me"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -"me" "coccodrillo_l"</command>
+      <command>text "Backup is coming!"</command>
+      <command>wait 0,5</command>
+      <command>text "Open your jaws."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "And no funny business."</command>
+      <command>expression "normal"</command>
+      <command>sound "coccodrillo_aprebocca"</command>
+      <command>animation -"me" 00 -o=57,1 "coccodrillo_apertura_bocca1"</command>
+      <command>bitmap -"me" "coccodrillo_bocca_aperta"</command>
+      <command>position -"me" (-22,515)</command>
+      <command>wait 0,5</command>
+      <command>cutscene "estrazione_ingranaggi"</command>
+      <command>bitmap -"me" "coccodrillo_l"</command>
+      <command>position -"me" (33,409)</command>
+      <command>screen -fo=1500 -w=1 -a</command>
+      <command>wait 1,2</command>
+      <command>sound "pick_ingranaggi"</command>
+      <command>pick n "ingranaggi"</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "proud"</command>
+      <command>text -"me" -c=rrred "It's so liberating."</command>
+      <command>expression -"me" ""</command>
+      <command>text -"me" -c=rrred "Kind of like when I escaped from prison."</command>
+      <command>wait 0,5</command>
+      <command>text "I don't know if you're being serious or you're just spectacularly trolling."</command>
+      <command>wait 0,5</command>
+      <command>text -"me" -c=rrred "We'll never find out."</command>
+      <command>bitmap -"me" "coccodrillo"</command>
+      <command>internal -g -i 1</command>
+      <command>dialog -r "Non hai una bella cera." "coccodrillo"</command>
+      <command>resume -"me"</command>
+      <command>throw "trapano_funzionante"</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="fiamma ossidrica">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sometimes I'm amazed at how you can still be alive." $7</command>
+    </hotspot>
+  </location>
+</object>

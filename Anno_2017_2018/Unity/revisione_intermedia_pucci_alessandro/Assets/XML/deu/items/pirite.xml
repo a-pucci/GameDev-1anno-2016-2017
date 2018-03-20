@@ -1,0 +1,12 @@
+<object name="Pyrit">
+  <description>
+    <command>text "Etwas Schlimmeres kann man einem Goldgräber gar nicht antun."</command>
+  </description>
+  <inventory />
+  <location name="bonus">
+    <hotspot ID="parete di vetro">
+      <command>pose d</command>
+      <command>text "Das ist kugelsicheres Glas." $151</command>
+    </hotspot>
+  </location>
+</object>

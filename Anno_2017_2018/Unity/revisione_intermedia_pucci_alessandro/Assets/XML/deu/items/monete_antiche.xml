@@ -1,0 +1,24 @@
+<object name="Antike Münzen">
+  <description>
+    <command>text "Schätze mal, dafür würden mich Sammler mit Gold überhäufen."</command>
+  </description>
+  <inventory />
+  <location name="spiaggia">
+    <hotspot ID="calderone_1861">
+      <command>sound "pick_monete"</command>
+      <command>wait 0,5</command>
+      <command>text "Erledigt."</command>
+      <command>throw "monete_antiche"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_presente" 2</command>
+      <command>internal -"calderone_1981" 2</command>
+    </hotspot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>text "Mist, die Art von Münze nimmt das Ding nicht." $128</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Vielleicht weil es 1863 noch keine Telefonzellen gab?" $129</command>
+    </hotspot>
+  </location>
+</object>

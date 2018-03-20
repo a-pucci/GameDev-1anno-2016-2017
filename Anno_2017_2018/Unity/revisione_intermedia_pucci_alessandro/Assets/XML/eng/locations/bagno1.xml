@@ -1,0 +1,419 @@
+<location>
+  <script>
+    <command>0 show skinny (750,900)</command>
+    <command>0 pose r</command>
+    <command>0 expression "happy"</command>
+    <command>0 screen c -w=500 -fo=500</command>
+    <command>0 wait 1</command>
+    <command>0 pose d</command>
+    <command>0 text "Ah, I really needed a shower."</command>
+    <command>0 expression "normal"</command>
+    <command>0 wait 1</command>
+    <command>0 lookat -"bagno1_x_cameretta"</command>
+    <command>0 expression "scared"</command>
+    <command>0 sound "bathroom_door_opening_try"</command>
+    <command>0 animation -"bagno1_x_cameretta" 00 -o=0,0 "tentativo_apertura_porta"</command>
+    <command>0 text (1708,333) -c=lblue "Boss, it won't open."</command>
+    <command>0 wait 0,5</command>
+    <command>0 text (1708,462) -c=yellow "Let's keep working on the ground floor, then. In the meantime, I'll ask the lady about a key."</command>
+    <command>0 text (1708,462) -c=yellow "I'm afraid this damn move will take longer than expected."</command>
+    <command>0 text "MOVE?!?"</command>
+    <command>0 wait 1,5</command>
+    <command>0 expression "normal"</command>
+    <command>0 wait 1,5</command>
+    <command>0 expression "normal"</command>
+    <command>0 move (1014,868)</command>
+    <command>0 pose d</command>
+    <command>0 wait 1</command>
+    <command>0 pose l</command>
+    <command>0 wait 1</command>
+    <command>0 pose r</command>
+    <command>0 wait 1</command>
+    <command>0 pose d</command>
+    <command>0 wait 0,5</command>
+    <command>0 expression "perplexed"</command>
+    <command>0 text "And what should I do now?"</command>
+    <command>0 wait 1</command>
+    <command>0 expression "normal"</command>
+    <command>0 text -"tutorial" "I'm coming, I'm coming. Apologies for the delay, I was late with the tutorial of another videogame."</command>
+    <command>0 text -"tutorial" "Players are not what they used to be anymore."</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"tutorial" "Let's cut to the chase: I'm here to explain the game controls to you."</command>
+    <command>0 expression "sarcastic"</command>
+    <command>0 text "Well, I'm not interested."</command>
+    <command>0 expression "normal"</command>
+    <command>0 text -"tutorial" "I'm not asking you, Skinny. Let your player decide."</command>
+    <command>0 dialog "tutorial"</command>
+    <command>2 stop "bagno1_theme"</command>
+    <command>2 hide skinny</command>
+    <command>2 bitmap -"bagno1_x_cameretta" "porta_bagno_aperta"</command>
+    <command>2 internal -"bagno1_x_cameretta" -g 1</command>
+    <command>2 screen c -w=500 -fo=1000</command>
+    <command>2 wait 1</command>
+    <command>2 text (1708,333) -c=lblue "BANZAIIII!!!"</command>
+    <command>2 wait 1</command>
+    <command>2 sound "housemover_door"</command>
+    <command>2 animation -"bagno1_x_cameretta" 00 -o=216,2 -e=15000 -a "porta_sfondata"</command>
+    <command>2 wait 0,17</command>
+    <command>2 animation -"traslocatore_scemo" 00 -o=0,0 -a "traslocatore_sfonda_porta"</command>
+    <command>2 wait 2,3</command>
+    <command>2 text (1290,755) -c=lblue "Have you seen, boss? I opened the door."</command>
+    <command>2 animation -"traslocatore_scemo" 00 -o=0,0 -a "traslocatore_sfonda_porta_down"</command>
+    <command>2 bitmap -"traslocatore_scemo" "traslocatore_scemo_down"</command>
+    <command>2 wait 0,5</command>
+    <command>2 text (1708,462) -c=yellow "Bravo, well done! But now let's go, it's lunch time."</command>
+    <command>2 wait 0,5</command>
+    <command>2 text (1290,755) -c=lblue "I like eating."</command>
+    <command>2 text (1708,462) -c=yellow "Then come on, move."</command>
+    <command>2 wait 1</command>
+    <command>2 status &gt;"fogna" 2</command>
+    <command>2 screen c -fi=500 -w=5</command>
+    <command>2 stop -a "porta_sfondata"</command>
+    <command>2 internal -"scarico" -g 1</command>
+    <command>2 goto -nofade "fogna"</command>
+  </script>
+  <entry name="pensile" X="1252" Y="757" pose="u" />
+  <entry name="finestra" X="959" Y="750" pose="u" />
+  <entry name="cameretta" X="1469" Y="867" pose="l" />
+  <scene bitmap="pillole_pensile" X="1257" Y="278" position="back" animated="False" />
+  <scene bitmap="perdita_lavandino_foreground" X="1181" Y="958" position="fore" animated="True" start="1500" stop="6000" sound="sink_drop" loop="True" />
+  <scene bitmap="freccetta_bagno" X="1799" Y="559" position="fore" animated="False" />
+  <scene bitmap="fascio_luce" X="600" Y="183" position="back" animated="False" />
+  <scene bitmap="luce" X="0" Y="0" position="fore" animated="False" />
+  <hotspots>
+    <character ID="tutorial">
+      <look />
+      <talk />
+    </character>
+    <character ID="traslocatore_scemo">
+      <look />
+      <talk />
+    </character>
+    <item ID="motosega">
+      <look>
+        <command>pose d</command>
+        <command>text "Don't ask any questions, believe me."</command>
+        <command>0 text -"tutorial" "Skinny, try to be a little more accommodating. This is a tutorial."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"tutorial" "Now try to open the green satchel."</command>
+        <command>0 hide -"me"</command>
+        <command>0 bitmask -"tracolla" "tracolla"</command>
+        <command>0 nolook</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>text "Let's just say I'm not exactly interested in the item."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text -"tutorial" "I know just the object that could be right up your alley."</command>
+        <command>0 text -"tutorial" "Try to open the green satchel."</command>
+        <command>0 hide -"me"</command>
+        <command>0 bitmask -"tracolla" "tracolla"</command>
+        <command>0 nolook</command>
+        <command>0 internal 1</command>
+      </pick>
+      <use>
+        <command>text "201 times is more than enough."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text -"tutorial" "Now try to open the green satchel."</command>
+        <command>0 hide -"me"</command>
+        <command>0 bitmask -"tracolla" "tracolla"</command>
+        <command>0 nolook</command>
+        <command>0 internal 1</command>
+      </use>
+      <talk>
+        <command>1 default -talk</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 pose d</command>
+        <command>0 text "Surely you don't lack imagination."</command>
+        <command>0 expression "normal"</command>
+        <command>0 text -"tutorial" "Skinny, don't be so aggressive. The player is still learning."</command>
+        <command>0 pose d</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Too bad intelligence can't be learned. There's obviously a better action..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "normal"</command>
+        <command>0 text -"tutorial" "Let's get back to us."</command>
+        <command>0 text -"tutorial" "Now try to open the green satchel."</command>
+        <command>0 hide -"me"</command>
+        <command>0 bitmask -"tracolla" "tracolla"</command>
+        <command>0 nolook</command>
+        <command>0 internal 1</command>
+      </talk>
+    </item>
+    <item ID="tracolla">
+      <look>
+        <command>text -"tutorial" "It was the wrong interaction, but don't worry."</command>
+        <command>text -"tutorial" "This is used to look at something."</command>
+        <command>0 text -"tutorial" "I would like you to open it, instead."</command>
+      </look>
+      <pick>
+        <command>0 text -"tutorial" "It was the wrong interaction, but don't worry."</command>
+        <command>0 text -"tutorial" "This is used to pick something up."</command>
+        <command>0 text -"tutorial" "I would like you to open it, instead."</command>
+        <command>1 wait 0,5</command>
+        <command>1 text "Ma, there's gold in this here bag."</command>
+        <command>1 wait 0,5</command>
+        <command>1 sound "pick_pirite"</command>
+        <command>1 pick n "pirite"</command>
+        <command>1 wait 0,5</command>
+        <command>1 pose d</command>
+        <command>1 expression "sarcastic"</command>
+        <command>1 text "Ah, no. It's just pyrite."</command>
+        <command>1 pose d</command>
+        <command>1 expression "normal"</command>
+        <command>1 text -"tutorial" "Don't be fooled by appearances. It could be more useful than you can imagine."</command>
+        <command>1 wait 1</command>
+        <command>1 text -"tutorial" "For some hotspots there's only one action available, so a left-click with your mouse will be enough."</command>
+        <command>1 text -"tutorial" "Try to check out the bin."</command>
+        <command>1 hide -nc -"me"</command>
+        <command>1 nolook</command>
+        <command>1 show -"bidone"</command>
+      </pick>
+      <use>
+        <command>0 sound "use_bag"</command>
+        <command>0 bitmap -"me" "tracolla_aperta"</command>
+        <command>0 wait 1</command>
+        <command>0 text -"tutorial" "There is something inside the satchel. Try to pick it up."</command>
+        <command>0 internal 1</command>
+        <command>1 text "It's already open."</command>
+      </use>
+      <talk>
+        <command>text -"tutorial" "It was the wrong interaction, but don't worry."</command>
+        <command>text -"tutorial" "This is used to start a dialogue."</command>
+        <command>0 text -"tutorial" "I would like you to open it, instead."</command>
+      </talk>
+    </item>
+    <item ID="paperella di gomma">
+      <look>
+        <command>text "Even at his age, Ronald can't really get enough of squeezing this thing."</command>
+        <command>pose d</command>
+        <command>text "I can't imagine what the bear would do to Ronald if he still had his spine."</command>
+        <command>lookat -"Orso"</command>
+        <command>expression -"Orso" "left_angry"</command>
+        <command>text -"Orso" "I'd give him a nice tattoo on his back, for starters."</command>
+        <command>expression -"Orso" ""</command>
+        <comment>[a voce bassa per non farsi sentire dall'orso]</comment>
+        <command>0 pose d</command>
+        <command>0 text "*You have to understand the bear is convinced he is married to the duck...*"</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "I don't want any trouble."</command>
+        <command>expression -"Orso" "left"</command>
+        <command>lookat -"Orso"</command>
+        <command>text -"Orso" "Wise decision."</command>
+        <command>expression -"Orso" ""</command>
+        <comment>[a voce bassa per non farsi sentire dall'orso]</comment>
+        <command>0 pose d</command>
+        <command>0 text "*You have to understand the bear is convinced he is married to the duck...*"</command>
+        <command>0 internal 1</command>
+      </pick>
+      <use>
+        <comment>[a voce bassa per non farsi sentire dall'orso]</comment>
+        <command>0 pose d</command>
+        <command>0 text "*You have to understand the bear is convinced he is married to the duck...*"</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "*Watch and see...*"</command>
+        <command>0 lookat -"me"</command>
+        <command>0 wait 0,5</command>
+        <command>sound "rubber_duck"</command>
+        <command>animation -"me" 00 -o=30,1 "paperella_premuta"</command>
+        <command>0-1 wait 0,7</command>
+        <command>0-1 lookat -"Orso"</command>
+        <command>0-1 expression -"Orso" "left_angry"</command>
+        <command>0-1 expression "happy"</command>
+        <command>0-1 text -"Orso" "Bones off!"</command>
+        <command>0-1 internal 2</command>
+        <command>2 wait 0,7</command>
+        <command>2 lookat -"Orso"</command>
+        <command>2 expression -"Orso" "left_angry"</command>
+        <command>2 expression "happy"</command>
+        <command>2 text -"Orso" "Don't you dare violate my lady!"</command>
+        <command>2 internal 3</command>
+        <command>3 wait 0,7</command>
+        <command>3 lookat -"Orso"</command>
+        <command>3 expression -"Orso" "left_angry"</command>
+        <command>3 expression "happy"</command>
+        <command>3 text -"Orso" "PLUMS!!!"</command>
+        <command>3 expression "suffering"</command>
+        <command>3 text "Aaagh! Et tu, Brute?"</command>
+        <command>3 achievement "tu_quoque_prunus"</command>
+        <command>3 internal 1</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "I wouldn't try. The bear gets jealous easily."</command>
+        <command>expression -"Orso" "left"</command>
+        <command>lookat -"Orso"</command>
+        <command>text -"Orso" "I'm watching you."</command>
+        <command>expression -"Orso" ""</command>
+        <comment>[a voce bassa per non farsi sentire dall'orso]</comment>
+        <command>0 pose d</command>
+        <command>0 text "*You have to understand the bear is convinced he is married to the duck...*"</command>
+        <command>0 internal 1</command>
+      </talk>
+    </item>
+    <item ID="sommo trono">
+      <look>
+        <command>pose d</command>
+        <command>text "This isn't like reading tea leaves in a cup. There's nothing in there I want to see."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>text "I'm okay."</command>
+        <command>pose d</command>
+        <command>text "But thanks for worrying about the well-being of my intestines."</command>
+        <command>lookat -"Orso"</command>
+        <command>expression -"Orso" "wc"</command>
+        <command>text -"Orso" "Skinny, you don't even have intestines."</command>
+        <command>expression "angry"</command>
+        <command>text "That's not true, I'm simply constipated!"</command>
+      </use>
+      <talk>
+        <command>text "Is there anybody down there?"</command>
+        <command>text (1464,547) -c=fuxia "..."</command>
+      </talk>
+    </item>
+    <item ID="scarico">
+      <look>
+        <command>text "There will be no peace for our quiet time."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>sound "toilet_vacuum"</command>
+        <command>animation -skinny 00 -o=-2,130 "skinny_gabinetto1"</command>
+        <command>hide -"me"</command>
+        <command>hide skinny</command>
+        <command>animation -"sommo trono" 00 -o=8,384 -p=fore "skinny_gabinetto2"</command>
+        <command>show -"me"</command>
+        <command>wait 2,66</command>
+        <command>goto "fogna"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <action ID="pensile">
+      <act>
+        <command>sound "opening_pensile"</command>
+        <command>goto "pensile"</command>
+      </act>
+    </action>
+    <action ID="freccette">
+      <act>
+        <command>wait 0,5</command>
+        <command>sound "freccia"</command>
+        <command>hide +"freccetta_bagno"</command>
+        <command>wait 0,5</command>
+        <command>move (665,1038)</command>
+        <command>lookat -"me"</command>
+        <command>wait 1</command>
+        <command>sound "skinny_arrow"</command>
+        <command>animation -skinny 00 -o=0,-4 -a "skinny_freccette"</command>
+        <command>wait 0,666</command>
+        <command>animation (1061,494) -p=fore "freccetta_volo"</command>
+        <command>show +"freccetta_bagno"</command>
+        <command>wait 1</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 wait 1</command>
+        <command>0 pose d</command>
+        <command>0 expression "normal"</command>
+        <command>0 text "You've probably already figured out I'm not exactly an ace."</command>
+        <command>0 text "In my defence, you have to admit that it's not easy to throw without real joints."</command>
+        <command>0 expression "angry"</command>
+        <command>0 expression -"Orso" "left"</command>
+        <command>0 lookat -"Orso"</command>
+        <command>0 text -"Orso" -c=yellow "You're embarrassing, that's it."</command>
+        <command>0 internal 1</command>
+      </act>
+    </action>
+    <action ID="finestra">
+      <act>
+        <command>sound "opening_window"</command>
+        <command>goto "finestra"</command>
+      </act>
+    </action>
+    <character ID="Orso">
+      <look>
+        <command>text "I must say that he has the softest fur."</command>
+        <command>expression -"me" "suffering"</command>
+        <command>text -"me" -c=yellow "Nothing soft about you stepping on my back."</command>
+      </look>
+      <talk>
+        <command>0 text "Hi, Bear."</command>
+        <command>0 internal -g 1</command>
+        <command>0-1 dialog "orso"</command>
+      </talk>
+    </character>
+    <goto ID="bagno1_x_cameretta" icon="r" PX="2442" PY="567">
+      <go>
+        <command>0 wait 0,5</command>
+        <command>0 sound "key_rotation"</command>
+        <command>0 bitmap -"me" "porta_bagno_aperta"</command>
+        <command>0 wait 1</command>
+        <command>0 internal -g 1</command>
+        <command>goto "cameretta"</command>
+      </go>
+    </goto>
+    <action ID="bidone">
+      <act>
+        <command>animation -skinny 00 -o=1,0 -a "skinny_bidone_bagno"</command>
+        <command>wait 0,08</command>
+        <command>sound "skinny_trash"</command>
+        <command>animation -"me" 00 -o=0,0 "bidone_apertura"</command>
+        <command>bitmap -"me" "bidone_bagno_aperto"</command>
+        <command>wait 1,42</command>
+        <command>animation -"me" 00 -o=0,0 "bidone_chiusura"</command>
+        <command>bitmap -"me" "bidone_bagno_chiuso"</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>0 text "Was this really necessary?"</command>
+        <command>0 text -"tutorial" "The player asked for our help. It's important to learn the game controls."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"tutorial" "Now let's take a look at multiple choice dialogues."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "We already saw them on our own."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "normal"</command>
+        <command>0 text -"tutorial" "These constant delays are embarrassing."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"tutorial" "Well, what else?"</command>
+        <command>0 text -"tutorial" "Holding the central button of the mouse, or pressing SPACE, you'll see all the hotspots with which you can interact."</command>
+        <command>0 text -"tutorial" "With the mouse wheel, or pressing TAB, you'll open and close the inventory."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"tutorial" "That's all. Now, if you'll excuse me, I'm in a rush and I've got to go."</command>
+        <command>0 text "Is that it? I never saw such a sloppy tutorial."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text -"tutorial" "You're right, it's just that I'm busy like you wouldn't believe."</command>
+        <command>0 expression "normal"</command>
+        <command>0 text -"tutorial" "See you soon."</command>
+        <command>0 achievement "tutorial"</command>
+        <command>0 tutorial</command>
+        <command>0 show -"paperella di gomma"</command>
+        <command>0 show -"sommo trono"</command>
+        <command>0 show -"scarico"</command>
+        <command>0 show -"pensile"</command>
+        <command>0 show -"freccette"</command>
+        <command>0 show -"finestra"</command>
+        <command>0 show -"Orso"</command>
+        <command>0 show -"motosega"</command>
+        <command>0 show -"bagno1_x_cameretta"</command>
+        <command>0 nolook</command>
+        <command>0 show -"bagno1_x_cameretta"</command>
+        <command>0 status &gt;"bagno1" 1</command>
+        <command>0 internal 1</command>
+        <command>1 text "I've seen things you wouldn't believe."</command>
+        <command>1 text "Count yourself lucky."</command>
+        <command>1 internal 2</command>
+        <command>2 text "I'll never get used to that sight."</command>
+      </act>
+    </action>
+  </hotspots>
+</location>

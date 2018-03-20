@@ -1,0 +1,70 @@
+<object name="pila">
+  <description>
+    <command>text "Una pila corriente."</command>
+  </description>
+  <inventory>
+    <object name="filo_rame">
+      <command>sound "pick_pila_cavo"</command>
+      <command>throw "pila"</command>
+      <command>throw "filo_rame"</command>
+      <command>pick n "circuito"</command>
+    </object>
+    <object name="torcia_scarica">
+      <command>if inventory "pila" &gt; 1</command>
+      <command>sound "pick_pile_torcia"</command>
+      <command>throw "pila" "pila" "torcia_scarica"</command>
+      <command>throw "torcia_scarica"</command>
+      <command>pick n "torcia"</command>
+      <command>fie</command>
+      <command>if inventory "pila" = 1</command>
+      <command>text "Usa dos."</command>
+      <command>fie</command>
+    </object>
+    <object name="disco_alieno">
+      <command>text "A lo mejor puedo ponerle pilas al disco, pero así no." $150</command>
+    </object>
+    <object name="torcia">
+      <command>text "Ya tiene pilas." $80</command>
+    </object>
+  </inventory>
+  <location name="cimitero">
+    <hotspot ID="flusso canalizzatore">
+      <command>text "No creo que funcione con pilas." $147</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="batteria stilo">
+      <command>text "¡Eh, mira, tu gemelo!" $148</command>
+    </hotspot>
+    <hotspot ID="pila stilo">
+      <command>text "¡Eh, mira, tu gemelo!" $148</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="Game Boy">
+      <command>expression "sarcastic"</command>
+      <command>text "Ya..." $149</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="dischetto">
+      <command>pose d</command>
+      <command>text "A lo mejor puedo encender el disco, pero así no." $150</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="macchina del tempo">
+      <command>text "No creo que funcione con pilas." $147</command>
+    </hotspot>
+  </location>
+  <location name="interno_gru">
+    <hotspot ID="cavo">
+      <command>text "Primero tendría que cogerlo." $95</command>
+    </hotspot>
+  </location>
+  <location name="meteorite">
+    <hotspot ID="torcia">
+      <command>text "Primero tendría que cogerlo." $95</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,169 @@
+<location>
+  <script>
+    <command>1 hide +"pitture_rupestri"</command>
+    <command>1 show +"pitture_aliene"</command>
+    <command>1 bitmap -"barattolo di vernice" "barattolo_vernice_verde"</command>
+    <command>1 internal -"barattolo di vernice" -g 1</command>
+    <command>1 show -"pittore"</command>
+    <command>1 show -"diavoletto"</command>
+    <command>1 status 0</command>
+  </script>
+  <entry name="spiaggia" X="640" Y="980" pose="r" />
+  <sound filename="acque_grotta" />
+  <sound filename="fuoco_grotta" />
+  <scene bitmap="pitture_rupestri" X="523" Y="163" position="superback" animated="False" />
+  <scene bitmap="pitture_aliene" X="570" Y="242" position="superback" animated="False" />
+  <scene bitmap="barattolo" X="1168" Y="909" position="default" animated="False" />
+  <scene bitmap="onde_grotta" X="1" Y="924" position="back" animated="True" loop="True" />
+  <scene bitmap="falo" X="794" Y="712" position="default" animated="True" loop="True" />
+  <scene bitmap="bagliore_falo" X="819" Y="712" position="fore" animated="False" />
+  <scene bitmap="zubat" X="559" Y="0" position="back" animated="True" loop="True" />
+  <scene bitmap="golbat" X="1440" Y="0" position="back" start="1500" stop="6000" animated="True" loop="True" />
+  <scene bitmap="acque_grotta" X="1413" Y="957" position="superback" animated="True" loop="True" />
+  <hotspots>
+    <item ID="aquilone">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Your usual Charlie Brown."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Can't you see it's stuck in the thorns?"</command>
+      </pick>
+      <use>
+        <command>text "Knowing Benjamin Franklin is watching me from up there with utter contempt is too intimidating."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="barattolo di vernice">
+      <look>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>0 text "Can't you read? It's a white paint can."</command>
+        <command>1 text "It's green paint, ok?"</command>
+      </look>
+      <pick>
+        <command>0 text "I obviously can't take that away from him."</command>
+        <command>1 expression "sarcastic"</command>
+        <command>1 text "I forgot to specify that I wouldn't have picked it in any case."</command>
+      </pick>
+      <use>
+        <command>text "Even if I'm now dead, I still don't feel it would be wise to stain my criminal record."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="pittore">
+      <look>
+        <command>text "I can't even imagine how his back came to be in that state."</command>
+      </look>
+      <talk>
+        <command>text "Can I bother you for a second?"</command>
+        <command>wait 0,5</command>
+        <command>text "I'd like to talk to you of Our Lord Cthulhu."</command>
+        <command>text -"me" "..."</command>
+        <command>text -"diavoletto" -nt "He can't hear you."</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=20,41 -c "pittore_dipinge"</command>
+        <command>0 animation -"me" 00 -o=20,41 -c "pittore_dipinge"</command>
+        <command>0 animation -"me" 00 -o=20,41 -c "pittore_dipinge"</command>
+        <command>0 animation -"me" 00 -o=3,4 -c "pittore_consulta_libro"</command>
+        <command>1 animation -"me" 00 -o=20,41 -c "pittore_dipinge_alieno"</command>
+        <command>1 animation -"me" 00 -o=20,41 -c "pittore_dipinge_alieno"</command>
+        <command>1 animation -"me" 00 -o=20,41 -c "pittore_dipinge_alieno"</command>
+        <command>1 animation -"me" 00 -o=3,4 -c "pittore_consulta_libro_alieno"</command>
+      </indipendent>
+    </character>
+    <character ID="diavoletto">
+      <look>
+        <command>text "I'm noticing a suspicious resemblance."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>animation -"me" 00 -o=11,4 "diavoletto_turn_skinny"</command>
+        <command>bitmap -"me" "diavoletto_l"</command>
+        <command>wait 0,5</command>
+        <command>dialog "diavoletto"</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -0=0,0 -c -xi "diavoletto_idle"</command>
+      </indipendent>
+    </character>
+    <item ID="navicella aliena">
+      <look>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Finally, some REALLY intelligent life forms."</command>
+      </look>
+      <pick>
+        <command>text "This reminds me of the famous 1947 accident, but I'm not a US government agent."</command>
+      </pick>
+      <use>
+        <command>text "I wouldn't really know where to start. Better avoid problems."</command>
+      </use>
+      <talk>
+        <command>text "FBI, officer Skinny."</command>
+        <command>wait 0,5</command>
+        <command>text "Walter Skinny."</command>
+      </talk>
+    </item>
+    <item ID="dischetto">
+      <look>
+        <command>text "It would seem to be a metallic disk, stuck in the rock."</command>
+      </look>
+      <pick>
+        <command>sound "pick_dischetto"</command>
+        <command>pick y "disco_alieno"</command>
+        <command>wait 0,5</command>
+        <command>hide -"me"</command>
+        <command>show -"navicella aliena"</command>
+        <command>expression "scared"</command>
+        <command>sound "ufo"</command>
+        <command>animation -"navicella aliena" 00 -o=0,0 "ufo"</command>
+        <command>bitmap -"navicella aliena" "navicella_aliena_svelata"</command>
+        <command>wait 1,5</command>
+        <command>text "I... I really don't know what to say."</command>
+        <command>wait 1</command>
+        <command>expression "normal"</command>
+        <command>text "It's a child's dream coming true."</command>
+        <command>if internal -"diavoletto" 1</command>
+        <command>internal #"diavoletto" 1</command>
+        <command>fi</command>
+      </pick>
+      <use>
+        <command>default -use</command>
+      </use>
+      <talk>
+        <command>text "Excalibur, is it you?"</command>
+      </talk>
+    </item>
+    <item ID="bastone">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "If that is meant to be the Red Sea, someone must have hugely exaggerated the storytelling."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "I prefer not to risk finding a snake under my sweater."</command>
+      </pick>
+      <use>
+        <command>text "It's surely more fun to do it with tomato soup."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "It may even be prophetic, but now you're really going too far."</command>
+      </talk>
+    </item>
+    <goto ID="grotta_x_spiaggia" icon="l" PX="-459" PY="770">
+      <go>
+        <command>goto "spiaggia"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

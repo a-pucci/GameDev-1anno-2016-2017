@@ -1,0 +1,178 @@
+<location>
+  <script />
+  <entry name="primo_piano" X="1322" Y="1005" pose="ul" />
+  <scene bitmap="arbre_magique1" X="266" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="arbre_magique2" X="969" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="arbre_magique3" X="1595" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="orsetto_blink" X="1203" Y="701" position="back" animated="True" start="1500" stop="4000" loop="True" />
+  <scene bitmap="comodino_rabbit" X="0" Y="976" position="fore" animated="False" />
+  <scene bitmap="altalena" X="0" Y="0" position="back" animated="True" loop="True" />
+  <hotspots>
+    <item ID="anelli">
+      <look>
+        <command>text "Похожи на обручальные."</command>
+      </look>
+      <pick>
+        <command>sound "pick_anelli"</command>
+        <command>pick y "anelli"</command>
+      </pick>
+      <use>
+        <command>pause -ost</command>
+        <command>sound "game_over"</command>
+        <command>blackscreen</command>
+        <command>wait 1</command>
+        <command>blackscreen</command>
+        <command>screen c -w=2500 "ИГРА ОКОНЧЕНА"</command>
+        <command>resume -ost</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Да я шучу. Мое время еще не пришло."</command>
+        <command>achievement "game_over"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="lenzuolo rosso">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Теперь ясно, зачем тут бычьи рога."</command>
+      </look>
+      <pick>
+        <command>sound "pick_lenzuolo"</command>
+        <command>pick y "lenzuolo"</command>
+      </pick>
+      <use>
+        <command>text "Я не хочу мешать свои телесные жидкости с теми, что на кровати."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Хотя, у моих уже и след простыл."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <action ID="profilattico extra-large">
+      <act>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Гадость!"</command>
+      </act>
+    </action>
+    <item ID="rabbit">
+      <look>
+        <command>text "Еще одно доказательство того, как кролики ценят секс."</command>
+      </look>
+      <pick>
+        <command>expression "sarcastic"</command>
+        <command>text "Охладите траханье."</command>
+      </pick>
+      <use>
+        <command>0 internal -g -i 1</command>
+        <command>0 internal 1</command>
+        <command>1 internal -g -i 0</command>
+        <command>1 internal 0</command>
+      </use>
+      <talk>
+        <command>text "Даже представить не могу, что бы он нам поведал, если мог."</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 5</command>
+        <command>1 sound -l "rabbit"</command>
+        <command>1 animation -"me" 00 -o=35,38 -c "rabbit_vibra"</command>
+      </indipendent>
+    </item>
+    <item ID="Chucky">
+      <look>
+        <command>text "В человеческий рост он еще страшнее."</command>
+      </look>
+      <pick>
+        <command>text "Думаю, все выйдет с точностью до наоборот."</command>
+      </pick>
+      <use>
+        <command>expression "scared"</command>
+        <command>0 text -"me" -c=rrred "Я хочу обниматься."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -nt "*сглатывает*"</command>
+        <command>0 internal 1</command>
+        <command>1 text -"me" -c=rrred "Я Чаки, и я твой друг до самого конца."</command>
+        <command>1 wait 0,5</command>
+        <command>1 text -nt "*сглатывает*"</command>
+        <command>1 internal 2</command>
+        <command>2 text -"me" -c=rrred "Хочешь поиграть?"</command>
+        <command>2 wait 0,5</command>
+        <command>2 text -nt "*сглатывает*"</command>
+        <command>2 internal 0</command>
+      </use>
+      <talk>
+        <command>text "Извини, Чарльз, но ты не можешь просто так добавить меня в свою коллекцию."</command>
+        <command>pose d</command>
+        <command>text "Преимущество того, что я уже мертв."</command>
+      </talk>
+    </item>
+    <item ID="parrucca">
+      <look>
+        <command>text "Порой, лучше вообще не задавать никаких вопросов..."</command>
+      </look>
+      <pick>
+        <command>text "Это цвет подходит к моему свитеру."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Конечно же, я шучу: сбейся."</command>
+      </pick>
+      <use>
+        <command>text "По моему контракту, я могу носить только уши Микки Мауса."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Разработчики, я прав?"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="amante nascosto">
+      <look>
+        <command>pose d</command>
+        <command>text "Кто-то еще играет в прятки?"</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Кажется, порой люди просто не хотят взрослеть."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>expression -"me" "l" </command>
+        <command>text "Зачем ты там прячешься?"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=lblue "Как бы получше сказать... Я попал в серьезную передрягу."</command>
+        <command>wait 0,5</command>
+        <command>text "Кто именно тебя ищет?"</command>
+        <command>text "В этой комнате уже столько парочек побывало."</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=lblue "Вообще-то все меня ищут."</command>
+        <command>expression "perplexed"</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=lblue "Скажем так, я хорошенько так наговнил."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Мое уважение."</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "amante_looking_around"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "amante_blink"</command>
+      </indipendent>
+    </character>
+    <goto ID="camera_letto_x_primo_piano" icon="dr" PX="1666" PY="1192">
+      <go>
+        <command>sound "door_open"</command>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

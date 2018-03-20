@@ -1,0 +1,47 @@
+<object name="Pillen">
+  <description>
+    <command>text "Die Psychopillen von Cousin Jason."</command>
+    <command>wait 1</command>
+    <comment>[pensandoci bene]</comment>
+    <command>text "Wenn ich's mir recht überlege, dann haben wir ganz plötzlich jede Spur von ihm verloren."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>sound "pick_intruglio"</command>
+      <command>pick n "intruglio"</command>
+      <command>throw "acqua_fogna"</command>
+      <command>throw "pillole"</command>
+    </object>
+    <object name="boccale_vuoto">
+      <command>text "Ich muss was finden, um die darin aufzulösen." $260</command>
+    </object>
+  </inventory>
+  <location name="cucina1">
+    <hotspot ID="sagoma">
+      <command>expression "perplexed"</command>
+      <command>text "Die wären, ehrlich gesagt, für seinen Mörder nützlicher gewesen." $256</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>pose d</command>
+      <command>text "Ich will das Grundwasser nicht noch mehr verseuchen." $257</command>
+    </hotspot>
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Das sind Psychopillen, keine Schmerztabletten." $258</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="mostro di polvere">
+      <command>pose d</command>
+      <command>text "Zu wenige Nebenwirkungen. Da bräuchte ich schon etwas, das erheblich instabiler ist." $259</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="boccale">
+      <command>text "Ich muss was finden, um die darin aufzulösen." $260</command>
+    </hotspot>
+  </location>
+</object>

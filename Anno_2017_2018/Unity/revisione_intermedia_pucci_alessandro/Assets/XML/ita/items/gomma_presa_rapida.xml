@@ -1,0 +1,53 @@
+<object name="gomma a presa rapida">
+  <description>
+    <command>text "La sento già che si solidifica tra le costole."</command>
+    <command>text "Sarà meglio che mi sbrighi."</command>
+  </description>
+  <inventory />
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>if status 1</command>
+      <command>pose d</command>
+      <command>text "Non è ancora il momento delle soluzioni drastiche."</command>
+      <command>fie</command>
+      <command>if status 2</command>
+      <command>sound "micro_opening"</command>
+      <command>bitmap -"me" "microonde_aperto"</command>
+      <command>label -"me" "cuc_microonde_label_1"</command>
+      <command>internal -g 1</command>
+      <command>wait 0,5</command>
+      <command>throw "gomma_presa_rapida"</command>
+      <command>sound "micro_chewing_gum"</command>
+      <command>bitmap -"me" "microonde_aperto_gomma"</command>
+      <command>wait 1</command>
+      <command>lookat -"Z8"</command>
+      <command>nolook</command>
+      <command>sound "robot_z8_out"</command>
+      <command>animation -"Z8" 00 -o=-1,1 "Z8_tubo_out"</command>
+      <command>sound "robot_z8_blow"</command>
+      <command>animation -"Z8" 00 -o=-2,0 "Z8_risucchio"</command>
+      <command>sound "robot_z8_blow"</command>
+      <command>animation -"Z8" 00 -o=-2,0 "Z8_risucchio"</command>
+      <command>sound "robot_z8_blow"</command>
+      <command>animation -"Z8" 00 -o=-2,0 "Z8_risucchio"</command>
+      <command>sound "robot_z8_malfunction"</command>
+      <command>animation -"Z8" 00 -o=0,17 "Z8_rotto1"</command>
+      <command>bitmap -"me" "microonde_aperto"</command>
+      <command>animation -"Z8" 00 -o=0,17 "Z8_rotto2"</command>
+      <command>bitmap -"Z8" "Z8_rotto"</command>
+      <command>internal -"Z8" -g 1</command>
+      <command>status 3</command>
+      <command>fie</command>
+      <command>default -use</command>
+    </hotspot>
+    <hotspot ID="Z8">
+      <command>pose d</command>
+      <command>text "L'idea è buona, ma non l'accetterebbe mai." $218</command>
+    </hotspot>
+    <hotspot ID="sagoma">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Impalarlo in un blocco di cemento mi sembra davvero troppo." $219</command>
+    </hotspot>
+  </location>
+</object>

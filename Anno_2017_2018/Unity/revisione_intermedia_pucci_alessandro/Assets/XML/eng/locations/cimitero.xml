@@ -1,0 +1,285 @@
+<location>
+  <script>
+    <command>1 area &gt;"cimitero" "cimitero_x_cripta"</command>
+    <command>1 stop "cimitero_theme"</command>
+    <command>1 cutscene "nonnina_spaventa_ragazzini"</command>
+    <command>1 screen c -w=500 -fo=1500 -a</command>
+    <command>1 wait 0,5</command>
+    <command>1 ost &gt;"cimitero" "cimitero_theme"</command>
+    <command>1 show -"petardi"</command>
+    <command>1 hide -"teppistello1"</command>
+    <command>1 hide -"teppistello2"</command>
+    <command>1 show skinny (259,877)</command>
+    <command>1 pose dr</command>
+    <command>1 wait 1</command>
+    <command>1 sound "cripta_aperta"</command>
+    <command>1 animation -"cimitero_x_cripta" 00 -o=0,0 -p=fore "porta_cripta_apertura"</command>
+    <command>1 bitmap -"cimitero_x_cripta" "porta_cripta_aperta"</command>
+    <command>1 wait 1</command>
+    <command>1 move (476,958)</command>
+    <command>1 pose dr</command>
+    <command>1 wait 1</command>
+    <command>1 pose ul</command>
+    <command>1 expression "happy"</command>
+    <command>1 text (0,600) -c=lblue -a=left "Hahahahahahah, you should have seen their faces!"</command>
+    <command>1 wait 0,5</command>
+    <command>1 expression "normal"</command>
+    <command>1 pose dr</command>
+    <command>1 sound "cripta_chiusa"</command>
+    <command>1 animation -"cimitero_x_cripta" 00 -o=0,0 "porta_cripta_chiusura"</command>
+    <command>1 bitmap -"cimitero_x_cripta" "porta_cripta_chiusa"</command>
+    <command>1 dialog -r "Due ragazzini qui fuori mi prendono in giro." "nonnina"</command>
+    <command>1 area &gt;"cimitero" "cimitero"</command>
+    <command>1 status 0</command>
+  </script>
+  <entry name="mappa" X="3950" Y="956" pose="l" />
+  <entry name="cripta" X="476" Y="958" pose="dr" />
+  <entry name="catacomba" X="3608" Y="930" pose="dr" />
+  <sound name="ambient_loop" />
+  <scene bitmap="diglett" X="2683" Y="494" position="default" animated="True" start="1500" stop="5000" loop="True" />
+  <scene bitmap="armadio" X="3992" Y="187" position="back" animated="False" />
+  <scene bitmap="contrabbassista" X="1174" Y="232" position="back" animated="True" loop="True" />
+  <scene bitmap="cantante" X="1381" Y="114" position="back" animated="True" loop="True" />
+  <scene bitmap="chitarrista" X="1607" Y="163" position="back" animated="True" loop="True" />
+  <scene bitmap="colonna_dx_palco" X="1854" Y="58" position="back" animated="False" />
+  <scene bitmap="fans" X="1181" Y="596" position="default" animated="True" loop="True" />
+  <scene bitmap="recinto_teschio" X="2113" Y="551" position="default" animated="False" />
+  <scene bitmap="piede_foreground" X="4110" Y="936" position="fore" start="300" stop="6000" animated="True" loop="True" foreground="True" />
+  <scene bitmap="mulino" X="2223" Y="238" position="back" animated="True" loop="True" />
+  <scene bitmap="mani_corna_sx" X="729" Y="460" position="back" animated="True" loop="True" />
+  <scene bitmap="mani_corna_dx" X="1995" Y="460" position="back" animated="True" loop="True" />
+  <scene bitmap="croce1" X="2474" Y="280" position="back" animated="True" loop="True" />
+  <scene bitmap="croce2" X="3135" Y="295" position="back" animated="True" loop="True" />
+  <scene bitmap="croce3" X="3338" Y="314" position="back" animated="True" loop="True" />
+  <scene bitmap="lapidi_up" X="3115" Y="523" position="default" animated="False" />
+  <scene bitmap="osso_cimitero" X="2543" Y="596" position="default" animated="False" />
+  <scene bitmap="zucche2_cimitero" X="1046" Y="724" position="back" animated="True" loop="True" />
+  <scene bitmap="zucche3_cimitero" X="1877" Y="785" position="back" animated="True" loop="True" />
+  <scene bitmap="zucche4_cimitero" X="696" Y="750" position="back" animated="True" loop="True" />
+  <scene bitmap="candele1_cimitero" X="644" Y="509" position="back" animated="True" loop="True" />
+  <scene bitmap="candele2_cimitero" X="2677" Y="729" position="back" animated="True" loop="True" />
+  <scene bitmap="candele3_cimitero" X="3197" Y="780" position="back" animated="True" loop="True" />
+  <scene bitmap="lastre_marmo_stan_oliver" X="3303" Y="645" position="back" animated="False" />
+  <scene bitmap="papillon" X="3329" Y="704" position="default" animated="False" />
+  <scene bitmap="cravatta" X="3456" Y="703" position="default" animated="False" />
+  <scene bitmap="cimitero_luce" X="0" Y="0" position="fore" animated="False" />
+  <scene bitmap="parete_porta_cripta" X="105" Y="368" position="default" animated="False" />
+  <hotspots>
+    <character ID="band">
+      <look>
+        <command>text "They come up with all kinds of excuses to mask their hoarseness."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "How, if he couldn't even sing his OWN song?"</command>
+      </talk>
+    </character>
+    <character ID="calzino">
+      <look />
+      <talk />
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "muppet"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="Sir Daniel Fortesque">
+      <look>
+        <command>text "A statue in the city graveyard is the right tribute to one of the heroes of my videogaming childhood."</command>
+      </look>
+      <talk>
+        <command>text "I would have never imagined we'd have so much in common one day."</command>
+        <command>wait 0,5</command>
+        <command>text "Although I was lucky enough not to lose my jaw."</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 5</command>
+      </indipendent>
+    </character>
+    <item ID="aureola">
+      <look>
+        <command>text "Ok - one of the fallen angels, but this one seems to have made a looooud thump."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "I can gladly do without the holiness; it's not for me."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>screen c -s -w=4500 "error_message"</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "If you wish so much to communicate with the 'upstairs', I can think of a more effective solution."</command>
+      </talk>
+    </item>
+    <item ID="flusso canalizzatore">
+      <look>
+        <command>text "It's really curious how many genius hunches are just the result of more-or-less serious head injuries."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "perplexed"</command>
+        <command>text "What do I need with a flux capacitor that doesn't... flux?"</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "I don't think it would be very easy to get this grave to a speed of 88 mph."</command>
+      </use>
+      <talk>
+        <command>text "Great Scott!"</command>
+      </talk>
+    </item>
+    <character ID="tomba di Stan">
+      <look>
+        <command>expression "happy"</command>
+        <command>text "Ronald and I loved to watch their black and white movies."</command>
+      </look>
+      <talk>
+        <command>text "It's a single epitaph subdivided onto the two gravestones."</command>
+        <command>text "'It's chilly down here!'"</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Not even death made them lose their sense of humor."</command>
+      </talk>
+    </character>
+    <character ID="tomba di Oliver">
+      <look>
+        <command>expression "happy"</command>
+        <command>text "Ronald and I loved to watch their black and white movies."</command>
+      </look>
+      <talk>
+        <command>text "It's a single epitaph subdivided onto the two gravestones."</command>
+        <command>text "'It's chilly down here!'"</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Not even death made them lose their sense of humor."</command>
+      </talk>
+    </character>
+    <item ID="pala">
+      <look>
+        <comment>[riferito alla cassa accanto]</comment>
+        <command>text "There is work to complete here, for sure."</command>
+      </look>
+      <pick>
+        <command>sound "pick_pala"</command>
+        <command>pick y "pala"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "It would be a great pleasure to dig your ditch."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="teppistello2">
+      <look>
+        <command>text "At the very least it can't be said he lacks self-deprecation."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>pause -"teppistello1"</command>
+        <command>bitmap -"teppistello1" "ragazzino_tentacolo_l"</command>
+        <command>bitmap -"me" "ragazzino_marshmallow_l"</command>
+        <command>text "Hey, guys. Can I have some of your firecrackers?"</command>
+        <command>lookat -"teppistello1"</command>
+        <command>text -"teppistello1" "Ask your mother to buy you some."</command>
+        <command>wait 1</command>
+        <command>text -"teppistello1" "And get out of our way. Can't you see we're busy?"</command>
+        <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+        <command>bitmap -"teppistello2" "ragazzino_marshmallow"</command>
+        <command>internal -"teppistello2" -g -i 0</command>
+        <command>resume -"teppistello1"</command>
+        <command>resume -"teppistello2"</command>
+        <command>nolook</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 5</command>
+        <command>1 animation -"me" 00 -o=70,3 -c "ragazzino_marshmallow_ride"</command>
+        <command>1 internal -i 0</command>
+      </indipendent>
+    </character>
+    <character ID="teppistello1">
+      <look>
+        <command>text "He has a promising career as an arsonist ahead of him."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>pause -"teppistello1"</command>
+        <command>bitmap -"teppistello1" "ragazzino_tentacolo_l"</command>
+        <command>bitmap -"teppistello2" "ragazzino_marshmallow_l"</command>
+        <command>lookat -"teppistello1"</command>
+        <command>text "Hey, guys. Can I have some of your firecrackers?"</command>
+        <command>text -"teppistello1" "Ask your mother to buy you some."</command>
+        <command>wait 1</command>
+        <command>text -"teppistello1" "And get out of our way. Can't you see we're busy?"</command>
+        <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+        <command>bitmap -"teppistello2" "ragazzino_marshmallow"</command>
+        <command>internal -"teppistello2" -g -i 0</command>
+        <command>resume -"teppistello1"</command>
+        <command>resume -"teppistello2"</command>
+        <command>nolook</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "raga_tentacolo"</command>
+        <command>0 animation -"me" 00 -o=17,3 -c "ragazzino_tentacolo_petardo"</command>
+        <command>0 internal -g -i 1</command>
+        <command>1 internal -"teppistello2" -g -i 1</command>
+        <command>1 sound "risate_teppistelli"</command>
+        <command>1 animation -"me" 00 -o=17,3 -c "ragazzino_tentacolo_ride"</command>
+        <command>1 internal -g -i 0</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+      </indipendent>
+    </character>
+    <item ID="petardi">
+      <look>
+        <command>text "Next time those two will think twice before crossing Skinny."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "petardi"</command>
+      </pick>
+      <use>
+        <command>text "I'd love to, but I'm sure I'll find another use more appropriate to my cause."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="cimitero_x_catacomba" icon="ur" PX="3564" PY="715">
+      <go>
+        <command>goto "catacomba"</command>
+      </go>
+    </goto>
+    <goto ID="cimitero_x_cripta" icon="ul" PX="-142" PY="322">
+      <go>
+        <command>area &gt;"cimitero" "cimitero_x_cripta"</command>
+        <command>sound "cripta_aperta"</command>
+        <command>animation -"me" 00 -o=0,0 "porta_cripta_apertura"</command>
+        <command>bitmap -"me" "porta_cripta_aperta"</command>
+        <command>move (259,877)</command>
+        <command>pose ul</command>
+        <command>sound "cripta_chiusa"</command>
+        <command>animation -"me" 00 -o=0,0 -p=default "porta_cripta_chiusura"</command>
+        <command>bitmap -"me" "porta_cripta_chiusa"</command>
+        <command>nolook</command>
+        <command>area &gt;"cimitero" "cimitero"</command>
+        <command>goto "cripta"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

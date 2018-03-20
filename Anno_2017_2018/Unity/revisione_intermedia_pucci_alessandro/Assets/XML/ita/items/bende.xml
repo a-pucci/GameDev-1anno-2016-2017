@@ -1,0 +1,21 @@
+<object name="bende">
+  <description>
+    <command>text "Non vedevano proprio l'ora di consumare la prima notte di matrimonio."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="rasoio fai da te">
+      <command>text "A qualcuno avrebbero fatto comodo." $50</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "Non è una cattiva idea, ma prima voglio accertarmi di aver fatto tutto il necessario." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "Non sono mica un infermiere." $52</command>
+    </hotspot>
+  </location>
+</object>

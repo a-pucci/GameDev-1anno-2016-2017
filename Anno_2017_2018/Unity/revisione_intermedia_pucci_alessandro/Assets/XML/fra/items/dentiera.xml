@@ -1,0 +1,56 @@
+<object name="dentiers">
+  <description>
+    <command>text "Quel sourire éblouissant..."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>text "Ce n'est certainement pas le genre de liquide que tu devrais stocker." $193</command>
+    </object>
+    <object name="gomme_da_masticare">
+      <command>text "La bataille finale entre le bien et les caries." $223</command>
+    </object>
+  </inventory>
+  <location name="cripta">
+    <hotspot ID="nonnina">
+      <command>animation -skinny 00 -o=104,16 -a "skinny_dentiera"</command>
+      <command>wait 0,41</command>
+      <command>sound "nonna_dentiera"</command>
+      <command>animation -"me" 00 -o=23,9 "nonnina_dentiera"</command>
+      <command>bitmap -"me" "nonnina"</command>
+      <command>throw "dentiera"</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "herself"</command>
+      <command>text -"me" "*Quelle plaie de vieillir*"</command>
+      <command>internal -"me" -g 1</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "happy"</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Ronald, le petit chéri à sa grand-mère... Tu es venu me voir !"</command>
+      <command>expression -"me" "sad"</command>
+      <command>text -"me" "Tu es si maigre... Tu manges suffisamment ?"</command>
+      <command>dialog "nonnina_risposta"</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="non_sapevo_come_chiamarlo">
+      <command>expression "sarcastic"</command>
+      <command>text "Il serait capable d'en manger aussi." $98</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="pianta carnivora">
+      <command>text "Malheureusement, il est déjà équipé de deux rangées de dents très pointues." $99</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cieco">
+      <command>expression "sarcastic"</command>
+      <command>text "Il a plutôt besoin d'une opération de la cataracte que d'une nouvelle paire de dents." $209</command>
+    </hotspot>
+  </location>
+  <location name="pensile">
+    <hotspot ID="dentifricio">
+      <command>text "Peut-être qu'avec une meilleure hygiène dentaire, on n'en serait pas là." $210</command>
+    </hotspot>
+  </location>
+</object>

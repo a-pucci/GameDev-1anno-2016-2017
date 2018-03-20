@@ -1,0 +1,105 @@
+<object name="магнит">
+  <description>
+    <command>text "Надеюсь, так я привлеку инопланетные формы жизни."</command>
+    <command>wait 0,5</command>
+    <command>text "Я хочу верить."</command>
+  </description>
+  <inventory />
+  <location name="casa_albero">
+    <hotspot ID="pugnale">
+      <command>text "Так просто это со стены не снять." $121</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="canna da pesca">
+      <command>pause -"giostraio"</command>
+      <command>wait 0,2</command>
+      <command>bitmap -"giostraio" "giostraio_canna"</command>
+      <command>sound "magnete"</command>
+      <command>bitmap -"me" "canna_pesca_ok"</command>
+      <command>throw "magnete"</command>
+      <command>wait 0,7</command>
+      <command>pose d</command>
+      <command>text "Кажется, рыбалка будет что надо."</command>
+      <command>lookat -"me"</command>
+      <command>sound "pesca_ok"</command>
+      <command>wait 0,5</command>
+      <command>animation -skinny 00 -o=366,199 -a "skinny_canna_pesca_ok"</command>
+      <command>bitmap -skinny -o=366,199 "skinny_canna_pesca"</command>
+      <command>sound "use_canna"</command>
+      <command>hide -"me"</command>
+      <command>wait 0,25</command>
+      <command>show +"bordo_vasca"</command>
+      <command>wait 1,58</command>
+      <command>internal &gt;"cucina" -g -i 1</command>
+      <command>animation (255,484) -p=default -a "giostra_risucchio"</command>
+      <command>wait 1</command>
+      <command>bitmap -skinny ""</command>
+      <command>internal -"giostraio" -g -i 2</command>
+      <command>resume -"giostraio"</command>
+      <command>animation -skinny 00 -o=366,199 -a "skinny_vince_giostra"</command>
+      <command>wait 2,2</command>
+      <command>hide +"bordo_vasca"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -"me" "canna_pesca_pesci"</command>
+      <command>sound "use_canna"</command>
+      <command>show -"me"</command>
+      <command>wait 1</command>
+      <command>text -"giostraio" "Поверить не могу, что у тебя получилось..."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Я профи. Что в этом такого?"</command>
+      <command>expression "normal"</command>
+      <command>text -"giostraio" "Почему бы тебе не заглянуть к себе в карман?"</command>
+      <command>expression "perplexed"</command>
+      <command>wait 1</command>
+      <command>sound "pick_buono"</command>
+      <command>pick n "buono"</command>
+      <command>expression "normal"</command>
+      <command>wait 0,5</command>
+      <command>text "Блин, как он сюда попал?"</command>
+      <command>text -"giostraio" "Когда всю жизнь бегаешь от налоговой, приходиться проворачивать... и не такое."</command>
+      <command>wait 0,5</command>
+      <command>expression "perplexed"</command>
+      <command>text "А как ты стал работать в балагане?"</command>
+      <command>expression "normal"</command>
+      <command>text -"giostraio" "Социальная помощь."</command>
+      <command>wait 0,5</command>
+      <command>text -"giostraio" "Так вот, по этому купону ты можешь получить любой приз у цыганки в киоске за городом."</command>
+      <command>wait 0,5</command>
+      <command>text -"giostraio" "Ох, чуть не забыл: поаккуратнее с той сумочкой, которую я тоже подложил к тебе в карман."</command>
+      <command>expression "scared"</command>
+      <command>text "Боже, что еще за сумочка?"</command>
+      <command>text -"giostraio" "Ха-ха-ха-ха, да шучу я."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ты совсем не смешной."</command>
+      <command>internal 1</command>
+      <command>bitmap -"giostraio" "giostraio"</command>
+      <command>internal -"giostraio" -g -i 0</command>
+      <command>internal -"giostraio" -g 1</command>
+      <command>hide -nc -"me"</command>
+      <command>map "campsite"</command>
+    </hotspot>
+    <hotspot ID="frigorifero">
+      <command>text "Штуки из Тетриса уже хороши." $122</command>
+    </hotspot>
+    <hotspot ID="giostraio">
+      <command>text "Кажется, я на верном пути." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Но на другой стороне туннеля." $103</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="porta del bagno">
+      <command>text "Не думаю, что ключ на другой стороне." $123</command>
+    </hotspot>
+    <hotspot ID="porta della camera">
+      <command>text "Не думаю, что ключ на другой стороне." $123</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="macchina del tempo">
+      <command>text "Я бы не хотел кончить как электрическое снаряжение из того эпизода «Во все тяжкие»." $124</command>
+    </hotspot>
+  </location>
+</object>

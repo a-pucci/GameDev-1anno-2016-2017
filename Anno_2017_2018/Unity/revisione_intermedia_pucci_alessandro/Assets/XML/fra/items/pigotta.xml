@@ -1,0 +1,30 @@
+<object name="poupée de chiffon">
+  <description>
+    <command>text "Les poupées avec des boutons à la place des yeux m'ont toujours fait peur."</command>
+  </description>
+  <inventory>
+    <object name="capelli">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>text "Je ne pense pas que ce sera suffisant pour la calmer." $144</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="Chucky">
+      <command>text "Peut-être une petite sœur ?" $145</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Je doute qu'il joue toujours avec des poupées." $146</command>
+    </hotspot>
+  </location>
+</object>

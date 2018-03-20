@@ -1,0 +1,24 @@
+<object name="monete antiche">
+  <description>
+    <command>text "Immagino che i collezionisti sarebbero disposti a ricoprirmi d'oro pur di averle."</command>
+  </description>
+  <inventory />
+  <location name="spiaggia">
+    <hotspot ID="calderone_1861">
+      <command>sound "pick_monete"</command>
+      <command>wait 0,5</command>
+      <command>text "Fatto."</command>
+      <command>throw "monete_antiche"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_presente" 2</command>
+      <command>internal -"calderone_1981" 2</command>
+    </hotspot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>text "Dannazione, non accetta questo tipo di moneta." $128</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sarà forse perchè non esistevano ancora le cabine telefoniche nel 1863?" $129</command>
+    </hotspot>
+  </location>
+</object>

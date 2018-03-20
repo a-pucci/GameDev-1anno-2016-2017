@@ -1,0 +1,80 @@
+<object name="aérosol">
+  <description>
+    <command>text "Je peux finalement déchaîner l'artiste qui est en moi."</command>
+  </description>
+  <inventory>
+    <object name="fiammiferi">
+      <command>text "Ça causerait un incendie historique." $105</command>
+      <command>text "Après l'accident de la cabane, il vaut peut-être mieux faire profil bas pour le moment." $106</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="pixel morto">
+      <command>text "Ce n'est pas le meilleur moyen de changer les valeurs RVB." $76</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Stan">
+      <command>text "Je ne veux pas profaner leur mémoire." $77</command>
+    </hotspot>
+    <hotspot ID="tomba di Oliver">
+      <command>text "Je ne veux pas profaner leur mémoire." $77</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="lapide di Wilson">
+      <command>text "Je ne veux pas profaner leur mémoire." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Woodie">
+      <command>text "Je ne veux pas profaner leur mémoire." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Wilbur">
+      <command>text "Je ne veux pas profaner leur mémoire." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Willow">
+      <command>text "Je ne veux pas profaner leur mémoire." $77</command>
+    </hotspot>
+  </location>
+  <location name="elenco_telefonico">
+    <hotspot ID="annuncio_hotline">
+      <command>text "Je suis contre la censure." $78</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="Pinhead addormentato">
+      <command>text "Ce serait sûrement une bonne blague, si seulement la peinture n'était pas permanente." $79</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="barattolo di vernice">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "C'est déjà chargé." $80</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "Je pourrais faire le coup classique de la bombe, mais Ralph s'en apercevrait tout de suite." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "Je pourrais faire le coup classique de la bombe, mais Ralph s'en apercevrait tout de suite." $81</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "Je pourrais faire le coup classique de la bombe, mais Ralph s'en apercevrait tout de suite." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "Je pourrais faire le coup classique de la bombe, mais Ralph s'en apercevrait tout de suite." $81</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="Manet">
+      <command>text "Je ne veux pas défigurer sa peinture." $82</command>
+    </hotspot>
+  </location>
+</object>

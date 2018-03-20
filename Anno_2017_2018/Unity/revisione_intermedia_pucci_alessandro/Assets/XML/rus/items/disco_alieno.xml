@@ -1,0 +1,38 @@
+<object name="инопланетный диск">
+  <description>
+    <command>text "Думаю, это что-то типа ключа от космического корабля, или типа того."</command>
+  </description>
+  <inventory>
+    <object name="circuito">
+      <command>sound "pick_magnete"</command>
+      <command>throw "circuito"</command>
+      <command>throw "disco_alieno"</command>
+      <command>pick n "magnete"</command>
+    </object>
+    <object name="pila">
+      <command>text "Может, я смогу запитать диск, но точно не так." $150</command>
+    </object>
+  </inventory>
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>text "Ничего. Хотел бы я позвонить сквозь вселенную." $100</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="canna da pesca">
+      <command>text "Хм-м-м... Он того же размера, что диск на удочке." $101</command>
+    </hotspot>
+    <hotspot ID="giostraio">
+      <command>text "Кажется, я на верном пути." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Но на другой стороне туннеля." $103</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="navicella aliena">
+      <command>pose d</command>
+      <command>text "Я уже взял его и не хочу класть обратно." $104</command>
+    </hotspot>
+  </location>
+</object>

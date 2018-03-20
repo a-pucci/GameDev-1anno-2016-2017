@@ -1,0 +1,30 @@
+<object name="Make-up-Entferner">
+  <description>
+    <command>text "Wenn ich noch meine Haut hätte ..."</command>
+  </description>
+  <inventory>
+    <object name="lettera">
+      <command>sound "pick_lettera_amore"</command>
+      <command>throw -"me"</command>
+      <command>throw -"lettera"</command>
+      <command>pick n "lettera_struccata"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>text "Ich glaube, hier haben die mit Photoshop mehr erreicht als mit dem eigentlichen Make-up." $173</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="moglie di Frankenstein">
+      <command>expression "sarcastic"</command>
+      <command>text "Ähm... Besser nicht." $174</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>text "Ist niemals eine gute Idee, eine Königin gegen sich aufzubringen." $175</command>
+    </hotspot>
+  </location>
+</object>

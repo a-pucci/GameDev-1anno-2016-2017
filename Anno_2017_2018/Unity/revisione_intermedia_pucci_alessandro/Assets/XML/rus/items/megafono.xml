@@ -1,0 +1,91 @@
+<object name="рупор">
+  <description>
+    <command>text "В конце концов, деда винить нечего."</command>
+    <command>wait 0,5</command>
+    <command>text "Эта штука дает тебе странное ощущение власти над окружающими."</command>
+  </description>
+  <inventory>
+    <object name="registrazione_polizia">
+      <command>throw "registrazione_polizia"</command>
+      <command>throw "megafono"</command>
+      <command>sound "pick_casett_mega"</command>
+      <command>pick n "antifurto_fai_da_te"</command>
+    </object>
+    <object name="gomma_gigante">
+      <command>text "Не хочу засорить." $215</command>
+    </object>
+  </inventory>
+  <location name="piano_terra">
+    <hotspot ID="deejay">
+      <command>if internal 0</command>
+      <command>animation -skinny 00 -o=46,26 "skinny_megafono"</command>
+      <command>bitmap -skinny -o=46,26 "skinny_megafono"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -skinny ""</command>
+      <command>bitmap -skinny -o=46,26 "skinny_megafono_happy"</command>
+      <command>text "Прекрасно, отличная музыка!"</command>
+      <command>wait 0,3</command>
+      <command>bitmap -skinny ""</command>
+      <command>animation -skinny 00 -o=46,26 -a -e=300 "skinny_megafono_happy_back"</command>
+      <command>expression "happy"</command>
+      <command>wait 0,5</command>
+      <command>pause -"me"</command>
+      <command>animation -"me" 00 -o=29,27 -c "dj_ok"</command>
+      <command>expression "normal"</command>
+      <command>resume -"me"</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>animation -skinny 00 -o=46,26 "skinny_megafono"</command>
+      <command>bitmap -skinny -o=46,26 "skinny_megafono"</command>
+      <command>text "Можешь сделать ее максимально громкой?" 2</command>
+      <command>wait 0,3</command>
+      <command>bitmap -skinny ""</command>
+      <command>animation -skinny 00 -o=46,26 -a -e=300 "skinny_megafono_back"</command>
+      <command>wait 0,5</command>
+      <command>pause -"me"</command>
+      <command>animation -"me" 00 -o=29,27 -c "dj_ok"</command>
+      <command>hide +"casse#1_ombra"</command>
+      <command>hide +"casse#1_left"</command>
+      <command>hide +"casse#1_right"</command>
+      <command>show +"casse#2_ombra"</command>
+      <command>show +"casse#2_left"</command>
+      <command>show +"casse#2_right"</command>
+      <command>ost &gt;"piano_terra" "party_theme:4"</command>
+      <command>resume -"me"</command>
+      <command>internal -"studio/bomba" 1</command>
+      <command>internal -"me" -g 0</command>
+      <command>fie</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>expression "sarcastic"</command>
+      <command>text "Да он почти не стреманулся будильника..." $125</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>pose d</command>
+      <command>text "Не хочу его разбудить." $126</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="lo smilzo">
+      <command>expression "sarcastic"</command>
+      <command>text "Проблема в том, что он не слышит." $127</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="Pinhead addormentato">
+      <command>pose d</command>
+      <command>text "Не хочу его разбудить." $126</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Зачем мне что-то ему говорить?" $238</command>
+    </hotspot>
+  </location>
+</object>

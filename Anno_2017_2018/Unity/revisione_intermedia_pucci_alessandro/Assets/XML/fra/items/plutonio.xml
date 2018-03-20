@@ -1,0 +1,147 @@
+<object name="plutonium">
+  <description>
+    <comment>[bisbigliando]</comment>
+    <command>text "Une fiole de plutonium liquide."</command>
+    <command>wait 0,5</command>
+    <command>text "Mieux vaut ne pas le dire tout haut ou les Américains vont surgir pour nous botter le cul."</command>
+  </description>
+  <inventory>
+    <object name="assenzio">
+      <command>text "Je ne vois pas comment; le flacon est déjà plein." $10</command>
+    </object>
+    <object name="bomba_disinnescata">
+      <command>text "Je ne pense pas que ce genre de bombe soit alimenté en plutonium honnêtement." $154</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>expression "sarcastic"</command>
+      <command>text "Je doute que ça puisse être utilisé comme engrais." $90</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="flusso canalizzatore">
+      <command>pose d</command>
+      <command>text "Il y aura toujours le problème des 88 miles à l'heure... mais gardons-le à l'esprit, ok ?" $152</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="armadio recuperato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Dommage que ce ne soit pas une DeLorean." $153</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Dommage que ce ne soit pas une DeLorean." $153</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="bomba disinnescata">
+      <command>expression "sarcastic"</command>
+      <command>text "Je ne pense pas que ce genre de bombe soit alimenté en plutonium honnêtement." $154</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="Boogeyman">
+      <command>expression "sarcastic"</command>
+      <command>text "Ce n'est pas une lampe de poche." $155</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="macchina del tempo">
+      <command>if internal -"macchina del tempo" 1</command>
+      <command>pose d</command>
+      <command>text "Il vaut mieux parler avec le scientifique avant de se lancer dans d'étranges expériences."</command>
+      <command>fie</command>
+      <command>pose d</command>
+      <command>text "Pourquoi ferais-je ça ?" $157</command>
+    </hotspot>
+    <hotspot ID="scienziato">
+      <command>if internal -"macchina del tempo" 1</command>
+      <command>dialog -r "Funziona tutto adesso?" "scienziato"</command>
+      <command>internal #"scienziato" -g 2</command>
+      <command>text "Peut-être que cela pourrait vous intéresser ?"</command>
+      <command>text -"me" "Où avez-vous trouvé ça ?!?"</command>
+      <command>text "Ici et là."</command>
+      <command>text -"me" "Ok ok, versez exactement 3 ml pour chaque douzaine d'années que vous voulez retrouver."</command>
+      <command>text -"me" "Ajoutez 2 ml de plus pour démarrer la machine et 1 ml toutes les demi-heures d'utilisation."</command>
+      <command>text -"me" "Soyez aussi précis que possible."</command>
+      <command>wait 0,5</command>
+      <command>text "D'accord pas de problème."</command>
+      <command>text -"me" "La machine démarrera dès que vous aurez indiqué la date de destination dans le cadran."</command>
+      <command>text -"me" "Évitez de voyager dans le futur. Le processus utilise en partie le champ géomagnétique de la Terre et tout changement pourrait vous empêcher de revenir en arrière."</command>
+      <command>text -"me" "N'oubliez pas que vous ne pouvez pas sauter d'une époque à une autre. Vous êtes obligé de retourner dans le présent à chaque fois."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Vous en avez pour longtemps ?"</command>
+      <command>expression "normal"</command>
+      <command>text -"me" "Les portes sont automatiques, alors restez à proximité. Des animaux pourraient entrer dans la machine et revenir dans le présent à votre place, par accident."</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Et rappelez-vous bien de ne JAMAIS interférer avec le continuum espace-temps."</command>
+      <command>text "Ouais, ouais... peu importe."</command>
+      <command>move (1460,878)</command>
+      <command>pose ur</command>
+      <command>wait 1</command>
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Combien de plutonium a-t-il dit qu'il fallait exactement ?"</command>
+      <command>wait 0,5</command>
+      <command>expression "normal"</command>
+      <command>pose ur</command>
+      <command>wait 0,5</command>
+      <command>text -nt "Humm..."</command>
+      <command>wait 1</command>
+      <command>text "Eh bien, je vais y aller au pif, qu'est-ce qui pourrait m'arriver de pire ?"</command>
+      <command>show -"bocchetta_carburatore"</command>
+      <command>sound "skinny_versa_pluto"</command>
+      <command>animation -skinny 00 -o=-21,-3 -a "skinny_versa_plutonio"</command>
+      <command>wait 1,2</command>
+      <command>animation -"bocchetta_carburatore" 00 -o=0,0 -a "apertura_carburatore"</command>
+      <command>wait 1</command>
+      <command>show +"carburatore_front"</command>
+      <command>wait 1</command>
+      <command>hide +"carburatore_front"</command>
+      <command>wait 0,6</command>
+      <command>sound "pick_residuo_plutonio"</command>
+      <command>throw -"plutonio"</command>
+      <command>pick n "residui_plutonio"</command>
+      <command>wait 0,4</command>
+      <command>wait 1</command>
+      <command>hide -"bocchetta_carburatore"</command>
+      <command>sound "tempo_accensione"</command>
+      <command>animation -"macchina del tempo" 00 -o=1,5 -a "macchina_del_tempo_accensione"</command>
+      <command>bitmap -"macchina del tempo" "macchina_tempo_attiva_chiusa"</command>
+      <command>animation -"scienziato" 00 -o=2,1 "scienziato_rotazione"</command>
+      <command>bitmap -"scienziato" "scienziato_girato"</command>
+      <command>wait 1,5</command>
+      <command>sound "tempo_apre"</command>
+      <command>animation -"macchina del tempo" 00 -o=8,30 "porte_macchina_apertura"</command>
+      <command>bitmap -"macchina del tempo" "macchina_tempo_attiva_aperta"</command>
+      <command>pose dr</command>
+      <command>sound "scienziato_esulta"</command>
+      <command>animation -"scienziato" 00 -o=2,1 "scienziato_esulta"</command>
+      <command>bitmap -"scienziato" "scienziato_happy"</command>
+      <command>hide -"macchina del tempo"</command>
+      <command>show -"macchina_tempo_goto"</command>
+      <command>show +"macchina_tempo_front"</command>
+      <command>nolook</command>
+      <command>fie</command>
+      <command>pose d</command>
+      <command>text "Pourquoi ferais-je ça ?" $157</command>
+    </hotspot>
+    <hotspot ID="pescato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Tu devrais passer en revue le tableau périodique des éléments. Je pense que tu confonds ça avec du mercure." $156</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="urinatoio">
+      <command>expression "happy"</command>
+      <command>text "Ce serait un... nucléaire solo." $158</command>
+    </hotspot>
+  </location>
+</object>

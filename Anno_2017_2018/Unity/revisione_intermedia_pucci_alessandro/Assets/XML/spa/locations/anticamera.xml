@@ -1,0 +1,163 @@
+<location>
+  <script>
+    <command>0 show skinny (976,794)</command>
+    <command>0 wait 1,5</command>
+    <command>0 animation (811,627) -p=default -a "skinny_sfonda_porta"</command>
+    <command>0 sound "skinny_break_door"</command>
+    <command>0 animation (718,375) -p=back "porta_anticamera"</command>
+    <command>0 show +"porta_scantinato"</command>
+    <command>0 wait 2</command>
+    <command>0 move (632,853)</command>
+    <command>0 wait 0,5</command>
+    <command>0 pose d</command>
+    <command>0 text "¡Así que aquí daba esa puerta!"</command>
+    <command>0 text "¡Y en todos estos años nadie se ha molestado en forzarla!"</command>
+    <command>0 status &gt;"salotto" 1</command>
+    <command>0 status 1</command>
+  </script>
+  <indipendent>
+    <command>wait 5</command>
+    <command>animation (216,621) -c -p=back "bob_sx"</command>
+    <command>wait 5</command>
+    <command>animation (528,858) -c -p=divine "bob_cx"</command>
+    <command>wait 5</command>
+    <command>animation (930,683) -c -p=superdefault "bob_dx"</command>
+  </indipendent>
+  <entry name="ingresso" X="230" Y="900" pose="r" />
+  <entry name="scantinato" X="807" Y="805" pose="l" />
+  <entry name="salotto" X="1324" Y="952" pose="dr" />
+  <entry name="cucina1" X="1426" Y="987" pose="dl" />
+  <scene bitmap="lampadina_anticamera" X="271" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="porta_scantinato" X="718" Y="375" position="back" animated="False" />
+  <scene bitmap="parete_scantinato" X="892" Y="441" position="default" animated="False" />
+  <scene bitmap="mosche" X="212" Y="384" position="back" animated="True" loop="True" />
+  <hotspots>
+    <item ID="carta moschicida">
+      <look>
+        <command>text "Puede que sea antiestético, pero desde luego es eficaz."</command>
+      </look>
+      <pick>
+        <command>text "No quiero acabar como todas las que me precedieron."</command>
+      </pick>
+      <use>
+        <command>text "No veo cómo podría serme de utilidad."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "A menos que seas una mosca."</command>
+      </use>
+      <talk>
+        <command>text "La próxima vez será mejor que busques un lugar más apropiado para posarte."</command>
+      </talk>
+    </item>
+    <item ID="bara">
+      <look>
+        <command>text "Por increíble que parezca, el padre de Ronald lo adquirió hace años en previsión de su funeral."</command>
+        <command>text "Estaba de oferta en una feria funeraria."</command>
+        <command>wait 0,5</command>
+        <command>text "No le va a hacer gracia enterarse de que esos idiotas se lo han cargado."</command>
+      </look>
+      <pick>
+        <command>text "Tráeme un montacargas y no te decepcionaré."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "He vuelto a la vida. Asúmelo."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="mano autostoppista">
+      <look>
+        <command>text "Son malos tiempos para los autoestopistas."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Mira, tengo que preguntártelo."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "¿Quieres que te lleve al Noveno Infierno?"</command>
+      </talk>
+      <indipendent>
+        <command>wait 2,5</command>
+        <command>sound "skeletral_hand"</command>
+        <command>animation -"me" 00 -o=27,17 -c "mano_autostop"</command>
+        <command>wait 2,5</command>
+      </indipendent>
+    </character>
+    <character ID="ritratto">
+      <look>
+        <command>text "Zeno siempre ha sido tímido, pero le considero un buen amigo."</command>
+        <command>text "Es raro verle sin un libro en la mano."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Nunca había visto tal pasión por la literatura."</command>
+      </look>
+      <talk>
+        <command>text "No tengas miedo del mundo exterior, Zeno. Entiendo perfectamente cómo te sientes."</command>
+      </talk>
+    </character>
+    <character ID="robot">
+      <look>
+        <command>text "Parece que se está quedando sin pilas."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>bitmap -"me" "robot_l"</command>
+        <command>0 text "Hola, pequeño robot."</command>
+        <command>0 text -"me" -c=fuxia "C1 no está programado para hablar."</command>
+        <command>0 text "¡Pero si acabas de hacerlo!"</command>
+        <command>0 text -"me" -c=fuxia "C1 no está programado para explicarse."</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "robot"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "robot_interact"</command>
+        <command>animation -"me" 00 -o=19,19 -c "robot_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <goto ID="anticamera_x_scantinato" icon="r" PX="1270" PY="623">
+      <go>
+        <command>goto "scantinato"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_ingresso" icon="l" PX="-339" PY="650">
+      <go>
+        <command>goto "ingresso"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_cucina" icon="r" PX="2098" PY="431">
+      <go>
+        <command>goto "cucina1"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_salotto" icon="ul" PX="890" PY="-60">
+      <go>
+        <command>goto "salotto"</command>
+      </go>
+    </goto>
+    <item ID="sveglia">
+      <look>
+        <command>text "Es un viejo despertador, de cuando Ronald era pequeño."</command>
+        <command>text "Pensaba que no lo conservaría."</command>
+      </look>
+      <pick>
+        <command>sound "pick_clock"</command>
+        <command>pick y "sveglia"</command>
+      </pick>
+      <use>
+        <command>text "Hace ya muchos años que sonó por última vez. Luego... se cayó al suelo por ACCIDENTE y dejó de funcionar."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+  </hotspots>
+</location>

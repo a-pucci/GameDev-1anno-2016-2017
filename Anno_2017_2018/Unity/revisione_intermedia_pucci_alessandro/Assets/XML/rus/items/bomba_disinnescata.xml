@@ -1,0 +1,36 @@
+<object name="обезвреженная бомба">
+  <description>
+    <command>text "Устройство времен Второй мировой войны."</command>
+    <command>text "Ясное дело, что ее разминировали для безопасности."</command>
+  </description>
+  <inventory>
+    <object name="petardi">
+      <command>wait 0,5</command>
+      <command>text "Сначала нужно извлечь порох..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>throw "petardi"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "А теперь..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="assenzio_radioattivo">
+      <command>text "Порой я удивлен тому, что ты еще жив." $7</command>
+    </object>
+    <object name="plutonio">
+      <command>text "Честно, не думаю, что такие бомбы работали от плутония." $154</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Обезвреженной бомбой? То будет самый идиотский неудавшийся взлом в истории." $75</command>
+    </hotspot>
+  </location>
+</object>

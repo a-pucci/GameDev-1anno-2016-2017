@@ -1,0 +1,52 @@
+<object name="Spritzfliege">
+  <description>
+    <command>text "Fällt mir jetzt erst auf: die Pipette ist durchbohrt worden."</command>
+  </description>
+  <inventory>
+    <object name="cravatta">
+      <command>text "Zwei Lifestyles im Vergleich." $96</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="barbone">
+      <command>text "Ich bezweifle, ob das was bringen würde. Der hat ja schon selbst so was." $136</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Stan">
+      <command>load "ingresso_catacomba"</command>
+      <command>sound "use_farfallino"</command>
+      <command>show +"papillon"</command>
+      <command>internal -g 1</command>
+      <command>if internal -"tomba di Oliver" 1</command>
+      <command>wait 1</command>
+      <command>ost 0.5</command>
+      <command>cutscene "ingresso_catacomba"</command>
+      <command>ost 1</command>
+      <command>screen -w=1 -fo=300 -a</command>
+      <command>hide -"tomba di Stan"</command>
+      <command>hide -"tomba di Oliver"</command>
+      <command>hide +"cravatta"</command>
+      <command>hide +"papillon"</command>
+      <command>hide +"lastre_marmo_stan_oliver"</command>
+      <command>show -"cimitero_x_catacomba"</command>
+      <command>fi</command>
+      <command>throw "papillon"</command>
+    </hotspot>
+    <hotspot ID="tomba di Oliver">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Wie ich sehe, hast du nie gelernt, mit Formen zu spielen." $97</command>
+    </hotspot>
+  </location>
+  <location name="meteorite">
+    <hotspot ID="mummia">
+      <command>text "Ich bezweifle, ob das was bringen würde. Der hat ja schon selbst so was." $136</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="cravatta">
+      <command>text "Zwei Lifestyles im Vergleich." $96</command>
+    </hotspot>
+  </location>
+</object>

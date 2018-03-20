@@ -1,0 +1,73 @@
+<object name="absenta subida de alcohol">
+  <description>
+    <command>text "No es que antes fuera poca broma... pero ahora sí que estamos ante un código rojo."</command>
+  </description>
+  <inventory>
+    <object name="jalapeno">
+      <command>sound "pick_capsaicina"</command>
+      <command>throw "assenzio_radioattivo"</command>
+      <command>throw "jalapeno"</command>
+      <command>pick n "capsaicina"</command>
+    </object>
+    <object name="peperoncino">
+      <command>text "Me temo que la guindilla no es lo bastante picante." $15</command>
+    </object>
+    <object name="bomba">
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </object>
+    <object name="bomba_appiccicosa">
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </object>
+    <object name="bomba_disinnescata">
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Mejor no echar leña al fuego." $3</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="sali">
+      <command>text "No creo que fuera suficiente. Necesito algo más potente." $4</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="peperoncino">
+      <command>text "Me temo que la guindilla no es lo bastante picante." $15</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "Creo que las heridas ya le escuecen lo suficiente." $16</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="stormtrooper">
+      <command>expression "sarcastic"</command>
+      <command>text "Qué pena que no sea aguarrás." $17</command>
+    </hotspot>
+    <hotspot ID="ragazzo alticcio">
+      <command>pose d</command>
+      <command>text "A veces me sorprendes para bien con ese sadismo tuyo." $12</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Mejor me lo quedo." $18</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>text "Creo que no sería capaz de disolver el metal con absenta radiactiva." $19</command>
+    </hotspot>
+    <hotspot ID="bomba">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </hotspot>
+    <hotspot ID="pianta carnivora">
+      <command>text "Me parece que le va bien sin abono." $20</command>
+    </hotspot>
+  </location>
+</object>

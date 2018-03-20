@@ -1,0 +1,28 @@
+<object name="grabación del robo">
+  <description>
+    <command>text "Ha tenido que ser muy gordo para que hayan enviado tantos efectivos."</command>
+  </description>
+  <inventory>
+    <object name="megafono">
+      <command>sound "pick_casett_mega"</command>
+      <command>pick n "antifurto_fai_da_te"</command>
+      <command>throw "megafono"</command>
+      <command>throw "registrazione_polizia"</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>text "La verdad es que sería algo así como la banda sonora de su vida." $267</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "A esa distancia no lo va a oír." $268</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="megafono">
+      <command>text "Primero tendría que cogerla." $95</command>
+    </hotspot>
+  </location>
+</object>

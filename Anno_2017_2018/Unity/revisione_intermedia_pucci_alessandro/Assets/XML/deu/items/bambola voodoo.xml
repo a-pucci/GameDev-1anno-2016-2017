@@ -1,0 +1,117 @@
+<object name="Voodoo-Puppe">
+  <description>
+    <comment>[semi-citando un famoso meme in Rete]</comment>
+    <command>text "Nach all den mit 'Monkey Island' verbrachten Stunden hätte das gar nicht anders ausgehen können."</command>
+  </description>
+  <inventory>
+    <object name="spillo">
+      <command>if in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Du solltest dich dem Raum vielleicht nur auf Armeslänge nähern." 1</command>
+      <command>fie</command>
+      <command>if in "elenco_telefonico"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Du solltest dich dem Raum vielleicht nur auf Armeslänge nähern." 1</command>
+      <command>fie</command>
+      <command>if in "toppa_bagno"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Du solltest dich dem Raum vielleicht nur auf Armeslänge nähern." 1</command>
+      <command>fie</command>
+      <command>if status &gt;"spiaggia" 4</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ich erinnere dich daran, dass wir uns in einer anderen Zeit befinden." 2</command>
+      <command>fie</command>
+      <command>if not in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>0 pose d</command>
+      <command>0 text "Danke, diese Sache geht mir echt unter die H..." 3</command>
+      <command>0 expression "normal"</command>
+      <command>0 wait 1</command>
+      <command>0 expression "sarcastic"</command>
+      <command>0 text "Ja, nun ... du weißt schon." 4</command>
+      <command>pose dr</command>
+      <command>expression "normal"</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_voodoo_doll"</command>
+      <command>animation -skinny 00 -o=58,6 "skinny_accoltella_bambola_voodoo"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "normal"</command>
+      <command>0 text "Irgendetwas kapiere ich hier wohl nicht. Geht nicht." 5</command>
+      <command>0 internal #"custode" -g 1</command>
+      <command>0 internal @"spillo" -g 1</command>
+      <command>0 internal @"bambola voodoo" -g 1</command>
+      <command>fie</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="pentacolo">
+      <command>if internal -"pentacolo" 0</command>
+      <command>pose d</command>
+      <command>text "Was genau soll ich denn bitte machen?" 1</command>
+      <command>fi</command>
+      <command>if internal -"pentacolo" 1</command>
+      <command>wait 0,5</command>
+      <command>sound "pick_doll"</command>
+      <command>bitmap -"pentacolo" "pentagramma_bambola_non_funzionante"</command>
+      <command>wait 1</command>
+      <command>text "Okay, negative Gedanken ..." 2</command>
+      <command>sound "voodoo_ritual"</command>
+      <command>bitmap -skinny -o=-30,-5 "skinny_pensa"</command>
+      <command>wait 3,5</command>
+      <command>hide +"candela_baracca3_on"</command>
+      <command>hide +"candela_baracca4_on"</command>
+      <command>hide +"candela_baracca5_on"</command>
+      <command>hide +"candela_baracca6_on"</command>
+      <command>animation (1370,775) -p=fore -e=1500 "candele_pentagramma"</command>
+      <command>animation -"pentacolo" 00 -o=64,211 -p=fore "voodoo_ritual"</command>
+      <command>bitmap -"pentacolo" "pentagramma_bambola_funzionante"</command>
+      <command>show +"candela_baracca3"</command>
+      <command>show +"candela_baracca4"</command>
+      <command>show +"candela_baracca5"</command>
+      <command>show +"candela_baracca6"</command>
+      <command>bitmap -skinny ""</command>
+      <command>wait 1</command>
+      <command>pose d</command>
+      <command>text "Nichts leichter als das. Und das nur, weil ich so leicht meinen geballten Hass auf andere Leute projizieren kann." 3</command>
+      <command>lookat -"pentacolo"</command>
+      <command>wait 0,5</command>
+      <command>sound "pick_doll"</command>
+      <command>throw "bambola voodoo"</command>
+      <command>pick n "bambola voodoo funzionante"</command>
+      <command>bitmap -"pentacolo" "pentagramma"</command>
+      <command>nolook</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="libro di magia nera">
+      <command>text "Vielleicht steht hier drin ja was dazu." $36</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>expression "sarcastic"</command>
+      <command>text "Voodoo und Katholizismus vertragen sich nicht wirklich." $30</command>
+      <command>expression "normal"</command>
+      <command>text "Ich sollte besser nicht anfangen, irgendwelche seltsamen mittelalterlichen Vollstreckungsmaßnahmen auszugraben." $31</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Wissenschaft und Voodoo sind nicht gerade die beste Kombination." $34</command>
+    </hotspot>
+  </location>
+</object>

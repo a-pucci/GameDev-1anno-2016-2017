@@ -1,0 +1,103 @@
+<object name="Bibel">
+  <description>
+    <command>text "Ein wenig Hilfe von oben kann nie schaden."</command>
+  </description>
+  <inventory>
+    <object name="anelli">
+      <command>text "Direkt aus der wöchentlichen Ausgabe des Magazins 'Ihre individuelle Hochzeit'." $53</command>
+    </object>
+    <object name="fiammiferi">
+      <command>text "Lassen wir uns zu einem solchen Akt der Blasphemie besser nicht hinreißen." $56</command>
+    </object>
+  </inventory>
+  <location name="camera_letto">
+    <hotspot ID="anelli">
+      <command>pose d</command>
+      <command>text "Direkt aus der wöchentlichen Ausgabe des Magazins 'Ihre individuelle Hochzeit'." $53</command>
+    </hotspot>
+    <hotspot ID="profilattico extra-large">
+      <command>expression "sarcastic"</command>
+      <command>text "Außerehelicher Sex? Ketzerei!" $54</command>
+    </hotspot>
+    <hotspot ID="rabbit">
+      <command>text "Das zu erklären wäre ziemlich peinlich." $55</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Lassen wir uns zu einem solchen Akt der Blasphemie besser nicht hinreißen." $56</command>
+    </hotspot>
+    <hotspot ID="libro di magia nera">
+      <command>text "Der ewige Kampf zwischen Heiligen und Heiden." $57</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="aureola">
+      <command>text "Der hat sich jetzt nicht gerade an deine Vorgaben gehalten, was? " $58</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="nonnina">
+      <command>pose d</command>
+      <command>text "Besser nicht, das wäre doch total unhöflich." $23</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>if not internal 2</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Warum sollte ich? Um ein Autogramm zu kriegen?" 1</command>
+      <command>fie</command>
+      <command>if internal 2</command>
+      <command>pause -"me"</command>
+      <command>pause -"Giuda"</command>
+      <command>bitmap -"me" "gesoo_l"</command>
+      <command>expression -"me" "drunk"</command>
+      <command>text "Soll das was helfen?" 2</command>
+      <command>text -"me" "Genau was ich gebraucht habe. Wir sehen uns dann bei der Trauung." 3</command>
+      <command>wait 0,5</command>
+      <command>text "Aber ... du weißt doch nicht mal, wo überhaupt die Trauung ist!" 4</command>
+      <command>text -"me" "Bruder, ich mag restlos stramm sein ... aber allwissend bin ich immer noch." 5</command>
+      <command>text -"me" "Man sieht sich." 6</command>
+      <command>throw "bibbia"</command>
+      <command>bitmap -"me" "gesoo"</command>
+      <command>internal -g 3</command>
+      <command>resume -"me"</command>
+      <command>resume -"Giuda"</command>
+      <command>status &gt;"meteorite" 2</command>
+      <command>fie</command>
+    </hotspot>
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Lassen wir uns zu einem solchen Akt der Blasphemie besser nicht hinreißen." $56</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "Ist sein Fehler, wenn der 3. Band der meistverkauften Fantasy-Saga aller Zeiten niemals das Licht der Welt erblickt." $59</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="diavoletto">
+      <command>expression "angry"</command>
+      <command>text "Zurück mit dir ins Reich der Finsternis, schändliche Kreatur des Satans!" $60</command>
+      <command>pause -"me"</command>
+      <command>animation -"me" 00 -o=11,4 "diavoletto_turn_skinny"</command>
+      <command>bitmap -"me" "diavoletto_l"</command>
+      <command>wait 0,5</command>
+      <command>expression "normal"</command>
+      <command>text -"diavoletto" "Du bist der schlechteste Exorzist, dem ich jemals begegnet bin." $61</command>
+      <command>animation -"me" 00 -o=11,4 "diavoletto_turn_back"</command>
+      <command>bitmap -"me" "diavoletto"</command>
+      <command>resume -"me"</command>
+      <command>achievement "esorcista"</command>
+    </hotspot>
+    <hotspot ID="bastone">
+      <command>pose d</command>
+      <command>text "Ich würde es gerne vermeiden, das hier mit zu vielen heiligen Objekten vollzustellen. " $62</command>
+      <command>text "Mehr als ich ertragen kann, meine ich." $63</command>
+    </hotspot>
+  </location>
+</object>

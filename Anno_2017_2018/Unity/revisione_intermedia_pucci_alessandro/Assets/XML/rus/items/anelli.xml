@@ -1,0 +1,52 @@
+<object name="обручальные кольца">
+  <description>
+    <command>text "Внутри одного кольца какие-то странный отметины."</command>
+  </description>
+  <inventory>
+    <object name="bibbia">
+      <command>text "Аккурат из еженедельного номера журнала «Построй свою свадьбу»." $53</command>
+    </object>
+  </inventory>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>if internal 1</command>
+      <command>pause -"me"</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text "Обручальные кольца при мне, моя королева."</command>
+      <command>throw "anelli"</command>
+      <command>wait 1,5</command>
+      <command>text -"me" "Так чего же ты ждешь? Найди нам священника для церемонии."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Вообще-то, думаю, я уже и так достаточно сделал."</command>
+      <command>expression "normal"</command>
+      <command>expression -"me" "angry"</command>
+      <command>text -"me" "Это приказ."</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" ""</command>
+      <command>text -"me" "Наша свадьба будет проходить у метеора на озере Росвелл."</command>
+      <command>bitmap -"me" "faraonessa_felice"</command>
+      <command>text -"me" "Какое же это романтичное место..."</command>
+      <command>wait 1</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text -"me" "Так, мне нужно готовиться."</command>
+      <command>internal -"cucina/Gesoo" -g 1</command>
+      <command>bitmap -"me" "faraonessa"</command>
+      <command>hide -nc -"me"</command>
+      <command>resume -"me"</command>
+      <command>fie</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "ТЫ и бери ее в жены, если так хочется." 8</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="amante nascosto">
+      <command>text "Эти штуки для него, как для меня сливы." $1</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>text "Не думаю, что такой бабник как он когда-нибудь найдет невесту. " $2</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,38 @@
+<object name="Chili">
+  <description>
+    <command>text "Die Schärfe steckt in den Samen."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "Ich fürchte, die Chili ist nicht scharf genug." $15</command>
+    </object>
+    <object name="viagra">
+      <command>text "Es ist bekannt, dass die Chili ein Aphrodisiakum ist, doch gegen die Errungenschaften der modernen Medizin kann die nicht anstinken." $140</command>
+    </object>
+  </inventory>
+  <location name="grotta">
+    <hotstpot name="barattolo di vernice">
+      <command>if internal 0</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Warum sollte ich sowas in eine Dose mit weißer Farbe tunken?"</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>wait 0,5</command>
+      <command>throw "peperoncino"</command>
+      <command>sound "pick_jalapegno_inzuppato"</command>
+      <command>pick n "jalapeno"</command>
+      <command>fie</command>
+    </hotstpot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="viagra">
+      <command>text "Es ist bekannt, dass die Chili ein Aphrodisiakum ist, doch gegen die Errungenschaften der modernen Medizin kann die nicht anstinken." $140</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>text "Der ist einen ganz anderen Standard gewohnt." $141</command>
+    </hotspot>
+  </location>
+</object>

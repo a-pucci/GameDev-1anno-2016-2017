@@ -1,0 +1,27 @@
+<object name="lettera d'amore">
+  <description>
+    <command>sound "use_volantino"</command>
+    <command>document "lettera"</command>
+    <command>sound "use_volantino"</command>
+  </description>
+  <inventory>
+    <object name="struccante">
+      <command>sound "pick_lettera_amore"</command>
+      <command>throw -"me"</command>
+      <command>throw -"struccante"</command>
+      <command>pick n "lettera_struccata"</command>
+    </object>
+  </inventory>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Quel bacio col rossetto dovrebbe farti capire che è da parte di una donna. Quindi non penso che ne sia interessata." $120</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="struccante">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

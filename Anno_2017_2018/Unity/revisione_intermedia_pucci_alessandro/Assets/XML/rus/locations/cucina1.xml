@@ -1,0 +1,218 @@
+<location>
+  <script>
+    <command>0 wait 1</command>
+    <command>0 expression "sarcastic"</command>
+    <command>0 text "Уверен, убираться бы время от времени тут не помешало."</command>
+    <command>0 status 1</command>
+  </script>
+  <entry name="anticamera" X="474" Y="621" pose="d" />
+  <scene bitmap="tavolo" X="500" Y="523" position="default" animated="False" />
+  <scene bitmap="naso_starnuto" X="1604" Y="201" position="back" animated="True" start="3000" stop="6000" sound="nose" loop="True" />
+  <scene bitmap="stipite_cucina" X="1662" Y="196" position="back" animated="False" />
+  <scene bitmap="orologio_pizza" X="655" Y="253" position="back" animated="True" sound="pizza_clock" loop="True" />
+  <scene bitmap="rilevatore_fumo" X="1710" Y="8" position="back" animated="True" loop="True" />
+  <scene bitmap="anta_cucina" X="1412" Y="593" position="default" animated="False" />
+  <hotspots>
+    <goto ID="cucina1_x_marciapiede">
+      <go>
+        <command>goto "marciapiede"</command>
+      </go>
+    </goto>
+    <action ID="microonde">
+      <act>
+        <command>0 sound "micro_opening"</command>
+        <command>0 bitmap -"me" "microonde_aperto"</command>
+        <command>0 label -"me" "cuc_microonde_label_1"</command>
+        <command>0 internal 1</command>
+        <command>1 sound "micro_closing"</command>
+        <command>1 bitmap -"me" "microonde_chiuso"</command>
+        <command>1 label -"me" "cuc_microonde_label_0"</command>
+        <command>1 internal 0</command>
+      </act>
+    </action>
+    <character ID="Z8">
+      <look>
+        <command>0 text "Это огромный компьютерный мозг, способный следить за бытовой техникой для предотвращения несчастных случаев."</command>
+        <command>1 text "Ты даже не знаешь, с кем связался."</command>
+      </look>
+      <talk>
+        <command>0 dialog "Z8"</command>
+        <command>1 text "Сегодня мы сошлись на поле боя, ты проявил себя с лучшей стороны."</command>
+        <command>1 text "Я тебя зауважал."</command>
+      </talk>
+    </character>
+    <item ID="cianfrusaglie">
+      <look>
+        <command>text "Пара горшков, немного половников и банок со специями непонятного географического происхождения."</command>
+      </look>
+      <pick>
+        <command>0 sound "skinny_knick_knack"</command>
+        <command>0 wait 3</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Как это сюда попало?"</command>
+        <command>0 sound "pick_registratore"</command>
+        <command>0 pick n "registratore"</command>
+        <command>0 internal 1</command>
+        <command>1 text "Не стоит продолжать поиск. Тут нет ничего интересного."</command>
+      </pick>
+      <use>
+        <command>text "Когда мы были детьми, мы с Рональдом играли в рок-звезд: я на горшках, он на сковородах."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Мы были такими несносными."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="cereali">
+      <look>
+        <command>text "«Взрывные хлопья», сделают «бум» у вас в животе!"</command>
+        <command>wait 0,5</command>
+        <comand>pose d</comand>
+        <command>expression "sarcastic"</command>
+        <command>text "Буквально."</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>text "Я перестал их есть. Они тянули... живот."</command>
+      </use>
+      <talk>
+        <comment>[citazione da Kill Bill 1]</comment>
+        <command>text "«Твоя мама это заслужила»."</command>
+      </talk>
+    </item>
+    <item ID="sagoma">
+      <look>
+        <command>text "Судебные медэксперты разрешили доступ на кухню, только когда Рональд переехал в этот дом."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Когда расследование завершили, родители Рональда решили оставить силуэт на столе."</command>
+        <command>wait 0,5</command>
+        <command>expression "normal"</command>
+        <command>text "Должен заметить, завтраки от этого только круче."</command>
+      </look>
+      <pick>
+        <command>text "Лучше не портить место преступления."</command>
+        <command>text "Ты и представить не можешь, как сложно оттереть пятна от кофе со всем этим мелом вокруг."</command>
+      </pick>
+      <use>
+        <command>text "Однажды я пытался улечься в нем."</command>
+        <command>expression "perplexed"</command>
+        <command>text "Очень неудобная поза для смерти."</command>
+      </use>
+      <talk>
+        <command>text "Я не хочу оправдать твое убийство, тебе не стоит ошибаться."</command>
+        <command>expression "happy"</command>
+        <command>text "Но... кто бы не убил за вишенки?"</command>
+      </talk>
+    </item>
+    <item ID="post-it">
+      <look>
+        <command>0 text "Люди недоговаривают, когда называют их «самоклейками»."</command>
+        <command>0 text "Они больше похожи на... грозные сообщения, которые мама Рональда оставляет своему мужу перед уходом на работу."</command>
+        <command>0 text "Типа, не знаю, давай-ка посмотрим..."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Нет, слишком принижающее, лучше не читать вслух..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "А из-за этой можно и в суд подать."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "normal"</command>
+        <command>0 text "Ладно, вот эта «нормальная»."</command>
+        <command>1 text "Я прочту часть."</command>
+        <command>0-1 text "«Не забудь забрать вещи из химчистки, или я тебя сушиться повешу»."</command>
+        <command>pose d</command>
+        <command>expression "happy"</command>
+        <command>0-1 text "Какая любовь!"</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>text "Эти самоклейки наклеены согласно определенной кодовой цветовой схеме."</command>
+        <command>pose d</command>
+        <command>text "Лучше не рисковать: мама Рональда может разозлиться."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="teddy dead">
+      <look>
+        <command>text "Он пал под обстрелом замороженным горошком."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "А еще говорят, что овощи полезны для здоровья."</command>
+      </look>
+      <talk>
+        <command>0 text -"me" -c=fuxia "Мне холодно, Джон."</command>
+        <command>0 expression "sad"</command>
+        <command>0 text "Мишутка! Это Скинни... держись, друг мой!"</command>
+        <command>0 text -"me" -c=fuxia "Джон... где ты, Джон?"</command>
+        <command>0 text -"me" -c=fuxia "Я не вижу тебя, Джон!"</command>
+        <command>0 text "Я тут, друг!"</command>
+        <command>0 text "Это Скинни..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -c=fuxia "Тут так темно, Джон."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -c=fuxia "*кхе-кхе*"</command>
+        <command>0 text "Прошу, не умирай, Мишутка, держись! Все будет хорошо."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Мишутка? Мишутка, отзовись!"</command>
+        <command>0 wait 1,5</command>
+        <command>0 expression "suffering"</command>
+        <command>0 text "Н-Е-Е-Е-Е-Е-Е-Е-Е-Е-ЕТ, МИШУТКА!!!"</command>
+        <command>0 wait 1</command>
+        <command>0 expression "normal"</command>
+        <command>0 text "Уже все равно, это Скинни."</command>
+        <command>0 internal 1</command>
+        <command>1 expression "sad"</command>
+        <command>1 text "Иди и научи ангелов обниматься."</command>
+      </talk>
+    </character>
+    <goto ID="cucina_x_anticamera" icon="u" PX="466" PY="-247">
+      <go>
+        <command>goto "anticamera"</command>
+      </go>
+    </goto>
+    <action ID="zuppa del secolo">
+      <act>
+        <command>bitmap -skinny -o=0,0 "skinny_zuppa"</command>
+        <command>sound "skinny zuppa"</command>
+        <command>animation -skinny 00 -o=77,48 "skinny_zuppa1"</command>
+        <command>hide -"me"</command>
+        <command>animation -skinny 00 -o=77,48 -p=divine -a "skinny_zuppa2_braccia"</command>
+        <command>animation -skinny 00 -o=77,48 "skinny_zuppa2"</command>
+        <command>show -"me"</command>
+        <command>animation -skinny 00 -o=77,48 "skinny_zuppa3"</command>
+        <command>text "В жизни ничего вкуснее не ел!"</command>
+        <command>bitmap -skinny ""</command>
+      </act>
+    </action>
+    <character ID="gallina">
+      <look />
+      <talk />
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "gallina_verso"</command>
+        <command>animation -"me" 00 -o=14,13 -c "gallina_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+  </hotspots>
+</location>

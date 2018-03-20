@@ -1,0 +1,62 @@
+<object name="tenedor viejo">
+  <description>
+    <command>text "¡Rock 'n' roll, muñeca!"</command>
+  </description>
+  <inventory>
+    <object name="lenza">
+      <command>sound "pick_lenza"</command>
+      <command>pick n "arpione"</command>
+      <command>throw "lenza"</command>
+      <command>throw "forchetta"</command>
+    </object>
+    <object name="trapano">
+      <command>text "No es un garfio." $202</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="freccette">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "No creo que un tenedor cambiara el resultado." $211</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>expression "perplexed"</command>
+      <command>text "No es un garfio." $202</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text "Es de plástico. Me da miedo que se funda." $212</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Creo que necesito algo mejor que un simple tenedor." $213</command>
+    </hotspot>
+    <hotspot ID="lenza">
+      <command>text "Primero tendría que cogerlo." $95</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="scatoloni2">
+      <command>text "Antes de lanzarlo tengo que estar seguro de que puedo recuperarlo." $214</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="portiera">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sería el intento de robo más estúpido de la historia." $169</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="saracinesca">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sería el intento de robo más estúpido de la historia." $169</command>
+    </hotspot>
+  </location>
+</object>

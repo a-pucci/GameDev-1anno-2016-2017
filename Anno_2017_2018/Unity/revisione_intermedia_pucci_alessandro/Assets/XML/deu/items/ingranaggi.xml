@@ -1,0 +1,27 @@
+<object name="Zahnräder">
+  <description>
+    <command>text "Das scheinen diese kleinen Zahnrädchen zu sein, die in Uhren drin sind."</command>
+  </description>
+  <inventory>
+    <object name="sveglia">
+      <command>sound "pick_clock_funzionante"</command>
+      <command>pick n "sveglia_funzionante"</command>
+      <command>throw "sveglia"</command>
+      <command>throw "ingranaggi"</command>
+    </object>
+  </inventory>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>text "Ich brauche die. Ich darf nicht riskieren, die zu verlieren." $227</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>text "Nicht direkt das Upgrade, das der braucht." $224</command>
+    </hotspot>
+    <hotspot ID="sveglia">
+      <command>text "Ich nehme diesen Gegenstand am besten erstmal mit." $95</command>
+    </hotspot>
+  </location>
+</object>

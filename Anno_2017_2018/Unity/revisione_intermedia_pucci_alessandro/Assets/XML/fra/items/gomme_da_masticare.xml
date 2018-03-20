@@ -1,0 +1,42 @@
+<object name="chewing-gum">
+  <description>
+    <command>text "Je ne pourrais jamais tout mâcher, même si j'avais l'éternité devant moi."</command>
+    <command>wait 0,5</command>
+    <command>text "Et j'ai bien peur que ce soit le cas."</command>
+  </description>
+  <inventory>
+    <object name="dentiera">
+      <command>text "La bataille finale entre le bien et les caries." $223</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomme_da_masticare"</command>
+      <command>fie</command>
+      <command>text "Je ne veux pas le mettre sur les lieux." $38</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Tu crois vraiment qu'il peut mâcher avec cette bouche ?" $220</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Tu veux donner du chewing-gum à quelqu'un qui a mal aux dents ?" $221</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Tu n'as aucune once d'humanité !" $222</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="dentiera">
+      <command>text "La bataille finale entre le bien et les caries." $223</command>
+    </hotspot>
+  </location>
+</object>

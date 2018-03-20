@@ -1,0 +1,103 @@
+<object name="абсент">
+  <description>
+    <command>text "65% алкоголя."</command>
+    <command>text "Лучше не пить всю разом."</command>
+  </description>
+  <inventory>
+    <object name="residui_plutonio">
+      <command>sound "pick_assenzio"</command>
+      <command>throw "assenzio"</command>
+      <command>throw "residui_plutonio"</command>
+      <command>pick n "assenzio_radioattivo"</command>
+    </object>
+    <object name="plutonio">
+      <command>text "Не понимаю как; чаша полна." $10</command>
+    </object>
+    <object name="bicchiere vuoto">
+      <command>text "Лучше попридержать это в бутылке." $11</command>
+    </object>
+    <object name="bicchiere di birra">
+      <command>text "Хуже, чем колу с пивом мешать." $64</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Лучше не подливать это в огонь." $3</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="sali">
+      <command>text "Не думаю, что этого будет достаточно. Нужно что-то посильнее." $4</command>
+    </hotspot>
+    <hotspot ID="rasoio fai da te">
+      <command>text "Хорошо пойдет в качестве лосьона после агрессивного бритья." $5</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode">
+      <command>expression "sarcastic"</command>
+      <command>text "Похоже, уборщик не очень-то любит крепкий алкоголь." $6</command>
+    </hotspot>
+    <hotspot ID="cocktail">
+      <command>expression "sarcastic"</command>
+      <command>pose d</command>
+      <command>text "Похоже, уборщик не очень-то любит крепкий алкоголь." $6</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>pose d</command>
+      <command>text "Порой я удивлен тому, что ты еще жив." $7</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Winston">
+      <command>text "У него уже есть выпивка." $8</command>
+    </hotspot>
+    <hotspot ID="Gesoo">
+      <command>text "Он уже и так пьян." $9</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "Он уже и так пьян." $9</command>
+    </hotspot>
+    <hotspot ID="Olandese Volante">
+      <command>text "У него уже есть выпивка." $8</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="plutonio">
+      <command>text "Не понимаю как; чаша полна." $10</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="pila di bicchieri">
+      <command>text "Лучше попридержать это в бутылке." $11</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="ragazzo alticcio">
+      <command>pose d</command>
+      <command>text "Порой ты приятно поражаешь меня своей тягой к садизму." $12</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>pose d</command>
+      <command>text "Эй, он еще ребенок!" $13</command>
+    </hotspot>
+    <hotspot ID="cervello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Понимаю твою зависть, но просто попытайся возвыситься интеллектуально вместо того, чтобы понижать общие стандарты." $14</command>
+    </hotspot>
+  </location>
+  <location name="meteorite">
+    <hotspot ID="Flowey">
+      <command>wait 0,5</command>
+      <command>internal -"me" -i -g 1</command>
+      <command>wait 0,5</command>
+      <command>achievement "undertale_spoiler"</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,592 @@
+<location>
+  <script>
+    <command>0 expression "sad"</command>
+    <command>0 screen -w=500 -fo=1000</command>
+    <command>0 animation -skinny 00 -o=-25,-4 -s=90 "skinny_massaggia_testa"</command>
+    <command>0 expression "perplexed"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text "Ma dove diavolo sono finito?"</command>
+    <command>0 wait 1</command>
+    <command>0 pose l</command>
+    <command>0 wait 1,2</command>
+    <command>0 pose r</command>
+    <command>0 wait 1</command>
+    <command>0 expression "scared"</command>
+    <command>0 wait 0,5</command>
+    <command>0 pose d</command>
+    <command>0 text "Hanno buttato il mio armadio in una discarica???"</command>
+    <command>0 wait 0,8</command>
+    <command>0 expression "normal"</command>
+    <command>0 text "Ok, calma. Conosco l'indirizzo della nuova casa di Ronald."</command>
+    <command>0 text "Il problema sarà farci arrivare l'armadio..."</command>
+    <command>0 pose dl</command>
+    <command>0 move (1627,941)</command>
+    <command>0 lookat -"armadio"</command>
+    <command>0 wait 0,5</command>
+    <command>0 status 1</command>
+    <comment>2 [uscita dalla gru]</comment>
+    <command>2 sound "engine_loud"</command>
+    <command>2 hide skinny</command>
+    <command>2 stop "discarica_theme"</command>
+    <command>2 wait 2</command>
+    <command>2 internal &gt;"interno_gru" -g -i 1</command>
+    <command>2 hide +"interno_gru/leva_sx_sd"</command>
+    <command>2 show +"interno_gru/leva_cx_sd"</command>
+    <command>2 hide +"interno_gru/leva_dx_sd"</command>
+    <command>2 show +"interno_gru/leva_cx_sd"</command>
+    <command>2 goto "interno_gru"</command>
+    <command>3 screen -w=100 -fo=300</command>
+    <command>3 status 1</command>
+  </script>
+  <indipendent>
+    <command>0 sound -l "landfill_sounds"</command>
+    <command>0 wait 5</command>
+    <command>1 sound -l "cicada"</command>
+    <command>1 wait 5</command>
+  </indipendent>
+  <entry name="intro" X="1725" Y="870" pose="d" />
+  <entry name="mappa" X="1627" Y="941" pose="d" />
+  <entry name="giardino" X="289" Y="928" pose="r" />
+  <entry name="baracca" X="2882" Y="955" pose="dl" />
+  <entry name="interno_gru" X="2715" Y="922" pose="d" />
+  <entry name="presa_armadio" X="2715" Y="922" pose="d" />
+  <scene bitmap="gru_centro" X="2181" Y="0" position="back" animated="False" />
+  <scene bitmap="gru_sinistra" X="1930" Y="0" position="back" animated="False" />
+  <scene bitmap="ruota_panoramica_notte" X="143" Y="275" position="back" animated="True" loop="True" />
+  <scene bitmap="foreground_discarica_notte" X="0" Y="0" position="fore" animated="False" />
+  <scene bitmap="lampadine_re_halloween" X="1879" Y="350" position="back" animated="True" loop="True" />
+  <scene bitmap="braccio_gru_sinistra" X="1952" Y="0" position="back" animated="False" />
+  <scene bitmap="porta_gru_aperta" X="2548" Y="484" position="back" animated="False" />
+  <scene bitmap="it" X="2053" Y="626" position="back" animated="True" start="5000" stop="9000" sound="it" loop="True" />
+  <scene bitmap="poltrona_discarica" X="2017" Y="639" position="back" animated="False" />
+  <scene bitmap="bordo_discarica" X="0" Y="430" position="fore" animated="False" />
+  <scene bitmap="paperella_pneumatico" X="2944" Y="964" position="fore" animated="False" />
+  <scene bitmap="ombra_cancello_discarica_chiuso" X="17" Y="525" position="back" animated="False" />
+  <scene bitmap="pale_mulino" X="2436" Y="32" position="back" animated="True" loop="True" />
+  <scene bitmap="pale_mulino_notte" X="2436" Y="32" position="back" animated="True" loop="True" />
+  <scene bitmap="braccio_gru_centro" X="2463" Y="0" position="back" animated="False" />
+  <scene bitmap="antenna_baracca" X="3183" Y="229" position="back" animated="True" loop="True" />
+  <scene bitmap="casco_astronauta" X="1881" Y="712" position="back" animated="True" loop="True" />
+  <scene bitmap="goccia_gru" X="2447" Y="381" position="back" animated="True" start="2500" stop="2500" loop="True" />
+  <scene bitmap="erbetta" X="1871" Y="849" position="back" animated="False" />
+  <scene bitmap="beuta_discarica" X="2138" Y="904" position="default" animated="False" />
+  <scene bitmap="pila3" X="3271" Y="791" position="default" animated="False" />
+  <scene bitmap="salumi_discarica" X="1135" Y="438" position="back" animated="True" loop="True" />
+  <scene bitmap="acqua_scooter" X="1219" Y="-32" position="back" animated="True" stop="5000" loop="True" />
+  <scene bitmap="cabina_suicidio_led" X="343" Y="642" position="back" animated="True" loop="True" />
+  <scene bitmap="ingranaggio" X="1202" Y="157" position="fore" animated="True" loop="True" foreground="True" />
+  <scene bitmap="timone" X="3106" Y="226" position="fore" animated="True" loop="True" start="1200" stop="2000" foreground="True" />
+  <scene bitmap="pianta_carnivora" X="1911" Y="142" position="fore" animated="True" loop="True" start="4000" stop="6000" foreground="True" />
+  <hotspots>
+    <item ID="mappa">
+      <look>
+        <command>text "Sembra una mappa della zona."</command>
+        <command>wait 1</command>
+        <command>text "Cavolo, siamo finiti sul mare... ne ha fatta di strada quel furgone!"</command>
+      </look>
+      <pick>
+        <command>pick y "mappa"</command>
+        <command>internal -"discarica_x_mappa_goto" -g 1</command>
+        <command>sound "pick_map"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Potrebbe farmi parecchio comodo per orientarmi in una città che non conosco, in effetti."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "É una mappa, non un navigatore satellitare..."</command>
+      </talk>
+    </item>
+    <item ID="plutonio">
+      <look>
+        <command>pose d</command>
+        <command>text "É incredibile quante cose assurde si possano trovare in una discarica."</command>
+      </look>
+      <pick>
+        <command>pick y "plutonio"</command>
+        <command>sound "pick_plutonium"</command>
+      </pick>
+      <use>
+        <command>text "'Solo personale specializzato.'"</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Mi sta praticamente IMPLORANDO di prenderlo!"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="batteria stilo">
+      <look>
+        <command>0 pose d</command>
+        <command>0 text "Nulla di diverso da ciò che sembra, è una pila."</command>
+        <command>1 text "Non vorrei sbagliarmi, ma quella è un'altra pila."</command>
+        <command>2 text "L'ENNESIMA pila."</command>
+      </look>
+      <pick>
+        <command>pick y "pila"</command>
+        <command>sound "pick_battery"</command>
+        <command>internal -"pila stilo" -g ++</command>
+        <command>internal -"batteria stilo" -g ++</command>
+      </pick>
+      <use>
+        <command>text "Di solito vanno in coppia, come Mignolo e Prof."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "E posso facilmente immaginare chi sia Mignolo..."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="pila stilo">
+      <look>
+        <command>0 pose d</command>
+        <command>0 text "Nulla di diverso da ciò che sembra, è una pila."</command>
+        <command>1 text "Non vorrei sbagliarmi, ma quella è un'altra pila."</command>
+        <command>2 text "L'ENNESIMA pila."</command>
+      </look>
+      <pick>
+        <command>pick y "pila"</command>
+        <command>sound "pick_battery"</command>
+        <command>internal -"pila stilo" -g ++</command>
+        <command>internal -"batteria stilo" -g ++</command>
+      </pick>
+      <use>
+        <command>text "Di solito vanno in coppia, come Mignolo e Prof."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "E posso facilmente immaginare chi sia Mignolo..."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="bidone">
+      <look>
+        <command>pose d</command>
+        <command>text "Non è la prima volta che tenti di farmi rovistare nei rifiuti."</command>
+        <command>expression "angry"</command>
+        <command>text "Ma che razza di strane perversioni hai?"</command>
+      </look>
+      <pick>
+        <command>0 text "Spazzatura, spazzatura e spazzatura..."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Ehi... aspetta un attimo! Questa pila potrebbe servirmi."</command>
+        <command>wait 0,5</command>
+        <command>0 text "A quanto pare Babbo Natale è arrivato in anticipo quest'anno!"</command>
+        <command>0 pick n "pila"</command>
+        <command>0 sound "pick_battery"</command>
+        <command>0 internal -"pila stilo" -g ++</command>
+        <command>0 internal -"batteria stilo" -g ++</command>
+        <command>0 hide +"pila3"</command>
+        <command>0 internal 1</command>
+        <comment>1 [dopo aver raccolto la pila]</comment>
+        <command>1 pose d</command>
+        <command>1 expression "sarcastic"</command>
+        <command>1 text "Non esageriamo, Babbo Natale viene solo una volta all'anno."</command>
+      </pick>
+      <use>
+        <command>text "Non ho niente che vorrei buttare."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Anche se a pensarci bene..."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="keep out">
+      <look>
+        <command>text "A giudicare da questo cartello, sento che sarò il benvenuto."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Il custode non ne sarebbe molto contento."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Tu invece mai una volta che ti levassi dai piedi."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="volantino">
+      <look>
+        <command>pose d</command>
+        <command>expression "scared"</command>
+        <command>text "Slenderman, Slenderman ovunque..."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Dovrei prenderlo davvero, così saprei cosa lasciarti sui tergicristalli della macchina."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Ah, ora TU vuoi far fuori ME?"</command>
+        <command>expression "normal"</command>
+        <command>text "Questo è un capovolgimento di ruoli bello e buono."</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ringrazia che ci sia uno schermo a dividerci!"</command>
+      </use>
+      <talk>
+        <command>text "Ripensandoci, sono passato all'altro mondo senza neppure aver guardato in faccia la morte."</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ma non mi sembra comunque un motivo abbastanza valido per farsi un secondo giro."</command>
+      </talk>
+    </item>
+    <character ID="gatto della fortuna">
+      <look>
+        <command>text "La vera fortuna è che ci fosse lui ad attutire la caduta."</command>
+        <command>text "I gatti non smettono mai di darti motivi validi per amarli."</command>
+      </look>
+      <talk>
+        <command>text "Grazie per l'aiuto, adorabile micione."</command>
+        <command>wait 0,5</command>
+        <command>text "Ma tu guarda com'è cordiale. Fa persino 'ciao' con la zampetta."</command>
+      </talk>
+    </character>
+    <item ID="armadio">
+      <look>
+        <command>text "Non posso credere che abbiano buttato via il mio armadio."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "E come dovrei fare esattamente, scienziato?"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Una cosa alla volta. Troviamo prima il modo per farlo scendere quaggiù."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Nonostante sia di vitale importanza, non credo che supplicarlo risolverebbe il problema."</command>
+      </talk>
+    </item>
+    <item ID="armadio recuperato">
+      <look>
+        <command>pose d</command>
+        <command>text "Non immaginavo fosse necessario tutto questo casino per riportarlo giù."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ti sembro in grado di spostare da solo un armadio?"</command>
+      </pick>
+      <use>
+        <command>0 bitmap -"me" "armadio_giu_chiuso"</command>
+        <command>0 sound "wardrobe_closed"</command>
+        <command>0 internal 1</command>
+        <comment>1 [dopo aver già richiuso l'anta dell'armadio]</comment>
+        <command>1 text "Già fatto."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Devo proprio ricordarti che... É UN OGGETTO INANIMATO?!?"</command>
+      </talk>
+    </item>
+    <item ID="salumi andati a male">
+      <look>
+        <command>text "Forse quei salumi fungevano da esca per uno pterodattilo, altrimenti tutto questo non ha minimamente senso."</command>
+        <command>wait 1</command>
+        <command>text "*sniff* *sniff* Bleeeah!"</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Beh, a giudicare dalla puzza il periodo storico non sarebbe poi così inverosimile..."</command>
+      </look>
+      <pick>
+        <command>text "Dopo essere morto per colpa di una prugna, ri-crepare per colpa di una fetta di salame avariato mi sembrerebbe eccessivo."</command>
+      </pick>
+      <use>
+        <command>text "Se il loro scopo è quello di tenere lontani gli intrusi, devo dire che ci riescono benissimo."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Loro saranno anche andati a male, ma a te si è avariato il cervello."</command>
+      </talk>
+    </item>
+    <item ID="grancassa">
+      <look>
+        <command>text "Ah... i CINIC, li ho già sentiti."</command>
+      </look>
+      <pick>
+        <command>text "Forse nella mia seconda vita... cioè, voglio dire... nella terza."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "A scuola ero già una schiappa col flauto, figuriamoci che disastri farei con la batteria."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="idrante">
+      <look>
+        <command>pose d</command>
+        <command>text "Luogo un po' insolito per un idrante..."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Sì, come no... vorrei proprio vedere TE al mio posto."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Hulk rachitico dei miei stivali."</command>
+      </pick>
+      <use>
+        <command>text "Impossibile, è bloccato dalla ruggine."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="cabina suicidio">
+      <look>
+        <command>text "'Troppo pigro per legarti un cappio intorno al collo? Quel ponte è troppo lontano da casa?'" 1</command>
+        <command>text "'La cabina suicidio è quello che fa per te!'" 2</command>
+        <command>text "Seleziona la tua tipologia di morte tra le opzioni disponibili.'" 3</command>
+        <command>text "1. Lenta e straziante.'" 4</command>
+        <command>text "2. Veloce e indolore.'" 5</command>
+        <command>text "3. Maldestra.'" 6</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Non credo che esista qualcosa di più maldestro che soffocare a causa di un'insospettabile allergia alle prugne." 7</command>
+      </look>
+      <pick>
+        <command>text "É sotterrata: di certo non posso farlo a mani nude."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Penso che ne farò installare una nei pressi di casa tua."</command>
+        <command>wait 0,5</command>
+        <command>text "Non si sa mai quando possa colpire la depressione."</command>
+      </use>
+      <talk>
+        <command>text "A quanto pare hanno anche il servizio clienti: 00017170."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Poi non dire che non penso mai a te."</command>
+      </talk>
+    </item>
+    <character ID="king kong">
+      <look>
+        <command>text "King Kong che fuma una pipa, seduto trionfalmente sopra Godzilla - presumibilmente da lui stesso sconfitto - e con un Death Note tra le mani."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "L'ammontare di epicità di questo carro allegorico è impossibile da quantificare."</command>
+      </look>
+      <talk>
+        <command>text "Vorrei renderti omaggio battendomi il petto, ma ne uscirebbe più una sonata di xilofono."</command>
+      </talk>
+    </character>
+    <character ID="il basso">
+      <look>
+        <command>text "Deve esserci una discreta carenza di giocatori in questa città."</command>
+      </look>
+      <talk>
+        <command>0 text -"me" "Di che hai bisogno?"</command>
+        <command>0 text "Mi servirebbe una mano per portare quell'armadio che vedete lassù fino in città."</command>
+        <command>0 text -"me" "Trova il modo per farlo scendere e ti aiuteremo, non rischieremo di certo l'osso del collo per te."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Mi inventerò qualcosa..."</command>
+        <comment>1 [una volta portato giù l'armadio con la gru]</comment>
+        <command>1 load "armadio_discarica"</command>
+        <command>1 text "É tutto pronto, possiamo procedere."</command>
+        <command>1 wait 0,5</command>
+        <command>1 text -"me" "Dove vuoi che lo portiamo?"</command>
+        <command>1 text "Via Venerdì, numero 13."</command>
+        <command>1 wait 0,5</command>
+        <command>1 text -"me" "Hai idea di quanto sia lontano da qui?"</command>
+        <command>1 text -"me" "Noi siamo diretti alla festa, il massimo che possiamo fare è portartelo lì."</command>
+        <command>1 text "Vedrò di accontentarmi."</command>
+        <command>1 wait 0,5</command>
+        <command>1 bitmap -"me" "giocatore_rugby_basso_mates"</command>
+        <command>1 text -"me" "Sentito? Muoviamoci!"</command>
+        <command>1 wait 0,5</command>
+        <command>1 cutscene "armadio_discarica"</command>
+        <command>1 screen c -w=500 -fo=1500 -a</command>
+        <command>1 hide -"armadio recuperato"</command>
+        <command>1 hide -"il basso"</command>
+        <command>1 hide -"il grosso"</command>
+        <command>1 hide -"lo smilzo"</command>
+        <command>1 area "discarica"</command>
+        <command>1 destination -"plutonio" (1186,865)</command>
+        <command>1 destination -"pila stilo" (1186,865)</command>
+        <command>1 destination -"salumi andati a male" (1186,865)</command>
+        <command>1 destination -"king kong" (993,828)</command>
+        <command>1 show -"giardino/armadio"</command>
+        <command>1 internal -"giardino/armadio" -g 0</command>
+        <command>1 show +"giardino/giocatore_smilzo"</command>
+        <command>1 show -"giardino/giocatore_basso"</command>
+        <command>1 show +"cucina/giocatore_grosso"</command>
+        <command>1 hide +"cucina/tavolo_cucina1"</command>
+        <command>1 hide -"cucina/messicano"</command>
+        <command>1 show +"cucina/sedie_tavolo_cucina1"</command>
+        <command>1 hide -"cucina/moglie di Frankenstein"</command>
+        <command>1 status &gt;"primo_piano" 2</command>
+        <command>1 pose d</command>
+        <command>1 wait 1,5</command>
+        <command>1 nolook</command>
+      </talk>
+      <indipendent>
+        <command>animation (691,615) -p=back "giocatore_rugby_basso_idle"</command>
+      </indipendent>
+    </character>
+    <character ID="il grosso">
+      <look>
+        <command>text "Assomiglia a quel bullo della mia scuola che mi pestava sempre..."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Fossi matto!"</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "giocatore_rugby_grosso_idle"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="lo smilzo">
+      <look>
+        <command>text "Qualcuno qui ha seriamente bisogno di un po' di Xanax."</command>
+      </look>
+      <talk>
+        <command>text "Va tutto bene?"</command>
+        <command>wait 3</command>
+        <command>pose d</command>
+        <command>text "Non sapremo mai cosa accade in quella testolina da Alien."</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 animation -"me" 00 -o=22,13 -c "giocatore_rugby_smilzo_idle"</command>
+        <command>0 wait 1</command>
+      </indipendent>
+    </character>
+    <action ID="cancello">
+      <act>
+        <command>pose ul</command>
+        <command>animation -skinny 00 -o=97,1 -a "skinny_cancello"</command>
+        <command>wait 0,4</command>
+        <command>nolook</command>
+        <command>sound "gate_opening"</command>
+        <command>hide +"ombra_cancello_discarica_chiuso"</command>
+        <command>animation (19,525) -a "ombra_cancello"</command>
+        <command>animation -"me" 00 -o=0,0 "cancello_discarica_apertura"</command>
+        <command>bitmap -"me" "cancello_discarica_aperto"</command>
+        <command>show -"discarica_x_mappa_goto"</command>
+        <command>hide -"me"</command>
+      </act>
+    </action>
+    <goto ID="discarica_x_mappa_goto" icon="l" PX="-614" PY="699">
+      <go>
+        <comment>0 [senza aver raccolto la mappa]</comment>
+        <command>0 pose d</command>
+        <command>0 text "Non è il caso di avventurarsi là fuori alla cieca, non sono del posto."</command>
+        <comment>1 [con la mappa in inventario]</comment>
+        <command>1 pose d</command>
+        <command>1 text "Uhm... meglio aspettare che faccia buio, quando i ragazzi si saranno travestiti."</command>
+        <command>1 animation -skinny 00 -o=23,24 "skinny_attende_notte"</command>
+        <command>1 bitmap -skinny -o=23,24 "skinny_attende"</command>
+        <command>1 screen c -fi=2500 -w=4000 "Qualche ora più tardi..."</command>
+        <command>1 area &gt;"discarica" "discarica"</command>
+        <command>1 background "discarica_notte"</command>
+        <command>1 show +"foreground_discarica_notte"</command>
+        <command>1 internal &gt;"discarica" -i -g 1</command>
+        <command>1 show -"cabina suicidio"</command>
+        <command>1 show +"poltrona_discarica"</command>
+        <command>1 show +"lampadine_re_halloween"</command>
+        <command>1 show +"it"</command>
+        <command>1 hide +"antenna_baracca"</command>
+        <command>1 hide +"pale_mulino"</command>
+        <command>1 show +"pale_mulino_notte"</command>
+        <command>1 show +"ruota_panoramica_notte"</command>
+        <command>1 show +"acqua_scooter"</command>
+        <command>1 show +"cabina_suicidio_led"</command>
+        <command>1 bitmap -"me" ""</command>
+        <command>1 bitmap -"armadio" "armadio_su"</command>
+        <command>1 destination (-50,807)</command>
+        <command>1 show +"bordo_discarica"</command>
+        <command>1 screen -w=500 -fo=2500</command>
+        <command>1 bitmap -skinny ""</command>
+        <command>1 animation -skinny 00 -o=23,24 "skinny_attende_notte_back"</command>
+        <command>1 text "Via libera."</command>
+        <command>1 move (-50,807)</command>
+        <command>1 background &gt;"baracca" "baracca_notte"</command>
+        <command>1 internal &gt;"baracca" -i -g 1</command>
+        <command>1 show +"baracca/candela_baracca0_on"</command>
+        <command>1 show +"baracca/candela_baracca1_on"</command>
+        <command>1 show +"baracca/candela_baracca2_on"</command>
+        <command>1 show +"baracca/candela_baracca3_on"</command>
+        <command>1 show +"baracca/candela_baracca4_on"</command>
+        <command>1 show +"baracca/candela_baracca5_on"</command>
+        <command>1 show +"baracca/candela_baracca6_on"</command>
+        <command>1 hide +"baracca/candela_baracca1"</command>
+        <command>1 hide +"baracca/candela_baracca2"</command>
+        <command>1 hide +"baracca/candela_baracca3"</command>
+        <command>1 hide +"baracca/candela_baracca4"</command>
+        <command>1 hide +"baracca/candela_baracca5"</command>
+        <command>1 hide +"baracca/candela_baracca6"</command>
+        <command>1 show +"baracca/bolle_pentolone"</command>
+        <command>1 bitmap -"baracca/papillon spruzzacqua" "papillon_notte"</command>
+        <command>1 internal -"baracca/custode" -g 1</command>
+        <command>1 internal -"baracca/custode" -g -i 1</command>
+        <command>1 stop "discarica_theme" 1</command>
+        <command>1 screen c -fi=1500 -w=500</command>
+        <command>1 hide -"me"</command>
+        <command>1 show -"cancello_mappa"</command>
+        <command>1 goto -nofade "giardino"</command>
+      </go>
+    </goto>
+    <goto ID="cancello_mappa" icon="map" PX="-679" PY="614">
+      <go>
+        <command>map</command>
+      </go>
+    </goto>
+    <goto ID="discarica_x_baracca" icon="ur" PX="3430" PY="495">
+      <go>
+        <command>goto "baracca"</command>
+      </go>
+    </goto>
+    <action ID="portiera della gru">
+      <act>
+        <command>if not inventory "chiavi"</command>
+        <command>text "Niente da fare, è chiusa."</command>
+        <command>pose d</command>
+        <command>text "E credo di immaginare chi abbia le chiavi..."</command>
+        <command>fi</command>
+        <command>if inventory "chiavi"</command>
+        <command>sound "gru_opening"</command>
+        <command>wait 0,6</command>
+        <command>show +"porta_gru_aperta"</command>
+        <command>wait 1</command>
+        <command>show -"discarica_x_interno_gru_goto"</command>
+        <command>hide -"me"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <goto ID="discarica_x_interno_gru_goto" icon="ul" PX="2325" PY="558">
+      <go>
+        <command>goto "interno_gru"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

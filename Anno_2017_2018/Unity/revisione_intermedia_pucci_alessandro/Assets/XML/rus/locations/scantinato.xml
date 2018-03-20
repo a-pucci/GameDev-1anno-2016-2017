@@ -1,0 +1,139 @@
+<location>
+  <script>
+  </script>
+  <entry name="anticamera" X="1057" Y="566" pose="dr" />
+  <entry name="fogna" X="273" Y="778" pose="r" />
+  <scene bitmap="seggiola_back" X="1189" Y="509" position="default" animated="False" />
+  <scene bitmap="seggiola_front" X="1207" Y="693" position="default" animated="False" />
+  <scene bitmap="civetta_idle" X="560" Y="388" position="back" animated="True" start="1500" stop="6000" sound="owl" loop="True" />
+  <scene bitmap="sarcofago" X="416" Y="267" position="back" animated="True" start="3000" stop="7000" sound="sarcophagus" loop="True" />
+  <scene bitmap="distillatore" X="357" Y="350" position="back" animated="False" />
+  <scene bitmap="bancone_scantinato" X="1291" Y="378" position="default" animated="False" />
+  <scene bitmap="parete_fogna" X="0" Y="322" position="default" animated="False" />
+  <scene bitmap="corrimano_scantinato" X="880" Y="269" position="default" animated="False" />
+  <hotspots>
+    <action ID="scrigno">
+      <act>
+        <command>0 sound "detective_gallo"</command>
+        <command>0 animation -"me" 00 -o=66,37 -p=back "scrigno_opening"</command>
+        <command>0 bitmap -"me" "scrigno_aperto"</command>
+        <command>0 hide -nc -"me"</command>
+        <command>0 internal 1</command>
+      </act>
+    </action>
+    <item ID="cintura di castità">
+      <look>
+        <command>text "Ваш-членок-на-замок!"</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Никогда не узнаешь, что я прячу под моим инвентарем. Никогда."</command>
+      </pick>
+      <use>
+        <command>text "Кажется мне, что до этого времени он хорошо справлялся со своей работой."</command>
+      </use>
+      <talk>
+        <command>text "Сложно жить в клетке, да?"</command>
+      </talk>
+    </item>
+    <item ID="jukebox">
+      <look>
+        <command>text "Теперь я понимаю, почему счета за электричество такие огромные."</command>
+      </look>
+      <pick>
+        <command>text "Он бы отлично смотрелся в зале, но у меня силенок не хватит его туда донести."</command>
+      </pick>
+      <use>
+        <command>0 sound "cambio_disco"</command>
+        <command>0 wait 0,3</command>
+        <command>0 ost "scantinato_theme"</command>
+        <command>0 internal -g -i 1</command>
+        <command>0 internal 1</command>
+        <command>1 sound "cambio_disco"</command>
+        <command>1 wait 0,3</command>
+        <command>1 ost "fogna_theme"</command>
+        <command>1 internal -g -i 0</command>
+        <command>1 internal 0</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=48,37 -c "jukebox_idle"</command>
+        <command>1 animation -"me" 00 -o=101,90 -c "jukebox_acceso"</command>
+      </indipendent>
+    </item>
+    <character ID="barman">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Именно поэтому мы сейчас и жалуемся на молодежную безработицу."</command>
+      </look>
+      <talk>
+        <command>0 text "Славное у тебя тут местечко."</command>
+        <command>0 text -"me" -c=lblue "..."</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "barista"</command>
+      </talk>
+    </character>
+    <item ID="boccale">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Судя по толщине слоя пыли и ребяческому взгляду бармена, посетителей тут не было уже очень давно."</command>
+      </look>
+      <pick>
+        <command>sound "pick_mug"</command>
+        <command>pick y "boccale_vuoto"</command>
+      </pick>
+      <use>
+        <command>text "Кажется, отсутствует основной элемент."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "ПИВО!"</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Может, если я напьюсь, все мои проблемы уйдут..."</command>
+      </talk>
+    </item>
+    <goto ID="scantinato_x_fogna" icon="l" PX="-330" PY="621">
+      <go>
+        <command>goto "fogna"</command>
+      </go>
+    </goto>
+    <item ID="fiamma ossidrica">
+      <look>
+        <command>pose d</command>
+        <command>text "Мой деда работал сварщиком на заводе, варил запчасти для машин."</command>
+        <command>text "Помню, на своем смертном одре, будучи уже полностью слепым, он перепутал руку бабушки с рукояткой паяльника."</command>
+        <command>wait 1</command>
+        <command>text "Да упокоится он с миром."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Слишком тяжелый, не находишь?"</command>
+      </pick>
+      <use>
+        <command>0 text "В нем еще ест немного газа: вдруг ты когда-нибудь захочешь пойти по стопам моего деда."</command>
+        <command>1 text "Я уже истратил оставшийся газ."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="scantinato_x_anticamera" icon="ul" PX="209" PY="-119">
+      <go>
+        <command>goto "anticamera"</command>
+      </go>
+    </goto>
+    <character ID="t-rex">
+      <look>
+        <command>text "Тираннозавр-ковбой: неоспоримый владыка «очень дикого» Мелового периода."</command>
+      </look>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Я бы спросил у него, как же он револьвер из кобуры доставал."</command>
+      </talk>
+    </character>
+  </hotspots>
+</location>

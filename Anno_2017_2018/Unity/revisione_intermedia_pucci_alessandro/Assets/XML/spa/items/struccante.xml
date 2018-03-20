@@ -1,0 +1,30 @@
+<object name="desmaquillante">
+  <description>
+    <command>text "Si aún tuviera piel..."</command>
+  </description>
+  <inventory>
+    <object name="lettera">
+      <command>sound "pick_lettera_amore"</command>
+      <command>throw -"me"</command>
+      <command>throw -"lettera"</command>
+      <command>pick n "lettera_struccata"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>text "Creo que el maquillaje habría quedado mejor con Photoshop que así." $173</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="moglie di Frankenstein">
+      <command>expression "sarcastic"</command>
+      <command>text "Eh... Mejor no." $174</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>text "Nunca es buena idea enfrentarse a una reina." $175</command>
+    </hotspot>
+  </location>
+</object>

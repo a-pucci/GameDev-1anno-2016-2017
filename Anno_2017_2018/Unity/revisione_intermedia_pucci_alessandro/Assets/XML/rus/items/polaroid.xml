@@ -1,0 +1,59 @@
+<object name="полароид">
+  <description>
+    <command>text "От него у хипстера будет стояк."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>expression "perplexed"</command>
+      <command>text "А не сделать ли селфи?" $159</command>
+      <command>expression "normal"</command>
+      <command>text "Вот это будет мета-шутка." $160</command>
+    </hotspot>
+  </location>
+  <location name="sala_telecamere">
+    <hotspot ID="sala Seconda Guerra Mondiale">
+      <command>move (550,960)</command>
+      <command>pose ur</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_foto"</command>
+      <command>animation -skinny 00 -o=49,13 "skinny_foto"</command>
+      <command>sound "pick_buono"</command>
+      <command>throw "polaroid"</command>
+      <command>pick n "foto"</command>
+      <command>wait 0,5</command>
+      <command>move (685,1062)</command>
+    </hotspot>
+    <hotspot ID="sala botanica">
+      <command>text "Хм-м-м-м... Неплохая идея, но зачем мне фотография этого зала?" $161</command>
+    </hotspot>
+    <hotspot ID="sala vichinga">
+      <command>text "Хм-м-м-м... Неплохая идея, но зачем мне фотография этого зала?" $161</command>
+    </hotspot>
+    <hotspot ID="sala egizia">
+      <command>text "Хм-м-м-м... Неплохая идея, но зачем мне фотография этого зала?" $161</command>
+    </hotspot>
+    <hotspot ID="atrio principale1">
+      <command>text "Хм-м-м-м... Неплохая идея, но зачем мне фотография этого зала?" $161</command>
+    </hotspot>
+    <hotspot ID="atrio principale2">
+      <command>text "Хм-м-м-м... Неплохая идея, но зачем мне фотография этого зала?" $161</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>text "Не хочу давать ей больше поводов выказывать свое тщеславие." $162</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="Manet">
+      <command>pose d</command>
+      <command>text "Нет, я не хочу порвать пространственно-временной континуум." $163</command>
+    </hotspot>
+    <hotspot ID="ragazzo sconsolato">
+      <command>pose d</command>
+      <command>text "Нет, я не хочу порвать пространственно-временной континуум." $163</command>
+    </hotspot>
+  </location>
+</object>

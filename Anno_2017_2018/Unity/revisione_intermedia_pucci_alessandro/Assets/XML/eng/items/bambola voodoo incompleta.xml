@@ -1,0 +1,74 @@
+<object name="incomplete voodoo doll">
+  <description>
+    <command>text "If only I could attach the hair to the rag doll..."</command>
+  </description>
+  <inventory>
+    <object name="fiammiferi">
+      <command>text "No heat sources, nor missing limbs, remember?" $24</command>
+    </object>
+  </inventory>
+  <location name="casa_albero">
+    <hotspot ID="eremita">
+      <command>text "WAKE UP, OLD MAN!"</command>
+      <command>pause -"eremita"</command>
+      <command>stop -a "eremita_idle"</command>
+      <command>wait 1</command>
+      <command>text -"eremita" -c=yello -t "You needn't shout like that."</command>
+      <command>wait 0,5</command>
+      <command>text "You're right, excuse me."</command>
+      <command>text -"eremita" -c=yello -t "I forgive you."</command>
+      <command>wait 0,5</command>
+      <command>text "Listen, could you maybe sew some of this hair on the head of this doll?"</command>
+      <command>wait 0,5</command>
+      <command>text -"eremita" -c=yello -t "An unusual request... but I perceive no reason not to indulge you."</command>
+      <command>text -"eremita" -c=yello -t "Give it to me."</command>
+      <command>wait 0,5</command>
+      <command>animation -skinny 00 -o=-5,-2 -a "skinny_porge_bambola"</command>
+      <command>sound "hermit_voodoo_doll"</command>
+      <command>animation -"me" 00 -o=91,33 -a -e=500 "eremita_cuce1"</command>
+      <command>wait 6,5</command>
+      <command>animation -skinny 00 -o=-5,-2 -a "skinny_prende_bambola"</command>
+      <command>animation -"me" 00 -o=91,33 "eremita_cuce2"</command>
+      <command>throw "bambola voodoo incompleta"</command>
+      <command>wait 1</command>
+      <command>sound "pick_generic"</command>
+      <command>pick n "bambola voodoo"</command>
+      <command>wait 0,5</command>
+      <command>text "Too kind."</command>
+      <command>hide +"accampamento/afk"</command>
+      <command>show -"accampamento/marionettista"</command>
+      <command>show -"accampamento/zingara"</command>
+      <command>if internal 0</command>
+      <command>0 internal -g 1</command>
+      <command>fi</command>
+      <command>resume -"eremita"</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="pentacolo">
+      <command>text "I suppose I need to find a way to attach the hair to it first." $35</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="libro di magia nera">
+      <command>text "Maybe there's something written in here about that." $36</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>text "No heat sources, nor missing limbs, remember?" $24</command>
+    </hotspot>
+    <hotspot ID="Gesoo">
+      <command>expression "sarcastic"</command>
+      <command>text "Voodoo and Catholicism don't exactly get along." $30</command>
+      <command>expression "normal"</command>
+      <command>text "Better not start digging up certain strange medieval persecutions." $31</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Science and voodoo isn't the best of combinations." $34</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,12 @@
+<object name="pyrite">
+  <description>
+    <command>text "La plus grande déception d'un chercheur d'or."</command>
+  </description>
+  <inventory />
+  <location name="bonus">
+    <hotspot ID="parete di vetro">
+      <command>pose d</command>
+      <command>text "Ce verre est à l'épreuve des balles." $151</command>
+    </hotspot>
+  </location>
+</object>

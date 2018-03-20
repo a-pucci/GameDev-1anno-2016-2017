@@ -1,0 +1,42 @@
+<object name="chewing gum">
+  <description>
+    <command>text "I could never chew it all, even if I had an eternity in front of me."</command>
+    <command>wait 0,5</command>
+    <command>text "And I fear I do."</command>
+  </description>
+  <inventory>
+    <object name="dentiera">
+      <command>text "This could start the final battle between the good and the cavities." $223</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomme_da_masticare"</command>
+      <command>fie</command>
+      <command>text "I don't want to put him on the spot." $38</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Do you really think he can chew with that mouth?" $220</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "You would give gum to someone who's already suffering from a toothache?" $221</command>
+      <command>expression "sarcastic"</command>
+      <command>text "You have no humanity!" $222</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="dentiera">
+      <command>text "This could start the final battle between the good and the cavities." $223</command>
+    </hotspot>
+  </location>
+</object>

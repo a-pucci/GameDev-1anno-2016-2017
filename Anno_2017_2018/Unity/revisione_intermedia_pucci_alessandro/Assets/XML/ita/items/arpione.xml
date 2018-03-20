@@ -1,0 +1,48 @@
+<object name="arpione">
+  <description>
+    <command>text "Tutte quelle puntate di MacGyver hanno finalmente dato i loro frutti."</command>
+  </description>
+  <inventory>
+    <object name="trapano">
+      <command>text "Non è mica un rampino." $202</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="scatoloni2">
+      <command>if internal -"traslocatore scemo" 0</command>
+      <command>text "*Prima devo aspettare che si voltino.*" 1</command>
+      <command>fie</command>
+      <command>if internal -"traslocatore scemo" 1</command>
+      <command>internal -"moai" -g -i 2</command>
+      <command>hide +"scatolone_solid_snake"</command>
+      <command>sound "skinny_harpoon"</command>
+      <command>animation (909,366) -p=fore "skinny_arpione1"</command>
+      <command>animation (909,675) -p=fore "skinny_arpione2"</command>
+      <command>internal -g 1</command>
+      <command>bitmask -"me" "postazione2_no_scatolone"</command>
+      <command>internal -"moai" -g -i 1</command>
+      <command>throw "arpione"</command>
+      <command>fie</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>text "Fa un po' Capitano Achab, non credi?" $199</command>
+      <command>expression -"Orso" "up"</command>
+      <command>text -"Orso" "Cerca solo di non fare la sua stessa fine." $200</command>
+      <command>text -"Orso" "La fine che ha fatto quel bastardo che mi ha cacciato, per inciso." $201</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>expression "perplexed"</command>
+      <command>text "Non è mica un rampino." $202</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Sei davvero sicuro di volerti mettere contro un energumeno del genere?" $203</command>
+    </hotspot>
+  </location>
+</object>

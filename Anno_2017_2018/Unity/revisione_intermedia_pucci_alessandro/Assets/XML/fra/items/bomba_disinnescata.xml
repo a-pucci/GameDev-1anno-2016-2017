@@ -1,0 +1,36 @@
+<object name="bombe désamorcée">
+  <description>
+    <command>text "Un dispositif qui remonte à la Seconde Guerre mondiale."</command>
+    <command>text "De toute évidence, elle a été désamorcée pour des raisons de sécurité."</command>
+  </description>
+  <inventory>
+    <object name="petardi">
+      <command>wait 0,5</command>
+      <command>text "Tout d'abord, extrayons la poudre..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>throw "petardi"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "Et maintenant..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="assenzio_radioattivo">
+      <command>text "Parfois, je me demande comment tu peux être encore en vie." $7</command>
+    </object>
+    <object name="plutonio">
+      <command>text "Je ne crois pas que ce genre de bombe soit alimenté en plutonium honnêtement." $154</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Avec une bombe désamorcée ? Ce serait la tentative la plus idiote de l'histoire." $75</command>
+    </hotspot>
+  </location>
+</object>

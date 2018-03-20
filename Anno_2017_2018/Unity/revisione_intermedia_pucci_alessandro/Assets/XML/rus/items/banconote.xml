@@ -1,0 +1,84 @@
+<object name="банкноты">
+  <description>
+    <command>text "Большие деньги!"</command>
+  </description>
+  <inventory />
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Он на все деньги купит бухла." $37</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>text "Не хочу подвергать его опасности." $38</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "Если бы я нашел их пораньше, то избежал бы всего этого." $39</command>
+    </hotspot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>expression "sarcastic"</command>
+      <command>text "Думаю, форма отверстия говорит сама за себя." $40</command>
+      <command>text "И все же, дай помогу... нам нужна монета." $41</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="eremita">
+      <command>text "Полностью несовместимо с его образом жизни." $42</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Хотя бы теоретически..." $43</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>pose d</command>
+      <command>text "Боюсь, ты пересмотрел «Мистера Робота»." $44</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Думаю, нам нужно что-то большее, чем просто втереться к ним в «доверие»." $45</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>pose d</command>
+      <command>text "Помнишь урок про то, что нужно «избавляться от мирского»?" $46</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "Если он решился на предательство Господа за несчастных тридцать серебряников, то на что он будет готов за такую кучу бабла." $47</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="diavoletto">
+      <command>text "Будет честно, если они сами заработают." $48</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="calderone_presente">
+      <command>if internal 0</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Я право не могу их замочить."</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>sound "pick_soldi"</command>
+      <command>wait 0,5</command>
+      <command>text "Сделано."</command>
+      <command>throw "banconote"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_1861" 2</command>
+      <command>internal -"calderone_1981" 2</command>
+      <command>fie</command>
+    </hotspot>
+    <hotspot ID="calderone_1861">
+      <command>expression "sarcastic"</command>
+      <command>text "Мы не в том веке." $49</command>
+    </hotspot>
+    <hotspot ID="calderone_1981">
+      <command>expression "sarcastic"</command>
+      <command>text "Мы не в том веке." $49</command>
+    </hotspot>
+  </location>
+</object>

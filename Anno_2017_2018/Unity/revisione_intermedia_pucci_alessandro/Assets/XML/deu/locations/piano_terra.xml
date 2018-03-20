@@ -1,0 +1,217 @@
+<location>
+  <script>
+    <command>1 show +"patch_poltrona_no_ombre"</command>
+    <command>1 show skinny (1992,780)</command>
+    <command>1 pose ul</command>
+    <command>1 screen -w=10 -fo=1500</command>
+    <command>1 status 0</command>
+  </script>
+  <entry name="giardino" X="912" Y="1030" pose="u" />
+  <entry name="primo_piano" X="491" Y="857" pose="d" />
+  <entry name="cucina" X="1218" Y="698" pose="d" />
+  <scene bitmap="patch_poltrona_no_ombre" X="1578" Y="273" position="back" animated="False" />
+  <scene bitmap="casse#1_ombra" X="3110" Y="42" position="back" animated="True" speed="83" loop="True" />
+  <scene bitmap="casse#2_ombra" X="3110" Y="42" position="back" animated="True" speed="83" loop="True" />
+  <scene bitmap="postazione_dj" X="3341" Y="534" position="back" animated="False" />
+  <scene bitmap="luce_piatto_dj" X="3487" Y="389" position="default" animated="False" />
+  <scene bitmap="casse#1_left" X="3110" Y="42" position="back" animated="True" speed="83" loop="True" />
+  <scene bitmap="casse#1_right" X="3110" Y="42" position="default" animated="True" speed="83" loop="True" />
+  <scene bitmap="casse#2_left" X="3110" Y="42" position="back" animated="True" speed="83" loop="True" />
+  <scene bitmap="casse#2_right" X="3110" Y="42" position="default" animated="True" speed="83" loop="True" />
+  <scene bitmap="bordo_dj_set" X="3341" Y="542" position="back" animated="False" />
+  <scene bitmap="pedobear_balla" X="2441" Y="171" position="default" animated="True" loop="True" />
+  <scene bitmap="punk_balla" X="2003" Y="282" position="default" animated="True" loop="True" />
+  <scene bitmap="daft_guy_balla" X="2717" Y="275" position="default" animated="True" loop="True" />
+  <scene bitmap="barile_birra" X="937" Y="472" position="fore" animated="False" />
+  <scene bitmap="lattina_blu_sedia_rotelle" X="439" Y="885" position="default" animated="False" />
+  <scene bitmap="lattina_sedia_rotelle" X="534" Y="880" position="default" animated="False" />
+  <hotspots>
+    <goto ID="piano_terra_x_bonus">
+      <go>
+        <command>goto "bonus"</command>
+      </go>
+    </goto>
+    <item ID="sedia a rotelle">
+      <look>
+        <command>text "Irgendjemand muss hier ein gefährliches Maß an Verblendung erreicht haben."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Zum Glück funktionieren meine Beine noch."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="barile">
+      <look>
+        <command>text "Biiiiier!"</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Was musst du sonst noch wissen?"</command>
+      </look>
+      <pick>
+        <command>text "Ich kann doch nicht mit einem Fass Bier auf dem Rücken herumlaufen."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ich würde lieber nach einer weniger barbarischen Lösung suchen."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Du solltest vielleicht besser für heute Abend mit dem Trinken aufhören."</command>
+      </talk>
+    </item>
+    <character ID="testa di cavallo">
+      <look>
+        <command>text "Mit freundlichen Grüßen von Don Vito Corleone ..."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Wenn ich kein Experte für Spezialeffekte wäre, dann könnte ich schwören, dass der echt ist."</command>
+        <command>lookat -"me"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Peter Jackson ist nichts gegen dich."</command>
+        <command>wait 0,3</command>
+        <command>expression "scared"</command>
+        <command>wait 0,8</command>
+        <command>expression "normal"</command>
+      </look>
+      <talk>
+        <command>text "*wiehert*"</command>
+        <command>text -"me" "Lass das."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ein Schnitt hat dir wohl nicht gereicht."</command>
+        <command>text -"me" "Touchè."</command>
+      </talk>
+    </character>
+    <character ID="Frank">
+      <look>
+        <command>pose d</command>
+        <command>text "Der sieht nicht gerade sonderlich vertrauenerweckend aus."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>dialog "frank"</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -n "28 Tage, 6 Stunden, 42 Minuten, 12 Sekunden ..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -n "... Dann geht die Welt unter."</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 animation -"me" 00 -o=48,0 -c "frank_idle"</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -n "Ein Sturm braut sich zusammen."</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -n "Ich bin hier, komm. Komm ruhig näher."</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 animation -"me" 00 -o=48,0 -c "frank_idle"</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+      </indipendent>
+    </character>
+    <character ID="Morpheus">
+      <look>
+        <command>pose d</command>
+        <command>text "Hier haben wir's wohl mit einem extremen Fall von Photophobie zu tun."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>pause -"Frank"</command>
+        <command>0 text "Guten Abend, wie läuft's denn so?"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Ich bin Skinny. "</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" "Endlich. Willkommen. Bitte, komm, setz dich."</command>
+        <command>0 text "Schätze mal, dir ist noch nicht aufgefallen, dass es hier in diesem Zimmer nur einen Stuhl gibt, was?"</command>
+        <command>0 text -"me" "Weißt du, vielleicht hast du ja die letzten paar Jahre deines Lebens mit der Suche nach mir verbracht, doch ich habe mein ganzes Leben lang nach dir gesucht."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Wir haben uns doch gerade erst getroffen."</command>
+        <command>0 text "Nicht, dass ich irgendwelche Einwände hätte ... aber ich glaube eh nicht, dass du mein Typ bist."</command>
+        <command>0 text -"me" "Das ist deine letzte Chance. Nach dem hier gibt es kein Zurück mehr."</command>
+        <command>0 text "Ich danke dir, lehne dein Angebot ab und ziehe weiter."</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "morpheus"</command>
+      </talk>
+      <indipendent>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>animation -"me" 00 -o=1,1 -c "morpheus_idle"</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+      </indipendent>
+    </character>
+    <character ID="deejay">
+      <look>
+        <command>pose d</command>
+        <command>text "Irre ich mich oder ist der das Alien, das sich verlaufen hat?"</command>
+        <command>lookat -"me"</command>
+        <command>wait 1</command>
+        <command>text "Schau mal, Opa ...!"</command>
+      </look>
+      <talk>
+        <command>0 expression "happy"</command>
+        <command>0 text "Glückwunsch, tolle Musik!"</command>
+        <command>1 text "Kannst du die Musik mal voll aufdrehen?"</command>
+        <command>wait 1,5</command>
+        <command>pose d</command>
+        <command>expression "normal"</command>
+        <command>text "Ich glaube, der hört mich nicht."</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=29,27 -c "dj_idle"</command>
+      </indipendent>
+    </character>
+    <goto ID="piano_terra_x_primo_piano" icon="ur" PX="903" PY="-133">
+      <go>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+    <goto ID="piano_terra_x_giardino" icon="d" PX="908" PY="1200">
+      <go>
+        <command>goto "giardino"</command>
+      </go>
+    </goto>
+    <goto ID="piano_terra_x_cucina" icon="u" PX="1226" PY="-31">
+      <go>
+        <command>goto "cucina"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

@@ -1,0 +1,27 @@
+<object name="carta de amor">
+  <description>
+    <command>sound "use_volantino"</command>
+    <command>document "lettera"</command>
+    <command>sound "use_volantino"</command>
+  </description>
+  <inventory>
+    <object name="struccante">
+      <command>sound "pick_lettera_amore"</command>
+      <command>throw -"me"</command>
+      <command>throw -"struccante"</command>
+      <command>pick n "lettera_struccata"</command>
+    </object>
+  </inventory>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "La marca de pintalabios de un beso apunta a que es de una mujer. Así que no creo que le interesara." $120</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="struccante">
+      <command>text "Primero tendría que cogerlo." $95</command>
+    </hotspot>
+  </location>
+</object>

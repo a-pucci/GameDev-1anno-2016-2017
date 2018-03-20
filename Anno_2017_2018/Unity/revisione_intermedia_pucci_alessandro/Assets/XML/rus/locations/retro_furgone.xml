@@ -1,0 +1,100 @@
+<location>
+  <script>
+    <command>1 pose dr</command>
+    <command>1 screen -fo=200 -w=1</command>
+    <command>1 status &gt;"marciapiede" 1</command>
+    <command>1 internal -"retro_furgone_x_furgone" -g 1</command>
+    <command>1 status 0</command>
+  </script>
+  <entry name="marciapiede" X="393" Y="930" pose="ur" />
+  <scene bitmap="saracinesca_forzata" X="44" Y="287" position="back" animated="False" />
+  <scene bitmap="ladro_idle" X="1135" Y="202" position="back" animated="True" loop="True" />
+  <hotspots>
+    <action ID="saracinesca">
+      <act>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Я ничего не ждал, открывая этот роллет."</command>
+      </act>
+    </action>
+    <character ID="fenicottero">
+      <look>
+        <command>text "Нравятся мне эти безвкусные садовые украшения."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "В садах у других людей."</command>
+      </look>
+      <talk>
+        <command>pose 0</command>
+        <command>text "Предпочитаю не соваться в эти странные ритуалы спаривания."</command>
+        <command>wait 0,5</command>
+        <command>text "Не думаю, что готов."</command>
+      </talk>
+    </character>
+    <item ID="piede di porco">
+      <look>
+        <command>text "Это один из самых известных предметов в видеоиграх."</command>
+      </look>
+      <pick>
+        <command>sound "pick_crowbar"</command>
+        <command>pick y "piede_di_porco"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Понимаю, ты всю жизнь ждал этого, но, может, лучше сначала его подобрать."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="ladro">
+      <look>
+        <command>text "Предположительно хорошо охраняемая городская тюрьма никогда не подводит горожан."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "perplexed"</command>
+        <command>text "Поймать вора, я?"</command>
+        <command>text "Ты вообще на меня смотрел?"</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Если я захочу ограбить банк, то я знаю с чего начать."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Не думаю, что ему нужна дальнейшая мотивация."</command>
+      </talk>
+    </item>
+    <item ID="finestra rotta">
+      <look>
+        <command>text "Он здорово сиганул, это точно."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>text "Тебя кто-то опередил."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="retro_furgone_x_marciapiede" icon="l" PX="-472" PY="910">
+      <go>
+        <command>goto "marciapiede"</command>
+      </go>
+    </goto>
+    <goto ID="retro_furgone_x_furgone" icon="l" PX="113" PY="570">
+      <go>
+        <command>0 wait 0,5</command>
+        <command>0 status &gt;"marciapiede" 2</command>
+        <command>0 screen -fi=300 -w=1</command>
+        <command>0 goto -nofade "marciapiede"</command>
+        <command>1 pose d</command>
+        <command>1 text "У нас еще есть дела."</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

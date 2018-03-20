@@ -1,0 +1,35 @@
+<object name="ingranaggi">
+  <description>
+    <command>text "Sembrano quei piccoli ingranaggi che si vedono dentro gli orologi."</command>
+  </description>
+  <inventory>
+    <object name="sveglia">
+      <command>sound "pick_clock_funzionante"</command>
+      <command>pick n "sveglia_funzionante"</command>
+      <command>throw "sveglia"</command>
+      <command>throw "ingranaggi"</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>text "Ehi Orso, per caso questi sono tuoi?" $225</command>
+      <command>expression -"Orso" "up_sarcastic"</command>
+      <command>text -"Orso" "Ah ah ah. Proprio divertente." $226</command>
+      <command>achievement "consulto_psichiatrico"</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>text "Mi servono, non posso rischiare di perderli." $227</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>text "Non è esattamente l'upgrade di cui avrebbe bisogno." $224</command>
+    </hotspot>
+    <hotspot ID="sveglia">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,356 @@
+<location>
+  <script>
+    <command>0 show +"bicchieri_giuda"</command>
+    <command>0 show +"bicchieri_gesoo"</command>
+    <command>0 bitmap -"Gesoo" "gesoo"</command>
+    <command>0 show -"Giuda"</command>
+    <command>0 show -"Gesoo"</command>
+    <command>0 internal -"Gesoo" -g -i 0</command>
+    <command>0 internal -"Giuda" -g -i 1</command>
+  </script>
+  <indipendent>
+    <command>0 animation (270,487) -p=back "giostra"</command>
+    <command>1 wait 5</command>
+  </indipendent>
+  <entry name="sgabuzzino" X="207" Y="819" pose="r" />
+  <entry name="frigorifero" X="936" Y="631" pose="ur" />
+  <entry name="piano_terra" X="1732" Y="973" pose="u" />
+  <sound name="crowd_loop" />
+  <scene bitmap="sgabuzzino_illuminato" X="0" Y="288" position="back" animated="False" />
+  <scene bitmap="isola_ping_pong" X="1206" Y="365" position="superback" animated="False" />
+  <scene bitmap="bicchieri_giuda" X="1587" Y="405" position="default" animated="False" />
+  <scene bitmap="bicchieri_gesoo" X="1262" Y="404" position="default" animated="False" />
+  <scene bitmap="sedie_tavolo_cucina1" X="19" Y="781" position="default" animated="False" />
+  <scene bitmap="giocatore_grosso" X="98" Y="538" position="default" start="4000" stop="6500" animated="True" loop="True" />
+  <scene bitmap="tavolo_cucina1" X="19" Y="740" position="default" animated="False" />
+  <scene bitmap="tavolo_cucina2" X="940" Y="817" position="default" animated="False" />
+  <scene bitmap="festoni" X="186" Y="-7" position="fore" animated="False" />
+  <scene bitmap="bordo_vasca" X="375" Y="520" position="fore" animated="False" />
+  <hotspots>
+    <item ID="fiammiferi">
+      <look>
+        <command>pose d</command>
+        <command>expression "perplexed"</command>
+        <command>text "Das war's dann?"</command>
+      </look>
+      <pick>
+        <command>sound "pick_fiammiferi"</command>
+        <command>pick y "fiammiferi"</command>
+      </pick>
+      <use>
+        <command>text "Die könnten nochmal nützlich sein, aber nicht in diesem speziellen Fall."</command>
+      </use>
+      <talk>
+        <command>text "Wir könnten's ja mal mit einem lichten Moment versuchen, oder?"</command>
+      </talk>
+    </item>
+    <action ID="mattonella">
+      <act>
+        <command>internal -s -g 1</command>
+        <command>sound "mattonella_spostata"</command>
+        <command>animation -"me" 00 -o=0,18 "mattonella_si_scosta"</command>
+        <command>bitmap -"me" "mattonella_scostata"</command>
+        <command>position -"me" (1690,753)</command>
+        <command>show -"fiammiferi"</command>
+        <command>hide -nc -"me"</command>
+      </act>
+      <stepon>
+        <command>0 sound "mattonella"</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "mattonella"</command>
+        <command>0 show -"me"</command>
+        <command>1 wait 5</command>
+      </stepon>
+    </action>
+    <item ID="trappola acchiappafantasmi">
+      <look>
+        <command>text "Wenn ich immer noch Speicheldrüsen hätte, dann bräuchte ich jetzt wohl einen Eimer."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Ich glaube nicht, dass die beiden sonderlich begeistert wären."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ich werd's mir überlegen, wenn ich mal das ganze Viertel aufmischen will."</command>
+      </use>
+      <talk>
+        <command>text "Ich glaube nicht, dass die mich hören, wenn ich da drin bin."</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_idle"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ectoscatola_si_muove"</command>
+      </indipendent>
+    </item>
+    <character ID="Winston">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Der Letzte, den ich so durch eine Flasche gesehen habe, war Ronalds Vater beim Weihnachtsessen mit all den Verwandten."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>pause -"Egon"</command>
+        <command>bitmap -"me" "winston_egon"</command>
+        <command>bitmap -"Egon" "egon_winston"</command>
+        <command>text -"me" "Egon, erzähl ihm das mit dem Twinkie."</command>
+        <command>text -"Egon" "Es ist weg. Es ist in den Tee gefallen, als ich es eingetaucht habe."</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Ich meinte das große."</command>
+        <command>text -"Egon" "Das sind vertrauliche Informationen, und das weißt du auch."</command>
+        <command>wait 0,5</command>
+        <command>text -"Egon" "Du solltest für heute Abend mal besser mit dem Trinken aufhören."</command>
+        <command>text -"Egon" "Bevor mir das ganze Koffein die Fähigkeit zu rationalem Denken nimmt."</command>
+        <command>bitmap -"me" "winston"</command>
+        <command>bitmap -"Egon" "egon"</command>
+        <command>resume -"me"</command>
+        <command>resume -"Egon"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "winston_idle2"</command>
+        <command>wait 0,5</command>
+        <command>animation -"me" 00 -o=0,-1 -c "winston_idle1"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <action ID="canna da pesca">
+      <act>
+        <command>0 pause -"giostraio"</command>
+        <command>0 wait 0,2</command>
+        <command>0 bitmap -"giostraio" "giostraio_canna"</command>
+        <command>0 animation -skinny 00 -o=366,199 -a "skinny_canna_pesca"</command>
+        <command>0 bitmap -skinny -o=366,199 "skinny_canna_pesca"</command>
+        <command>0 sound "use_canna"</command>
+        <command>0 hide -"me"</command>
+        <command>0 show +"bordo_vasca"</command>
+        <command>0 sound "pesca"</command>
+        <command>0 wait 2,58</command>
+        <command>0 bitmap -skinny ""</command>
+        <command>0 animation -skinny 00 -o=366,199 -a "skinny_fallisce_giostra"</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 wait 2,7</command>
+        <command>0 sound "use_canna"</command>
+        <command>0 show -"me"</command>
+        <command>0 hide +"bordo_vasca"</command>
+        <command>0 internal -"giostraio" -g -i 1</command>
+        <command>0 resume -"giostraio"</command>
+        <command>0 wait 1</command>
+        <command>0 pose d</command>
+        <command>0 text "Jetzt weiß ich wieder, warum ich so ungern auf den Rummel gegangen bin."</command>
+        <command>0 expression "normal"</command>
+        <command>0 text "Die Angel ist offensichtlich manipuliert."</command>
+        <command>0 bitmap -"giostraio" "giostraio"</command>
+        <command>0 internal -"giostraio" -g -i 0</command>
+      </act>
+    </action>
+    <character ID="messicano">
+      <look>
+        <command>text "Der hat Glück, dass Alkohol müde macht."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Man sollte niemals einen Mexikaner während seiner Siesta wecken. NIEMALS!"</command>
+      </talk>
+    </character>
+    <character ID="moglie di Frankenstein">
+      <look>
+        <command>expression "perplexed"</command>
+        <command>pose d</command>
+        <command>text "Ich habe sie anders in Erinnerung ..."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Vor allem TOT."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Ich darf dich daran erinnern, dass sie beim einzigen Mal, wo sie was gesagt hat, ein komplettes Labor abgefackelt hat."</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Willst du immer noch mit der reden?"</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c -l "moglie_frenkestein_idle"</command>
+      </indipendent>
+    </character>
+    <goto ID="cucina_x_sgabuzzino" icon="l" PX="-590" PY="613">
+      <go>
+        <command>sound "door"</command>
+        <command>goto "sgabuzzino"</command>
+      </go>
+    </goto>
+    <action ID="frigorifero">
+      <act>
+        <command>sound "frigo_open"</command>
+        <command>goto "frigorifero"</command>
+      </act>
+    </action>
+    <character ID="Gesoo">
+      <look>
+        <command>text "Das ist die Art von Überraschung, mit der das Christentum bei mir schlagartig Punkte sammeln kann."</command>
+      </look>
+      <talk>
+        <command>0 text "Ich habe kein Anliegen, das wichtig genug wäre, um ihn deswegen zu stören."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Immerhin hab ich schon vor langer Zeit aufgehört an ihn zu glauben."</command>
+        <command>1-2-3 pause -"me"</command>
+        <command>1-2-3 pause -"Giuda"</command>
+        <command>1-2-3 bitmap -"me" "gesoo_l"</command>
+        <command>1-2-3 expression -"me" "drunk"</command>
+        <command>1-2 text "Hör mal, du Sohn Gottes ... da du ja einer der Superstars des Schöpfers bist, hab ich mich so gefragt, ob du wohl die Hochzeit von einem Freund von mir wohl managen könntest." 3</command>
+        <command>1-2 text -"me" "Nun, mir gehört ja dieses gewaltige Franchise-Imperium aus Kapellen, Kirchen und Kathedralen. Wer, wenn nicht ich, was?" 4</command>
+        <command>1-2 wait 0,5</command>
+        <command>1-2 text -"me" "Ich bin nur etwas zu betrunken. Ich könnte ein ganz klein wenig Hilfe brauchen." 5</command>
+        <command>1-2 text -"me" "Aber nicht von oben, denn wenn mein Vater mich in diesem Zustand sieht, muss ich Jahrtausende auf meinen nächsten großen Auftritt warten." 6</command>
+        <command>1-2 text -"me" "Eine kurze Mischung aus 'Ich erkläre hiermit, und wenn sie nicht gestorben sind' und 'Sie können die Braut jetzt küssen, aber übertreiben Sie's nicht' ... so was in der Art." 7</command>
+        <command>3 text -"me" "Wir treffen uns am Roswell-Teich." 8</command>
+        <command>1-2-3 internal -"Gesoo" -g -i 0</command>
+        <command>1-2-3 internal -"Giuda" -g -i 1</command>
+        <command>1-2-3 bitmap -"me" "gesoo"</command>
+        <command>1-2-3 resume -"me"</command>
+        <command>1-2-3 resume -"Giuda"</command>
+        <command>1 internal 2</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 5</command>
+        <command>1 wait 2</command>
+        <command>1 hide +"bicchieri_gesoo"</command>
+        <command>1 animation -"me+bicchieri_gesoo" 00 -o=382,12 -c -e=1500 "gesoo_lancio_ok"</command>
+        <command>1 bitmap -"me" "gesoo_troll"</command>
+        <command>1 internal -"Giuda" -g -i 2</command>
+        <command>1 internal -i 0</command>
+        <command>2 animation -"me" 00 -o=32,12 -c "gesoo_beve"</command>
+        <command>2 internal -"Giuda" -g -i 1</command>
+        <command>2 internal -i 0</command>
+      </indipendent>
+    </character>
+    <character ID="Giuda">
+      <look>
+        <command>text "Ich hatte ja keine Ahnung, dass er auch ein Schüler Saurons ist."</command>
+        <command>wait 0,5</command>
+        <command>text "Schon seltsam, dass Tolkien den niemals in einem seiner Bücher erwähnt hat."</command>
+      </look>
+      <talk>
+        <command>text "Mir wäre es lieber, er konzentriert sich wieder voll auf seine Partie Beer Pong."</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 3</command>
+        <command>1 wait 2</command>
+        <command>1 hide +"bicchieri_giuda"</command>
+        <command>1 animation -"me+bicchieri_giuda" 00 -o=49,24 -c "giuda_lancio_no"</command>
+        <command>1 internal -"Gesoo" -g -i 1</command>
+        <command>1 internal -i 0</command>
+        <command>2 animation -"me" 00 -o=41,24 -c "giuda_beve"</command>
+        <command>2 bitmap -"Gesoo" "gesoo"</command>
+        <command>2 wait 2</command>
+        <command>2 hide +"bicchieri_giuda"</command>
+        <command>2 animation -"me" 00 -o=49,24 -c "giuda_lancio_ok"</command>
+        <command>2 show +"bicchieri_giuda"</command>
+        <command>2 internal -"Gesoo" -g -i 2</command>
+        <command>2 internal -i 0</command>
+      </indipendent>
+    </character>
+    <character ID="Egon">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Bei den Haaren würde selbst Amy Winehouse vor Neid erblassen!"</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>bitmap -"me" "egon_l"</command>
+        <command>text "Warum trinkst du nur so viel Tee?"</command>
+        <command>text -"me" "Ich schlafe nur 14 Minuten pro Tag, so bleibt mir jede Menge Zeit zum Arbeiten."</command>
+        <command>bitmap -"me" "egon"</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "egon_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="Olandese Volante">
+      <look>
+        <command>text "Pass auf, der Deckenventilator!"</command>
+      </look>
+      <talk>
+        <command>text "Dass du es mir da oben ja nicht zu toll treibst, alter Kumpel!"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "olandese"</command>
+        <command>animation -"me" 00 -o=18,31 -c "olandese_volante_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <goto ID="cucina_x_piano_terra" icon="d" PX="1792" PY="1215">
+      <go>
+        <command>screen -fi=200 -w=1</command>
+        <command>goto "piano_terra"</command>
+      </go>
+    </goto>
+    <character ID="giostraio">
+      <look>
+        <command>text "Mit dem Kostüm sieht der eigentlich eher wie ein Page aus."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>bitmap -"me" "giostraio_l"</command>
+        <command>0 text -"me" "Hey, Kleiner. Versuch dein Glück doch mal beim Angeln!" 1</command>
+        <command>0 text -"me" "Das geht ganz einfach: Du musst dir einfach nur einen der Fisch aus dem Aquarium holen." 2</command>
+        <command>0 text -"me" "Nichts leichter als das, was?" 3</command>
+        <command>1 text -"me" "Nur noch 35 Stunden, und endlich habe ich diese Tortur hinter mir." 4</command>
+        <command>bitmap -"me" "giostraio"</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 animation -"me" 00 -o=19,16 -c "giostraio_idle"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>1 animation -"me" 00 -o=39,18 -c "giostraio_ride"</command>
+        <command>1 wait 20</command>
+        <command>2 animation -"me" 00 -o=39,41 -c "giostraio_stupito"</command>
+        <command>2 wait 100</command>
+      </indipendent>
+    </character>
+  </hotspots>
+</location>

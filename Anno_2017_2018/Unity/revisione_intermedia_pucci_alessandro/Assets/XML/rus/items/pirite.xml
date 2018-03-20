@@ -1,0 +1,12 @@
+<object name="колчедан">
+  <description>
+    <command>text "Самое главное разочарование охотника за золотом."</command>
+  </description>
+  <inventory />
+  <location name="bonus">
+    <hotspot ID="parete di vetro">
+      <command>pose d</command>
+      <command>text "Это пуленепробиваемое стекло." $151</command>
+    </hotspot>
+  </location>
+</object>

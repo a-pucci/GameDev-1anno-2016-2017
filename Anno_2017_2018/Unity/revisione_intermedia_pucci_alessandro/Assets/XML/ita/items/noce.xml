@@ -1,0 +1,90 @@
+<object name="Noce">
+  <description>
+    <command>text "Fa' un po' strano tenere un animale dentro la propria gabbia toracica."</command>
+  </description>
+  <inventory />
+  <location name="anticamera">
+    <hotspot ID="carta moschicida">
+      <command>text -"inventory" "Mi hai preso per una mosca?" $239</command>
+    </hotspot>
+    <hotspot ID="bara">
+      <command>text -"inventory" "La cosa peggiore è che non posso neppure ironizzare sulla tua, di morte." $240</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>expression "happy"</command>
+      <command>text -"inventory" "Orso, aiutami! Skinny mi ha mangiato!" $241</command>
+      <command>expression -"Orso" "up"</command>
+      <command>text -"Orso" "Non perdi mai la voglia di scherzare eh, Noce?" $242</command>
+    </hotspot>
+    <hotspot ID="bidone">
+      <command>text -"inventory" "Ma ti sembra il modo?" $243</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cane">
+      <command>sound "skinny_nut"</command>
+      <command>animation -skinny 00 -o=-18,-3 -a "skinny_noce"</command>
+      <command>pause -"me"</command>
+      <command>wait 1</command>
+      <command>throw "noce"</command>
+      <command>sound "dog_ready"</command>
+      <command>animation -"me" 00 -o=0,21 "cane_attenti"</command>
+      <command>hide -"cieco"</command>
+      <command>show -"megafono"</command>
+      <command>sound "dog_run"</command>
+      <command>animation (1883,544) -p=back -a "vecchio_trascinato_no_megafono"</command>
+      <command>hide +"guinzaglio"</command>
+      <command>hide -"cane"</command>
+      <command>hide -"cieco"</command>
+    </hotspot>
+    <hotspot ID="betoniera">
+      <command>text -"inventory" "Amico, ti è andato di volta il cervello?" $244</command>
+      <command>text "Non è colpa mia, non prendertela con me!" $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Non ti seguo." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Lascia stare." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+    <hotspot ID="cieco">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "Non credo che ne resterebbe particolarmente impressionato essendo un NON VEDENTE!" $248</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text -"inventory" "Amico, ti è andato di volta il cervello?" $244</command>
+      <command>text "Non è colpa mia, non prendertela con me!" $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Non ti seguo." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Lascia stare." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="tana">
+      <command>text -"inventory" "Guarda che sono uno scoiattolo, mica una talpa..." $249</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "Avanti Noce, attacca!" $250</command>
+      <command>text -"inventory" "Hai bevuto?" $251</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="ritratto sospetto">
+      <command>text -"inventory" "Amico, ti è andato di volta il cervello?" $244</command>
+      <command>text "Non è colpa mia, non prendertela con me!" $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Non ti seguo." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Lascia stare." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+  </location>
+</object>

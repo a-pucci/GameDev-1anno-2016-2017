@@ -1,0 +1,37 @@
+<object name="vite">
+  <description>
+    <command>text "Non so più in quale verso si avviti e in quale si sviti."</command>
+    <command>text "Queste cose mi tolgono il sonno."</command>
+  </description>
+  <inventory>
+    <object name="trapano">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "trapano"</command>
+      <command>throw "vite"</command>
+    </object>
+  </inventory>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Mettere una vite dentro un microonde acceso potrebbe essere pericoloso... inoltre non voglio che Z8 me la porti via." $274</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Temo ti stia sfuggendo un passaggio intermedio piuttosto ovvio." $275</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="marlin">
+      <command>text "Ha già abbastanza piercing." $276</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

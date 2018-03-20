@@ -1,0 +1,37 @@
+<object name="chope">
+  <description>
+    <command>text "Une chope de bière poussiéreuse."</command>
+  </description>
+  <inventory>
+    <object name="pillole">
+      <command>text "Je dois trouver quelque chose pour les dissoudre." $260</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>sound "skinny_mug"</command>
+      <command>animation -skinny 00 -o=64,-1 "skinny_riempie_boccale"</command>
+      <command>sound "pick_mug"</command>
+      <command>pick n "acqua_fogna"</command>
+      <command>throw "boccale_vuoto"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Santé !" $206</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="betoniera">
+      <command>text "Parfois, il n'y a rien de mieux qu'une bonne gorgée de ciment." $204</command>
+      <command>pose d</command>
+      <command>text "Mais pas aujourd'hui." $205</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>pose d</command>
+      <command>text "Je doute sérieusement qu'il puisse me servir." $207</command>
+      <command>text "Sa longue période d'inactivité l'a rendu un peu raide." $208</command>
+    </hotspot>
+  </location>
+</object>

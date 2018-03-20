@@ -1,0 +1,56 @@
+<object name="Gebiss">
+  <description>
+    <command>text "Was für ein umwerfendes Lächeln ..."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>text "Das ist sicher nicht die Art von Flüssigkeit, um so etwas darin zu lagern." $193</command>
+    </object>
+    <object name="gomme_da_masticare">
+      <command>text "Das könnte das letzte Gefecht zwischen Gut und Karies entfesseln." $223</command>
+    </object>
+  </inventory>
+  <location name="cripta">
+    <hotspot ID="nonnina">
+      <command>animation -skinny 00 -o=104,16 -a "skinny_dentiera"</command>
+      <command>wait 0,41</command>
+      <command>sound "nonna_dentiera"</command>
+      <command>animation -"me" 00 -o=23,9 "nonnina_dentiera"</command>
+      <command>bitmap -"me" "nonnina"</command>
+      <command>throw "dentiera"</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "herself"</command>
+      <command>text -"me" "*Zur Hölle mit meinem Alter.*"</command>
+      <command>internal -"me" -g 1</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "happy"</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Ronald, Omas Liebling ... du bist gekommen um mich zu besuchen!"</command>
+      <command>expression -"me" "sad"</command>
+      <command>text -"me" "Du bist ja ganz abgemagert. Kriegst du denn auch genug zu essen?"</command>
+      <command>dialog "nonnina_risposta"</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="non_sapevo_come_chiamarlo">
+      <command>expression "sarcastic"</command>
+      <command>text "Die könnte der auch essen." $98</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="pianta carnivora">
+      <command>text "Leider ist der bereits mit zwei Reihen sehr scharfer Zähne ausgestattet." $99</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cieco">
+      <command>expression "sarcastic"</command>
+      <command>text "Der könnte eine OP wegen grauem Star eher vertragen als einen Satz neuer Beißerchen." $209</command>
+    </hotspot>
+  </location>
+  <location name="pensile">
+    <hotspot ID="dentifricio">
+      <command>text "Vielleicht wäre es mit der richtigen Mundhygiene ja gar nicht erst so weit gekommen." $210</command>
+    </hotspot>
+  </location>
+</object>

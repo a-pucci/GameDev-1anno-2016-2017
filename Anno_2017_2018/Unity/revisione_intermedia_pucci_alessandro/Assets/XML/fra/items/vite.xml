@@ -1,0 +1,45 @@
+<object name="vis">
+  <description>
+    <command>text "Je ne sais jamais dans quelle direction on visse et on dévisse."</command>
+    <command>text "C'est le genre de choses qui me tient éveillé la nuit."</command>
+  </description>
+  <inventory>
+    <object name="trapano">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "trapano"</command>
+      <command>throw "vite"</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>text "C'est à toi ?" $280</command>
+      <command>expression -"Orso" "up_sarcastic"</command>
+      <command>text -"Orso" "Hahaha. Très drôle." $226</command>
+      <command>achievement "consulto_psichiatrico"</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Mettre une vis dans un micro-onde en marche peut être vraiment dangereux ... et je ne veux pas que Z8 me l'enlève." $274</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Je crains que tu ne manques une étape intermédiaire assez évidente." $275</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="marlin">
+      <command>text "Il a déjà assez de piercing." $276</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>text "Il vaudrait mieux le prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+</object>

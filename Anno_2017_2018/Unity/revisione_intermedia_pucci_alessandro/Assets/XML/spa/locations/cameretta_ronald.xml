@@ -1,0 +1,46 @@
+<location>
+  <script>
+    <command>0 screen -w=500 -fo=1000 -a</command>
+    <command>0 expression "scared"</command>
+    <command>0 wait 1,5</command>
+    <command>0 sound "ronald_urla"</command>
+    <command>0 wait 0,5</command>
+    <command>0 sound "ronald_sviene"</command>
+    <command>0 animation -"ronald" 00 -o=72,54 -e=2000 -a "ronald_sviene"</command>
+    <command>0 bitmap -"ronald" "ronald_svenuto"</command>
+    <command>0 wait 0,7</command>
+    <command>0 screen -fi=1500 -w=1500</command>
+    <command>0 blackscreen</command>
+    <command>0 text "¿Ronald?"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text "Ronald, despierta."</command>
+    <command>0 blackscreen</command>
+    <command>0 expression "sad"</command>
+    <command>0 screen -w=500 -fo=1500</command>
+    <command>0 bitmap -"ronald" "ronald_svenuto_sveglio"</command>
+    <command>0 wait 0,5</command>
+    <command>0 bitmap -"ronald" "ronald_svenuto"</command>
+    <command>0 wait 0,07</command>
+    <command>0 bitmap -"ronald" "ronald_svenuto_sveglio"</command>
+    <command>0 wait 0,3</command>
+    <command>0 bitmap -"ronald" "ronald_svenuto"</command>
+    <command>0 wait 0,07</command>
+    <command>0 bitmap -"ronald" "ronald_svenuto_sveglio"</command>
+    <command>0 animation -"ronald" 00 -o=72,54 "ronald_si_sveglia"</command>
+    <command>0 bitmap -"ronald" "ronald_scared"</command>
+    <command>0 expression "normal"</command>
+    <command>0 wait 1</command>
+    <command>0 text "Ronald, soy yo, Skinny."</command>
+    <command>0 achievement "ricongiungimento"</command>
+    <command>0 dialog "ronald"</command>
+  </script>
+  <entry name="giardino" X="1113" Y="985" pose="l" />
+  <scene bitmap="lampada_letto" X="1512" Y="448" position="back" start="1500" stop="6000" animated="True" loop="True" />
+  <scene bitmap="bong" X="1685" Y="724" position="divine" animated="True" loop="True" />
+  <hotspots>
+    <character ID="ronald">
+      <look />
+      <talk />
+    </character>
+  </hotspots>
+</location>

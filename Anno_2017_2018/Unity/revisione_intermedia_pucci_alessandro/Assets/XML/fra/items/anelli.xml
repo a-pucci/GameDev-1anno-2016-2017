@@ -1,0 +1,52 @@
+<object name="alliances">
+  <description>
+    <command>text "Il y a des marques étranges gravées dans l'un des deux anneaux…"</command>
+  </description>
+  <inventory>
+    <object name="bibbia">
+      <command>text "Tout droit sorti du magazine hebdomadaire 'Construisez votre propre mariage'." $53</command>
+    </object>
+  </inventory>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>if internal 1</command>
+      <command>pause -"me"</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text "J'ai les alliances avec moi, ma Reine."</command>
+      <command>throw "anelli"</command>
+      <command>wait 1,5</command>
+      <command>text -"me" "Que faites-vous là ? Trouvez-nous un prêtre pour célébrer notre mariage."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Je pense que j'en ai déjà fait suffisamment."</command>
+      <command>expression "normal"</command>
+      <command>expression -"me" "angry"</command>
+      <command>text -"me" "C'est un ordre."</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" ""</command>
+      <command>text -"me" "La cérémonie aura lieu sur le météore au lac Roswell."</command>
+      <command>bitmap -"me" "faraonessa_felice"</command>
+      <command>text -"me" "Quel endroit romantique..."</command>
+      <command>wait 1</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text -"me" "Allez partez, je dois me préparer."</command>
+      <command>internal -"cucina/Gesoo" -g 1</command>
+      <command>bitmap -"me" "faraonessa"</command>
+      <command>hide -nc -"me"</command>
+      <command>resume -"me"</command>
+      <command>fie</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Prends-là pour épouse TOI, si tu l'aimes à ce point." 8</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="amante nascosto">
+      <command>text "Ça lui fera le même effet que moi avec les prunes." $1</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>text "Je ne pensais pas qu'un célibataire comme lui se caserait un jour." $2</command>
+    </hotspot>
+  </location>
+</object>

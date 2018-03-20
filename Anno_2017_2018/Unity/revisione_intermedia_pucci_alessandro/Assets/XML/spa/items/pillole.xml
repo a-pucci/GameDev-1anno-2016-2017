@@ -1,0 +1,47 @@
+<object name="pastillas">
+  <description>
+    <command>text "Los antipsicóticos del primo Jason. "</command>
+    <command>wait 1</command>
+    <comment>[pensandoci bene]</comment>
+    <command>text "Ahora que lo pienso, no sabemos qué ha sido de él."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>sound "pick_intruglio"</command>
+      <command>pick n "intruglio"</command>
+      <command>throw "acqua_fogna"</command>
+      <command>throw "pillole"</command>
+    </object>
+    <object name="boccale_vuoto">
+      <command>text "Tengo que encontrar algo para disolverlas." $260</command>
+    </object>
+  </inventory>
+  <location name="cucina1">
+    <hotspot ID="sagoma">
+      <command>expression "perplexed"</command>
+      <command>text "La verdad es que le habrían sido más útiles a su asesino." $256</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>pose d</command>
+      <command>text "No quiero contribuir con la contaminación de las aguas freáticas." $257</command>
+    </hotspot>
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Son antipsicóticos, no analgésicos." $258</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="mostro di polvere">
+      <command>pose d</command>
+      <command>text "Demasiados efectos colaterales. Necesito algo mucho más inestable." $259</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="boccale">
+      <command>text "Tengo que encontrar algo para disolverlas." $260</command>
+    </hotspot>
+  </location>
+</object>

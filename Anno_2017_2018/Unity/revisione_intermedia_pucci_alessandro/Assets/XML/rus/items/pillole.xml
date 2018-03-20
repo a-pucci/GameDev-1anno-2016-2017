@@ -1,0 +1,47 @@
+<object name="таблетки">
+  <description>
+    <command>text "Таблетки от психоза кузена Джейсона."</command>
+    <command>wait 1</command>
+    <comment>[pensandoci bene]</comment>
+    <command>text "Если подумать, то мы внезапно его потеряли."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>sound "pick_intruglio"</command>
+      <command>pick n "intruglio"</command>
+      <command>throw "acqua_fogna"</command>
+      <command>throw "pillole"</command>
+    </object>
+    <object name="boccale_vuoto">
+      <command>text "Нужно чем-то их растворить." $260</command>
+    </object>
+  </inventory>
+  <location name="cucina1">
+    <hotspot ID="sagoma">
+      <command>expression "perplexed"</command>
+      <command>text "Вообще-то, они больше бы пригодились его убийце." $256</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>pose d</command>
+      <command>text "Я не хочу продолжать загрязнение грунтовых вод." $257</command>
+    </hotspot>
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Это таблетки от психоза, а не болеутоляющее." $258</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="mostro di polvere">
+      <command>pose d</command>
+      <command>text "Слишком мало побочных эффектов. Мне нужно что-то действительно забористое." $259</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="boccale">
+      <command>text "Нужно их в чем-то растворить." $260</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,37 @@
+<object name="кружка">
+  <description>
+    <command>text "Пыльная пивная кружка."</command>
+  </description>
+  <inventory>
+    <object name="pillole">
+      <command>text "Нужно их в чем-то растворить." $260</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>sound "skinny_mug"</command>
+      <command>animation -skinny 00 -o=64,-1 "skinny_riempie_boccale"</command>
+      <command>sound "pick_mug"</command>
+      <command>pick n "acqua_fogna"</command>
+      <command>throw "boccale_vuoto"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Ваше здоровье!" $206</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="betoniera">
+      <command>text "Порой так и хочется хлебнуть немного цемента." $204</command>
+      <command>pose d</command>
+      <command>text "Но не сегодня." $205</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>pose d</command>
+      <command>text "Крайне неуверен, что он может мне пригодиться." $207</command>
+      <command>text "От долгого отсутствия активности он, должно быть, немного зачерствел." $208</command>
+    </hotspot>
+  </location>
+</object>

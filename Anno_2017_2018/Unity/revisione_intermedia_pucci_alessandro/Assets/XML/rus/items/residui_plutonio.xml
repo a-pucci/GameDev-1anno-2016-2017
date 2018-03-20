@@ -1,0 +1,60 @@
+<object name="жидкий плутоний">
+  <description>
+    <command>text "Осталось несколько капель."</command>
+  </description>
+  <inventory>
+    <object name="assenzio">
+      <command>sound "pick_assenzio"</command>
+      <command>throw "assenzio"</command>
+      <command>throw "residui_plutonio"</command>
+      <command>pick n "assenzio_radioattivo"</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>expression "sarcastic"</command>
+      <command>text "Не думаю, что сойдет за удобрение." $90</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="flusso canalizzatore">
+      <command>pose d</command>
+      <command>text "Для этого нужно будет разогнаться до 88 миль в час... но не будем оставлять эту идею, хорошо?" $152</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="armadio recuperato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Жаль, что это не ДеЛориан." $153</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Жаль, что это не ДеЛориан." $153</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="pescato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Нужно перепроверить это по периодической таблице элементов. Боюсь, ты путаешь его с ртутью." $156</command>
+    </hotspot>
+    <hotspot ID="scienziato">
+      <command>text "Думаю, что оставлю остаток плутония себе." $164</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="urinatoio">
+      <command>expression "happy"</command>
+      <command>text "Тогда это будет... радиоактивное соло." $158</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="assenzio">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+</object>

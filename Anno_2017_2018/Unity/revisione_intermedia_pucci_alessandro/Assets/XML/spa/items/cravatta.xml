@@ -1,0 +1,42 @@
+<object name="corbata">
+  <description>
+    <command>text "Olvídate de que me la ponga."</command>
+  </description>
+  <inventory>
+    <object name="papillon">
+      <command>text "Dos estilos de vida contrapuestos." $96</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="papillon spruzzacqua">
+      <command>text "Dos estilos de vida contrapuestos." $96</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Oliver">
+      <command>load "ingresso_catacomba"</command>
+      <command>sound "use_cravatta"</command>
+      <command>show +"cravatta"</command>
+      <command>internal -g 1</command>
+      <command>if internal -"tomba di Stan" 1</command>
+      <command>wait 1</command>
+      <command>ost 0.5</command>
+      <command>cutscene "ingresso_catacomba"</command>
+      <command>ost 1</command>
+      <command>screen -w=1 -fo=300 -a</command>
+      <command>hide -"tomba di Stan"</command>
+      <command>hide -"tomba di Oliver"</command>
+      <command>hide +"cravatta"</command>
+      <command>hide +"papillon"</command>
+      <command>hide +"lastre_marmo_stan_oliver"</command>
+      <command>show -"cimitero_x_catacomba"</command>
+      <command>fi</command>
+      <command>throw "cravatta"</command>
+    </hotspot>
+    <hotspot ID="tomba di Stan">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Veo que ni cuando eras mayor sabías jugar con las formas." $97</command>
+    </hotspot>
+  </location>
+</object>

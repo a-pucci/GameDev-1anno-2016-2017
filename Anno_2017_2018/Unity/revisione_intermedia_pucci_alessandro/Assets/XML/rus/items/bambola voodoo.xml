@@ -1,0 +1,117 @@
+<object name="кукла-вуду">
+  <description>
+    <comment>[semi-citando un famoso meme in Rete]</comment>
+    <command>text "Я столько играл в «Остров обезьян», что по-другому выйти просто не могло."</command>
+  </description>
+  <inventory>
+    <object name="spillo">
+      <command>if in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Лучше держаться от этой комнаты на расстоянии вытянутой руки." 1</command>
+      <command>fie</command>
+      <command>if in "elenco_telefonico"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Лучше держаться от этой комнаты на расстоянии вытянутой руки." 1</command>
+      <command>fie</command>
+      <command>if in "toppa_bagno"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Лучше держаться от этой комнаты на расстоянии вытянутой руки." 1</command>
+      <command>fie</command>
+      <command>if status &gt;"spiaggia" 4</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Напоминаю, мы в другом веке." 2</command>
+      <command>fie</command>
+      <command>if not in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>0 pose d</command>
+      <command>0 text "Спасибо, эта штука начинала действовать мне на нер..." 3</command>
+      <command>0 expression "normal"</command>
+      <command>0 wait 1</command>
+      <command>0 expression "sarcastic"</command>
+      <command>0 text "Ну, как сказать... ты понял." 4</command>
+      <command>pose dr</command>
+      <command>expression "normal"</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_voodoo_doll"</command>
+      <command>animation -skinny 00 -o=58,6 "skinny_accoltella_bambola_voodoo"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "normal"</command>
+      <command>0 text "Я чего-то не понимаю. Не работает." 5</command>
+      <command>0 internal #"custode" -g 1</command>
+      <command>0 internal @"spillo" -g 1</command>
+      <command>0 internal @"bambola voodoo" -g 1</command>
+      <command>fie</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="pentacolo">
+      <command>if internal -"pentacolo" 0</command>
+      <command>pose d</command>
+      <command>text "И что именно прикажешь делать?" 1</command>
+      <command>fi</command>
+      <command>if internal -"pentacolo" 1</command>
+      <command>wait 0,5</command>
+      <command>sound "pick_doll"</command>
+      <command>bitmap -"pentacolo" "pentagramma_bambola_non_funzionante"</command>
+      <command>wait 1</command>
+      <command>text "Так, ладно, направить ненависть..." 2</command>
+      <command>sound "voodoo_ritual"</command>
+      <command>bitmap -skinny -o=-30,-5 "skinny_pensa"</command>
+      <command>wait 3,5</command>
+      <command>hide +"candela_baracca3_on"</command>
+      <command>hide +"candela_baracca4_on"</command>
+      <command>hide +"candela_baracca5_on"</command>
+      <command>hide +"candela_baracca6_on"</command>
+      <command>animation (1370,775) -p=fore -e=1500 "candele_pentagramma"</command>
+      <command>animation -"pentacolo" 00 -o=64,211 -p=fore "voodoo_ritual"</command>
+      <command>bitmap -"pentacolo" "pentagramma_bambola_funzionante"</command>
+      <command>show +"candela_baracca3"</command>
+      <command>show +"candela_baracca4"</command>
+      <command>show +"candela_baracca5"</command>
+      <command>show +"candela_baracca6"</command>
+      <command>bitmap -skinny ""</command>
+      <command>wait 1</command>
+      <command>pose d</command>
+      <command>text "Легче легкого. Все потому что я мастер в ненависти к людям." 3</command>
+      <command>lookat -"pentacolo"</command>
+      <command>wait 0,5</command>
+      <command>sound "pick_doll"</command>
+      <command>throw "bambola voodoo"</command>
+      <command>pick n "bambola voodoo funzionante"</command>
+      <command>bitmap -"pentacolo" "pentagramma"</command>
+      <command>nolook</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="libro di magia nera">
+      <command>text "Может, тут об этом что-нибудь написано." $36</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>expression "sarcastic"</command>
+      <command>text "Вуду и католики — это вам не кролики." $30</command>
+      <command>expression "normal"</command>
+      <command>text "Не стоит вспоминать определенные эпизоды средневековых гонений." $31</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Наука и Вуду друг друга не шибко жалуют." $34</command>
+    </hotspot>
+  </location>
+</object>

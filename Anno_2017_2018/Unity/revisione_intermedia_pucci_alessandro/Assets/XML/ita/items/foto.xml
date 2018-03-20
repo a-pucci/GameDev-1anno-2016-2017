@@ -1,0 +1,34 @@
+<object name="foto">
+  <description>
+    <command>text "Non è il soggetto migliore, ma sempre meglio che fotografare del cibo."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>text "Il livello di carne esposta della mia foto è troppo basso perchè possa aggiungerla alla collezione." $111</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera2">
+      <command>wait 0,5</command>
+      <command>cutscene "foto_telecamera"</command>
+      <command>throw "foto"</command>
+      <command>hide +"sala_telecamere/schermo_IIWW"</command>
+      <command>hide -"me"</command>
+      <command>show +"foto_telecamera"</command>
+      <command>internal -"sala_telecamere/sala Seconda Guerra Mondiale" -g 1</command>
+      <command>internal -"bomba disinnescata" 2</command>
+    </hotspot>
+    <hotspot ID="telecamera1">
+      <command>text "Telecamera sbagliata." $112</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>text "Telecamera sbagliata." $112</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>text "Telecamera sbagliata." $112</command>
+    </hotspot>
+  </location>
+</object>

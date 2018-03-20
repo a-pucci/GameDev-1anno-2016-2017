@@ -1,0 +1,34 @@
+<object name="foret">
+  <description>
+    <command>text "Bon, les piles ont été changées. Il manque seulement le foret."</command>
+  </description>
+  <inventory>
+    <object name="vite">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "vite"</command>
+      <command>throw "trapano"</command>
+    </object>
+    <object name="arpione">
+      <command>text "Ce n'est pas un grappin." $202</command>
+    </object>
+    <object name="forchetta">
+      <command>text "Ce n'est pas un grappin." $202</command>
+    </object>
+  </inventory>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ce n'est pas une pince." $271</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Je te rappelle que la perceuse n'a pas de mèche." $272</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ton manque d'attention est parfois très irritant." $270</command>
+    </hotspot>
+  </location>
+</object>

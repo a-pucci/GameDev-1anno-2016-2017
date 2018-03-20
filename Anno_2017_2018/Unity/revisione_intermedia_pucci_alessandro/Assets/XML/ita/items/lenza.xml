@@ -1,0 +1,47 @@
+<object name="lenza da pesca">
+  <description>
+    <command>text "Spero di avere più fortuna del precedente proprietario."</command>
+  </description>
+  <inventory>
+    <object name="forchetta">
+      <command>sound "pick_lenza"</command>
+      <command>throw "forchetta"</command>
+      <command>throw "lenza"</command>
+      <command>pick n "arpione"</command>
+    </object>
+  </inventory>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>bitmap -"me" "pomello_lenza"</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_lenza"</command>
+      <command>animation -skinny 00 -o=26,9 "skinny_lenza"</command>
+      <command>bitmap -"me" "pomello"</command>
+      <command>pose d</command>
+      <command>text "Nulla, non c'è proprio verso di svitarlo, questo dannato pomello." $233</command>
+      <command>internal #"mostro_polvere_forzuto" 1</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>text "Dubito che abboccherebbero." $234</command>
+    </hotspot>
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Temo che non sarebbe sufficiente una passata con del filo interdentale." $235</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="marlin">
+      <command>text "É già stato pescato... seppur con mezzi poco ortodossi." $236</command>
+    </hotspot>
+    <hotspot ID="scatoloni2">
+      <command>text "Buona idea, ma mi manca qualcosa per afferrarlo." $237</command>
+    </hotspot>
+  </location>
+  <location name="vicolo">
+    <hotspot ID="vecchia forchetta">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

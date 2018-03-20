@@ -1,0 +1,31 @@
+<object name="lampe de poche">
+  <description>
+    <command>text "Il n'y a pas de piles."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>if inventory "pila" &gt; 1</command>
+      <command>sound "pick_pile_torcia"</command>
+      <command>throw "pila" "pila" "torcia_scarica"</command>
+      <command>pick n "torcia"</command>
+      <command>fie</command>
+      <command>if inventory "pila" = 1</command>
+      <command>text "Il en faut deux."</command>
+      <command>fie</command>
+    </object>
+  </inventory>
+  <location name="sgabuzzino">
+    <hotspot ID="Boogeyman">
+      <command>expression "sarcastic"</command>
+      <command>text "Si seulement elle était chargée…" $178</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="pila stilo">
+      <command>text "Il vaudrait mieux la prendre d'abord." $95</command>
+    </hotspot>
+    <hotspot ID="batteria stilo">
+      <command>text "Il vaudrait mieux la prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+</object>

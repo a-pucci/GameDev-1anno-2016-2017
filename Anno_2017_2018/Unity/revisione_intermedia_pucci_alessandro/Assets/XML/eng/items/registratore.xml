@@ -1,0 +1,49 @@
+<object name="recorder">
+  <description>
+    <command>text "It's the old tape recorder Ronald's father used when he was in college."</command>
+  </description>
+  <inventory />
+  <location name="tv">
+    <hotspot ID="televisore">
+      <command>hide +"mano_telecomando"</command>
+      <command>sound "tv_remote_control"</command>
+      <command>animation (0,492) -p=fore "mano_telecomando_out"</command>
+      <command>wait 1</command>
+      <command>sound "tv_police_rec"</command>
+      <command>animation (-25,565) -p=fore "mano_registratore1"</command>
+      <command>animation (-25,565) -p=fore "mano_registratore2"</command>
+      <command>animation (-25,565) -p=fore "mano_registratore2"</command>
+      <command>animation (-25,565) -p=fore "mano_registratore2"</command>
+      <command>animation (-25,565) -p=fore "mano_registratore2"</command>
+      <command>animation (-25,565) -p=fore "mano_registratore2"</command>
+      <command>animation (-25,565) -p=fore "mano_registratore2"</command>
+      <command>animation (-25,565) -p=fore "mano_registratore3"</command>
+      <command>wait 0,5</command>
+      <command>sound "pick_registratore_polizia"</command>
+      <command>pick n "registrazione_polizia"</command>
+      <command>throw "registratore"</command>
+      <command>wait 1</command>
+      <command>animation (0,492) -p=fore "mano_telecomando_in"</command>
+      <command>show +"mano_telecomando"</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="TV">
+      <command>text "I should turn it on first." $262</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>text "Could you please make a statement on the record?" $263</command>
+      <command>text -"barman" -c=lblue "..." $264</command>
+      <command>text "Professional secrecy, is it?" $265</command>
+    </hotspot>
+  </location>
+  <location name="vicolo">
+    <hotspot ID="senzatetto">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Why should I record him sneezing?" $266</command>
+    </hotspot>
+  </location>
+</object>

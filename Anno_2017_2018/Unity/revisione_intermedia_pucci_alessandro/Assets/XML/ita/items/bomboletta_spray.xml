@@ -1,0 +1,80 @@
+<object name="bomboletta spray">
+  <description>
+    <command>text "Posso finalmente dare sfogo all'artista che c'è in me."</command>
+  </description>
+  <inventory>
+    <object name="fiammiferi">
+      <command>text "Farebbe una fiammata di quelle storiche." $105</command>
+      <command>text "Dopo l'incidente con la casa sull'albero, è il caso di starsene buoni, almeno per un po'." $106</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="pixel morto">
+      <command>text "Non è così che si cambiano i valori R,G,B." $76</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Stan">
+      <command>text "Non voglio deturpare la loro memoria." $77</command>
+    </hotspot>
+    <hotspot ID="tomba di Oliver">
+      <command>text "Non voglio deturpare la loro memoria." $77</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="lapide di Wilson">
+      <command>text "Non voglio deturpare la loro memoria." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Woodie">
+      <command>text "Non voglio deturpare la loro memoria." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Wilbur">
+      <command>text "Non voglio deturpare la loro memoria." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Willow">
+      <command>text "Non voglio deturpare la loro memoria." $77</command>
+    </hotspot>
+  </location>
+  <location name="elenco_telefonico">
+    <hotspot ID="annuncio_hotline">
+      <command>text "Sono contro la censura." $78</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="Pinhead addormentato">
+      <command>text "Sarebbe uno scherzo divertente, se solo la vernice non fosse indelebile." $79</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="barattolo di vernice">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "É già carica." $80</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "Potrei utilizzare il classico trucco della bomboletta, ma Ralph se ne accorgerebbe in un attimo." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "Potrei utilizzare il classico trucco della bomboletta, ma Ralph se ne accorgerebbe in un attimo." $81</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "Potrei utilizzare il classico trucco della bomboletta, ma Ralph se ne accorgerebbe in un attimo." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "Potrei utilizzare il classico trucco della bomboletta, ma Ralph se ne accorgerebbe in un attimo." $81</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="Manet">
+      <command>text "Non intendo certo deturpargli il dipinto." $82</command>
+    </hotspot>
+  </location>
+</object>

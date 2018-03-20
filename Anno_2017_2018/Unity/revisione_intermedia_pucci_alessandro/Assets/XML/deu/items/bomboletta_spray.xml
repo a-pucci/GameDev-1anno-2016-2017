@@ -1,0 +1,80 @@
+<object name="Sprühdose">
+  <description>
+    <command>text "Jetzt kann ich endlich den Künstler in mir entfesseln."</command>
+  </description>
+  <inventory>
+    <object name="fiammiferi">
+      <command>text "Das würde eine Feuersbrunst von historischen Dimensionen geben." $105</command>
+      <command>text "Nach dem Vorfall mit dem Baumhaus solltest man vielleicht eine Weile den Ball lieber ganz flach halten." $106</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="pixel morto">
+      <command>text "So ändert man doch nicht die RGB-Werte." $76</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Stan">
+      <command>text "Ich will deren Andenken nicht schänden." $77</command>
+    </hotspot>
+    <hotspot ID="tomba di Oliver">
+      <command>text "Ich will deren Andenken nicht schänden." $77</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="lapide di Wilson">
+      <command>text "Ich will deren Andenken nicht schänden." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Woodie">
+      <command>text "Ich will deren Andenken nicht schänden." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Wilbur">
+      <command>text "Ich will deren Andenken nicht schänden." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Willow">
+      <command>text "Ich will deren Andenken nicht schänden." $77</command>
+    </hotspot>
+  </location>
+  <location name="elenco_telefonico">
+    <hotspot ID="annuncio_hotline">
+      <command>text "Ich bin gegen Zensur." $78</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="Pinhead addormentato">
+      <command>text "Das wäre ein guter Witz, wenn nur die Farbe halten würde." $79</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="barattolo di vernice">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Schon geladen." $80</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "Ich könnte den alten Trick mit der Sprühdose versuchen, aber Ralph würde das sofort spitzkriegen." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "Ich könnte den alten Trick mit der Sprühdose versuchen, aber Ralph würde das sofort spitzkriegen." $81</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "Ich könnte den alten Trick mit der Sprühdose versuchen, aber Ralph würde das sofort spitzkriegen." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "Ich könnte den alten Trick mit der Sprühdose versuchen, aber Ralph würde das sofort spitzkriegen." $81</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="Manet">
+      <command>text "Ich will doch nicht sein Gemälde verhunzen." $82</command>
+    </hotspot>
+  </location>
+</object>

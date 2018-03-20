@@ -1,0 +1,217 @@
+<location>
+  <script>
+    <command>1 show +"patch_poltrona_no_ombre"</command>
+    <command>1 show skinny (1992,780)</command>
+    <command>1 pose ul</command>
+    <command>1 screen -w=10 -fo=1500</command>
+    <command>1 status 0</command>
+  </script>
+  <entry name="giardino" X="912" Y="1030" pose="u" />
+  <entry name="primo_piano" X="491" Y="857" pose="d" />
+  <entry name="cucina" X="1218" Y="698" pose="d" />
+  <scene bitmap="patch_poltrona_no_ombre" X="1578" Y="273" position="back" animated="False" />
+  <scene bitmap="casse#1_ombra" X="3110" Y="42" position="back" animated="True" speed="83" loop="True" />
+  <scene bitmap="casse#2_ombra" X="3110" Y="42" position="back" animated="True" speed="83" loop="True" />
+  <scene bitmap="postazione_dj" X="3341" Y="534" position="back" animated="False" />
+  <scene bitmap="luce_piatto_dj" X="3487" Y="389" position="default" animated="False" />
+  <scene bitmap="casse#1_left" X="3110" Y="42" position="back" animated="True" speed="83" loop="True" />
+  <scene bitmap="casse#1_right" X="3110" Y="42" position="default" animated="True" speed="83" loop="True" />
+  <scene bitmap="casse#2_left" X="3110" Y="42" position="back" animated="True" speed="83" loop="True" />
+  <scene bitmap="casse#2_right" X="3110" Y="42" position="default" animated="True" speed="83" loop="True" />
+  <scene bitmap="bordo_dj_set" X="3341" Y="542" position="back" animated="False" />
+  <scene bitmap="pedobear_balla" X="2441" Y="171" position="default" animated="True" loop="True" />
+  <scene bitmap="punk_balla" X="2003" Y="282" position="default" animated="True" loop="True" />
+  <scene bitmap="daft_guy_balla" X="2717" Y="275" position="default" animated="True" loop="True" />
+  <scene bitmap="barile_birra" X="937" Y="472" position="fore" animated="False" />
+  <scene bitmap="lattina_blu_sedia_rotelle" X="439" Y="885" position="default" animated="False" />
+  <scene bitmap="lattina_sedia_rotelle" X="534" Y="880" position="default" animated="False" />
+  <hotspots>
+    <goto ID="piano_terra_x_bonus">
+      <go>
+        <command>goto "bonus"</command>
+      </go>
+    </goto>
+    <item ID="sedia a rotelle">
+      <look>
+        <command>text "Кажется, кто-то тут хорошенько так напился."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Как хорошо, что мои ноги еще работают."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="barile">
+      <look>
+        <command>text "Пы-ы-ы-ы-ы-ыво!"</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Что тебе еще нужно знать?"</command>
+      </look>
+      <pick>
+        <command>text "Я не могу ходить с кегом пива на спине."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Лучше найти менее дикую систему."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Может, хватит уже на ночь напиваться..."</command>
+      </talk>
+    </item>
+    <character ID="testa di cavallo">
+      <look>
+        <command>text "Из личного архива Вито Корлеоне..."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Если бы я не был экспертом по спецэффектам, но поверил бы, что она настоящая."</command>
+        <command>lookat -"me"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Питер Джексон просто в сравнение не идет."</command>
+        <command>wait 0,3</command>
+        <command>expression "scared"</command>
+        <command>wait 0,8</command>
+        <command>expression "normal"</command>
+      </look>
+      <talk>
+        <command>text "*ржет*"</command>
+        <command>text -"me" "Кончай."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Один раз тебя кончили, не достаточно?"</command>
+        <command>text -"me" "Победил."</command>
+      </talk>
+    </character>
+    <character ID="Frank">
+      <look>
+        <command>pose d</command>
+        <command>text "Он не выглядит очень располагающим."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>dialog "frank"</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -n "28 дней, 6 часов, 42 минуты, 12 секунд..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -n "...тогда-то нашему миру придет конец."</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 animation -"me" 00 -o=48,0 -c "frank_idle"</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -n "Буря близко."</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -n "Вот он я. Подойди ближе."</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+        <command>0 animation -"me" 00 -o=48,0 -c "frank_idle"</command>
+        <command>0 wait 0,5</command>
+        <command>0 wait 0,5</command>
+      </indipendent>
+    </character>
+    <character ID="Morpheus">
+      <look>
+        <command>pose d</command>
+        <command>text "Должно быть, он очень боится света."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>pause -"Frank"</command>
+        <command>0 text "Добрый вечер, как дела?"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Меня зовут Скинни."</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" "Наконец-то. Добро пожаловать. Прошу проходи. садись."</command>
+        <command>0 text "Полагаю, ты заметил, что у нас только один стул, да?"</command>
+        <command>0 text -"me" "Понимаешь, должно быть, ты провел последние годы в поисках меня, но я искал тебя всю мою жизнь."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Вообще-то мы только что встретились."</command>
+        <command>0 text "Не то, чтобы я возражал, но... Не думаю, что ты меня заводишь."</command>
+        <command>0 text -"me" "Это твой последний шанс. После этого пути назад не будет."</command>
+        <command>0 text "Спасибо, но я откажусь и пойду по своим делам."</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "morpheus"</command>
+      </talk>
+      <indipendent>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>animation -"me" 00 -o=1,1 -c "morpheus_idle"</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+      </indipendent>
+    </character>
+    <character ID="deejay">
+      <look>
+        <command>pose d</command>
+        <command>text "Я ошибаюсь, или это тот потерявшийся пришелец?"</command>
+        <command>lookat -"me"</command>
+        <command>wait 1</command>
+        <command>text "Посмотрите на дедушку...!"</command>
+      </look>
+      <talk>
+        <command>0 expression "happy"</command>
+        <command>0 text "Мои поздравления, отличная музыка!"</command>
+        <command>1 text "Можете включить музыку на полную?"</command>
+        <command>wait 1,5</command>
+        <command>pose d</command>
+        <command>expression "normal"</command>
+        <command>text "Не... не знаю, слышит ли он меня."</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=29,27 -c "dj_idle"</command>
+      </indipendent>
+    </character>
+    <goto ID="piano_terra_x_primo_piano" icon="ur" PX="903" PY="-133">
+      <go>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+    <goto ID="piano_terra_x_giardino" icon="d" PX="908" PY="1200">
+      <go>
+        <command>goto "giardino"</command>
+      </go>
+    </goto>
+    <goto ID="piano_terra_x_cucina" icon="u" PX="1226" PY="-31">
+      <go>
+        <command>goto "cucina"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

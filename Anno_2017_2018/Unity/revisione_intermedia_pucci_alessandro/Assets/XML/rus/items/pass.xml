@@ -1,0 +1,19 @@
+<object name="пропуск">
+  <description>
+    <command>text "Пропуск в городской музей."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>pose d</command>
+      <command>text "Не стоит; будет слишком грубо." $23</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Так не сработает." $137</command>
+    </hotspot>
+  </location>
+</object>

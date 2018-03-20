@@ -1,0 +1,38 @@
+<object name="kit d'imballaggio">
+  <description>
+    <command>text "L'ultimo step che mi divide da Ronald."</command>
+    <command>wait 0,5</command>
+    <command>text "O almeno spero."</command>
+  </description>
+  <inventory />
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>load "outro1"</command>
+      <command>pose dl</command>
+      <command>wait 0,5</command>
+      <command>text "Sto aspettando un corriere per portar via l'armadio."</command>
+      <command>text "Non è che potresti impacchettarmici all'interno con questo kit?"</command>
+      <command>wait 0,5</command>
+      <command>text "Devo fare un bello scherzetto..."</command>
+      <command>text -"giocatore_basso" "Amico, sono sempre pronto a dare una mano per questo genere di cose."</command>
+      <command>wait 0,5</command>
+      <command>text -"giocatore_basso" "Come vorrei poter vedere la sua faccia...."</command>
+      <command>text -"giocatore_basso" "Non riesco a immaginare che spavento si prenderà."</command>
+      <command>text "Neppure io, credimi."</command>
+      <command>screen c -fi=2500 -w=2000</command>
+      <command>hide skinny</command>
+      <command>sound "armadio_impachettato"</command>
+      <command>bitmap -"me" "armadio_incartato"</command>
+      <command>hide -"giocatore_basso"</command>
+      <command>screen c -fo=2500 -w=1500</command>
+      <command>wait 2</command>
+      <command>sound "furgone"</command>
+      <command>animation (2135,423) -p=back -e=1500 "corriere_arriva"</command>
+      <command>stop -ost</command>
+      <command>cutscene -x "outro1"</command>
+      <command>load "outro2"</command>
+      <command>cutscene -x "outro2"</command>
+      <command>goto -nofade "cameretta_ronald"</command>
+    </hotspot>
+  </location>
+</object>

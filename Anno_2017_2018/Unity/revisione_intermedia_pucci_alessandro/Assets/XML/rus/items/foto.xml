@@ -1,0 +1,34 @@
+<object name="фотография">
+  <description>
+    <command>text "Не самый лучший образец для фото, но все же лучше, чем фоткать еду."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>text "Уровень плоти на фотографии слишком мал, чтобы попасть в эту подборку." $111</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera2">
+      <command>wait 0,5</command>
+      <command>cutscene "foto_telecamera"</command>
+      <command>throw "foto"</command>
+      <command>hide +"sala_telecamere/schermo_IIWW"</command>
+      <command>hide -"me"</command>
+      <command>show +"foto_telecamera"</command>
+      <command>internal -"sala_telecamere/sala Seconda Guerra Mondiale" -g 1</command>
+      <command>internal -"bomba disinnescata" 2</command>
+    </hotspot>
+    <hotspot ID="telecamera1">
+      <command>text "Не та камера." $112</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>text "Не та камера." $112</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>text "Не та камера." $112</command>
+    </hotspot>
+  </location>
+</object>

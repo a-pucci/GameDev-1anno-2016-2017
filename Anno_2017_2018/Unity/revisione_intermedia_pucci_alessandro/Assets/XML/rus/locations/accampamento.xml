@@ -1,0 +1,318 @@
+<location>
+  <script>
+    <command>0 stop -ost</command>
+    <command>0 hide -"vecchia conoscenza"</command>
+    <command>0 hide +"maiali"</command>
+    <command>0 screen c -w=2500 "Тем временем..."</command>
+    <command>0 cutscene -x "arrivo_pacco"</command>
+    <command>0 screen c -w=500 -fo=1500 -a</command>
+    <command>0 status &gt;"spiaggia" 3</command>
+    <command>0 show -"spiaggia/bocchetta_carburatore"</command>
+    <command>0 bitmap -"spiaggia/macchina del tempo" "macchina_tempo_ok"</command>
+    <command>0 internal -"spiaggia/macchina del tempo" -g 1</command>
+    <command>0 internal #"scienziato" 1</command>
+    <command>0 dialog -r "Stai aspettando qualcuno?" "scienziato"</command>
+    <command>0 internal -"spiaggia/scienziato" -g -i 1</command>
+    <command>0 wait 0,5</command>
+    <command>0 show -"vecchia conoscenza"</command>
+    <command>0 show +"maiali"</command>
+    <command>0 internal &gt;"accampamento" -i -g 1</command>
+    <command>0 ost</command>
+    <command>0 wait 1,5</command>
+    <command>0 status 1</command>
+  </script>
+  <indipendent>
+    <command>0 wait 20</command>
+    <command>1 sound -l "cicada_accampamento"</command>
+    <command>1 sound -l -x=2610 "bidone_fuoco"</command>
+    <command>1 wait 10</command>
+  </indipendent>
+  <entry name="mappa" X="3356" Y="900" pose="l" />
+  <scene bitmap="finestra_chiosco" X="306" Y="305" position="default" animated="False" />
+  <scene bitmap="camper" X="1168" Y="-14" position="back" animated="True" loop="True" />
+  <scene bitmap="murales" X="2924" Y="374" position="back" animated="False" />
+  <scene bitmap="bottiglia_rotta" X="1097" Y="995" position="fore" animated="False" />
+  <scene bitmap="barattolo" X="871" Y="1008" position="fore" animated="False" />
+  <scene bitmap="fuoco_barile" X="2394" Y="507" position="default" animated="True" loop="True" />
+  <scene bitmap="maiali" X="1011" Y="596" position="back" animated="True" start="4000" stop="8000" sound="maiali" loop="True" />
+  <scene bitmap="afk" X="421" Y="562" position="back" animated="False" />
+  <hotspots>
+    <character ID="marionettista">
+      <look>
+        <command>text "Лучший костюм на Хэллоуин."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Если это вообще костюм."</command>
+      </look>
+      <talk>
+        <command>text -"zingara" "Эй, поговори со мной."</command>
+      </talk>
+    </character>
+    <character ID="zingara">
+      <look>
+        <command>if inventory "buono"</command>
+        <command>text "Полагаю, мне нужно спросить ее насчет приза." 1</command>
+        <command>fie</command>
+        <command>text "Они кукла или человек? Так сложно сказать." 2</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Эм... привет?"</command>
+        <command>0 text -"me" "Что ты так удивляешься? Куклу никогда не видел?"</command>
+        <command>0 expression "normal"</command>
+        <command>0 text "Конечно, но не такую, которой на невидимых ниточках управляет безголовый кукольник."</command>
+        <command>0 wait 1</command>
+        <command>0 text "И которая, кстати, умеет говорить."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression -"me" "angry"</command>
+        <command>0 text -"me" "Тебе не нравится, что ты не видишь ниточки?"</command>
+        <command>0 text "Ну... нет-нет."</command>
+        <command>0 text -"me" "Или куклам законом запрещено иметь такой голос, как у меня?"</command>
+        <command>0 text "Я не это имел в виду."</command>
+        <command>0 wait 1,5</command>
+        <command>0 text "Вы, женщины, и правда невыносимы."</command>
+        <command>0 internal 1</command>
+        <command>1 text "Извини, если я так настойчив, но я правда не могу понять — ты кукла или настоящий человек." 10</command>
+        <command>1 text -"me" "Настоящая или кукла... кому какое дело?" 11</command>
+        <command>1 text -"me" "Разве лишь наша внешность определяет, кто мы есть?" 12</command>
+        <command>1 expression "sarcastic"</command>
+        <command>1 text "*Ну, я скелет, потому что умер.*" 13</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"marionettista" 00 -o=24,26 -c -a "marionettista_idle"</command>
+        <command>wait 0,2</command>
+        <command>animation -"me" 00 -o=1,28 -c "zingara_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="vecchia conoscenza">
+      <look>
+        <command>text "Скорее всего, он причапал сюда, чтобы найди уединение."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Я и так уже достаточно его помучил, пусть отдыхает."</command>
+      </talk>
+      <indipendent>
+        <command>sound "homeless"</command>
+        <command>animation -"me" 00 -o=0,0 -c "barbone_snorlax"</command>
+      </indipendent>
+    </character>
+    <item ID="bomboletta spray">
+      <look>
+        <command>text "Должно быть, райтер забыл его впопыхах."</command>
+      </look>
+      <pick>
+        <command>sound "pick_spray_can"</command>
+        <command>pick y "bomboletta_spray"</command>
+      </pick>
+      <use>
+        <command>text "Кем бы автор ни был, постарался он на славу."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="writer">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Ремень бы ему не помешал."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>wait 0,5</command>
+        <command>pose u</command>
+        <command>wait 0,5</command>
+        <command>text "Хм-м-м..."</command>
+        <command>wait 0,5</command>
+        <command>lookat -"me"</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Что это, искусство постмодерна?"</command>
+        <command>expression "normal"</command>
+        <command>text -"me" "Эх... ты прав!"</command>
+        <command>text -"me" "Я и правда не могу придумать ничего интересного."</command>
+        <command>wait 0,5</command>
+        <command>text "Типа чего?"</command>
+        <command>text -"me" "Ну, братан, не знаю..."</command>
+        <command>text -"me" "Что-то вызывающее сильные эмоции, привлекает глаз."</command>
+        <command>text -"me" "Что-то не дающее покоя, но... необычное, ну хоть разок."</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Я устал писать «МЕНТЫ ЛОХИ» на памятниках, оу!"</command>
+        <command>text -"me" "Понял меня, бро?"</command>
+        <command>wait 0,5</command>
+        <command>text "Я подумаю. Может, что и подскажу."</command>
+        <command>text -"me" "Славно."</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "writer"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <item ID="pixel morto">
+      <look>
+        <command>pose d</command>
+        <command>text "Думаю, ты нашел самую бесполезную активную точку во всей игре."</command>
+        <command>achievement "pixel_hunting"</command>
+      </look>
+      <pick>
+        <command>wait 0,5</command>
+        <command>text "Ладно, я его удалил."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Но если ты все еще видишь его, ну... тогда у меня для тебя плохие новости."</command>
+        <command>achievement "pixel_hunting"</command>
+      </pick>
+      <use>
+        <command>text "Не думаю, что он пригодится."</command>
+        <command>achievement "pixel_hunting"</command>
+      </use>
+      <talk>
+        <command>text "Ты и правда мертвый или твои параметры RGB выставлены на 0,0,0?"</command>
+        <command>achievement "pixel_hunting"</command>
+      </talk>
+    </item>
+    <character ID="barbone">
+      <look>
+        <command>text "Он же живой человек."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>text "Извини, что потревожил, но ты выглядишь знакомо."</command>
+        <command>text -"me" "Возможно, ты видел меня в игровом шоу, в прошлом."</command>
+        <command>text -"me" "Знаешь ли, однажды я был про-геймером."</command>
+        <command>wait 0,5</command>
+        <command>text "Судя по твоему нынешнему состоянию, что-то пошло не так."</command>
+        <command>text -"me" "Судорога запястья. Я медленно терял сноровку и реакцию. И меня исключили из профессиональной ротации."</command>
+        <command>text "А я думал, что ты получил стрелу в руку или что-то типа того."</command>
+        <command>wait 0,5</command>
+        <command>expression -"me" "perplexed"</command>
+        <command>text -"me" "Стрелу в руку?"</command>
+        <command>text "Никогда не игра в Скайрим?"</command>
+        <command>expression -"me" ""</command>
+        <command>text -"me" "Извини, только драки."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "*Тогда ты страдаешь за свои грехи.*"</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>animation -"me" 00 -o=40,32 -c "bing_bong"</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+      </indipendent>
+    </character>
+    <character ID="Wally">
+      <look />
+      <talk />
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "waldo"</command>
+      </indipendent>
+    </character>
+    <item ID="mangiatoia">
+      <look>
+        <command>text "Даже представить не могу, что внутри этого корыта."</command>
+      </look>
+      <pick>
+        <command>text "Не стоит. Тогда они направят на меня весь свой гнев."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "А я все еще хочу ходить с двумя руками."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Кто ты думаешь я такой?"</command>
+      </use>
+      <talk>
+        <command>text "Славная жижа, эм, свиночки?"</command>
+      </talk>
+    </item>
+    <item ID="covone di paglia">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Именно так и должно было произойти."</command>
+      </look>
+      <pick>
+        <command>0 sound "covone_paglia"</command>
+        <command>0 wait 1</command>
+        <command>0 sound "pick_pirite"</command>
+        <command>0 pick n "spillo"</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 wait 0,7</command>
+        <command>0 text "В видеоиграх некоторые фразы воспринимаются слишком буквально."</command>
+        <command>0 internal 1</command>
+        <command>1 text "Я не хочу впрягаться в еще один невыполнимый поиск."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Я сегодня уже прыгал. Больше никаких «Прыжков веры» на сегодня."</command>
+      </use>
+      <talk>
+        <command>text "Внезапно прыгать с одной крыши на другую не так весело, да?"</command>
+      </talk>
+    </item>
+    <item ID="scatola di Eggo">
+      <look>
+        <command>text "Сомневаюсь, что люди из «Эгго» когда-нибудь расплатятся с братьями Даффер."</command>
+        <command>text "Интересно, насколько возросли их продажи после показа «Странных дел»!"</command>
+      </look>
+      <pick>
+        <command>text "На твоем месте я бы не стал этого делать."</command>
+        <command>text "Та мелкая девочка перестает себя контролировать, когда выходит из себя."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Ладно, думаю, ты осведомлен о моей пищеварительной системе и костной структуре, но я не обладаю паранормальными способностями и странной любовью к вафлям."</command>
+      </use>
+      <talk>
+        <comment>[parlando in direzione della boscaglia, quindi un minimo grida]</comment>
+        <command>pose ur</command>
+        <command>text "Ты любишь поливать их кровушкой вместо кленового сиропа, да, Демогоргон?"</command>
+      </talk>
+    </item>
+    <item ID="fisarmonica">
+      <look>
+        <command>text "Для меня этот инструмент навечно будет связан с двумя собаками, кушающими спагетти с тефтелями в лунном свете."</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Большое спасибо, Уолт."</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Ты, наверное, уже понял, что я не очень-то жалую музыкальные инструменты."</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Не уверен, что он что-то сыграет для меня, даже если и попрошу."</command>
+      </talk>
+    </item>
+  </hotspots>
+</location>

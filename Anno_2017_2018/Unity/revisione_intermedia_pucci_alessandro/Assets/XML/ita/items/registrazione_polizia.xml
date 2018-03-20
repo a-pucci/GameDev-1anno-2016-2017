@@ -1,0 +1,28 @@
+<object name="registrazione della rapina">
+  <description>
+    <command>text "Doveva essere davvero qualcosa di serio per far mobilitare tutte quelle pattuglie."</command>
+  </description>
+  <inventory>
+    <object name="megafono">
+      <command>sound "pick_casett_mega"</command>
+      <command>pick n "antifurto_fai_da_te"</command>
+      <command>throw "megafono"</command>
+      <command>throw "registrazione_polizia"</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>text "In effetti sarebbe un po' la colonna sonora della sua vita." $267</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "Non la sentirà mai da così lontano." $268</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="megafono">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

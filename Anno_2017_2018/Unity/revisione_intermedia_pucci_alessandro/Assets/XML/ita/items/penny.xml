@@ -1,0 +1,64 @@
+<object name="penny">
+  <description>
+    <command>text "Speravo in un tasso di cambio più vantaggioso."</command>
+    <command>text "Maledette banche."</command>
+  </description>
+  <inventory />
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>if shown -"cornetta alzata"</command>
+      <command>sound "inserimento_moneta"</command>
+      <command>animation (813,267) -p=fore "moneta_in"</command>
+      <command>status 2</command>
+      <command>fie</command>
+      <command>text -"me" "Prima di inserire le monete, andrebbe alzata la cornetta."</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Li spenderebbe tutti per comprarsi altri alcolici." $37</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>text "Non voglio metterlo in difficoltà." $38</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "Non sarebbero comunque bastati per pagare le spese della gru." $138</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Temo servirebbe tutt'altra cifra per entrare nella loro 'cerchia'." $45</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>pose d</command>
+      <command>text "Ricordi la storia dello 'spogliatevi di tutti i vostri averi?'" $46</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>pose d</command>
+      <command>text "Non necessito dei suoi servigi." $139</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="calderone_1981">
+      <command>sound "pick_monete"</command>
+      <command>wait 0,5</command>
+      <command>text "Fatto."</command>
+      <command>throw "penny"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_presente" 2</command>
+      <command>internal -"calderone_1861" 2</command>
+    </hotspot>
+    <hotspot ID="calderone_presente">
+      <command>expression "sarcastic"</command>
+      <command>text "Non siamo nell'era giusta." $49</command>
+    </hotspot>
+    <hotspot ID="calderone_1861">
+      <command>expression "sarcastic"</command>
+      <command>text "Non siamo nell'era giusta." $49</command>
+    </hotspot>
+  </location>
+</object>

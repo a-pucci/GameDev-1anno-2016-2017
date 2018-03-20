@@ -1,0 +1,178 @@
+<location>
+  <script />
+  <entry name="primo_piano" X="1322" Y="1005" pose="ul" />
+  <scene bitmap="arbre_magique1" X="266" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="arbre_magique2" X="969" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="arbre_magique3" X="1595" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="orsetto_blink" X="1203" Y="701" position="back" animated="True" start="1500" stop="4000" loop="True" />
+  <scene bitmap="comodino_rabbit" X="0" Y="976" position="fore" animated="False" />
+  <scene bitmap="altalena" X="0" Y="0" position="back" animated="True" loop="True" />
+  <hotspots>
+    <item ID="anelli">
+      <look>
+        <command>text "Parece que son alianzas de boda."</command>
+      </look>
+      <pick>
+        <command>sound "pick_anelli"</command>
+        <command>pick y "anelli"</command>
+      </pick>
+      <use>
+        <command>pause -ost</command>
+        <command>sound "game_over"</command>
+        <command>blackscreen</command>
+        <command>wait 1</command>
+        <command>blackscreen</command>
+        <command>screen c -w=2500 "GAME OVER"</command>
+        <command>resume -ost</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Era broma, aún no ha llegado mi hora."</command>
+        <command>achievement "game_over"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="lenzuolo rosso">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Eso explica los cuernos."</command>
+      </look>
+      <pick>
+        <command>sound "pick_lenzuolo"</command>
+        <command>pick y "lenzuolo"</command>
+      </pick>
+      <use>
+        <command>text "No quiero que mis fluidos yazcan con los que ya hay en la cama."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Aunque, de hecho, yo ya hace tiempo que no tengo fluido alguno."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <action ID="profilattico extra-large">
+      <act>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "¡Qué asco!"</command>
+      </act>
+    </action>
+    <item ID="rabbit">
+      <look>
+        <command>text "Una prueba más de la gran estima que el bello sexo tiene por los conejos."</command>
+      </look>
+      <pick>
+        <command>expression "sarcastic"</command>
+        <command>text "Relájate un poquito."</command>
+      </pick>
+      <use>
+        <command>0 internal -g -i 1</command>
+        <command>0 internal 1</command>
+        <command>1 internal -g -i 0</command>
+        <command>1 internal 0</command>
+      </use>
+      <talk>
+        <command>text "No puedo ni imaginarme lo que diría si pudiese hablar."</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 5</command>
+        <command>1 sound -l "rabbit"</command>
+        <command>1 animation -"me" 00 -o=35,38 -c "rabbit_vibra"</command>
+      </indipendent>
+    </item>
+    <item ID="Chucky">
+      <look>
+        <command>text "Da aún más miedo a tamaño natural."</command>
+      </look>
+      <pick>
+        <command>text "Me temo que podría ocurrir lo contrario."</command>
+      </pick>
+      <use>
+        <command>expression "scared"</command>
+        <command>0 text -"me" -c=rrred "Me gusta que me abracen."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -nt "*glup*"</command>
+        <command>0 internal 1</command>
+        <command>1 text -"me" -c=rrred "Hola, soy Chucky, y seré tu amigo hasta el final."</command>
+        <command>1 wait 0,5</command>
+        <command>1 text -nt "*glup*"</command>
+        <command>1 internal 2</command>
+        <command>2 text -"me" -c=rrred "¿Quieres jugar?"</command>
+        <command>2 wait 0,5</command>
+        <command>2 text -nt "*glup*"</command>
+        <command>2 internal 0</command>
+      </use>
+      <talk>
+        <command>text "Lo siento, Charles, pero no me puedes añadir a tu colección."</command>
+        <command>pose d</command>
+        <command>text "Las ventajas de estar muerto."</command>
+      </talk>
+    </item>
+    <item ID="parrucca">
+      <look>
+        <command>text "Algunas veces lo mejor es no hacer preguntas..."</command>
+      </look>
+      <pick>
+        <command>text "Pues el color haría juego con mi sudadera."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Es broma, evidentemente. Olvídalo."</command>
+      </pick>
+      <use>
+        <command>text "Por contrato, solo estoy obligado a llevar las orejas de Mickey Mouse."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "¿Verdad, desarrolladores?"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="amante nascosto">
+      <look>
+        <command>pose d</command>
+        <command>text "¿Aún hay quien sigue jugando al escondite?"</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Los hay que no quieren madurar."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>expression -"me" "l" </command>
+        <command>text "¿Qué haces ahí escondido?"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=lblue "Cómo lo diría... Es posible que me haya metido en un buen lío."</command>
+        <command>wait 0,5</command>
+        <command>text "¿Quién te está buscando?"</command>
+        <command>text "En esta habitación no paran de entrar parejas."</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=lblue "Pues... todo el mundo."</command>
+        <command>expression "perplexed"</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=lblue "Digamos que últimamente he metido bastante."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Mis respetos."</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "amante_looking_around"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "amante_blink"</command>
+      </indipendent>
+    </character>
+    <goto ID="camera_letto_x_primo_piano" icon="dr" PX="1666" PY="1192">
+      <go>
+        <command>sound "door_open"</command>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

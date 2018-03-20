@@ -1,0 +1,21 @@
+<object name="sveglia">
+  <description>
+    <command>text "Ho paura che quell'ultima caduta le sia stata letale."</command>
+  </description>
+  <inventory>
+    <object name="ingranaggi">
+      <command>sound "pick_clock_funzionante"</command>
+      <command>pick n "sveglia_funzionante"</command>
+      <command>throw "ingranaggi"</command>
+      <command>throw "sveglia"</command>
+    </object>
+  </inventory>
+  <location name="vicolo">
+    <hotspot ID="senzatetto">
+      <command>pose d</command>
+      <command>text "Ti ricordo che la sveglia è rotta." $269</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Questo tuo deficit d'attenzione talvolta è particolarmente irritante." $270</command>
+    </hotspot>
+  </location>
+</object>

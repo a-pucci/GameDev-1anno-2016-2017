@@ -1,0 +1,34 @@
+<object name="photo">
+  <description>
+    <command>text "Ce n'est pas le meilleur sujet, mais c'est toujours mieux que des photos de nourriture."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>text "Le niveau de chair exposé dans ma photographie est trop faible pour être ajouté à cette collection." $111</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera2">
+      <command>wait 0,5</command>
+      <command>cutscene "foto_telecamera"</command>
+      <command>throw "foto"</command>
+      <command>hide +"sala_telecamere/schermo_IIWW"</command>
+      <command>hide -"me"</command>
+      <command>show +"foto_telecamera"</command>
+      <command>internal -"sala_telecamere/sala Seconda Guerra Mondiale" -g 1</command>
+      <command>internal -"bomba disinnescata" 2</command>
+    </hotspot>
+    <hotspot ID="telecamera1">
+      <command>text "Mauvaise caméra." $112</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>text "Mauvaise caméra." $112</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>text "Mauvaise caméra." $112</command>
+    </hotspot>
+  </location>
+</object>

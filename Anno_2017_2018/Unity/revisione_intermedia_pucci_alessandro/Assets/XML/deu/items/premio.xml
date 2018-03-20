@@ -1,0 +1,13 @@
+<object name="Preis">
+  <description>
+    <command>text "Schauen wir doch mal."</command>
+    <command>wait 0,5</command>
+    <command>sound "pick_metalk_kit"</command>
+    <command>throw "premio"</command>
+    <command>pick n "starter_kit_metallaro"</command>
+    <command>pick n "musicassetta"</command>
+    <command>wait 1</command>
+    <command>text "Wie kann dieser ganze Kram nur in so ein kleines Paket passen?"</command>
+  </description>
+  <inventory />
+</object>

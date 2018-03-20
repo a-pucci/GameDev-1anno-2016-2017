@@ -1,0 +1,105 @@
+<object name="pala">
+  <description>
+    <command>text "Voy a adelantar el trabajo para cuando mueras."</command>
+  </description>
+  <inventory />
+  <location name="baracca">
+    <hotspot ID="custode">
+      <command>if internal -"custode" 0</command>
+      <command>text "Pues blandir una pala frente a un tipo de dos metros... no es que sea una gran idea."</command>
+      <command>fi</command>
+      <command>if internal -"custode" 1</command>
+      <command>text "Pues blandir una pala frente a un tipo de dos metros... no es que sea una gran idea."</command>
+      <command>fi</command>
+      <command>if internal -"custode" 3</command>
+      <command>text "Pues blandir una pala frente a un tipo de dos metros... no es que sea una gran idea."</command>
+      <command>fi</command>
+      <command>if internal -"custode" 4</command>
+      <command>text "Pues blandir una pala frente a un tipo de dos metros... no es que sea una gran idea."</command>
+      <command>fi</command>
+      <command>if internal -"custode" 2</command>
+      <command>load "pala_custode"</command>
+      <command>pause -"custode"</command>
+      <command>pause -"mandragora"</command>
+      <command>lookat -"custode"</command>
+      <command>sound "watchperson_drinks"</command>
+      <command>text "*Sí, buen chico... bebe...*"</command>
+      <command>move (798,680)</command>
+      <command>pose dr</command>
+      <command>wait 1</command>
+      <command>stop "watchperson_drinks"</command>
+      <command>cutscene "pala_custode"</command>
+      <command>throw "pala"</command>
+      <command>bitmap -"custode" "custode_tramortito_fermo"</command>
+      <command>sound "watchperson_bang"</command>
+      <command>sound "watchperson_hit"</command>
+      <command>animation -skinny 00 -o=40,87 -a "skinny_pala"</command>
+      <command>animation -"custode" 00 -o=52,0 -p=fore "custode_tramortito"</command>
+      <command>internal -"custode" -g -i 3</command>
+      <command>hide -"custode"</command>
+      <command>hide -nc -"cocktail"</command>
+      <command>show -"custode_a_terra"</command>
+      <command>hide -"chiavi"</command>
+      <command>show -"chiavi a terra"</command>
+      <command>area "baracca_custode_KO"</command>
+      <command>wait 2</command>
+      <command>pose d</command>
+      <command>text "No me mires así, ¡no tenía otra opción!"</command>
+      <command>wait 1</command>
+      <command>pose dr</command>
+      <command>expression "happy"</command>
+      <command>text "Mírale, ¡duerme como un angelito!"</command>
+      <command>expression "normal"</command>
+      <command>text "Unas cuantas horas de sueño no van a hacerle daño... Estaba muy estresado."</command>
+      <command>resume -"custode"</command>
+      <command>resume -"mandragora"</command>
+      <command>nolook</command>
+      <command>internal -"cocktail" -g 1</command>
+      <command>fi</command>
+    </hotspot>
+    <hotspot ID="mandragora">
+      <command>pose d</command>
+      <command>text "No puedo ni imaginarme el follón que armaría si la desentierro del todo." $133</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Stan">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Es probable que el único que apreciase algo así fuera el Doctor Frankenstein." $134</command>
+    </hotspot>
+    <hotspot ID="tomba di Oliver">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Es probable que el único que apreciase algo así fuera el Doctor Frankenstein." $134</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="lapide di Wilson">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Es probable que el único que apreciase algo así fuera el Doctor Frankenstein." $134</command>
+    </hotspot>
+    <hotspot ID="lapide di Woodie">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Es probable que el único que apreciase algo así fuera el Doctor Frankenstein." $134</command>
+    </hotspot>
+    <hotspot ID="lapide di Wilbur">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Es probable que el único que apreciase algo así fuera el Doctor Frankenstein." $134</command>
+    </hotspot>
+    <hotspot ID="lapide di Willow">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Es probable que el único que apreciase algo así fuera el Doctor Frankenstein." $134</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="lapide">
+      <command>expression "sarcastic"</command>
+      <command>text "Es parte del decorado..." $135</command>
+    </hotspot>
+  </location>
+</object>

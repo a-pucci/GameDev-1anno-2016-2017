@@ -1,0 +1,326 @@
+<location>
+  <script>
+    <command>0 animation -skinny 00 -o=-11,23 "skinny_sbircia_porta"</command>
+    <command>0-1-2-3-4 area &gt;"ingresso" "ingresso"</command>
+    <command>0-1-2-3-4 bitmap -skinny -o=-11,23 "skinny_sbircia"</command>
+    <command>0-1-2-3-4 bitmap -"traslocatore scemo" "traslocatore_scemo_ingresso_front"</command>
+    <command>0-1-2-3-4 internal -"traslocatore scemo" -g 0</command>
+    <command>0-1-2-3-4 bitmap -"traslocatore basso" "traslocatore_basso_ingresso_front"</command>
+    <command>0-1-2-3-4 internal -"traslocatore basso" -g 0</command>
+    <command>0 status 1</command>
+    <command>3 show skinny (310,608)</command>
+    <command>3 internal -"ingresso_x_anticamera" -g 0</command>
+    <command>3 show -"scatoloni1"</command>
+    <command>3 hide -"scatoloni2"</command>
+    <command>3 hide -"scatoloni3"</command>
+    <command>3 hide -"quadrante"</command>
+    <command>3 show -"marlin"</command>
+    <command>3 show -"prugna gigante"</command>
+    <command>3 show -"moai"</command>
+    <command>3 show -"spada"</command>
+    <command>3 show -"ingresso_x_marciapiede"</command>
+    <command>3 show -"ingresso_x_anticamera"</command>
+    <command>3 bitmap -"traslocatore scemo" "traslocatore_scemo_ingresso_front"</command>
+    <command>3 internal -"traslocatore scemo" -g 0</command>
+    <command>3 bitmap -"traslocatore basso" "traslocatore_basso_ingresso_front"</command>
+    <command>3 internal -"traslocatore basso" -g 0</command>
+    <command>3 if internal -"scatoloni2" 2</command>
+    <command>3 internal -"scatoloni2" -g 1</command>
+    <command>3 fie</command>
+    <command>2 wait 1</command>
+    <command>2 text -"traslocatore basso" "Isn't it a bit late? Have you checked the time?"</command>
+    <command>2 text -"traslocatore scemo" "Yeah, from that clock, boss. You can relax."</command>
+    <command>2 wait 0,5</command>
+    <command>2 text -"traslocatore scemo" "I like lunch breaks."</command>
+    <command>2 wait 0,5</command>
+    <command>2 expression "sarcastic"</command>
+    <command>2 text "Too bad that pendulum has been stuck for years."</command>
+    <command>2 show -"scatoloni1"</command>
+    <command>2 status 3</command>
+  </script>
+  <entry name="anticamera" X="310" Y="608" pose="d" />
+  <scene bitmap="lancette_avanti" X="1127" Y="164" position="back" animated="False" />
+  <scene bitmap="porta_anticamera" X="352" Y="53" position="default" animated="False" />
+  <scene bitmap="scatoloni_postazione3" X="809" Y="259" position="fore" animated="False" />
+  <scene bitmap="formiche" X="1591" Y="629" position="back" animated="True" loop="True" />
+  <scene bitmap="scatoloni_postazione2" X="1402" Y="571" position="fore" animated="False" />
+  <scene bitmap="scatolone_solid_snake" X="1356" Y="373" position="fore" animated="False" />
+  <scene bitmap="scatoloni_postazione1" X="422" Y="538" position="fore" animated="False" />
+  <scene bitmap="boccia_pesce" X="599" Y="593" position="fore" animated="True" loop="True" />
+  <scene bitmap="tavolo_ingresso" X="589" Y="768" position="fore" animated="False" />
+  <hotspots>
+    <character ID="traslocatore scemo">
+      <look />
+      <talk />
+    </character>
+    <character ID="traslocatore basso">
+      <look />
+      <talk />
+    </character>
+    <item ID="marlin">
+      <look>
+        <command>text "The trophy of a fishing trip, an unequal contest won with firecrackers and nail guns."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Undoubtedly this is the manliest thing Ronald's father has ever done."</command>
+      </look>
+      <pick>
+        <command>text "Don't deprive Ronald's father of this little happy memory."</command>
+        <command>text "He already has to put up with his wife every single day."</command>
+      </pick>
+      <use>
+        <command>text "Better not rub it in."</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "I'm sure if he could talk, there'd be a whole lot of swearing."</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "marlin"</command>
+        <command>animation -"me" 00 -o=0,0 -c "marlin_boccheggia"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </item>
+    <item ID="prugna gigante">
+      <look>
+        <command>text "Are you familiar with Superman and kryptonite?"</command>
+        <command>wait 0,5</command>
+        <command>text "Right, that's nothing compared to my allergic anaphylactic shock."</command>
+      </look>
+      <pick>
+        <command>expression "angry"</command>
+        <command>text "This is a request you'll have to put forward to my lawyer."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "I've done more than enough with the plums, thank you."</command>
+      </use>
+      <talk>
+        <command>text "We've got nothing to say. Our relationship soured several years ago."</command>
+      </talk>
+    </item>
+    <action ID="scatoloni3">
+      <act>
+        <command>hide -"scatoloni1"</command>
+        <command>hide -"me"</command>
+        <command>show -"scatoloni2"</command>
+        <command>show -"quadrante"</command>
+        <command>sound "skinny_run2"</command>
+        <command>animation (991,350) -p=back "skinny_corsa3"</command>
+        <command>area &gt;"ingresso" "ingresso_scatolone3"</command>
+        <command>show skinny (1100,520)</command>
+      </act>
+    </action>
+    <action ID="scatoloni1">
+      <act>
+        <command>if shown -"scatoloni3"</command>
+        <command>sound "solid_snake_box"</command>
+        <command>animation (909,675) -p=fore "skinny_scatolone_solid_snake_back"</command>
+        <command>area &gt;"ingresso" "ingresso_scatolone1"</command>
+        <command>show skinny (770,1045)</command>
+        <command>show -"scatoloni2"</command>
+        <command>show -"ingresso_x_anticamera"</command>
+        <command>hide -"scatoloni3"</command>
+        <command>hide -"me"</command>
+        <command>internal -"moai" -g -i 1</command>
+        <command>internal -"scatoloni2" -g 1</command>
+        <command>fie</command>
+        <command>if internal -"traslocatore scemo" 1</command>
+        <command>text "Let's wait to make sure they don't look in this direction."</command>
+        <command>fie</command>
+        <command>if internal -"traslocatore scemo" 0</command>
+        <command>bitmap -skinny ""</command>
+        <command>area &gt;"ingresso" "ingresso_scatolone1"</command>
+        <command>show skinny (770,1045)</command>
+        <command>hide -nc -"marlin"</command>
+        <command>hide -"prugna gigante"</command>
+        <command>hide -nc -"moai"</command>
+        <command>hide -nc -"spada"</command>
+        <command>hide -"ingresso_x_marciapiede"</command>
+        <command>show -"scatoloni2"</command>
+        <command>sound "skinny_run1"</command>
+        <command>animation (297,385) -p=default "skinny_corsa1"</command>
+        <command>internal -"ingresso_x_anticamera" -g 1</command>
+        <command>hide -"me"</command>
+        <command>fie</command>
+      </act>
+    </action>
+    <action ID="scatoloni2">
+      <act>
+        <command>0 text "*I can't, they would see me.*" 1</command>
+        <command>1 if internal -"traslocatore scemo" 1</command>
+        <command>1 internal -"moai" -g -i 2</command>
+        <command>sound "solid_snake_box"</command>
+        <command>1 animation (909,675) -p=fore "skinny_arpione3"</command>
+        <command>1 area &gt;"ingresso" "ingresso_scatolone2"</command>
+        <command>1 show skinny (1580,1000)</command>
+        <command>1 show -"scatoloni1"</command>
+        <command>1 show -"scatoloni3"</command>
+        <command>1 hide -"me"</command>
+        <command>1 hide -"ingresso_x_anticamera"</command>
+        <command>1 internal -"scatoloni2" -g 2</command>
+        <command>1 internal -"moai" -g -i 1</command>
+        <command>1 fie</command>
+        <command>1 if internal -"traslocatore scemo" 0</command>
+        <command>1 text "*First I have to make sure they are not looking this way.*" 2</command>
+        <command>1 fie</command>
+        <command>2 if not shown -"scatoloni3"</command>
+        <command>2 sound "skinny_run1"</command>
+        <command>2 animation (810,269) -p=back "skinny_corsa4"</command>
+        <command>2 area &gt;"ingresso" "ingresso_scatolone2"</command>
+        <command>2 show skinny (1580,1000)</command>
+        <command>2 show -"scatoloni1"</command>
+        <command>2 show -"scatoloni3"</command>
+        <command>2 hide -"quadrante"</command>
+        <command>2 hide -"me"</command>
+        <command>2 fie</command>
+      </act>
+    </action>
+    <action ID="quadrante">
+      <act>
+        <command>load "ripresa_trasloco"</command>
+        <command>sound "skinny_pendulum"</command>
+        <command>animation (1039,164) -p=back "skinny_lancette"</command>
+        <command>show +"lancette_avanti"</command>
+        <command>wait 0,5</command>
+        <command>hide -"marlin"</command>
+        <command>hide -"moai"</command>
+        <command>cutscene "ripresa_trasloco"</command>
+        <command>hide -"traslocatore scemo"</command>
+        <command>hide -"traslocatore basso"</command>
+        <command>hide -"scatoloni1"</command>
+        <command>hide -"scatoloni2"</command>
+        <command>hide -"scatoloni3"</command>
+        <command>hide -"quadrante"</command>
+        <command>show -"marlin"</command>
+        <command>show -"prugna gigante"</command>
+        <command>show -"moai"</command>
+        <command>show -"spada"</command>
+        <command>show -"ingresso_x_anticamera"</command>
+        <command>show -"ingresso_x_marciapiede"</command>
+        <command>status &gt;"marciapiede" 3</command>
+        <command>status &gt;"ingresso" 4</command>
+        <command>internal -"ingresso_x_anticamera" -g 0</command>
+        <command>blackscreen</command>
+        <command>area &gt;"ingresso" "ingresso"</command>
+        <command>goto -nofade "marciapiede"</command>
+      </act>
+    </action>
+    <character ID="moai">
+      <look>
+        <command>text "A 'little souvenir' from Easter Island."</command>
+        <command>text "We had some trouble at customs, but it was worth it."</command>
+      </look>
+      <talk>
+        <command>0 text "These Moai are so vain and used to cameras nowadays, they've started posing with duck face."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Woe is us..."</command>
+        <command>1 bitmap -skinny -o=-0,0 "skinny_sbircia_l"</command>
+        <command>1 text "Sorry, but I need you to return my chewing gum."</command>
+        <command>1 internal -g -i 0</command>
+        <command>1 stop -a "moai_mastica"</command>
+        <command>1 stop -a "moai_palloncino"</command>
+        <command>1 sound "pick_gum_masticati"</command>
+        <command>1 pick n "gomma_gigante"</command>
+        <command>1 bitmap -skinny -o=-0,0 "skinny_sbircia"</command>
+        <command>1 internal 0</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 5</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1 if not status 2</command>
+        <command>1 bitmap -"traslocatore scemo" "traslocatore_scemo_ingresso_front"</command>
+        <command>1 internal -"traslocatore scemo" -g 0</command>
+        <command>1 bitmap -"traslocatore basso" "traslocatore_basso_ingresso_front"</command>
+        <command>1 internal -"traslocatore basso" -g 0</command>
+        <command>1 fi</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_chewing_gum"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_mastica"</command>
+        <command>1-2 sound "moai_baloon"</command>
+        <command>1-2 animation -"me" 00 -o=1,1 -c "moai_palloncino"</command>
+        <command>1-2 if not status 2</command>
+        <command>1-2 bitmap -"traslocatore scemo" "traslocatore_scemo_ingresso_moai"</command>
+        <command>1-2 internal -"traslocatore scemo" -g 1</command>
+        <command>1-2 bitmap -"traslocatore basso" "traslocatore_basso_ingresso_moai"</command>
+        <command>1-2 internal -"traslocatore basso" -g 1</command>
+        <command>1-2 fi</command>
+      </indipendent>
+    </character>
+    <item ID="spada">
+      <look>
+        <command>text "Legend has it that when Ronald's father is able to pull it out from the floor, it'll finally be him wearing the pants in the family."</command>
+        <command>text "Actually it would be useless anyway, but he doesn't know that."</command>
+      </look>
+      <pick>
+        <command>text "Nobody can get it out, as it seems to be stuck in the plumbing of the town's water supply."</command>
+        <command>text "The mayor has even declared it a criminal offence just to attempt to force it out."</command>
+      </pick>
+      <use>
+        <command>text "That blade is so blunt that Ronald's mother can't even cut the bread for sandwiches with it."</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "No matter how legendary it is, I really doubt it can answer me."</command>
+      </talk>
+    </item>
+    <goto ID="ingresso_x_anticamera" icon="u" PX="724" PY="35">
+      <go>
+        <command>0 goto "anticamera"</command>
+        <command>1 if internal -"traslocatore scemo" 1</command>
+        <command>1 text "*Not until those two are looking at the Moai.*"</command>
+        <command>1 fie</command>
+        <command>1 if internal -"traslocatore scemo" 0</command>
+        <command>1 sound "skinny_run2"</command>
+        <command>1 animation (334,338) -p=default -a "skinny_corsa2"</command>
+        <command>1 wait 0,33</command>
+        <command>1 area &gt;"ingresso" "ingresso"</command>
+        <command>1 show skinny (310,608)</command>
+        <command>1 bitmap -skinny -o=-11,23 "skinny_sbircia"</command>
+        <command>1 show -"marlin"</command>
+        <command>1 show -"prugna gigante"</command>
+        <command>1 show -"moai"</command>
+        <command>1 show -"spada"</command>
+        <command>1 show -"ingresso_x_marciapiede"</command>
+        <command>1 hide -"scatoloni2"</command>
+        <command>1 wait 0,5</command>
+        <command>1 show -"scatoloni1"</command>
+        <command>1 internal 0</command>
+        <command>1 fie</command>
+      </go>
+    </goto>
+    <goto ID="ingresso_x_marciapiede" icon="r" PX="2480" PY="450">
+      <go>
+        <command>expression "angry"</command>
+        <command>text "Not while that massive plum blocks the door."</command>
+        <command>if shown -"traslocatore scemo"</command>
+        <command>wait 1</command>
+        <command>expression ""</command>
+        <command>text "Not to mention the movers. I almost forgot about them."</command>
+        <command>fi</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

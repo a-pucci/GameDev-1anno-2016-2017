@@ -1,0 +1,53 @@
+<object name="Plane">
+  <description>
+    <command>text "Ich habe schon immer davon geträumt, zu Hause einen Pool zu haben." 1</command>
+  </description>
+  <inventory>
+    <object name="spillo">
+      <command>text "Ich will das Ding doch nicht durchbohren." $167</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="covone di paglia">
+      <command>text "Kein Bedarf. Ist ja schon von Heu bedeckt." $115</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ich spüre den unwiderstehlichen Drang, sie auch zu erdrosseln, aber ich fürchte, das geht nicht." $116</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "An sich keine schlechte Idee, aber zuerst will ich sicher gehen, dass ich alles Nötige getan habe." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="navicella aliena">
+      <command>pose d</command>
+      <command>text "Warum sollte man so ein Wunder verstecken?" $118</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "Ich könnte die Kamera mit der Plane abdecken, aber Ralph würde das merken." $176</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "Ich könnte die Kamera mit der Plane abdecken, aber Ralph würde das merken." $176</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "Ich könnte die Kamera mit der Plane abdecken, aber Ralph würde das merken." $176</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "Ich könnte die Kamera mit der Plane abdecken, aber Ralph würde das merken." $176</command>
+    </hotspot>
+  </location>
+</object>

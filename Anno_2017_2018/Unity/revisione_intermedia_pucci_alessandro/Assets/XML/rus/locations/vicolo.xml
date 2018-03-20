@@ -1,0 +1,159 @@
+<location>
+  <script>
+    <command>0 pose d</command>
+    <command>0 wait 1</command>
+    <command>0 pose l</command>
+    <command>0 wait 1,5</command>
+    <command>0 pose r</command>
+    <command>0 wait 1,5</command>
+    <command>0 pose d</command>
+    <command>0 wait 1</command>
+    <command>0 text "Прошу, дай мне пару секунд."</command>
+    <command>0 text "Я только понял, что это первый раз, когда я вышел за пределы дома со дня своей смерти."</command>
+    <command>0 wait 2</command>
+    <command>0 text "Ладно, думаю, справлюсь. Пойдем."</command>
+    <command>0 ost "cantiere_theme"</command>
+    <command>0 status 1</command>
+  </script>
+  <entry name="fogna" X="1136" Y="934" pose="dr" />
+  <entry name="marciapiede" X="3149" Y="979" pose="l" />
+  <entry name="cantiere" X="198" Y="997" pose="r" />
+  <sound name="flies_trash" />
+  <scene bitmap="ombra_barbone" X="2584" Y="662" position="back" animated="False" />
+  <scene bitmap="coperchio_tombino" X="1355" Y="914" position="default" animated="False" />
+  <scene bitmap="occhi_gatto" X="2344" Y="585" position="back" animated="True" start="3000" stop="3000" loop="True" />
+  <scene bitmap="mosche_spazzatura" X="343" Y="788" position="back" animated="True" loop="True" />
+  <scene bitmap="mosche_ronzano" X="2045" Y="541" position="back" animated="True" loop="True" />
+  <scene bitmap="gatto_foreground1" X="1747" Y="147" position="fore" animated="True" start="1500" stop="3500" loop="True" foreground="True" />
+  <scene bitmap="gatto_foreground2" X="3055" Y="130" position="fore" animated="True" start="2500" stop="5500" loop="True" foreground="True" />
+  <scene bitmap="sveglia" X="2678" Y="896" position="back" animated="False" />
+  <hotspots>
+    <item ID="distributore di benzina">
+      <look>
+        <command>text "Скорее всего, это... бензоколонка-однорукий бандит."</command>
+      </look>
+      <pick>
+        <command>text "Мне кажется, что я на такое совсем не способен."</command>
+      </pick>
+      <use>
+        <command>text "Не люблю азартные игры."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="crash test dummy">
+      <look>
+        <command>text "Боюсь, у него был не самый лучший день. "</command>
+      </look>
+      <talk>
+        <command>text "Я понимаю, что в стране кризис и всякое, но ты и правда не можешь найти работу получше?"</command>
+      </talk>
+    </character>
+    <action ID="detonatore">
+      <act>
+        <command>0 sound "detonatore_bomb"</command>
+        <command>0 animation -"me" 00 -o=7,19 "detonatore"</command>
+        <command>0 internal 1</command>
+        <command>1 sound "detonatore"</command>
+        <command>1 animation -"me" 00 -o=7,19 "detonatore"</command>
+      </act>
+    </action>
+    <action ID="volantino1">
+      <act>
+        <command>text "Потерял револьвер во время дерзкой погони от копов."</command>
+        <command>text "Нашедшему обещано сносное вознаграждение и пожизненный запас пиццы в пиццерии «У Луиджи»."</command>
+        <command>text "Если найдете, спросить дона Вито."</command>
+        <command>wait 0,5</command>
+        <command>text "Предложение, от которого ты не сможешь отказаться."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "happy"</command>
+        <command>text "Я люблю пиццу!"</command>
+      </act>
+    </action>
+    <action ID="volantino2">
+      <act>
+        <command>text "Пропал без вести: старый нептунианский пришелец. Награда в 5,000 долларов обещана любому, кто предоставит любую информацию о его местоположении."</command>
+        <command>text "Звонить 00-СОЛНЦЕ8-554011."</command>
+        <command>wait 0,5</command>
+        <command>text "Мир и процветание."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Кажется, даже инопланетяне развешивают объявления на земных стройплощадках."</command>
+      </act>
+    </action>
+    <character ID="senzatetto">
+      <look>
+        <command>text "Огромный спящий парень преградил мне путь."</command>
+        <command>expression "perplexed"</command>
+        <command>text "Не знаю почему, но у меня просто адское чувство дежавю."</command>
+      </look>
+      <talk>
+        <command>text "Не думаю, что вообще смогу его разбудить, да и не очень-то хочу, чтобы кто-то увидел меня в этом... костюме."</command>
+      </talk>
+      <indipendent>
+        <command>sound "homeless"</command>
+        <command>animation -"me" 00 -o=0,2 -c "barbone_idle1"</command>
+        <command>animation -"me" 00 -o=0,2 -c "barbone_idle2"</command>
+      </indipendent>
+    </character>
+    <action ID="pubblicità regresso">
+      <act>
+        <command>text "Думаю, я живое доказательство того, как все это плохо."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Эм... живое, ну это еще как сказать."</command>
+      </act>
+    </action>
+    <item ID="spazzatura">
+      <look>
+        <command>text "Немного спагетти, вчерашний цыпленок, коробка из-под хлопьев и пара пустых бутылок."</command>
+        <command>pose d</command>
+        <command>text "Да тут есть все, что душе угодно!"</command>
+      </look>
+      <pick>
+        <command>text "Не очень-то хочется лезть в мусорку."</command>
+      </pick>
+      <use>
+        <command>text "Один только запах этого пакета на корню срубает все мои желания потрогать его."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="vecchia forchetta">
+      <look>
+        <command>expression "angry"</command>
+        <command>text "Ненавижу людей, выбрасывающих вкусную еду. А про вилки я вообще молчу!"</command>
+      </look>
+      <pick>
+        <command>sound "pick_forchetta"</command>
+        <command>pick y "forchetta"</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "На мой вкус эти спагетти слишком «аль денте»."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="vicolo_x_cantiere" icon="l" PX="-484" PY="671">
+      <go>
+        <command>goto "cantiere"</command>
+      </go>
+    </goto>
+    <goto ID="vicolo_x_fogna" icon="d" PX="1327" PY="1072">
+      <go>
+        <command>goto "fogna"</command>
+      </go>
+    </goto>
+    <goto ID="vicolo_x_marciapiede" icon="r" PX="4121" PY="714">
+      <go>
+        <command>goto "marciapiede"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

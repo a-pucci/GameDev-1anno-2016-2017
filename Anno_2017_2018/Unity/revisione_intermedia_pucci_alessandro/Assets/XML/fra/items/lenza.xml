@@ -1,0 +1,46 @@
+<object name="ligne de pêche">
+  <description>
+    <command>text "J'espère que je serai plus chanceux que le propriétaire précédent."</command>
+  </description>
+  <inventory>
+    <object name="forchetta">
+      <command>sound "pick_lenza"</command>
+      <command>throw "forchetta"</command>
+      <command>throw "lenza"</command>
+      <command>pick n "arpione"</command>
+    </object>
+  </inventory>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>bitmap -"me" "pomello_lenza"</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_lenza"</command>
+      <command>animation -skinny 00 -o=26,9 "skinny_lenza"</command>
+      <command>bitmap -"me" "pomello"</command>
+      <command>pose d</command>
+      <command>text "Rien. Il n'y a aucun moyen de dévisser cette foutue boule." $233</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>text "Je doute qu'ils mordent à l'hameçon." $234</command>
+    </hotspot>
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Je crains que le fil dentaire ne suffise pas." $235</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="marlin">
+      <command>text "Il a déjà été pris... avec des moyens peu orthodoxes." $236</command>
+    </hotspot>
+    <hotspot ID="scatoloni2">
+      <command>text "Bonne idée, mais il manque encore quelque chose pour l'attraper." $237</command>
+    </hotspot>
+  </location>
+  <location name="vicolo">
+    <hotspot ID="vecchia forchetta">
+      <command>text "Il vaudrait mieux la prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+</object>

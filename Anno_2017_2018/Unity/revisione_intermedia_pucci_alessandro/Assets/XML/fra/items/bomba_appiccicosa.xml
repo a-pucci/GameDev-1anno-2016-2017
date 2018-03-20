@@ -1,0 +1,48 @@
+<object name="bombée chargée et collante">
+  <description>
+    <command>text "Espérons que personne ne me prendra pour un kamikaze."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "Parfois, je me demande comment tu peux être encore en vie." $7</command>
+    </object>
+    <object name="fiammiferi">
+      <command>text "Parfois, je me demande comment tu peux être encore en vie." $7</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>sound "pick_bomba_appicicosa"</command>
+      <command>throw "bomba_appiccicosa"</command>
+      <command>show -"bomba"</command>
+      <command>hide -"cassaforte"</command>
+      <command>internal -"piano_terra/deejay" 1</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Il y a sûrement un moyen plus discret de le dissuader de prendre son bain." $72</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Parfois, je me demande comment tu peux être encore en vie." $7</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Parfois, je me demande comment tu peux être encore en vie." $7</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="picasso">
+      <command>text "Impossible de faire pire." $73</command>
+    </hotspot>
+  </location>
+</object>

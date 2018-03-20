@@ -1,0 +1,65 @@
+<object name="пустой стакан">
+  <description>
+    <command>text "А что еще можно сделать с пустым стаканом на вечеринке?"</command>
+    <command>wait 0,5</command>
+    <command>text "Я тебе на все вопросы не отвечу."</command>
+  </description>
+  <inventory>
+    <object name="assenzio">
+      <command>text "Лучше попридержать это в бутылке." $11</command>
+    </object>
+  </inventory>
+  <location name="piano_terra">
+    <hotspot ID="barile">
+      <command>sound "skinny_barrel"</command>
+      <command>animation -skinny 00 -o=56,-3 -a "skinny_riempie_birra"</command>
+      <command>wait 0,59</command>
+      <command>show +"barile_birra"</command>
+      <command>wait 0,59</command>
+      <command>hide +"barile_birra"</command>
+      <command>wait 1</command>
+      <command>sound "pick_generic"</command>
+      <command>pick "bicchiere di birra"</command>
+      <command>throw "bicchiere vuoto"</command>
+      <command>if inventory "bicchiere di birra" = 15</command>
+      <command>achievement "ubriacone"</command>
+      <command>fi</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>pose d</command>
+      <command>text "Не думаю, что он обрадуется, дай я ему пустой бумажный стакан." $67</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>expression "sarcastic"</command>
+      <command>text "Не уверен, что у него стоить что-то вымаливать." $68</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode">
+      <command>pose d</command>
+      <command>text "Не думаю, что он обрадуется, дай я ему пустой бумажный стакан." $67</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Не думаю, что он обрадуется, дай я ему пустой бумажный стакан." $69</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Winston">
+      <command>text "У него уже есть стакан, но он не очень-то активно из него пьет." $70</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="assenzio">
+      <command>text "Лучше попридержать это в бутылке." $11</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="pila di bicchieri">
+      <command>text "Поздно вертать взад." $71</command>
+    </hotspot>
+  </location>
+</object>

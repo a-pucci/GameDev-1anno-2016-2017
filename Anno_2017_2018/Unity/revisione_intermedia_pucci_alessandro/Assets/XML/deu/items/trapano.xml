@@ -1,0 +1,34 @@
+<object name="Bohrer">
+  <description>
+    <command>text "Gut, die Batterien scheinen aufgeladen zu sein. Jetzt fehlt nur noch der Bitstift."</command>
+  </description>
+  <inventory>
+    <object name="vite">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "vite"</command>
+      <command>throw "trapano"</command>
+    </object>
+    <object name="arpione">
+      <command>text "Das ist kein Wurfanker." $202</command>
+    </object>
+    <object name="forchetta">
+      <command>text "Das ist kein Wurfanker." $202</command>
+    </object>
+  </inventory>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Das ist keine Kneifzange." $271</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Ich darf dich daran erinnern, dass der Bohrer keinen Bitstift hat?" $272</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Dein Aufmerksamkeitsdefizit geht mir manchmal echt gewaltig auf den Zeiger." $270</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,78 @@
+<object name="Apparatur">
+  <description>
+    <command>text "Scheint kurz vor der Explosion zu stehen."</command>
+    <command>text "Meine 'Zusatzstoffe' haben dem Ding zusätzlichen Bumms verliehen."</command>
+  </description>
+  <inventory />
+  <location name="salotto">
+    <hotspot ID="mostro di polvere">
+      <command>load "evoluzione_mostro"</command>
+      <command>expression "happy"</command>
+      <command>text "Ich habe die Lösung für deine Probleme gefunden."</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Vor allem weil ich wohl erst noch einmal sterben würde, wenn ich darauf warten würde, dass er selbst eine Lösung findet."</command>
+      <command>lookat -"me"</command>
+      <command>expression "normal"</command>
+      <command>text -"me" -c=yellow "Was soll ich machen?"</command>
+      <command>text "Einfach nur den Mund aufmachen und 'Ahhhh' sagen."</command>
+      <command>text -"me" -c=yellow "Okay."</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_slop"</command>
+      <command>animation -skinny 00 -o=-21,-3 -a "skinny_intruglio"</command>
+      <command>wait 1</command>
+      <command>animation -"me" 00 -o=0,0 "mostro_polvere_beve"</command>
+      <command>bitmap -"me" "mostro_polvere_beve"</command>
+      <command>show +"mostro_polvere_bocca"</command>
+      <command>wait 1</command>
+      <command>hide +"mostro_polvere_bocca"</command>
+      <command>wait 1,5</command>
+      <command>stop "cameretta_salotto_theme"</command>
+      <command>bitmap -"me" "mostro_polvere_normale"</command>
+      <command>hide -"ritratto sospetto"</command>
+      <command>cutscene "evoluzione_mostro"</command>
+      <command>show skinny (1383,708)</command>
+      <command>show -"ritratto sospetto"</command>
+      <command>hide -"mostro di polvere"</command>
+      <command>show -"mostro di polvere forzuto"</command>
+      <command>show skinny (1383,708)</command>
+      <command>wait 0,5</command>
+      <command>ost &gt;"salotto" "cameretta_salotto_theme"</command>
+      <command>wait 0,5</command>
+      <comment>[ansimando leggermente]</comment>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Ich spüre ..."</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Ich spüre eine große Macht in meinen Händen!"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -"mostro di polvere forzuto" "mostro_polvere_forzuto_l"</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Moment mal ..."</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Ich HABE ja Hände."</command>
+      <command>expression -"mostro di polvere forzuto" "devil"</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "*muahahahahahaha*"</command>
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Hört sich schon deutlich bedrohlicher an, was?"</command>
+      <command>bitmap -"mostro di polvere forzuto" "mostro_polvere_forzuto"</command>
+      <command>throw "intruglio"</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>expression "sarcastic"</command>
+      <command>text "Ich weiß die Idee zu schätzen, aber so kriegt der seine Wirbelsäule auch nicht zurück." $228</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Du willst wirklich, dass ich irgendein unbekanntes Gebräu einer möglicherweise gefährlichen Kreatur verabreiche?" $229</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>text "Was hältst du denn von diesem Cocktail?" $230</command>
+      <command>text -"barman" -c=lblue "..." $231</command>
+      <command>text "Vielleicht hast du Recht, da ist zu viel Alkohol drin." $232</command>
+    </hotspot>
+  </location>
+</object>

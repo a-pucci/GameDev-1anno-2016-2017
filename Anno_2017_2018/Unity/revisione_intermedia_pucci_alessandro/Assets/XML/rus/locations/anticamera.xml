@@ -1,0 +1,163 @@
+<location>
+  <script>
+    <command>0 show skinny (976,794)</command>
+    <command>0 wait 1,5</command>
+    <command>0 animation (811,627) -p=default -a "skinny_sfonda_porta"</command>
+    <command>0 sound "skinny_break_door"</command>
+    <command>0 animation (718,375) -p=back "porta_anticamera"</command>
+    <command>0 show +"porta_scantinato"</command>
+    <command>0 wait 2</command>
+    <command>0 move (632,853)</command>
+    <command>0 wait 0,5</command>
+    <command>0 pose d</command>
+    <command>0 text "Так вот куда вела эта дверь."</command>
+    <command>0 text "И все эти годы никто даже не удосужился ее взломать!"</command>
+    <command>0 status &gt;"salotto" 1</command>
+    <command>0 status 1</command>
+  </script>
+  <indipendent>
+    <command>wait 5</command>
+    <command>animation (216,621) -c -p=back "bob_sx"</command>
+    <command>wait 5</command>
+    <command>animation (528,858) -c -p=divine "bob_cx"</command>
+    <command>wait 5</command>
+    <command>animation (930,683) -c -p=superdefault "bob_dx"</command>
+  </indipendent>
+  <entry name="ingresso" X="230" Y="900" pose="r" />
+  <entry name="scantinato" X="807" Y="805" pose="l" />
+  <entry name="salotto" X="1324" Y="952" pose="dr" />
+  <entry name="cucina1" X="1426" Y="987" pose="dl" />
+  <scene bitmap="lampadina_anticamera" X="271" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="porta_scantinato" X="718" Y="375" position="back" animated="False" />
+  <scene bitmap="parete_scantinato" X="892" Y="441" position="default" animated="False" />
+  <scene bitmap="mosche" X="212" Y="384" position="back" animated="True" loop="True" />
+  <hotspots>
+    <item ID="carta moschicida">
+      <look>
+        <command>text "Может, не так уж эстетично, зато эффективно."</command>
+      </look>
+      <pick>
+        <command>text "Не хочу окончить так, как те мухи на ленте."</command>
+      </pick>
+      <use>
+        <command>text "Не вижу, это может мне пригодиться."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Только если ты не муха."</command>
+      </use>
+      <talk>
+        <command>text "В следующий раз будешь думать, куда приземляться."</command>
+      </talk>
+    </item>
+    <item ID="bara">
+      <look>
+        <command>text "Как бы глупо это не звучало, отец Рональда купил его много лет назад в предвкушении своих похорон."</command>
+        <command>text "Он нашел его на гробовой распродаже."</command>
+        <command>wait 0,5</command>
+        <command>text "Он не обрадуется, когда узнает, что эти увальни его поломали."</command>
+      </look>
+      <pick>
+        <command>text "Достань мне грузоподъемник, и я не подведу."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Меня уже воскрешали, я этим как-нибудь да справлюсь."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="mano autostoppista">
+      <look>
+        <command>text "Тяжелое время для автостопщиков."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Мне очень нужно это спросить."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Хочешь, чтобы тебя подвезли в Девятый загробный мир?"</command>
+      </talk>
+      <indipendent>
+        <command>wait 2,5</command>
+        <command>sound "skeletral_hand"</command>
+        <command>animation -"me" 00 -o=27,17 -c "mano_autostop"</command>
+        <command>wait 2,5</command>
+      </indipendent>
+    </character>
+    <character ID="ritratto">
+      <look>
+        <command>text "Зено всегда был интровертом, но я считаю его хорошим другом."</command>
+        <command>text "Почти никогда не видел его без книги."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Никогда больше не видел, чтобы кто-то так любил книги."</command>
+      </look>
+      <talk>
+        <command>text "Не бойся внешнего мира, Зено. Я прекрасно понимаю, как ты себя чувствуешь."</command>
+      </talk>
+    </character>
+    <character ID="robot">
+      <look>
+        <command>text "Кажется, у него садятся батареи."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>bitmap -"me" "robot_l"</command>
+        <command>0 text "Привет, маленький робот."</command>
+        <command>0 text -"me" -c=fuxia "С1 не запрограммирован на разговоры."</command>
+        <command>0 text "Но ты только что разговаривал!"</command>
+        <command>0 text -"me" -c=fuxia "С1 не запрограммирован на объяснения."</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "robot"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "robot_interact"</command>
+        <command>animation -"me" 00 -o=19,19 -c "robot_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <goto ID="anticamera_x_scantinato" icon="r" PX="1270" PY="623">
+      <go>
+        <command>goto "scantinato"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_ingresso" icon="l" PX="-339" PY="650">
+      <go>
+        <command>goto "ingresso"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_cucina" icon="r" PX="2098" PY="431">
+      <go>
+        <command>goto "cucina1"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_salotto" icon="ul" PX="890" PY="-60">
+      <go>
+        <command>goto "salotto"</command>
+      </go>
+    </goto>
+    <item ID="sveglia">
+      <look>
+        <command>text "Это старый будильник Рональда. Он у него с самого детства."</command>
+        <command>text "Не думал, что он все еще жив."</command>
+      </look>
+      <pick>
+        <command>sound "pick_clock"</command>
+        <command>pick y "sveglia"</command>
+      </pick>
+      <use>
+        <command>text "Последний раз он звонил несколько лет назад. А затем... ВНЕЗАПНО упал на пол и больше не звонил."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+  </hotspots>
+</location>

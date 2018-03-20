@@ -1,0 +1,103 @@
+<object name="absenta">
+  <description>
+    <command>text "Graduación del 65%."</command>
+    <command>text "Será mejor tomárselo con calma."</command>
+  </description>
+  <inventory>
+    <object name="residui_plutonio">
+      <command>sound "pick_assenzio"</command>
+      <command>throw "assenzio"</command>
+      <command>throw "residui_plutonio"</command>
+      <command>pick n "assenzio_radioattivo"</command>
+    </object>
+    <object name="plutonio">
+      <command>text "No veo cómo, el vial ya está vacío." $10</command>
+    </object>
+    <object name="bicchiere vuoto">
+      <command>text "Mejor se queda en la botella." $11</command>
+    </object>
+    <object name="bicchiere di birra">
+      <command>text "Eso es peor que mezclar cerveza con coca-cola." $64</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Mejor no echar leña al fuego." $3</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="sali">
+      <command>text "No creo que fuera suficiente. Necesito algo más potente." $4</command>
+    </hotspot>
+    <hotspot ID="rasoio fai da te">
+      <command>text "Iría bien como loción, después de un afeitado tan agresivo." $5</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode">
+      <command>expression "sarcastic"</command>
+      <command>text "Parece que al conserje no le va el alcohol fuerte." $6</command>
+    </hotspot>
+    <hotspot ID="cocktail">
+      <command>expression "sarcastic"</command>
+      <command>pose d</command>
+      <command>text "Parece que al conserje no le va el alcohol fuerte." $6</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>pose d</command>
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Winston">
+      <command>text "Ya está provisto de alcohol." $8</command>
+    </hotspot>
+    <hotspot ID="Gesoo">
+      <command>text "Ya está borracho." $9</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "Ya está borracho." $9</command>
+    </hotspot>
+    <hotspot ID="Olandese Volante">
+      <command>text "Ya está provisto de alcohol." $8</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="plutonio">
+      <command>text "No veo cómo, el vial ya está lleno." $10</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="pila di bicchieri">
+      <command>text "Mejor se queda en la botella." $11</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="ragazzo alticcio">
+      <command>pose d</command>
+      <command>text "A veces me sorprendes para bien con ese sadismo tuyo." $12</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>pose d</command>
+      <command>text "¡Eh, que es menor!" $13</command>
+    </hotspot>
+    <hotspot ID="cervello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Entiendo que tengas envidia, pero intenta elevar tu nivel intelectual en vez de rebajar la media general." $14</command>
+    </hotspot>
+  </location>
+  <location name="meteorite">
+    <hotspot ID="Flowey">
+      <command>wait 0,5</command>
+      <command>internal -"me" -i -g 1</command>
+      <command>wait 0,5</command>
+      <command>achievement "undertale_spoiler"</command>
+    </hotspot>
+  </location>
+</object>

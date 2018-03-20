@@ -1,0 +1,42 @@
+<object name="chicle">
+  <description>
+    <command>text "Nunca podría acabármelo, ni aunque me pasara la eternidad mascando."</command>
+    <command>wait 0,5</command>
+    <command>text "Y me da miedo pasármela."</command>
+  </description>
+  <inventory>
+    <object name="dentiera">
+      <command>text "Podría dar lugar a la batalla definitiva entre el bien y las caries." $223</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomme_da_masticare"</command>
+      <command>fie</command>
+      <command>text "No quiero que se atasque." $38</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "¿De verdad crees que puede masticar con esa boca?" $220</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "¿Le darías chicle a alguien al que le duelen los dientes?" $221</command>
+      <command>expression "sarcastic"</command>
+      <command>text "¡No tienes corazón!" $222</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="dentiera">
+      <command>text "Podría dar lugar a la batalla definitiva entre el bien y las caries." $223</command>
+    </hotspot>
+  </location>
+</object>

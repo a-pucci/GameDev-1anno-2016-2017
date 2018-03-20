@@ -1,0 +1,60 @@
+<object name="residui di plutonio liquido">
+  <description>
+    <command>text "Ne è rimasta giusto qualche goccia."</command>
+  </description>
+  <inventory>
+    <object name="assenzio">
+      <command>sound "pick_assenzio"</command>
+      <command>throw "assenzio"</command>
+      <command>throw "residui_plutonio"</command>
+      <command>pick n "assenzio_radioattivo"</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>expression "sarcastic"</command>
+      <command>text "Dubito che possa fungere da fertilizzante." $90</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="flusso canalizzatore">
+      <command>pose d</command>
+      <command>text "Resterebbe il problema delle 88 miglia orarie... ma teniamolo a mente, ok?" $152</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="armadio recuperato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Peccato non sia una DeLorean." $153</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Peccato non sia una DeLorean." $153</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="pescato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Dovresti ripassare la tavola periodica, temo tu ti stia confondendo col mercurio." $156</command>
+    </hotspot>
+    <hotspot ID="scienziato">
+      <command>text "Penso che farei meglio a conservare questi residui." $164</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="urinatoio">
+      <command>expression "happy"</command>
+      <command>text "Sarebbe un assolo a dir poco... nucleare." $158</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="assenzio">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

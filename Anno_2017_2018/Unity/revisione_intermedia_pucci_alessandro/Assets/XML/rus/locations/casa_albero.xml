@@ -1,0 +1,142 @@
+<location>
+  <script>
+  </script>
+  <entry name="giardino" X="492" Y="851" pose="r" />
+  <scene bitmap="trilly" X="1528" Y="394" position="back" animated="True" start="2500" stop="6000" sound="trilly" loop="True" />
+  <scene bitmap="parete_casa_albero" X="0" Y="0" position="fore" animated="False" />
+  <hotspots>
+    <character ID="dragone">
+      <look>
+        <command>text "В восточной мифологии дракон — символ баланса и мудрости."</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Но даже талисман такого размера не поможет в твоей тупости."</command>
+        <command>wait 0,5</command>
+        <command>text "К моему сожалению."</command>
+      </look>
+      <talk>
+        <command>0-1 text "Шенрон, оживи Крилина!" 1</command>
+        <command>0 wait 0,5</command>
+        <command>0-1 bitmap -"me" "dragone_cinese_l"</command>
+        <command>2 bitmap -"me" "dragone_metal_l"</command>
+        <command>0 text -"me" "Не умничай тут." 2</command>
+        <command>1 text -"me" "Пора бы тебе остановиться." 3</command>
+        <command>0 internal -g 1</command>
+        <command>0-1 dialog "dragone"</command>
+        <command>2 dialog "scelta_pezzo"</command>
+      </talk>
+    </character>
+    <item ID="manifesto">
+      <look>
+        <command>text "Тут написано: «Праздничный пирог»."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Не знаю, что я ожидал, но я не разочарован."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Минуточку..."</command>
+        <command>0 wait 1</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "С каких это пор я говорю на китайском?"</command>
+        <command>0 internal -"poster" -g 1</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Ты был очень плохим мальчиком. Никакого тебе пирога."</command>
+      </pick>
+      <use>
+        <command>text "Думаю, что это самое простое украшение."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="poster">
+      <look>
+        <command>text "«Я ненавижу иероглифы»."</command>
+        <command>text "Полагаю, это первое, что пишут студенты, изучающие китайский."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Минуточку..."</command>
+        <command>0 wait 1</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "С каких это пор я говорю на китайском?"</command>
+        <command>0 internal -"manifesto" -g 1</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Если я найду один с надписью: «Пни меня», то подарю тебе, обещаю."</command>
+      </pick>
+      <use>
+        <command>text "Не думаю, что он тут для чего-то еще кроме украшения."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="pugnale">
+      <look>
+        <command>text "Должно быть, кинул убийца-новичок..."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "...с ужасным зрением."</command>
+      </look>
+      <pick>
+        <command>text "Слишком высоко. Не дотянуться."</command>
+      </pick>
+      <use>
+        <command>text "Я бы кинул и того хуже, но это довольно сложно, и я не хочу рисковать."</command>
+        <command>pose d</command>
+        <command>text "Когда я так плохо играю в дартс, то я хотя бы могу сказать, что только что вышел из душа."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <character ID="eremita">
+      <look>
+        <command>text "Самая странная форма медитации, которую я когда-либо видел."</command>
+      </look>
+      <talk>
+        <command>0 text "Эм, извините..."</command>
+        <command>0 wait 1</command>
+        <command>0 text "&lt;кашляет&gt;"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Мистер...?"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Не хочу вас беспокоить, но..."</command>
+        <command>0 wait 1</command>
+        <command>0 text "ЧЕРТ, СТАРИК, Я С ТОБОЙ РАЗГОВАРИВАЮ!"</command>
+        <command>1-2 text "ПРОСНИСЬ, СТАРИК!"</command>
+        <command>pause -"me"</command>
+        <command>stop -a "eremita_idle"</command>
+        <command>wait 1</command>
+        <command>0 text -"eremita" "Твой подход крайне не подходит для цивилизованного разговора двух взрослых людей."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Вы правы. Меня занесло."</command>
+        <command>0 text -"eremita" "Прощаю тебя."</command>
+        <command>1 text -"eremita" "Не стоит так себя вести."</command>
+        <command>2 text -"eremita" "Как я уже говорил, не стоит кричать."</command>
+        <command>1-2 wait 0,5</command>
+        <command>1-2 text "Вы правы, простите меня."</command>
+        <command>1-2 text -"eremita" "Прощаю тебя."</command>
+        <command>1 internal -g 2</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "eremita"</command>
+      </talk>
+      <indipendent>
+        <command>sound "hermit"</command>
+        <command>animation -"me" 00 -o=31,12 -c "eremita_idle"</command>
+      </indipendent>
+    </character>
+    <goto ID="casa_albero_x_giardino" icon="l" PX="-582" PY="681">
+      <go>
+        <command>goto "giardino"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

@@ -1,0 +1,80 @@
+<object name="spray can">
+  <description>
+    <command>text "I can finally unleash the artist within me."</command>
+  </description>
+  <inventory>
+    <object name="fiammiferi">
+      <command>text "It'd cause a historic blaze." $105</command>
+      <command>text "After the tree-house accident, maybe it's time to lay low, just for a while." $106</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="pixel morto">
+      <command>text "This is not the correct way to change the RGB values." $76</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Stan">
+      <command>text "I don't want to desecrate their memory." $77</command>
+    </hotspot>
+    <hotspot ID="tomba di Oliver">
+      <command>text "I don't want to desecrate their memory." $77</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="lapide di Wilson">
+      <command>text "I don't want to desecrate their memory." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Woodie">
+      <command>text "I don't want to desecrate their memory." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Wilbur">
+      <command>text "I don't want to desecrate their memory." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Willow">
+      <command>text "I don't want to desecrate their memory." $77</command>
+    </hotspot>
+  </location>
+  <location name="elenco_telefonico">
+    <hotspot ID="annuncio_hotline">
+      <command>text "I'm against censorship." $78</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="Pinhead addormentato">
+      <command>text "It'd be a funny joke, if only the paint wasn't permanent." $79</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="barattolo di vernice">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "It's already loaded." $80</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "I could use the classic trick of the spray can, but Ralph would notice right away." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "I could use the classic trick of the spray can, but Ralph would notice right away." $81</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "I could use the classic trick of the spray can, but Ralph would notice right away." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "I could use the classic trick of the spray can, but Ralph would notice right away." $81</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="Manet">
+      <command>text "I don't mean to disfigure his painting." $82</command>
+    </hotspot>
+  </location>
+</object>

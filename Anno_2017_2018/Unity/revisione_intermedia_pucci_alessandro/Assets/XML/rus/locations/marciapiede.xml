@@ -1,0 +1,167 @@
+<location>
+  <script>
+    <command>0 status 1</command>
+    <command>2 blackscreen</command>
+    <command>2 achievement "wardrobe"</command>
+    <command>2 wait 1</command>
+    <command>2 text (761,695) -c=fuxia "На секунду я подумал, что все будет очень плохо."</command>
+    <command>2 text (761,695) -c=fuxia "Нужно отметить, вот возьми."</command>
+    <command>2 wait 1</command>
+    <command>2 text (1196,439) "СКОЛЬКО РАЗ МНЕ ГОВОРИТЬ, ЧТО У МЕНЯ АЛЛЕРГИЯ НА СЛИВЫ?!?"</command>
+    <command>2 text (761,695) -c=fuxia "ЭТО ГРЕБАНЫЙ ОРЕХ! У ТЕБЯ ГЛАЗНИЦАХ, ЧТО ВООБЩЕ ГЛАЗ НЕТ?!"</command>
+    <command>2 wait 1</command>
+    <command>2 screen c -fi=500 -w=2000 -fo=500 "Несколько часов спустя..."</command>
+    <command>2 wait 1</command>
+    <command>2 text (1196,439) "Что-то ту не так."</command>
+    <command>2 text (761,695) -c=fuxia "Это был не я."</command>
+    <command>2 wait 0,5</command>
+    <command>2 text (1196,439) "Нет, я хотел сказать... где, блин, эти двое?"</command>
+    <command>2 wait 1</command>
+    <command>2 text (1196,439) "Пойду и проверю, что к чему."</command>
+    <command>2 status &gt;"retro_furgone" 1</command>
+    <command>2 status &gt;"ingresso" 2</command>
+    <command>2 blackscreen</command>
+    <command>2 goto -nofade "retro_furgone"</command>
+    <command>3 hide skinny</command>
+    <command>3 screen -w=500 -fo=1500</command>
+    <command>3 wait 0,5</command>
+    <command>3 text (1320,530) -c=fuxia "Эти двое все еще не пришли."</command>
+    <command>3 text (1320,430) "Что они там теперь делают?"</command>
+    <command>3 wait 1</command>
+    <command>3 text (1320,430) "Пойду проверю."</command>
+    <command>3 wait 0,5</command>
+    <command>3 internal -"marciapiede_x_ingresso" -g 1</command>
+    <command>3 status &gt;"retro_furgone" 1</command>
+    <command>3 status &gt;"salotto" 3</command>
+    <command>3 status &gt;"bagno1" 3</command>
+    <command>3 status &gt;"cucina1" 2</command>
+    <command>3 goto "retro_furgone"</command>
+    <command>4 load "furgone"</command>
+    <command>4 show -"traslocatore scemo"</command>
+    <command>4 show -"traslocatore grasso"</command>
+    <command>4 expression -"traslocatore scemo" "sad"</command>
+    <command>4 hide skinny</command>
+    <command>4 screen -w=500 -fo=1500</command>
+    <command>4 wait 1</command>
+    <command>4 text -"traslocatore scemo" "Не нравятся мне такие дни."</command>
+    <command>4 wait 0,5</command>
+    <command>4 expression -"traslocatore grasso" "angry"</command>
+    <command>4 text -"traslocatore grasso" "И не говори. Если я найду того, кто взломал мой грузовик, ух..."</command>
+    <command>4 expression -"traslocatore scemo" ""</command>
+    <command>4 text -"traslocatore scemo" "Помните, что у вас проблемы с сердцем босс."</command>
+    <command>4 wait 1</command>
+    <command>4 expression -"traslocatore grasso" ""</command>
+    <command>4 text -"traslocatore grasso" "Ты прав, давай дума о том, как мы все это доставим и забудем об этом дне, а?"</command>
+    <command>4 wait 1</command>
+    <command>4 screen -fi=1000 -w=1</command>
+    <command>4 blackscreen</command>
+    <command>4 wait 1</command>
+    <command>4 text (761,695) -c=fuxia "Ты готов к новому дому?"</command>
+    <command>4 text (1196,439) "Вообще-то я даже не думал об этом. Я просто хочу, как можно скорее поговорить с Рональдом."</command>
+    <command>4 text (761,695) -c=fuxia "К чему такая спешка?"</command>
+    <command>4 text (761,695) -c=fuxia "Извини, если раньше не интересовался. Был слишком занят моими орехами."</command>
+    <command>4 text (1196,439) "Проще говоря, совершившие смертный грех приговариваются к вечным мукам в аду."</command>
+    <command>4 text (761,695) -c=fuxia "Но Рональд же не хотел, это был несчастный случай."</command>
+    <command>4 text (1196,439) "Это ничего не меняет, все равно."</command>
+    <command>4 text (1196,439) "Единственный выход для спасения души — это признаться кому-нибудь в совершенном «преступлении»."</command>
+    <command>4 wait 0,5</command>
+    <command>4 text (1196,439) "В течении пяти лет."</command>
+    <command>4 wait 1</command>
+    <command>4 text (761,695) -c=fuxia "И сколько именно у нас осталось?"</command>
+    <command>4 wait 1,5</command>
+    <command>4 text (1196,439) "Три дня."</command>
+    <command>4 text (761,695) -c=fuxia "И ТЫ ТОЛЬКО СЕЙЧАС ОБО ВСЕМ ЭТОМ ЗАДУМАЛСЯ?"</command>
+    <command>4 text (1196,439) "Я не хотел на него напирать. Хотел дать ему время все осмыслить!"</command>
+    <command>4 wait 0,5</command>
+    <command>4 text (761,695) -c=fuxia "У меня правда нет слов."</command>
+    <command>4 wait 1,5</command>
+    <command>4 stop "cantiere_theme"</command>
+    <command>4 blackscreen</command>
+    <command>4 cutscene "furgone"</command>
+    <command>4 goto -nofade "intro"</command>
+    <command>5 show -"Noce"</command>
+    <command>5 status &gt;"cantiere" 1</command>
+    <command>5 status 1</command>
+  </script>
+  <entry name="vicolo" X="159" Y="926" pose="r" />
+  <entry name="retro_furgone" X="1400" Y="914" pose="dl" />
+  <scene bitmap="cassetta_lettere" X="1611" Y="689" position="fore" animated="False" />
+  <scene bitmap="furgone_marciapiede" X="370" Y="246" position="back" animated="False" />
+  <scene bitmap="portiera_finestrino" X="522" Y="367" position="default" animated="False" />
+  <hotspots>
+    <item ID="tana">
+      <look>
+        <command>text "Теперь я по-новому смотрю на мою комфортную жизнь в шкафу."</command>
+      </look>
+      <pick>
+        <command>text "Лучше не трогать; думаю, что это часть пейзажа."</command>
+      </pick>
+      <use>
+        <command>text "Я не вижу тут поблизости страусов."</command>
+      </use>
+      <talk>
+        <command>text "Жуки, пора бы вам перестать копать эти дыры. Весь газон нам испоганили."</command>
+      </talk>
+    </item>
+    <item ID="triciclo">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <character ID="traslocatore scemo">
+      <look />
+      <talk />
+    </character>
+    <character ID="traslocatore grasso">
+      <look />
+      <talk />
+    </character>
+    <action ID="portiera">
+      <act>
+        <command>wait 0,5</command>
+        <command>text "Нет, закрыто."</command>
+      </act>
+    </action>
+    <character ID="Noce">
+      <look>
+        <command>pose d</command>
+        <command>text "Ты уже должен был запомнить, что это Орех."</command>
+      </look>
+      <talk>
+        <command>0 text -"me" -c=fuxia "Что ты так долго, а?"</command>
+        <command>0 text "А ты откуда такой нарисовался?"</command>
+        <command>0 text -"me" -c=fuxia "Это фургон в ужасном состоянии. Я пролез через дыру в полу."</command>
+        <command>0 text "А я могу так туда пролезть?"</command>
+        <command>0 text -"me" -c=fuxia "Неа, чувак. У меня-то башка большая, но с твоей просто в сравнение не идет."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Не хочешь потусоваться со мной?"</command>
+        <command>0 text -"me" -c=fuxia "Все на борт!"</command>
+        <command>0 sound "pick_generic"</command>
+        <command>0 pick y "noce"</command>
+        <command>0 internal 1</command>
+        <command>1 text "Запрыгивай."</command>
+        <command>1 sound "pick_generic"</command>
+        <command>1 pick y "noce"</command>
+      </talk>
+    </character>
+    <goto ID="marciapiede_x_vicolo" icon="l" PX="-665" PY="787">
+      <go>
+        <command>goto "vicolo"</command>
+      </go>
+    </goto>
+    <goto ID="marciapiede_x_retro_furgone" icon="ur" PX="1583" PY="495">
+      <go>
+        <command>goto "retro_furgone"</command>
+      </go>
+    </goto>
+    <goto ID="marciapiede_x_ingresso" icon="d" PX="933" PY="1258">
+      <go>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Вижу, у нас тут нобелевский лауреат..."</command>
+        <command>1 expression "sarcastic"</command>
+        <command>1 text "Нужно мне напоминать тебе об огромной сливе, что следит за входной дверью?"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

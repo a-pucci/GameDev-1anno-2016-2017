@@ -1,0 +1,60 @@
+<object name="résidu de plutonium liquide">
+  <description>
+    <command>text "Il ne reste que quelques gouttes."</command>
+  </description>
+  <inventory>
+    <object name="assenzio">
+      <command>sound "pick_assenzio"</command>
+      <command>throw "assenzio"</command>
+      <command>throw "residui_plutonio"</command>
+      <command>pick n "assenzio_radioattivo"</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>expression "sarcastic"</command>
+      <command>text "Je doute que ça puisse être utilisé comme engrais." $90</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="flusso canalizzatore">
+      <command>pose d</command>
+      <command>text "Il y aura toujours le problème des 88 miles à l'heure... mais gardons-le à l'esprit, ok ?" $152</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="armadio recuperato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Dommage que ce ne soit pas une DeLorean." $153</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Dommage que ce ne soit pas une DeLorean." $153</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="pescato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Tu devrais passer en revue le tableau périodique des éléments. Je pense que tu confonds ça avec du mercure." $156</command>
+    </hotspot>
+    <hotspot ID="scienziato">
+      <command>text "Je pense que je ferais mieux de garder ce résidu de plutonium pour moi." $164</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="urinatoio">
+      <command>expression "happy"</command>
+      <command>text "Ce serait un... nucléaire solo." $158</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="assenzio">
+      <command>text "Il vaudrait mieux le prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+</object>

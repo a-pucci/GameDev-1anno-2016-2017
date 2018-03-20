@@ -1,0 +1,177 @@
+<object name="alfiler">
+  <description>
+    <command>text "¿Qué probabilidades tengo de encontrarlo?"</command>
+  </description>
+  <inventory>
+    <object name="bambola voodoo">
+      <command>if in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Deberías quedarte cerca." 1</command>
+      <command>fie</command>
+      <command>if in "elenco_telefonico"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Deberías quedarte cerca." 1</command>
+      <command>fie</command>
+      <command>if in "toppa_bagno"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Deberías quedarte cerca." 1</command>
+      <command>fie</command>
+      <command>if status &gt;"spiaggia" 4</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Te recuerdo que estamos en otra época." 4</command>
+      <command>fie</command>
+      <command>if not in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>0 pose d</command>
+      <command>0 text "Menos mal, no hacía más que pinchar..." 5</command>
+      <command>0 expression "normal"</command>
+      <command>0 wait 1</command>
+      <command>0 expression "sarcastic"</command>
+      <command>0 text "Sí, bueno... ya." 6</command>
+      <command>pose dr</command>
+      <command>expression "normal"</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_voodoo_doll"</command>
+      <command>animation -skinny 00 -o=58,6 "skinny_accoltella_bambola_voodoo"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "normal"</command>
+      <command>0 text "Hay algo que no estoy haciendo bien. No funciona." 7</command>
+      <command>0 internal #"custode" -g 1</command>
+      <command>0 internal @"bambola voodoo" -g 1</command>
+      <command>0 internal @"spillo" -g 1</command>
+      <command>fie</command>
+    </object>
+    <object name="bambola voodoo funzionante">
+      <command>if in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Deberías quedarte cerca." 1</command>
+      <command>fie</command>
+      <command>if in "elenco_telefonico"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Deberías quedarte cerca." 1</command>
+      <command>fie</command>
+      <command>if in "toppa_bagno"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Deberías quedarte cerca." 1</command>
+      <command>fie</command>
+      <command>if status &gt;"spiaggia" 4</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Te recuerdo que estamos en otra época." 4</command>
+      <command>fie</command>
+      <command>if not in "primo_piano"</command>
+      <command>load "johnny"</command>
+      <command>inventory</command>
+      <command>wait 1</command>
+      <command>pose d</command>
+      <command>text "Esperemos que sea la adecuada." 5</command>
+      <command>stop -ost</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_voodoo_doll_ok"</command>
+      <command>animation -skinny 00 -o=58,39 "skinny_accoltella_bambola_voodoo_funzionante"</command>
+      <command>dialog -r "La mia bambola voodoo non funziona." "custode"</command>
+      <command>throw "bambola voodoo funzionante"</command>
+      <command>throw "spillo"</command>
+      <command>status &gt;"primo_piano" 1</command>
+      <command>stop "cicada"</command>
+      <command>if internal -"giardino/quarterback" 1</command>
+      <command>internal #"quarterback" -g 1</command>
+      <command>fi</command>
+      <command>cutscene -x "johnny"</command>
+      <command>ost</command>
+      <command>screen c -w=500 -fo=1500 -a</command>
+      <command>hide -"primo_piano/porta della camera"</command>
+      <command>show -"primo_piano/primo_piano_x_camera_letto"</command>
+      <command>internal -"primo_piano/ragazzo alticcio" -i -g 0</command>
+      <command>internal -"primo_piano/porta della camera" -g 2</command>
+      <command>internal -"giardino/quarterback" -g 1</command>
+      <command>internal -"primo_piano/ragazzo alticcio" -i 0</command>
+      <command>internal -"primo_piano/berretto" 2</command>
+      <command>hide -"primo_piano/vestiti a terra"</command>
+      <command>fie</command>
+    </object>
+    <object name="telone">
+      <command>text "No quiero perforarlo." $167</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="covone di paglia">
+      <command>text "Mejor no tentar a la suerte. No sería capaz de volver a encontrarlo." $166</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="telone">
+      <command>expression "sarcastic"</command>
+      <command>text "No quiero perforarlo." $167</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="profilattico extra-large">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "Voy a repetirlo: QUÉ ASCO." $168</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>pose d</command>
+      <command>text "No quiero despertarlo." $126</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="Pinhead addormentato">
+      <command>pose d</command>
+      <command>text "No quiero despertarlo." $126</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="porta del bagno">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sería el intento de robo más estúpido de la historia." $169</command>
+    </hotspot>
+    <hotspot ID="porta della camera">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sería el intento de robo más estúpido de la historia." $169</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="cactus ballerini">
+      <command>pose d</command>
+      <command>text "Eh, en una pelea le superarían irremediablemente en número." $170</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sería el intento de robo más estúpido de la historia." $169</command>
+    </hotspot>
+  </location>
+</object>

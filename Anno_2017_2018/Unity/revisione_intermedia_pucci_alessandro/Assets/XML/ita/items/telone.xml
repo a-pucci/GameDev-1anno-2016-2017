@@ -1,0 +1,53 @@
+<object name="telone">
+  <description>
+    <command>text "Ho sempre sognato di avere una piscina in casa." 1</command>
+  </description>
+  <inventory>
+    <object name="spillo">
+      <command>text "Non voglio forarlo." $167</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="covone di paglia">
+      <command>text "Non serve. Il cadavere è già coperto dalla paglia." $115</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Anch'io sento l'irrefrenabile desiderio di soffocarla, ma temo non sia possibile." $116</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "Non è una cattiva idea, ma prima voglio accertarmi di aver fatto tutto il necessario." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="navicella aliena">
+      <command>pose d</command>
+      <command>text "E tu vorresti nascondere una meraviglia del genere?" $118</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "Potrei coprire la telecamera col telone, ma Ralph se ne accorgerebbe." $176</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "Potrei coprire la telecamera col telone, ma Ralph se ne accorgerebbe." $176</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "Potrei coprire la telecamera col telone, ma Ralph se ne accorgerebbe." $176</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "Potrei coprire la telecamera col telone, ma Ralph se ne accorgerebbe." $176</command>
+    </hotspot>
+  </location>
+</object>

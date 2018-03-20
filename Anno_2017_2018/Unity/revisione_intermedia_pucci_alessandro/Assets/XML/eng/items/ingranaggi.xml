@@ -1,0 +1,27 @@
+<object name="gears">
+  <description>
+    <command>text "These seem to be those little gears you see in clocks."</command>
+  </description>
+  <inventory>
+    <object name="sveglia">
+      <command>sound "pick_clock_funzionante"</command>
+      <command>pick n "sveglia_funzionante"</command>
+      <command>throw "sveglia"</command>
+      <command>throw "ingranaggi"</command>
+    </object>
+  </inventory>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>text "I need them; I can't risk losing them." $227</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>text "It's not exactly the upgrade he needs." $224</command>
+    </hotspot>
+    <hotspot ID="sveglia">
+      <command>text "It'd be better to pick it up first." $95</command>
+    </hotspot>
+  </location>
+</object>

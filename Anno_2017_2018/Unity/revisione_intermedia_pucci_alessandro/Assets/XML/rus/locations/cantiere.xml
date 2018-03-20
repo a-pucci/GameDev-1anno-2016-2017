@@ -1,0 +1,175 @@
+<location>
+  <script />
+  <entry name="vicolo" X="2554" Y="1050" pose="l" />
+  <sound name="ambient_sound_construction" />
+  <scene bitmap="guinzaglio" X="2292" Y="964" position="superback" animated="False" />
+  <scene bitmap="operaio_in_piedi" X="1072" Y="339" position="back" animated="True" loop="True" />
+  <scene bitmap="operaio_seduto" X="791" Y="392" position="back" animated="True" loop="True" />
+  <scene bitmap="operaio_dorme" X="293" Y="589" position="back" animated="True" loop="True" />
+  <scene bitmap="parabrezza" X="219" Y="557" position="back" animated="False" />
+  <scene bitmap="cofano_aperto" X="324" Y="539" position="back" animated="False" />
+  <hotspots>
+    <action ID="cofano">
+      <act>
+        <command>show +"cofano_aperto"</command>
+        <command>hide -"me"</command>
+        <command>sound "furgone"</command>
+        <command>show -"carbone"</command>
+      </act>
+    </action>
+    <item ID="carbone">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Без сомнения, самая продвинутая технология."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Надеюсь, ты только его в своем рождественском чулке и находил."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "И где теперь моя летающая метла?"</command>
+      </use>
+      <talk>
+        <command>text "Нынче сложно жить в мире, где все гонятся за восполняемой энергией."</command>
+      </talk>
+    </item>
+    <action ID="betoniera">
+      <act>
+        <command>pose d</command>
+        <command>expression "perplexed"</command>
+        <command>text "Если ты раньше был гангстером, пора бы об этом уже сказать."</command>
+      </act>
+    </action>
+    <item ID="piccioni">
+      <look>
+        <command>text "Ты посмотри на них: какие у них кровожадные глаза."</command>
+      </look>
+      <pick>
+        <command>text "Я уверен, что не хочу, чтобы они оставили на мне свою «метку»."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ты только что задал новый стандарт слову «глупость»."</command>
+      </use>
+      <talk>
+        <command>text "Оставлю их наедине друг с другом."</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "piccioni"</command>
+      </indipendent>
+    </item>
+    <item ID="megafono">
+      <look>
+        <command>text "Этим старикам нынче ничего не нужно."</command>
+      </look>
+      <pick>
+        <command>sound "pick_megafono"</command>
+        <command>pick y "megafono"</command>
+      </pick>
+      <use>
+        <command>text "Пусть бедные рабочие отдохнут и получат немного столь заслуженной тишины."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Если ты хочешь, чтобы я в него поорал, я тебя сразу предупреждаю, что это действие будет совершенно ненужным."</command>
+      </talk>
+    </item>
+    <item ID="tubi metallici">
+      <look>
+        <command>text "Трубы разного размера. Наверное, они для канализации или чего-то типа того."</command>
+      </look>
+      <pick>
+        <command>0 text "Они уже заплесневели, но я возьму одну."</command>
+        <command>0 wait 0,5</command>
+        <command>sound "pick_tube"</command>
+        <command>pick n "tubo"</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text -"tutorial" "Эм... скажу еще кое-что: порой ты можешь подбирать некоторые вещи несколько раз."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Этот запоздалый совет еще раз показывает твою небрежность, но спасибо за подсказку."</command>
+        <command>0 nolook</command>
+        <command>0 internal -"salotto/urna delle ceneri" -g 1</command>
+        <command>0 internal 1</command>
+      </pick>
+      <use>
+        <command>text "Мои достижения в гидравлике не такие уж и значимые."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="cane">
+      <look>
+        <command>text "По мне, так он немного на взводе."</command>
+      </look>
+      <talk>
+        <command>text "Собаки и кости не лучшие друзья. Не буду ему докучать."</command>
+      </talk>
+      <indipendent>
+        <command>sound -l "dog"</command>
+        <command>animation -"me" 00 -o=0,0 -c "cane_idle"</command>
+      </indipendent>
+    </character>
+    <character ID="cieco">
+      <look>
+        <command>text "Его даже слепота не останавливает."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>0 text "Извините, сэр, могу я вас побеспокоить?"</command>
+        <command>animation -"me" 00 -o=0,0 -c "vecchio_megafono_off"</command>
+        <command>bitmap -"me" "cieco_riposo"</command>
+        <command>0 text -"me" -c=rrred "Разве не видишь, что я очень занят, парень? Ты что слепой?"</command>
+        <command>0 wait 1</command>
+        <command>0 pose d</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Скажи мне, что это шутка."</command>
+        <command>0 lookat -"me"</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "cieco"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=rrred -n "Давайте, двигайтесь! Не спать там!"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=rrred -n "На войне мы ямы голыми руками копали!"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=rrred -n "Эй, это банан, а не молоток!"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=rrred -n "И я годами в профсоюзе радел за таких как вы?"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=rrred -n "Когда я был молодым, шурупы закручивали по часовой стрелке!"</command>
+      </indipendent>
+    </character>
+    <goto ID="cantiere_x_vicolo" icon="r" PX="3257" PY="736">
+      <go>
+        <command>goto "vicolo"</command>
+      </go>
+    </goto>
+    <character ID="tutorial">
+      <look />
+      <talk />
+    </character>
+  </hotspots>
+</location>

@@ -1,0 +1,32 @@
+<object name="metalhead starter kit">
+  <description>
+    <command>text "Yeah, metal!"</command>
+  </description>
+  <inventory />
+  <location name="casa_albero">
+    <hotspot ID="dragone">
+      <command>wait 0,5</command>
+      <command>sound "dragone_outfit"</command>
+      <command>bitmap -"me" "dragone_metal"</command>
+      <command>wait 1</command>
+      <command>text "Not bad. Now you really have an aggressive look."</command>
+      <command>bitmap -"me" "dragone_metal_l"</command>
+      <command>text -"me" "I have to admit I'm really pumped for it."</command>
+      <command>text "Do you think you can sing a metal song now?"</command>
+      <command>text -"me" "Which one do you want to hear?"</command>
+      <command>internal -g 2</command>
+      <command>throw "starter_kit_metallaro"</command>
+      <command>dialog "scelta_pezzo"</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="parrucca">
+      <command>text "The metalhead one is much better." $171</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="band">
+      <command>text "Not even that would be enough to make him sing, I'm afraid." $172</command>
+    </hotspot>
+  </location>
+</object>

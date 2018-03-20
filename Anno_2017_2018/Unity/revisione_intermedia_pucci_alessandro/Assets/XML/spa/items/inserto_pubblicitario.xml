@@ -1,0 +1,7 @@
+<object name="anuncio">
+  <description>
+    <command>text "Correo urgente, 24 horas, 7 días a la semana, 00-8458901."</command>
+    <command>text "Todos los paquetes tienen que estar embalados a prueba de golpes y ser impermeables, y los contenidos deben indicarse claramente en la caja."</command>
+  </description>
+  <inventory />
+</object>

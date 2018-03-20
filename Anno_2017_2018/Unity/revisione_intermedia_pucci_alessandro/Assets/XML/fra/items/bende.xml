@@ -1,0 +1,21 @@
+<object name="emballages">
+  <description>
+    <command>text "Ils ne pouvaient vraiment pas attendre pour consommer leur nuit de noces."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="rasoio fai da te">
+      <command>text "Quelqu'un aurait vraiment pu l'utiliser." $50</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "Ce n'est pas une mauvaise idée, mais d'abord je veux être sûr d'avoir fait tout ce qui est nécessaire." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "Ce n'est pas comme si j'étais une infirmière." $52</command>
+    </hotspot>
+  </location>
+</object>

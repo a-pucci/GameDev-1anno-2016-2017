@@ -1,0 +1,38 @@
+<location isfirstperson="True">
+  <script>
+  </script>
+  <entry name="primo_piano" X="1" Y="1" pose="u" />
+  <hotspots>
+    <action ID="annuncio_tendine">
+      <act>
+        <command>text "«Занавески для душа Кейва Джонсона», 206-002-456."</command>
+        <command>wait 0,5</command>
+        <command>text "Надеюсь, хотя бы эта настоящие."</command>
+      </act>
+    </action>
+    <action ID="annuncio_hotline">
+      <act>
+        <command>text "«Горячая линия Рокко», 80-6969."</command>
+        <command>wait 0,5</command>
+        <command>text "Горячая, развратная и галантная."</command>
+      </act>
+    </action>
+    <action ID="annuncio_corriere">
+      <act>
+        <command>0 text "Мгновенный курьер, 24 часа, 7 дней в неделю, 00-8458901."</command>
+        <command>0 text "Все посылки должны быть водонепроницаемы, защищены от ударов, а содержимое посылки должно быть прописано снаружи коробки."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Хм-м-м... Я мог бы упаковать шкаф и «отправить» самого себя к Рональду."</command>
+        <command>0 internal -"bagno/telone" 1</command>
+        <command>1 sound "pick_inserto_telefonico"</command>
+        <command>1 pick y "inserto_pubblicitario"</command>
+      </act>
+    </action>
+    <goto ID="elenco_telefonico_x_primo_piano" icon="d" PX="943" PY="1347">
+      <go>
+        <command>sound "elencotelefonico_close"</command>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

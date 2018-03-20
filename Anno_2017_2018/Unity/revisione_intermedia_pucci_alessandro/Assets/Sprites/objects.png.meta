@@ -1,0 +1,2652 @@
+fileFormatVersion: 2
+guid: 2bdae1b13a975e042be8eb0fec5de090
+timeCreated: 1519287217
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: acqua_fogna
+    21300002: acqua_fogna_v
+    21300004: anelli
+    21300006: anelli_v
+    21300008: antifurto_fai_da_te
+    21300010: antifurto_fai_da_te_v
+    21300012: arpione
+    21300014: arpione_v
+    21300016: assenzio
+    21300018: assenzio_radioattivo
+    21300020: assenzio_radioattivo_v
+    21300022: assenzio_v
+    21300024: bagnoschiuma
+    21300026: bagnoschiuma_v
+    21300028: bambola voodoo funzionante
+    21300030: bambola voodoo funzionante_v
+    21300032: bambola voodoo incompleta
+    21300034: bambola voodoo incompleta_v
+    21300036: bambola voodoo
+    21300038: bambola voodoo_v
+    21300040: banconote
+    21300042: banconote_v
+    21300044: bende
+    21300046: bende_v
+    21300048: bibbia
+    21300050: bibbia_v
+    21300052: bicchiere di birra
+    21300054: bicchiere di birra_v
+    21300056: bicchiere vuoto
+    21300058: bicchiere vuoto_v
+    21300060: boccale_vuoto
+    21300062: boccale_vuoto_v
+    21300064: bomba
+    21300066: bomba_appiccicosa
+    21300068: bomba_appiccicosa_v
+    21300070: bomba_disinnescata
+    21300072: bomba_disinnescata_v
+    21300074: bomba_v
+    21300076: bomboletta_spray
+    21300078: bomboletta_spray_v
+    21300080: buono
+    21300082: buono_v
+    21300084: capelli
+    21300086: capelli_v
+    21300088: capsaicina
+    21300090: capsaicina_v
+    21300092: chiavi
+    21300094: chiavi_v
+    21300096: circuito
+    21300098: circuito_v
+    21300100: cravatta
+    21300102: cravatta_v
+    21300104: dentiera
+    21300106: dentiera_v
+    21300108: disco_alieno
+    21300110: disco_alieno_v
+    21300112: fiammiferi
+    21300114: fiammiferi_v
+    21300116: filo_rame
+    21300118: filo_rame_v
+    21300120: forchetta
+    21300122: forchetta_v
+    21300124: foto
+    21300126: foto_v
+    21300128: gomma_gigante
+    21300130: gomma_gigante_v
+    21300132: gomma_presa_rapida
+    21300134: gomma_presa_rapida_v
+    21300136: gomma_solidificata
+    21300138: gomma_solidificata_v
+    21300140: gomme_da_masticare
+    21300142: gomme_da_masticare_v
+    21300144: ingranaggi
+    21300146: ingranaggi_v
+    21300148: inserto_pubblicitario
+    21300150: inserto_pubblicitario_v
+    21300152: intruglio
+    21300154: intruglio_v
+    21300156: jalapeno
+    21300158: jalapeno_v
+    21300160: kit_imballaggio
+    21300162: kit_imballaggio_v
+    21300164: lenza
+    21300166: lenza_v
+    21300168: lenzuolo
+    21300170: lenzuolo_v
+    21300172: lettera
+    21300174: lettera_struccata
+    21300176: lettera_struccata_v
+    21300178: lettera_v
+    21300180: magnete
+    21300182: magnete_v
+    21300184: mappa
+    21300186: mappa_v
+    21300188: megafono
+    21300190: megafono_v
+    21300192: monete_antiche
+    21300194: monete_antiche_v
+    21300196: musicassetta
+    21300198: musicassetta_v
+    21300200: noce
+    21300202: noce_v
+    21300204: nuova location_v
+    21300206: pala
+    21300208: pala_v
+    21300210: papillon
+    21300212: papillon_v
+    21300214: pass
+    21300216: pass_v
+    21300218: penny
+    21300220: penny_v
+    21300222: peperoncino
+    21300224: peperoncino_v
+    21300226: petardi
+    21300228: petardi_v
+    21300230: piede_di_porco
+    21300232: piede_di_porco_v
+    21300234: pigotta
+    21300236: pigotta_v
+    21300238: pila
+    21300240: pila_v
+    21300242: pillole
+    21300244: pillole_v
+    21300246: pirite
+    21300248: pirite_v
+    21300250: plutonio
+    21300252: plutonio_v
+    21300254: polaroid
+    21300256: polaroid_v
+    21300258: polvere_sparo
+    21300260: polvere_sparo_v
+    21300262: pomello
+    21300264: pomello_v
+    21300266: premio
+    21300268: premio_v
+    21300270: registratore
+    21300272: registratore_v
+    21300274: registrazione_polizia
+    21300276: registrazione_polizia_v
+    21300278: residui_plutonio
+    21300280: residui_plutonio_v
+    21300282: semi_mela
+    21300284: semi_mela_v
+    21300286: spillo
+    21300288: spillo_v
+    21300290: starter_kit_metallaro
+    21300292: starter_kit_metallaro_v
+    21300294: struccante
+    21300296: struccante_v
+    21300298: sveglia
+    21300300: sveglia_funzionante
+    21300302: sveglia_funzionante_v
+    21300304: sveglia_v
+    21300306: targa_antica
+    21300308: targa_antica_v
+    21300310: telone
+    21300312: telone_v
+    21300314: torcia
+    21300316: torcia_scarica
+    21300318: torcia_scarica_v
+    21300320: torcia_v
+    21300322: trapano
+    21300324: trapano_funzionante
+    21300326: trapano_funzionante_v
+    21300328: trapano_v
+    21300330: tubo
+    21300332: tubo_v
+    21300334: viagra
+    21300336: viagra_v
+    21300338: vite
+    21300340: vite_v
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: acqua_fogna
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 1986
+        width: 163
+        height: 170
+      alignment: 9
+      pivot: {x: -0.018404908, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: acqua_fogna_v
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1278
+        width: 235
+        height: 252
+      alignment: 9
+      pivot: {x: -0.021276595, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: anelli
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1
+        width: 170
+        height: 94
+      alignment: 9
+      pivot: {x: 0, y: 1.4148936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: anelli_v
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 362
+        width: 250
+        height: 135
+      alignment: 9
+      pivot: {x: 0, y: 1.4296297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: antifurto_fai_da_te
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 373
+        width: 156
+        height: 170
+      alignment: 9
+      pivot: {x: -0.051282052, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: antifurto_fai_da_te_v
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1250
+        width: 232
+        height: 250
+      alignment: 9
+      pivot: {x: -0.05172414, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arpione
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 237
+        width: 170
+        height: 168
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: arpione_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 252
+        height: 244
+      alignment: 9
+      pivot: {x: 0, y: 1.0327868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: assenzio
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1645
+        width: 164
+        height: 170
+      alignment: 9
+      pivot: {x: -0.036585364, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: assenzio_radioattivo
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2114
+        width: 166
+        height: 170
+      alignment: 9
+      pivot: {x: -0.018072288, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: assenzio_radioattivo_v
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 689
+        width: 236
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: assenzio_v
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1244
+        width: 245
+        height: 252
+      alignment: 9
+      pivot: {x: -0.01632653, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bagnoschiuma
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 349
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bagnoschiuma_v
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1981
+        width: 251
+        height: 252
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bambola voodoo funzionante
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 317
+        width: 106
+        height: 170
+      alignment: 9
+      pivot: {x: -0.29245284, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bambola voodoo funzionante_v
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 613
+        width: 137
+        height: 250
+      alignment: 9
+      pivot: {x: -0.40875912, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bambola voodoo incompleta
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 2110
+        width: 150
+        height: 170
+      alignment: 9
+      pivot: {x: -0.026666667, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bambola voodoo incompleta_v
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1279
+        width: 193
+        height: 250
+      alignment: 9
+      pivot: {x: -0.14507772, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bambola voodoo
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 147
+        width: 159
+        height: 170
+      alignment: 9
+      pivot: {x: -0.050314464, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bambola voodoo_v
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 1861
+        width: 242
+        height: 250
+      alignment: 9
+      pivot: {x: -0.004132231, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: banconote
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 79
+        width: 170
+        height: 151
+      alignment: 9
+      pivot: {x: 0, y: 1.0794702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: banconote_v
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 604
+        width: 250
+        height: 208
+      alignment: 9
+      pivot: {x: 0, y: 1.1105769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bende
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1910
+        width: 170
+        height: 99
+      alignment: 9
+      pivot: {x: 0, y: 1.3232323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bende_v
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 445
+        width: 252
+        height: 142
+      alignment: 9
+      pivot: {x: 0, y: 1.4014084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bibbia
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 183
+        width: 170
+        height: 137
+      alignment: 9
+      pivot: {x: 0, y: 1.1167883}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bibbia_v
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 438
+        width: 252
+        height: 206
+      alignment: 9
+      pivot: {x: 0, y: 1.1067961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bicchiere di birra
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 318
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bicchiere di birra_v
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2196
+        width: 252
+        height: 252
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bicchiere vuoto
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 1747
+        width: 108
+        height: 170
+      alignment: 9
+      pivot: {x: -0.2962963, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bicchiere vuoto_v
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 853
+        width: 164
+        height: 252
+      alignment: 9
+      pivot: {x: -0.2621951, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: boccale_vuoto
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 152
+        width: 161
+        height: 170
+      alignment: 9
+      pivot: {x: -0.03726708, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: boccale_vuoto_v
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 1609
+        width: 235
+        height: 252
+      alignment: 9
+      pivot: {x: -0.04680851, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomba
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 170
+        height: 151
+      alignment: 9
+      pivot: {x: 0, y: 1.013245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomba_appiccicosa
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 70
+        width: 170
+        height: 149
+      alignment: 9
+      pivot: {x: 0, y: 1.080537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomba_appiccicosa_v
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1552
+        width: 250
+        height: 210
+      alignment: 9
+      pivot: {x: 0, y: 1.0761905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomba_disinnescata
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 221
+        width: 170
+        height: 167
+      alignment: 9
+      pivot: {x: 0, y: 1.011976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomba_disinnescata_v
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 2089
+        width: 252
+        height: 251
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomba_v
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1138
+        width: 252
+        height: 213
+      alignment: 9
+      pivot: {x: 0, y: 1.0798122}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomboletta_spray
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 2159
+        width: 105
+        height: 170
+      alignment: 9
+      pivot: {x: -0.30476192, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: bomboletta_spray_v
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 612
+        width: 153
+        height: 252
+      alignment: 9
+      pivot: {x: -0.3267974, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: buono
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 971
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: buono_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2196
+        width: 252
+        height: 252
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: capelli
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 77
+        width: 170
+        height: 147
+      alignment: 9
+      pivot: {x: 0, y: 1.0680273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: capelli_v
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 2001
+        width: 252
+        height: 233
+      alignment: 9
+      pivot: {x: 0, y: 1.0042919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: capsaicina
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 870
+        width: 162
+        height: 170
+      alignment: 9
+      pivot: {x: -0.030864198, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: capsaicina_v
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1451
+        width: 244
+        height: 252
+      alignment: 9
+      pivot: {x: -0.024590164, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: chiavi
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 694
+        width: 170
+        height: 136
+      alignment: 9
+      pivot: {x: 0, y: 1.1397059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: chiavi_v
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 970
+        width: 250
+        height: 192
+      alignment: 9
+      pivot: {x: 0, y: 1.1302084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: circuito
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1838
+        width: 170
+        height: 165
+      alignment: 9
+      pivot: {x: 0, y: 1.0121212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: circuito_v
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1079
+        width: 252
+        height: 244
+      alignment: 9
+      pivot: {x: 0, y: 1.0040984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cravatta
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 1048
+        width: 170
+        height: 168
+      alignment: 9
+      pivot: {x: 0, y: 1.0059524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: cravatta_v
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1959
+        width: 252
+        height: 237
+      alignment: 9
+      pivot: {x: 0, y: 1.0379747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dentiera
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 2305
+        width: 170
+        height: 143
+      alignment: 9
+      pivot: {x: 0, y: 1.097902}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: dentiera_v
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 786
+        width: 252
+        height: 206
+      alignment: 9
+      pivot: {x: 0, y: 1.0922331}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: disco_alieno
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 219
+        width: 170
+        height: 166
+      alignment: 9
+      pivot: {x: 0, y: 1.0120482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: disco_alieno_v
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1213
+        width: 252
+        height: 247
+      alignment: 9
+      pivot: {x: 0, y: 1.0202429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: fiammiferi
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 702
+        width: 163
+        height: 170
+      alignment: 9
+      pivot: {x: -0.042944785, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: fiammiferi_v
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1467
+        width: 230
+        height: 252
+      alignment: 9
+      pivot: {x: -0.06521739, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: filo_rame
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2278
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: filo_rame_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1485
+        width: 248
+        height: 252
+      alignment: 9
+      pivot: {x: -0.008064516, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: forchetta
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 167
+        width: 170
+        height: 161
+      alignment: 9
+      pivot: {x: 0, y: 1.0186335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: forchetta_v
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1719
+        width: 252
+        height: 227
+      alignment: 9
+      pivot: {x: 0, y: 1.030837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: foto
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 103
+        width: 170
+        height: 154
+      alignment: 9
+      pivot: {x: 0, y: 1.0454545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: foto_v
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 1387
+        width: 252
+        height: 225
+      alignment: 9
+      pivot: {x: 0, y: 1.0533333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gomma_gigante
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 24
+        width: 170
+        height: 136
+      alignment: 9
+      pivot: {x: 0, y: 1.1029412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gomma_gigante_v
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 439
+        width: 252
+        height: 201
+      alignment: 9
+      pivot: {x: 0, y: 1.1243781}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gomma_presa_rapida
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1
+        width: 170
+        height: 94
+      alignment: 9
+      pivot: {x: 0, y: 1.393617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gomma_presa_rapida_v
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 390
+        width: 252
+        height: 143
+      alignment: 9
+      pivot: {x: 0, y: 1.3916084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gomma_solidificata
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 1635
+        width: 170
+        height: 104
+      alignment: 9
+      pivot: {x: 0, y: 1.2884616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gomma_solidificata_v
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 498
+        width: 250
+        height: 147
+      alignment: 9
+      pivot: {x: 0, y: 1.340136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gomme_da_masticare
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 15
+        width: 170
+        height: 132
+      alignment: 9
+      pivot: {x: 0, y: 1.1515151}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: gomme_da_masticare_v
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1261
+        width: 252
+        height: 197
+      alignment: 9
+      pivot: {x: 0, y: 1.1319797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ingranaggi
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 1289
+        width: 162
+        height: 170
+      alignment: 9
+      pivot: {x: -0.030864198, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ingranaggi_v
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1530
+        width: 239
+        height: 252
+      alignment: 9
+      pivot: {x: -0.037656903, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: inserto_pubblicitario
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1443
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: inserto_pubblicitario_v
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 2028
+        width: 246
+        height: 250
+      alignment: 9
+      pivot: {x: -0.008130081, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: intruglio
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 51
+        width: 150
+        height: 170
+      alignment: 9
+      pivot: {x: -0.1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: intruglio_v
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 450
+        width: 206
+        height: 252
+      alignment: 9
+      pivot: {x: -0.11165048, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: jalapeno
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 159
+        width: 158
+        height: 170
+      alignment: 9
+      pivot: {x: -0.01898734, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: jalapeno_v
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1826
+        width: 244
+        height: 251
+      alignment: 9
+      pivot: {x: -0.032786883, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: kit_imballaggio
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 6
+        width: 170
+        height: 124
+      alignment: 9
+      pivot: {x: 0, y: 1.1774193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: kit_imballaggio_v
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 630
+        width: 250
+        height: 188
+      alignment: 9
+      pivot: {x: 0, y: 1.1595745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lenza
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 148
+        width: 161
+        height: 170
+      alignment: 9
+      pivot: {x: -0.01863354, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lenza_v
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1030
+        width: 239
+        height: 252
+      alignment: 9
+      pivot: {x: -0.012552301, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lenzuolo
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 282
+        width: 170
+        height: 169
+      alignment: 9
+      pivot: {x: 0, y: 1.0059172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lenzuolo_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1972
+        width: 252
+        height: 251
+      alignment: 9
+      pivot: {x: 0, y: 1.0039841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lettera
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1746
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lettera_struccata
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1847
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lettera_struccata_v
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 2199
+        width: 252
+        height: 249
+      alignment: 9
+      pivot: {x: 0, y: 1.0080321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: lettera_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1723
+        width: 252
+        height: 249
+      alignment: 9
+      pivot: {x: 0, y: 1.0080321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: magnete
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 281
+        width: 170
+        height: 169
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: magnete_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 815
+        width: 252
+        height: 246
+      alignment: 9
+      pivot: {x: 0, y: 1.0162601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mappa
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 808
+        width: 165
+        height: 170
+      alignment: 9
+      pivot: {x: -0.006060606, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: mappa_v
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 2196
+        width: 245
+        height: 252
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: megafono
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 1535
+        width: 166
+        height: 170
+      alignment: 9
+      pivot: {x: -0.018072288, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: megafono_v
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 2025
+        width: 250
+        height: 252
+      alignment: 9
+      pivot: {x: -0.004, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: monete_antiche
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 534
+        width: 145
+        height: 170
+      alignment: 9
+      pivot: {x: -0.08275862, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: monete_antiche_v
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1140
+        width: 225
+        height: 250
+      alignment: 9
+      pivot: {x: -0.035555556, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: musicassetta
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 443
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: musicassetta_v
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1684
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: noce
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 1485
+        width: 162
+        height: 170
+      alignment: 9
+      pivot: {x: -0.024691358, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: noce_v
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 2196
+        width: 251
+        height: 252
+      alignment: 9
+      pivot: {x: -0.003984064, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: nuova location_v
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 1777
+        width: 250
+        height: 237
+      alignment: 9
+      pivot: {x: 0, y: 1.0042194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pala
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 147
+        width: 157
+        height: 170
+      alignment: 9
+      pivot: {x: -0.03821656, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pala_v
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1458
+        width: 248
+        height: 252
+      alignment: 9
+      pivot: {x: -0.012096774, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: papillon
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 328
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: papillon_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1041
+        width: 250
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pass
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 262
+        width: 170
+        height: 168
+      alignment: 9
+      pivot: {x: 0, y: 1.0119047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pass_v
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1821
+        width: 251
+        height: 249
+      alignment: 9
+      pivot: {x: 0, y: 1.0080321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: penny
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 206
+        width: 170
+        height: 166
+      alignment: 9
+      pivot: {x: 0, y: 1.0060241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: penny_v
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1320
+        width: 252
+        height: 236
+      alignment: 9
+      pivot: {x: 0, y: 1.0466101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: peperoncino
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 44
+        width: 170
+        height: 146
+      alignment: 9
+      pivot: {x: 0, y: 1.0958904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: peperoncino_v
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 971
+        width: 252
+        height: 212
+      alignment: 9
+      pivot: {x: 0, y: 1.0849056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: petardi
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 29
+        width: 170
+        height: 132
+      alignment: 9
+      pivot: {x: 0, y: 1.1287879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: petardi_v
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 641
+        width: 252
+        height: 199
+      alignment: 9
+      pivot: {x: 0, y: 1.1155779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piede_di_porco
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 2075
+        width: 170
+        height: 164
+      alignment: 9
+      pivot: {x: 0, y: 1.0060976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: piede_di_porco_v
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1541
+        width: 252
+        height: 240
+      alignment: 9
+      pivot: {x: 0, y: 1.0166667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pigotta
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 1697
+        width: 160
+        height: 170
+      alignment: 9
+      pivot: {x: -0.05, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pigotta_v
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 1529
+        width: 233
+        height: 250
+      alignment: 9
+      pivot: {x: -0.055793993, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pila
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 2278
+        width: 163
+        height: 170
+      alignment: 9
+      pivot: {x: -0.042944785, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pila_v
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1357
+        width: 220
+        height: 252
+      alignment: 9
+      pivot: {x: -0.05909091, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pillole
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 13
+        width: 118
+        height: 170
+      alignment: 9
+      pivot: {x: -0.21186441, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pillole_v
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1105
+        width: 178
+        height: 252
+      alignment: 9
+      pivot: {x: -0.20224719, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pirite
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 23
+        width: 170
+        height: 125
+      alignment: 9
+      pivot: {x: 0, y: 1.184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pirite_v
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1133
+        width: 250
+        height: 184
+      alignment: 9
+      pivot: {x: 0, y: 1.1847826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: plutonio
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 220
+        width: 167
+        height: 170
+      alignment: 9
+      pivot: {x: -0.017964073, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: plutonio_v
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 441
+        width: 242
+        height: 252
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: polaroid
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 2159
+        width: 165
+        height: 170
+      alignment: 9
+      pivot: {x: -0.012121212, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: polaroid_v
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1944
+        width: 245
+        height: 252
+      alignment: 9
+      pivot: {x: -0.01632653, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: polvere_sparo
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 1917
+        width: 170
+        height: 142
+      alignment: 9
+      pivot: {x: 0, y: 1.084507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: polvere_sparo_v
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1613
+        width: 252
+        height: 209
+      alignment: 9
+      pivot: {x: 0, y: 1.076555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pomello
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 220
+        width: 170
+        height: 168
+      alignment: 9
+      pivot: {x: 0, y: 1.0119047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: pomello_v
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 1805
+        width: 252
+        height: 236
+      alignment: 9
+      pivot: {x: 0, y: 1.0466101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: premio
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1119
+        width: 164
+        height: 170
+      alignment: 9
+      pivot: {x: -0.018292682, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: premio_v
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1606
+        width: 244
+        height: 250
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: registratore
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 19
+        width: 170
+        height: 131
+      alignment: 9
+      pivot: {x: 0, y: 1.1450381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: registratore_v
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 727
+        width: 252
+        height: 187
+      alignment: 9
+      pivot: {x: 0, y: 1.1818181}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: registrazione_polizia
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 1392
+        width: 170
+        height: 165
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: registrazione_polizia_v
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 844
+        width: 250
+        height: 238
+      alignment: 9
+      pivot: {x: 0, y: 1.0168067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: residui_plutonio
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 294
+        width: 170
+        height: 163
+      alignment: 9
+      pivot: {x: 0, y: 1.0245398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: residui_plutonio_v
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1972
+        width: 251
+        height: 243
+      alignment: 9
+      pivot: {x: 0, y: 1.0041152}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: semi_mela
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 138
+        width: 170
+        height: 156
+      alignment: 9
+      pivot: {x: 0, y: 1.0384616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: semi_mela_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 252
+        height: 245
+      alignment: 9
+      pivot: {x: 0, y: 1.0040816}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spillo
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1718
+        width: 170
+        height: 164
+      alignment: 9
+      pivot: {x: 0, y: 1.0304878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: spillo_v
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1832
+        width: 250
+        height: 229
+      alignment: 9
+      pivot: {x: 0, y: 1.0655022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: starter_kit_metallaro
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 1409
+        width: 170
+        height: 112
+      alignment: 9
+      pivot: {x: 0, y: 1.2589285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: starter_kit_metallaro_v
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 478
+        width: 250
+        height: 169
+      alignment: 9
+      pivot: {x: 0, y: 1.2248521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: struccante
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 991
+        width: 108
+        height: 170
+      alignment: 9
+      pivot: {x: -0.28703704, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: struccante_v
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 571
+        width: 157
+        height: 252
+      alignment: 9
+      pivot: {x: -0.29936305, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: sveglia
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 39
+        width: 150
+        height: 170
+      alignment: 9
+      pivot: {x: -0.07333333, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: sveglia_funzionante
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 532
+        width: 165
+        height: 170
+      alignment: 9
+      pivot: {x: -0.006060606, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: sveglia_funzionante_v
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2196
+        width: 252
+        height: 252
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: sveglia_v
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 810
+        width: 215
+        height: 252
+      alignment: 9
+      pivot: {x: -0.08372093, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: targa_antica
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 66
+        width: 170
+        height: 151
+      alignment: 9
+      pivot: {x: 0, y: 1.0860927}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: targa_antica_v
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 782
+        width: 250
+        height: 211
+      alignment: 9
+      pivot: {x: 0, y: 1.099526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: telone
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 309
+        width: 170
+        height: 169
+      alignment: 9
+      pivot: {x: 0, y: 1.0059172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: telone_v
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1261
+        width: 252
+        height: 248
+      alignment: 9
+      pivot: {x: 0, y: 1.0080645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: torcia
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 949
+        width: 156
+        height: 170
+      alignment: 9
+      pivot: {x: -0.03846154, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: torcia_scarica
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 2084
+        width: 170
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: torcia_scarica_v
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 2197
+        width: 252
+        height: 251
+      alignment: 9
+      pivot: {x: 0, y: 1.0039841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: torcia_v
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 604
+        width: 220
+        height: 252
+      alignment: 9
+      pivot: {x: -0.086363636, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: trapano
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 224
+        width: 168
+        height: 170
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: trapano_funzionante
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 1161
+        width: 140
+        height: 170
+      alignment: 9
+      pivot: {x: -0.042857144, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: trapano_funzionante_v
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1062
+        width: 216
+        height: 252
+      alignment: 9
+      pivot: {x: -0.06944445, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: trapano_v
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 2196
+        width: 246
+        height: 252
+      alignment: 9
+      pivot: {x: -0.008130081, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tubo
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 958
+        width: 170
+        height: 165
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: tubo_v
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 978
+        width: 252
+        height: 241
+      alignment: 9
+      pivot: {x: 0, y: 1.0041494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: viagra
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 819
+        width: 170
+        height: 118
+      alignment: 9
+      pivot: {x: 0, y: 1.2372881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: viagra_v
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 823
+        width: 252
+        height: 169
+      alignment: 9
+      pivot: {x: 0, y: 1.2485207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: vite
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 1798
+        width: 170
+        height: 163
+      alignment: 9
+      pivot: {x: 0, y: 1.0245398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: vite_v
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 806
+        width: 252
+        height: 234
+      alignment: 9
+      pivot: {x: 0, y: 1.0427351}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

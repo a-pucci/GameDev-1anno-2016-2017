@@ -1,0 +1,167 @@
+<object name="red sheet">
+  <description>
+    <command>text "Ready for the next bullfight!"</command>
+  </description>
+  <inventory />
+  <location name="cimitero">
+    <hotspot ID="teppistello1">
+      <command>pause -"teppistello1"</command>
+      <command>pause -"teppistello2"</command>
+      <command>pose u</command>
+      <command>wait 0,5</command>
+      <command>sound "pick_lenzuolo"</command>
+      <command>bitmap -skinny -o=91,36 "skinny_lenzuolo_down"</command>
+      <command>wait 0,7</command>
+      <command>bitmap -skinny ""</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo_l"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow_l"</command>
+      <command>animation -skinny 00 -o=91,36 "skinny_lenzuolo"</command>
+      <command>bitmap -skinny -o=91,36 "skinny_lenzuolo_up"</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo_l_perplexed"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow_l_perplexed"</command>
+      <command>text -nt "Your firecrackers or your life!"</command>
+      <command>wait 1</command>
+      <command>sound "risate_teppistelli"</command>
+      <command>animation -"teppistello2" 00 -o=70,3 -a "ragazzino_marshmallow_ride"</command>
+      <command>animation -"teppistello1" 00 -o=17,3 -a "ragazzino_tentacolo_ride"</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow"</command>
+      <command>wait 2</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo_l"</command>
+      <command>expression -"teppistello1" "sarcastic"</command>
+      <command>text -"teppistello1" "Do you think you can scare someone dressed like that?"</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow_l"</command>
+      <command>text -"teppistello2" "Not even a fly."</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo_l"</command>
+      <command>bitmap -skinny ""</command>
+      <command>animation -skinny 00 -o=91,36 "skinny_lenzuolo_back"</command>
+      <command>bitmap -skinny -o=91,36 "skinny_lenzuolo_down"</command>
+      <command>wait 1</command>
+      <command>sound "pick_lenzuolo"</command>
+      <command>bitmap -skinny ""</command>
+      <command>wait 1</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow"</command>
+      <command>expression -"teppistello1" "sarcastic"</command>
+      <command>lookat -"teppistello1"</command>
+      <command>text -"teppistello1" "Now that I notice... I never seen a more ridiculous Halloween costume!"</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+      <command>lookat -"teppistello2"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow_l"</command>
+      <command>text -"teppistello2" "Really awful."</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow"</command>
+      <command>sound "risate_teppistelli"</command>
+      <command>animation -"teppistello2" 00 -o=70,3 -a "ragazzino_marshmallow_ride"</command>
+      <command>animation -"teppistello1" 00 -o=17,3 "ragazzino_tentacolo_ride"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>wait 0,5</command>
+      <command>text "I'm afraid I will just have to come up with something else."</command>
+      <command>text "Nowadays our generation is too desensitized by TV and videogames."</command>
+      <command>wait 0,5</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Thanks a lot, HBO."</command>
+      <command>nolook</command>
+      <command>throw "lenzuolo"</command>
+      <command>internal #"nonnina" 1</command>
+      <command>resume -"teppistello1"</command>
+      <command>resume -"teppistello2"</command>
+    </hotspot>
+    <hotspot ID="teppistello2">
+      <command>pause -"teppistello1"</command>
+      <command>pause -"teppistello2"</command>
+      <command>pose u</command>
+      <command>wait 0,5</command>
+      <command>sound "pick_lenzuolo"</command>
+      <command>bitmap -skinny -o=91,36 "skinny_lenzuolo_down"</command>
+      <command>wait 0,7</command>
+      <command>bitmap -skinny ""</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo_l"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow_l"</command>
+      <command>animation -skinny 00 -o=91,36 "skinny_lenzuolo"</command>
+      <command>bitmap -skinny -o=91,36 "skinny_lenzuolo_up"</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo_l_perplexed"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow_l_perplexed"</command>
+      <command>text -nt "Your firecrackers or your life!"</command>
+      <command>wait 1</command>
+      <command>sound "risate_teppistelli"</command>
+      <command>animation -"teppistello2" 00 -o=70,3 -a "ragazzino_marshmallow_ride"</command>
+      <command>animation -"teppistello1" 00 -o=17,3 -a "ragazzino_tentacolo_ride"</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow"</command>
+      <command>wait 2</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo_l"</command>
+      <command>expression -"teppistello1" "sarcastic"</command>
+      <command>text -"teppistello1" "Do you think you can scare someone dressed like that?"</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow_l"</command>
+      <command>text -"teppistello2" "Not even a fly."</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo_l"</command>
+      <command>bitmap -skinny ""</command>
+      <command>animation -skinny 00 -o=91,36 "skinny_lenzuolo_back"</command>
+      <command>bitmap -skinny -o=91,36 "skinny_lenzuolo_down"</command>
+      <command>wait 1</command>
+      <command>sound "pick_lenzuolo"</command>
+      <command>bitmap -skinny ""</command>
+      <command>wait 1</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow"</command>
+      <command>expression -"teppistello1" "sarcastic"</command>
+      <command>lookat -"teppistello1"</command>
+      <command>text -"teppistello1" "Now that I notice... I never seen a more ridiculous Halloween costume!"</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+      <command>lookat -"teppistello2"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow_l"</command>
+      <command>text -"teppistello2" "Really awful."</command>
+      <command>bitmap -"teppistello1" "ragazzino_tentacolo"</command>
+      <command>bitmap -"teppistello2" "ragazzino_marshmallow"</command>
+      <command>sound "risate_teppistelli"</command>
+      <command>animation -"teppistello2" 00 -o=70,3 -a "ragazzino_marshmallow_ride"</command>
+      <command>animation -"teppistello1" 00 -o=17,3 "ragazzino_tentacolo_ride"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>wait 0,5</command>
+      <command>text "I'm afraid I will just have to come up with something else."</command>
+      <command>text "Nowadays our generation is too desensitized by TV and videogames."</command>
+      <command>wait 0,5</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Thanks a lot, HBO."</command>
+      <command>nolook</command>
+      <command>throw "lenzuolo"</command>
+      <command>internal #"nonnina" 1</command>
+      <command>resume -"teppistello1"</command>
+      <command>resume -"teppistello2"</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="covone di paglia">
+      <command>text "No need. The body is already covered by hay." $115</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "I feel the irrepressible urge to suffocate her too, but I'm afraid it's not possible." $116</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="Pinhead addormentato">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "I already sang him a lullaby. Tucking him in would be too much." $117</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="navicella aliena">
+      <command>pose d</command>
+      <command>text "Why would you hide a wonder like that?" $118</command>
+    </hotspot>
+  </location>
+  <location name="museo">
+    <hotspot ID="cavaliere">
+      <command>pose d</command>
+      <command>text "He already has his shawl." $119</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,42 @@
+<object name="gomme da masticare">
+  <description>
+    <command>text "Non riuscirei a masticarle tutte neppure se avessi tutta l'eternità davanti a me."</command>
+    <command>wait 0,5</command>
+    <command>text "E temo di avercela."</command>
+  </description>
+  <inventory>
+    <object name="dentiera">
+      <command>text "Darebbe vita allo scontro finale tra il bene e le carie." $223</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomme_da_masticare"</command>
+      <command>fie</command>
+      <command>text "Non voglio metterlo in difficoltà." $38</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ti pare che possa masticarle, con quella bocca?" $220</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "E tu vorresti dare delle gomme da masticare a qualcuno che sta soffrendo di mal di denti?" $221</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sei davvero senza umanità." $222</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="dentiera">
+      <command>text "Darebbe vita allo scontro finale tra il bene e le carie." $223</command>
+    </hotspot>
+  </location>
+</object>

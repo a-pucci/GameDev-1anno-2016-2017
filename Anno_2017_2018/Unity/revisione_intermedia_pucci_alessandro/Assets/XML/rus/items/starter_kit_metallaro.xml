@@ -1,0 +1,32 @@
+<object name="набор начинающего металлиста">
+  <description>
+    <command>text "Да, металл!"</command>
+  </description>
+  <inventory />
+  <location name="casa_albero">
+    <hotspot ID="dragone">
+      <command>wait 0,5</command>
+      <command>sound "dragone_outfit"</command>
+      <command>bitmap -"me" "dragone_metal"</command>
+      <command>wait 1</command>
+      <command>text "Неплохо. Теперь ты такой вызывающий."</command>
+      <command>bitmap -"me" "dragone_metal_l"</command>
+      <command>text -"me" "Скажу честно, я аж весь на взводе."</command>
+      <command>text "Тебе сможешь спеть мне ту металл-песню?"</command>
+      <command>text -"me" "Какую ты хочешь услышать?"</command>
+      <command>internal -g 2</command>
+      <command>throw "starter_kit_metallaro"</command>
+      <command>dialog "scelta_pezzo"</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="parrucca">
+      <command>text "Металлистом ему намного лучше." $171</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="band">
+      <command>text "Боюсь, даже это не заставит его петь." $172</command>
+    </hotspot>
+  </location>
+</object>

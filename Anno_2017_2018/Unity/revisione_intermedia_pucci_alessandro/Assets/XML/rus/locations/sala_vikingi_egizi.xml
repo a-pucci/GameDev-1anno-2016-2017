@@ -1,0 +1,154 @@
+<location>
+  <script />
+  <entry name="sala_botanica_IIWW" X="242" Y="991" pose="r" />
+  <entry name="museo" X="3270" Y="996" pose="l" />
+  <sound name="pentolone" X="1430" />
+  <sound name="onde" X="800" />
+  <sound name="mach_museo_vik" X="800" />
+  <scene bitmap="vikingo_mago" X="238" Y="294" position="back" animated="True" stop="1000" loop="True" />
+  <scene bitmap="vikingo_scudo" X="622" Y="384" position="back" animated="True" loop="True" />
+  <scene bitmap="vikingo_birra" X="989" Y="244" position="back" animated="True" stop="500" loop="True" />
+  <scene bitmap="vikingo_lira" X="1187" Y="160" position="back" animated="True" sound="vikinglira" loop="True" />
+  <scene bitmap="onde" X="98" Y="672" position="back" animated="True" loop="True" />
+  <scene bitmap="drakkar" X="230" Y="356" position="back" animated="False" />
+  <scene bitmap="coda_sfinge" X="1535" Y="896" position="fore" start="2400" stop="5000" animated="True" loop="True" foreground="True" />
+  <scene bitmap="sarcofago" X="3184" Y="784" position="fore" start="3500" stop="4500" animated="True" loop="True" foreground="True" />
+  <hotspots>
+    <goto ID="sala_vikingi_egizi_x_sala_botanica_IIWW" icon="l" PX="-688" PY="661">
+      <go>
+        <command>goto "sala_botanica_IIWW"</command>
+      </go>
+    </goto>
+    <item ID="drakkar">
+      <look>
+        <command>text "У них такие угрожающие луки, я даже представить себе не могу, каково это встретить их в открытом море."</command>
+      </look>
+      <pick>
+        <command>text "Если бы у меня в шкафу было места побольше..."</command>
+      </pick>
+      <use>
+        <command>text "Северяне очень интересный народ, но боюсь, у нас времени в обрез."</command>
+      </use>
+      <talk>
+        <command>text "Весла в руках, и вот они уже плывут штурмовать корабли неприятеля."</command>
+      </talk>
+    </item>
+    <action ID="audioguida">
+      <act>
+        <command>dialog "audioguida_vikingi_egizi"</command>
+      </act>
+    </action>
+    <item ID="martello di Thor">
+      <look>
+        <command>text "Молот Тора, бога грома и молнии."</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Также официального рекламного представителя средств для волос."</command>
+      </look>
+      <pick>
+        <command>text "Может быть, я и храбрый, но у меня точно не такая ЧИСТАЯ душа, чтобы я смог поднять его."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Похоже, что я одет в звездно-полосатый костюм?"</command>
+      </use>
+      <talk>
+        <command>text "Можешь спать спокойно, Мьельнир. Равных тебе никогда не будет."</command>
+        <command>wait 0,5</command>
+        <command>text "Даже компания Старка на такое не способна."</command>
+      </talk>
+    </item>
+    <item ID="calderone">
+      <look>
+        <command>text "Зелья друидов — на самом деле эквивалент современной гомеопатии."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>text "Как жаль, что это всего лишь репродукция."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "calderone"</command>
+      </indipendent>
+    </item>
+    <item ID="acchiappasogni">
+      <look>
+        <command>expression "perplexed"</command>
+        <command>text "Не хочу прослыть всезнайкой, но я помню, что их использовали коренные американцы, а не египтяне."</command>
+      </look>
+      <pick>
+        <command>text "Его мне только не хватает."</command>
+      </pick>
+      <use>
+        <command>text "К сожалению, из-за того, что я мертв, я больше не могу видеть сны."</command>
+        <command>wait 0,5</command>
+        <command>text "Просто сплю."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="faraonessa">
+      <look>
+        <command>text "Я тебе вот что скажу: она умеет восседать на троне."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>bitmap -"me" "faraonessa_l"</command>
+        <command>0 dialog "mummia"</command>
+        <command>1 text -"me" "Ты принес обручальные кольца?"</command>
+        <command>1 bitmap -"me" "faraonessa"</command>
+        <command>1 resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=22,13 -c "faraonessa_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <goto ID="sala_vikingi_egizi_x_museo" icon="r" PX="4145" PY="698">
+      <go>
+        <command>goto "museo"</command>
+      </go>
+    </goto>
+    <action ID="telecamera3">
+      <act>
+        <command>text "Эй, Ральф, что по чем?"</command>
+        <command>wait 0,5</command>
+        <command>1 text -"me" "Прекрати." 2</command>
+        <command>0 text -"me" "Все как обычно." 3</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera1" -g 1</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera2" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera4" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera3" -g 1</command>
+        <command>2 wait 1</command>
+        <command>2 expression "sarcastic"</command>
+        <command>2 text "Ральф, ты так тихо говоришь, мне ничего не слышно." 4</command>
+      </act>
+    </action>
+    <action ID="telecamera4">
+      <act>
+        <command>text "Эй, Ральф, что по чем?"</command>
+        <command>wait 0,5</command>
+        <command>1 text -"me" "Прекрати." 2</command>
+        <command>0 text -"me" "Все как обычно." 3</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera1" -g 1</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera2" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera3" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera4" -g 1</command>
+        <command>2 wait 1</command>
+        <command>2 expression "sarcastic"</command>
+        <command>2 text "Ральф, ты так тихо говоришь, мне ничего не слышно." 4</command>
+      </act>
+    </action>
+  </hotspots>
+</location>

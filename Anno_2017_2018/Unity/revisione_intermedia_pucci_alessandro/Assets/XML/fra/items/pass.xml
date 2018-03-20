@@ -1,0 +1,19 @@
+<object name="pass">
+  <description>
+    <command>text "Un pass pour visiter le musée de la ville."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>pose d</command>
+      <command>text "Il ne vaut mieux pas; ce serait grossier." $23</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ça ne marche pas comme ça." $137</command>
+    </hotspot>
+  </location>
+</object>

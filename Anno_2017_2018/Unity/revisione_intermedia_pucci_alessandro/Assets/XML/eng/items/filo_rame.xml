@@ -1,0 +1,29 @@
+<object name="copper wire">
+  <description>
+    <command>text "Well, one of the few advantages of my skeletal form is that I'm unaffected by electric shocks."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>sound "pick_pila_cavo"</command>
+      <command>throw "pila"</command>
+      <command>throw "filo_rame"</command>
+      <command>pick n "circuito"</command>
+    </object>
+  </inventory>
+  <location name="cucina">
+    <hotspot ID="giostraio">
+      <command>text "I feel I'm on the right track." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "But on the wrong side." $103</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="pila stilo">
+      <command>text "It'd be better to pick it up first." $95</command>
+    </hotspot>
+    <hotspot ID="batteria stilo">
+      <command>text "It'd be better to pick it up first." $95</command>
+    </hotspot>
+  </location>
+</object>

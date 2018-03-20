@@ -1,0 +1,30 @@
+<object name="тряпичная кукла">
+  <description>
+    <command>text "Меня всегда пугали куклы с глазами-пуговицами."</command>
+  </description>
+  <inventory>
+    <object name="capelli">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>text "Не думаю, что это ее успокоит." $144</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="Chucky">
+      <command>text "Может, это твоя младшая сестра?" $145</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Сомневаюсь, что он все еще играет с куклами." $146</command>
+    </hotspot>
+  </location>
+</object>

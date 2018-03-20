@@ -1,0 +1,218 @@
+<location>
+  <script>
+    <command>0 wait 1</command>
+    <command>0 expression "sarcastic"</command>
+    <command>0 text "Hier könnte doch sicher jemand ab und zu mal reell durchwischen."</command>
+    <command>0 status 1</command>
+  </script>
+  <entry name="anticamera" X="474" Y="621" pose="d" />
+  <scene bitmap="tavolo" X="500" Y="523" position="default" animated="False" />
+  <scene bitmap="naso_starnuto" X="1604" Y="201" position="back" animated="True" start="3000" stop="6000" sound="nose" loop="True" />
+  <scene bitmap="stipite_cucina" X="1662" Y="196" position="back" animated="False" />
+  <scene bitmap="orologio_pizza" X="655" Y="253" position="back" animated="True" sound="pizza_clock" loop="True" />
+  <scene bitmap="rilevatore_fumo" X="1710" Y="8" position="back" animated="True" loop="True" />
+  <scene bitmap="anta_cucina" X="1412" Y="593" position="default" animated="False" />
+  <hotspots>
+    <goto ID="cucina1_x_marciapiede">
+      <go>
+        <command>goto "marciapiede"</command>
+      </go>
+    </goto>
+    <action ID="microonde">
+      <act>
+        <command>0 sound "micro_opening"</command>
+        <command>0 bitmap -"me" "microonde_aperto"</command>
+        <command>0 label -"me" "cuc_microonde_label_1"</command>
+        <command>0 internal 1</command>
+        <command>1 sound "micro_closing"</command>
+        <command>1 bitmap -"me" "microonde_chiuso"</command>
+        <command>1 label -"me" "cuc_microonde_label_0"</command>
+        <command>1 internal 0</command>
+      </act>
+    </action>
+    <character ID="Z8">
+      <look>
+        <command>0 text "Das ist ein großes Elektronenhirn, das alle Haushaltsgeräte überwachen kann, um Unfällen vorzubeugen."</command>
+        <command>1 text "Du hast ja keine Ahnung, mit wem du dich da anlegst."</command>
+      </look>
+      <talk>
+        <command>0 dialog "Z8"</command>
+        <command>1 text "Obwohl wir heute auf dem Schlachtfeld die Flinten gekreuzt haben, warst du doch ein tapferer Soldat."</command>
+        <command>1 text "Du hast dir meinen Respekt verdient."</command>
+      </talk>
+    </character>
+    <item ID="cianfrusaglie">
+      <look>
+        <command>text "Ein paar Töpfe, ein paar Kellen sowie Gläser mit Gewürzen zweifelhaften geographischen Ursprungs."</command>
+      </look>
+      <pick>
+        <command>0 sound "skinny_knick_knack"</command>
+        <command>0 wait 3</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Wie ist das denn da reingekommen?"</command>
+        <command>0 sound "pick_registratore"</command>
+        <command>0 pick n "registratore"</command>
+        <command>0 internal 1</command>
+        <command>1 text "Witzlos, weiter zu suchen. Da drin ist nichts mehr, was ich noch brauchen könnte."</command>
+      </pick>
+      <use>
+        <command>text "Als wir noch Kinder waren, haben Ronald und ich Rockstar gespielt: ich an den Töpfen, er an den Pfannen."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Was waren wir doch für eine Katastrophe."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="cereali">
+      <look>
+        <command>text "Kabumm, die explosiven Energieflocken, die in deinem Magen zünden!"</command>
+        <command>wait 0,5</command>
+        <comand>pose d</comand>
+        <command>expression "sarcastic"</command>
+        <command>text "Buchstäblich."</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>text "Ich hab aufgehört, das zu essen. Ich find's ... etwas zu mächtig."</command>
+      </use>
+      <talk>
+        <comment>[citazione da Kill Bill 1]</comment>
+        <command>text "'Deine Mutter hatte es nicht anders verdient.'"</command>
+      </talk>
+    </item>
+    <item ID="sagoma">
+      <look>
+        <command>text "Als Ronald in dieses Haus gezogen ist, hatten die Forensiker gerade erst wieder die Küche freigegeben."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Als die Ermittlungen abgeschlossen waren, beschlossen seine Eltern, die Umrisse der Leiche einfach auf dem Tisch zu lassen."</command>
+        <command>wait 0,5</command>
+        <command>expression "normal"</command>
+        <command>text "Ich muss zugeben, dass das dem Frühstück nochmal einen ganz besonderen Kick verleiht."</command>
+      </look>
+      <pick>
+        <command>text "Besser nichts am Tatort verändern."</command>
+        <command>text "Du kannst dir ja nicht vorstellen, wie schwer es ist, Kaffeeflecken wieder rauszukriegen, ohne die Kreide zu verschmieren."</command>
+      </pick>
+      <use>
+        <command>text "Ich hab mal versucht, mich da reinzulegen."</command>
+        <command>expression "perplexed"</command>
+        <command>text "Echt verdammt unbequem, so zu sterben."</command>
+      </use>
+      <talk>
+        <command>text "Ich versuche nicht, den Meuchelmord an dir zu rechtfertigen, ganz und gar nicht."</command>
+        <command>expression "happy"</command>
+        <command>text "Aber ... wer würde denn nicht für Kirschen töten?"</command>
+      </talk>
+    </item>
+    <item ID="post-it">
+      <look>
+        <command>0 text "Die Dinger 'Post-its' zu nennen, ist eine Untertreibung."</command>
+        <command>0 text "Das sind wohl eher Drohungen, die Ronalds Mutter für ihren Mann hinterlässt, wenn sie zur Arbeit geht."</command>
+        <command>0 text "Also, ich weiß nicht, mal sehen ..."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Nein, das ist zu erniedrigend, besser nicht ..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Wegen dem Ding hier könnte man locker jemanden verklagen."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "normal"</command>
+        <command>0 text "Okay, der ist lesbar."</command>
+        <command>1 text "Ich lese nur mal einen Auszug vor."</command>
+        <command>0-1 text "'Vergiss nicht, die Sachen aus der Reinigung abzuholen, sonst hänge ich dich zum Trocknen auf.'"</command>
+        <command>pose d</command>
+        <command>expression "happy"</command>
+        <command>0-1 text "Das muss die große Liebe sein!"</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>text "Die Post-its sind nach einem sehr speziellen System farbig sortiert platziert worden."</command>
+        <command>pose d</command>
+        <command>text "Ich sollte besser nicht riskieren, mir den Zorn von Ronalds Mutter zuzuziehen."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="teddy dead">
+      <look>
+        <command>text "Er wurde aus kürzester Entfernung von einer Salve Erbsen niedergestreckt."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Und dabei sagt man doch, Gemüse sei gesund und so."</command>
+      </look>
+      <talk>
+        <command>0 text -"me" -c=fuxia "Mir ist kalt, John."</command>
+        <command>0 expression "sad"</command>
+        <command>0 text "Teddy! Ich bin's, Skinny ... halt durch, mein Freund!"</command>
+        <command>0 text -"me" -c=fuxia "John ... wo bist du, John?"</command>
+        <command>0 text -"me" -c=fuxia "Ich kann dich nicht sehen, John!"</command>
+        <command>0 text "Ich bin hier, Kumpel!"</command>
+        <command>0 text "Ich bin's, Skinny ..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -c=fuxia "Ist stockdunkel hier, John."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" -c=fuxia "*hust hust*"</command>
+        <command>0 text "Bitte nicht sterben, Teddy, komm, halt durch! Ich komm schon klar."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Teddy? Teddy, antworte doch!"</command>
+        <command>0 wait 1,5</command>
+        <command>0 expression "suffering"</command>
+        <command>0 text "NEEEEEIIIIN, TEDDY!!!"</command>
+        <command>0 wait 1</command>
+        <command>0 expression "normal"</command>
+        <command>0 text "Wie auch immer, ich bin Skinny."</command>
+        <command>0 internal 1</command>
+        <command>1 expression "sad"</command>
+        <command>1 text "Dann bring mal den Engeln bei, wie man kuschelig wird."</command>
+      </talk>
+    </character>
+    <goto ID="cucina_x_anticamera" icon="u" PX="466" PY="-247">
+      <go>
+        <command>goto "anticamera"</command>
+      </go>
+    </goto>
+    <action ID="zuppa del secolo">
+      <act>
+        <command>bitmap -skinny -o=0,0 "skinny_zuppa"</command>
+        <command>sound "skinny zuppa"</command>
+        <command>animation -skinny 00 -o=77,48 "skinny_zuppa1"</command>
+        <command>hide -"me"</command>
+        <command>animation -skinny 00 -o=77,48 -p=divine -a "skinny_zuppa2_braccia"</command>
+        <command>animation -skinny 00 -o=77,48 "skinny_zuppa2"</command>
+        <command>show -"me"</command>
+        <command>animation -skinny 00 -o=77,48 "skinny_zuppa3"</command>
+        <command>text "Ich hab noch nie so was Leckeres gegessen."</command>
+        <command>bitmap -skinny ""</command>
+      </act>
+    </action>
+    <character ID="gallina">
+      <look />
+      <talk />
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "gallina_verso"</command>
+        <command>animation -"me" 00 -o=14,13 -c "gallina_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+  </hotspots>
+</location>

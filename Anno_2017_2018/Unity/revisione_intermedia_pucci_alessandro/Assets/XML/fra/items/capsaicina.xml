@@ -1,0 +1,76 @@
+<object name="concentré de capsaïcine">
+  <description>
+    <command>text "Le niveau de capsaïcine à l'intérieur est de... PLUS DE 9000 !!!"</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="sali">
+      <command>if internal -"sali" 0</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Moment idéal."</command>
+      <command>fie</command>
+      <command>if internal -"sali" 1</command>
+      <command>text "Je ne peux pas le faire pendant qu'il me regarde."</command>
+      <command>fie</command>
+      <command>if internal -"sali" 2</command>
+      <command>sound "sali_piccanti"</command>
+      <command>bitmap -"me" "sali_rossi"</command>
+      <command>load "ciccione_fuga"</command>
+      <command>throw "capsaicina"</command>
+      <command>pause -"ciccione"</command>
+      <command>wait 0,5</command>
+      <command>move -a (1165,1050)</command>
+      <command>wait 0,6</command>
+      <command>pose ur</command>
+      <command>wait 0,4</command>
+      <command>sound "sali_peperoncino"</command>
+      <command>animation -"ciccione" 00 -o=82,-176 -c -a "ciccione_versa_sali_capsaicina"</command>
+      <command>wait 0,91</command>
+      <command>hide -"sali"</command>
+      <command>wait 1,08</command>
+      <command>show -"sali"</command>
+      <command>wait 1</command>
+      <command>cutscene "ciccione_fuga"</command>
+      <command>show skinny (1211,1059)</command>
+      <command>pose ul</command>
+      <command>show -"sali"</command>
+      <command>hide -nc -"sali"</command>
+      <command>internal -"maniglia" -g 1</command>
+      <command>show +"giardino/no_ciccione"</command>
+      <command>bitmap -"bagno_x_primo_piano" "porta_bagno_chiusa"</command>
+      <command>internal -"bagno_x_primo_piano" -g 1</command>
+      <command>bitmap -"telone" "piscina_no_ciccione"</command>
+      <command>hide +"perdite_piscina"</command>
+      <command>internal &gt;"bagno" -i -g 0</command>
+      <command>hide +"tubi_bagno"</command>
+      <command>hide -"ciccione"</command>
+      <command>nolook</command>
+      <command>fie</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="mangiatoia">
+      <command>pose d</command>
+      <command>text "Je n'ai pas envie de me retrouver en train de fuir des cochons tueurs." $89</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>expression "sarcastic"</command>
+      <command>text "Je doute qu'il puisse être utilisé comme engrais." $90</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>text "Je suis sûr qu'il approuverait." $91</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="ragazzo alticcio">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Un peu extrême comme remède contre la gueule de bois." $92</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,42 @@
+<object name="жвачка">
+  <description>
+    <command>text "Всю мне не сжевать, даже будь у меня вечность в запасе."</command>
+    <command>wait 0,5</command>
+    <command>text "А я боюсь, что вечности-то у меня навалом."</command>
+  </description>
+  <inventory>
+    <object name="dentiera">
+      <command>text "Так мы начнем последнюю битву между силами добра и кариесом." $223</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomme_da_masticare"</command>
+      <command>fie</command>
+      <command>text "Не хочу подвергать его опасности." $38</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ты и правда думаешь, что он сможет ее прожевать?" $220</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Ты дашь жвачку тому, кто уже мучается от зубной боли?" $221</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Да ты просто животное!" $222</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="dentiera">
+      <command>text "Так мы начнем последнюю битву между силами добра и кариесом." $223</command>
+    </hotspot>
+  </location>
+</object>

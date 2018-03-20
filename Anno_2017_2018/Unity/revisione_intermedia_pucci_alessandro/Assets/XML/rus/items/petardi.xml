@@ -1,0 +1,48 @@
+<object name="петарды">
+  <description>
+    <command>text "Я надеялся, что они оставят конфет, но остается довольствоваться лишь петардами."</command>
+  </description>
+  <inventory>
+    <object name="bomba_disinnescata">
+      <command>wait 0,5</command>
+      <command>text "Сначала нужно извлечь порох..."</command>
+      <command>wait 1</command>
+      <command>throw "petardi"</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "А теперь..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="bambola voodoo funzionante">
+      <command>text "Не нагревать и конечности не отрывать, помнишь?" $24</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>expression "sarcastic"</command>
+      <command>text "Да он почти не стреманулся будильника..." $125</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>expression "sarcastic"</command>
+      <command>text "Так он сделает только хуже." $142</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>expression "sarcastic"</command>
+      <command>text "Не думаю, что петард будет достаточно." $143</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="bomba disinnescata">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,141 @@
+<object name="Vollständige Voodoo-Puppe">
+  <description>
+    <command>text "Im Grunde genommen eine Action-Figur mit blondem Schopf."</command>
+  </description>
+  <inventory>
+    <object name="spillo">
+      <command>if in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Du solltest dich dem Raum vielleicht nur auf Armeslänge nähern." 1</command>
+      <command>fie</command>
+      <command>if in "elenco_telefonico"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Du solltest dich dem Raum vielleicht nur auf Armeslänge nähern." 1</command>
+      <command>fie</command>
+      <command>if in "toppa_bagno"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Du solltest dich dem Raum vielleicht nur auf Armeslänge nähern." 1</command>
+      <command>fie</command>
+      <command>if status &gt;"spiaggia" 4</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ich erinnere dich daran, dass wir uns in einer anderen Zeit befinden." 4</command>
+      <command>fie</command>
+      <command>if not in "primo_piano"</command>
+      <command>load "johnny"</command>
+      <command>inventory</command>
+      <command>wait 1</command>
+      <command>pose d</command>
+      <command>text "Hoffen wir bloß, dass es auch die richtige ist." 5</command>
+      <command>stop -ost</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_voodoo_doll_ok"</command>
+      <command>animation -skinny 00 -o=58,39 "skinny_accoltella_bambola_voodoo_funzionante"</command>
+      <command>dialog -r "La mia bambola voodoo non funziona." "custode"</command>
+      <command>throw "bambola voodoo funzionante"</command>
+      <command>throw "spillo"</command>
+      <command>status &gt;"primo_piano" 1</command>
+      <command>stop "cicada"</command>
+      <command>if internal -"giardino/quarterback" 1</command>
+      <command>internal #"quarterback" -g 1</command>
+      <command>fi</command>
+      <command>cutscene -x "johnny"</command>
+      <command>ost</command>
+      <command>screen c -w=500 -fo=1500 -a</command>
+      <command>hide -"primo_piano/porta della camera"</command>
+      <command>show -"primo_piano/primo_piano_x_camera_letto"</command>
+      <command>internal -"primo_piano/ragazzo alticcio" -i -g 0</command>
+      <command>internal -"primo_piano/porta della camera" -g 2</command>
+      <command>internal -"giardino/quarterback" -g 1</command>
+      <command>internal -"primo_piano/ragazzo alticcio" -i 0</command>
+      <command>internal -"primo_piano/berretto" 2</command>
+      <command>hide -"primo_piano/vestiti a terra"</command>
+      <command>fie</command>
+    </object>
+    <object name="viagra">
+      <command>text "Das ist nicht gerade der 'Anreiz', den ich brauche, um ihn aus diesem Raum zu kriegen." $26</command>
+    </object>
+    <object name="petardi">
+      <command>text "Weder Wärmequellen noch fehlende Gliedmaßen, weißt du noch?" $24</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="mangiatoia">
+      <command>pose d</command>
+      <command>text "Weder Wärmequellen noch fehlende Gliedmaßen, weißt du noch?" $24</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="rasoio fai da te">
+      <command>pose d</command>
+      <command>text "Weder Wärmequellen noch fehlende Gliedmaßen, weißt du noch?" $24</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="pentacolo">
+      <command>text "Ich denke, es reicht, das Ritual einmal durchzuführen." $25</command>
+    </hotspot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="viagra">
+      <command>expression "sarcastic"</command>
+      <command>text "Das ist nicht gerade der 'Anreiz', den ich brauche, um ihn aus diesem Raum zu kriegen." $26</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="pugnale">
+      <command>text "Das wäre für mich sehr hilfreich!" $27</command>
+      <command>text "Doch ich sollte zuerst mal einen Weg finden, das Ding von da oben herunterzuholen." $28</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>text "Weder Wärmequellen noch fehlende Gliedmaßen, weißt du noch?" $24</command>
+    </hotspot>
+    <hotspot ID="libro di magia nera">
+      <command>text "Danke für deine Hilfe." $29</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="petardi">
+      <command>pose d</command>
+      <command>text "Weder Wärmequellen noch fehlende Gliedmaßen, weißt du noch?" $24</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>expression "sarcastic"</command>
+      <command>text "Voodoo und Katholizismus vertragen sich nicht wirklich." $30</command>
+      <command>expression "normal"</command>
+      <command>text "Ich sollte besser nicht anfangen, irgendwelche seltsamen mittelalterlichen Vollstreckungsmaßnahmen auszugraben." $31</command>
+    </hotspot>
+  </location>
+  <location name="meteorite">
+    <hotspot ID="I tre fratelli Orco">
+      <command>expression "sarcastic"</command>
+      <command>text "Wenn die von 'Kids' reden, meinen die Kids aus FLEISCH UND BLUT." $32</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="cactus ballerini">
+      <command>text "Ich glaube nicht, dass das reichen würde." $33</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Wissenschaft und Voodoo sind nicht gerade die beste Kombination." $34</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,244 @@
+<location>
+  <script>
+    <command>0 screen -w=500 -fo=1500</command>
+    <command>0 wait 1</command>
+    <command>0 text "Vaya, una fiesta americana..."</command>
+    <command>0 wait 0,5</command>
+    <command>0 map "party"</command>
+    <command>0 status 1</command>
+    <command>4 stop -ost</command>
+    <command>4 screen -w=1000 -fo=300 -a</command>
+    <command>4 background &gt;"giardino" "giardino_bruciato"</command>
+    <command>4 hide -"giardino_x_casa_albero"</command>
+    <command>4 hide +"staccionata_giardino"</command>
+    <command>4 show +"staccionata_giardino_bruciato"</command>
+    <command>4 show skinny (1396,929)</command>
+    <command>4 pose u</command>
+    <command>4 wait 0,5</command>
+    <command>4 ost</command>
+    <command>4 wait 2</command>
+    <command>4 text "Esta vez la he hecho buena."</command>
+    <command>4 achievement "piromane"</command>
+    <command>4 status 1</command>
+  </script>
+  <entry name="mappa" X="2473" Y="883" pose="l" />
+  <entry name="discarica" X="2473" Y="883" pose="l" />
+  <entry name="piano_terra" X="806" Y="946" pose="r" />
+  <entry name="casa_albero" X="1584" Y="872" pose="d" />
+  <entry name="cabina" X="2568" Y="952" pose="ul" />
+  <scene bitmap="corriere_armadio" X="2445" Y="440" position="back" animated="False" />
+  <scene bitmap="lampione_giardino" X="2022" Y="344" position="back" animated="True" start="1000" stop="11000" loop="True" />
+  <scene bitmap="lanterna_giardino" X="222" Y="324" position="back" animated="True" loop="True" />
+  <scene bitmap="staccionata_giardino" X="1797" Y="465" position="back" animated="False" />
+  <scene bitmap="staccionata_giardino_bruciato" X="1797" Y="465" position="back" animated="False" />
+  <scene bitmap="zucche_giardino1" X="656" Y="883" position="default" animated="True" loop="True" />
+  <scene bitmap="zucche_giardino2" X="946" Y="726" position="default" animated="True" loop="True" />
+  <scene bitmap="portico" X="0" Y="299" position="fore" animated="False" />
+  <scene bitmap="portico_superiore" X="0" Y="299" position="divine" animated="False" />
+  <scene bitmap="parete_porta" X="118" Y="462" position="default" animated="False" />
+  <scene bitmap="motore" X="2688" Y="0" position="back" animated="True" loop="True" />
+  <scene bitmap="mantello" X="2739" Y="173" position="back" animated="False" />
+  <scene bitmap="giocatore_smilzo" X="248" Y="740" position="divine" start="5500" stop="7500" animated="True" loop="True" />
+  <scene bitmap="no_ciccione" X="68" Y="0" position="back" animated="False" />
+  <hotspots>
+    <goto ID="giardino_x_cameretta_ronald">
+      <go>
+        <command>goto "cameretta_ronald"</command>
+      </go>
+    </goto>
+    <item ID="armadio">
+      <look>
+        <command>text "Moverlo va a ser más difícil de lo que pensaba."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Eres un poco cortito."</command>
+      </pick>
+      <use>
+        <command>0 text "No hasta que encuentre el modo de llevarlo a la casa nueva de Ronald."</command>
+        <command>1 text "El mensajero está a punto de llegar, tengo que embalarlo."</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>pose d</command>
+        <command>text "Creo que voy a empezar a ignorarte."</command>
+      </talk>
+    </item>
+    <item ID="pila di bicchieri">
+      <look>
+        <command>text "El nivel de desenfreno de estas fiestas no tiene parangón."</command>
+        <command>wait 0,5</command>
+        <command>text "Por lo menos podrían poner los vasos en una mesa."</command>
+      </look>
+      <pick>
+        <command>sound "pick_plastic_glass"</command>
+        <command>pick n "bicchiere vuoto"</command>
+      </pick>
+      <use>
+        <command>text "Están vacíos y no hay alcohol a la vista."</command>
+        <command>text "No empeores las cosas."</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Ya no estamos como para jugar al teléfono escacharrado, ¿eh?"</command>
+      </talk>
+    </item>
+    <item ID="lapide">
+      <look>
+        <command>text "ESTO sí que es un buen adorno de jardín. ¡Mucho mejor que los gnomos!"</command>
+      </look>
+      <pick>
+        <comment>[a voce bassa]</comment>
+        <command>text "¡Nunca perturbes a los muertos!"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Si me dictas tu epitafio yo me encargo de todo..."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="Pinhead addormentato">
+      <look>
+        <command>pose d</command>
+        <command>text "Nunca me habría esperado que Pinhead llevara calzoncillos de corazones."</command>
+      </look>
+      <talk>
+        <command>0 text "A ver... Podría cantarle una nana."</command>
+        <command>0 wait 0,5</command>
+        <command>0 internal -g 1</command>
+        <comment>[dopo questa linea di testo parte il dialogo con pinehead]</comment>
+        <command>0-1 text "Angelito, angelito, oooh, ¿a quién he de darle el niñito?"</command>
+        <command>0-1 dialog "pinhead"</command>
+        <command>2 text "Ya he cumplido."</command>
+      </talk>
+      <indipendent>
+        <command>sound "drunk_man_sleeps"</command>
+        <command>animation -"me" 00 -o=0,0 -c "drunk_sleeps"</command>
+      </indipendent>
+    </character>
+    <goto ID="giardino_x_piano_terra" icon="l" PX="-420" PY="681">
+      <go>
+        <command>goto "piano_terra"</command>
+      </go>
+    </goto>
+    <character ID="quarterback">
+      <look>
+        <command>wait 0,5</command>
+        <command>text "No tiene pinta de ser muy avispado."</command>
+        <command>wait 0,5</command>
+        <command>expression "normal"</command>
+        <command>pause -"me"</command>
+        <command>text -"me" "Eh, tú, no me molefstes o te doy una que defsearáfs efstar vivo."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Tiene tendencias violentas y una clara deficiencia en lenguaje elemental."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Punto para Skinny."</command>
+        <command>resume -"me"</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>text -"me" "¿Qué quierefs?"</command>
+        <command>dialog "quarterback"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "angry_quarterback"</command>
+        <command>animation -"me" 00 -o=33,23 -c "quaterback_idle"</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="cheerleader">
+      <look>
+      </look>
+      <talk>
+      </talk>
+      <indipendent>
+        <command>wait 5</command>
+        <command>sound "cheerleader"</command>
+        <command>animation -"me" 00 -o=0,30 "cheerleader_idle"</command>
+        <command>wait 5</command>
+      </indipendent>
+    </character>
+    <item ID="turbina">
+      <look>
+        <command>text "Me parece que alguien va a necesitar una reforma."</command>
+        <command>wait 0,5</command>
+        <command>text "Si queda alguien vivo..."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>text "Una cosa es segura: alguien la ha usado mal."</command>
+      </use>
+      <talk>
+        <command>text "Si ya lo decía Edna..."</command>
+        <command>text "'¡Nada de capas!'."</command>
+      </talk>
+    </item>
+    <item ID="cassetta delle lettere">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "A lo mejor deberías mirar el correo de vez en cuando."</command>
+      </look>
+      <pick>
+        <command>0 sound "pick_lettera_amore"</command>
+        <command>0 pick n "lettera"</command>
+        <command>0 bitmap -"me" "cassetta_lettere_no_lettera"</command>
+        <command>0 internal 1</command>
+        <command>1 text "Lo siguiente podría ser una factura. Mejor lo dejamos aquí."</command>
+      </pick>
+      <use>
+        <command>text "No tengo nada que enviar."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Al fin y al cabo, no es que haya tenido mucha vida social en los últimos cinco años."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="giardino_x_casa_albero" icon="u" PX="1518" PY="290">
+      <go>
+        <command>goto "casa_albero"</command>
+      </go>
+    </goto>
+    <goto ID="giardino_x_cabina" icon="dr" PX="3168" PY="1192">
+      <go>
+        <command>sound "skinny_in_the_call_box"</command>
+        <command>animation -skinny 00 -o=-27,-5 -a "skinny_cabina_in"</command>
+        <command>wait 0,54</command>
+        <command>show skinny (2900,1292)</command>
+        <command>animation -"me" 00 -o=3,5 "cabina_in"</command>
+        <command>goto "cabina"</command>
+      </go>
+    </goto>
+    <character ID="giocatore_basso">
+      <look />
+      <talk />
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=35,19 "giocatore_basso"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+  </hotspots>
+</location>

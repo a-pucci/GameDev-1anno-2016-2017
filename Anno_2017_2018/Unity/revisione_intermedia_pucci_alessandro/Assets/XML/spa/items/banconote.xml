@@ -1,0 +1,84 @@
+<object name="billetes">
+  <description>
+    <command>text "¡Cuánto dinero!"</command>
+  </description>
+  <inventory />
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Se lo gastaría todo en más alcohol." $37</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>text "No quiero ponerle en esa situación." $38</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "Si lo hubiera esto encontrado antes, me podría haber ahorrado tanta historia." $39</command>
+    </hotspot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>expression "sarcastic"</command>
+      <command>text "Creo que la forma del agujero es autoexplicativa." $40</command>
+      <command>text "En cualquier caso, te doy una pista... Es para monedas." $41</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="eremita">
+      <command>text "Choca por completo con la ética de su estilo de vida." $42</command>
+      <command>expression "sarcastic"</command>
+      <command>text "En teoría..." $43</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>pose d</command>
+      <command>text "Me temo que has visto demasiados episodios de Mr. Robot." $44</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Creo que vas a necesitas mucho más que eso para entrar en su 'círculo'." $45</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>pose d</command>
+      <command>text "¿Te acuerdas de aquello de 'líbrate de lo material'?" $46</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "Si traicionó al hijo de Dios por treinta míseras monedas de plata, quién sabe lo que sería capaz de hacer por esto." $47</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="diavoletto">
+      <command>text "Es justo que se lo ganen." $48</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="calderone_presente">
+      <command>if internal 0</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Desde luego, no puedo empaparlos y ya."</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>sound "pick_soldi"</command>
+      <command>wait 0,5</command>
+      <command>text "Hecho."</command>
+      <command>throw "banconote"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_1861" 2</command>
+      <command>internal -"calderone_1981" 2</command>
+      <command>fie</command>
+    </hotspot>
+    <hotspot ID="calderone_1861">
+      <command>expression "sarcastic"</command>
+      <command>text "No estamos en la época adecuada." $49</command>
+    </hotspot>
+    <hotspot ID="calderone_1981">
+      <command>expression "sarcastic"</command>
+      <command>text "No estamos en la época adecuada." $49</command>
+    </hotspot>
+  </location>
+</object>

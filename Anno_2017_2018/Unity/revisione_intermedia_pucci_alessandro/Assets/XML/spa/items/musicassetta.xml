@@ -1,0 +1,30 @@
+<object name="cinta de vídeo">
+  <description>
+    <command>text "Parece que es una cinta de vídeo... Sea lo que sea eso."</command>
+    <command>text "Me encantan los misterios."</command>
+  </description>
+  <inventory />
+  <location name="interno_gru">
+    <hotspot ID="mangianastri">
+      <command>sound "pos_cassetta"</command>
+      <command>show +"musicassetta_off"</command>
+      <command>show -"musicassetta"</command>
+      <command>hide -"me"</command>
+      <command>throw "musicassetta"</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="dragone">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Es una caja de música, no una minicadena." $130</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="disco doro">
+      <command>text "Una evolución tecnológica en comparación." $131</command>
+      <command>pose d</command>
+      <command>text "De todas formas, la calidad del vinilo es sin duda superior." $132</command>
+    </hotspot>
+  </location>
+</object>

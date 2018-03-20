@@ -1,0 +1,37 @@
+<object name="Krug">
+  <description>
+    <command>text "Ein staubiger Bierkrug."</command>
+  </description>
+  <inventory>
+    <object name="pillole">
+      <command>text "Ich muss was finden, um die darin aufzulösen." $260</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>sound "skinny_mug"</command>
+      <command>animation -skinny 00 -o=64,-1 "skinny_riempie_boccale"</command>
+      <command>sound "pick_mug"</command>
+      <command>pick n "acqua_fogna"</command>
+      <command>throw "boccale_vuoto"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Prösterchen!" $206</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="betoniera">
+      <command>text "Manchmal gibt's doch einfach nichts Schöneres als einen gepflegten Schluck Zement." $204</command>
+      <command>pose d</command>
+      <command>text "Aber nicht heute." $205</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>pose d</command>
+      <command>text "Ich habe da wirklich so meine Zweifel, ob der mir helfen kann." $207</command>
+      <command>text "Die lange Untätigkeit muss ihn ein wenig steif gemacht haben." $208</command>
+    </hotspot>
+  </location>
+</object>

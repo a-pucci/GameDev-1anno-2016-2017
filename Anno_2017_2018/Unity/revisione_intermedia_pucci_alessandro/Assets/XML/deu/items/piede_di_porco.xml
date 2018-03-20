@@ -1,0 +1,48 @@
+<object name="Stemmeisen">
+  <description>
+    <command>text "Auf der Brechstange sind 2 Buchstaben."</command>
+    <command>text "G.F."</command>
+    <command>wait 0,5</command>
+    <command>text "Hmmm..."</command>
+  </description>
+  <inventory />
+  <location name="retro_furgone">
+    <hotspot ID="saracinesca">
+      <command>wait 0,5</command>
+      <command>sound "shutter"</command>
+      <command>show +"saracinesca_forzata"</command>
+      <command>show -"retro_furgone_x_furgone"</command>
+      <command>hide -"me"</command>
+      <command>throw "piede_di_porco"</command>
+      <command>wait 1,5</command>
+      <command>text (50,425) -c=fuxia "Dann hast du's endlich geschafft!"</command>
+      <command>wait 0,5</command>
+      <command>text "Wenn man nur höflich ist, bekommt man alles, was man nur will, Nuss. "</command>
+    </hotspot>
+  </location>
+  <location name="finestra">
+    <hotspot ID="furgone">
+      <command>text "Geht das nicht ein wenig zu weit?" $252</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="parchimetro">
+      <command>wait 0,5</command>
+      <command>bitmap -"me" "parchimetro_rotto"</command>
+      <command>sound "parchimetro"</command>
+      <command>animation -"me" 00 -o=164,186 "parchimetro"</command>
+      <command>wait 1</command>
+      <command>text "Ich würde das eher als Cheat denn als Einbruch betrachten." $253</command>
+      <command>pose d</command>
+      <command>text "Schließlich sind wir hier ja in einem Videospiel, oder?" $254</command>
+      <command>internal -g 1</command>
+      <command>achievement "high_score"</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="portiera">
+      <command>pose d</command>
+      <command>text "Es bringt doch nichts, von da aus in den Van zu steigen. Ich ziehe nur deren Aufmerksamkeit auf mich, wenn ich das Glas zerschlage." $255</command>
+    </hotspot>
+  </location>
+</object>

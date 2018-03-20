@@ -1,0 +1,30 @@
+<object name="Flickenpuppe">
+  <description>
+    <command>text "Puppen mit Knopfaugen jagen mir immer eine Heidenangst ein."</command>
+  </description>
+  <inventory>
+    <object name="capelli">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>text "Ich glaube nicht, dass das schon reicht, damit sie sich wieder abregt." $144</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="Chucky">
+      <command>text "Vielleicht eine jüngere Schwester von dir?" $145</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ich bezweifle, dass der noch mit Puppen spielt." $146</command>
+    </hotspot>
+  </location>
+</object>

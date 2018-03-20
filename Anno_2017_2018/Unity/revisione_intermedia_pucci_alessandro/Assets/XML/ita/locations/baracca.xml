@@ -1,0 +1,327 @@
+<location>
+  <script>
+    <command>0 wait 1</command>
+    <command>0 pause -"custode"</command>
+    <command>0 bitmap -"custode" "custode_l"</command>
+    <command>0 text -"custode" "Ehi ragazzino, ti sei svegliato finalmente."</command>
+    <command>0 text -"custode" "Potevi spezzarti l'osso del collo, sai? Questo non è un luna park!"</command>
+    <command>0 bitmap -"custode" "custode"</command>
+    <command>0 resume -"custode"</command>
+    <command>0 status 1</command>
+    <comment>[sequenza post-cutscene]</comment>
+    <command>4 screen c -fo=1500 -w=250</command>
+    <command>4 internal -"pentacolo" 2</command>
+    <command>4 status &gt;"primo_piano" 0</command>
+    <command>4 status 3</command>
+  </script>
+  <indipendent>
+    <command>0 wait 10</command>
+    <command>1 sound -l "calderone"</command>
+    <command>1 wait 10</command>
+  </indipendent>
+  <entry name="discarica" X="292" Y="1052" pose="ur" />
+  <scene bitmap="candela_baracca0_on" X="145" Y="552" position="back" animated="True" loop="True" />
+  <scene bitmap="candela_baracca1_on" X="639" Y="875" position="default" animated="True" loop="True" />
+  <scene bitmap="candela_baracca2_on" X="1339" Y="639" position="default" animated="True" loop="True" />
+  <scene bitmap="candela_baracca3_on" X="1370" Y="969" position="default" animated="True" loop="True" />
+  <scene bitmap="candela_baracca4_on" X="1463" Y="853" position="default" animated="True" loop="True" />
+  <scene bitmap="candela_baracca5_on" X="1734" Y="800" position="default" animated="True" loop="True" />
+  <scene bitmap="candela_baracca6_on" X="1834" Y="924" position="default" animated="True" loop="True" />
+  <scene bitmap="candela_baracca1" X="638" Y="915" position="default" animated="False" />
+  <scene bitmap="candela_baracca2" X="1338" Y="652" position="default" animated="False" />
+  <scene bitmap="candela_baracca3" X="1369" Y="993" position="default" animated="False" />
+  <scene bitmap="candela_baracca4" X="1463" Y="868" position="default" animated="False" />
+  <scene bitmap="candela_baracca5" X="1733" Y="819" position="default" animated="False" />
+  <scene bitmap="candela_baracca6" X="1833" Y="951" position="default" animated="False" />
+  <scene bitmap="bolle_pentolone" X="1550" Y="3" position="back" animated="True" loop="True" />
+  <scene bitmap="cocktail_teschio2" X="1230" Y="502" position="fore" animated="False" />
+  <hotspots>
+    <character ID="mandragora">
+      <look>
+        <command>pause -"me"</command>
+        <command>pose d</command>
+        <command>text "Quella voce stridula mi fa accapponare la pe... ehm, le ossa."</command>
+        <command>lookat -"me"</command>
+        <command>bitmap -"me" "mandragora2"</command>
+        <command>text -"me" -c=fuxia -t "Non provocarmi o piango ancora più forte!"</command>
+        <command>text "No no no, stai buona!"</command>
+        <command>bitmap -"me" "mandragora"</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>bitmap -"me" "mandragora2"</command>
+        <command>text "Cosa c'è che non va?"</command>
+        <command>text -"me" -c=fuxia -t "Vorrei vedere se strappassero A TE la terra da sotto le radici."</command>
+        <command>text "Tecnicamente mi hanno strappato la vita dal corpo, ma non ho fatto mica tutto questo casino."</command>
+        <command>bitmap -"me" "mandragora"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=55,63 -s=70 -c "mandragora_blink"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=55,63 -s=70 -c "mandragora_blink"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=55,63 -s=70 -c "mandragora_blink"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=55,63 -s=70 -c "mandragora_blink"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "mandrake"</command>
+        <command>animation -"me" 00 -o=41,48 -s=70 -c "mandragora_scared"</command>
+      </indipendent>
+    </character>
+    <character ID="custode">
+      <look>
+        <command>0-1 pause -"me"</command>
+        <command>0-1 pose d</command>
+        <command>0-1 text "Meglio non combinare disastri qui intorno."</command>
+        <command>0-1 expression -"me" "l"</command>
+        <command>0-1 wait 0,5</command>
+        <command>0-1 lookat -"me"</command>
+        <command>0-1 text -"me" "Ma con chi diamine stai parlando?"</command>
+        <command>0-1 text "Con il giocatore dall'altra parte dello schermo, signore."</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 text -"me" "Giocatore? Schermo?"</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 expression -"me" "l"</command>
+        <command>0-1 text -"me" "Quella caduta deve essere stata più grave del previsto."</command>
+        <command>0-1 bitmap -"me" "custode"</command>
+        <comment>2 [mentre il custode beve il cocktail]</comment>
+        <command>2 pose d</command>
+        <command>2 text "Un uomo che beve birra."</command>
+        <command>2 expression "sarcastic"</command>
+        <command>2 text "Che visione affascinante, eh?"</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>0-1 bitmap -"me" "custode_l"</command>
+        <command>0-1 dialog "custode"</command>
+        <comment>2 [mentre il custode beve il cocktail]</comment>
+        <command>2 pose d</command>
+        <command>2 text "Meglio non importurnarlo mentre beve."</command>
+      </talk>
+      <indipendent>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 wait 1</command>
+        <command>0-1 animation -"me" 00 -o=0,0 -a -c "custode_idle"</command>
+        <command>2 sound -l "watchperson_drinks"</command>
+        <command>2 internal -g 2</command>
+        <command>2 wait 10</command>
+        <command>2 stop "watchperson_drinks"</command>
+        <command>2 animation -"custode" 00 -o=0,0 -a "custode_ritorna"</command>
+        <command>2 bitmap -"me" "custode"</command>
+        <command>2 viewer -"me" (1131,486)</command>
+        <command>2 animation -"cocktail" 00 -o=33,5 "cocktail_teschio_cannuccia_back"</command>
+        <command>2 bitmap -"cocktail" "cocktail_teschio_riposo"</command>
+        <command>2 internal -"cocktail" -g 0</command>
+        <command>2 internal -g 1</command>
+        <command>2 internal -"custode" -i 1</command>
+        <command>3 wait 5</command>
+      </indipendent>
+    </character>
+    <character ID="custode_a_terra">
+      <look>
+        <comment>[il custode è tramortito a terra senza sensi]</comment>
+        <command>pose d</command>
+        <command>text "Voglio tranquillizzare tutti gli amici e i parenti che ci stanno seguendo da casa."</command>
+        <command>text "É solo svenuto."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Forse..."</command>
+      </look>
+      <talk>
+        <command>text "Io ci ho provato con le buone... ma tu non hai voluto darmi retta!"</command>
+        <command>text "Fra qualche ora starai benissimo, non temere."</command>
+      </talk>
+    </character>
+    <character ID="Aku Aku">
+      <look>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Dannazione, Naughty Dog... volete decidervi a sviluppare un nuovo Crash Bandicoot?!?"</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "E no... le remastered non valgono!"</command>
+      </look>
+      <talk>
+        <command>text "Burdega!"</command>
+        <command>wait 0,5</command>
+        <command>text "Sandokan!"</command>
+        <command>wait 0,5</command>
+        <command>text "Ostrega!"</command>
+        <command>wait 0,5</command>
+        <command>text "Sì, insomma... assoreta."</command>
+        <command>text "Potevi essere un po' più chiaro anche tu, eh!"</command>
+      </talk>
+    </character>
+    <item ID="cocktail">
+      <look>
+        <command>text "Voglio sperare che quella sia sangria..."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Togliere l'alcol ad un uomo adulto?"</command>
+        <command>text "Io ucciderei persino per una merendina..."</command>
+      </pick>
+      <use>
+        <command>text "É vero che il problema herpes è ormai scongiurato alla radice, ma comunque non mi va di bere dalla cannuccia di un estraneo."</command>
+      </use>
+      <talk>
+        <command>text "Come va, fratello?"</command>
+        <command>wait 1,5</command>
+        <command>pose d</command>
+        <command>text "Ho l'impressione di non stare simpatico ai miei 'simili'."</command>
+      </talk>
+    </item>
+    <character ID="diario di Tom Riddle">
+      <look>
+        <command>text "Avrei voluto vedere come te la saresti cavata se questo Horcrux fosse stato un Nokia 3310, caro il mio Potter..."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Sette libri e otto film non ti hanno insegnato niente?"</command>
+      </talk>
+    </character>
+    <character ID="ritratto">
+      <look>
+        <command>text "Dimmsdale ha indubbiamente la miglior mascotte al mondo."</command>
+      </look>
+      <talk>
+        <command>text "Chompy Chompy delle mie brame, chi è il più bello del reame?"</command>
+        <command>wait 1</command>
+        <command>text "A parte te, ovviamente..."</command>
+      </talk>
+    </character>
+    <item ID="chiavi">
+      <look>
+        <command>text "Devono essere le chiavi della gru."</command>
+      </look>
+      <pick>
+        <command>if internal -"custode" 2</command>
+        <comment>[Skinny tenta di sfilare le chiavi dalla tasca del custode e viene scoperto]</comment>
+        <command>wait 0,6</command>
+        <command>fi</command>
+        <command>pause -"custode"</command>
+        <command>if internal -"custode" 2</command>
+        <command>animation -"cocktail" 00 -o=33,5 -a "cocktail_teschio_cannuccia_back"</command>
+        <command>bitmap -"cocktail" "cocktail_teschio_riposo"</command>
+        <command>animation -"custode" 00 -o=0,0 "custode_sgama_skinny"</command>
+        <command>stop "watchperson_drinks"</command>
+        <command>fi</command>
+        <command>bitmap -"custode" "custode_arrabbiato"</command>
+        <comment>[custode arrabbiato]</comment>
+        <command>text -"custode" -t -c=yello "Ehi tu, cosa credi di fare?"</command>
+        <command>if internal -"custode" 2</command>
+        <command>wait 0,5</command>
+        <command>fi</command>
+        <command>bitmap -"custode" "custode"</command>
+        <command>resume -"custode"</command>
+        <command>internal -"cocktail" -g 0</command>
+        <command>internal -"custode" -g 1</command>
+        <command>internal -"custode" -i 1</command>
+      </pick>
+      <use>
+        <comment>[le chiavi sono nella tasca del custode]</comment>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "E come, con la telecinesi?"</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Con quattro azioni disponibili ti sembra la cosa più adatta da fare?!?"</command>
+      </talk>
+    </item>
+    <item ID="chiavi a terra">
+      <look>
+        <command>text "Devono essere le chiavi della gru."</command>
+      </look>
+      <pick>
+        <command>sound "pick_keys"</command>
+        <command>pick y "chiavi"</command>
+      </pick>
+      <use>
+        <comment>[le chiavi sono in terra sul pavimento]</comment>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Da terra mi riesce difficile."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="pentacolo">
+      <look>
+        <command>text "Da quel che so potrebbe essere usato per evocare demoni o persino per riti satanici."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Spero di non sbagliarmi."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>0 text "Non ne so molto di pratiche esoteriche."</command>
+        <comment>1 [una volta venuto a conoscenza del rituale]</comment>
+        <command>1 text "Prima dovrei posare la bambola."</command>
+        <command>2 pose d</command>
+        <command>2 text "Ti andrebbe di passarmi un po' dei tuoi capelli?"</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "perplexed"</command>
+        <command>text "Vuoi davvero farmi parlare con un simbolo dipinto a terra?"</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Quando attraversi la strada chiedi forse il permesso alle strisce pedonali?"</command>
+      </talk>
+    </item>
+    <item ID="papillon spruzzacqua">
+      <look>
+        <command>expression "sarcastic"</command>
+        <comment>[con tono quasi rassegnato]</comment>
+        <command>text "*hmmp* I clown e la loro simpatia dilagante."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "papillon"</command>
+      </pick>
+      <use>
+        <command>text "Questi scherzi di dubbia ilarità non fanno davvero per me."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="baracca_x_discarica" icon="dl" PX="-117" PY="1185">
+      <go>
+        <command>goto "discarica"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

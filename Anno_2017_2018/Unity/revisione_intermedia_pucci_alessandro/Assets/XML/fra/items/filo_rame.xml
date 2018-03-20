@@ -1,0 +1,29 @@
+<object name="câble de cuivre">
+  <description>
+    <command>text "Un des rares avantages de mon apparence squelettique, c'est que je ne suis pas affecté par les chocs électriques."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>sound "pick_pila_cavo"</command>
+      <command>throw "pila"</command>
+      <command>throw "filo_rame"</command>
+      <command>pick n "circuito"</command>
+    </object>
+  </inventory>
+  <location name="cucina">
+    <hotspot ID="giostraio">
+      <command>text "Je sens que je suis sur la bonne voie." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Mais du mauvais côté." $103</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="pila stilo">
+      <command>text "Il vaudrait mieux le prendre d'abord." $95</command>
+    </hotspot>
+    <hotspot ID="batteria stilo">
+      <command>text "Il vaudrait mieux le prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+</object>

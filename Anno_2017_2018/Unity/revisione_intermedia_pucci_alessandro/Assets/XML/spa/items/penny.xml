@@ -1,0 +1,64 @@
+<object name="centavo">
+  <description>
+    <command>text "Esperaba una tasa de cambio más beneficiosa."</command>
+    <command>text "Malditos bancos."</command>
+  </description>
+  <inventory />
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>if shown -"cornetta alzata"</command>
+      <command>sound "inserimento_moneta"</command>
+      <command>animation (813,267) -p=fore "moneta_in"</command>
+      <command>status 2</command>
+      <command>fie</command>
+      <command>text -"me" "Antes de meter las monedas, deberías descolgar el auricular."</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Antes de meter las monedas, deberías descolgar el auricular." $37</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>text "No quiero ponerle en esa situación." $38</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "De todas formas, no sería suficiente para pagar el coste de la grúa." $138</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Creo que vas a necesitas mucho más que eso para entrar en su 'círculo'." $45</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>pose d</command>
+      <command>text "¿Te acuerdas de aquello de 'líbrate de lo material'?" $46</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>pose d</command>
+      <command>text "No necesito sus servicios." $139</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="calderone_1981">
+      <command>sound "pick_monete"</command>
+      <command>wait 0,5</command>
+      <command>text "Hecho."</command>
+      <command>throw "penny"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_presente" 2</command>
+      <command>internal -"calderone_1861" 2</command>
+    </hotspot>
+    <hotspot ID="calderone_presente">
+      <command>expression "sarcastic"</command>
+      <command>text "No estamos en la época adecuada." $49</command>
+    </hotspot>
+    <hotspot ID="calderone_1861">
+      <command>expression "sarcastic"</command>
+      <command>text "No estamos en la época adecuada." $49</command>
+    </hotspot>
+  </location>
+</object>

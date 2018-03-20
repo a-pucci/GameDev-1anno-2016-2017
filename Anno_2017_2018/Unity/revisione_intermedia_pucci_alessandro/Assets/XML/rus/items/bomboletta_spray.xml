@@ -1,0 +1,80 @@
+<object name="баллончик краски">
+  <description>
+    <command>text "Наконец-то я высвобожу внутреннего художника."</command>
+  </description>
+  <inventory>
+    <object name="fiammiferi">
+      <command>text "Это вызовет исторический парадокс." $105</command>
+      <command>text "После пожара в домике на дереве нам с тобой лучше вообще не палиться." $106</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="pixel morto">
+      <command>text "Так ты не поменяешь настройки RGB." $76</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="tomba di Stan">
+      <command>text "Не хочу осквернять их память." $77</command>
+    </hotspot>
+    <hotspot ID="tomba di Oliver">
+      <command>text "Не хочу осквернять их память." $77</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="lapide di Wilson">
+      <command>text "Не хочу осквернять их память." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Woodie">
+      <command>text "Не хочу осквернять их память." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Wilbur">
+      <command>text "Не хочу осквернять их память." $77</command>
+    </hotspot>
+    <hotspot ID="lapide di Willow">
+      <command>text "Не хочу осквернять их память." $77</command>
+    </hotspot>
+  </location>
+  <location name="elenco_telefonico">
+    <hotspot ID="annuncio_hotline">
+      <command>text "Я против цензуры." $78</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="Pinhead addormentato">
+      <command>text "Было бы смешно, не будь краска настолько стойкой." $79</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="barattolo di vernice">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Уже заряжен." $80</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "Я бы попробовал классический трюк с баллончиком, но боюсь, Ральф заметит." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "Я бы попробовал классический трюк с баллончиком, но боюсь, Ральф заметит." $81</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "Я бы попробовал классический трюк с баллончиком, но боюсь, Ральф заметит." $81</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "Я бы попробовал классический трюк с баллончиком, но боюсь, Ральф заметит." $81</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="Manet">
+      <command>text "Я не хочу портить его картину." $82</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,80 @@
+<object name="viagra">
+  <description>
+    <command>text "Je n'en ai certainement pas besoin."</command>
+    <command>wait 0,5</command>
+    <command>text "Et par là je veux dire que je n'ai aucun problème avec ma libido."</command>
+  </description>
+  <inventory>
+    <object name="bambola voodoo funzionante">
+      <command>text "Ce n'est pas la bonne 'motivation' dont j'ai besoin pour le faire sortir de cette pièce." $26</command>
+    </object>
+    <object name="peperoncino">
+      <command>text "Il est connu que le piment est un aphrodisiaque, mais il ne peut sûrement pas égaler les progrès de la médecine moderne dans ce domaine." $140</command>
+    </object>
+  </inventory>
+  <location name="piano_terra">
+    <hotspot name="Morpheus">
+      <command>pause -"me"</command>
+      <command>pause -"Frank"</command>
+      <command>show -"piano_terra_x_bonus"</command>
+      <command>load "skinny_matrix"</command>
+      <command>text "J'ai quelque chose qui devrait vous rendre très heureux."</command>
+      <command>animation -skinny 00 -o=114,-2 -a "skinny_porge_pillola_blu"</command>
+      <command>wait 1</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_prende_pillola_blu"</command>
+      <command>wait 0,5</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_porge_pillola_rossa"</command>
+      <command>bitmap -"me" "morpheus_pillola"</command>
+      <command>wait 0,5</command>
+      <command>expression "perplexed"</command>
+      <command>text "Qu'est-ce que c'est ?"</command>
+      <command>text -"me" "Choisis la pilule rouge : tu restes au Pays des Merveilles et on descend avec le lapin blanc au fond du gouffre."</command>
+      <command>expression "normal"</command>
+      <command>text "Je ne suis pas complètement convaincu."</command>
+      <command>text -"me" "Ça a le goût de fraise. Qu'importe le reste ?"</command>
+      <command>text "Vous avais raison, donnez-le moi."</command>
+      <command>animation -skinny 00 -o=114,-2 -a -e=1500 "skinny_mangia_pillola_rossa"</command>
+      <command>wait 0,5</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_porge_pillola_rossa_back"</command>
+      <command>bitmap -"me" "morpheus"</command>
+      <command>wait 3</command>
+      <command>throw "viagra"</command>
+      <command>stop -ost</command>
+      <command>cutscene "skinny_matrix"</command>
+      <command>achievement "bianconiglio"</command>
+      <command>goto -nofade "bonus"</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="profilattico extra-large">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Bien, une combinaison que seul un maniaque comme toi peut approuver." $179</command>
+    </hotspot>
+    <hotspot ID="rabbit">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Bien, une combinaison que seul un maniaque comme toi peut approuver." $179</command>
+    </hotspot>
+    <hotspot ID="amante nascosto">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Je ne veux pas enquêter sur la qualité de ses innombrables performances sexuelles." $180</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="peperoncino">
+      <command>text "Il est connu que le piment est un aphrodisiaque, mais il ne peut sûrement pas égaler les progrès de la médecine moderne dans ce domaine." $140</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="quarterback">
+      <command>text "Après toute cette attente, je doute qu'il en aura besoin." $181</command>
+    </hotspot>
+  </location>
+  <location name="museo">
+    <hotspot ID="cavaliere">
+      <command>text "Eh bien, étant donné son âge, peut-être..." $182</command>
+    </hotspot>
+  </location>
+</object>

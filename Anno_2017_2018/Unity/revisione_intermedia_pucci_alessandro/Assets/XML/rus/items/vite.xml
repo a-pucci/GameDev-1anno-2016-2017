@@ -1,0 +1,45 @@
+<object name="болт">
+  <description>
+    <command>text "Я больше не знаю в каком направлении его крутить."</command>
+    <command>text "Именно из-за такого я по ночам не сплю."</command>
+  </description>
+  <inventory>
+    <object name="trapano">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "trapano"</command>
+      <command>throw "vite"</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>text "Твой?" $280</command>
+      <command>expression -"Orso" "up_sarcastic"</command>
+      <command>text -"Orso" "Ха-ха-ха. Очень смешно." $226</command>
+      <command>achievement "consulto_psichiatrico"</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Довольно опасно класть болт в работающую микроволновку... и я не хочу, чтобы Z8 забрал его у меня." $274</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Боюсь, ты пропускаешь один очень важным промежуточный шаг." $275</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="marlin">
+      <command>text "Сюда больше нечего закручивать." $276</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+</object>

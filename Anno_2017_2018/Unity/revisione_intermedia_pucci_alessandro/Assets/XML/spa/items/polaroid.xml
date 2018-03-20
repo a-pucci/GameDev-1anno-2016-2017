@@ -1,0 +1,59 @@
+<object name="polaroid">
+  <description>
+    <command>text "La mejor manera de excitar a un hipster."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>expression "perplexed"</command>
+      <command>text "¿Sacarle una foto a un autorretrato?" $159</command>
+      <command>expression "normal"</command>
+      <command>text "Sería de un meta estupendo." $160</command>
+    </hotspot>
+  </location>
+  <location name="sala_telecamere">
+    <hotspot ID="sala Seconda Guerra Mondiale">
+      <command>move (550,960)</command>
+      <command>pose ur</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_foto"</command>
+      <command>animation -skinny 00 -o=49,13 "skinny_foto"</command>
+      <command>sound "pick_buono"</command>
+      <command>throw "polaroid"</command>
+      <command>pick n "foto"</command>
+      <command>wait 0,5</command>
+      <command>move (685,1062)</command>
+    </hotspot>
+    <hotspot ID="sala botanica">
+      <command>text "Mmm... no es mala idea, pero ¿para qué necesito una foto de esa sala?" $161</command>
+    </hotspot>
+    <hotspot ID="sala vichinga">
+      <command>text "Mmm... no es mala idea, pero ¿para qué necesito una foto de esa sala?" $161</command>
+    </hotspot>
+    <hotspot ID="sala egizia">
+      <command>text "Mmm... no es mala idea, pero ¿para qué necesito una foto de esa sala?" $161</command>
+    </hotspot>
+    <hotspot ID="atrio principale1">
+      <command>text "Mmm... no es mala idea, pero ¿para qué necesito una foto de esa sala?" $161</command>
+    </hotspot>
+    <hotspot ID="atrio principale2">
+      <command>text "Mmm... no es mala idea, pero ¿para qué necesito una foto de esa sala?" $161</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>text "No quiero darle más motivos para presumir." $162</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="Manet">
+      <command>pose d</command>
+      <command>text "No, no quiero abrir fisuras en el continuo espacio-tiempo." $163</command>
+    </hotspot>
+    <hotspot ID="ragazzo sconsolato">
+      <command>pose d</command>
+      <command>text "No, no quiero abrir fisuras en el continuo espacio-tiempo." $163</command>
+    </hotspot>
+  </location>
+</object>

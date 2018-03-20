@@ -1,0 +1,111 @@
+<location>
+  <script>
+    <command>0 if not internal -"grotta/pittore" 1</command>
+    <command>0 status &gt;"grotta" 2</command>
+    <command>0 status 1</command>
+    <command>0 fi</command>
+    <command>0 if internal -"grotta/pittore" 1</command>
+    <command>0 stop -ost</command>
+    <command>0 hide -"t-rex"</command>
+    <command>0 screen c -w=2500 "In der Zwischenzeit ..."</command>
+    <command>0 cutscene -x "pittore_dipinge"</command>
+    <command>0 screen -w=500</command>
+    <command>0 show -"grotta/barattolo di vernice"</command>
+    <command>0 bitmap -"grotta/barattolo di vernice" "barattolo_vernice_verde"</command>
+    <command>0 internal -"grotta/barattolo di vernice" -g 1</command>
+    <command>0 bitmap -"grotta/pittore" "pittore_alieno"</command>
+    <command>0 show -"grotta/pittore"</command>
+    <command>0 internal -"grotta/pittore" -g -i 1</command>
+    <command>0 show -"grotta/diavoletto"</command>
+    <command>0 bitmap -"grotta/diavoletto" "diavoletto"</command>
+    <command>0 hide +"grotta/pitture_rupestri"</command>
+    <command>0 show +"grotta/pitture_aliene"</command>
+    <command>0 dialog -r "Che state facendo?" "diavoletto"</command>
+    <command>0 ost &gt;"grotta" "grotta_ufo_theme"</command>
+    <command>0 internal -"grotta/pittore" -g 0</command>
+    <command>0 internal #"diavoletto" -g 2</command>
+    <command>0 screen -w=1 -fo=1000 -a</command>
+    <command>0 ost</command>
+    <command>0 show -"t-rex"</command>
+    <command>0 status 1</command>
+    <command>0 fi</command>
+  </script>
+  <entry name="mappa" X="979" Y="1033" pose="u" />
+  <entry name="sala_telecamere" X="1775" Y="970" pose="dl" />
+  <entry name="sala_botanica_IIWW" X="273" Y="797" pose="dr" />
+  <entry name="sala_vikingi_egizi" X="1554" Y="824" pose="dl" />
+  <scene bitmap="cartello_tour" X="261" Y="698" position="default" animated="False" />
+  <scene bitmap="transenna_ingresso" X="1262" Y="742" position="fore" animated="False" />
+  <scene bitmap="transenna_t-rex" X="582" Y="585" position="back" animated="False" />
+  <scene bitmap="alien" X="0" Y="533" position="fore" animated="True" loop="True" />
+  <hotspots>
+    <goto ID="museo_x_sala_botanica_IIWW" icon="l" PX="-574" PY="83">
+      <go>
+        <command>goto "sala_botanica_IIWW"</command>
+      </go>
+    </goto>
+    <item ID="facehugger">
+      <look>
+        <command>text "Als Nackenwärmer gar nicht mal so übel."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Auf so was in der Art kannst du dich schon mal bei meinem nächste Präsentkorb einstellen."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Wozu brauche ich noch einen Facehugger, wenn du mir sowieso schon die ganze Zeit im Nacken sitzt?"</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Ich glaube nicht, dass du dich an einem so großen Kopf wie dem meinen halten könntest."</command>
+      </talk>
+    </item>
+    <character ID="cavaliere">
+      <look>
+        <command>text "'Der Winter naht.'"</command>
+      </look>
+      <talk>
+        <command>text "Ist das für ein Ritter nicht ein wenig ehrenrührig, einen Schal um die Schultern zu haben?"</command>
+        <command>text -"me" "Hast du auch nur irgendeine Ahnung, wie arschkalt das in dieser Dose ist?"</command>
+        <command>text -"me" "Ich bin jetzt fast 1000 Jahre alt. Ich muss auch daran denken, wie ich meine Knochen schütze."</command>
+        <command>wait 0,5</command>
+        <command>text "Ist es nicht an der Zeit, dass du dich nach all den Jahren zur Ruhe setzt?"</command>
+        <command>text -"me" "Würde ich gern, das kannst ich dir flüstern. Würde ich gern."</command>
+        <command>text -"me" "Doch leider hat mich der Prinz nie für meinen ehrenvollen Dienst entlohnt."</command>
+        <command>wait 0,5</command>
+        <command>expression "perplexed"</command>
+        <command>text "Aber der ist doch tot, wie soll der da Ritter anheuern ..."</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Ich meine doch nicht DEN, sondern den Schwarzen Prinzen. "</command>
+        <command>text "Ach so, verstehe ..."</command>
+      </talk>
+    </character>
+    <character ID="t-rex">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Das Einzige, was gefehlt hat, waren die Dinos."</command>
+      </look>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Gib dich geschlagen, Rex. In einem Rennen gegen Velociraptoren hättest du niemals eine Schnitte."</command>
+      </talk>
+      <indipendent>
+        <command>0 sound "trex"</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "t-rex_corre"</command>
+      </indipendent>
+    </character>
+    <goto ID="museo_x_sala_vikinga_egizia" icon="r" PX="2494" PY="114">
+      <go>
+        <command>goto "sala_vikingi_egizi"</command>
+      </go>
+    </goto>
+    <goto ID="museo_x_sala_telecamere" icon="r" PX="2578" PY="308">
+      <go>
+        <command>sound "metaldoor_open"</command>
+        <command>goto "sala_telecamere"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

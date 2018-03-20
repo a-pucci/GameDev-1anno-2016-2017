@@ -1,0 +1,62 @@
+<object name="old fork">
+  <description>
+    <command>text "Rock 'n' roll, baby!"</command>
+  </description>
+  <inventory>
+    <object name="lenza">
+      <command>sound "pick_lenza"</command>
+      <command>pick n "arpione"</command>
+      <command>throw "lenza"</command>
+      <command>throw "forchetta"</command>
+    </object>
+    <object name="trapano">
+      <command>text "It's not a grappling hook." $202</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="freccette">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "I don't think using a fork would change the outcome." $211</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>expression "perplexed"</command>
+      <command>text "It's not a grappling hook." $202</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text "Actually it's plastic. I'm afraid it would melt." $212</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "I think I need something far more effective than a simple fork." $213</command>
+    </hotspot>
+    <hotspot ID="lenza">
+      <command>text "It'd be better to pick it up first." $95</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="scatoloni2">
+      <command>text "I must be sure I can recover it before throwing it." $214</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="portiera">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "It'd be the most idiotic attempted break-in in history." $169</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="saracinesca">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "It'd be the most idiotic attempted break-in in history." $169</command>
+    </hotspot>
+  </location>
+</object>

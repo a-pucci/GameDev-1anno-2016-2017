@@ -1,0 +1,80 @@
+<object name="виагра">
+  <description>
+    <command>text "Мне это точно не нужно."</command>
+    <command>wait 0,5</command>
+    <command>text "И говоря это, я имею в виду, что у меня нет проблем с либидо."</command>
+  </description>
+  <inventory>
+    <object name="bambola voodoo funzionante">
+      <command>text "Это не «причина». Мне просто нужно выдворить его из комнаты." $26</command>
+    </object>
+    <object name="peperoncino">
+      <command>text "Все знают, что перец чили — афродозиак, но я уверен, что он не идет в сравнение с достижениями современной медицины." $140</command>
+    </object>
+  </inventory>
+  <location name="piano_terra">
+    <hotspot name="Morpheus">
+      <command>pause -"me"</command>
+      <command>pause -"Frank"</command>
+      <command>show -"piano_terra_x_bonus"</command>
+      <command>load "skinny_matrix"</command>
+      <command>text "У меня есть что-то, что сделает вас счастливым."</command>
+      <command>animation -skinny 00 -o=114,-2 -a "skinny_porge_pillola_blu"</command>
+      <command>wait 1</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_prende_pillola_blu"</command>
+      <command>wait 0,5</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_porge_pillola_rossa"</command>
+      <command>bitmap -"me" "morpheus_pillola"</command>
+      <command>wait 0,5</command>
+      <command>expression "perplexed"</command>
+      <command>text "Что это?"</command>
+      <command>text -"me" "Красная пилюля: ты отправишься в Страну чудес, и я покажу тебе, насколько глубока кроличья нора."</command>
+      <command>expression "normal"</command>
+      <command>text "Ты меня не шибко уговорил."</command>
+      <command>text -"me" "Клубничный вкус. Что еще нужно?"</command>
+      <command>text "Ладно, ты прав, давай сюда."</command>
+      <command>animation -skinny 00 -o=114,-2 -a -e=1500 "skinny_mangia_pillola_rossa"</command>
+      <command>wait 0,5</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_porge_pillola_rossa_back"</command>
+      <command>bitmap -"me" "morpheus"</command>
+      <command>wait 3</command>
+      <command>throw "viagra"</command>
+      <command>stop -ost</command>
+      <command>cutscene "skinny_matrix"</command>
+      <command>achievement "bianconiglio"</command>
+      <command>goto -nofade "bonus"</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="profilattico extra-large">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Верно, на такое согласится только такой маньяк, как ты." $179</command>
+    </hotspot>
+    <hotspot ID="rabbit">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Верно, на такое согласится только такой маньяк, как ты." $179</command>
+    </hotspot>
+    <hotspot ID="amante nascosto">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Не хочу узнавать о его множественных сексуальных похождениях." $180</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="peperoncino">
+      <command>text "Все знают, что перец чили — афродозиак, но я уверен, что он не идет в сравнение с достижениями современной медицины." $140</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="quarterback">
+      <command>text "После всего этого, не думаю, что ему оно понадобится." $181</command>
+    </hotspot>
+  </location>
+  <location name="museo">
+    <hotspot ID="cavaliere">
+      <command>text "Ну, если учесть, сколько ему, то, может..." $182</command>
+    </hotspot>
+  </location>
+</object>

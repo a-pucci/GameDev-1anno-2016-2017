@@ -1,0 +1,36 @@
+<object name="bomba disinnescata">
+  <description>
+    <command>text "Un ordigno risalente alla Seconda Guerra Mondiale."</command>
+    <command>text "Ovviamente è stato disinnescato per motivi di sicurezza."</command>
+  </description>
+  <inventory>
+    <object name="petardi">
+      <command>wait 0,5</command>
+      <command>text "Prima di tutto estraiamo la polvere da sparo..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>throw "petardi"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "E adesso..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="assenzio_radioattivo">
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </object>
+    <object name="plutonio">
+      <command>text "Non credo che questo tipo di bombe andasse a plutonio, onestamente." $154</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Con una bomba disinnescata? Sarebbe il tentativo di effrazione più idiota della storia." $75</command>
+    </hotspot>
+  </location>
+</object>

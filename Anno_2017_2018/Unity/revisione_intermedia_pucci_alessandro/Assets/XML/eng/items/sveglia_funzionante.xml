@@ -1,0 +1,33 @@
+<object name="alarm clock">
+  <description>
+    <command>text "Inspired limitless hate after so many sleepless nights passed playing videogames."</command>
+  </description>
+  <inventory />
+  <location name="vicolo">
+    <hotspot ID="senzatetto">
+      <command>load "sveglia_barbone"</command>
+      <command>wait 1</command>
+      <command>sound "pos_orlogio"</command>
+      <command>show +"sveglia"</command>
+      <command>sound "orologio_tick"</command>
+      <command>wait 1</command>
+      <command>camera</command>
+      <command>move (969,941)</command>
+      <command>wait 1,5</command>
+      <command>hide -"senzatetto"</command>
+      <command>stop "orologio_tick"</command>
+      <command>stop -ost</command>
+      <command>cutscene "sveglia_barbone"</command>
+      <command>screen -fo=1500 -w=500 -a</command>
+      <command>camera</command>
+      <command>show skinny (63,993)</command>
+      <command>hide +"ombra_barbone"</command>
+      <command>show -"vicolo_x_marciapiede"</command>
+      <command>area "vicolo2"</command>
+      <command>throw "sveglia_funzionante"</command>
+      <command>hide +"sveglia"</command>
+      <command>wait 0,5</command>
+      <command>ost</command>
+    </hotspot>
+  </location>
+</object>

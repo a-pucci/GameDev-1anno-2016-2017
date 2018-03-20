@@ -1,0 +1,29 @@
+<object name="ключи">
+  <description>
+    <command>text "Ключи от крана на свалке."</command>
+  </description>
+  <inventory />
+  <location name="discarica">
+    <hotspot ID="portiera della gru">
+      <command>sound "gru_opening"</command>
+      <command>wait 0,6</command>
+      <command>show +"porta_gru_aperta"</command>
+      <command>wait 1</command>
+      <command>show -"discarica_x_interno_gru_goto"</command>
+      <command>hide -"portiera della gru"</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "Теперь они мои..." $93</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="porta del bagno">
+      <command>text "Это не тот ключ." $94</command>
+    </hotspot>
+    <hotspot ID="porta della camera">
+      <command>text "Это не тот ключ." $94</command>
+    </hotspot>
+  </location>
+</object>

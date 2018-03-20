@@ -1,0 +1,24 @@
+<object name="pièces anciennes">
+  <description>
+    <command>text "Je suis sûr que les collectionneurs seraient prêts à me verser de l'or pour ça."</command>
+  </description>
+  <inventory />
+  <location name="spiaggia">
+    <hotspot ID="calderone_1861">
+      <command>sound "pick_monete"</command>
+      <command>wait 0,5</command>
+      <command>text "Terminé."</command>
+      <command>throw "monete_antiche"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_presente" 2</command>
+      <command>internal -"calderone_1981" 2</command>
+    </hotspot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>text "Merde, il n'accepte pas ce type de pièces." $128</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Peut-être parce que les cabines téléphoniques n'existaient pas en 1863 ?" $129</command>
+    </hotspot>
+  </location>
+</object>

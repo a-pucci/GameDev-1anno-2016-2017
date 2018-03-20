@@ -1,0 +1,43 @@
+<object name="capelli">
+  <description>
+    <command>text "Quel biondino si darà pure da fare con le ragazze, ma certo che ne perde di capelli..."</command>
+    <command>text "Pronostico la calvizie prima dei trenta."</command>
+  </description>
+  <inventory>
+    <object name="pigotta">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>text "In effetti ne avrebbe bisogno, ma credo che li utilizzerò per qualcos'altro." $85</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>text "Non voglio mica bruciarli." $86</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="berretto">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Perchè dovrei rimetterli nel berretto?" $87</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="martello di Thor">
+      <command>expression "sarcastic"</command>
+      <command>text "Vincerebbe Thor, anche stavolta." $88</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="pigotta">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

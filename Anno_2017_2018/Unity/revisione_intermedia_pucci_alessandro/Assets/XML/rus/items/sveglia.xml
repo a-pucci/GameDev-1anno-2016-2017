@@ -1,0 +1,21 @@
+<object name="будильник">
+  <description>
+    <command>text "Уверен, что это падение было дня него последним."</command>
+  </description>
+  <inventory>
+    <object name="ingranaggi">
+      <command>sound "pick_clock_funzionante"</command>
+      <command>pick n "sveglia_funzionante"</command>
+      <command>throw "ingranaggi"</command>
+      <command>throw "sveglia"</command>
+    </object>
+  </inventory>
+  <location name="vicolo">
+    <hotspot ID="senzatetto">
+      <command>pose d</command>
+      <command>text "Напоминаю, что будильник сломан." $269</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Порой твой дефицит внимания реально действует на нервы." $270</command>
+    </hotspot>
+  </location>
+</object>

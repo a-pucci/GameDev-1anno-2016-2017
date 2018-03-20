@@ -1,0 +1,34 @@
+<object name="drill">
+  <description>
+    <command>text "Good, the batteries seem to be charged. I'm only missing the bit."</command>
+  </description>
+  <inventory>
+    <object name="vite">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "vite"</command>
+      <command>throw "trapano"</command>
+    </object>
+    <object name="arpione">
+      <command>text "It's not a grappling hook." $202</command>
+    </object>
+    <object name="forchetta">
+      <command>text "It's not a grappling hook." $202</command>
+    </object>
+  </inventory>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "It's not a pincer." $271</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "I remind you that the drill is without a tip." $272</command>
+      <command>expression "sarcastic"</command>
+      <command>text "This attention deficit of yours is really irritating sometimes." $270</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,53 @@
+<object name="bâche">
+  <description>
+    <command>text "J'ai toujours rêvé d'avoir une piscine à la maison." 1</command>
+  </description>
+  <inventory>
+    <object name="spillo">
+      <command>text "Je ne veux pas le percer." $167</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="covone di paglia">
+      <command>text "Ce n'est pas nécessaire. Le corps est déjà couvert de foin." $115</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "J'ai une envie irrépressible de l'étouffer, mais je crains que ce ne soit pas possible." $116</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "Ce n'est pas une mauvaise idée, mais d'abord je veux être sûr d'avoir fait tout ce qui est nécessaire." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="navicella aliena">
+      <command>pose d</command>
+      <command>text "Pourquoi voudrais-tu cacher une merveille pareille ?" $118</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "Je pourrais couvrir la caméra avec la bâche, mais Ralph s'en apercevrait." $176</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "Je pourrais couvrir la caméra avec la bâche, mais Ralph s'en apercevrait." $176</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "Je pourrais couvrir la caméra avec la bâche, mais Ralph s'en apercevrait." $176</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "Je pourrais couvrir la caméra avec la bâche, mais Ralph s'en apercevrait." $176</command>
+    </hotspot>
+  </location>
+</object>

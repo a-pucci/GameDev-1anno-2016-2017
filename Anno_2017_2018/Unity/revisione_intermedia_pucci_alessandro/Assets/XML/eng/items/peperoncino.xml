@@ -1,0 +1,38 @@
+<object name="chili pepper">
+  <description>
+    <command>text "The spicy part is concentrated in the seeds."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "I'm afraid the chili pepper isn't spicy enough." $15</command>
+    </object>
+    <object name="viagra">
+      <command>text "It's known that the chili pepper is an aphrodisiac, but surely it can't equal what only modern medicine has achieved." $140</command>
+    </object>
+  </inventory>
+  <location name="grotta">
+    <hotstpot name="barattolo di vernice">
+      <command>if internal 0</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Why should I dip it into a white paint can?"</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>wait 0,5</command>
+      <command>throw "peperoncino"</command>
+      <command>sound "pick_jalapegno_inzuppato"</command>
+      <command>pick n "jalapeno"</command>
+      <command>fie</command>
+    </hotstpot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="viagra">
+      <command>text "It's known that the chili pepper is an aphrodisiac, but surely it can't equal what only modern medicine has achieved." $140</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>text "He's used to a very different standard." $141</command>
+    </hotspot>
+  </location>
+</object>

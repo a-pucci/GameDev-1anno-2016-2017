@@ -1,0 +1,64 @@
+<object name="пенни">
+  <description>
+    <command>text "Я надеялся на более приятный обменный курс."</command>
+    <command>text "Чертовы банки."</command>
+  </description>
+  <inventory />
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>if shown -"cornetta alzata"</command>
+      <command>sound "inserimento_moneta"</command>
+      <command>animation (813,267) -p=fore "moneta_in"</command>
+      <command>status 2</command>
+      <command>fie</command>
+      <command>text -"me" "Прежде чем вставлять монеты, нужно взять трубку."</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Прежде чем вставлять монеты, нужно взять трубку." $37</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>text "Не хочу подвергать его опасности." $38</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "У меня все равно нет денег, чтобы оплатить работу крановщика." $138</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Думаю, нам нужно что-то большее, чем просто втереться к ним в «доверие»." $45</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>pose d</command>
+      <command>text "Помнишь урок про то, что нужно «избавляться от мирского»?" $46</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>pose d</command>
+      <command>text "Мне не нужны его услуги." $139</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="calderone_1981">
+      <command>sound "pick_monete"</command>
+      <command>wait 0,5</command>
+      <command>text "Сделано."</command>
+      <command>throw "penny"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_presente" 2</command>
+      <command>internal -"calderone_1861" 2</command>
+    </hotspot>
+    <hotspot ID="calderone_presente">
+      <command>expression "sarcastic"</command>
+      <command>text "Мы не в том веке." $49</command>
+    </hotspot>
+    <hotspot ID="calderone_1861">
+      <command>expression "sarcastic"</command>
+      <command>text "Мы не в том веке." $49</command>
+    </hotspot>
+  </location>
+</object>

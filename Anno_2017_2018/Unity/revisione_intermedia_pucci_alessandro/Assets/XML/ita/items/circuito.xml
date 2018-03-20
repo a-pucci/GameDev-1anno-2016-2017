@@ -1,0 +1,19 @@
+<object name="magnetizzatore">
+  <description>
+    <command>text "É una soluzione di fortuna, ma dovrebbe fare al caso mio."</command>
+  </description>
+  <inventory>
+    <object name="disco_alieno">
+      <command>sound "pick_magnete"</command>
+      <command>throw "circuito"</command>
+      <command>throw "disco_alieno"</command>
+      <command>pick n "magnete"</command>
+    </object>
+  </inventory>
+  <location name="grotta">
+    <hotspot ID="dischetto">
+      <command>expression "sarcastic"</command>
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,41 @@
+<object name="dispositivo antirrobo casero">
+  <description>
+    <command>text "El mejor modo de que cunda el pánico en todo un barrio."</command>
+  </description>
+  <inventory />
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>load "fuga_ladro"</command>
+      <command>wait 1</command>
+      <command>sound "use_mgafono"</command>
+      <command>animation -skinny 00 -o=162,13 -e=3000 "skinny_megafono_ladro"</command>
+      <command>stop "use_mgafono"</command>
+      <command>stop "cantiere_theme"</command>
+      <command>cutscene "fuga_ladro"</command>
+      <command>ost &gt;"retro_furgone" "cantiere_theme"</command>
+      <command>throw "antifurto_fai_da_te"</command>
+      <command>sound "pick_megafono"</command>
+      <command>pick n "megafono"</command>
+      <command>area "retro_furgone"</command>
+      <command>show -"piede di porco"</command>
+      <command>hide -"ladro"</command>
+      <command>show -"finestra rotta"</command>
+      <command>hide +"ladro_idle"</command>
+      <command>destination -"fenicottero" (1268,865)</command>
+      <command>show +"finestra/finestra_rotta_visuale_bagno"</command>
+    </hotspot>
+  </location>
+  <location name="finestra">
+    <hotspot ID="vicini2">
+      <command>text "Me temo que estoy un poco lejos." $196</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Me arriesgaría a perforarle el tímpano." $197</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Y teniendo en cuenta de quién estamos hablando, no sería muy recomendable que montara en cólera." $198</command>
+    </hotspot>
+  </location>
+</object>

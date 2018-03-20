@@ -1,0 +1,6 @@
+<object name="pólvora">
+  <description>
+    <command>text "Questa-descrizione-non-verrà-mai-detta-a-meno-che-non-si-cambi-la-dinamica-dei-petardi"</command>
+  </description>
+  <inventory />
+</object>

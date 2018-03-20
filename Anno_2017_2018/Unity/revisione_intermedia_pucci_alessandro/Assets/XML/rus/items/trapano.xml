@@ -1,0 +1,34 @@
+<object name="дрель">
+  <description>
+    <command>text "Отлично, батарейки, кажется, заряжены. Осталось найти еще кое-что."</command>
+  </description>
+  <inventory>
+    <object name="vite">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "vite"</command>
+      <command>throw "trapano"</command>
+    </object>
+    <object name="arpione">
+      <command>text "Это не крюк-кошка." $202</command>
+    </object>
+    <object name="forchetta">
+      <command>text "Это не крюк-кошка." $202</command>
+    </object>
+  </inventory>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Это не клешни." $271</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Напоминаю, что это дрель без сверла." $272</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Порой твой дефицит внимания реально действует на нервы." $270</command>
+    </hotspot>
+  </location>
+</object>

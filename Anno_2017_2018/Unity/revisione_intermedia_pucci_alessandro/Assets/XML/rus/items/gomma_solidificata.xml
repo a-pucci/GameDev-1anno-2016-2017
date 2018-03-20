@@ -1,0 +1,17 @@
+<object name="затвердевшая жвачка">
+  <description>
+    <command>text "Видишь, говорил же, что надо поторапливаться." $277</command>
+  </description>
+  <inventory />
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>sound "moai_solidificata"</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomma_solidificata"</command>
+      <command>fie</command>
+      <command>text "Не хочу подвергать его опасности." $38</command>
+    </hotspot>
+  </location>
+</object>

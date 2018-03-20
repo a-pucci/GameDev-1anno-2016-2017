@@ -1,0 +1,140 @@
+<object name="bambola voodoo ">
+  <description>
+    <command>text "É praticamente un action man col ciuffo biondo."</command>
+  </description>
+  <inventory>
+    <object name="spillo">
+      <command>if in "primo_piano"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Forse è il caso di rimanere a debita distanza dalla camera." 1</command>
+      <command>fie</command>
+      <command>if in "elenco_telefonico"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Forse è il caso di rimanere a debita distanza dalla camera." 1</command>
+      <command>fie</command>
+      <command>if in "toppa_bagno"</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Forse è il caso di rimanere a debita distanza dalla camera." 1</command>
+      <command>fie</command>
+      <command>if status &gt;"spiaggia" 4</command>
+      <command>inventory</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ti ricordo che siamo in un'epoca diversa." 4</command>
+      <command>fie</command>
+      <command>if not in "primo_piano"</command>
+      <command>load "johnny"</command>
+      <command>inventory</command>
+      <command>wait 1</command>
+      <command>pose d</command>
+      <command>text "Speriamo solo che questa sia la volta buona." 5</command>
+      <command>stop -ost</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_voodoo_doll_ok"</command>
+      <command>animation -skinny 00 -o=58,39 "skinny_accoltella_bambola_voodoo_funzionante"</command>
+      <command>throw "bambola voodoo funzionante"</command>
+      <command>throw "spillo"</command>
+      <command>status &gt;"primo_piano" 1</command>
+      <command>stop "cicada"</command>
+      <command>if internal -"giardino/quarterback" 1</command>
+      <command>internal #"quarterback" -g 1</command>
+      <command>fi</command>
+      <command>cutscene -x "johnny"</command>
+      <command>ost</command>
+      <command>screen c -w=500 -fo=1500 -a</command>
+      <command>hide -"primo_piano/porta della camera"</command>
+      <command>show -"primo_piano/primo_piano_x_camera_letto"</command>
+      <command>internal -"primo_piano/ragazzo alticcio" -i -g 0</command>
+      <command>internal -"primo_piano/porta della camera" -g 2</command>
+      <command>internal -"giardino/quarterback" -g 1</command>
+      <command>internal -"primo_piano/ragazzo alticcio" -i 0</command>
+      <command>internal -"primo_piano/berretto" 2</command>
+      <command>hide -"primo_piano/vestiti a terra"</command>
+      <command>fie</command>
+    </object>
+    <object name="viagra">
+      <command>text "Non è questo 'l'incentivo' che mi serve per farlo uscire dalla camera." $26</command>
+    </object>
+    <object name="petardi">
+      <command>text "Niente fonti di calore, nè arti mozzati, ricordi?" $24</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="mangiatoia">
+      <command>pose d</command>
+      <command>text "Niente fonti di calore, nè arti mozzati, ricordi?" $24</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="rasoio fai da te">
+      <command>pose d</command>
+      <command>text "Niente fonti di calore, nè arti mozzati, ricordi?" $24</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="pentacolo">
+      <command>text "Credo sia sufficiente eseguire il rituale una sola volta." $25</command>
+    </hotspot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="viagra">
+      <command>expression "sarcastic"</command>
+      <command>text "Non è questo 'l'incentivo' che mi serve per farlo uscire dalla camera." $26</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="pugnale">
+      <command>text "Farebbe proprio al caso mio!" $27</command>
+      <command>text "Dovrei solo trovare un modo per tirarlo giù da lì." $28</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>text "Niente fonti di calore, nè arti mozzati, ricordi?" $24</command>
+    </hotspot>
+    <hotspot ID="libro di magia nera">
+      <command>text "Grazie per l'aiuto." $29</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="petardi">
+      <command>pose d</command>
+      <command>text "Niente fonti di calore, nè arti mozzati, ricordi?" $24</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>expression "sarcastic"</command>
+      <command>text "Il voodoo e il cattolicesimo non vanno propriamente d'accordo." $30</command>
+      <command>expression "normal"</command>
+      <command>text "Non riportiamo alla luce strane persecuzioni medievali." $31</command>
+    </hotspot>
+  </location>
+  <location name="meteorite">
+    <hotspot ID="I tre fratelli Orco">
+      <command>expression "sarcastic"</command>
+      <command>text "Quando parlano di 'bambini', intendono bambini in carne ed ossa." $32</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="cactus ballerini">
+      <command>text "Non credo che qualche spina possa essere sufficiente." $33</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Scienza e voodoo non sono proprio la migliore delle combinazioni." $34</command>
+    </hotspot>
+  </location>
+</object>

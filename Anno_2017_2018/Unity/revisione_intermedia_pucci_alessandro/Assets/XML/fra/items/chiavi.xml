@@ -1,0 +1,29 @@
+<object name="clés">
+  <description>
+    <command>text "Les clés de la grue."</command>
+  </description>
+  <inventory />
+  <location name="discarica">
+    <hotspot ID="portiera della gru">
+      <command>sound "gru_opening"</command>
+      <command>wait 0,6</command>
+      <command>show +"porta_gru_aperta"</command>
+      <command>wait 1</command>
+      <command>show -"discarica_x_interno_gru_goto"</command>
+      <command>hide -"portiera della gru"</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "Elles sont à moi maintenant." $93</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="porta del bagno">
+      <command>text "Ce n'est pas la bonne clé." $94</command>
+    </hotspot>
+    <hotspot ID="porta della camera">
+      <command>text "Ce n'est pas la bonne clé." $94</command>
+    </hotspot>
+  </location>
+</object>

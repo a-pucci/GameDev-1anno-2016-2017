@@ -1,0 +1,38 @@
+<location isfirstperson="True">
+  <script>
+  </script>
+  <entry name="primo_piano" X="1" Y="1" pose="u" />
+  <hotspots>
+    <action ID="annuncio_tendine">
+      <act>
+        <command>text "Tende da bagno Johnson, 206-002-456."</command>
+        <command>wait 0,5</command>
+        <command>text "Spero almeno che queste non siano una bugia."</command>
+      </act>
+    </action>
+    <action ID="annuncio_hotline">
+      <act>
+        <command>text "Rocko's hotline, 80-6969."</command>
+        <command>wait 0,5</command>
+        <command>text "Calde, monelle, gentili."</command>
+      </act>
+    </action>
+    <action ID="annuncio_corriere">
+      <act>
+        <command>0 text "Corriere espresso 24h, 7 giorni su 7, 00-8458901."</command>
+        <command>0 text "Tutti i pacchi devono essere a prova d'urto, idrorepellenti e con il contenuto chiaramente indicato all'esterno."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Potrei impacchettare l'armadio e 'spedirmi' alla nuova casa di Ronald..."</command>
+        <command>0 internal -"bagno/telone" 1</command>
+        <command>1 sound "pick_inserto_telefonico"</command>
+        <command>1 pick y "inserto_pubblicitario"</command>
+      </act>
+    </action>
+    <goto ID="elenco_telefonico_x_primo_piano" icon="d" PX="943" PY="1347">
+      <go>
+        <command>sound "elencotelefonico_close"</command>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

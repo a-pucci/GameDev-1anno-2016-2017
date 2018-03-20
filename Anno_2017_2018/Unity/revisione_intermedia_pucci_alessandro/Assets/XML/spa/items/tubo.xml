@@ -1,0 +1,64 @@
+<object name="tubo pequeño">
+  <description>
+    <command>text "Pesa muy poco. Supongo que está hecho de aluminio o algo así."</command>
+  </description>
+  <inventory />
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>if not status 3</command>
+      <command>sound "micro_opening"</command>
+      <command>bitmap -"me" "microonde_aperto"</command>
+      <command>label -"me" "cuc_microonde_label_1"</command>
+      <command>internal -g 1</command>
+      <command>wait 0,5</command>
+      <command>throw "tubo"</command>
+      <command>sound "micro_tube"</command>
+      <command>bitmap -"me" "microonde_aperto_tubo"</command>
+      <command>wait 1</command>
+      <command>lookat -"Z8"</command>
+      <command>sound "robot_z8_out"</command>
+      <command>animation -"Z8" 00 -o=-1,1 "Z8_tubo_out"</command>
+      <command>sound "robot_z8_blow"</command>
+      <command>animation -"Z8" 00 -o=-2,0 "Z8_risucchio"</command>
+      <command>animation -"Z8" 00 -o=-2,0 "Z8_risucchio"</command>
+      <command>animation -"Z8" 00 -o=-2,0 "Z8_risucchio"</command>
+      <command>bitmap -"me" "microonde_aperto"</command>
+      <command>animation -"Z8" 00 -o=-1,1 "Z8_back"</command>
+      <command>fie</command>
+      <command>if status 3</command>
+      <command>show -"cucina1_x_marciapiede"</command>
+      <command>load "fuga_traslocatori"</command>
+      <command>if bitmap -"microonde" "microonde_chiuso"</command>
+      <command>sound "micro_opening"</command>
+      <command>bitmap -"me" "microonde_aperto"</command>
+      <command>fi</command>
+      <command>wait 0,5</command>
+      <command>throw "tubo"</command>
+      <command>sound "micro_tube"</command>
+      <command>bitmap -"me" "microonde_aperto_tubo"</command>
+      <command>wait 0,5</command>
+      <command>text "Será mejor que ponga el temporizador para garantizar una ruta de fuga."</command>
+      <command>wait 0,5</command>
+      <command>sound "micro_closing"</command>
+      <command>bitmap -"me" "microonde_chiuso_tubo"</command>
+      <command>wait 0,5</command>
+      <command>screen -w=1 -fi=1500</command>
+      <command>hide -"gallina"</command>
+      <command>hide +"orologio_pizza"</command>
+      <command>hide +"naso_starnuto"</command>
+      <command>stop "nose"</command>
+      <command>stop "pizza_clock"</command>
+      <command>stop "ingresso_theme"</command>
+      <command>screen -w=1000</command>
+      <command>cutscene -s "fuga_traslocatori"</command>
+      <command>status &gt;"marciapiede" 4</command>
+      <command>goto -nofade "marciapiede"</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>expression "sarcastic"</command>
+      <command>text "El agua entraría por un lado y saldría por el otro." $273</command>
+    </hotspot>
+  </location>
+</object>

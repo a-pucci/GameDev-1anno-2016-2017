@@ -1,0 +1,38 @@
+<object name="disco alienígena">
+  <description>
+    <command>text "Creo que hace las veces de llave de la nave espacial, o algo así."</command>
+  </description>
+  <inventory>
+    <object name="circuito">
+      <command>sound "pick_magnete"</command>
+      <command>throw "circuito"</command>
+      <command>throw "disco_alieno"</command>
+      <command>pick n "magnete"</command>
+    </object>
+    <object name="pila">
+      <command>text "A lo mejor puedo ponerle pilas, pero así no." $150</command>
+    </object>
+  </inventory>
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>text "Nada. Esperaba poder conseguir acceso a llamadas interuniversales." $100</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="canna da pesca">
+      <command>text "Mmm... Es del mismo tamaño que el disco de la caña de pescar." $101</command>
+    </hotspot>
+    <hotspot ID="giostraio">
+      <command>text "Creo que voy en la dirección correcta." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Pero en sentido contrario." $103</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="navicella aliena">
+      <command>pose d</command>
+      <command>text "Ya me lo he llevado y no tengo intención de devolverlo." $104</command>
+    </hotspot>
+  </location>
+</object>

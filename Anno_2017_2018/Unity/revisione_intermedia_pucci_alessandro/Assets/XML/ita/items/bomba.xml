@@ -1,0 +1,58 @@
+<object name="bomba carica">
+  <description>
+    <command>text "Speriamo solo che qualcuno non mi scambi per un kamikaze."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </object>
+    <object name="fiammiferi">
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>text "Mi servirebbe qualcosa per fissarla alla cassaforte."</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="gomitolo di ragnatela">
+      <command>wait 0,5</command>
+      <command>sound "pick_bomba_appicicosa"</command>
+      <command>throw "bomba"</command>
+      <command>pick n "bomba_appiccicosa"</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>expression "sarcastic"</command>
+      <command>pose d</command>
+      <command>text "Esiste sicuramente un modo più 'discreto' per farlo desistere dal suo bagno." $72</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A volte mi stupisco di come tu faccia a essere ancora vivo." $7</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="picasso">
+      <command>text "É impossibile fare peggio di così." $73</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="pescato">
+      <command>expression "sarcastic"</command>
+      <command>text "Preferisco lasciare certe 'tecniche di pesca' al padre di Ronald." $74</command>
+    </hotspot>
+  </location>
+</object>

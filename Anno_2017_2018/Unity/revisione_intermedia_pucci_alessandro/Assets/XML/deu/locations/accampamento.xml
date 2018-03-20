@@ -1,0 +1,318 @@
+<location>
+  <script>
+    <command>0 stop -ost</command>
+    <command>0 hide -"vecchia conoscenza"</command>
+    <command>0 hide +"maiali"</command>
+    <command>0 screen c -w=2500 "In der Zwischenzeit ..."</command>
+    <command>0 cutscene -x "arrivo_pacco"</command>
+    <command>0 screen c -w=500 -fo=1500 -a</command>
+    <command>0 status &gt;"spiaggia" 3</command>
+    <command>0 show -"spiaggia/bocchetta_carburatore"</command>
+    <command>0 bitmap -"spiaggia/macchina del tempo" "macchina_tempo_ok"</command>
+    <command>0 internal -"spiaggia/macchina del tempo" -g 1</command>
+    <command>0 internal #"scienziato" 1</command>
+    <command>0 dialog -r "Stai aspettando qualcuno?" "scienziato"</command>
+    <command>0 internal -"spiaggia/scienziato" -g -i 1</command>
+    <command>0 wait 0,5</command>
+    <command>0 show -"vecchia conoscenza"</command>
+    <command>0 show +"maiali"</command>
+    <command>0 internal &gt;"accampamento" -i -g 1</command>
+    <command>0 ost</command>
+    <command>0 wait 1,5</command>
+    <command>0 status 1</command>
+  </script>
+  <indipendent>
+    <command>0 wait 20</command>
+    <command>1 sound -l "cicada_accampamento"</command>
+    <command>1 sound -l -x=2610 "bidone_fuoco"</command>
+    <command>1 wait 10</command>
+  </indipendent>
+  <entry name="mappa" X="3356" Y="900" pose="l" />
+  <scene bitmap="finestra_chiosco" X="306" Y="305" position="default" animated="False" />
+  <scene bitmap="camper" X="1168" Y="-14" position="back" animated="True" loop="True" />
+  <scene bitmap="murales" X="2924" Y="374" position="back" animated="False" />
+  <scene bitmap="bottiglia_rotta" X="1097" Y="995" position="fore" animated="False" />
+  <scene bitmap="barattolo" X="871" Y="1008" position="fore" animated="False" />
+  <scene bitmap="fuoco_barile" X="2394" Y="507" position="default" animated="True" loop="True" />
+  <scene bitmap="maiali" X="1011" Y="596" position="back" animated="True" start="4000" stop="8000" sound="maiali" loop="True" />
+  <scene bitmap="afk" X="421" Y="562" position="back" animated="False" />
+  <hotspots>
+    <character ID="marionettista">
+      <look>
+        <command>text "Bestes Halloween-Kostüm aller Zeiten."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Immer vorausgesetzt, das ist überhaupt ein Kostüm."</command>
+      </look>
+      <talk>
+        <command>text -"zingara" "Hey, ich rede mit dir."</command>
+      </talk>
+    </character>
+    <character ID="zingara">
+      <look>
+        <command>if inventory "buono"</command>
+        <command>text "Schätze mal, ich sollte sie nach meinem Preis fragen." 1</command>
+        <command>fie</command>
+        <command>text "Ist die eine Marionette oder ein Mensch? Kann ich wirklich nicht sagen." 2</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Ähm ... hallo?"</command>
+        <command>0 text -"me" "Warum machst du denn so ein besorgtes Gesicht? Hast du noch nie eine Marionette gesehen?"</command>
+        <command>0 expression "normal"</command>
+        <command>0 text "Doch, schon, nur halt keine, die an unsichtbaren Fäden von einem Puppenspieler ohne Kopf gespielt wurde."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Und die sprechen kann, nebenbei bemerkt."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression -"me" "angry"</command>
+        <command>0 text -"me" "Hast du etwa ein Problem damit, dass ich nicht an Fäden hänge?"</command>
+        <command>0 text "Äh ... n-nein."</command>
+        <command>0 text -"me" "Und ist es vielleicht verboten, dass eine Marionette wie ich eine schöne Stimme hat?"</command>
+        <command>0 text "D-das habe ich doch gar nicht gemeint."</command>
+        <command>0 wait 1,5</command>
+        <command>0 text "Ihr Frauen seid wirklich unmöglich."</command>
+        <command>0 internal 1</command>
+        <command>1 text "Tut mir leid, dass ich so hartnäckig bin, aber ich weiß jetzt echt nicht, ob du eine Marionette oder ein Mensch aus Fleisch und Blut bist." 10</command>
+        <command>1 text -"me" "Mensch oder Marionette ... wen juckt das schon?" 11</command>
+        <command>1 text -"me" "Ist es denn nur unser Aussehen, das uns zu dem macht, was wir sind?" 12</command>
+        <command>1 expression "sarcastic"</command>
+        <command>1 text "*Nun, ich bin ein Skelett gerade weil ich ja tot bin.*" 13</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"marionettista" 00 -o=24,26 -c -a "marionettista_idle"</command>
+        <command>wait 0,2</command>
+        <command>animation -"me" 00 -o=1,28 -c "zingara_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="vecchia conoscenza">
+      <look>
+        <command>text "Der ist vermutlich den ganzen Weg hierher gekommen, um etwas Frieden zu finden."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Ich hab den lange genug genervt, jetzt lass ich den mal in Ruhe."</command>
+      </talk>
+      <indipendent>
+        <command>sound "homeless"</command>
+        <command>animation -"me" 00 -o=0,0 -c "barbone_snorlax"</command>
+      </indipendent>
+    </character>
+    <item ID="bomboletta spray">
+      <look>
+        <command>text "Der Verfasser muss das vergessen haben."</command>
+      </look>
+      <pick>
+        <command>sound "pick_spray_can"</command>
+        <command>pick y "bomboletta_spray"</command>
+      </pick>
+      <use>
+        <command>text "Wer auch immer schon vorher hier war, hat bereits ganze Arbeit geleistet."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="writer">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Ein Gürtel wäre praktisch."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>wait 0,5</command>
+        <command>pose u</command>
+        <command>wait 0,5</command>
+        <command>text "Mmm..."</command>
+        <command>wait 0,5</command>
+        <command>lookat -"me"</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Was ist das denn, post-moderne Kunst?"</command>
+        <command>expression "normal"</command>
+        <command>text -"me" "Äh, du hast Recht."</command>
+        <command>text -"me" "Mir fällt wirklich mal so gar nichts Interessantes ein."</command>
+        <command>wait 0,5</command>
+        <command>text "Was zum Beispiel?"</command>
+        <command>text -"me" "Tja, Mann, ich weiß nicht ..."</command>
+        <command>text -"me" "Etwas, das starke Gefühle transportiert."</command>
+        <command>text -"me" "Etwas Verblüffendes, aber Originelles, ab und zu."</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Ich bin's leid, 'ACAB' an Denkmäler zu sprühen."</command>
+        <command>text -"me" "Hast du gehört, Mann?"</command>
+        <command>wait 0,5</command>
+        <command>text "Ich denk' drüber nach. Vielleicht fällt mir ja was Gutes ein."</command>
+        <command>text -"me" "Genial."</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "writer"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <item ID="pixel morto">
+      <look>
+        <command>pose d</command>
+        <command>text "Ich glaube, du hast soeben den witzlosesten Hotspot im gesamten Spiel entdeckt."</command>
+        <command>achievement "pixel_hunting"</command>
+      </look>
+      <pick>
+        <command>wait 0,5</command>
+        <command>text "Okay, ist jetzt weg."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Und wenn du so was nochmal sehen solltest, tja ... Ich hab da schlechte Nachrichten für dich."</command>
+        <command>achievement "pixel_hunting"</command>
+      </pick>
+      <use>
+        <command>text "Das Ding ist gerade zu nichts zu gebrauchen."</command>
+        <command>achievement "pixel_hunting"</command>
+      </use>
+      <talk>
+        <command>text "Bist du jetzt echt tot oder sind bei dir einfach nur die RGB-Regler auf 0,0,0 gestellt?"</command>
+        <command>achievement "pixel_hunting"</command>
+      </talk>
+    </item>
+    <character ID="barbone">
+      <look>
+        <command>text "Der ist ein Mensch."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>text "Verzeihung, aber du kommst mir so bekannt vor."</command>
+        <command>text -"me" "Du hast mich wahrscheinlich früher mal im Fernsehen gesehen."</command>
+        <command>text -"me" "Weißt du, ich war früher mal Pro Gamer."</command>
+        <command>wait 0,5</command>
+        <command>text "Wenn man dich jetzt so sieht, dann muss wohl was schiefgelaufen sein."</command>
+        <command>text -"me" "Karpaltunnel. Ich hab langsam meine Beweglichkeit und Reaktionsgeschwindigkeit verloren. So bin ich bei den Profis rausgerutscht."</command>
+        <command>text "Ich hatte jetzt mehr so an einen Pfeil im Handgelenk oder so was in der Art gedacht."</command>
+        <command>wait 0,5</command>
+        <command>expression -"me" "perplexed"</command>
+        <command>text -"me" "Einen Pfeil im Handgelenk?"</command>
+        <command>text "Nie mal Skyrim gespielt?"</command>
+        <command>expression -"me" ""</command>
+        <command>text -"me" "Sorry, nur Prügelspiele."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "*Dann hast du ja deine gerechte Strafe gekriegt.*"</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>animation -"me" 00 -o=40,32 -c "bing_bong"</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+      </indipendent>
+    </character>
+    <character ID="Wally">
+      <look />
+      <talk />
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "waldo"</command>
+      </indipendent>
+    </character>
+    <item ID="mangiatoia">
+      <look>
+        <command>text "Ich wage mir nicht mal vorzustellen, was in dem Siff da drin sein könnte."</command>
+      </look>
+      <pick>
+        <command>text "Von wegen. Dann würde ich nur zwangsläufig deren Zorn zum Opfer fallen."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Und ich lege noch immer gesteigerten Wert darauf, im Vollbesitz meiner beiden Hände zu sein."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Für wen hältst du mich eigentlich?"</command>
+      </use>
+      <talk>
+        <command>text "Schönes Fressi-Fressi, was, ihr Schweinchen?"</command>
+      </talk>
+    </item>
+    <item ID="covone di paglia">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Genau so sollten solche Sachen auch wirklich laufen."</command>
+      </look>
+      <pick>
+        <command>0 sound "covone_paglia"</command>
+        <command>0 wait 1</command>
+        <command>0 sound "pick_pirite"</command>
+        <command>0 pick n "spillo"</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 wait 0,7</command>
+        <command>0 text "In diesem Videospiel sind manche Sachen dann doch etwas zu wortwörtlich gemeint."</command>
+        <command>0 internal 1</command>
+        <command>1 text "Ich will meine Zeit nicht schon wieder mit einer Suchaktion vergeuden, die eh witzlos ist."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Ich hab meinen Teil schon vor Stunden geleistet. Heute gibt's keinen weiteren 'Sprung ins Ungewisse' mehr."</command>
+      </use>
+      <talk>
+        <command>text "Das Springen von Dach zu Dach ist jetzt nicht mehr ganz so witzig, was?"</command>
+      </talk>
+    </item>
+    <item ID="scatola di Eggo">
+      <look>
+        <command>text "Ich glaube, diese Eggos werden den Gebrüdern Duffer niemals genug danken können."</command>
+        <command>text "Was die wohl an Stranger Things verdient haben!"</command>
+      </look>
+      <pick>
+        <command>text "An deiner Stelle würde ich das lassen."</command>
+        <command>text "Dieses kleine Mädchen wird echt zur Furie, wenn die so richtig auf Touren kommt."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Okay, ich mag von schlechter Ernährung und Kahlköpfigkeit gezeichnet sein, aber ich bin hier nicht derjenige, der über paranormale Kräfte verfügt und einen seltsamen Waffelfimmel hat."</command>
+      </use>
+      <talk>
+        <comment>[parlando in direzione della boscaglia, quindi un minimo grida]</comment>
+        <command>pose ur</command>
+        <command>text "Du magst sie lieber mit ein wenig Blut anstatt Ahornsirup, oder, Demogorgon?"</command>
+      </talk>
+    </item>
+    <item ID="fisarmonica">
+      <look>
+        <command>text "Ich werde dabei auf immer und ewig an zwei Hunde denken müssen, die im Mondschein Spaghetti mit Fleischbällchen essen."</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Besten Dank auch, Walt."</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Mittlerweile solltest du eigentlich kapiert haben, dass ich nicht gerade der Musikalischsten einer bin."</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Ich hab da so meine Zweifel, ob das irgendwas für mich spielen könnte, selbst wenn ich lieb drum bitten würde."</command>
+      </talk>
+    </item>
+  </hotspots>
+</location>

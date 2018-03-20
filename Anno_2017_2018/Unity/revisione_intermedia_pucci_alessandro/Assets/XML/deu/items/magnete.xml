@@ -1,0 +1,105 @@
+<object name="Magnet">
+  <description>
+    <command>text "Zumindest hoffe ich, dass man damit irgendeine Form außerirdischen Lebens anlocken kann."</command>
+    <command>wait 0,5</command>
+    <command>text "'I want to believe.'"</command>
+  </description>
+  <inventory />
+  <location name="casa_albero">
+    <hotspot ID="pugnale">
+      <command>text "Da bräuchte man schon was ganz anderes, um das da von der Wand zu kriegen." $121</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="canna da pesca">
+      <command>pause -"giostraio"</command>
+      <command>wait 0,2</command>
+      <command>bitmap -"giostraio" "giostraio_canna"</command>
+      <command>sound "magnete"</command>
+      <command>bitmap -"me" "canna_pesca_ok"</command>
+      <command>throw "magnete"</command>
+      <command>wait 0,7</command>
+      <command>pose d</command>
+      <command>text "Das entwickelt sich ja doch noch zu einem sehr lohnenswerten Angeltrip."</command>
+      <command>lookat -"me"</command>
+      <command>sound "pesca_ok"</command>
+      <command>wait 0,5</command>
+      <command>animation -skinny 00 -o=366,199 -a "skinny_canna_pesca_ok"</command>
+      <command>bitmap -skinny -o=366,199 "skinny_canna_pesca"</command>
+      <command>sound "use_canna"</command>
+      <command>hide -"me"</command>
+      <command>wait 0,25</command>
+      <command>show +"bordo_vasca"</command>
+      <command>wait 1,58</command>
+      <command>internal &gt;"cucina" -g -i 1</command>
+      <command>animation (255,484) -p=default -a "giostra_risucchio"</command>
+      <command>wait 1</command>
+      <command>bitmap -skinny ""</command>
+      <command>internal -"giostraio" -g -i 2</command>
+      <command>resume -"giostraio"</command>
+      <command>animation -skinny 00 -o=366,199 -a "skinny_vince_giostra"</command>
+      <command>wait 2,2</command>
+      <command>hide +"bordo_vasca"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -"me" "canna_pesca_pesci"</command>
+      <command>sound "use_canna"</command>
+      <command>show -"me"</command>
+      <command>wait 1</command>
+      <command>text -"giostraio" "Ich kann nicht glauben, dass du's geschafft hast."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ich bin halt ein echter Profi. Was soll ich sagen?"</command>
+      <command>expression "normal"</command>
+      <command>text -"giostraio" "Warum wirfst du nicht mal einen Blick in deine Taschen?"</command>
+      <command>expression "perplexed"</command>
+      <command>wait 1</command>
+      <command>sound "pick_buono"</command>
+      <command>pick n "buono"</command>
+      <command>expression "normal"</command>
+      <command>wait 0,5</command>
+      <command>text "Wie zur Hölle hast du das gemacht?"</command>
+      <command>text -"giostraio" "Wenn man sein ganzes Leben lang vor dem Fiskus flüchtet, dann kann man ohne gewisse ... Tricks gar nicht überleben."</command>
+      <command>wait 0,5</command>
+      <command>expression "perplexed"</command>
+      <command>text "Und wieso hast du jetzt ein Karussell?"</command>
+      <command>expression "normal"</command>
+      <command>text -"giostraio" "Sozialamt."</command>
+      <command>wait 0,5</command>
+      <command>text -"giostraio" "Egal, mit dem Gutschein da kannst du dir einen Preis deiner Wahl an dem Zigeuner-Kiosk gleich außerhalb der Stadt abholen."</command>
+      <command>wait 0,5</command>
+      <command>text -"giostraio" "Ach, fast hätte ich es vergessen: Sei vorsichtig, wenn du mit dem kleinen Beutel herumläufst, den ich dir gegeben habe."</command>
+      <command>expression "scared"</command>
+      <command>text "Oh, Gott, was denn noch für ein kleiner Beutel?!"</command>
+      <command>text -"giostraio" "Hahahahah, kleiner Scherz am Rande."</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Das finde ich mal so gar nicht witzig."</command>
+      <command>internal 1</command>
+      <command>bitmap -"giostraio" "giostraio"</command>
+      <command>internal -"giostraio" -g -i 0</command>
+      <command>internal -"giostraio" -g 1</command>
+      <command>hide -nc -"me"</command>
+      <command>map "campsite"</command>
+    </hotspot>
+    <hotspot ID="frigorifero">
+      <command>text "Die Tetris-Dinger sehen doch schon ganz gut aus." $122</command>
+    </hotspot>
+    <hotspot ID="giostraio">
+      <command>text "Ich spüre, dass ich auf der richtigen Spur bin." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Aber auf der falschen Seite." $103</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="porta del bagno">
+      <command>text "Ich glaube nicht, dass der Schlüssel auf der anderen Seite ist." $123</command>
+    </hotspot>
+    <hotspot ID="porta della camera">
+      <command>text "Ich glaube nicht, dass der Schlüssel auf der anderen Seite ist." $123</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="macchina del tempo">
+      <command>text "Ich will nicht, dass das so endet wie die Elektrogeräte in der einen Folge 'Breaking Bad'." $124</command>
+    </hotspot>
+  </location>
+</object>

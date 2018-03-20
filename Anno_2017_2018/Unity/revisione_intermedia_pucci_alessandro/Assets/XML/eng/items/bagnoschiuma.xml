@@ -1,0 +1,39 @@
+<object name="bubble bath">
+  <description>
+    <command>text "The bottle's not the most masculine, but I have to admit it actually smells great."</command>
+  </description>
+  <inventory />
+  <location name="primo_piano">
+    <hotspot ID="toppa">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "It's a little too big to make it pass through the keyhole."</command>
+    </hotspot>
+    <hotspot ID="porta del bagno">
+      <command>hide -"toppa"</command>
+      <command>hide -"porta del bagno"</command>
+      <command>show -"primo_piano_x_bagno"</command>
+      <command>text "Do you need some more bubble bath, by any chance? I have a bottle of it here with me."</command>
+      <command>wait 1</command>
+      <command>text (1290,330) -c=lblue "Ok, you can go in."</command>
+      <command>wait 0,5</command>
+      <command>status 0</command>
+      <command>sound "door_open"</command>
+      <command>goto "bagno"</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Well, actually a bath wouldn't hurt." $21</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="non_sapevo_come_chiamarlo">
+      <command>text "I'm afraid it wouldn't be enough to unstick him from his burial plot." $22</command>
+    </hotspot>
+    <hotspot ID="zombie">
+      <command>pose d</command>
+      <command>text "I better not; it would be rude." $23</command>
+    </hotspot>
+  </location>
+</object>

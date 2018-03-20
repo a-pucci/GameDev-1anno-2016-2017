@@ -1,0 +1,103 @@
+<object name="biblia">
+  <description>
+    <command>text "Algo de ayuda celestial nunca viene mal."</command>
+  </description>
+  <inventory>
+    <object name="anelli">
+      <command>text "Salido directamente del último número de la revista 'Organiza tu propia boda'." $53</command>
+    </object>
+    <object name="fiammiferi">
+      <command>text "A ver si evitamos actos de blasfemia." $56</command>
+    </object>
+  </inventory>
+  <location name="camera_letto">
+    <hotspot ID="anelli">
+      <command>pose d</command>
+      <command>text "Salido directamente del último número de la revista 'Organiza tu propia boda'." $53</command>
+    </hotspot>
+    <hotspot ID="profilattico extra-large">
+      <command>expression "sarcastic"</command>
+      <command>text "¿Sexo fuera del matrimonio? ¡Herejía!" $54</command>
+    </hotspot>
+    <hotspot ID="rabbit">
+      <command>text "Sería muy embarazoso explicarlo." $55</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A ver si evitamos actos de blasfemia." $56</command>
+    </hotspot>
+    <hotspot ID="libro di magia nera">
+      <command>text "La eterna lucha entre lo sagrado y lo pagano." $57</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="aureola">
+      <command>text "No siguió tus órdenes, ¿eh?" $58</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="nonnina">
+      <command>pose d</command>
+      <command>text "Mejor no, sería de mala educación." $23</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>if not internal 2</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "¿Para qué? ¿Para que me lo firme?" 1</command>
+      <command>fie</command>
+      <command>if internal 2</command>
+      <command>pause -"me"</command>
+      <command>pause -"Giuda"</command>
+      <command>bitmap -"me" "gesoo_l"</command>
+      <command>expression -"me" "drunk"</command>
+      <command>text "¿Serviría esto?" 2</command>
+      <command>text -"me" "Justo lo que necesitaba. Nos vemos en la boda, pues." 3</command>
+      <command>wait 0,5</command>
+      <command>text "¡Pero si ni siquiera sabes dónde es!" 4</command>
+      <command>text -"me" "Hermano, puede que esté hecho un asco... pero sigo siendo omnisciente, al fin y al cabo." 5</command>
+      <command>text -"me" "Hasta luego." 6</command>
+      <command>throw "bibbia"</command>
+      <command>bitmap -"me" "gesoo"</command>
+      <command>internal -g 3</command>
+      <command>resume -"me"</command>
+      <command>resume -"Giuda"</command>
+      <command>status &gt;"meteorite" 2</command>
+      <command>fie</command>
+    </hotspot>
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A ver si evitamos actos de blasfemia." $56</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "Por su culpa el tercer volumen de la saga fantástica más vendida de la historia nunca salió." $59</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="diavoletto">
+      <command>expression "angry"</command>
+      <command>text "¡Regresa al otro mundo, vil criatura de Satán!" $60</command>
+      <command>pause -"me"</command>
+      <command>animation -"me" 00 -o=11,4 "diavoletto_turn_skinny"</command>
+      <command>bitmap -"me" "diavoletto_l"</command>
+      <command>wait 0,5</command>
+      <command>expression "normal"</command>
+      <command>text -"diavoletto" "Eres el peor exorcista que he conocido." $61</command>
+      <command>animation -"me" 00 -o=11,4 "diavoletto_turn_back"</command>
+      <command>bitmap -"me" "diavoletto"</command>
+      <command>resume -"me"</command>
+      <command>achievement "esorcista"</command>
+    </hotspot>
+    <hotspot ID="bastone">
+      <command>pose d</command>
+      <command>text "Procuraría no llenar la habitación de demasiados elementos sagrados." $62</command>
+      <command>text "Más de los que pueda soportar, quiero decir." $63</command>
+    </hotspot>
+  </location>
+</object>

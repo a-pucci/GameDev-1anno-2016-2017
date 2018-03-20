@@ -1,0 +1,21 @@
+<object name="Mullbinden">
+  <description>
+    <command>text "Die konnten es wohl einfach nicht erwarten, ihre Ehe zu vollziehen."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="rasoio fai da te">
+      <command>text "Jemand könnte das bereits benutzt haben." $50</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "An sich keine schlechte Idee, aber zuerst will ich sicher gehen, dass ich alles Nötige getan habe." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "Ich bin ja kein Krankenpfleger." $52</command>
+    </hotspot>
+  </location>
+</object>

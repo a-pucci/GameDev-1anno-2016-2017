@@ -1,0 +1,45 @@
+<object name="tornillo">
+  <description>
+    <command>text "Ya no sé en qué sentido se atornilla o se desatornilla."</command>
+    <command>text "Estas son la clase de cosas que me desvelan por la noche."</command>
+  </description>
+  <inventory>
+    <object name="trapano">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "trapano"</command>
+      <command>throw "vite"</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>text "Eh, Oso, ¿son tuyos?" $280</command>
+      <command>expression -"Orso" "up_sarcastic"</command>
+      <command>text -"Orso" "Ja, ja, ja. Qué gracioso." $226</command>
+      <command>achievement "consulto_psichiatrico"</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Meter un tornillo en un microondas puede ser peligroso... y no quiero que Z8 me lo quite." $274</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Me temo que se te está olvidando un paso intermedio bastante obvio." $275</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="marlin">
+      <command>text "Ya es lo bastante perforador." $276</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>text "Mejor que lo coja primero." $95</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,62 @@
+<object name="vieille fourchette">
+  <description>
+    <command>text "Rock 'n' roll, baby !"</command>
+  </description>
+  <inventory>
+    <object name="lenza">
+      <command>sound "pick_lenza"</command>
+      <command>pick n "arpione"</command>
+      <command>throw "lenza"</command>
+      <command>throw "forchetta"</command>
+    </object>
+    <object name="trapano">
+      <command>text "Ce n'est pas un grappin." $202</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="freccette">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Je ne crois pas qu'utiliser une fourchette changera le résultat." $211</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>expression "perplexed"</command>
+      <command>text "Ce n'est pas un grappin." $202</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text "En fait, c'est du plastique. J'ai bien peur qu'il fonde." $212</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Je pense que j'ai besoin de quelque chose de beaucoup plus efficace qu'une simple fourchette." $213</command>
+    </hotspot>
+    <hotspot ID="lenza">
+      <command>text "Il vaudrait mieux la prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="scatoloni2">
+      <command>text "Je dois être sûr de pouvoir la récupérer avant de la jeter." $214</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="portiera">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ce serait la tentative la plus idiote de l'histoire." $169</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="saracinesca">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ce serait la tentative la plus idiote de l'histoire." $169</command>
+    </hotspot>
+  </location>
+</object>

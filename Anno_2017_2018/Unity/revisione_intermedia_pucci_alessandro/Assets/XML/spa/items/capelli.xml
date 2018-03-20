@@ -1,0 +1,43 @@
+<object name="pelo">
+  <description>
+    <command>text "Igual el rubito se liga a muchas chicas, pero el pelo se le cae que da gusto..."</command>
+    <command>text "Seguro que se queda calvo antes de los treinta."</command>
+  </description>
+  <inventory>
+    <object name="pigotta">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>text "La verdad es que lo necesita, pero creo que voy a usarlo para otra cosa." $85</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>text "No quiero quemarlo." $86</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="berretto">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "¿Por qué iba a volver a meterlo en el gorro?" $87</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="martello di Thor">
+      <command>expression "sarcastic"</command>
+      <command>text "Thor volvería a ganar." $88</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="pigotta">
+      <command>text "Primero tendría que cogerlo." $95</command>
+    </hotspot>
+  </location>
+</object>

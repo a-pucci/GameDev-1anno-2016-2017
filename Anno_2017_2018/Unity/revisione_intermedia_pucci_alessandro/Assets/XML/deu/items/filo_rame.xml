@@ -1,0 +1,29 @@
+<object name="Kupferdraht">
+  <description>
+    <command>text "Nun, einer der wenigen Vorteile meines Daseins als Skelett ist, dass mir elektrische Schocks nichts ausmachen."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>sound "pick_pila_cavo"</command>
+      <command>throw "pila"</command>
+      <command>throw "filo_rame"</command>
+      <command>pick n "circuito"</command>
+    </object>
+  </inventory>
+  <location name="cucina">
+    <hotspot ID="giostraio">
+      <command>text "Ich spüre, dass ich auf der richtigen Spur bin." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Aber auf der falschen Seite." $103</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="pila stilo">
+      <command>text "Ich nehme diesen Gegenstand am besten erstmal mit." $95</command>
+    </hotspot>
+    <hotspot ID="batteria stilo">
+      <command>text "Ich nehme diesen Gegenstand am besten erstmal mit." $95</command>
+    </hotspot>
+  </location>
+</object>

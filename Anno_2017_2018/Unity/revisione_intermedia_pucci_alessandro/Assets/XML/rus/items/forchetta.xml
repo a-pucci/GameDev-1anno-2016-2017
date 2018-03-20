@@ -1,0 +1,62 @@
+<object name="старая вилка">
+  <description>
+    <command>text "Рок-н-ролл, детка!"</command>
+  </description>
+  <inventory>
+    <object name="lenza">
+      <command>sound "pick_lenza"</command>
+      <command>pick n "arpione"</command>
+      <command>throw "lenza"</command>
+      <command>throw "forchetta"</command>
+    </object>
+    <object name="trapano">
+      <command>text "Это не крюк-кошка." $202</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="freccette">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Не думаю, что вилка на что-то повлияет." $211</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>expression "perplexed"</command>
+      <command>text "Это не крюк-кошка." $202</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text "Вообще-то, это пластик. Боюсь, он расплавится." $212</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Мне нужно что-то поэффективнее простой вилки." $213</command>
+    </hotspot>
+    <hotspot ID="lenza">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="scatoloni2">
+      <command>text "Нужно убедиться, что я смогу вернуть это назад перед тем, как бросать." $214</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="portiera">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "То будет самый идиотский неудавшийся взлом в истории." $169</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="saracinesca">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "То будет самый идиотский неудавшийся взлом в истории." $169</command>
+    </hotspot>
+  </location>
+</object>

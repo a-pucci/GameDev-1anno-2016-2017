@@ -1,0 +1,175 @@
+<location>
+  <script />
+  <entry name="vicolo" X="2554" Y="1050" pose="l" />
+  <sound name="ambient_sound_construction" />
+  <scene bitmap="guinzaglio" X="2292" Y="964" position="superback" animated="False" />
+  <scene bitmap="operaio_in_piedi" X="1072" Y="339" position="back" animated="True" loop="True" />
+  <scene bitmap="operaio_seduto" X="791" Y="392" position="back" animated="True" loop="True" />
+  <scene bitmap="operaio_dorme" X="293" Y="589" position="back" animated="True" loop="True" />
+  <scene bitmap="parabrezza" X="219" Y="557" position="back" animated="False" />
+  <scene bitmap="cofano_aperto" X="324" Y="539" position="back" animated="False" />
+  <hotspots>
+    <action ID="cofano">
+      <act>
+        <command>show +"cofano_aperto"</command>
+        <command>hide -"me"</command>
+        <command>sound "furgone"</command>
+        <command>show -"carbone"</command>
+      </act>
+    </action>
+    <item ID="carbone">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "State-of-the-art technology, no doubt about it."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "I really hope you never miss finding it in your Christmas stocking."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Where is my flying broomstick now?"</command>
+      </use>
+      <talk>
+        <command>text "It's a hard life now that everyone pushes renewable energy."</command>
+      </talk>
+    </item>
+    <action ID="betoniera">
+      <act>
+        <command>pose d</command>
+        <command>expression "perplexed"</command>
+        <command>text "If you have a gangster past, maybe now's the time to mention it."</command>
+      </act>
+    </action>
+    <item ID="piccioni">
+      <look>
+        <command>text "Look at them, with those little bloodthirsty killer eyes."</command>
+      </look>
+      <pick>
+        <command>text "I sure wouldn't want them to leave some 'memento' on me."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "You've just defined a new standard for the word 'stupidity'."</command>
+      </use>
+      <talk>
+        <command>text "Let's leave them to their intimacy."</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "piccioni"</command>
+      </indipendent>
+    </item>
+    <item ID="megafono">
+      <look>
+        <command>text "These seniors today really don't need for anything."</command>
+      </look>
+      <pick>
+        <command>sound "pick_megafono"</command>
+        <command>pick y "megafono"</command>
+      </pick>
+      <use>
+        <command>text "Let's let the workers have their well-deserved and absolutely unexpected peace and quiet."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "If you're suggesting I talk into it, I'll inform you that such an action would be completely wrong."</command>
+      </talk>
+    </item>
+    <item ID="tubi metallici">
+      <look>
+        <command>text "These are pipes of various sizes. I suppose they are for the sewers or something like that."</command>
+      </look>
+      <pick>
+        <command>0 text "They're a bit musty, but I'll make the effort."</command>
+        <command>0 wait 0,5</command>
+        <command>sound "pick_tube"</command>
+        <command>pick n "tubo"</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text -"tutorial" "Erm... just another small interruption to tell you that it may sometimes be possible to pick up the same object more than once."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Another belated circumstance where you show your negligence, but thanks for the tip."</command>
+        <command>0 nolook</command>
+        <command>0 internal -"salotto/urna delle ceneri" -g 1</command>
+        <command>0 internal 1</command>
+      </pick>
+      <use>
+        <command>text "My track record with hydraulics isn't exactly filled with memorable results."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="cane">
+      <look>
+        <command>text "He seems a little anxious to me."</command>
+      </look>
+      <talk>
+        <command>text "Dogs and bones aren't the best combination. It would better to leave it alone."</command>
+      </talk>
+      <indipendent>
+        <command>sound -l "dog"</command>
+        <command>animation -"me" 00 -o=0,0 -c "cane_idle"</command>
+      </indipendent>
+    </character>
+    <character ID="cieco">
+      <look>
+        <command>text "Even his blindness never gets him down."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>0 text "Sorry sir, can I bother you for a second?"</command>
+        <command>animation -"me" 00 -o=0,0 -c "vecchio_megafono_off"</command>
+        <command>bitmap -"me" "cieco_riposo"</command>
+        <command>0 text -"me" -c=rrred "Don't you see I'm really busy right now, boy? Are you blind?"</command>
+        <command>0 wait 1</command>
+        <command>0 pose d</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Tell me this is a joke."</command>
+        <command>0 lookat -"me"</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "cieco"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=rrred -n "Come on, let's get a move on! Don't laze around!"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=rrred -n "When we were at war, we dug the pits with our bare hands!"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=rrred -n "Hey, that's a banana, not a hammer!"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=rrred -n "And I fought for years in the union for people like you?"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>text -"me" -c=rrred -n "Back in my day, the screws were tightened clockwise!"</command>
+      </indipendent>
+    </character>
+    <goto ID="cantiere_x_vicolo" icon="r" PX="3257" PY="736">
+      <go>
+        <command>goto "vicolo"</command>
+      </go>
+    </goto>
+    <character ID="tutorial">
+      <look />
+      <talk />
+    </character>
+  </hotspots>
+</location>

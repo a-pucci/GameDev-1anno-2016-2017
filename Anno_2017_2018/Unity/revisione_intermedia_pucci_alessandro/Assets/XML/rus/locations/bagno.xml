@@ -1,0 +1,299 @@
+<location>
+  <script>
+    <command>0 show -"sali"</command>
+    <command>0 internal -"sali" -g 1</command>
+    <command>0 bitmap -"ciccione" "ciccione"</command>
+    <command>1 pause -"ciccione"</command>
+    <command>1 wait 1</command>
+    <command>1 text -"ciccione" "Нельзя ставить это на полку с пеной для ванн."</command>
+    <command>1 move (994,760)</command>
+    <command>1 pose r</command>
+    <command>1 wait 0,5</command>
+    <command>1 sound "bagnoschiuma_pensilina"</command>
+    <command>1 show +"bagnoschiuma"</command>
+    <command>1 throw "bagnoschiuma"</command>
+    <command>1 wait 0,5</command>
+    <command>1 move (954,891)</command>
+    <command>1 lookat -"ciccione"</command>
+    <command>1 resume -"ciccione"</command>
+    <command>1 hide -"primo_piano/toppa"</command>
+    <command>1 hide -"primo_piano/porta del bagno"</command>
+    <command>1 show -"primo_piano/primo_piano_x_bagno"</command>
+    <command>1 status 0</command>
+  </script>
+  <indipendent>
+    <command>0 wait 10</command>
+    <command>1 sound -l "loop_perdita"</command>
+    <command>1 sound -l "loop_engine_piscina"</command>
+    <command>1 wait 10</command>
+  </indipendent>
+  <entry name="primo_piano" X="547" Y="877" pose="r" />
+  <scene bitmap="ombra_piscina" X="1100" Y="545" position="superback" animated="False" />
+  <scene bitmap="gabinetto" X="161" Y="839" position="default" animated="False" />
+  <scene bitmap="pesce_rosso" X="109" Y="704" position="fore" animated="True" start="2500" stop="10000" sound="pesce" loop="True" />
+  <scene bitmap="piranha" X="712" Y="440" position="superback" animated="True" loop="True" />
+  <scene bitmap="lavandino" X="698" Y="398" position="back" animated="False" />
+  <scene bitmap="naso" X="809" Y="365" position="back" animated="True" loop="True" />
+  <scene bitmap="finestra_casa_bruciata" X="1671" Y="19" position="back" animated="False" />
+  <scene bitmap="bagnoschiuma" X="1299" Y="439" position="back" animated="False" />
+  <scene bitmap="tubi_bagno" X="1398" Y="628" position="default" animated="True" loop="True" />
+  <scene bitmap="perdite_piscina" X="1063" Y="764" position="default" animated="True" loop="True" />
+  <hotspots>
+    <item ID="telone">
+      <look>
+        <command>text "Ну, он точно водонепроницаемый."</command>
+      </look>
+      <pick>
+        <command>if shown -"ciccione"</command>
+        <command>pose d</command>
+        <command>text "Нет, он пока купается." 1</command>
+        <command>fie</command>
+        <command>if not bitmap -"telone" "piscina_vuota"</command>
+        <command>text "Сначала мне нужно слить воду." 2</command>
+        <command>fie</command>
+        <command>if bitmap -"telone" "piscina_vuota"</command>
+        <command>sound "pick_generic"</command>
+        <command>pick n "telone"</command>
+        <command>bitmap -"me" "piscina_no_telo"</command>
+        <command>hide +"ombra_piscina"</command>
+        <command>hide -nc -"me"</command>
+        <command>nolook</command>
+        <command>fie</command>
+      </pick>
+      <use>
+        <command>0 text "Судя по всем этим заплаткам, он уже порядком поистаскался."</command>
+        <command>1 text "Просто отлично подходит для упаковки шкафа."</command>
+      </use>
+      <talk>
+        <command>text "К твоему утешению..."</command>
+        <command>text "Я тоже вижу все эти «пикантные» подробности, не ты один."</command>
+      </talk>
+    </item>
+    <item ID="sali">
+      <look>
+        <command>pose d</command>
+        <command>text "Кто-то должен сказать ему, что не стоит вливать туда все эти соли для ванн."</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Думаешь, пора?"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="saponetta">
+      <look>
+        <command>text "Первое правило личной гигиены: никогда не забывай о личной гигиене."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "О, нет, видел я, что бывает в тюрьме!"</command>
+      </pick>
+      <use>
+        <command>text "Идея не самая плохая, но у меня есть еще куча важных дел."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Ты не отвечаешь за все те глупые вещи, которые заставляешь меня делать."</command>
+        <command>text "Ты не главный герой этой игры, и ты мой инвентарь не блюдешь."</command>
+        <command>wait 0,5</command>
+        <command>expression "perplexed"</command>
+        <command>wait 1,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Нет, постой. Если подумать, то ты только это и делаешь."</command>
+      </talk>
+    </item>
+    <item ID="selfie">
+      <look>
+        <command>text "Лучший способ собрать лайков в социальных сетях."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Может, для тебя это уже в порядке вещей, но мне эта практика не по нраву."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Скажем так, не только моя душа умерла и выглядит как скелет."</command>
+      </use>
+      <talk>
+        <command>text "Ее доводы, конечно, убедительнее моих."</command>
+      </talk>
+    </item>
+    <item ID="rasoio fai da te">
+      <look>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "А я-то думал, что только у тебя тут такой низкий IQ."</command>
+      </look>
+      <pick>
+        <command>text "Я не хочу раскрошить свои фаланги."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Я так рад, что ты вовсю хочешь доказать, какой ты тупой."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Признайся, когда мелким был, ты тоже любил имитировать голос робота."</command>
+      </talk>
+      <indipendent>
+        <command>sound "rasoio_fai_da_te"</command>
+        <command>animation -"me" 00 -o=0,0 -c "ventilatore"</command>
+      </indipendent>
+    </item>
+    <action ID="pensile">
+      <act>
+        <command>0 sound "opening_pensile"</command>
+        <command>0 bitmap -"me" "pensile_aperto"</command>
+        <command>0 label -"me" "bag_pensile_label_1"</command>
+        <command>0 if shown -"struccante"</command>
+        <command>0 bitmask -"struccante" "struccante"</command>
+        <command>0 fi</command>
+        <command>0 internal 1</command>
+        <command>1 sound "closing_pensile"</command>
+        <command>1 bitmap -"me" "pensile_chiuso"</command>
+        <command>1 label -"me" "bag_pensile_label_0"</command>
+        <command>1 if shown -"struccante"</command>
+        <command>1 hide -nc -"struccante"</command>
+        <command>1 fi</command>
+        <command>1 internal 0</command>
+      </act>
+    </action>
+    <item ID="struccante">
+      <look>
+        <command>text "Как стать уродиной за 30 секунд."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "struccante"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Может, ты слишком много ставишь на ту работу в драг-клубе."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="ciccione">
+      <look>
+        <command>text "Дизайнеры этой игры, должно быть, очень хотели добавить в нее больше «плотных» персонажей."</command>
+      </look>
+      <talk>
+        <command>if not bitmask -"ciccione" "null"</command>
+        <command>0-1 pause -"me"</command>
+        <command>0-1 text "Почему ты тут заперся?"</command>
+        <command>0-1 text -"me" "Наслаждаюсь заслуженным отдыхом."</command>
+        <command>0-1 text -"me" "Я работаю охранником в городском музее и не часто выдается свободная минутка."</command>
+        <command>0-1 text -"me" "К счастью, Ральф, мой кузен, ненавидит Хэллоуин и предложил посидеть за меня."</command>
+        <command>0-1 wait 0,5</command>
+        <command>0-1 expression "perplexed"</command>
+        <command>0-1 text "А в ночь Хэллоуина музею так нужен охранник?"</command>
+        <command>0-1 expression "normal"</command>
+        <command>0-1 text -"me" "Я тоже самое у профсоюза спросил, но думаешь, они меня услышали?"</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" "И все же, вот возьми. Это тебе за ванну с пузырьками."</command>
+        <command>0 animation -"me" 00 -o=85,3 "ciccione_porge_pass"</command>
+        <command>0 bitmap -"me" "ciccione_pass"</command>
+        <command>0 position (1226,273)</command>
+        <command>0 text -"me" "Он немного мокрый..."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Даже не хочу знать, откуда ты его достал."</command>
+        <command>0 expression "normal"</command>
+        <command>0 animation -skinny 00 -o=17,2 -a "skinny_prende_pass"</command>
+        <command>0 wait 1</command>
+        <command>0 sound "pick_pass"</command>
+        <command>0 pick n "pass"</command>
+        <command>0 position (1311,273)</command>
+        <command>0 bitmap -"me" "ciccione"</command>
+        <command>0 animation -"me" 00 -o=85,3 "ciccione_porge_pass_back"</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" "Музей закрыт для посещений, но по этому пропуску ты сможешь пройти. Заходи, если рядом окажешься."</command>
+        <command>0 text -"me" "Если пойдешь, проверь там этого карлика, и все ли у него под контролем."</command>
+        <command>0 map "museum"</command>
+        <command>0 internal -g 1</command>
+        <command>0-1 resume -"me"</command>
+        <command>2 text "Твой музей все еще на месте, это точно."</command>
+        <command>2 pause -"me"</command>
+        <command>2 text -"me" "Тогда у моего кузена получается намного лучше, чем я предполагал."</command>
+        <command>2 resume -"me"</command>
+        <command>fi</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=0,0 -c "ciccione_idle"</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "ciccione_idle"</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "ciccione_idle"</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "ciccione_idle"</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "ciccione_idle"</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "ciccione_idle"</command>
+        <command>0 bitmask -"me" "null"</command>
+        <command>0 sound "ciccione_immersione"</command>
+        <command>0 animation -"me" 00 -o=0,8 -c "ciccione_si_immerge"</command>
+        <command>0 bitmap -"me" "ciccione_immerso"</command>
+        <command>0 internal -"sali" -g 2</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 internal -"sali" -g 0</command>
+        <command>0 sound "sali_minerali"</command>
+        <command>0 animation -"me" 00 -o=82,-176 -c -a "ciccione_versa_sali"</command>
+        <command>0 wait 0,91</command>
+        <command>0 hide -"sali"</command>
+        <command>0 wait 1,08</command>
+        <command>0 show -"sali"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 2,5</command>
+        <command>0 sound "ciccione_emerge"</command>
+        <command>0 animation -"me" 00 -o=0,8 -c "ciccione_riaffiora"</command>
+        <command>0 bitmap -"me" "ciccione"</command>
+        <command>0 internal -"sali" -g 1</command>
+      </indipendent>
+    </character>
+    <action ID="maniglia">
+      <act>
+        <command>0 text "Будет ни слишком прилично сливать воду, пока он все еще в ванне."</command>
+        <command>1 sound "leva"</command>
+        <command>1 animation -"me" 00 -o=44,26 -a "leva"</command>
+        <command>1 wait 1</command>
+        <command>1 sound "acqua_defluisce"</command>
+        <command>1 animation -"telone" 00 -o=19,6 "piscina_si_svuota"</command>
+        <command>1 bitmap -"telone" "piscina_vuota"</command>
+        <command>1 hide -nc -"me"</command>
+      </act>
+    </action>
+    <goto ID="bagno_x_primo_piano" icon="l" PX="-499" PY="586">
+      <go>
+        <command>1 sound "door_opened"</command>
+        <command>1 bitmap -"me" "porta_bagno_aperta"</command>
+        <command>1 wait 0,5</command>
+        <command>1 internal -g 0</command>
+        <command>sound "door_close"</command>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+    <item ID="gabinetto">
+      <look>
+        <command>text "Месть миллиона золотых рыбок, которых безжалостно смыли в туалет."</command>
+      </look>
+      <pick>
+        <command>text "Не хочу класть это обратно в стеклянную миску."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Почему бы ТЕБЕ на него не присесть?"</command>
+      </use>
+      <talk>
+        <command>text "Смотрю, ты вдоволь веселишься, малец?"</command>
+      </talk>
+    </item>
+  </hotspots>
+</location>

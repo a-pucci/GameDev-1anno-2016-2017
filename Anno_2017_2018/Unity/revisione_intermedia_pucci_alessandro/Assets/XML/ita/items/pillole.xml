@@ -1,0 +1,47 @@
+<object name="pillole">
+  <description>
+    <command>text "Gli psicofarmaci del cugino Jason."</command>
+    <command>wait 1</command>
+    <comment>[pensandoci bene]</comment>
+    <command>text "Ora che mi ci fai pensare, l'abbiamo improvvisamente perso di vista."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>sound "pick_intruglio"</command>
+      <command>pick n "intruglio"</command>
+      <command>throw "acqua_fogna"</command>
+      <command>throw "pillole"</command>
+    </object>
+    <object name="boccale_vuoto">
+      <command>text "Devo trovare qualcosa in cui scioglierle." $260</command>
+    </object>
+  </inventory>
+  <location name="cucina1">
+    <hotspot ID="sagoma">
+      <command>expression "perplexed"</command>
+      <command>text "Più che altro sarebbero servite al suo assassino." $256</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>pose d</command>
+      <command>text "Non intendo contribuire ulteriormente all'inquinamento delle falde acquifere." $257</command>
+    </hotspot>
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sono psicofarmaci, non antidolorifici." $258</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="mostro di polvere">
+      <command>pose d</command>
+      <command>text "Troppi pochi effetti collaterali, servirebbe qualcosa di molto più instabile." $259</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="boccale">
+      <command>text "Devo trovare qualcosa in cui scioglierle." $260</command>
+    </hotspot>
+  </location>
+</object>

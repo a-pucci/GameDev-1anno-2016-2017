@@ -1,0 +1,103 @@
+<object name="библия">
+  <description>
+    <command>text "Помощь свыше не помешала бы."</command>
+  </description>
+  <inventory>
+    <object name="anelli">
+      <command>text "Аккурат из еженедельного номера журнала «Построй свою свадьбу»." $53</command>
+    </object>
+    <object name="fiammiferi">
+      <command>text "Не стоит так богохульничать." $56</command>
+    </object>
+  </inventory>
+  <location name="camera_letto">
+    <hotspot ID="anelli">
+      <command>pose d</command>
+      <command>text "Аккурат из еженедельного номера журнала «Построй свою свадьбу»." $53</command>
+    </hotspot>
+    <hotspot ID="profilattico extra-large">
+      <command>expression "sarcastic"</command>
+      <command>text "Секс до брака? Ересь!" $54</command>
+    </hotspot>
+    <hotspot ID="rabbit">
+      <command>text "Меня вгоняет это в краску, не буду объяснять." $55</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Не стоит так богохульничать." $56</command>
+    </hotspot>
+    <hotspot ID="libro di magia nera">
+      <command>text "Вечная борьба святого и языческого." $57</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="aureola">
+      <command>text "Он тебя не послушался, да?" $58</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="nonnina">
+      <command>pose d</command>
+      <command>text "Не стоит; будет слишком грубо." $23</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>if not internal 2</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "И что мне сделать? Дать на автограф?" 1</command>
+      <command>fie</command>
+      <command>if internal 2</command>
+      <command>pause -"me"</command>
+      <command>pause -"Giuda"</command>
+      <command>bitmap -"me" "gesoo_l"</command>
+      <command>expression -"me" "drunk"</command>
+      <command>text "Поможет ли?" 2</command>
+      <command>text -"me" "То, что нужно. До встречи на свадьбе." 3</command>
+      <command>wait 0,5</command>
+      <command>text "Но... ты даже не знаешь, где она будет проходить!" 4</command>
+      <command>text -"me" "Братух, может, я и бухой... но я все еще всесвещущ." 5</command>
+      <command>text -"me" "До скорого." 6</command>
+      <command>throw "bibbia"</command>
+      <command>bitmap -"me" "gesoo"</command>
+      <command>internal -g 3</command>
+      <command>resume -"me"</command>
+      <command>resume -"Giuda"</command>
+      <command>status &gt;"meteorite" 2</command>
+      <command>fie</command>
+    </hotspot>
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Не стоит так богохульничать." $56</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "Он виноват в том, что третья книга самой продаваемой фэнтези-саги так и не увидела свет." $59</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="diavoletto">
+      <command>expression "angry"</command>
+      <command>text "Изыди в Ад, гадкое отродье Сатаны!" $60</command>
+      <command>pause -"me"</command>
+      <command>animation -"me" 00 -o=11,4 "diavoletto_turn_skinny"</command>
+      <command>bitmap -"me" "diavoletto_l"</command>
+      <command>wait 0,5</command>
+      <command>expression "normal"</command>
+      <command>text -"diavoletto" "Ты самый худший экзорцист, которого я знаю." $61</command>
+      <command>animation -"me" 00 -o=11,4 "diavoletto_turn_back"</command>
+      <command>bitmap -"me" "diavoletto"</command>
+      <command>resume -"me"</command>
+      <command>achievement "esorcista"</command>
+    </hotspot>
+    <hotspot ID="bastone">
+      <command>pose d</command>
+      <command>text "Я бы не стал разбрасываться святыми книгами направо и налево." $62</command>
+      <command>text "Если они, конечно, карман не жмут." $63</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,36 @@
+<object name="яблочные зерна">
+  <description>
+    <command>text "Ты хоть понимаешь, насколько странные вещи ты заставляешь меня брать?"</command>
+  </description>
+  <inventory />
+  <location name="studio">
+    <hotspot ID="pianta carnivora">
+      <command>text "Эй, милок, смотри, что я тебе принес."</command>
+      <command>animation -skinny 00 -o=400,5 -a "skinny_semi"</command>
+      <command>wait 0,7</command>
+      <command>sound "pianta_carnivora_muore"</command>
+      <command>animation -"me" 00 -o=60,233 "pianta_carnivora_muore"</command>
+      <command>bitmap -"me" "pianta_carnivora_morta"</command>
+      <command>internal -"me" -g 1</command>
+      <command>viewer -"me" (437,764)</command>
+      <command>hide +"medaglione_geralt"</command>
+      <command>show +"medaglione_geralt_fermo"</command>
+      <command>throw "semi_mela"</command>
+      <command>internal -"ritratto" 1</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="calderone_presente">
+      <command>pose d</command>
+      <command>text "Ты заставил меня их взять, а я не хочу делать это снова." $165</command>
+    </hotspot>
+    <hotspot ID="calderone_1861">
+      <command>pose d</command>
+      <command>text "Ты заставил меня их взять, а я не хочу делать это снова." $165</command>
+    </hotspot>
+    <hotspot ID="calderone_1981">
+      <command>pose d</command>
+      <command>text "Ты заставил меня их взять, а я не хочу делать это снова." $165</command>
+    </hotspot>
+  </location>
+</object>

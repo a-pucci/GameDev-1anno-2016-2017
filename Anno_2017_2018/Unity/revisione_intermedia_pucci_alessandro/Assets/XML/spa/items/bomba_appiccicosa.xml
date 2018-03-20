@@ -1,0 +1,48 @@
+<object name="bomba cargada adhesiva">
+  <description>
+    <command>text "Esperemos que nadie me confunda con un kamikaze."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </object>
+    <object name="fiammiferi">
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>sound "pick_bomba_appicicosa"</command>
+      <command>throw "bomba_appiccicosa"</command>
+      <command>show -"bomba"</command>
+      <command>hide -"cassaforte"</command>
+      <command>internal -"piano_terra/deejay" 1</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Seguro que hay mejor manera de sacarlo del baño." $72</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A veces me sorprende que sigas vivo." $7</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="picasso">
+      <command>text "Es imposible hacerlo peor." $73</command>
+    </hotspot>
+  </location>
+</object>

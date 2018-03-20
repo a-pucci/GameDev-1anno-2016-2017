@@ -1,0 +1,27 @@
+<object name="love letter">
+  <description>
+    <command>sound "use_volantino"</command>
+    <command>document "lettera"</command>
+    <command>sound "use_volantino"</command>
+  </description>
+  <inventory>
+    <object name="struccante">
+      <command>sound "pick_lettera_amore"</command>
+      <command>throw -"me"</command>
+      <command>throw -"struccante"</command>
+      <command>pick n "lettera_struccata"</command>
+    </object>
+  </inventory>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "That lipstick kiss should let you know it's from a woman. So I don't really think she'd be interested." $120</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="struccante">
+      <command>text "It'd be better to pick it up first." $95</command>
+    </hotspot>
+  </location>
+</object>

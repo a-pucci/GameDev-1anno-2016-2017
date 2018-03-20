@@ -1,0 +1,32 @@
+<object name="Metalhead-Starter-Set">
+  <description>
+    <command>text "Yeah, Metal!"</command>
+  </description>
+  <inventory />
+  <location name="casa_albero">
+    <hotspot ID="dragone">
+      <command>wait 0,5</command>
+      <command>sound "dragone_outfit"</command>
+      <command>bitmap -"me" "dragone_metal"</command>
+      <command>wait 1</command>
+      <command>text "Nicht schlecht, Herr Specht. Jetzt siehst du mal echt aggressiv aus."</command>
+      <command>bitmap -"me" "dragone_metal_l"</command>
+      <command>text -"me" "Ich muss zugeben, dass ich jetzt total heiß drauf bin."</command>
+      <command>text "Glaubst du, jetzt kannst du einen Metal-Song singen?"</command>
+      <command>text -"me" "Welchen willst du denn hören?"</command>
+      <command>internal -g 2</command>
+      <command>throw "starter_kit_metallaro"</command>
+      <command>dialog "scelta_pezzo"</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="parrucca">
+      <command>text "Der Metalhead-Song ist viel besser." $171</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="band">
+      <command>text "Selbst das würde ihn nicht zum Singen bringen, fürchte ich." $172</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,73 @@
+<object name="Extra starker Absinth">
+  <description>
+    <command>text "Nicht, dass das vorher ein Witz war ... aber jetzt haben wir Alarmstufe Rot."</command>
+  </description>
+  <inventory>
+    <object name="jalapeno">
+      <command>sound "pick_capsaicina"</command>
+      <command>throw "assenzio_radioattivo"</command>
+      <command>throw "jalapeno"</command>
+      <command>pick n "capsaicina"</command>
+    </object>
+    <object name="peperoncino">
+      <command>text "Ich fürchte, die Chili ist nicht scharf genug." $15</command>
+    </object>
+    <object name="bomba">
+      <command>text "Manchmal kann ich einfach nur staunen, dass du überhaupt noch am Leben bist." $7</command>
+    </object>
+    <object name="bomba_appiccicosa">
+      <command>text "Manchmal kann ich einfach nur staunen, dass du überhaupt noch am Leben bist." $7</command>
+    </object>
+    <object name="bomba_disinnescata">
+      <command>text "Manchmal kann ich einfach nur staunen, dass du überhaupt noch am Leben bist." $7</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Besser kein Öl ins Feuer gießen." $3</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="sali">
+      <command>text "Ich glaube nicht, dass das reichen würde. Ich brauche was Stärkeres." $4</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="peperoncino">
+      <command>text "Ich fürchte, die Chili ist nicht scharf genug." $15</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "Ich glaube, die Narben brennen auch so schon genug." $16</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="stormtrooper">
+      <command>expression "sarcastic"</command>
+      <command>text "Schade, dass das kein Terpentin ist." $17</command>
+    </hotspot>
+    <hotspot ID="ragazzo alticcio">
+      <command>pose d</command>
+      <command>text "Manchmal gelingt es dir dann doch noch, mich mit deiner sadistischen Ader positiv zu überraschen." $12</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Das behalte ich lieber." $18</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>text "Ich glaube kaum, dass ich mit dem radioaktiven Absinth auch Metall zersetzen kann." $19</command>
+    </hotspot>
+    <hotspot ID="bomba">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Manchmal kann ich einfach nur staunen, dass du überhaupt noch am Leben bist." $7</command>
+    </hotspot>
+    <hotspot ID="pianta carnivora">
+      <command>text "Ich würde sagen, da ist kein Dünger nötig." $20</command>
+    </hotspot>
+  </location>
+</object>

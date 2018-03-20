@@ -1,0 +1,100 @@
+<location>
+  <script>
+    <command>1 pose dr</command>
+    <command>1 screen -fo=200 -w=1</command>
+    <command>1 status &gt;"marciapiede" 1</command>
+    <command>1 internal -"retro_furgone_x_furgone" -g 1</command>
+    <command>1 status 0</command>
+  </script>
+  <entry name="marciapiede" X="393" Y="930" pose="ur" />
+  <scene bitmap="saracinesca_forzata" X="44" Y="287" position="back" animated="False" />
+  <scene bitmap="ladro_idle" X="1135" Y="202" position="back" animated="True" loop="True" />
+  <hotspots>
+    <action ID="saracinesca">
+      <act>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "No es que esperara precisamente que estuviera abierto."</command>
+      </act>
+    </action>
+    <character ID="fenicottero">
+      <look>
+        <command>text "Me encantan estos adornos de jardín tan kitsch."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "En jardines ajenos."</command>
+      </look>
+      <talk>
+        <command>pose 0</command>
+        <command>text "Preferiría no meterme en extraños rituales de apareamiento."</command>
+        <command>wait 0,5</command>
+        <command>text "Creo que no estoy preparado."</command>
+      </talk>
+    </character>
+    <item ID="piede di porco">
+      <look>
+        <command>text "Es uno de los objetos más emblemáticos del videojuego."</command>
+      </look>
+      <pick>
+        <command>sound "pick_crowbar"</command>
+        <command>pick y "piede_di_porco"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Entiendo que te mueres por hacerlo, pero igual es mejor cogerla primero."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="ladro">
+      <look>
+        <command>text "La cárcel local, que se supone que está bien vigilada, nunca para de hacer que los ciudadanos se sientan seguros."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "perplexed"</command>
+        <command>text "¿Que pille a un ladrón? ¿Yo?"</command>
+        <command>text "¿Pero me ves bien?"</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Cuando sienta la necesidad de robar un banco, ya sé a quién recurrir."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "No creo que le haga falta más motivación."</command>
+      </talk>
+    </item>
+    <item ID="finestra rotta">
+      <look>
+        <command>text "Trazó una bonita trayectoria, qué duda cabe."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>text "Alguien se te ha adelantado."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="retro_furgone_x_marciapiede" icon="l" PX="-472" PY="910">
+      <go>
+        <command>goto "marciapiede"</command>
+      </go>
+    </goto>
+    <goto ID="retro_furgone_x_furgone" icon="l" PX="113" PY="570">
+      <go>
+        <command>0 wait 0,5</command>
+        <command>0 status &gt;"marciapiede" 2</command>
+        <command>0 screen -fi=300 -w=1</command>
+        <command>0 goto -nofade "marciapiede"</command>
+        <command>1 pose d</command>
+        <command>1 text "Tenemos cosas que hacer."</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

@@ -1,0 +1,77 @@
+<default>
+  <pick-n>
+    <phrase front="False" sarcastic="False">Мне это не нужно. </phrase>
+    <phrase front="False" sarcastic="False">Этому и тут хорошо. </phrase>
+    <phrase front="False" sarcastic="False">Лучше не трогать. </phrase>
+    <phrase front="False" sarcastic="False">Не думаю, что это хорошая идея. </phrase>
+    <phrase front="False" sarcastic="False">Не бери в голову. </phrase>
+    <phrase front="False" sarcastic="False">Не стоит того. </phrase>
+    <phrase front="False" sarcastic="False">Лучше обойти стороной. </phrase>
+  </pick-n>
+  <pick-e>
+    <phrase front="True" sarcastic="True">Шутишь?</phrase>
+    <phrase front="False" sarcastic="True">Конечно...</phrase>
+    <phrase front="True" sarcastic="True">Порой я хочу сидеть по ту сторону экрана и заставлять тебя делать все эти глупые вещи. </phrase>
+    <phrase front="False" sarcastic="True">И почему мой игрок такой идиот? </phrase>
+    <phrase front="True" sarcastic="True">Ты и правда хочешь знать ответ? </phrase>
+    <phrase front="False" sarcastic="True">Как бы я ни хотел, делать этого явно не стоит. </phrase>
+    <phrase front="True" sarcastic="False">Твоя клептомания уже, определенно, выходит из-под контроля. </phrase>
+    <phrase front="False" sarcastic="False">Этот предмет нам совершенно не нужен. </phrase>
+    <phrase front="False" sarcastic="True">Лучше бы хоть раз собрался с мыслями, прежде чем что-то решать. </phrase>
+    <phrase front="False" sarcastic="True">Дайте, пожалуйста, нового игрока. От этого я устал. </phrase>
+    <phrase front="True" sarcastic="False">Хватит заставлять меня поднимать все подряд. Время — деньги! </phrase>
+    <phrase front="True" sarcastic="True">Может пойдем дальше, а? </phrase>
+    <phrase front="True" sarcastic="False">Не надейся, что сможешь засунуть все, что вздумается мне в ребра. </phrase>
+  </pick-e>
+  <use>
+    <phrase front="False" sarcastic="False">Не знаю, что и делать. </phrase>
+    <phrase front="False" sarcastic="False">Определенно маловероятно. </phrase>
+    <phrase front="False" sarcastic="False">Лучше не стоит. </phrase>
+    <phrase front="False" sarcastic="False">У меня идеи кончаются. </phrase>
+    <phrase front="False" sarcastic="False">Не сработает! </phrase>
+    <phrase front="False" sarcastic="False">Не понимаю. </phrase>
+    <phrase front="False" sarcastic="False">Нет. </phrase>
+    <phrase front="False" sarcastic="False">Я не знаю, что с этим делать. </phrase>
+    <phrase front="False" sarcastic="False">Я не понимаю, к чему ты ведешь. </phrase>
+    <phrase front="False" sarcastic="False">Неверно. </phrase>
+    <phrase front="False" sarcastic="False">Метод использования всего на всем не работает в этом квесте.</phrase>
+    <phrase front="False" sarcastic="False">САМ это сделай. </phrase>
+    <phrase front="False" sarcastic="False">Не понимаю, как, ради бога, это будет работать. </phrase>
+    <phrase front="False" sarcastic="False">Я чувствую странную энергию, заставляющую меня делать вещи, которые не хочу, но я буду противиться. </phrase>
+    <phrase front="False" sarcastic="False">Я меня ума не хватит остроумно ответить на столь глупое предложение. </phrase>
+    <phrase front="False" sarcastic="False">Могло бы сработать... не будь оно таким идиотским. </phrase>
+    <phrase front="False" sarcastic="False">Немного нелинейного мышления бы не помешало, но это полный бред. </phrase>
+    <phrase front="False" sarcastic="False">И это лучшее, на что ты способен? </phrase>
+    <phrase front="False" sarcastic="False">Компьютерная мышь не предназначена для таких действий. </phrase>
+    <phrase front="False" sarcastic="False">Остановись и подумай. Я хочу, чтобы ты понял, какую ересь ты только что попросил меня сделать.</phrase>
+    <phrase front="False" sarcastic="False">Можешь быть более конкретным? </phrase>
+    <phrase front="False" sarcastic="False">Есть в этой просьбе что-то больное и нехорошее. </phrase>
+    <phrase front="False" sarcastic="False">И зачем?</phrase>
+    <phrase front="False" sarcastic="False">У каждого есть хороший план... который не сработает. </phrase>
+    <phrase front="False" sarcastic="False">Не думаю, что я далеко продвинусь, занимаясь этим. </phrase>
+    <phrase front="False" sarcastic="False">Ты же понимаешь, что эта просьба бессмысленна, да? </phrase>
+  </use>
+  <talk>
+    <phrase front="True" sarcastic="True">У тебя, определенно, больное воображение. </phrase>
+    <phrase front="True" sarcastic="True">Ты там объелся что ли? </phrase>
+    <phrase front="False" sarcastic="False">Ты говоришь по-английски? </phrase>
+    <phrase front="True" sarcastic="True">Я выгляжу настолько отчаявшимся?</phrase>
+    <phrase front="False" sarcastic="True">У меня кончаются темы для разговора. </phrase>
+    <phrase front="True" sarcastic="False">Когда ты уже закончишь так рьяно валять дурака? </phrase>
+    <phrase front="True" sarcastic="True">Когда ты был маленьким, мама мало тебя обнимала, я прав? </phrase>
+    <phrase front="True" sarcastic="False">Думаешь, будто ты смешной?</phrase>
+    <phrase front="True" sarcastic="True">Не думаешь ли, что перегибаешь палку?</phrase>
+    <phrase front="True" sarcastic="False">Порой твоя глупость просто обескураживает. </phrase>
+    <phrase front="True" sarcastic="True">Ты страдаешь от одиночества, правда? </phrase>
+    <phrase front="True" sarcastic="False">Должно быть, ты отчаялся уже больше некуда, раз готов на такое. </phrase>
+    <phrase front="True" sarcastic="True">Не удивлен, что у тебя нет друзей. </phrase>
+    <phrase front="False" sarcastic="False">Привет, МакФлай? Есть кто дома?</phrase>
+    <phrase front="True" sarcastic="True">Предлагаю почтить минутой молчания... твои мозги. </phrase>
+    <phrase front="True" sarcastic="False">Я не прав, или ты становишься просто смешон? </phrase>
+    <phrase front="True" sarcastic="False">С тобой НИКТО не хочет разговаривать. </phrase>
+    <phrase front="True" sarcastic="False">Ты сейчас серьезно?</phrase>
+    <phrase front="True" sarcastic="False">Наверное, мы немного забегаем вперед.</phrase>
+    <phrase front="True" sarcastic="False">Я бы смог понять это, только если бы ты сейчас был под грибами. </phrase>
+    <phrase front="True" sarcastic="False">Думаю, тебе срочно нужно отдохнуть. </phrase>
+  </talk>
+</default>

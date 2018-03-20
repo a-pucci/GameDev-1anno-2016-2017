@@ -1,0 +1,78 @@
+<object name="варево">
+  <description>
+    <command>text "Похоже, оно вот-вот взорвется."</command>
+    <command>text "Я «добавил» в него немного пикантности."</command>
+  </description>
+  <inventory />
+  <location name="salotto">
+    <hotspot ID="mostro di polvere">
+      <command>load "evoluzione_mostro"</command>
+      <command>expression "happy"</command>
+      <command>text "Я нашел решение твоей проблемы."</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Просто если бы я ждал того, что он сам с этим разберется, я бы успел еще раз умереть."</command>
+      <command>lookat -"me"</command>
+      <command>expression "normal"</command>
+      <command>text -"me" -c=yellow "И что прикажешь делать?"</command>
+      <command>text "Открой рот и скажи: «А-а-а-а»."</command>
+      <command>text -"me" -c=yellow "Ладно."</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_slop"</command>
+      <command>animation -skinny 00 -o=-21,-3 -a "skinny_intruglio"</command>
+      <command>wait 1</command>
+      <command>animation -"me" 00 -o=0,0 "mostro_polvere_beve"</command>
+      <command>bitmap -"me" "mostro_polvere_beve"</command>
+      <command>show +"mostro_polvere_bocca"</command>
+      <command>wait 1</command>
+      <command>hide +"mostro_polvere_bocca"</command>
+      <command>wait 1,5</command>
+      <command>stop "cameretta_salotto_theme"</command>
+      <command>bitmap -"me" "mostro_polvere_normale"</command>
+      <command>hide -"ritratto sospetto"</command>
+      <command>cutscene "evoluzione_mostro"</command>
+      <command>show skinny (1383,708)</command>
+      <command>show -"ritratto sospetto"</command>
+      <command>hide -"mostro di polvere"</command>
+      <command>show -"mostro di polvere forzuto"</command>
+      <command>show skinny (1383,708)</command>
+      <command>wait 0,5</command>
+      <command>ost &gt;"salotto" "cameretta_salotto_theme"</command>
+      <command>wait 0,5</command>
+      <comment>[ansimando leggermente]</comment>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Я чувствую..."</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Огромную силу в своих руках!"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -"mostro di polvere forzuto" "mostro_polvere_forzuto_l"</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Постойте-ка."</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Да у меня ЕСТЬ руки!"</command>
+      <command>expression -"mostro di polvere forzuto" "devil"</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "*муа-ха-ха-ха-ха-ха-ха*"</command>
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Да я и звучу уже более угрожающе, правда?"</command>
+      <command>bitmap -"mostro di polvere forzuto" "mostro_polvere_forzuto"</command>
+      <command>throw "intruglio"</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>expression "sarcastic"</command>
+      <command>text "Хорошая идея, но спину это ему не вернет." $228</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Ты и правда хочешь, чтобы я дал неизвестное варево потенциально смертельно опасному существу?" $229</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>text "Что скажешь об этом коктейле?" $230</command>
+      <command>text -"barman" -c=lblue "..." $231</command>
+      <command>text "Может, ты и прав, слишком много алкоголя." $232</command>
+    </hotspot>
+  </location>
+</object>

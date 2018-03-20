@@ -1,0 +1,29 @@
+<object name="cavo di rame">
+  <description>
+    <command>text "Beh, uno dei pochi vantaggi della mia forma scheletrica è che sono immune all'elettricità."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>sound "pick_pila_cavo"</command>
+      <command>throw "pila"</command>
+      <command>throw "filo_rame"</command>
+      <command>pick n "circuito"</command>
+    </object>
+  </inventory>
+  <location name="cucina">
+    <hotspot ID="giostraio">
+      <command>text "Sento di essere sulla strada giusta." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ma contromano." $103</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="pila stilo">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+    <hotspot ID="batteria stilo">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

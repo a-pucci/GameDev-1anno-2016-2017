@@ -1,0 +1,38 @@
+<object name="piment">
+  <description>
+    <command>text "La partie la plus épicée se trouve dans les graines."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "Je crains que le piment ne soit pas assez épicé." $15</command>
+    </object>
+    <object name="viagra">
+      <command>text "Il est connu que le piment est un aphrodisiaque, mais il ne peut sûrement pas égaler les progrès de la médecine moderne dans ce domaine." $140</command>
+    </object>
+  </inventory>
+  <location name="grotta">
+    <hotstpot name="barattolo di vernice">
+      <command>if internal 0</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Pourquoi devrais-je le tremper dans un pot de peinture blanche?"</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>wait 0,5</command>
+      <command>throw "peperoncino"</command>
+      <command>sound "pick_jalapegno_inzuppato"</command>
+      <command>pick n "jalapeno"</command>
+      <command>fie</command>
+    </hotstpot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="viagra">
+      <command>text "Il est connu que le piment est un aphrodisiaque, mais il ne peut sûrement pas égaler les progrès de la médecine moderne dans ce domaine." $140</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>text "Il est habitué à une norme très différente." $141</command>
+    </hotspot>
+  </location>
+</object>

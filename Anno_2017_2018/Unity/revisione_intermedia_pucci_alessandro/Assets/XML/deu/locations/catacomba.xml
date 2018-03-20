@@ -1,0 +1,228 @@
+<location>
+  <script />
+  <entry name="cimitero" X="3774" Y="955" pose="dr" />
+  <scene bitmap="occhi_teschi" X="1199" Y="202" position="back" animated="True" loop="True" />
+  <scene bitmap="buio_catacomba" X="2169" Y="0" position="fore" animated="False" />
+  <scene bitmap="luci_catacomba" X="0" Y="0" position="fore" animated="False" />
+  <scene bitmap="torcia_grande_accesa" X="3574" Y="93" position="back" animated="False" />
+  <scene bitmap="boccioni" X="2551" Y="455" position="superback" animated="True" loop="True" />
+  <scene bitmap="boccioni_bolle_davanti" X="2551" Y="455" position="default" animated="True" loop="True" />
+  <scene bitmap="vetro_boccioni" X="2576" Y="397" position="default" animated="False" />
+  <scene bitmap="torcia_mini1" X="552" Y="536" position="back" animated="True" loop="True" />
+  <scene bitmap="torcia_mini2" X="979" Y="530" position="back" animated="True" loop="True" />
+  <scene bitmap="torcia_mini3" X="1999" Y="526" position="back" animated="True" loop="True" />
+  <scene bitmap="torcia_mini4" X="2388" Y="527" position="back" animated="True" loop="True" />
+  <scene bitmap="torcia_mini5" X="3239" Y="522" position="back" animated="True" loop="True" />
+  <scene bitmap="torcia_grande" X="3860" Y="248" position="back" animated="True" sound="torcia_1" loop="True" />
+  <scene bitmap="hamburger_portal" X="2662" Y="159" position="back" animated="True" loop="True" />
+  <scene bitmap="zanna_front" X="665" Y="659" position="fore" animated="False" />
+  <scene bitmap="gocce_stallattiti1" X="1987" Y="0" position="fore" animated="True" loop="True" foreground="True" />
+  <scene bitmap="gocce_stallattiti2" X="3467" Y="0" position="fore" animated="True" loop="True" foreground="True" />
+  <hotspots>
+    <action ID="oscurita">
+      <act>
+        <command>text "Da drin ist es zu dunkel um sich vorwärts zu bewegen."</command>
+      </act>
+    </action>
+    <character ID="testa in salamoia1">
+      <look />
+      <talk />
+    </character>
+    <character ID="testa in salamoia2">
+      <look />
+      <talk />
+    </character>
+    <character ID="testa in salamoia3">
+      <look />
+      <talk />
+    </character>
+    <character ID="testa in salamoia4">
+      <look />
+      <talk />
+    </character>
+    <character ID="teste in salamoia">
+      <look>
+        <command>pose d</command>
+        <command>text "Was für hässliche Visagen ..."</command>
+        <command>text -"testa in salamoia4" "*Musst du gerade sagen.*"</command>
+        <command>lookat -"testa in salamoia4"</command>
+        <command>expression "scared"</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Hab ich mir das nur eingebildet oder hat der Kopf da gerade was gesagt?"</command>
+        <command>text -"testa in salamoia1" "Ich hab nichts gesagt."</command>
+        <command>lookat -"testa in salamoia1"</command>
+        <command>expression "normal"</command>
+        <command>text "Sehr schön."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Einen Moment lang dachte ich schon, ich hab den Verstand verloren."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Warum soll ich denn bitte mit irgendwelchen eingelegten Köpfen reden?"</command>
+        <command>expression "normal"</command>
+        <command>text "Die müssen ihre letzten Worte schon vor sehr langer Zeit gesagt haben."</command>
+        <command>text -"testa in salamoia4" "*Zu dumm, dass das bei dir nicht auch der Fall ist.*"</command>
+        <command>lookat -"testa in salamoia4"</command>
+        <command>expression "scared"</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Dieses ganze Point 'n' Click stresst mich total. Ich sollte echt mal früher oder später Urlaub machen."</command>
+      </talk>
+    </character>
+    <item ID="targa antica">
+      <look>
+        <command>text "1861."</command>
+        <command>wait 0,5</command>
+        <command>text "Erklärt sich von selbst, denke ich."</command>
+      </look>
+      <pick>
+        <command>sound "pick_targa"</command>
+        <command>pick y "targa_antica"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Hätte niemals gedacht, dass du mal als Antiquität durchgehen würdest."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Bestenfalls vielleicht noch als Altmetall, wenn überhaupt."</command>
+      </use>
+      <talk>
+        <command>expression "perplexed"</command>
+        <command>text "Wie konntest du nur all die Jahre ohne Internet überleben?"</command>
+        <command>expression "normal"</command>
+        <command>text "Ronald bricht schon zusammen, wenn er mehr als 10 Minuten lang nicht ins Internet kommt."</command>
+      </talk>
+    </item>
+    <item ID="fiaccola">
+      <look>
+        <command>text "Unverzichtbarer Bestandteil der Ausrüstung jedes ambitionierten Entdeckers."</command>
+      </look>
+      <pick>
+        <command>0 pose d</command>
+        <command>0 text "Sollte man zuerst vielleicht mal anmachen."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Und dann in die Hand nehmen."</command>
+        <command>1 text "Brauche ich nicht mehr."</command>
+      </pick>
+      <use>
+        <command>0 pose d</command>
+        <command>0 text "Hey, hast du mal Feuer?"</command>
+        <command>1 text "Ich will die nicht ausmachen."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="non_sapevo_come_chiamarlo">
+      <look>
+        <command>pose d</command>
+        <command>text "Ich habe da so eine vage Vorstellung, dass irgendjemandem hier die Inspiration flöten gegangen ist."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>pause -"zombie"</command>
+        <command>bitmap -"me" "cicciobombo_l"</command>
+        <command>dialog "non_sapevo_come_chiamarlo"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "cicciobombo"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <item ID="libro di magia nera">
+      <look>
+        <command>text "'Schwarze Magie zum täglichen Verbrauch.'"</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Es muss doch einen Grund geben, warum das hier all die Jahre herumliegen konnte, ohne dass es einer mitgenommen hat."</command>
+      </pick>
+      <use>
+        <command>0 pause -"me"</command>
+        <command>0 sound "libro_aperto"</command>
+        <command>0 animation -"me" 00 -o=17,126 "libro_magia_nera_apertura"</command>
+        <command>0 bitmap -"me" "libro_magia_nera_aperto"</command>
+        <command>0 internal -g -i 1</command>
+        <command>0 resume -"me"</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "libro_magia_nera"</command>
+      </use>
+      <talk>
+        <command>text "Levitation, bedrohliche lila Lichter, Schädel als Begleiter ..."</command>
+        <command>text "Auf mich wirkst du fast schon glaubwürdig."</command>
+      </talk>
+      <indipendent>
+        <command>0 sound -l "libro_loop"</command>
+        <command>0 animation -"me" 00 -o=-100,-1 -c -xi "libro_magia_nera"</command>
+        <command>1 animation -"me" 00 -o=17,22 -c -xi "libro_magia_nera_aperto"</command>
+      </indipendent>
+    </item>
+    <item ID="staffa">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <character ID="mostro marino">
+      <look>
+        <command>text "Man kann mit Sicherheit nicht sagen, dass man in der Tiefsee ein unbeschwertes Leben hat."</command>
+      </look>
+      <talk>
+        <command>text "Dürfte ich vielleicht mal eine gute Visagistin vorschlagen?"</command>
+      </talk>
+    </character>
+    <character ID="zombie">
+      <look>
+        <command>text "Hach, so was von elegant."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>0 bitmap -"me" "zombie_down"</command>
+        <command>0 text "Guten Abend."</command>
+        <command>0-1 bitmap -"me" "zombie_l"</command>
+        <command>0 text -"me" "Hi, du hübscher Knochen."</command>
+        <command>0 internal -g 1</command>
+        <command>0-1 dialog "zombie"</command>
+        <command>2 animation -"me" 00 -o=10,3 "zombie_si_tappa_naso"</command>
+        <command>2 bitmap -"me" "zombie_naso_tappato"</command>
+        <command>2 wait 0,5</command>
+        <command>2 text -"me" "Oh, Gott, was ist das denn für ein Gestank?"</command>
+        <command>2 wait 0,5</command>
+        <command>2 animation -"me" 00 -o=10,3 "zombie_si_tappa_naso_reverse"</command>
+        <command>2 bitmap -"me" "zombie_disgustato"</command>
+        <command>2 text -"me" "Du musst unbedingt mal baden! Hier, nimm."</command>
+        <command>2 wait 0,5</command>
+        <command>2 animation -"me" 00 -o=6,2 -a "zombie_bagnoschiuma"</command>
+        <command>2 bitmap -"me" "zombie"</command>
+        <command>2 wait 0,5</command>
+        <command>2 animation -skinny 00 -o=66,1 "skinny_bagnoschiuma"</command>
+        <command>2 sound "pick_bagnoschiuma"</command>
+        <command>2 pick n "bagnoschiuma"</command>
+        <command>2 internal 3</command>
+        <command>3 bitmap -"me" "zombie_disgustato"</command>
+        <command>3 text -"me" "Hübscher Knochen, hör mal ... können wir unser Gespräch fortsetzen, wenn du nicht mehr so stinkst?"</command>
+        <command>3 bitmap -"me" "zombie"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=12,7 -c -a "zombie_idle"</command>
+        <command>animation -"staffa" 00 -o=89,529 "staffa"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <goto ID="catacomba_x_cimitero" icon="ul" PX="3384" PY="-117">
+      <go>
+        <command>goto "cimitero"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

@@ -1,0 +1,29 @@
+<object name="медный провод">
+  <description>
+    <command>text "Ну, одно из явных преимуществ быть скелетом — это то, что тебя ток не берет."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>sound "pick_pila_cavo"</command>
+      <command>throw "pila"</command>
+      <command>throw "filo_rame"</command>
+      <command>pick n "circuito"</command>
+    </object>
+  </inventory>
+  <location name="cucina">
+    <hotspot ID="giostraio">
+      <command>text "Кажется, я на верном пути." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Но на другой стороне туннеля." $103</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="pila stilo">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+    <hotspot ID="batteria stilo">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+</object>

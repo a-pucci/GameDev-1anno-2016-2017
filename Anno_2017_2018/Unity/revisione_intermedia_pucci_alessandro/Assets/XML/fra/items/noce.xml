@@ -1,0 +1,90 @@
+<object name="noix">
+  <description>
+    <command>text "C'est un peu étrange de garder un animal dans sa cage thoracique."</command>
+  </description>
+  <inventory />
+  <location name="anticamera">
+    <hotspot ID="carta moschicida">
+      <command>text -"inventory" "Ai-je l'air d'une mouche pour vous ?" $239</command>
+    </hotspot>
+    <hotspot ID="bara">
+      <command>text -"inventory" "Le pire, c'est que je ne peux même pas faire une référence ironique sur ta mort." $240</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>expression "happy"</command>
+      <command>text -"inventory" "Ours, aide-moi ! Skinny m'a mangé !" $241</command>
+      <command>expression -"Orso" "up"</command>
+      <command>text -"Orso" "Tu ne perds jamais ton sens de l'humour, n'est-ce pas, Nut ?" $242</command>
+    </hotspot>
+    <hotspot ID="bidone">
+      <command>text -"inventory" "Ce n'est pas une façon d'agir !" $243</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cane">
+      <command>sound "skinny_nut"</command>
+      <command>animation -skinny 00 -o=-18,-3 -a "skinny_noce"</command>
+      <command>pause -"me"</command>
+      <command>wait 1</command>
+      <command>throw "noce"</command>
+      <command>sound "dog_ready"</command>
+      <command>animation -"me" 00 -o=0,21 "cane_attenti"</command>
+      <command>hide -"cieco"</command>
+      <command>show -"megafono"</command>
+      <command>sound "dog_run"</command>
+      <command>animation (1883,544) -p=back -a "vecchio_trascinato_no_megafono"</command>
+      <command>hide +"guinzaglio"</command>
+      <command>hide -"cane"</command>
+      <command>hide -"cieco"</command>
+    </hotspot>
+    <hotspot ID="betoniera">
+      <command>text -"inventory" "Mec, tu as perdu la tête ?" $244</command>
+      <command>text "Ce n'est pas de ma faute; ne me blâme pas." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Je ne comprends pas." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Oublie ça." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+    <hotspot ID="cieco">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "Je ne pense pas qu'il serait particulièrement impressionné, puisqu'il est AVEUGLE !" $248</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text -"inventory" "Mec, tu as perdu la tête ?" $244</command>
+      <command>text "Ce n'est pas de ma faute; ne me blâme pas." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Je ne comprends pas." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Oublie ça." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="tana">
+      <command>text -"inventory" "Ecoute, je suis juste un écureuil, pas une taupe." $249</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "Allez, Nut, attaque !" $250</command>
+      <command>text -"inventory" "T'as fumé ou quoi ?" $251</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="ritratto sospetto">
+      <command>text -"inventory" "Mec, tu as perdu la tête ?" $244</command>
+      <command>text "Ce n'est pas de ma faute; ne me blâme pas." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Je ne comprends pas." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Oublie ça." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+  </location>
+</object>

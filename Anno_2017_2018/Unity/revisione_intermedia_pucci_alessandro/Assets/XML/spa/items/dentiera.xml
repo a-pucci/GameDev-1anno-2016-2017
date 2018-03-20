@@ -1,0 +1,56 @@
+<object name="dentadura">
+  <description>
+    <command>text "Vaya una sonrisa deslumbrante..."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>text "No es la clase de líquido donde deben guardarse." $193</command>
+    </object>
+    <object name="gomme_da_masticare">
+      <command>text "Podría dar lugar a la batalla definitiva entre el bien y las caries." $223</command>
+    </object>
+  </inventory>
+  <location name="cripta">
+    <hotspot ID="nonnina">
+      <command>animation -skinny 00 -o=104,16 -a "skinny_dentiera"</command>
+      <command>wait 0,41</command>
+      <command>sound "nonna_dentiera"</command>
+      <command>animation -"me" 00 -o=23,9 "nonnina_dentiera"</command>
+      <command>bitmap -"me" "nonnina"</command>
+      <command>throw "dentiera"</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "herself"</command>
+      <command>text -"me" "*Maldita edad*"</command>
+      <command>internal -"me" -g 1</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "happy"</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Ronald, el ojito derecho de la abuela... ¡has venido a verme!"</command>
+      <command>expression -"me" "sad"</command>
+      <command>text -"me" "Estás muy flaco... ¿comes bien?"</command>
+      <command>dialog "nonnina_risposta"</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="non_sapevo_come_chiamarlo">
+      <command>expression "sarcastic"</command>
+      <command>text "También podría comérselos." $98</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="pianta carnivora">
+      <command>text "Por desgracia, ya tiene dos filas de dientes afilados." $99</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cieco">
+      <command>expression "sarcastic"</command>
+      <command>text "Le iría mejor una operación de cataratas." $209</command>
+    </hotspot>
+  </location>
+  <location name="pensile">
+    <hotspot ID="dentifricio">
+      <command>text "A lo mejor con una buena higiene dental no habría llegado a esto." $210</command>
+    </hotspot>
+  </location>
+</object>

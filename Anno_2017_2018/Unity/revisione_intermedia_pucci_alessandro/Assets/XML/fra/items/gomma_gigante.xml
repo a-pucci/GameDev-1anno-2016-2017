@@ -1,0 +1,50 @@
+<object name="chewing-gum géant">
+  <description>
+    <comment>[con aria un po' schifata]</comment>
+    <command>text "Un gros morceau de chewing-gum déjà mâché... et un peu humide aussi."</command>
+  </description>
+  <inventory>
+    <object name="megafono">
+      <command>text "Je ne veux pas le boucher." $215</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomma_gigante"</command>
+      <command>fie</command>
+      <command>text "Je ne veux pas le mettre sur les lieux." $38</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="betoniera">
+      <command>wait 0,5</command>
+      <command>sound "cement_mixer"</command>
+      <command>animation -"me" 00 -o=0,0 "betoniera"</command>
+      <command>animation -"me" 00 -o=0,0 "betoniera"</command>
+      <command>animation -"me" 00 -o=0,0 "betoniera"</command>
+      <command>stop "cement_mixer"</command>
+      <command>wait 1</command>
+      <command>sound "pick_gum_melt"</command>
+      <command>pick n "gomma_presa_rapida"</command>
+      <command>throw "gomma_gigante"</command>
+    </hotspot>
+    <hotspot ID="megafono">
+      <command>text "Je ne veux pas le boucher." $215</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text "J'ai besoin de quelque chose qui tient mieux." $216</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "Tu ne crois tout de même pas que je vais donner à quelqu'un un chewing gum déjà mâché !" $217</command>
+    </hotspot>
+  </location>
+</object>

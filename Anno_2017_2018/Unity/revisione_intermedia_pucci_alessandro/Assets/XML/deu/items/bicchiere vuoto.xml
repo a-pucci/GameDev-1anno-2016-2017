@@ -1,0 +1,65 @@
+<object name="Leeres Glas">
+  <description>
+    <command>text "Was kann man denn sonst noch mit einem leeren Glas auf einer Party machen?"</command>
+    <command>wait 0,5</command>
+    <command>text "Glaub doch bloß nicht, dass ich immer die Antwort weiß."</command>
+  </description>
+  <inventory>
+    <object name="assenzio">
+      <command>text "Ich würde das Zeug lieber in der Flasche lassen." $11</command>
+    </object>
+  </inventory>
+  <location name="piano_terra">
+    <hotspot ID="barile">
+      <command>sound "skinny_barrel"</command>
+      <command>animation -skinny 00 -o=56,-3 -a "skinny_riempie_birra"</command>
+      <command>wait 0,59</command>
+      <command>show +"barile_birra"</command>
+      <command>wait 0,59</command>
+      <command>hide +"barile_birra"</command>
+      <command>wait 1</command>
+      <command>sound "pick_generic"</command>
+      <command>pick "bicchiere di birra"</command>
+      <command>throw "bicchiere vuoto"</command>
+      <command>if inventory "bicchiere di birra" = 15</command>
+      <command>achievement "ubriacone"</command>
+      <command>fi</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>pose d</command>
+      <command>text "Ich glaube nicht, dass der sich freuen würde, einen leeren Pappbecher angeboten zu kriegen." $67</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>expression "sarcastic"</command>
+      <command>text "Ich glaube nicht, dass der nun der Beste ist, den man anbetteln könnte." $68</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode">
+      <command>pose d</command>
+      <command>text "Ich glaube nicht, dass der sich freuen würde, einen leeren Pappbecher angeboten zu kriegen." $67</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Diese Spinne ist dann doch etwas zu groß, um sich mit einem Pappbecher fangen zu lassen." $69</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Winston">
+      <command>text "Der hat schon ein Glas, beharrt aber darauf, es nicht zu benutzen." $70</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="assenzio">
+      <command>text "Ich würde das Zeug lieber in der Flasche lassen." $11</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="pila di bicchieri">
+      <command>text "Es gibt kein Zurück mehr." $71</command>
+    </hotspot>
+  </location>
+</object>

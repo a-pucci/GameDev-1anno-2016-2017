@@ -1,0 +1,36 @@
+<object name="defused bomb">
+  <description>
+    <command>text "A device that dates back to the Second World War."</command>
+    <command>text "Obviously it's been defused for security reasons."</command>
+  </description>
+  <inventory>
+    <object name="petardi">
+      <command>wait 0,5</command>
+      <command>text "First of all we extract the gunpowder..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>throw "petardi"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "And now..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="assenzio_radioattivo">
+      <command>text "Sometimes I'm amazed at how you can still be alive." $7</command>
+    </object>
+    <object name="plutonio">
+      <command>text "I don't think this kind of bomb is fueled with plutonium, honestly." $154</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "With a defused bomb? It'd be the most idiotic attempted break-in in history." $75</command>
+    </hotspot>
+  </location>
+</object>

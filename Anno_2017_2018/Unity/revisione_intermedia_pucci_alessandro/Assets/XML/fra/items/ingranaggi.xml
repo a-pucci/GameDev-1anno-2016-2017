@@ -1,0 +1,27 @@
+<object name="engrenages">
+  <description>
+    <command>text "Ça ressemble aux petits engrenages qu'on trouve dans les horloges."</command>
+  </description>
+  <inventory>
+    <object name="sveglia">
+      <command>sound "pick_clock_funzionante"</command>
+      <command>pick n "sveglia_funzionante"</command>
+      <command>throw "sveglia"</command>
+      <command>throw "ingranaggi"</command>
+    </object>
+  </inventory>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>text "J'en ai besoin; je ne peux risquer de les perdre." $227</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>text "Ce n'est pas exactement la mise à niveau dont il a besoin." $224</command>
+    </hotspot>
+    <hotspot ID="sveglia">
+      <command>text "Il vaudrait mieux le prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+</object>

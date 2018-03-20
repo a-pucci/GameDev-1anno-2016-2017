@@ -1,0 +1,69 @@
+<object name="pila">
+  <description>
+    <command>text "Una comune batteria stilo."</command>
+  </description>
+  <inventory>
+    <object name="filo_rame">
+      <command>sound "pick_pila_cavo"</command>
+      <command>throw "pila"</command>
+      <command>throw "filo_rame"</command>
+      <command>pick n "circuito"</command>
+    </object>
+    <object name="torcia_scarica">
+      <command>if inventory "pila" &gt; 1</command>
+      <command>sound "pick_pile_torcia"</command>
+      <command>throw "pila" "pila" "torcia_scarica"</command>
+      <command>pick n "torcia"</command>
+      <command>fie</command>
+      <command>if inventory "pila" = 1</command>
+      <command>text "Ne servono due."</command>
+      <command>fie</command>
+    </object>
+    <object name="disco_alieno">
+      <command>text "Forse potrei essere in grado di alimentare il dischetto, ma di certo non così." $150</command>
+    </object>
+    <object name="torcia">
+      <command>text "É già carica." $80</command>
+    </object>
+  </inventory>
+  <location name="cimitero">
+    <hotspot ID="flusso canalizzatore">
+      <command>text "Non credo proprio che vada a pile..." $147</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="batteria stilo">
+      <command>text "Ehi guarda, un tuo gemello." $148</command>
+    </hotspot>
+    <hotspot ID="pila stilo">
+      <command>text "Ehi guarda, un tuo gemello." $148</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="Game Boy">
+      <command>expression "sarcastic"</command>
+      <command>text "Come no..." $149</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="dischetto">
+      <command>pose d</command>
+      <command>text "Forse potrei essere in grado di alimentare il dischetto, ma di certo non così." $150</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="macchina del tempo">
+      <command>text "Non credo proprio che vada a pile..." $147</command>
+    </hotspot>
+  </location>
+  <location name="interno_gru">
+    <hotspot ID="cavo">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+  <location name="meteorite">
+    <hotspot ID="torcia">
+      <command>text "Prima sarebbe il caso di raccoglierlo." $95</command>
+    </hotspot>
+  </location>
+</object>

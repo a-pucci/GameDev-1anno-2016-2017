@@ -1,0 +1,80 @@
+<object name="viagra">
+  <description>
+    <command>text "Io di certo non ne ho bisogno."</command>
+    <command>wait 0,5</command>
+    <command>text "E intendo dire che non ho problemi con la mia libido."</command>
+  </description>
+  <inventory>
+    <object name="bambola voodoo funzionante">
+      <command>text "Non è questo 'l'incentivo' che mi serve per farlo uscire dalla camera." $26</command>
+    </object>
+    <object name="peperoncino">
+      <command>text "Si sa che il peperoncino è afrodisiaco, ma di certo non può arrivare dove solo la moderna medicina ha saputo spingersi." $140</command>
+    </object>
+  </inventory>
+  <location name="piano_terra">
+    <hotspot name="Morpheus">
+      <command>pause -"me"</command>
+      <command>pause -"Frank"</command>
+      <command>show -"piano_terra_x_bonus"</command>
+      <command>load "skinny_matrix"</command>
+      <command>text "Ho con me qualcosa che la renderà molto felice..."</command>
+      <command>animation -skinny 00 -o=114,-2 -a "skinny_porge_pillola_blu"</command>
+      <command>wait 1</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_prende_pillola_blu"</command>
+      <command>wait 0,5</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_porge_pillola_rossa"</command>
+      <command>bitmap -"me" "morpheus_pillola"</command>
+      <command>wait 0,5</command>
+      <command>expression "perplexed"</command>
+      <command>text "Che cos'è?"</command>
+      <command>text -"me" "Pillola rossa, per farti un giro nel paese delle meraviglie e vedere quant'è profonda la tana del bianconiglio."</command>
+      <command>expression "normal"</command>
+      <command>text "Non sono del tutto convinto."</command>
+      <command>text -"me" "É al gusto fragola, che importanza ha il resto?"</command>
+      <command>text "Ha ragione, dia qua."</command>
+      <command>animation -skinny 00 -o=114,-2 -a -e=1500 "skinny_mangia_pillola_rossa"</command>
+      <command>wait 0,5</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_porge_pillola_rossa_back"</command>
+      <command>bitmap -"me" "morpheus"</command>
+      <command>wait 3</command>
+      <command>throw "viagra"</command>
+      <command>stop -ost</command>
+      <command>cutscene "skinny_matrix"</command>
+      <command>achievement "bianconiglio"</command>
+      <command>goto -nofade "bonus"</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="profilattico extra-large">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ecco, questa è una combinazione che solo un maniaco come te poteva provare." $179</command>
+    </hotspot>
+    <hotspot ID="rabbit">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ecco, questa è una combinazione che solo un maniaco come te poteva provare." $179</command>
+    </hotspot>
+    <hotspot ID="amante nascosto">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Non intendo indagare sulla bontà delle sue innumerevoli performance sessuali." $180</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="peperoncino">
+      <command>text "Si sa che il peperoncino è afrodisiaco, ma di certo non può arrivare dove solo la moderna medicina ha saputo spingersi." $140</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="quarterback">
+      <command>text "Con tutta questa attesa, non credo affatto che gli servirà." $181</command>
+    </hotspot>
+  </location>
+  <location name="museo">
+    <hotspot ID="cavaliere">
+      <command>text "Beh, vista l'età, forse..." $182</command>
+    </hotspot>
+  </location>
+</object>

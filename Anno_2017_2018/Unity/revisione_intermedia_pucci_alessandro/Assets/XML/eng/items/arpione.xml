@@ -1,0 +1,49 @@
+<object name="harpoon">
+  <description>
+    <command>text "All those MacGyver episodes finally paid off."</command>
+  </description>
+  <inventory>
+    <object name="trapano">
+      <command>text "It's not a grappling hook." $202</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="scatoloni2">
+      <command>if internal -"traslocatore scemo" 0</command>
+      <command>text "*First I have to wait until they aren't looking this way.*" 1</command>
+      <command>fie</command>
+      <command>if internal -"traslocatore scemo" 1</command>
+      <command>internal -"moai" -g -i 2</command>
+      <command>hide +"scatolone_solid_snake"</command>
+      <command>sound "skinny_harpoon"</command>
+      <command>animation (909,366) -p=fore "skinny_arpione1"</command>
+      <command>animation (909,675) -p=fore "skinny_arpione2"</command>
+      <command>internal -g 1</command>
+      <command>bitmask -"me" "postazione2_no_scatolone"</command>
+      <command>internal -"moai" -g -i 1</command>
+      <command>throw "arpione"</command>
+      <command>fie</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>text "All this reminds me of Captain Ahab." $199</command>
+      <command>expression -"Orso" "up"</command>
+      <command>text -"Orso" "Try not to end like him." $200</command>
+      <command>wait 0,5</command>
+      <command>text -"Orso" "The end of the bastard who hunted me, I mean." $201</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>expression "perplexed"</command>
+      <command>text "It's not a grappling hook." $202</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Are you sure you want to mess with a big guy like that?" $203</command>
+    </hotspot>
+  </location>
+</object>

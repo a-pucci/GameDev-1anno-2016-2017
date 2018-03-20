@@ -1,0 +1,64 @@
+<object name="Penny">
+  <description>
+    <command>text "Ich hatte auf einen etwas günstigeren Wechselkurs gehofft."</command>
+    <command>text "Scheißbanken."</command>
+  </description>
+  <inventory />
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>if shown -"cornetta alzata"</command>
+      <command>sound "inserimento_moneta"</command>
+      <command>animation (813,267) -p=fore "moneta_in"</command>
+      <command>status 2</command>
+      <command>fie</command>
+      <command>text -"me" "Bevor du die Münzen einwirfst, solltest du den Hörer hochnehmen."</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Bevor du die Münzen einwirfst, solltest du den Hörer hochnehmen." $37</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>text "Ich will ihn nicht in Verlegenheit bringen." $38</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "Wäre eh nicht genug, um für die Kosten für den Kran aufzukommen." $138</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Ich denke, da wirst du schon mehr brauchen, um in deren 'Kreis' aufgenommen zu werden." $45</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>pose d</command>
+      <command>text "Erinnerst du dich noch an die Lektion 'Entledige dich deiner Besitztümer'?" $46</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>pose d</command>
+      <command>text "Ich brauche seine Dienste nicht." $139</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="calderone_1981">
+      <command>sound "pick_monete"</command>
+      <command>wait 0,5</command>
+      <command>text "Erledigt."</command>
+      <command>throw "penny"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_presente" 2</command>
+      <command>internal -"calderone_1861" 2</command>
+    </hotspot>
+    <hotspot ID="calderone_presente">
+      <command>expression "sarcastic"</command>
+      <command>text "Wir sind nicht in der richtigen Epoche." $49</command>
+    </hotspot>
+    <hotspot ID="calderone_1861">
+      <command>expression "sarcastic"</command>
+      <command>text "Wir sind nicht in der richtigen Epoche." $49</command>
+    </hotspot>
+  </location>
+</object>

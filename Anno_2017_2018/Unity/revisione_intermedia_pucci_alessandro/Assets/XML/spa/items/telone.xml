@@ -1,0 +1,53 @@
+<object name="lona">
+  <description>
+    <command>text "Siempre he soñado con tener piscina en casa." 1</command>
+  </description>
+  <inventory>
+    <object name="spillo">
+      <command>text "No quiero perforarlo." $167</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="covone di paglia">
+      <command>text "No hace falta. El cuerpo ya está cubierto de paja." $115</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Yo también siento la necesidad irrefrenable de ahogarla, pero me temo que no es posible." $116</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="armadio">
+      <command>text "No es mala idea, pero antes quiero asegurarme de que he hecho todo lo necesario." $51</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="navicella aliena">
+      <command>pose d</command>
+      <command>text "¿Por qué ibas a esconder semejante maravilla?" $118</command>
+    </hotspot>
+  </location>
+  <location name="sala_botanica_IIWW">
+    <hotspot ID="telecamera1">
+      <command>pose d</command>
+      <command>text "Podría tapar la cámara con la lona, pero Ralph lo notaría." $176</command>
+    </hotspot>
+    <hotspot ID="telecamera2">
+      <command>pose d</command>
+      <command>text "Podría tapar la cámara con la lona, pero Ralph lo notaría." $176</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="telecamera3">
+      <command>pose d</command>
+      <command>text "Podría tapar la cámara con la lona, pero Ralph lo notaría." $176</command>
+    </hotspot>
+    <hotspot ID="telecamera4">
+      <command>pose d</command>
+      <command>text "Podría tapar la cámara con la lona, pero Ralph lo notaría." $176</command>
+    </hotspot>
+  </location>
+</object>

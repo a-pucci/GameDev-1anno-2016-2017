@@ -1,0 +1,38 @@
+<object name="Schlichter Brief">
+  <description>
+    <command>sound "use_volantino"</command>
+    <command>document "lettera_struccata"</command>
+    <command>sound "use_volantino"</command>
+  </description>
+  <inventory />
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pause -"me"</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>text "Ich habe da einen Brief von Herrn '...'."</command>
+      <command>animation -skinny 00 -o=185,13 -a "skinny_lettera"</command>
+      <command>wait 1,4</command>
+      <command>animation -"me" 00 -o=22,13 -c "faraonessa_legge_lettera"</command>
+      <command>bitmap -"me" "faraonessa_lettera"</command>
+      <command>throw "lettera_struccata"</command>
+      <command>wait 1</command>
+      <command>wait 1</command>
+      <command>wait 1</command>
+      <command>animation -"me" 00 -o=22,13 -c "faraonessa_lettera_back"</command>
+      <command>bitmap -"me" "faraonessa_felice"</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Das ist aber mal schön eingepackt, und so süß ..."</command>
+      <command>wait 1</command>
+      <command>bitmap -"me" "faraonessa_l"</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Ja, ich denke, ich werde seinen Antrag annehmen."</command>
+      <command>wait 1</command>
+      <command>text -"me" "Sparen wir uns den Smalltalk und den Verlobungsring. Ich habe keine Zeit zu verlieren."</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Hast du die Eheringe mitgebracht?"</command>
+      <command>bitmap -"me" "faraonessa"</command>
+      <command>internal -"me" -g 1</command>
+      <command>resume -"me"</command>
+    </hotspot>
+  </location>
+</object>

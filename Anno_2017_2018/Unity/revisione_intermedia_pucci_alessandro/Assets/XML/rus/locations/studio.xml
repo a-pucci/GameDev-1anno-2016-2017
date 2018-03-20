@@ -1,0 +1,175 @@
+<location>
+  <script>
+    <command>1 expression "scared"</command>
+    <command>1 pose l</command>
+    <command>1 screen c -fo=2000 -w=100 -a</command>
+    <command>1 wait 1,5</command>
+    <command>1 wait 1</command>
+    <command>1 text "Может, я переборщил с порохом..."</command>
+    <command>1 status &gt;"primo_piano" 0</command>
+    <command>1 bitmap -"primo_piano/primo_piano_x_studio" "porta_studio"</command>
+    <command>1 status &gt;"studio" 0</command>
+  </script>
+  <entry name="primo_piano" X="1335" Y="971" pose="dl" />
+  <scene bitmap="scrivania_studio" X="103" Y="703" position="fore" animated="False" />
+  <scene bitmap="scrivania_studio_esplosa" X="103" Y="675" position="fore" animated="False" />
+  <scene bitmap="medaglione_geralt" X="1539" Y="346" position="back" animated="True" loop="True" />
+  <scene bitmap="medaglione_geralt_fermo" X="1539" Y="346" position="back" animated="False" />
+  <scene bitmap="calamaro" X="632" Y="870" position="fore" animated="True" start="2000" stop="7000" sound="calamaro" loop="True" />
+  <scene bitmap="lampadario" X="813" Y="-65" position="fore" animated="True" loop="True" />
+  <scene bitmap="quadro_aperto" X="851" Y="451" position="back" animated="False" />
+  <hotspots>
+    <character ID="Johnny Express">
+      <look>
+        <command>text "Лучший межпланетный доставщик."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Он даже кажется менее сонным, чем обычно."</command>
+      </look>
+      <talk>
+        <command>text "Самая не запарная жизнь в космосе."</command>
+        <command>text "Должно быть, его считают современным героем."</command>
+      </talk>
+    </character>
+    <item ID="ritratto">
+      <look>
+        <command>text "Я точно не эксперт в военном деле. Я помню только то, чему учил сержант Хартман."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Ты смотрел слишком много «Люпена III»."</command>
+      </pick>
+      <use>
+        <command>0 pose dl</command>
+        <command>0 sound "pianta_carnivora_morde"</command>
+        <command>0 animation -skinny 00 -o=63,-3 -a -p=back "skinny_spavento_pianta_carnivora"</command>
+        <command>0 expression "scared"</command>
+        <command>0 animation -"pianta carnivora" 00 -o=7,97 "pianta_carnivora_morde"</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Так, это ОПРЕДЕЛЕННО не самая лучшая идея."</command>
+        <command>0 nolook</command>
+        <command>1 hide -"me"</command>
+        <command>1 sound "ritratto_opening"</command>
+        <command>1 show +"quadro_aperto"</command>
+        <command>1 show -"cassaforte"</command>
+      </use>
+      <talk>
+        <comment>[scimmiottando la voce del sergente Hartman]</comment>
+        <command>text "Ваши души могут принадлежать Иисусу, но ваши задницы всегда будут принадлежать морской пехоте!"</command>
+      </talk>
+    </item>
+    <item ID="cassaforte">
+      <look>
+        <command>lookat -"pianta carnivora"</command>
+        <command>text "Так значит это ты тут сейф охраняешь..."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Зачем открывать, если можно просто вырвать его из бетона голыми руками?"</command>
+        <command>wait 0,5</command>
+        <command>text "Спасибо, что просветил..."</command>
+      </pick>
+      <use>
+        <command>text "Понятия не имею, какой там код."</command>
+      </use>
+      <talk>
+        <command>text "Сезам откройся!"</command>
+        <command>wait 1</command>
+        <command>text "Фокус-покус!"</command>
+        <command>wait 1</command>
+        <command>text "Алохомора!"</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Нифига, да?"</command>
+      </talk>
+    </item>
+    <action ID="bomba">
+      <act>
+        <command>0 pose d</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Ты даже не задумался о том, что кто-то может услышать взрыв и вызвать полицию?"</command>
+        <command>1 wait 0,5</command>
+        <command>1 text "30 секунд будет достаточно."</command>
+        <command>1 wait 1</command>
+        <command>1 move (1387,951)</command>
+        <command>1 pose r</command>
+        <command>1 wait 0,2</command>
+        <command>1 hide skinny</command>
+        <command>1 sound "door_closed"</command>
+        <command>1 bitmap -"studio_x_primo_piano" "porta_studio_chiusa"</command>
+        <command>1 status &gt;"primo_piano" 3</command>
+        <command>1 screen c -fi=2500 -w=100</command>
+        <command>1 goto -nofade "primo_piano"</command>
+      </act>
+    </action>
+    <item ID="banconote">
+      <look>
+        <command>text "Приличная куча денег."</command>
+      </look>
+      <pick>
+        <command>sound "pick_soldi"</command>
+        <command>pick y "banconote"</command>
+      </pick>
+      <use>
+        <command>text "На эти деньги я бы мог купить квартиру в центре города."</command>
+        <command>text "Безопаснее всего вкладываться в недвижимость."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ты принял меня за Дональда Трампа?"</command>
+      </talk>
+    </item>
+    <character ID="pianta carnivora">
+      <look>
+        <command>0 text "Какие у тебя милые и острые зубки!"</command>
+        <command>1 text "Внезапно, оно не внушает мне страх."</command>
+      </look>
+      <talk>
+        <command>0 text "Можешь, пожалуйста, не есть меня?"</command>
+        <command>1 text "Это всего лишь естественный отбор, милочка."</command>
+      </talk>
+    </character>
+    <character ID="scheletro">
+      <look>
+        <command>text "Он ждал релиза Half-Life 3."</command>
+        <command>wait 1</command>
+        <command>animation -skinny 00 -o=17,-3 "skinny_feels"</command>
+        <command>bitmap -skinny -o=17,-3 "skinny_feels"</command>
+        <command>text "«В самое сердце»."</command>
+        <command>bitmap -skinny ""</command>
+        <command>animation -skinny 00 -o=17,-3 "skinny_feels_back"</command>
+      </look>
+      <talk>
+        <command>text "Слушай, друг, в этой игре есть место только для одного скелета."</command>
+        <command>text "Ничего не говори или ты крепко об этом пожалеешь."</command>
+        <command>wait 2</command>
+        <command>text "Хороший мальчик."</command>
+      </talk>
+    </character>
+    <item ID="urinatoio">
+      <look>
+        <command>text "Играй гитарные соло своей мочой."</command>
+        <command>pose d</command>
+        <command>text "Отличный способ высвободить своего внутреннего юнца."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Именно в такие моменты я жалею, что у меня больше нет мочевого пузыря."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="studio_x_primo_piano" icon="ur" PX="2001" PY="343">
+      <go>
+        <command>sound "door_close"</command>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

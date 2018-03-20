@@ -1,0 +1,28 @@
+<object name="запись ограбления">
+  <description>
+    <command>text "Должно быть, это серьезное ограбление, раз столько копов набежало."</command>
+  </description>
+  <inventory>
+    <object name="megafono">
+      <command>sound "pick_casett_mega"</command>
+      <command>pick n "antifurto_fai_da_te"</command>
+      <command>throw "megafono"</command>
+      <command>throw "registrazione_polizia"</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>text "Скорее всего, похоже на саундтрек к его жизни." $267</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "Отсюда он этого никогда не услышит." $268</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="megafono">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+</object>

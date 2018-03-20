@@ -1,0 +1,17 @@
+<object name="chewing-gum solidifié">
+  <description>
+    <command>text "Tu vois, je t'avais dit d'être rapide !" $277</command>
+  </description>
+  <inventory />
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>sound "moai_solidificata"</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomma_solidificata"</command>
+      <command>fie</command>
+      <command>text "Je ne veux pas le mettre sur les lieux." $38</command>
+    </hotspot>
+  </location>
+</object>

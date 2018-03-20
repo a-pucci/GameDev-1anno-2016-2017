@@ -1,0 +1,37 @@
+<object name="trapano">
+  <description>
+    <command>text "Bene, le pile sembrano cariche. Manca solo la punta."</command>
+  </description>
+  <inventory>
+    <object name="pomello">
+      <command>text "In effetti la vite del pomello potrebbe funzionare come punta..."</command>
+    </object>
+    <object name="vite">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "vite"</command>
+      <command>throw "trapano"</command>
+    </object>
+    <object name="arpione">
+      <command>text "Non è mica un rampino." $202</command>
+    </object>
+    <object name="forchetta">
+      <command>text "Non è mica un rampino." $202</command>
+    </object>
+  </inventory>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Non è una tenaglia." $271</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Ti ricordo che il trapano è senza punta." $272</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Questo tuo deficit d'attenzione talvolta è particolarmente irritante." $270</command>
+    </hotspot>
+  </location>
+</object>

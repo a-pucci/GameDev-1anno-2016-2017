@@ -1,0 +1,175 @@
+<location>
+  <script>
+    <command>1 expression "scared"</command>
+    <command>1 pose l</command>
+    <command>1 screen c -fo=2000 -w=100 -a</command>
+    <command>1 wait 1,5</command>
+    <command>1 wait 1</command>
+    <command>1 text "Forse ho esagerato con la polvere da sparo..."</command>
+    <command>1 status &gt;"primo_piano" 0</command>
+    <command>1 bitmap -"primo_piano/primo_piano_x_studio" "porta_studio"</command>
+    <command>1 status &gt;"studio" 0</command>
+  </script>
+  <entry name="primo_piano" X="1335" Y="971" pose="dl" />
+  <scene bitmap="scrivania_studio" X="103" Y="703" position="fore" animated="False" />
+  <scene bitmap="scrivania_studio_esplosa" X="103" Y="675" position="fore" animated="False" />
+  <scene bitmap="medaglione_geralt" X="1539" Y="346" position="back" animated="True" loop="True" />
+  <scene bitmap="medaglione_geralt_fermo" X="1539" Y="346" position="back" animated="False" />
+  <scene bitmap="calamaro" X="632" Y="870" position="fore" animated="True" start="2000" stop="7000" sound="calamaro" loop="True" />
+  <scene bitmap="lampadario" X="813" Y="-65" position="fore" animated="True" loop="True" />
+  <scene bitmap="quadro_aperto" X="851" Y="451" position="back" animated="False" />
+  <hotspots>
+    <character ID="Johnny Express">
+      <look>
+        <command>text "Il miglior fattorino interplanetario di sempre."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "E sembra anche meno assonnato del solito."</command>
+      </look>
+      <talk>
+        <command>text "Una vita nello spazio passata a poltrire il più possibile."</command>
+        <command>text "Dovrebbe essere riconosciuto come eroe contemporaneo."</command>
+      </talk>
+    </character>
+    <item ID="ritratto">
+      <look>
+        <command>text "Non me ne intendo proprio di forze militari, le mie conoscenze si fermano giusto al sergente Hartman."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Forse hai visto troppe puntate di Lupin III."</command>
+      </pick>
+      <use>
+        <command>0 pose dl</command>
+        <command>0 sound "pianta_carnivora_morde"</command>
+        <command>0 animation -skinny 00 -o=63,-3 -a -p=back "skinny_spavento_pianta_carnivora"</command>
+        <command>0 expression "scared"</command>
+        <command>0 animation -"pianta carnivora" 00 -o=7,97 "pianta_carnivora_morde"</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Ok, decisamente NON è una buona idea."</command>
+        <command>0 nolook</command>
+        <command>1 hide -"me"</command>
+        <command>1 sound "ritratto_opening"</command>
+        <command>1 show +"quadro_aperto"</command>
+        <command>1 show -"cassaforte"</command>
+      </use>
+      <talk>
+        <comment>[scimmiottando la voce del sergente Hartman]</comment>
+        <command>text "A Gesù voi potete offrire il cuore, ma il vostro culo appartiene alla nostra arma!"</command>
+      </talk>
+    </item>
+    <item ID="cassaforte">
+      <look>
+        <command>lookat -"pianta carnivora"</command>
+        <command>text "Quindi eri una pianta carnivora da guardia..."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Perchè aprirla quando si può semplicemente sradicarla a mani nude dal suo blocco di cemento?"</command>
+        <command>wait 0,5</command>
+        <command>text "Grazie davvero per avermi illuminato."</command>
+      </pick>
+      <use>
+        <command>text "Non ho idea di quale possa essere la combinazione."</command>
+      </use>
+      <talk>
+        <command>text "Apriti sesamo!"</command>
+        <command>wait 1</command>
+        <command>text "Hocus pocus!"</command>
+        <command>wait 1</command>
+        <command>text "Alohomora!"</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "No, eh?"</command>
+      </talk>
+    </item>
+    <action ID="bomba">
+      <act>
+        <command>0 pose d</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Non ti è venuto in mente neppure per un momento che qualcuno potrebbe sentire il botto dell'esplosione e chiamare la polizia?"</command>
+        <command>1 wait 0,5</command>
+        <command>1 text "30 secondi dovrebbero bastare."</command>
+        <command>1 wait 1</command>
+        <command>1 move (1387,951)</command>
+        <command>1 pose r</command>
+        <command>1 wait 0,2</command>
+        <command>1 hide skinny</command>
+        <command>1 sound "door_closed"</command>
+        <command>1 bitmap -"studio_x_primo_piano" "porta_studio_chiusa"</command>
+        <command>1 status &gt;"primo_piano" 3</command>
+        <command>1 screen c -fi=2500 -w=100</command>
+        <command>1 goto -nofade "primo_piano"</command>
+      </act>
+    </action>
+    <item ID="banconote">
+      <look>
+        <command>text "Un gruzzoletto mica male."</command>
+      </look>
+      <pick>
+        <command>sound "pick_soldi"</command>
+        <command>pick y "banconote"</command>
+      </pick>
+      <use>
+        <command>text "Volendo potrei comprarmi qualche appartamento in centro."</command>
+        <command>text "Quello del mattone è sempre un investimento sicuro."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Mi hai forse scambiato per Donald Trump?"</command>
+      </talk>
+    </item>
+    <character ID="pianta carnivora">
+      <look>
+        <command>0 text "Che bel paio di dentini aguzzi..."</command>
+        <command>1 text "Improvvisamente non mi incute più tutto questo timore."</command>
+      </look>
+      <talk>
+        <command>0 text "Saresti così gentile da non mangiarmi?"</command>
+        <command>1 text "É la legge del più forte, ragazzaccia."</command>
+      </talk>
+    </character>
+    <character ID="scheletro">
+      <look>
+        <command>text "Aspettava l'uscita di Half Life 3."</command>
+        <command>wait 1</command>
+        <command>animation -skinny 00 -o=17,-3 "skinny_feels"</command>
+        <command>bitmap -skinny -o=17,-3 "skinny_feels"</command>
+        <command>text "'Right in the feels'."</command>
+        <command>bitmap -skinny ""</command>
+        <command>animation -skinny 00 -o=17,-3 "skinny_feels_back"</command>
+      </look>
+      <talk>
+        <command>text "Ascolta amico, in questo videogioco non c'è posto per due scheletri."</command>
+        <command>text "Non dire una parola o ti faccio rimpiangere di essere morto, ok?"</command>
+        <command>wait 2</command>
+        <command>text "Bravo ragazzo."</command>
+      </talk>
+    </character>
+    <item ID="urinatoio">
+      <look>
+        <command>text "Assoli di chitarra a colpi di pipì."</command>
+        <command>pose d</command>
+        <command>text "Il modo perfetto per dar sfogo all'incrollabile infantilità maschile."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Sono questi i momenti in cui rimpiango di non avere più una vescica."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="studio_x_primo_piano" icon="ur" PX="2001" PY="343">
+      <go>
+        <command>sound "door_close"</command>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

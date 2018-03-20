@@ -1,0 +1,30 @@
+<object name="makeup removal">
+  <description>
+    <command>text "If I still had the skin..."</command>
+  </description>
+  <inventory>
+    <object name="lettera">
+      <command>sound "pick_lettera_amore"</command>
+      <command>throw -"me"</command>
+      <command>throw -"lettera"</command>
+      <command>pick n "lettera_struccata"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="selfie">
+      <command>text "I think they did a better job with Photoshop than the actual makeup here." $173</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="moglie di Frankenstein">
+      <command>expression "sarcastic"</command>
+      <command>text "Uhm... I better not." $174</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="faraonessa">
+      <command>pose d</command>
+      <command>text "It's never a good idea to antagonize a queen." $175</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,50 @@
+<object name="flashlight">
+  <description>
+    <command>text "The batteries are almost dead, but I should be able to use it, at least for a little while."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>text "It's already charged." $80</command>
+    </object>
+  </inventory>
+  <location name="sgabuzzino">
+    <hotspot ID="Boogeyman">
+      <command>wait 0,5</command>
+      <command>show +"cucina/sgabuzzino_illuminato"</command>
+      <command>stop "sgabuzzino_theme"</command>
+      <command>cutscene -s "boogeyman"</command>
+      <command>screen c -w=500 -fo=1000 -a</command>
+      <command>wait 0,5</command>
+      <command>expression "perplexed"</command>
+      <command>ost &gt;"sgabuzzino" "sgabuzzino_acceso_theme"</command>
+      <command>throw "torcia"</command>
+      <command>internal &gt;"sgabuzzino" -i -g 1</command>
+      <command>background "sgabuzzino_on"</command>
+      <command>area "sgabuzzino_luce"</command>
+      <command>hide -"Boogeyman"</command>
+      <command>show -"finto Boogeyman"</command>
+      <command>show -"locandina"</command>
+      <command>internal -"polaroid" -g 1</command>
+      <command>destination -"polaroid" (948,1022)</command>
+      <command>if shown -"bandiera"</command>
+      <command>bitmap -"bandiera" "bandiera_sgabuzzino_luce"</command>
+      <command>internal -"bandiera" -g 1</command>
+      <command>fie</command>
+      <command>hide +"bandiera_scostata_sgabuzzino_buio"</command>
+      <command>show +"bandiera_scostata_sgabuzzino_luce"</command>
+      <command>wait 2</command>
+      <command>text "He really got me, so credit to him."</command>
+      <command>status &gt;"sgabuzzino" 2</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="batteria stilo">
+      <command>pose d</command>
+      <command>text "It's already charged." $177</command>
+    </hotspot>
+    <hotspot ID="pila stilo">
+      <command>pose d</command>
+      <command>text "It's already charged." $177</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,90 @@
+<object name="Орех">
+  <description>
+    <command>text "Странно так, когда у тебя в ребрах сидит зверек."</command>
+  </description>
+  <inventory />
+  <location name="anticamera">
+    <hotspot ID="carta moschicida">
+      <command>text -"inventory" "По-твоему, я похож на муху?" $239</command>
+    </hotspot>
+    <hotspot ID="bara">
+      <command>text -"inventory" "Хуже всего то, что я даже не смогу отпустить ироничного замечания по поводу твоей смерти." $240</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>expression "happy"</command>
+      <command>text -"inventory" "Медведь, помоги! Скинни съел меня!" $241</command>
+      <command>expression -"Orso" "up"</command>
+      <command>text -"Orso" "Вечно ты шутишь, да, Орех?" $242</command>
+    </hotspot>
+    <hotspot ID="bidone">
+      <command>text -"inventory" "Не за чем так себя вести!" $243</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cane">
+      <command>sound "skinny_nut"</command>
+      <command>animation -skinny 00 -o=-18,-3 -a "skinny_noce"</command>
+      <command>pause -"me"</command>
+      <command>wait 1</command>
+      <command>throw "noce"</command>
+      <command>sound "dog_ready"</command>
+      <command>animation -"me" 00 -o=0,21 "cane_attenti"</command>
+      <command>hide -"cieco"</command>
+      <command>show -"megafono"</command>
+      <command>sound "dog_run"</command>
+      <command>animation (1883,544) -p=back -a "vecchio_trascinato_no_megafono"</command>
+      <command>hide +"guinzaglio"</command>
+      <command>hide -"cane"</command>
+      <command>hide -"cieco"</command>
+    </hotspot>
+    <hotspot ID="betoniera">
+      <command>text -"inventory" "Чувак, ты рехнулся?" $244</command>
+      <command>text "Не моя вина; не меня вини." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Не понимаю." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Забудь." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+    <hotspot ID="cieco">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "Не думаю, что он восхитится, потому что он СЛЕПОЙ!" $248</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text -"inventory" "Чувак, ты рехнулся?" $244</command>
+      <command>text "Не моя вина; не меня вини." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Не понимаю." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Забудь." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="tana">
+      <command>text -"inventory" "Слушай, я лишь белка, а не крот." $249</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "Давай, Орех, в атаку!" $250</command>
+      <command>text -"inventory" "Накурился?" $251</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="ritratto sospetto">
+      <command>text -"inventory" "Чувак, ты рехнулся?" $244</command>
+      <command>text "Не моя вина; не меня вини." $245</command>
+      <command>wait 1</command>
+      <command>text -"inventory" "Не понимаю." $246</command>
+      <command>wait 0,5</command>
+      <command>text "Забудь." $247</command>
+      <command>achievement "tentato_omicidio"</command>
+    </hotspot>
+  </location>
+</object>

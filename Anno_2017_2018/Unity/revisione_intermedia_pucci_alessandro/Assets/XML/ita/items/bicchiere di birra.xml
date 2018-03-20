@@ -1,0 +1,141 @@
+<object name="birra">
+  <description>
+    <command>text "BirraH!"</command>
+    <command>wait 0,5</command>
+    <command>text "Serve sapere altro?"</command>
+  </description>
+  <inventory>
+    <object name="assenzio">
+      <command>text "Peggio che mischiare birra e coca." $64</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="cocktail">
+      <command>if not internal -"cocktail" 0</command>
+      <command>text "Nope." 1</command>
+      <command>fie</command>
+      <command>if internal -"cocktail" 0</command>
+      <command>sound "skinny_beer_cocktail"</command>
+      <command>animation -skinny 00 -o=-12,56 -f=7,2,14 -s=90 "skinny_versa_birra1"</command>
+      <command>show +"cocktail_teschio2"</command>
+      <command>animation -skinny 00 -o=-12,56 -f=10 -s=90 "skinny_versa_birra2"</command>
+      <command>hide +"cocktail_teschio2"</command>
+      <command>animation -skinny 00 -o=-12,56 -f=10 -s=90 "skinny_versa_birra3"</command>
+      <command>pause -"custode"</command>
+      <command>move (815,780)</command>
+      <command>lookat -"custode"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -"custode" "custode_l"</command>
+      <command>text "Con gli omaggi della casa!" 2</command>
+      <command>text -"custode" "Una bevuta non si rifiuta mai!" 3</command>
+      <command>bitmap -"custode" "custode"</command>
+      <command>animation -"cocktail" 00 -o=1,5 -a "cocktail_teschio_cannuccia"</command>
+      <command>bitmap -"cocktail" "cocktail_teschio_bevuta"</command>
+      <command>animation -"custode" 00 -o=0,0 "custode_si_volta"</command>
+      <command>bitmap -"custode" "custode_beve"</command>
+      <command>viewer -"custode" (1143,486)</command>
+      <command>internal -"custode" -i 2</command>
+      <command>internal -"cocktail" -g 1</command>
+      <command>resume -"custode"</command>
+      <command>nolook</command>
+      <command>throw "bicchiere di birra"</command>
+      <command>fi</command>
+    </hotspot>
+    <hotspot ID="custode">
+      <command>if not internal -"cocktail" 0</command>
+      <command>text "Nope." 1</command>
+      <command>fie</command>
+      <command>if internal -"cocktail" 0</command>
+      <command>move (1141,771)</command>
+      <command>sound "skinny_beer_cocktail"</command>
+      <command>animation -skinny 00 -o=-12,56 -f=7,2,14 -s=90 "skinny_versa_birra1"</command>
+      <command>show +"cocktail_teschio2"</command>
+      <command>animation -skinny 00 -o=-12,56 -f=10 -s=90 "skinny_versa_birra2"</command>
+      <command>hide +"cocktail_teschio2"</command>
+      <command>animation -skinny 00 -o=-12,56 -f=10 -s=90 "skinny_versa_birra3"</command>
+      <command>pause -"custode"</command>
+      <command>move (815,780)</command>
+      <command>lookat -"custode"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -"custode" "custode_l"</command>
+      <command>text "Con gli omaggi della casa!" 2</command>
+      <command>text -"custode" "Una bevuta non si rifiuta mai!" 3</command>
+      <command>bitmap -"custode" "custode"</command>
+      <command>animation -"cocktail" 00 -o=1,5 -a "cocktail_teschio_cannuccia"</command>
+      <command>bitmap -"cocktail" "cocktail_teschio_bevuta"</command>
+      <command>animation -"custode" 00 -o=0,0 "custode_si_volta"</command>
+      <command>bitmap -"custode" "custode_beve"</command>
+      <command>viewer -"custode" (1143,486)</command>
+      <command>internal -"custode" -i 2</command>
+      <command>internal -"cocktail" -g 1</command>
+      <command>resume -"custode"</command>
+      <command>nolook</command>
+      <command>throw "bicchiere di birra"</command>
+      <command>fi</command>
+    </hotspot>
+  </location>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Meglio non buttare benzina sul fuoco." $3</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Winston">
+      <command>text "Mi pare essere sufficientemente alcol-munito." $8</command>
+    </hotspot>
+    <hotspot ID="Gesoo">
+      <command>text "É già abbastanza sbronzo così." $9</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "É già abbastanza sbronzo così." $9</command>
+    </hotspot>
+    <hotspot ID="Olandese Volante">
+      <command>text "Mi pare essere sufficientemente alcol-munito." $8</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="assenzio">
+      <command>expression "sarcastic"</command>
+      <command>text "Peggio che mischiare birra e coca." $64</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="urinatoio">
+      <command>sound "skinny_urinatoio"</command>
+      <command>animation -skinny 00 -o=-12,18 -a "skinny_versa_birra_urinatoio"</command>
+      <command>wait 1,95</command>
+      <command>sound "guitar_solo"</command>
+      <command>animation -"me" 00 -o=0,8 "urinatoio"</command>
+      <command>wait 0,5</command>
+      <command>throw "bicchiere di birra"</command>
+      <command>achievement "guitar_solo"</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="pila di bicchieri">
+      <command>text "Assolutamente no, non riuscirei più a distinguerlo." $65</command>
+    </hotspot>
+  </location>
+  <location name="piano_terra">
+    <hotspot ID="barile">
+      <command>text "É già pieno." $66</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="ragazzo alticcio">
+      <command>pose d</command>
+      <command>text "A volte mi sorprendi in positivo in quanto a sadismo." $12</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>pose d</command>
+      <command>text "Ehi, è minorenne!" $13</command>
+    </hotspot>
+    <hotspot ID="cervello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Capisco la tua invidia, ma piuttosto che cercare di portare la media al tuo standard, cerca di elevare la tua." $14</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,93 @@
+<location>
+  <script>
+    <command>0 show -"sala_botanica_IIWW/telecamera1"</command>
+    <command>0 show -"sala_botanica_IIWW/telecamera2"</command>
+    <command>0 show -"sala_vikingi_egizi/telecamera3"</command>
+    <command>0 show -"sala_vikingi_egizi/telecamera4"</command>
+    <command>0 bitmap -"guardia" "guardia_schermi"</command>
+    <command>0 pause -"guardia"</command>
+    <command>0 wait 1</command>
+    <command>0 sound "guardia_gira"</command>
+    <command>0 animation -"guardia" 00 -o=0,0 "guardia_si_volta"</command>
+    <command>0 bitmap -"guardia" "guardia_skinny"</command>
+    <command>0 wait 1</command>
+    <command>0 text -"guardia" "Was willst du?"</command>
+    <command>0 dialog "guardia"</command>
+  </script>
+  <entry name="museo" X="685" Y="1062" pose="ur" />
+  <sound name="caffettiera" />
+  <sound name="printer" />
+  <scene bitmap="televisore_cavi" X="0" Y="0" position="back" animated="True" loop="True" />
+  <scene bitmap="caffettiera" X="794" Y="289" position="back" animated="True" loop="True" />
+  <scene bitmap="stampante" X="60" Y="513" position="back" animated="True" loop="True" />
+  <scene bitmap="postazione" X="816" Y="534" position="back" animated="True" loop="True" />
+  <scene bitmap="ventilatore" X="1567" Y="689" position="fore" animated="True" loop="True" />
+  <scene bitmap="schermi" X="955" Y="0" position="back" animated="False" />
+  <scene bitmap="schermo_IIWW" X="1110" Y="159" position="back" animated="True" loop="True" />
+  <scene bitmap="schermo_vikingi" X="1227" Y="159" position="back" animated="True" loop="True" />
+  <scene bitmap="schermo_news" X="991" Y="276" position="back" animated="True" loop="True" />
+  <scene bitmap="schermo_ingresso_museo" X="1241" Y="306" position="back" animated="True" loop="True" />
+  <scene bitmap="schermo_top_djs" X="1394" Y="325" position="back" animated="True" loop="True" />
+  <scene bitmap="schermo_buy_it" X="1103" Y="429" position="back" animated="True" loop="True" />
+  <scene bitmap="schermo_battiti" X="1241" Y="445" position="back" animated="True" loop="True" />
+  <scene bitmap="luci_schermi" X="911" Y="0" position="back" animated="False" />
+  <scene bitmap="tazza" X="1321" Y="583" position="back" animated="True" loop="True" />
+  <hotspots>
+    <action ID="sala botanica">
+      <act>
+        <command>text "Im Pflanzenzimmer ist alles okay."</command>
+      </act>
+    </action>
+    <action ID="sala Seconda Guerra Mondiale">
+      <act>
+        <command>0 text "Die Soldaten funktionieren noch und sind im Einsatz."</command>
+        <command>1 text "*Der wird das niemals erfahren.*"</command>
+      </act>
+    </action>
+    <action ID="sala vichinga">
+      <act>
+        <command>text "Das Langschiff segelt ruhig weiter."</command>
+      </act>
+    </action>
+    <action ID="sala egizia">
+      <act>
+        <command>text "Nichts Neues im Alten Ägypten."</command>
+      </act>
+    </action>
+    <action ID="atrio principale1">
+      <act>
+        <command>text "Von Besuchern keine Spur."</command>
+      </act>
+    </action>
+    <action ID="atrio principale2">
+      <act>
+        <command>text "Der T-Rex macht mit seinem Training weiter."</command>
+      </act>
+    </action>
+    <character ID="guardia">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Mir scheint, der ist ein wenig außer Atem ..."</command>
+      </look>
+      <talk>
+        <command>text "Ich hab dich ja gewarnt, aber du wolltest nicht hören."</command>
+      </talk>
+      <indipendent>
+        <command>0 dialog "guardia"</command>
+        <command>1-2-3-4-5 dialog "sfida guardia"</command>
+        <command>6 internal -g 1</command>
+        <command>6 internal -"sala_botanica_IIWW/bomba disinnescata" -g 1</command>
+        <command>6 status 1</command>
+        <command>6 internal -i 7</command>
+        <command>7 sound -l "guardia_infarto"</command>
+        <command>7 animation -"me" 00 -o=2,1 -c "guardia_infarto"</command>
+      </indipendent>
+    </character>
+    <goto ID="sala_telecamere_x_museo" icon="dl" PX="-276" PY="1494">
+      <go>
+        <command>sound "metaldoor_close"</command>
+        <command>goto "museo"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

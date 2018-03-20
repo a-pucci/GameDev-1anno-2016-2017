@@ -1,0 +1,59 @@
+<location>
+  <script>
+    <command>0 wait 1</command>
+    <command>0 text "Prevedo guai..."</command>
+    <command>0 status 1</command>
+  </script>
+  <entry name="bagno1" X="564" Y="1035" pose="u" />
+  <scene bitmap="skinny_up" X="301" Y="697" position="divine" animated="False" />
+  <scene bitmap="finestra_rotta_visuale_bagno" X="1063" Y="174" position="back" animated="False" />
+  <hotspots>
+    <item ID="furgone">
+      <look>
+        <command>text "Quello deve essere il furgone della ditta di traslochi."</command>
+        <command>text "Devo assolutamente trovare il modo di entrarci prima che finiscano e vadano via."</command>
+      </look>
+      <pick>
+        <command>expression "sarcastic"</command>
+        <command>text "Non è un furgone giocattolo, è solo molto piccolo da quassù."</command>
+      </pick>
+      <use>
+        <command>text "Lo sapevo che avrei dovuto seguire quel corso di guida per corrispondenza."</command>
+      </use>
+      <talk>
+        <comment>[con tono un po' infantile, come se parlasse ad un bambino]</comment>
+        <command>text "Ascolta furgoncino, resta lì fermo finché non trovo il modo di uscire di casa. Intesi?"</command>
+      </talk>
+    </item>
+    <action ID="vicini1">
+      <act>
+        <command>text "I Murray sono persone di una simpatia davvero unica."</command>
+        <command>text "Da piccoli io e Ronald giocavamo spesso con Cooper, ma dopo il divorzio lui è andato a vivere con la madre."</command>
+      </act>
+    </action>
+    <action ID="vicini2">
+      <act>
+        <command>text "Una delle innumerevoli case della famiglia Wayne."</command>
+        <command>text "Mr. Wayne non è visto granchè bene qui in città, non si ferma mai a chiacchierare con nessuno."</command>
+      </act>
+    </action>
+    <action ID="vicini3">
+      <act>
+        <command>text "Quella casa è in vendita da anni, ma nessuno ha mai visto i proprietari."</command>
+        <command>text "Non si sa neppure se questo fantomatico signor Richards in realtà esista davvero."</command>
+      </act>
+    </action>
+    <goto ID="finestra_x_bagno1a" icon="dl" PX="-387" PY="1247">
+      <go>
+        <command>sound "closing_window"</command>
+        <command>goto "bagno1"</command>
+      </go>
+    </goto>
+    <goto ID="finestra_x_bagno1b" icon="dr" PX="2209" PY="1243">
+      <go>
+        <command>sound "closing_window"</command>
+        <command>goto "bagno1"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

@@ -1,0 +1,38 @@
+<object name="перец чили">
+  <description>
+    <command>text "Вся острота перца в его зернах."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "Боюсь, перец чили недостаточно острый." $15</command>
+    </object>
+    <object name="viagra">
+      <command>text "Все знают, что перец чили — афродозиак, но я уверен, что он не идет в сравнение с достижениями современной медицины." $140</command>
+    </object>
+  </inventory>
+  <location name="grotta">
+    <hotstpot name="barattolo di vernice">
+      <command>if internal 0</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "И зачем окунать это в банку с краской?"</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>wait 0,5</command>
+      <command>throw "peperoncino"</command>
+      <command>sound "pick_jalapegno_inzuppato"</command>
+      <command>pick n "jalapeno"</command>
+      <command>fie</command>
+    </hotstpot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="viagra">
+      <command>text "Все знают, что перец чили — афродозиак, но я уверен, что он не идет в сравнение с достижениями современной медицины." $140</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>text "Он привык немного к другому." $141</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,37 @@
+<object name="mug">
+  <description>
+    <command>text "A dusty beer mug."</command>
+  </description>
+  <inventory>
+    <object name="pillole">
+      <command>text "I have to find something to dissolve them in." $260</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>sound "skinny_mug"</command>
+      <command>animation -skinny 00 -o=64,-1 "skinny_riempie_boccale"</command>
+      <command>sound "pick_mug"</command>
+      <command>pick n "acqua_fogna"</command>
+      <command>throw "boccale_vuoto"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Cheers!" $206</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="betoniera">
+      <command>text "Sometimes there's nothing better than a good sip of cement." $204</command>
+      <command>pose d</command>
+      <command>text "But not today." $205</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>pose d</command>
+      <command>text "I seriously doubt he can serve me." $207</command>
+      <command>text "The long inactivity must have made him a bit stiff." $208</command>
+    </hotspot>
+  </location>
+</object>

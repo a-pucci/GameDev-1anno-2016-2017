@@ -1,0 +1,30 @@
+<object name="videomusicassetta">
+  <description>
+    <command>text "A quanto pare è una videomusicassetta... qualsiasi cosa voglia dire."</command>
+    <command>text "Adoro il mistero."</command>
+  </description>
+  <inventory />
+  <location name="interno_gru">
+    <hotspot ID="mangianastri">
+      <command>sound "pos_cassetta"</command>
+      <command>show +"musicassetta_off"</command>
+      <command>show -"musicassetta"</command>
+      <command>hide -"me"</command>
+      <command>throw "musicassetta"</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="dragone">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "É un carillon, mica uno stereo." $130</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="disco doro">
+      <command>text "Evoluzione tecnologica a confronto." $131</command>
+      <command>pose d</command>
+      <command>text "Anche se la qualità dei vinili è decisamente più alta." $132</command>
+    </hotspot>
+  </location>
+</object>

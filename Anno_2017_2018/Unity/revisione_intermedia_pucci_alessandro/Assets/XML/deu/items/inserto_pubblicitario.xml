@@ -1,0 +1,7 @@
+<object name="Reklame">
+  <description>
+    <command>text "Expresskurier, rund um die Uhr, 7 Tage die Woche: 00-8458901."</command>
+    <command>text "Alle Verpackungen müssen stoßfest und wasserabweisend sein, und der Inhalt muss außen klar ausgewiesen werden."</command>
+  </description>
+  <inventory />
+</object>

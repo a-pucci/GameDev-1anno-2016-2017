@@ -1,0 +1,74 @@
+<object name="muñeco vudú incompleto">
+  <description>
+    <command>text "Si pudiera coserle el pelo al muñeco..."</command>
+  </description>
+  <inventory>
+    <object name="fiammiferi">
+      <command>text "Ni fuentes de calor ni extremidades amputadas, ¿vale?" $24</command>
+    </object>
+  </inventory>
+  <location name="casa_albero">
+    <hotspot ID="eremita">
+      <command>text "¡DESPIERTA, ANCIANO!"</command>
+      <command>pause -"eremita"</command>
+      <command>stop -a "eremita_idle"</command>
+      <command>wait 1</command>
+      <command>text -"eremita" -c=yello -t "No tienes por qué gritar."</command>
+      <command>wait 0,5</command>
+      <command>text "Tienes razón, perdona."</command>
+      <command>text -"eremita" -c=yello -t "Perdonado estás."</command>
+      <command>wait 0,5</command>
+      <command>text "Escucha, ¿podrías coser este pelo en la cabeza del muñeco?"</command>
+      <command>wait 0,5</command>
+      <command>text -"eremita" -c=yello -t "Una extraña petición... pero no veo razón alguna para negarme."</command>
+      <command>text -"eremita" -c=yello -t "Dámelo."</command>
+      <command>wait 0,5</command>
+      <command>animation -skinny 00 -o=-5,-2 -a "skinny_porge_bambola"</command>
+      <command>sound "hermit_voodoo_doll"</command>
+      <command>animation -"me" 00 -o=91,33 -a -e=500 "eremita_cuce1"</command>
+      <command>wait 6,5</command>
+      <command>animation -skinny 00 -o=-5,-2 -a "skinny_prende_bambola"</command>
+      <command>animation -"me" 00 -o=91,33 "eremita_cuce2"</command>
+      <command>throw "bambola voodoo incompleta"</command>
+      <command>wait 1</command>
+      <command>sound "pick_generic"</command>
+      <command>pick n "bambola voodoo"</command>
+      <command>wait 0,5</command>
+      <command>text "Muy amable."</command>
+      <command>hide +"accampamento/afk"</command>
+      <command>show -"accampamento/marionettista"</command>
+      <command>show -"accampamento/zingara"</command>
+      <command>if internal 0</command>
+      <command>0 internal -g 1</command>
+      <command>fi</command>
+      <command>resume -"eremita"</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="pentacolo">
+      <command>text "Supongo que necesito ponerle el pelo primero." $35</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="libro di magia nera">
+      <command>text "A lo mejor aquí pone algo al respecto." $36</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>text "Ni fuentes de calor ni extremidades amputadas, ¿vale?" $24</command>
+    </hotspot>
+    <hotspot ID="Gesoo">
+      <command>expression "sarcastic"</command>
+      <command>text "El vudú y el catolicismo no se llevan muy bien que digamos." $30</command>
+      <command>expression "normal"</command>
+      <command>text "Mejor no desenterrar ciertas persecuciones medievales." $31</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "La ciencia y el vudú no son la mejor de las combinaciones." $34</command>
+    </hotspot>
+  </location>
+</object>

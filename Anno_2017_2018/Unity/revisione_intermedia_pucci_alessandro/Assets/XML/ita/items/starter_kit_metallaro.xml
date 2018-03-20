@@ -1,0 +1,32 @@
+<object name="starter kit del metallaro">
+  <description>
+    <command>text "Yeah, metallo!"</command>
+  </description>
+  <inventory />
+  <location name="casa_albero">
+    <hotspot ID="dragone">
+      <command>wait 0,5</command>
+      <command>sound "dragone_outfit"</command>
+      <command>bitmap -"me" "dragone_metal"</command>
+      <command>wait 1</command>
+      <command>text "Niente male. Adesso sì che hai un look aggressivo."</command>
+      <command>bitmap -"me" "dragone_metal_l"</command>
+      <command>text -"me" "Devo ammettere che mi gasa parecchio."</command>
+      <command>text "Pensi di potermi cantare un pezzo metal, adesso?"</command>
+      <command>text -"me" "Quale vorresti sentire?"</command>
+      <command>internal -g 2</command>
+      <command>throw "starter_kit_metallaro"</command>
+      <command>dialog "scelta_pezzo"</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="parrucca">
+      <command>text "Molto meglio quella da metallaro." $171</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="band">
+      <command>text "Neppure questo servirebbe a convincerlo a cantare, temo." $172</command>
+    </hotspot>
+  </location>
+</object>

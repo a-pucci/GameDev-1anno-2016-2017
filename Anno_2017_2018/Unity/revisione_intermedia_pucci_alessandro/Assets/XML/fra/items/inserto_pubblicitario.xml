@@ -1,0 +1,7 @@
+<object name="publicité">
+  <description>
+    <command>text "Courrier express, 24 heures sur 24, 7 jours sur 7, 00-8458901."</command>
+    <command>text "Les emballages doivent être anti-chocs et étanches et le contenu doit être clairement indiqué à l'extérieur de la boîte."</command>
+  </description>
+  <inventory />
+</object>

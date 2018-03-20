@@ -1,0 +1,30 @@
+<object name="видеокассета">
+  <description>
+    <command>text "Определенно, это видеокассета... Что бы это не значило."</command>
+    <command>text "Люблю тайны."</command>
+  </description>
+  <inventory />
+  <location name="interno_gru">
+    <hotspot ID="mangianastri">
+      <command>sound "pos_cassetta"</command>
+      <command>show +"musicassetta_off"</command>
+      <command>show -"musicassetta"</command>
+      <command>hide -"me"</command>
+      <command>throw "musicassetta"</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="dragone">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Это музыкальна шкатулка, а не магнитола." $130</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="disco doro">
+      <command>text "Технологическая эволюция познается в сравнении." $131</command>
+      <command>pose d</command>
+      <command>text "Но винил все еще рулит, да." $132</command>
+    </hotspot>
+  </location>
+</object>

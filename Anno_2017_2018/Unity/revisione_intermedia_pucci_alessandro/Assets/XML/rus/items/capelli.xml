@@ -1,0 +1,43 @@
+<object name="волосы">
+  <description>
+    <command>text "У того блондинчика куча телок, но волосики-то лезут..."</command>
+    <command>text "Уверен, к тридцати годам он полностью облысеет."</command>
+  </description>
+  <inventory>
+    <object name="pigotta">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>text "Они ему нужнее, но и мне пригодятся." $85</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>text "Не хочу это сжигать." $86</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="berretto">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Зачем мне класть их обратно в шапку?" $87</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="martello di Thor">
+      <command>expression "sarcastic"</command>
+      <command>text "И Тор снова победит." $88</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="pigotta">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+</object>

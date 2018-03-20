@@ -1,0 +1,84 @@
+<object name="Banknoten">
+  <description>
+    <command>text "Schöne Kohle!"</command>
+  </description>
+  <inventory />
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Der würde das doch alles für noch mehr Alk auf den Kopf hauen." $37</command>
+    </hotspot>
+    <hotspot ID="barbone">
+      <command>text "Ich will ihn nicht in Verlegenheit bringen." $38</command>
+    </hotspot>
+  </location>
+  <location name="baracca">
+    <hotspot ID="custode_a_terra">
+      <command>text "Hätte ich das Ding eher gefunden, wäre mir dieses ganze Chaos erspart geblieben." $39</command>
+    </hotspot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="bocchetta">
+      <command>expression "sarcastic"</command>
+      <command>text "Ich dachte, die Form des Lochs erklärt sich von selbst." $40</command>
+      <command>text "Egal, komm, ich helfe dir ... da kommt eine Münze rein." $41</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="eremita">
+      <command>text "Das steht in krassem Gegensatz zu seinem ganzen Lifestyle." $42</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Zumindest theoretisch ..." $43</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>pose d</command>
+      <command>text "Ich fürchte, du hast zu viele Folgen von 'Mr. Robot' gesehen." $44</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>text "Ich denke, da wirst du schon mehr brauchen, um in deren 'Kreis' aufgenommen zu werden." $45</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="Gesoo">
+      <command>pose d</command>
+      <command>text "Erinnerst du dich noch an die Lektion 'Entledige dich deiner Besitztümer'?" $46</command>
+    </hotspot>
+    <hotspot ID="Giuda">
+      <command>text "Wenn der den Sohn Gottes schon für läppische 30 Silberlinge verraten hat, wer weiß, wozu der dann für diesen Batzen Knete imstande ist." $47</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="diavoletto">
+      <command>text "Ist nur fair, dass die das selbst machen." $48</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="calderone_presente">
+      <command>if internal 0</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Einweichen allein wird nicht reichen."</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>sound "pick_soldi"</command>
+      <command>wait 0,5</command>
+      <command>text "Erledigt."</command>
+      <command>throw "banconote"</command>
+      <command>internal -g 2</command>
+      <command>internal -"calderone_1861" 2</command>
+      <command>internal -"calderone_1981" 2</command>
+      <command>fie</command>
+    </hotspot>
+    <hotspot ID="calderone_1861">
+      <command>expression "sarcastic"</command>
+      <command>text "Wir sind nicht in der richtigen Epoche." $49</command>
+    </hotspot>
+    <hotspot ID="calderone_1981">
+      <command>expression "sarcastic"</command>
+      <command>text "Wir sind nicht in der richtigen Epoche." $49</command>
+    </hotspot>
+  </location>
+</object>

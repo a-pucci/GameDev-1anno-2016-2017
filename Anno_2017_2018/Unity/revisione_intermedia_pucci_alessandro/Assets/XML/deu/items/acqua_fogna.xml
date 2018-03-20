@@ -1,0 +1,80 @@
+<object name="Abwasser">
+  <description>
+    <command>text "Ich wage mir gar nicht vorzustellen, wie viele Tropenkrankheiten ich mir davon holen könnte."</command>
+  </description>
+  <inventory>
+    <object name="pillole">
+      <command>sound "pick_intruglio"</command>
+      <command>pick n "intruglio"</command>
+      <command>throw "pillole"</command>
+      <command>throw "acqua_fogna"</command>
+    </object>
+    <object name="dentiera">
+      <command>text "Das ist sicher nicht die Art von Flüssigkeit, um so etwas darin zu lagern." $193</command>
+    </object>
+  </inventory>
+  <location name="anticamera">
+    <hotspot ID="mano autostoppista">
+      <command>expression "sarcastic"</command>
+      <command>text "Ich fürchte, da wäre sehr viel mehr Aufwand nötig um ... 'Leben in die Bude zu bringen'." $183</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="sommo trono">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Eine Rückkehr zu deinen Wurzeln, die leider niemals passieren wird." $184</command>
+    </hotspot>
+    <hotspot ID="Orso">
+      <command>pose d</command>
+      <command>text "Ich bin mir nicht so sicher, ob der Magen noch da ist." $185</command>
+      <command>expression -"Orso" "up"</command>
+      <command>text -"Orso" "Es wäre schön, wenn du nicht darauf herumreiten würdest." $186</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Da ist aber jemand empfindlich ..." $187</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>text "Dann würde man das Ding noch schwerer aufkriegen." $188</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="cereali">
+      <command>expression "sarcastic"</command>
+      <command>text "Isst man normalerweise mit Milch." $189</command>
+    </hotspot>
+    <hotspot ID="zuppa del secolo">
+      <command>text "Mit all den üblichen Geschmacksrichtungen des Jahrhunderts." $190</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Und ich glaube nicht, dass fauliges Wasser dazugehört." $191</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ich mache mir so langsam echt Sorgen um dein Alzheimer." $192</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="dentiera">
+      <command>text "Das ist sicher nicht die Art von Flüssigkeit, um so etwas darin zu lagern." $193</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ich glaube nicht, dass das Zeug, das der Typ hier ausschenkt, groß anders als diese Gülle da ist." $194</command>
+      <command>lookat -"barman"</command>
+      <command>expression "angry"</command>
+      <command>text -nt "ARRRRRRRRRR!" $195</command>
+    </hotspot>
+  </location>
+  <location name="pensile">
+    <hotspot ID="pillole">
+      <command>text "Versuch erstmal, das zu aufzusammeln." $95</command>
+    </hotspot>
+  </location>
+</object>

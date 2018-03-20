@@ -1,0 +1,28 @@
+<object name="enregistrement du braquage">
+  <description>
+    <command>text "Ça a dû être vraiment grave pour déployer autant d'unités."</command>
+  </description>
+  <inventory>
+    <object name="megafono">
+      <command>sound "pick_casett_mega"</command>
+      <command>pick n "antifurto_fai_da_te"</command>
+      <command>throw "megafono"</command>
+      <command>throw "registrazione_polizia"</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>text "Ce serait un peu comme la bande son de sa vie en fait." $267</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "Il ne l'entendra jamais de cette distance." $268</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="megafono">
+      <command>text "Il vaudrait mieux le prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+</object>

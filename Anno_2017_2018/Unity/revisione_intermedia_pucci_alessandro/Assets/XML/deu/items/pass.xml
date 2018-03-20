@@ -1,0 +1,19 @@
+<object name="Ausweis">
+  <description>
+    <command>text "Ein Ausweis für das Stadtmuseum."</command>
+  </description>
+  <inventory />
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>pose d</command>
+      <command>text "Besser nicht, das wäre doch total unhöflich." $23</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "So geht das doch nicht." $137</command>
+    </hotspot>
+  </location>
+</object>

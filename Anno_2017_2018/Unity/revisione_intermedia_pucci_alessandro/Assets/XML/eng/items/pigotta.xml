@@ -1,0 +1,30 @@
+<object name="ragdoll">
+  <description>
+    <command>text "The dolls with the button eyes always scare me."</command>
+  </description>
+  <inventory>
+    <object name="capelli">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="baracca">
+    <hotspot ID="mandragora">
+      <command>text "I don't think it'd be enough to calm her down." $144</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="Chucky">
+      <command>text "Maybe a younger sister of yours?" $145</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="finto Boogeyman">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "I doubt he still plays with dolls." $146</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,334 @@
+<location>
+  <script>
+    <command>4 if internal -"giardino/quarterback" 1</command>
+    <command>4 internal #"quarterback" -g 1</command>
+    <command>4 fi</command>
+    <command>4 status 0</command>
+    <comment>[esplosione bomba]</comment>
+    <command>3 pause -"pappagallo"</command>
+    <command>3 pause -"ragazzo alticcio"</command>
+    <command>3 hide +"perdita_paratia"</command>
+    <command>3 stop -ost</command>
+    <command>3 hide skinny</command>
+    <command>3 bitmap -"primo_piano_x_studio" "porta_studio_skinny"</command>
+    <command>3 screen c -fo=1500 -w=100</command>
+    <command>3 wait 1</command>
+    <command>3 sound "esplosione_bomba"</command>
+    <command>3 animation -"primo_piano_x_studio" 00 -o=33,8 -e=2500 -a "esplosione_studio"</command>
+    <command>3 wait 1</command>
+    <command>3 background &gt;"studio" "studio_esploso"</command>
+    <command>3 show +"studio/scrivania_studio_esplosa"</command>
+    <command>3 hide +"studio/scrivania_studio"</command>
+    <command>3 bitmap -"studio/pianta carnivora" "pianta_carnivora_morta_bruciata"</command>
+    <command>3 bitmap -"studio/studio_x_primo_piano" "porta_studio_aperta"</command>
+    <command>3 hide -"studio/bomba"</command>
+    <command>3 show -"studio/banconote"</command>
+    <command>3 status &gt;"studio" 1</command>
+    <command>3 screen c -fi=2000 -w=100</command>
+    <command>3 show +"perdita_paratia"</command>
+    <command>3 goto -nofade "studio"</command>
+    <command>2 transfer "clear_bedroom"</command>
+    <command>2 status 0</command>
+  </script>
+  <indipendent>
+    <command>0 wait 10</command>
+  </indipendent>
+  <entry name="toppa_bagno" X="1240" Y="763" pose="ur" />
+  <entry name="bagno" X="1197" Y="769" pose="dl" />
+  <entry name="camera_letto" X="790" Y="753" pose="d" />
+  <entry name="piano_terra" X="669" Y="890" pose="u" />
+  <entry name="studio" X="603" Y="824" pose="r" />
+  <entry name="elenco_telefonico" X="589" Y="751" pose="u" />
+  <scene bitmap="perdita_paratia" X="1243" Y="117" position="back" animated="True" start="4000" stop="6000" sound="perdita_paratia" loop="True" />
+  <scene bitmap="corrimano" X="898" Y="607" position="default" animated="False" />
+  <scene bitmap="corrimano_bucato" X="898" Y="607" position="default" animated="False" />
+  <hotspots>
+    <goto ID="primo_piano_x_studio" icon="l" PX="-340" PY="643">
+      <go>
+        <command>sound "door_open"</command>
+        <command>goto "studio"</command>
+      </go>
+    </goto>
+    <goto ID="primo_piano_x_piano_terra" icon="d" PX="717" PY="1343">
+      <go>
+        <command>goto "piano_terra"</command>
+      </go>
+    </goto>
+    <item ID="bende">
+      <look>
+        <command>text "Devono essere le famose bende 'batuffolose'."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "bende"</command>
+      </pick>
+      <use>
+        <command>text "Ormai sono troppo affezionato al mio 'costume' da scheletro per cambiarlo."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="vestiti a terra">
+      <look />
+      <talk />
+    </character>
+    <item ID="berretto">
+      <look>
+        <command>pose d</command>
+        <command>text "Hai presente quegli affari di lana che si mettono in testa per ripararsi dal freddo?"</command>
+        <command>wait 0,5</command>
+        <command>text "Ecco."</command>
+      </look>
+      <pick>
+        <command>0 hide -"me"</command>
+        <command>0 sound "skinny_hair_picking"</command>
+        <command>0 animation -skinny 00 -o=6,19 -f=11,5,52 -s=105 -a "skinny_berretto"</command>
+        <command>0 hide +"corrimano"</command>
+        <command>0 wait 1,05</command>
+        <command>0 show +"corrimano"</command>
+        <command>0 wait 3,42</command>
+        <command>0 hide +"corrimano"</command>
+        <command>0 wait 0,5</command>
+        <command>0 show -"me"</command>
+        <command>0 wait 0,7</command>
+        <command>0 sound "pick_generic"</command>
+        <command>0 pick n "capelli"</command>
+        <command>0 show +"corrimano"</command>
+        <command>0 internal 1</command>
+        <comment>1 [dopo aver già raccolto i capelli]</comment>
+        <command>1 pose d</command>
+        <command>1 text "Ho raccolto capelli a sufficienza."</command>
+        <comment>2 [dopo aver fatto scappare Johnny con la bambola voodoo]</comment>
+        <command>2 text "Direi che quel poveretto ne ha avuto abbastanza."</command>
+        <command>2 wait 0,5</command>
+        <command>2 pose d</command>
+        <command>2 text "Ma amo questo tuo lato sadico."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Cosa vorresti insinuare?"</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="disco doro">
+      <look>
+        <command>text "'Gel Rock' di Aaron Fruscione, grande successo del '57 con nove milioni di copie vendute."</command>
+      </look>
+      <pick>
+        <command>text "Lasciamo a lui la gloria."</command>
+      </pick>
+      <use>
+        <command>text "Non vedo giradischi nei paraggi."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Avrei voluto chiedere a quel giovanotto quanto fosse difficile fare il Re."</command>
+      </talk>
+    </item>
+    <item ID="picasso">
+      <look>
+        <command>text "Deve aver subito proprio un brutto incidente."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Parli del quadro o del camion che si è beccato in faccia?"</command>
+        <command>wait 1,5</command>
+        <command>text "Ok, questa era FIN TROPPO cattiva, lo ammetto."</command>
+      </pick>
+      <use>
+        <command>text "Sarebbe perfetto come spaventapasseri."</command>
+      </use>
+      <talk>
+        <command>text "Come ci si sente ad essere il protagonista di un film di Almodòvar?"</command>
+      </talk>
+    </item>
+    <item ID="stormtrooper">
+      <look>
+        <command>text "'Sti storm-giovani d'oggi sono davvero senza speranze..."</command>
+        <command>text "Dannati hipster."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Ascoltami bene, io una tale ciofeca nella mia gabbia toracica non ce la metto."</command>
+      </pick>
+      <use>
+        <command>text "Perché non ho mai un lanciafiamme con me quando serve?"</command>
+      </use>
+      <talk>
+        <command>text "É inutile che ti vanti in giro per le dimensioni del tuo pacco, tanto ce l'avete tutti uguale."</command>
+      </talk>
+    </item>
+    <action ID="elenco telefonico">
+      <act>
+        <command>sound "elencotelefonico_open"</command>
+        <command>goto "elenco_telefonico"</command>
+      </act>
+    </action>
+    <character ID="pappagallo">
+      <look>
+        <command>text "Animali geneticamente programmati per compromettere la vostra reputazione."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>text "Crocchetta."</command>
+        <command>wait 1</command>
+        <command>text "Croc-chet-ta."</command>
+        <command>wait 1</command>
+        <command>text "Forza stupido pennuto, ripeti! CROCCHETTA!"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=fuxia -t "Stupido bipede decerebrato, le mie capacità intellettive sono di gran lunga superiori alle tue."</command>
+        <command>wait 1</command>
+        <command>text "C-cosa hai detto?!?"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=fuxia -t "Crocchetta!"</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=fuxia -t "Fa' piano, mio marito potrebbe sentirci!"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=fuxia -t "Spupazzami tutta, bel maschione!"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=fuxia -t "Adoro quando fai quella cosa..."</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=fuxia -t "Presto! Nell'armadio!!!"</command>
+      </indipendent>
+    </character>
+    <action ID="porta del bagno">
+      <act>
+        <comment>0 [Skinny bussa alla porta]</comment>
+        <command>0 sound "knocking"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Posso entrare?"</command>
+        <comment>0 [NOTA: pronunciato non Skinny ma dal ciccione in bagno]</comment>
+        <command>0 text (1290,330) -c=lblue "Sparisci!"</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Anche Ronald si innervosisce sempre quando busso mentre è in bagno..."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Non capisco perché diventino tutti così scontrosi!"</command>
+        <command>0 internal 1</command>
+        <comment>1 [dopo aver già bussato la prima volta]</comment>
+        <command>1 pose d</command>
+        <command>1 text "Meglio non importunarlo ulteriormente."</command>
+      </act>
+    </action>
+    <action ID="toppa">
+      <act>
+        <command>goto "toppa_bagno"</command>
+      </act>
+    </action>
+    <goto ID="primo_piano_x_bagno" icon="ur" PX="1820" PY="400">
+      <go>
+        <command>sound "door_open"</command>
+        <command>goto "bagno"</command>
+      </go>
+    </goto>
+    <action ID="porta della camera">
+      <act>
+        <command>0 pose d</command>
+        <command>0 text "Quella cravatta pesa sulla maniglia più del martello di Thor."</command>
+        <command>0 text "'Non aprite quella porta'."</command>
+        <command>1 pose d</command>
+        <command>1 text "Avrò anche tolto la cravatta dalla maniglia ma il punto della questione non cambia."</command>
+        <command>2 text "Di sicuro è la camera più ambita della festa..."</command>
+      </act>
+    </action>
+    <item ID="cravatta">
+      <look>
+        <command>text "Quei pois sono a dir poco osceni."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "cravatta"</command>
+        <command>internal -"porta della camera" 1</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Sempre fedele alla mia felpa."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="primo_piano_x_camera_letto" icon="u" PX="705" PY="450">
+      <go>
+        <command>sound "door_close"</command>
+        <command>goto "camera_letto"</command>
+      </go>
+    </goto>
+    <character ID="ragazzo alticcio">
+      <look>
+        <command>text "Non ha proprio una bella cera..."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Non ci tengo a farmi macchiare la felpa di vomito, grazie."</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_is_gonna_vomit"</command>
+        <command>0 animation -"me" 00 -o=0,1 -c "tizio_nausea"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_is_gonna_vomit"</command>
+        <command>0 animation -"me" 00 -o=0,1 -c "tizio_nausea"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_is_gonna_vomit"</command>
+        <command>0 animation -"me" 00 -o=0,1 -c "tizio_nausea"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_is_gonna_vomit"</command>
+        <command>0 animation -"me" 00 -o=0,1 -c "tizio_nausea"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_vomits"</command>
+        <command>0 animation -"me" 00 -o=0,141 "tizio_sbocca"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>1 wait 3,5</command>
+        <command>1 bitmap -"me" "tizio_esterrefatto"</command>
+        <command>1 position -"me" (1302,495)</command>
+      </indipendent>
+    </character>
+  </hotspots>
+</location>

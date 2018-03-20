@@ -1,0 +1,80 @@
+<object name="сточная вода">
+  <description>
+    <command>text "Даже думать не смею, сколько тропических заболеваний я могу подхватить."</command>
+  </description>
+  <inventory>
+    <object name="pillole">
+      <command>sound "pick_intruglio"</command>
+      <command>pick n "intruglio"</command>
+      <command>throw "pillole"</command>
+      <command>throw "acqua_fogna"</command>
+    </object>
+    <object name="dentiera">
+      <command>text "Это точно не вода для хранения этого." $193</command>
+    </object>
+  </inventory>
+  <location name="anticamera">
+    <hotspot ID="mano autostoppista">
+      <command>expression "sarcastic"</command>
+      <command>text "Боюсь, ему нужно больше, чтобы... «оживиться»." $183</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="sommo trono">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Возвращение к корням, которое, к сожалению, не произойдет." $184</command>
+    </hotspot>
+    <hotspot ID="Orso">
+      <command>pose d</command>
+      <command>text "Не уверен, что у него все еще есть желудок." $185</command>
+      <command>expression -"Orso" "up"</command>
+      <command>text -"Orso" "Буду рад, если ты не будешь заострять на этом внимание." $186</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Кто-то очень ранимый..." $187</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>text "Так я только усугублю ситуацию и не смогу это открутить." $188</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="cereali">
+      <command>expression "sarcastic"</command>
+      <command>text "Обычно едят с молоком." $189</command>
+    </hotspot>
+    <hotspot ID="zuppa del secolo">
+      <command>text "Включает в себя все базовые вкусы этого века." $190</command>
+      <command>expression "sarcastic"</command>
+      <command>text "И не думаю, что гнилая вода — один из них." $191</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="rigagnolo">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Я правда начинаю переживать за твой Альцгеймер." $192</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="dentiera">
+      <command>text "Это точно не вода для хранения этого." $193</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Не думаю, что его пойло чем-то отличается от этой воды." $194</command>
+      <command>lookat -"barman"</command>
+      <command>expression "angry"</command>
+      <command>text -nt "А-Р-Р-Р-Р-Р-Р-Р-Р-Р!" $195</command>
+    </hotspot>
+  </location>
+  <location name="pensile">
+    <hotspot ID="pillole">
+      <command>text "Лучше сначала взять." $95</command>
+    </hotspot>
+  </location>
+</object>

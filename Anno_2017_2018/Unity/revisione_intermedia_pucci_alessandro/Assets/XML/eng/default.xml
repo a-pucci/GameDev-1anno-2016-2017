@@ -1,0 +1,77 @@
+<default>
+  <pick-n>
+    <phrase front="False" sarcastic="False">I don't need it.</phrase>
+    <phrase front="False" sarcastic="False">It's fine where it is.</phrase>
+    <phrase front="False" sarcastic="False">Better leave it alone.</phrase>
+    <phrase front="False" sarcastic="False">I don't think it's a good idea.</phrase>
+    <phrase front="False" sarcastic="False">Never mind.</phrase>
+    <phrase front="False" sarcastic="False">Not worth it.</phrase>
+    <phrase front="False" sarcastic="False">I'd rather steer clear from that.</phrase>
+  </pick-n>
+  <pick-e>
+    <phrase front="True" sarcastic="True">Are you kidding me?</phrase>
+    <phrase front="False" sarcastic="True">Sure...</phrase>
+    <phrase front="True" sarcastic="True">Sometimes I'd like to be on the other side of the screen to make you do foolish things.</phrase>
+    <phrase front="False" sarcastic="True">Why do I have such an idiot player?</phrase>
+    <phrase front="True" sarcastic="True">Do you really demand an answer?</phrase>
+    <phrase front="False" sarcastic="True">As much as the idea fascinates me, I should really give it up.</phrase>
+    <phrase front="True" sarcastic="False">Your kleptomania is really getting out of hand.</phrase>
+    <phrase front="False" sarcastic="False">It's a case of a completely useless object.</phrase>
+    <phrase front="False" sarcastic="True">It would be better to collect your thoughts before acting, once in a while.</phrase>
+    <phrase front="False" sarcastic="True">Next player, please. I'm tired of this one.</phrase>
+    <phrase front="True" sarcastic="False">Stop asking me to pick up unnecessary things. Time is money!</phrase>
+    <phrase front="True" sarcastic="True">Can we go on, please?</phrase>
+    <phrase front="True" sarcastic="False">Don't think you can put everything that pops into your head inside my rib cage.</phrase>
+  </pick-e>
+  <use>
+    <phrase front="False" sarcastic="False">I wouldn't know what to do.</phrase>
+    <phrase front="False" sarcastic="False">Definitely unlikely.</phrase>
+    <phrase front="False" sarcastic="False">Better not.</phrase>
+    <phrase front="False" sarcastic="False">I'm running out of ideas.</phrase>
+    <phrase front="False" sarcastic="False">It won't work!</phrase>
+    <phrase front="False" sarcastic="False">I don't follow.</phrase>
+    <phrase front="False" sarcastic="False">No.</phrase>
+    <phrase front="False" sarcastic="False">I wouldn't know how to use it.</phrase>
+    <phrase front="False" sarcastic="False">I don't understand what you're trying to get at.</phrase>
+    <phrase front="False" sarcastic="False">Wrong turn.</phrase>
+    <phrase front="False" sarcastic="False">Using everything with everything won't work in this adventure game.</phrase>
+    <phrase front="False" sarcastic="False">YOU do it.</phrase>
+    <phrase front="False" sarcastic="False">I don't understand how on Earth that would work.</phrase>
+    <phrase front="False" sarcastic="False">I feel a strange energy which compels me to do things I don't want to do, but I'll resist.</phrase>
+    <phrase front="False" sarcastic="False">I don't have the strength to counter still more stupidity with a witty reply.</phrase>
+    <phrase front="False" sarcastic="False">I could even work... if it weren't so idiotic.</phrase>
+    <phrase front="False" sarcastic="False">A bit of lateral thinking surely doesn't hurt, but here we're getting into nonsense.</phrase>
+    <phrase front="False" sarcastic="False">And this would be the best you can do?</phrase>
+    <phrase front="False" sarcastic="False">The use of the mouse is not meant for actions like this.</phrase>
+    <phrase front="False" sarcastic="False">Stop for a second. I want you to reflect on what you just asked me to do.</phrase>
+    <phrase front="False" sarcastic="False">Can you be more specific?</phrase>
+    <phrase front="False" sarcastic="False">There's something unhealthy about asking me to do this.</phrase>
+    <phrase front="False" sarcastic="False">Why should I?</phrase>
+    <phrase front="False" sarcastic="False">Everyone has a good plan... which will not work.</phrase>
+    <phrase front="False" sarcastic="False">I don't think I'll make any progress by doing that.</phrase>
+    <phrase front="False" sarcastic="False">You are aware that this request makes no sense at all, right?</phrase>
+  </use>
+  <talk>
+    <phrase front="True" sarcastic="True">You surely have a cockeyed imagination.</phrase>
+    <phrase front="True" sarcastic="True">Did you have a heavy meal?</phrase>
+    <phrase front="False" sarcastic="False">Do you speak English?</phrase>
+    <phrase front="True" sarcastic="True">Do I look desperate?</phrase>
+    <phrase front="False" sarcastic="True">I'm running out of topics.</phrase>
+    <phrase front="True" sarcastic="False">When will you stop with such foolishness?</phrase>
+    <phrase front="True" sarcastic="True">When you were a kid, your mother didn't hug you enough, am I right?</phrase>
+    <phrase front="True" sarcastic="False">Do you think you're funny?</phrase>
+    <phrase front="True" sarcastic="True">Don't you think you're going too far?</phrase>
+    <phrase front="True" sarcastic="False">Sometimes your stupidity is disarming.</phrase>
+    <phrase front="True" sarcastic="True">You're suffering from loneliness, aren't you?</phrase>
+    <phrase front="True" sarcastic="False">You must be really desperate to even try this. </phrase>
+    <phrase front="True" sarcastic="True">I'm not surprised you don't have any friends.</phrase>
+    <phrase front="False" sarcastic="False">Hello, McFly? Anybody home?</phrase>
+    <phrase front="True" sarcastic="True">I prefer to have a moment of silence... in memory of your brain.</phrase>
+    <phrase front="True" sarcastic="False">Am I wrong or are you becoming ridiculous?</phrase>
+    <phrase front="True" sarcastic="False">NOBODY wants to talk to you.</phrase>
+    <phrase front="True" sarcastic="False">Are you serious?</phrase>
+    <phrase front="True" sarcastic="False">Maybe we're going a little too far.</phrase>
+    <phrase front="True" sarcastic="False">I could justify such an action only if you show me you're on hallucinogens.</phrase>
+    <phrase front="True" sarcastic="False">I think you seriously need a break.</phrase>
+  </talk>
+</default>

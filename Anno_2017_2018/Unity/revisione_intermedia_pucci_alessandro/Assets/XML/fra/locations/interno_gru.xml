@@ -1,0 +1,341 @@
+<location isfirstperson="True" canusemap="False">
+  <script>
+    <command>0-1-2-3-4 hide skinny</command>
+    <command>0-1-2-3-4 internal -"vault boy" -g 0</command>
+    <command>0-1-2-3-4 status &gt;"discarica" 1</command>
+    <command>3 wait 1</command>
+    <command>3 sound "inserted_key"</command>
+    <command>3 wait 0,7</command>
+    <command>3 animation -"toppa" 00 -o=0,209 "key_in"</command>
+    <command>3 bitmap -"toppa" "toppa_chiave_inserita"</command>
+    <command>3 throw "chiavi"</command>
+    <command>3-4 wait 1</command>
+    <command>3-4 sound "chiave_girata"</command>
+    <command>3-4 animation -"toppa" 00 -o=-0,0 "key_accensione"</command>
+    <command>3-4 bitmap -"toppa" "toppa_chiave_girata"</command>
+    <command>3-4 if internal -"tachimetro" 0</command>
+    <command>3-4 internal -"tachimetro" -g -i 1</command>
+    <command>3-4 fi</command>
+    <command>3-4 if shown "cavo"</command>
+    <command>3-4 internal -"cavo" -g -i 0</command>
+    <command>3-4 fi</command>
+    <command>3-4 show +"led_gru"</command>
+    <command>3-4 animation (380,299) -a -p=fore "lancette_gru1"</command>
+    <command>3-4 animation (478,316) -a -p=fore "lancette_gru2"</command>
+    <command>3-4 show +"lancette_gru"</command>
+    <command>3-4 sound "engine_on"</command>
+    <command>3-4 wait 2</command>
+    <command>3-4 show +"ventola_gru"</command>
+    <command>3-4 internal &gt;"interno_gru" -g -i 1</command>
+    <command>3-4 sound -s "engine"</command>
+    <command>3-4 status 2</command>
+  </script>
+  <indipendent>
+    <command>0 wait 5</command>
+    <command>1 quake 1 5,0</command>
+    <command>2 quake 2 5,0</command>
+  </indipendent>
+  <entry name="discarica" X="0" Y="0" pose="u" />
+  <scene bitmap="leva_sx_sd" X="851" Y="649" position="fore" animated="False" />
+  <scene bitmap="leva_cx_sd" X="851" Y="649" position="fore" animated="False" />
+  <scene bitmap="leva_dx_sd" X="851" Y="649" position="fore" animated="False" />
+  <scene bitmap="leva_d_ud" X="521" Y="665" position="fore" animated="False" />
+  <scene bitmap="leva_cx_ud" X="521" Y="665" position="fore" animated="False" />
+  <scene bitmap="musicassetta_off" X="722" Y="457" position="fore" animated="False" />
+  <scene bitmap="musicassetta_on" X="722" Y="457" position="fore" animated="False" />
+  <scene bitmap="eject_off" X="722" Y="457" position="fore" animated="False" />
+  <scene bitmap="eject_on" X="722" Y="457" position="fore" animated="False" />
+  <scene bitmap="scena_tv" X="1298" Y="69" position="fore" animated="True" loop="True" />
+  <scene bitmap="led_gru" X="408" Y="382" position="back" animated="False" />
+  <scene bitmap="lancette_gru" X="361" Y="279" position="back" animated="False" />
+  <scene bitmap="ventola_gru" X="372" Y="483" position="fore" animated="True" loop="True" />
+  <hotspots>
+    <goto ID="interno_gru_x_discarica" icon="dr" PX="1988" PY="1169">
+      <go>
+        <command>if shown -"eject"</command>
+        <command>wait 0,5</command>
+        <command>sound "tape_off"</command>
+        <command>hide -"eject"</command>
+        <command>hide +"eject_off"</command>
+        <command>show +"eject_on"</command>
+        <command>wait 0,45</command>
+        <command>hide +"musicassetta_on"</command>
+        <command>show +"musicassetta_off"</command>
+        <command>show -"musicassetta"</command>
+        <command>hide +"scena_tv"</command>
+        <command>stop "gru_theme"</command>
+        <command>internal -"stereo" -g -i 0</command>
+        <command>wait 1</command>
+        <command>fi</command>
+        <command>status 4</command>
+        <command>internal -"bottone" -g 1</command>
+        <command>internal -"leva a destra" -g 1</command>
+        <command>internal -"leva a sinistra" -g 0</command>
+        <command>internal -"leva in basso" -g 1</command>
+        <command>animation -"toppa" 00 -o=-0,0 "key_spegnimento"</command>
+        <command>bitmap -"toppa" "toppa_chiave_inserita"</command>
+        <command>internal &gt;"interno_gru" -g -i 0</command>
+        <command>internal -"cavo" -g -i 1</command>
+        <command>internal -"tachimetro" -g -i 0</command>
+        <command>hide +"lancette_gru"</command>
+        <command>animation (369,291) -a -p=fore -e=3000 "lancette_gru_off"</command>
+        <command>hide +"led_gru"</command>
+        <command>hide +"ventola_gru"</command>
+        <command>animation (371,482) -a -p=fore -e=3000 "ventola_gru_off"</command>
+        <command>stop "engine_on"</command>
+        <command>stop "engine"</command>
+        <command>sound "engine_off"</command>
+        <command>wait 2,5</command>
+        <command>hide +"discarica/gru_sinistra"</command>
+        <command>hide +"discarica/braccio_gru_sinistra"</command>
+        <command>hide +"discarica/gru_centro"</command>
+        <command>hide +"discarica/braccio_gru_centro"</command>
+        <command>show +"discarica/porta_gru_aperta"</command>
+        <command>goto "discarica"</command>
+      </go>
+    </goto>
+    <action ID="bottone">
+      <act>
+        <command>1 text -"me" "Ne sois pas si hâtif."</command>
+        <command>0 hide -"me"</command>
+        <command>0 sound "hook_button"</command>
+        <command>0 wait 0,3</command>
+        <command>0 show -"me"</command>
+        <command>0 stop "gru_theme"</command>
+        <command>0 internal &gt;"interno_gru" -g -i 0</command>
+        <command>0 internal -"cavo" -g -i 1</command>
+        <command>0 internal -"tachimetro" -g -i 0</command>
+        <command>0 internal -"leva a destra" -g 1</command>
+        <command>0 internal -"leva a sinistra" -g 0</command>
+        <command>0 internal -"leva in basso" -g 1</command>
+        <command>0 stop "engine"</command>
+        <command>0 bitmap -"toppa" "toppa_chiave_inserita"</command>
+        <command>0 hide +"lancette_gru"</command>
+        <command>0 hide +"led_gru"</command>
+        <command>0 hide +"ventola_gru"</command>
+        <command>0 internal -"bottone" -g 2</command>
+        <command>2 status &gt;"presa_armadio" 1</command>
+        <command>2 goto "presa_armadio"</command>
+      </act>
+    </action>
+    <action ID="leva a sinistra">
+      <act>
+        <command>0 pause -"tachimetro"</command>
+        <command>0 hide +"leva_cx_sd"</command>
+        <command>0 sound "lever_left_right"</command>
+        <command>0 show +"leva_sx_sd"</command>
+        <command>0 internal &gt;"interno_gru" -g -i 2</command>
+        <command>0 wait 2</command>
+        <command>0 hide +"discarica/gru_sinistra"</command>
+        <command>0 hide +"discarica/braccio_gru_sinistra"</command>
+        <command>0 hide +"discarica/gru_centro"</command>
+        <command>0 hide +"discarica/braccio_gru_centro"</command>
+        <command>0 hide +"discarica/porta_gru_aperta"</command>
+        <command>if status 0</command>
+        <command>text -"me" "Elle est en position."</command>
+        <command>fi</command>
+        <command>if status 1</command>
+        <command>status 0</command>
+        <command>internal -g 1</command>
+        <command>internal -"leva in basso" -g 0</command>
+        <command>show +"discarica/gru_sinistra"</command>
+        <command>show +"discarica/braccio_gru_sinistra"</command>
+        <command>status &gt;"discarica" 2</command>
+        <command>goto "discarica"</command>
+        <command>fi</command>
+        <command>if status 2</command>
+        <command>status 1</command>
+        <command>internal -"leva a destra" -g 0</command>
+        <command>show +"discarica/gru_centro"</command>
+        <command>show +"discarica/braccio_gru_centro"</command>
+        <command>status &gt;"discarica" 2</command>
+        <command>goto "discarica"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="leva a destra">
+      <act>
+        <command>0 pause -"tachimetro"</command>
+        <command>0 hide +"leva_cx_sd"</command>
+        <command>0 sound "lever_left_right"</command>
+        <command>0 show +"leva_dx_sd"</command>
+        <command>0 internal &gt;"interno_gru" -g -i 2</command>
+        <command>0 wait 2</command>
+        <command>0 hide +"discarica/gru_sinistra"</command>
+        <command>0 hide +"discarica/braccio_gru_sinistra"</command>
+        <command>0 hide +"discarica/gru_centro"</command>
+        <command>0 hide +"discarica/braccio_gru_centro"</command>
+        <command>0 hide +"discarica/porta_gru_aperta"</command>
+        <command>0 internal -"leva in basso" -g 1</command>
+        <command>0 internal -"bottone" -g 1</command>
+        <command>if status 2</command>
+        <command>text -"me" "Ok, le gardien n'est peut-être pas la personne la plus gentille du monde, mais détruire sa cabane, ça semble un peu trop, même pour moi."</command>
+        <command>fi</command>
+        <command>if status 1</command>
+        <command>status 2</command>
+        <command>internal -g 1</command>
+        <command>status &gt;"discarica" 2</command>
+        <command>goto "discarica"</command>
+        <command>fi</command>
+        <command>if status 0</command>
+        <command>internal -"leva a sinistra" -g 0</command>
+        <command>internal -"leva in basso" -g 1</command>
+        <command>status 1</command>
+        <command>show +"discarica/gru_centro"</command>
+        <command>show +"discarica/braccio_gru_centro"</command>
+        <command>status &gt;"discarica" 2</command>
+        <command>goto "discarica"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="leva in basso">
+      <act>
+        <command>1 text -"me" "D'abord, je dois placer le bras au-dessus de l'armoire."</command>
+        <command>2 text -"me" "Je l'ai déjà abaissée."</command>
+        <command>0 pause -"tachimetro"</command>
+        <command>0 hide +"leva_cx_ud"</command>
+        <command>0 sound "lever_up_down"</command>
+        <command>0 show +"leva_d_ud"</command>
+        <command>0 wait 0,5</command>
+        <command>0 internal -"bottone" -g 0</command>
+        <command>0 goto "presa_armadio"</command>
+      </act>
+    </action>
+    <item ID="mangianastri">
+      <look>
+        <command>text -"me" "Je ne pensais pas que quelqu'un utilisait encore ça..."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>text -"me" "Je comprends que c'est une technologie dépassée, mais il faut une cassette pour écouter de la musique."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <action ID="eject">
+      <act>
+        <command>hide -"me"</command>
+        <command>internal -"me" -g -i 1</command>
+        <command>sound "tape_off"</command>
+        <command>hide +"eject_off"</command>
+        <command>show +"eject_on"</command>
+        <command>wait 0,45</command>
+        <command>hide +"musicassetta_on"</command>
+        <command>show +"musicassetta_off"</command>
+        <command>stop "gru_theme"</command>
+        <command>internal -"stereo" -g -i 0</command>
+        <command>hide +"scena_tv"</command>
+        <command>show -"musicassetta"</command>
+      </act>
+      <indipendent>
+        <command>2 wait 10</command>
+        <command>0-1 wait 1,1</command>
+        <command>0-1 show +"scena_tv"</command>
+        <command>0-1 internal -"stereo" -g -i 1</command>
+        <command>0 block</command>
+        <command>0 wait 5</command>
+        <command>0 text (960,40) "Un morceau assez cool. Je ne l'avais jamais entendu."</command>
+        <command>0 text (960,40) "Dommage que je ne connaisse pas le titre."</command>
+        <command>0 internal #"scelta_pezzo" -g 1</command>
+        <command>0 internal -i 2</command>
+      </indipendent>
+    </action>
+    <action ID="musicassetta">
+      <act>
+        <command>hide -"me"</command>
+        <command>hide +"eject_on"</command>
+        <command>show +"eject_off"</command>
+        <command>hide +"musicassetta_off"</command>
+        <command>show +"musicassetta_on"</command>
+        <command>show -"eject"</command>
+        <command>sound "tape_on"</command>
+      </act>
+    </action>
+    <item ID="stereo">
+      <look />
+      <pick />
+      <use />
+      <talk />
+      <indipendent>
+        <command>0 wait 10</command>
+        <command>1 sound -l "gru_theme"</command>
+        <command>1 wait 5</command>
+      </indipendent>
+    </item>
+    <item ID="tachimetro">
+      <look />
+      <pick />
+      <use />
+      <talk />
+      <indipendent>
+        <command>0 wait 5</command>
+        <command>1 wait 0,5</command>
+        <command>1 wait 0,5</command>
+        <command>1 internal -i 2</command>
+        <command>2 wait 0,5</command>
+        <command>2 wait 0,5</command>
+        <command>2 internal -i 3</command>
+        <command>3 wait 0,5</command>
+        <command>3 wait 0,5</command>
+        <command>3 internal -i 4</command>
+        <command>4 wait 0,5</command>
+        <command>4 wait 0,5</command>
+        <command>4 block</command>
+        <command>4 wait 0,5</command>
+        <command>4 wait 0,5</command>
+        <command>4 sound "valvola esplode"</command>
+        <command>4 animation -"me" 00 -o=407,329 -a "esplosione_tachimetro"</command>
+        <command>4 bitmap -"me" "tachimetro_esploso"</command>
+        <command>4 wait 2,5</command>
+        <command>4 internal -"cavo" -g -i 0</command>
+        <command>4 show -"cavo"</command>
+        <command>4 wait 0,5</command>
+        <command>4 internal -g 1</command>
+        <command>4 internal -i 0</command>
+      </indipendent>
+    </item>
+    <action ID="toppa">
+      <act>
+      </act>
+    </action>
+    <action ID="vault boy">
+      <act>
+        <command>internal -g -i 1</command>
+      </act>
+      <indipendent>
+        <command>0 wait 5</command>
+        <command>1 animation -"me" 00 -o=0,0 "vault_boy_ondeggia"</command>
+        <command>1 internal -g ++</command>
+        <command>1 if internal -"vault boy" 15</command>
+        <command>1 achievement "ossessivo_compulsivo"</command>
+        <command>1 fi</command>
+        <command>1 internal -g -i 0</command>
+      </indipendent>
+    </action>
+    <item ID="cavo">
+      <look>
+        <command>text -"me" "Cette grue tombe en morceaux..."</command>
+      </look>
+      <pick>
+        <command>text -"me" "Eh bien, l'un des rares avantages de mon apparence squelettique, c'est que je ne suis pas affecté par les chocs électriques."</command>
+        <command>wait 0,5</command>
+        <command>sound "pick_generic"</command>
+        <command>pick y "filo_rame"</command>
+      </pick>
+      <use>
+        <command>text -"me" "Je ne ferai qu'empirer les choses."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+      <indipendent>
+        <command>0 sound "ronzio_cavo"</command>
+        <command>0 animation -"me" 00 -o=0,41 -c "scintille_cavo"</command>
+        <command>1 wait 5</command>
+      </indipendent>
+    </item>
+  </hotspots>
+</location>

@@ -1,0 +1,48 @@
+<object name="crowbar">
+  <description>
+    <command>text "On the crowbar there are two letters."</command>
+    <command>text "G.F."</command>
+    <command>wait 0,5</command>
+    <command>text "Hmmm..."</command>
+  </description>
+  <inventory />
+  <location name="retro_furgone">
+    <hotspot ID="saracinesca">
+      <command>wait 0,5</command>
+      <command>sound "shutter"</command>
+      <command>show +"saracinesca_forzata"</command>
+      <command>show -"retro_furgone_x_furgone"</command>
+      <command>hide -"me"</command>
+      <command>wait 1,5</command>
+      <command>text (50,425) -c=fuxia "You finally did it, then!"</command>
+      <command>wait 0,5</command>
+      <command>text "When you use nice manners, you get everything you want, Nut. "</command>
+      <command>throw "piede_di_porco"</command>
+    </hotspot>
+  </location>
+  <location name="finestra">
+    <hotspot ID="furgone">
+      <command>text "Isn't it a bit too far?" $252</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="parchimetro">
+      <command>wait 0,5</command>
+      <command>bitmap -"me" "parchimetro_rotto"</command>
+      <command>sound "parchimetro"</command>
+      <command>animation -"me" 00 -o=164,186 "parchimetro"</command>
+      <command>wait 1</command>
+      <command>text "I like to consider it more like using a cheat than a burglary." $253</command>
+      <command>pose d</command>
+      <command>text "After all, we're still in a videogame, right?" $254</command>
+      <command>internal -g 1</command>
+      <command>achievement "high_score"</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="portiera">
+      <command>pose d</command>
+      <command>text "It's useless to enter the van from there. I would only attract their attention by breaking the glass." $255</command>
+    </hotspot>
+  </location>
+</object>

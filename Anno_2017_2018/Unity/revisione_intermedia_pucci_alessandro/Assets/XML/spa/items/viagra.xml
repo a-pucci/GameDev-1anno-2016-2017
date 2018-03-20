@@ -1,0 +1,80 @@
+<object name="viagra">
+  <description>
+    <command>text "Yo, desde luego, no la necesito."</command>
+    <command>wait 0,5</command>
+    <command>text "Y con eso me refiero a que no tengo problemas de libido."</command>
+  </description>
+  <inventory>
+    <object name="bambola voodoo funzionante">
+      <command>text "Ese no es el 'incentivo' que necesito para sacarlo de la habitación." $26</command>
+    </object>
+    <object name="peperoncino">
+      <command>text "Es bien conocido que la guindilla es afrodisiaca, pero seguro que no puede ni igualar lo que ha conseguido la medicina moderna." $140</command>
+    </object>
+  </inventory>
+  <location name="piano_terra">
+    <hotspot name="Morpheus">
+      <command>pause -"me"</command>
+      <command>pause -"Frank"</command>
+      <command>show -"piano_terra_x_bonus"</command>
+      <command>load "skinny_matrix"</command>
+      <command>text "Tengo algo que te va a hacer muy feliz."</command>
+      <command>animation -skinny 00 -o=114,-2 -a "skinny_porge_pillola_blu"</command>
+      <command>wait 1</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_prende_pillola_blu"</command>
+      <command>wait 0,5</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_porge_pillola_rossa"</command>
+      <command>bitmap -"me" "morpheus_pillola"</command>
+      <command>wait 0,5</command>
+      <command>expression "perplexed"</command>
+      <command>text "¿Qué es?"</command>
+      <command>text -"me" "Si tomas la pastilla roja, viajarás al País de las Maravillas y yo te enseñaré hasta dónde llega la madriguera de conejo."</command>
+      <command>expression "normal"</command>
+      <command>text "No estoy convencido del todo."</command>
+      <command>text -"me" "Sabe a fresa. ¿Qué más da lo demás?"</command>
+      <command>text "Tienes razón, dámela."</command>
+      <command>animation -skinny 00 -o=114,-2 -a -e=1500 "skinny_mangia_pillola_rossa"</command>
+      <command>wait 0,5</command>
+      <command>animation -"me" 00 -o=1,1 "morpheus_porge_pillola_rossa_back"</command>
+      <command>bitmap -"me" "morpheus"</command>
+      <command>wait 3</command>
+      <command>throw "viagra"</command>
+      <command>stop -ost</command>
+      <command>cutscene "skinny_matrix"</command>
+      <command>achievement "bianconiglio"</command>
+      <command>goto -nofade "bonus"</command>
+    </hotspot>
+  </location>
+  <location name="camera_letto">
+    <hotspot ID="profilattico extra-large">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Justo. Una combinación que solo un maniaco como tú aprobaría." $179</command>
+    </hotspot>
+    <hotspot ID="rabbit">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Justo. Una combinación que solo un maniaco como tú aprobaría." $179</command>
+    </hotspot>
+    <hotspot ID="amante nascosto">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "No tengo intención de averiguar qué tal se le da el sexo desenfrenado." $180</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="peperoncino">
+      <command>text "Es bien conocido que la guindilla es afrodisiaca, pero seguro que no puede ni igualar lo que ha conseguido la medicina moderna." $140</command>
+    </hotspot>
+  </location>
+  <location name="giardino">
+    <hotspot ID="quarterback">
+      <command>text "Después de tanto esperar no creo que la necesite." $181</command>
+    </hotspot>
+  </location>
+  <location name="museo">
+    <hotspot ID="cavaliere">
+      <command>text "Bueno, a su edad, a lo mejor..." $182</command>
+    </hotspot>
+  </location>
+</object>

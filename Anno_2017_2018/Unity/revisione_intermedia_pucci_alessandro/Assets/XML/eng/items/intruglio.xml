@@ -1,0 +1,78 @@
+<object name="concoction">
+  <description>
+    <command>text "It seems to be on the brink of an explosion."</command>
+    <command>text "My 'additives' gave it that extra oomph."</command>
+  </description>
+  <inventory />
+  <location name="salotto">
+    <hotspot ID="mostro di polvere">
+      <command>load "evoluzione_mostro"</command>
+      <command>text "I found the solution to your problems."</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Mainly because if I waited for him to solve it, I would have died another time first."</command>
+      <command>lookat -"me"</command>
+      <command>expression "normal"</command>
+      <command>text -"me" -c=yellow "What am I supposed to do?"</command>
+      <command>text "You just have to open your mouth and say 'ahhhh'."</command>
+      <command>text -"me" -c=yellow "Ok."</command>
+      <command>wait 0,5</command>
+      <command>sound "skinny_slop"</command>
+      <command>animation -skinny 00 -o=-21,-3 -a "skinny_intruglio"</command>
+      <command>wait 1</command>
+      <command>animation -"me" 00 -o=0,0 "mostro_polvere_beve"</command>
+      <command>bitmap -"me" "mostro_polvere_beve"</command>
+      <command>show +"mostro_polvere_bocca"</command>
+      <command>wait 1</command>
+      <command>hide +"mostro_polvere_bocca"</command>
+      <command>wait 1,5</command>
+      <command>stop "cameretta_salotto_theme"</command>
+      <command>bitmap -"me" "mostro_polvere_normale"</command>
+      <command>hide -"ritratto sospetto"</command>
+      <command>cutscene "evoluzione_mostro"</command>
+      <command>show skinny (1383,708)</command>
+      <command>show -"ritratto sospetto"</command>
+      <command>hide -"mostro di polvere"</command>
+      <command>show -"mostro di polvere forzuto"</command>
+      <command>show skinny (1383,708)</command>
+      <command>wait 0,5</command>
+      <command>ost &gt;"salotto" "cameretta_salotto_theme"</command>
+      <command>wait 0,5</command>
+      <comment>[ansimando leggermente]</comment>
+      <command>text -"mostro di polvere forzuto" -c=yellow "I feel..."</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "I feel a great power in my hands!"</command>
+      <command>wait 0,5</command>
+      <command>bitmap -"mostro di polvere forzuto" "mostro_polvere_forzuto_l"</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "Wait a minute."</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "I HAVE hands."</command>
+      <command>expression -"mostro di polvere forzuto" "devil"</command>
+      <command>text -"mostro di polvere forzuto" -c=yellow "*muahhahahhh*"</command>
+      <command>wait 0,5</command>
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Sounds more threatening already, right?"</command>
+      <command>bitmap -"mostro di polvere forzuto" "mostro_polvere_forzuto"</command>
+      <command>throw "intruglio"</command>
+    </hotspot>
+  </location>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>expression "sarcastic"</command>
+      <command>text "I appreciate the idea, but this wouldn't give him his spine back." $228</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Are you really asking me to give an unknown concoction to a potentially lethal creature?" $229</command>
+    </hotspot>
+  </location>
+  <location name="scantinato">
+    <hotspot ID="barman">
+      <command>text "What do you think of this cocktail?" $230</command>
+      <command>text -"barman" -c=lblue "..." $231</command>
+      <command>text "Maybe you're right, the alcohol content is too high." $232</command>
+    </hotspot>
+  </location>
+</object>

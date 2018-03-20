@@ -1,0 +1,6 @@
+<object name="map">
+  <description>
+    <command>text "A map of the whole area."</command>
+  </description>
+  <inventory />
+</object>

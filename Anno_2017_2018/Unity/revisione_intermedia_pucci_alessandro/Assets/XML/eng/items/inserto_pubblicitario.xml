@@ -1,0 +1,7 @@
+<object name="advertising">
+  <description>
+    <command>text "Express courier, 24 hours, 7 days a week, 00-8458901."</command>
+    <command>text "All packages must be impact-proof, water-repellent, and the contents must be clearly indicated outside the box."</command>
+  </description>
+  <inventory />
+</object>

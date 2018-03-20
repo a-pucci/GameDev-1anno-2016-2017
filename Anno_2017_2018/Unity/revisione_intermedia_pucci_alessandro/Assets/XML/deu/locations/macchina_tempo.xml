@@ -1,0 +1,293 @@
+<location isfirstperson="True">
+  <script>
+    <command>0 load "viaggio_tempo_1863"</command>
+    <command>1 load "viaggio_tempo_1981"</command>
+    <command>0-1 hide skinny</command>
+    <command>0-1 bitmap -"u-led" "null-led"</command>
+    <command>0-1 bitmap -"d-led" "null-led"</command>
+    <command>0-1 bitmap -"c-led" "null-led"</command>
+    <command>0-1 bitmap -"m-led" "null-led"</command>
+    <command>0-1 bitmap -"leva" "leva"</command>
+    <command>0-1 buffer "data_viaggio"</command>
+  </script>
+  <entry name="spiaggia" X="1" Y="1" pose="d" />
+  <scene bitmap="1863" X="1131" Y="519" position="back" animated="False" />
+  <scene bitmap="1981" X="1131" Y="519" position="back" animated="False" />
+  <scene bitmap="bordo_leva" X="1251" Y="284" position="default" animated="False" />
+  <hotspots>
+    <item ID="going_to_1981">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <item ID="u-led">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <item ID="d-led">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <item ID="c-led">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <item ID="m-led">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <action ID="leva">
+      <act>
+        <command>wait 0,3</command>
+        <command>sound "leva"</command>
+        <command>animation -"me" 00 -o=86,36 "leva"</command>
+        <command>bitmap -"me" "leva_giu"</command>
+        <command>wait 0,5</command>
+        <command>if status 0</command>
+        <command>hide -"spiaggia/calderone_presente"</command>
+        <command>hide -"spiaggia/calderone_1861"</command>
+        <command>hide -"spiaggia/calderone_1981"</command>
+        <command>background &gt;"spiaggia" "spiaggia-1861"</command>
+        <command>hide +"spiaggia/ruota_panoramica"</command>
+        <command>hide -"spiaggia/scienziato"</command>
+        <command>hide -"spiaggia/abbronzatura perfetta"</command>
+        <command>show -"spiaggia/pescato"</command>
+        <command>show +"spiaggia/rete_front"</command>
+        <command>show -"spiaggia/Manet"</command>
+        <command>show -"spiaggia/jumanji"</command>
+        <command>bitmask -"spiaggia/targa antica" "null"</command>
+        <command>hide -"spiaggia/spiaggia_x_grotta"</command>
+        <command>status &gt;"spiaggia" 0</command>
+        <command>fi</command>
+        <command>if status 1</command>
+        <command>hide -"spiaggia/calderone_presente"</command>
+        <command>hide -"spiaggia/calderone_1861"</command>
+        <command>show -"spiaggia/calderone_1981"</command>
+        <command>background &gt;"spiaggia" "spiaggia-1981"</command>
+        <command>hide +"spiaggia/ruota_panoramica"</command>
+        <command>hide -"spiaggia/scienziato"</command>
+        <command>hide -"spiaggia/abbronzatura perfetta"</command>
+        <command>show -"spiaggia/ragazzo sconsolato"</command>
+        <command>bitmask -"spiaggia/targa antica" "null"</command>
+        <command>hide -"spiaggia/spiaggia_x_grotta"</command>
+        <command>status &gt;"spiaggia" 1</command>
+        <command>fi</command>
+        <command>internal -"spiaggia/macchina_tempo_goto" -g 1</command>
+        <command>goto -nofade "spiaggia"</command>
+      </act>
+    </action>
+    <action ID="tasto ENTER">
+      <act>
+        <command>if bitmap -"u-led" "null-led"</command>
+        <command>text (800,80) "Ich hab noch keine Daten eingegeben."</command>
+        <command>fie</command>
+        <command>check "data_viaggio"</command>
+        <command>stop -b "data_viaggio"</command>
+        <command>buffer "data_viaggio"</command>
+      </act>
+    </action>
+    <action ID="tasto 1">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "1-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "1"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 2">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "2-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "2"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 3">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "3-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "3"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 4">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "4-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "4"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 5">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "5-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "5"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 6">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "6-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "6"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 7">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "7-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "7"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 8">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "8-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "8"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 9">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "9-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "9"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto 0">
+      <act>
+        <command>if bitmap -"m-led" "null-led"</command>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" ="c-led"</command>
+        <command>bitmap -"c-led" ="d-led"</command>
+        <command>bitmap -"d-led" ="u-led"</command>
+        <command>bitmap -"u-led" "0-led"</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+        <command>buffer "data_viaggio" "0"</command>
+        <command>fie</command>
+        <command>text (800,80) "Zuerst sollte ich das Datum zurücksetzen."</command>
+      </act>
+    </action>
+    <action ID="tasto CANC">
+      <act>
+        <command>sound "tasti_tempo"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,1</command>
+        <command>bitmap -"m-led" "null-led"</command>
+        <command>bitmap -"c-led" "null-led"</command>
+        <command>bitmap -"d-led" "null-led"</command>
+        <command>bitmap -"u-led" "null-led"</command>
+        <command>stop -b "data_viaggio"</command>
+        <command>buffer "data_viaggio"</command>
+        <command>show +"macchina_tempo/1863"</command>
+        <command>hide +"macchina_tempo/1981"</command>
+        <command>status &gt;"macchina_tempo" 0</command>
+        <command>wait 0,1</command>
+        <command>show -"me"</command>
+      </act>
+    </action>
+    <goto ID="macchina_tempo_x_spiaggia" icon="dr" PX="3483" PY="1045">
+      <go>
+        <command>stop -b "data_viaggio"</command>
+        <command>goto "spiaggia"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

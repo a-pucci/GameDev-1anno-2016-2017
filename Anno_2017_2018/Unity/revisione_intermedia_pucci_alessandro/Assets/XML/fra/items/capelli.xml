@@ -1,0 +1,43 @@
+<object name="cheveux">
+  <description>
+    <command>text "Ce blondinet plaît beaucoup aux filles, c'est sûr, mais il perd ses cheveux..."</command>
+    <command>text "Je parie qu'il sera chauve avant trente ans."</command>
+  </description>
+  <inventory>
+    <object name="pigotta">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>text "Il en a vraiment besoin de plus, mais je pense que je vais les utiliser pour autre chose." $85</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>text "Je ne veux pas les brûler." $86</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="berretto">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Pourquoi devrais-je les remettre dans la casquette ?" $87</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="martello di Thor">
+      <command>expression "sarcastic"</command>
+      <command>text "Thor gagnerait encore une fois." $88</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="pigotta">
+      <command>text "Il vaudrait mieux les prendre d'abord." $95</command>
+    </hotspot>
+  </location>
+</object>

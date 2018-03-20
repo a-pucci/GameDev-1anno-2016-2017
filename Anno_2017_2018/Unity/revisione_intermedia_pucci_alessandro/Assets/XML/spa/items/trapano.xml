@@ -1,0 +1,34 @@
+<object name="taladradora">
+  <description>
+    <command>text "Bien, parece que las pilas están cargadas. Solo me falta la broca."</command>
+  </description>
+  <inventory>
+    <object name="vite">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "vite"</command>
+      <command>throw "trapano"</command>
+    </object>
+    <object name="arpione">
+      <command>text "No es un garfio." $202</command>
+    </object>
+    <object name="forchetta">
+      <command>text "No es un garfio." $202</command>
+    </object>
+  </inventory>
+  <location name="cameretta">
+    <hotspot ID="pomello">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "No son unas tenazas." $271</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Te recuerdo que no lleva una broca puesta." $272</command>
+      <command>expression "sarcastic"</command>
+      <command>text "A veces tu déficit de atención es irritante." $270</command>
+    </hotspot>
+  </location>
+</object>

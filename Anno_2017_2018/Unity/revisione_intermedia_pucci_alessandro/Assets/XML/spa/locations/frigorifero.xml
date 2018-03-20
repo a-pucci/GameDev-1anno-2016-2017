@@ -1,0 +1,95 @@
+<location isfirstperson="True">
+  <script>
+    <command>0 hide skinny</command>
+  </script>
+  <sound file="mosche" />
+  <entry name="cucina" X="1" Y="1" pose="dl" />
+  <scene bitmap="cuore_babbuino" X="362" Y="722" position="back" animated="True" sound="cuore_babbuino" loop="True" />
+  <scene bitmap="ripiani_frigo" X="201" Y="214" position="back" animated="False" />
+  <scene bitmap="mosca_frigo1" X="1252" Y="305" position="fore" speed="60" animated="True" loop="True" />
+  <scene bitmap="mosca_frigo2" X="882" Y="204" position="fore" speed="60" animated="True" loop="True" />
+  <hotspots>
+    <character ID="Angry Bird">
+      <look>
+        <command>text -"me" "Lo han 'lanzado' directamente al horno."</command>
+      </look>
+      <talk>
+        <command>text -"me" "Al final, serás TÚ el que acabe como un cerdo agridulce."</command>
+      </talk>
+    </character>
+    <item ID="peperoncino">
+      <look>
+        <command>text -"me" "¿Sabías que los pájaros no pueden comer picante?"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Un momento muy 'Focus'."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "peperoncino"</command>
+      </pick>
+      <use>
+        <command>text -"me" "Me encantan las guindillas. Es una pena que mis papilas gustativas no aguanten el picante..."</command>
+        <command>wait 1</command>
+        <command>text -"me" "Eh... Si aún las tuviera, claro."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="assenzio">
+      <look>
+        <command>text -"me" "¿Por qué será que ni una sola noche inolvidable ha empezado con un 'Estaba a punto de comerme una ensalada y...'?"</command>
+      </look>
+      <pick>
+        <command>sound "pick_assenzio"</command>
+        <command>pick y "assenzio"</command>
+      </pick>
+      <use>
+        <command>text -"me" "Si quieres, te sugiero una buena reunión de Alcohólicos Anónimos."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="Game Boy">
+      <look>
+        <command>text -"me" "Una reliquia histórica del videojuego... Literalmente."</command>
+      </look>
+      <pick>
+        <command>text -"me" "Aunque mi vida social ya no es lo que era, no creo que deba acabar con ella del todo."</command>
+      </pick>
+      <use>
+        <command>text -"me" "Algo me dice que ya no funciona."</command>
+        <command>wait 1</command>
+        <command>text -"me" "Y que no es cosa de las pilas."</command>
+      </use>
+      <talk>
+        <command>text -"me" "¡Cuántas malas notas por tu culpa!"</command>
+      </talk>
+    </item>
+    <item ID="cibo cinese">
+      <look>
+        <command>text -"me" "Espero que no la traigan en estas condiciones..."</command>
+      </look>
+      <pick>
+        <command>text -"me" "Que me meta entre pecho y espalda unos cuantos gusanos no es precisamente la mejor idea que has tenido."</command>
+      </pick>
+      <use>
+        <command>text -"me" "No tengo hambre, gracias."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+      <indipendent>
+        <command>sound -l "cibo_cinese"</command>
+        <command>animation -"me" 00 -o=0,0 -c "cibo_cinese_idle"</command>
+      </indipendent>
+    </item>
+    <goto ID="frigorifero_x_cucina" icon="dl" PX="-506" PY="1184">
+      <go>
+        <command>sound "frigo_close"</command>
+        <command>goto "cucina"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

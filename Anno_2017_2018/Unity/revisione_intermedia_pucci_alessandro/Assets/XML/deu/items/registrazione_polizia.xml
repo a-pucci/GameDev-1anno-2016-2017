@@ -1,0 +1,28 @@
+<object name="Überfall-Aufnahme">
+  <description>
+    <command>text "Muss wirklich eine ernste Sache gewesen sein, wenn so viel Polizei im Einsatz war."</command>
+  </description>
+  <inventory>
+    <object name="megafono">
+      <command>sound "pick_casett_mega"</command>
+      <command>pick n "antifurto_fai_da_te"</command>
+      <command>throw "megafono"</command>
+      <command>throw "registrazione_polizia"</command>
+    </object>
+  </inventory>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>text "Das wäre allerdings so ein wenig wie der Soundtrack zu dem Leben von dem Ding." $267</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="ladro">
+      <command>text "Auf die Entfernung hört der das doch nie." $268</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="megafono">
+      <command>text "Ich nehme diesen Gegenstand am besten erstmal mit." $95</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,43 @@
+<object name="hair">
+  <description>
+    <command>text "That blond guy gets lots of girls, sure, but he loses a lot of hair..."</command>
+    <command>text "I bet he goes bald before he turns thirty."</command>
+  </description>
+  <inventory>
+    <object name="pigotta">
+      <command>sound "pick_generic"</command>
+      <command>throw "pigotta"</command>
+      <command>throw "capelli"</command>
+      <command>pick n "bambola voodoo incompleta"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>text "He really needs more, but I think I'll use it for something else." $85</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>expression "sarcastic"</command>
+      <command>text "I don't wanna burn it." $86</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="berretto">
+      <command>pose d</command>
+      <command>expression "perplexed"</command>
+      <command>text "Why would I put it back in the cap?" $87</command>
+    </hotspot>
+  </location>
+  <location name="sala_vikingi_egizi">
+    <hotspot ID="martello di Thor">
+      <command>expression "sarcastic"</command>
+      <command>text "Thor would win once again." $88</command>
+    </hotspot>
+  </location>
+  <location name="sgabuzzino">
+    <hotspot ID="pigotta">
+      <command>text "It'd be better to pick it up first." $95</command>
+    </hotspot>
+  </location>
+</object>

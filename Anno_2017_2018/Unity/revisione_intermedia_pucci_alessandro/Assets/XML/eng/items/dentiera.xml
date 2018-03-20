@@ -1,0 +1,56 @@
+<object name="dentures">
+  <description>
+    <command>text "What a dazzling smile..."</command>
+  </description>
+  <inventory>
+    <object name="acqua_fogna">
+      <command>text "It's certainly not the kind of liquid you should store them in." $193</command>
+    </object>
+    <object name="gomme_da_masticare">
+      <command>text "This could start the final battle between the good and the cavities." $223</command>
+    </object>
+  </inventory>
+  <location name="cripta">
+    <hotspot ID="nonnina">
+      <command>animation -skinny 00 -o=104,16 -a "skinny_dentiera"</command>
+      <command>wait 0,41</command>
+      <command>sound "nonna_dentiera"</command>
+      <command>animation -"me" 00 -o=23,9 "nonnina_dentiera"</command>
+      <command>bitmap -"me" "nonnina"</command>
+      <command>throw "dentiera"</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "herself"</command>
+      <command>text -"me" "*Damn my age.*"</command>
+      <command>internal -"me" -g 1</command>
+      <command>wait 0,5</command>
+      <command>expression -"me" "happy"</command>
+      <command>wait 0,5</command>
+      <command>text -"me" "Ronald, Grandma's sweetheart... you came to see me?"</command>
+      <command>expression -"me" "sad"</command>
+      <command>text -"me" "You're so emaciated. Are you eating enough?"</command>
+      <command>dialog "nonnina_risposta"</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="non_sapevo_come_chiamarlo">
+      <command>expression "sarcastic"</command>
+      <command>text "He'd be able to eat those too." $98</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="pianta carnivora">
+      <command>text "Unfortunately it's already fitted with two rows of very sharp teeth." $99</command>
+    </hotspot>
+  </location>
+  <location name="cantiere">
+    <hotspot ID="cieco">
+      <command>expression "sarcastic"</command>
+      <command>text "He could use cataract surgery more than a new pair of teeth." $209</command>
+    </hotspot>
+  </location>
+  <location name="pensile">
+    <hotspot ID="dentifricio">
+      <command>text "Maybe with the right dental hygiene we wouldn't have come this far." $210</command>
+    </hotspot>
+  </location>
+</object>

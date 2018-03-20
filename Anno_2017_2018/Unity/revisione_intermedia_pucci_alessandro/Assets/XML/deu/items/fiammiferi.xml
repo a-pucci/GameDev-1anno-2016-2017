@@ -1,0 +1,99 @@
+<object name="Streichhölzer">
+  <description>
+    <command>text "Mich wundert's, dass die unter der Kachel nicht verschimmelt sind."</command>
+  </description>
+  <inventory>
+    <object name="bambola voodoo incompleta">
+      <command>text "Weder Wärmequellen noch fehlende Gliedmaßen, weißt du noch?" $24</command>
+    </object>
+    <object name="bibbia">
+      <command>text "Lassen wir uns zu einem solchen Akt der Blasphemie besser nicht hinreißen." $56</command>
+    </object>
+    <object name="bomba">
+      <command>text "Manchmal kann ich einfach nur staunen, dass du überhaupt noch am Leben bist." $7</command>
+    </object>
+    <object name="bomba_appiccicosa">
+      <command>text "Manchmal kann ich einfach nur staunen, dass du überhaupt noch am Leben bist." $7</command>
+    </object>
+    <object name="bomboletta_spray">
+      <command>text "Das würde eine Feuersbrunst von historischen Dimensionen geben." $105</command>
+      <command>text "Nach dem Vorfall mit dem Baumhaus solltest man vielleicht eine Weile den Ball lieber ganz flach halten." $106</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="bomboletta spray">
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Das würde eine Feuersbrunst von historischen Dimensionen geben." $105</command>
+      <command>expression "normal"</command>
+      <command>text "Nach dem Vorfall mit dem Baumhaus solltest man vielleicht eine Weile den Ball lieber ganz flach halten." $106</command>
+    </hotspot>
+    <hotspot ID="covone di paglia">
+      <command>pose d</command>
+      <command>expression "happy"</command>
+      <command>text "Das würde eine Feuersbrunst von historischen Dimensionen geben." $105</command>
+      <command>expression "normal"</command>
+      <command>text "Nach dem Vorfall mit dem Baumhaus solltest man vielleicht eine Weile den Ball lieber ganz flach halten." $106</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>load "accensione_catacomba"</command>
+      <command>wait 0,3</command>
+      <command>sound "torcia_fuoco"</command>
+      <command>wait 0,2</command>
+      <command>show +"torcia_grande"</command>
+      <command>wait 1,5</command>
+      <command>stop "catacomba_buio_theme"</command>
+      <command>cutscene -s "accensione_catacomba"</command>
+      <command>ost &gt;"catacomba" "catacomba_luce_theme"</command>
+      <command>pose l</command>
+      <command>hide -"oscurita"</command>
+      <command>hide +"buio_catacomba"</command>
+      <command>show -"testa in salamoia1"</command>
+      <command>show -"testa in salamoia2"</command>
+      <command>show -"testa in salamoia3"</command>
+      <command>show -"testa in salamoia4"</command>
+      <command>show -"teste in salamoia"</command>
+      <command>show -"targa antica"</command>
+      <command>show -"non_sapevo_come_chiamarlo"</command>
+      <command>show +"luci_catacomba"</command>
+      <command>show +"torcia_mini1"</command>
+      <command>show +"torcia_mini2"</command>
+      <command>show +"torcia_mini3"</command>
+      <command>show +"torcia_mini4"</command>
+      <command>show +"torcia_mini5"</command>
+      <command>internal -"fiaccola" 1</command>
+      <command>throw "fiammiferi"</command>
+      <command>nolook</command>
+    </hotspot>
+    <hotspot ID="oscurita">
+      <command>text "Da brauche ich schon was ganz anderes, um in dieser Dunkelheit was zu sehen." $107</command>
+    </hotspot>
+  </location>
+  <location name="cimitero">
+    <hotspot ID="teppistello1">
+      <command>expression "sarcastic"</command>
+      <command>text "Hat er doch schon selbst." $108</command>
+    </hotspot>
+  </location>
+  <location name="cripta">
+    <hotspot ID="Illuminati">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Jetzt mach dich doch nicht mit solchen Flachwitzen hier zum Affen." $109</command>
+    </hotspot>
+    <hotspot ID="lapide di Willow">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "NEIN! Ihr Streichhölzer geben, NEIN!" $110</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="moglie di Frankenstein">
+      <command>pose d</command>
+      <command>expression "angry"</command>
+      <command>text "NEIN! Ihr Streichhölzer geben, NEIN!" $110</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,44 @@
+<location isfirstperson="True">
+  <script>
+    <command>0 sound "tv_switch_on"</command>
+    <command>0 animation (0,492) -p=fore "mano_telecomando_on1"</command>
+    <command>0 sound "tv_channel"</command>
+    <command>0 show +"scena_tv_notiziario"</command>
+    <command>0 animation (0,492) -p=fore "mano_telecomando_on2"</command>
+    <command>0 show +"mano_telecomando"</command>
+    <command>0 status 1</command>
+    <command>1 sound "tv_channel"</command>
+  </script>
+  <entry name="salotto" X="0" Y="0" pose="u" />
+  <scene bitmap="canale_nullo" X="465" Y="17" position="back" animated="True" loop="True" />
+  <scene bitmap="scena_tv_notiziario" X="458" Y="12" position="back" animated="True" loop="True" />
+  <scene bitmap="mano_telecomando" X="0" Y="492" position="fore" animated="False" />
+  <hotspots>
+    <action ID="televisore">
+      <act>
+        <command>hide +"mano_telecomando"</command>
+        <command>sound "tv_switch_off"</command>
+        <command>animation (0,492) -p=fore -a "mano_telecomando_off"</command>
+        <command>wait 0,5</command>
+        <command>stop "tv_channel"</command>
+        <command>hide +"scena_tv_notiziario"</command>
+        <command>wait 1,5</command>
+        <command>status 0</command>
+        <command>goto "salotto"</command>
+      </act>
+    </action>
+    <goto ID="tv_x_salotto" icon="l" PX="-750" PY="1071">
+      <go>
+        <command>hide +"mano_telecomando"</command>
+        <command>sound "tv_switch_off"</command>
+        <command>animation (0,492) -p=fore -a "mano_telecomando_off"</command>
+        <command>wait 0,5</command>
+        <command>stop "tv_channel"</command>
+        <command>hide +"scena_tv_notiziario"</command>
+        <command>wait 1,5</command>
+        <command>status 0</command>
+        <command>goto "salotto"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

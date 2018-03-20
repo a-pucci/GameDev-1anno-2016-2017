@@ -1,0 +1,29 @@
+<object name="cable de cobre">
+  <description>
+    <command>text "Una de las pocas ventajas de mi cuerpo esquelético es que no me afectan los calambres."</command>
+  </description>
+  <inventory>
+    <object name="pila">
+      <command>sound "pick_pila_cavo"</command>
+      <command>throw "pila"</command>
+      <command>throw "filo_rame"</command>
+      <command>pick n "circuito"</command>
+    </object>
+  </inventory>
+  <location name="cucina">
+    <hotspot ID="giostraio">
+      <command>text "Creo que voy en la dirección correcta." $102</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Pero en sentido contrario." $103</command>
+    </hotspot>
+  </location>
+  <location name="discarica">
+    <hotspot ID="pila stilo">
+      <command>text "Primero tendría que cogerlo." $95</command>
+    </hotspot>
+    <hotspot ID="batteria stilo">
+      <command>text "Primero tendría que cogerlo." $95</command>
+    </hotspot>
+  </location>
+</object>

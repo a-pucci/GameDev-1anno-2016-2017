@@ -1,0 +1,38 @@
+<location isfirstperson="True">
+  <script>
+  </script>
+  <entry name="primo_piano" X="1" Y="1" pose="u" />
+  <hotspots>
+    <action ID="annuncio_tendine">
+      <act>
+        <command>text "'Cortinas de ducha Cave Johnson: 206-002-456'."</command>
+        <command>wait 0,5</command>
+        <command>text "Espero que por lo menos estas no sean mentira."</command>
+      </act>
+    </action>
+    <action ID="annuncio_hotline">
+      <act>
+        <command>text "'Línea erótica de Rocko: 80-6969'."</command>
+        <command>wait 0,5</command>
+        <command>text "Cachondo, cerdo, cortés."</command>
+      </act>
+    </action>
+    <action ID="annuncio_corriere">
+      <act>
+        <command>0 text "Correo urgente, 24 horas, 7 días a la semana, 00-8458901."</command>
+        <command>0 text "Los paquetes tienen que estar embalados a prueba de golpes e impermeabilizados, y los contenidos deben indicarse claramente en la caja."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Podría embalar el armario y enviármelo a la casa nueva de Ronald..."</command>
+        <command>0 internal -"bagno/telone" 1</command>
+        <command>1 sound "pick_inserto_telefonico"</command>
+        <command>1 pick y "inserto_pubblicitario"</command>
+      </act>
+    </action>
+    <goto ID="elenco_telefonico_x_primo_piano" icon="d" PX="943" PY="1347">
+      <go>
+        <command>sound "elencotelefonico_close"</command>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

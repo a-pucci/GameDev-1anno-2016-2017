@@ -1,0 +1,36 @@
+<object name="Entschärfte Bombe">
+  <description>
+    <command>text "Das Ding stammt noch aus dem 2. Weltkrieg."</command>
+    <command>text "Offensichtlich aus Sicherheitsgründen entschärft."</command>
+  </description>
+  <inventory>
+    <object name="petardi">
+      <command>wait 0,5</command>
+      <command>text "Zuerst holen wir mal das Schießpulver raus ..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_polvere_sparo"</command>
+      <command>throw "petardi"</command>
+      <command>pick n "polvere_sparo"</command>
+      <command>wait 0,5</command>
+      <command>text "Und jetzt ..."</command>
+      <command>wait 1</command>
+      <command>sound "pick_bomba"</command>
+      <command>throw "polvere_sparo"</command>
+      <command>throw "bomba_disinnescata"</command>
+      <command>pick n "bomba"</command>
+    </object>
+    <object name="assenzio_radioattivo">
+      <command>text "Manchmal kann ich einfach nur staunen, dass du überhaupt noch am Leben bist." $7</command>
+    </object>
+    <object name="plutonio">
+      <command>text "Ich glaube wirklich nicht, dass diese Art von Bombe mit Plutonium funktioniert." $154</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Mit einer entschärften Bombe? Das wäre dann wohl der idiotischste Einbruchsversuch aller Zeiten." $75</command>
+    </hotspot>
+  </location>
+</object>

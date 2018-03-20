@@ -1,0 +1,265 @@
+<location>
+  <script>
+    <command>1 internal -"salotto_x_anticamera" -g 1</command>
+    <command>1 status 0</command>
+    <command>2 hide -"mostro di polvere forzuto"</command>
+    <command>2 status 0</command>
+    <command>3 background "salotto_traslocato"</command>
+    <command>3 show +"traslocatore_scemo_dorme"</command>
+    <command>3 show +"traslocatore_basso_dorme"</command>
+    <command>3 show +"pavimento_scale"</command>
+    <command>3 show +"scatoloni_salotto"</command>
+    <command>3 hide +"parete_grammofono"</command>
+    <command>3 hide +"dentiera_bicchiere_vuoto"</command>
+    <command>3 hide -"ritratto sospetto"</command>
+    <command>3 hide -"erbe aromatiche"</command>
+    <command>3 hide -"ritratto"</command>
+    <command>3 hide -"urna delle ceneri"</command>
+    <command>3 hide -"dentiera"</command>
+    <command>3 hide -"TV"</command>
+    <command>3 hide -"idolo"</command>
+    <command>3 hide -"salotto_x_cameretta"</command>
+    <command>3 area "salotto2"</command>
+    <command>3-4 show skinny (885,680)</command>
+    <command>3-4 pose d</command>
+    <command>3 wait 1</command>
+    <command>3 text "¿Es una broma?"</command>
+    <command>3 wait 1</command>
+    <command>3 expression "angry"</command>
+    <command>3 text "Ya está bien, ahora va a ser por las malas."</command>
+    <command>3 destination -"salotto_x_anticamera" (885,680)</command>
+    <command>3 status 4</command>
+  </script>
+  <entry name="cameretta" X="220" Y="670" pose="r" />
+  <entry name="anticamera" X="630" Y="555" pose="dl" />
+  <entry name="tv" X="1180" Y="863" pose="r" />
+  <scene bitmap="parete_grammofono" X="-2" Y="176" position="default" animated="False" />
+  <scene bitmap="corrimano_salotto" X="699" Y="414" position="default" animated="False" />
+  <scene bitmap="pavimento_scale" X="731" Y="414" position="default" animated="False" />
+  <scene bitmap="poltrona1" X="648" Y="703" position="default" animated="False" />
+  <scene bitmap="poltrona2" X="495" Y="548" position="default" animated="False" />
+  <scene bitmap="dentiera_bicchiere_vuoto" X="1860" Y="370" position="back" animated="False" />
+  <scene bitmap="scatoloni_salotto" X="1140" Y="421" position="fore" animated="False" />
+  <scene bitmap="traslocatore_scemo_dorme" X="1311" Y="869" position="divine" sound="traslocatore_grasso_russa" animated="True" loop="True" />
+  <scene bitmap="traslocatore_basso_dorme" X="565" Y="505" position="fore" sound="traslocatore_scemo_russa" animated="True" loop="True" />
+  <scene bitmap="mostro_polvere_bocca" X="1503" Y="514" position="fore" animated="False" />
+  <hotspots>
+    <item ID="ritratto sospetto">
+      <look>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ya sé lo que estás pensando."</command>
+        <command>expression "normal"</command>
+        <command>text "Solo es un truco, pero con él nos libramos de cuatro familiares y el gato perdió ocho de sus nueve vidas."</command>
+        <command>text "Ese bicho no va a acercarse al salón ni aunque le torturen."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "No puedo y, sobre todo, NO QUIERO tocarlo."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>pose d</command>
+        <command>text "Creo que se necesita permiso para llevar eso por ahí."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Lo mejor es no abrir ningún canal de comunicación con alguien así."</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "slenderman"</command>
+        <command>animation -"me" 00 -o=0,0 -c "slenderman"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </item>
+    <item ID="erbe aromatiche">
+      <look>
+        <command>text "Al padre de Ronald nunca se le ha dado muy bien la jardinería, así que te puedes hacer una idea del tiempo que les habrá dedicado."</command>
+        <command>text "A la madre de Ronald también le gustan. Dice que hacen de ambientador."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Seguro que sí..."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Ya soy lo bastante sospechoso con eso de que soy un esqueleto, pues imagínate a un esqueleto came... herborista, quiero decir. "</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "¡Ya te gustaría!"</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ya estás puesto, ¿eh?"</command>
+      </talk>
+    </item>
+    <character ID="ritratto">
+      <look>
+        <command>pose d</command>
+        <command>text "Aún me acuerdo de un día que me vio por accidente."</command>
+        <command>text "Menos mal que me confundió con Ronald."</command>
+        <command>wait 0,5</command>
+        <command>expression "perplexed"</command>
+        <command>text "Le estuvo cebando tres meses."</command>
+      </look>
+      <talk>
+        <command>text "Por fin he reunido el valor para contártelo."</command>
+        <command>text "Hace un tiempo... me salté la cena."</command>
+        <command>wait 1</command>
+        <command>expression "sad"</command>
+        <command>text "¡Por favor, abuela, no me mires así!"</command>
+        <command>wait 1</command>
+        <command>text "¡No me juzgues con la mirada!"</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Vale, tú ganas. Ahora mismo voy a por un sándwich."</command>
+      </talk>
+    </character>
+    <character ID="mostro di polvere">
+      <look>
+        <command>text "Es una especie de... pelusa enorme."</command>
+      </look>
+      <talk>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "¿Quién demonios eres?"</command>
+        <command>0 text -"me" -c=yellow "No me hables así, estúpido humano huesudo."</command>
+        <command>0 text -"me" -c=yellow "¡Estás dirigiéndote al futuro conquistador del mundo!"</command>
+        <command>0 expression "normal"</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=yellow "*risa aguda*"</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "En este juego no hay más que personajes tontos."</command>
+        <command>0 expression "angry"</command>
+        <command>0 text "No te rías, que también lo digo por ti."</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "mostro_polvere"</command>
+      </talk>
+    </character>
+    <character ID="mostro di polvere forzuto">
+      <look>
+        <command>text "Me alegro de haber contribuido a hacer del mundo un lugar inseguro."</command>
+      </look>
+      <talk>
+        <command>bitmap -"me" "mostro_polvere_forzuto_l"</command>
+        <command>dialog "mostro_polvere_forzuto"</command>
+      </talk>
+    </character>
+    <item ID="urna delle ceneri">
+      <look>
+        <command>0 text "Contiene las cenizas de la abuela."</command>
+        <command>0 text "Descanse en paz."</command>
+        <command>1 text "Quién sabe dónde estarán las cenizas."</command>
+      </look>
+      <pick>
+        <command>0 text "Confieso que siempre he sentido curiosidad."</command>
+        <command>wait 0,5</command>
+        <command>pose dr</command>
+        <command>sound "urn"</command>
+        <command>hide -"me"</command>
+        <command>sound "skinny_urn"</command>
+        <command>animation -skinny 00 -o=-8,-5 -a "skinny_urna"</command>
+        <command>wait 3,33</command>
+        <command>sound "pick_gum"</command>
+        <command>pick n "gomme_da_masticare"</command>
+        <command>wait 0,3</command>
+        <command>sound "urn"</command>
+        <command>show -"me"</command>
+        <command>0 wait 1</command>
+        <command>0 pose d</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Se fue tan de repente..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "normal"</command>
+        <command>0 text -"tutorial" "Eh... Deja que te interrumpa una última vez para decirte que a veces podrás coger un objeto más de una vez."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Otra situación a la que llegas tarde para demostrar una vez más lo negligente que eres, pero gracias por el consejo,"</command>
+        <command>0 nolook</command>
+        <command>0 internal -"cantiere/tubi metallici" -g 1</command>
+        <command>0 internal 1</command>
+      </pick>
+      <use>
+        <command>0 pose d</command>
+        <command>0 text "En palabras de la madre de Ronald..."</command>
+        <comment>[scimmiottando la possibile voce della madre di Ronald]</comment>
+        <command>0 text "'No es un cenicero.'"</command>
+        <command>0 wait 1</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Aunque si por su marido fuera lo sería."</command>
+        <command>1 pose d</command>
+        <command>1 text "Ya he cogido bastantes."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Los numeritos psíquicos no me van."</command>
+      </talk>
+    </item>
+    <item ID="dentiera">
+      <look>
+        <command>text "Como suele decirse... Nunca se sabe lo que va a venirte bien."</command>
+      </look>
+      <pick>
+        <command>sound "pick_dentures"</command>
+        <command>show +"dentiera_bicchiere_vuoto"</command>
+        <command>hide -"spiaggia/dentiera"</command>
+        <command>pick y "dentiera"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Puede que no me queden muchas partes del cuerpo, pero los dientes los conservo, gracias."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "¿Acaso te parece divertido?"</command>
+        <command>expression "normal"</command>
+        <command>wait 0,5</command>
+        <command>text "Pues la verdad es que a la dentadura parece que sí."</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=-0,0 -c "dentiera"</command>
+      </indipendent>
+    </item>
+    <action ID="TV">
+      <act>
+        <command>goto "tv"</command>
+      </act>
+    </action>
+    <action ID="idolo">
+      <act>
+        <command>pose d</command>
+        <command>text "Te sugiero que tengas cuidado con mover según qué cosas si valoras tu pellejo."</command>
+        <command>text "Yo ya perdí el mío hace tiempo."</command>
+      </act>
+    </action>
+    <goto ID="salotto_x_cameretta" icon="l" PX="-622" PY="499">
+      <go>
+        <command>goto "cameretta"</command>
+      </go>
+    </goto>
+    <goto ID="salotto_x_anticamera" icon="dr" PX="1238" PY="955">
+      <go>
+        <command>0 pose d</command>
+        <command>0 text "No puedo, esos dos siguen ahí."</command>
+        <command>1 goto "anticamera"</command>
+      </go>
+    </goto>
+    <character ID="tutorial">
+      <look />
+      <talk />
+    </character>
+  </hotspots>
+</location>

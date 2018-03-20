@@ -1,0 +1,77 @@
+<default>
+  <pick-n>
+    <phrase front="False" sarcastic="False">No lo necesito.</phrase>
+    <phrase front="False" sarcastic="False">Está bien donde está.</phrase>
+    <phrase front="False" sarcastic="False">Es mejor dejarlo en paz.</phrase>
+    <phrase front="False" sarcastic="False">No creo que sea buena idea.</phrase>
+    <phrase front="False" sarcastic="False">Ignóralo.</phrase>
+    <phrase front="False" sarcastic="False">No merece la pena.</phrase>
+    <phrase front="False" sarcastic="False">Preferiría alejarme de eso.</phrase>
+  </pick-n>
+  <pick-e>
+    <phrase front="True" sarcastic="True">¿Estás de broma?</phrase>
+    <phrase front="False" sarcastic="True">Claro...</phrase>
+    <phrase front="True" sarcastic="True">Algunas veces me gustaría estar yo al otro lado de la pantalla y obligarte a hacer tonterías.</phrase>
+    <phrase front="False" sarcastic="True">¿Por qué me ha tocado un jugador tan tonto?</phrase>
+    <phrase front="True" sarcastic="True">¿De verdad quieres saberlo?</phrase>
+    <phrase front="False" sarcastic="True">Por más que me guste la idea, debería dejarlo.</phrase>
+    <phrase front="True" sarcastic="False">La cleptomanía se te está yendo de las manos.</phrase>
+    <phrase front="False" sarcastic="False">El objeto absolutamente inútil de turno.</phrase>
+    <phrase front="False" sarcastic="True">Sería mejor que de vez en cuando pensaras un poco antes de actuar.</phrase>
+    <phrase front="False" sarcastic="True">Que pase el jugador siguiente, por favor. Ya me he cansado de este.</phrase>
+    <phrase front="True" sarcastic="False">Deja de pedirme que coja cosas inútiles. ¡El tiempo es dinero!</phrase>
+    <phrase front="True" sarcastic="True">¿Podemos seguir, por favor?</phrase>
+    <phrase front="True" sarcastic="False">No te creas que puedes meterme en la caja torácica cualquier cosa que se te ocurra.</phrase>
+  </pick-e>
+  <use>
+    <phrase front="False" sarcastic="False">No sabría qué hacer.</phrase>
+    <phrase front="False" sarcastic="False">Es muy improbable.</phrase>
+    <phrase front="False" sarcastic="False">Mejor no.</phrase>
+    <phrase front="False" sarcastic="False">Se me están acabando las ideas.</phrase>
+    <phrase front="False" sarcastic="False">¡No va a funcionar!</phrase>
+    <phrase front="False" sarcastic="False">No te sigo.</phrase>
+    <phrase front="False" sarcastic="False">No.</phrase>
+    <phrase front="False" sarcastic="False">No sabría usarlo.</phrase>
+    <phrase front="False" sarcastic="False">No entiendo adónde quieres llegar.</phrase>
+    <phrase front="False" sarcastic="False">No es tu turno.</phrase>
+    <phrase front="False" sarcastic="False">Usarlo todo con todo no va a funcionar en esta aventura.</phrase>
+    <phrase front="False" sarcastic="False">Hazlo TÚ.</phrase>
+    <phrase front="False" sarcastic="False">No entiendo cómo demonios va a funcionar.</phrase>
+    <phrase front="False" sarcastic="False">Siento el extraño impulso de hacer cosas que no quiero hacer, pero voy a aguantarme.</phrase>
+    <phrase front="False" sarcastic="False">Me faltan las fuerzas para seguir contrarrestando tanta estupidez con respuestas ingeniosas.</phrase>
+    <phrase front="False" sarcastic="False">Podría funcionar... si no fuera una estupidez tan grande.</phrase>
+    <phrase front="False" sarcastic="False">Un poco de pensamiento lateral no le hace daño a nadie, pero estás entrando en el terreno de lo absurdo.</phrase>
+    <phrase front="False" sarcastic="False">¿Eso es lo mejor que sabes hacer?</phrase>
+    <phrase front="False" sarcastic="False">Se supone que el ratón no sirve para eso.</phrase>
+    <phrase front="False" sarcastic="False">Para un momento. Quiero que pienses en lo que me has pedido.</phrase>
+    <phrase front="False" sarcastic="False">¿Puedes ser más concreto?</phrase>
+    <phrase front="False" sarcastic="False">Lo que me pides es de enfermos.</phrase>
+    <phrase front="False" sarcastic="False">¿Por qué debería?</phrase>
+    <phrase front="False" sarcastic="False">A todo el mundo se le ocurren planes... que no funcionan.</phrase>
+    <phrase front="False" sarcastic="False">Creo que así no voy a avanzar.</phrase>
+    <phrase front="False" sarcastic="False">No sé si te das cuenta de que pedirme eso no tiene sentido.</phrase>
+  </use>
+  <talk>
+    <phrase front="True" sarcastic="True">Vaya imaginación tienes...</phrase>
+    <phrase front="True" sarcastic="True">¿Te ha sentado mal la comida?</phrase>
+    <phrase front="False" sarcastic="False">¿Hablas español?</phrase>
+    <phrase front="True" sarcastic="True">¿Acaso parezco desesperado?</phrase>
+    <phrase front="False" sarcastic="True">Me estoy quedando sin respuestas.</phrase>
+    <phrase front="True" sarcastic="False">¿Cuándo vas a dejar de hacer tonterías?</phrase>
+    <phrase front="True" sarcastic="True">Tu madre no te abrazaba mucho cuando eras pequeño, ¿eh?</phrase>
+    <phrase front="True" sarcastic="False">¿Te crees muy gracioso?</phrase>
+    <phrase front="True" sarcastic="True">¿No te parece que te estás pasando?</phrase>
+    <phrase front="True" sarcastic="False">A veces tu estupidez me deja perplejo.</phrase>
+    <phrase front="True" sarcastic="True">No te gusta estar solo, ¿eh?</phrase>
+    <phrase front="True" sarcastic="False">Tienes que estar muy desesperado para intentarlo.</phrase>
+    <phrase front="True" sarcastic="True">No me sorprende que no tengas amigos.</phrase>
+    <phrase front="False" sarcastic="False">Hola, hola. ¿Hay alguien en casa? ¿Eh? ¡Piensa, McFly, piensa!</phrase>
+    <phrase front="True" sarcastic="True">Preferiría guardar un minuto de silencio... en memoria de tu cerebro.</phrase>
+    <phrase front="True" sarcastic="False">¿Estás haciendo el ridículo o me lo parece a mí?</phrase>
+    <phrase front="True" sarcastic="False">NADIE quiere hablar contigo.</phrase>
+    <phrase front="True" sarcastic="False">¿En serio?</phrase>
+    <phrase front="True" sarcastic="False">A lo mejor nos estamos pasando un poco.</phrase>
+    <phrase front="True" sarcastic="False">Solo podría justificar esa acción si me demuestras que estás drogado.</phrase>
+    <phrase front="True" sarcastic="False">Me parece que necesitas urgentemente un descanso.</phrase>
+  </talk>
+</default>

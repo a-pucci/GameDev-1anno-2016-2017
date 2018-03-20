@@ -1,0 +1,6 @@
+<object name="карта">
+  <description>
+    <command>text "Карта окрестностей."</command>
+  </description>
+  <inventory />
+</object>

@@ -1,0 +1,45 @@
+<object name="screw">
+  <description>
+    <command>text "I don't know which direction you screw it or unscrew it anymore."</command>
+    <command>text "These are the kinds of things that keep me awake at night."</command>
+  </description>
+  <inventory>
+    <object name="trapano">
+      <command>sound "pick_drill_vite"</command>
+      <command>pick n "trapano_funzionante"</command>
+      <command>throw "trapano"</command>
+      <command>throw "vite"</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="Orso">
+      <command>text "Is this yours?" $280</command>
+      <command>expression -"Orso" "up_sarcastic"</command>
+      <command>text -"Orso" "Ha ha ha. Very funny." $226</command>
+      <command>achievement "consulto_psichiatrico"</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Putting a screw into an operating microwave could be really dangerous... and I don't want Z8 to take it away from me." $274</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "I'm afraid you're missing a quite obvious intermediary step." $275</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="marlin">
+      <command>text "It already has enough piercing." $276</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>text "It'd be better to pick it up first." $95</command>
+    </hotspot>
+  </location>
+</object>

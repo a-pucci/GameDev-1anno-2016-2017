@@ -1,0 +1,435 @@
+<location>
+  <script>
+    <command>0-1 hide -"calderone_presente"</command>
+    <command>0-1 hide -"calderone_1861"</command>
+    <command>0-1 hide -"calderone_1981"</command>
+    <command>0-1 hide -"targa antica"</command>
+    <command>0 cutscene "viaggio_tempo_1863"</command>
+    <command>0 if internal -"targa antica" 1</command>
+    <command>0 show -"calderone_1861"</command>
+    <command>0 show -"targa antica"</command>
+    <command>0 fi</command>
+    <command>1 cutscene "viaggio_tempo_1981"</command>
+    <command>1 if internal -"targa antica" 2</command>
+    <command>1 show -"calderone_1981"</command>
+    <command>1 show -"targa antica"</command>
+    <command>1 fi</command>
+    <command>0-1 load "viaggio_tempo_back"</command>
+    <command>0-1-4 map n</command>
+    <command>0-1 area &gt;"spiaggia" "spiaggia_x_macchina_tempo"</command>
+    <command>0-1 show skinny (1532,774)</command>
+    <command>0-1 pose dl</command>
+    <command>0-1 wait 1</command>
+    <command>0-1 move (1380,869)</command>
+    <command>0-1 pose dl</command>
+    <command>0-1 area &gt;"spiaggia" "spiaggia"</command>
+    <command>0-1 status 4</command>
+    <command>3 wait 0,5</command>
+    <command>3 text "On dirait que la pièce est enfin arrivée."</command>
+    <command>3 status 2</command>
+  </script>
+  <entry name="mappa" X="816" Y="616" pose="dr" />
+  <entry name="grotta" X="244" Y="686" pose="dr" />
+  <entry name="macchina_tempo" X="1380" Y="869" pose="dl" />
+  <sound filename="battigia" />
+  <scene bitmap="battigia" X="-1" Y="560" position="back" animated="True" loop="True" />
+  <scene bitmap="pale_mulino" X="69" Y="15" position="back" animated="True" loop="True" />
+  <scene bitmap="ruota_panoramica" X="1510" Y="60" position="back" animated="True" loop="True" />
+  <scene bitmap="pilastro_front" X="746" Y="863" position="fore" animated="False" />
+  <scene bitmap="rete_front" X="746" Y="809" position="fore" animated="True" loop="True" />
+  <scene bitmap="macchina_tempo_front" X="1374" Y="354" position="default" animated="False" />
+  <scene bitmap="carburatore_front" X="1515" Y="719" position="fore" animated="False" />
+  <scene bitmap="scogli_front" X="48" Y="592" position="fore" animated="False" />
+  <hotspots>
+    <item ID="calderone_presente">
+      <look>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "Parfois, les mangeurs de pommes professionnels prennent les choses trop à cœur."</command>
+        <command>1 text "Les pommes ne sont plus qu'un lointain souvenir."</command>
+      </look>
+      <pick>
+        <command>0 default e -pick</command>
+        <command>1 text "Il est vide."</command>
+        <command>2 sound "pick_soldi"</command>
+        <command>2 pick n "banconote"</command>
+        <command>2 internal -"calderone_1981" 1</command>
+        <command>2 internal -"calderone_1861" 1</command>
+        <command>2 internal 1</command>
+      </pick>
+      <use>
+        <command>0 text "Quelqu'un a dû mal interpréter les règles."</command>
+        <command>1-2 text "Il ne reste plus grand-chose pour jouer."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=8,2 -c "calderone_torsoli"</command>
+        <command>1 wait 5</command>
+      </indipendent>
+    </item>
+    <item ID="calderone_1861">
+      <look>
+        <command>text "La rouille n'est plus là."</command>
+      </look>
+      <pick>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Il ne reste que des graines de pommes à l'intérieur. Mais si tu les veux vraiment..."</command>
+        <command>0 lookat -"me"</command>
+        <command>0 wait 0,5</command>
+        <command>0 sound "pick_semi"</command>
+        <command>0 pick n "semi_mela"</command>
+        <command>0 internal -"calderone_presente" -g 1</command>
+        <command>0 internal -"calderone_presente" -g -i 1</command>
+        <command>0 internal -"calderone_1981" -g 1</command>
+        <command>0 internal -"calderone_1981" -g -i 1</command>
+        <command>0 internal 1</command>
+        <command>1 text "C'est vide."</command>
+        <command>2 sound "pick_monete"</command>
+        <command>2 pick n "monete_antiche"</command>
+        <command>2 internal -"calderone_presente" 1</command>
+        <command>2 internal -"calderone_1981" 1</command>
+        <command>2 internal 1</command>
+      </pick>
+      <use>
+        <command>text "Il ne reste pratiquement plus rien pour jouer..."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="calderone_1981">
+      <look>
+        <command>text "Il était déjà rouillé en 1981 apparemment."</command>
+      </look>
+      <pick>
+        <command>0 text "Elles sont bonnes pour la santé, mais ce n'est pas un problème dont j'ai à faire face."</command>
+        <command>1 text "C'est vide."</command>
+        <command>2 sound "pick_monete"</command>
+        <command>2 pick n "penny"</command>
+        <command>2 internal -"calderone_presente" 1</command>
+        <command>2 internal -"calderone_1861" 1</command>
+        <command>2 label -"elenco_telefonico/annuncio_corriere" "ele_annuncio_corriere_label_1"</command>
+        <command>2 internal -"elenco_telefonico/annuncio_corriere" -g 1</command>
+        <command>2 internal 1</command>
+      </pick>
+      <use>
+        <command>0 text "Je ne pense pas que je veux participer à un jeu solo."</command>
+        <command>1-2 text "Il ne reste pratiquement plus rien à jouer ..."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=8,1 -c "calderone_mele"</command>
+        <command>1 wait 5</command>
+      </indipendent>
+    </item>
+    <item ID="dentiera">
+      <look>
+        <command>text "On dirait que quelqu'un a littéralement perdu ses dents ici."</command>
+      </look>
+      <pick>
+        <command>sound "pick_dentures"</command>
+        <command>pick y "dentiera"</command>
+        <command>internal -g 2</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Si tu n'arrêtes pas de me faire faire des actions inutiles, tu vas finir par en avoir besoin."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="targa antica">
+      <look>
+        <command>text "Maintenant le chaudron a l'air d'avoir un peu plus de vécu."</command>
+      </look>
+      <pick>
+        <command>internal -g 0</command>
+        <command>sound "pick_targa"</command>
+        <command>pick y "targa_antica"</command>
+      </pick>
+      <use>
+        <command>if internal -"targa antica" 1</command>
+        <command>sound "targa"</command>
+        <command>animation -"me" 00 -o=0,0 "targa_1861_1981"</command>
+        <command>bitmap -"me" "targa_1981"</command>
+        <command>internal -"macchina_tempo/going_to_1981" -g 1</command>
+        <command>internal -g 2</command>
+        <command>fie</command>
+        <command>if internal -"targa antica" 2</command>
+        <command>sound "targa"</command>
+        <command>animation -"me" 00 -o=0,0 "targa_1981_1861"</command>
+        <command>bitmap -"me" "targa_1861"</command>
+        <command>internal -g 1</command>
+        <command>fie</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="macchina del tempo">
+      <look>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Le scientifique a dû voir trop d'épisodes de Dr. Who."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>0 text "Ces rubans de balisage sont assez explicites..."</command>
+        <command>1 pose d</command>
+        <command>1 text "Je ne sais vraiment pas par où commencer."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Regarde, son inventeur est à quelques pixels de là."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Peut-être que c'est mieux de lui parler à lui."</command>
+      </talk>
+    </item>
+    <goto ID="macchina_tempo_goto" PX="2080" PY="534">
+      <go>
+        <command>area &gt;"spiaggia" "spiaggia_x_macchina_tempo"</command>
+        <command>move (1532,774)</command>
+        <command>area &gt;"spiaggia" "spiaggia"</command>
+        <command>0 goto "macchina_tempo"</command>
+        <command>1 load "viaggio_tempo_back"</command>
+        <command>1 map y</command>
+        <command>1 status &gt;"spiaggia" 2</command>
+        <command>1 pose dl</command>
+        <command>1 sound "tempo_apre"</command>
+        <command>1 animation (1305,330) -p=fore "porte_macchina_chiusura"</command>
+        <command>1 nolook</command>
+        <command>1 background &gt;"spiaggia" "spiaggia"</command>
+        <command>1 show +"ruota_panoramica"</command>
+        <command>1 show -"scienziato"</command>
+        <command>1 show -"abbronzatura perfetta"</command>
+        <command>1 hide -"pescato"</command>
+        <command>1 hide +"rete_front"</command>
+        <command>1 hide -"Manet"</command>
+        <command>1 hide -"ragazzo sconsolato"</command>
+        <command>1 hide -"jumanji"</command>
+        <command>1 bitmask -"targa antica" "targa"</command>
+        <command>1 show -"calderone_presente"</command>
+        <command>1 hide -"calderone_1861"</command>
+        <command>1 hide -"calderone_1981"</command>
+        <command>1 show -"spiaggia_x_grotta"</command>
+        <command>1 if not internal -"targa antica" 0</command>
+        <command>1 show -"targa antica"</command>
+        <command>1 fi</command>
+        <command>1 area &gt;"spiaggia" "spiaggia_x_macchina_tempo"</command>
+        <command>1 cutscene "viaggio_tempo_back"</command>
+        <command>1 wait 1</command>
+        <command>1 move (1380,869)</command>
+        <command>1 area &gt;"spiaggia" "spiaggia"</command>
+        <command>1 pose dl</command>
+        <command>1 nolook</command>
+        <command>1 internal 0</command>
+      </go>
+    </goto>
+    <item ID="bocchetta_carburatore">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <item ID="pescato">
+      <look>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Je crois que j'ai vu quelque chose qui brille dans le filet."</command>
+        <command>0 expression "normal"</command>
+        <command>0 pose dr</command>
+        <command>0 wait 0,5</command>
+        <command>0 move (839,851)</command>
+        <command>0 stop -ost</command>
+        <command>0 sound "skinny_salto"</command>
+        <command>0 animation -skinny 00 -o=20,126 -e=4000 -a "skinny_rete"</command>
+        <command>0 wait 2</command>
+        <command>0 screen -fi=1500 -w=2000</command>
+        <command>0 show skinny (1264,911)</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 pose dl</command>
+        <command>0 ost</command>
+        <command>0 screen -fo=1500 -w=50</command>
+        <command>0 nolook</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Ça me servira de leçon. La prochaine fois, je m'occuperai de mes affaires."</command>
+        <command>0 internal -"catacomba/zombie" -g 2</command>
+        <command>0 internal 1</command>
+        <command>1 pose d</command>
+        <command>1 text "J'ai compris la leçon."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Pêchés du jour ok, mais c'est un peu trop."</command>
+      </pick>
+      <use>
+        <command>text "Je n'ai jamais été un grand fan de pêche."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+      <indipendent>
+        <command>sound "rete_spiaggia"</command>
+        <command>animation -"me" 00 -o=5,1 -c -p=back "rete_back"</command>
+      </indipendent>
+    </item>
+    <item ID="jumanji">
+      <look>
+        <command>text "Jumanji, un jeu pour tous ceux qui espèrent laisser derrière eux leur univers."</command>
+      </look>
+      <pick>
+        <command>text "La vie dans l'armoire n'est sûrement pas facile, mais c'est toujours mieux que de vivre dans la jungle."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Je suis presque tenté de te laisser lancer les dés en premier."</command>
+      </use>
+      <talk>
+        <command>text "Tu espères encore un 5 ou un 8, n'est-ce pas Robin ?"</command>
+      </talk>
+    </item>
+    <character ID="scienziato">
+      <look>
+        <command>text "Ce sang ne me dit rien qui vaille."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>if shown -"macchina_tempo_goto"</command>
+        <command>bitmap -"me" "scienziato"</command>
+        <command>fi</command>
+        <command>dialog "scienziato"</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 animation -"me" 00 -o=0,0 -c "scienziato_idle"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>1 wait 5</command>
+      </indipendent>
+    </character>
+    <character ID="abbronzatura perfetta">
+      <look>
+        <command>expression "perplexed"</command>
+        <command>text "Un homme de couleur qui fait bronzette au clair de lune ?"</command>
+        <command>pose d</command>
+        <command>text "C'est une blague, n'est-ce pas ?"</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Ce n'est pas parce qu'on est dans un jeu d'aventure qu'on doit déranger tout le monde."</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=0,0 -c "ciccione"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="Manet">
+      <look>
+        <command>text "Malheureusement, je n'étais pas très bon en histoire de l'art."</command>
+        <command>wait 0,5</command>
+        <command>text "Il peint deux navires en pleine mer, peut-être une bataille."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>animation -"me" 00 -o=14,28 "manet_braccio_giu"</command>
+        <command>bitmap -"me" "manet_l"</command>
+        <command>1 text "Votre peinture avance, monsieur Manet ?"</command>
+        <command>1 wait 0,5</command>
+        <command>1 text -"me" "* Totalement ruinée. *"</command>
+        <command>1 text "Pardon quoi ?"</command>
+        <command>1 text -"me" "Rien rien."</command>
+        <command>0 expression -"me" "scared"</command>
+        <command>0 text -"me" "Oh mon dieu ! Qui va là de grâce ?!?"</command>
+        <command>0 text "Mon nom est Manny... Manny Calavera."</command>
+        <command>0 wait 1</command>
+        <command>0 text "Enfin, je veux dire... Je suis la Grande Faucheuse."</command>
+        <command>0 text "Je ne voulais pas vous effrayer, monsieur Manet."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Votre réputation vous a précédé, vous savez..."</command>
+        <command>0 expression -"me" ""</command>
+        <command>0 text -"me" "Eh bien, vous me flattez..."</command>
+        <command>0 expression -"me" "scared"</command>
+        <command>0 expression "angry"</command>
+        <command>0 text "Mais maintenant assez plaisanté ! Ce n'est pas pour ça que je suis ici."</command>
+        <command>0 expression "normal"</command>
+        <command>0 text -"me" "Je suppose que mon heure est venue."</command>
+        <command>0 text "Correct, mais pas tout à fait. Je pourrais vous donner une seconde chance."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" "Tout ce que vous voulez, mais épargnez ma vie, je vous en prie !"</command>
+        <command>0 text "Ajoutez-moi à votre tableau dans ce cas. Dans la mer, en grand et très visible."</command>
+        <command>0 expression -"me" ""</command>
+        <command>0 text -"me" "Mais c'est une demande absurde ! Ce serait complètement disproportionné, sans parler du fait que ça ruinerait absolument tout le pathos de la scène."</command>
+        <command>0 wait 0,5</command>
+        <command>0 expression "angry"</command>
+        <command>0 text "Je dois prendre ça pour un non, alors ?"</command>
+        <command>0 expression "normal"</command>
+        <command>0 expression -"me" "sad"</command>
+        <command>0 text -"me" "Pardonnez-moi, Grande Faucheuse. Votre vœu sera exaucé."</command>
+        <command>0 achievement "irruzione_arte"</command>
+        <command>0 internal -g 1</command>
+        <command>bitmap -"me" "manet"</command>
+        <command>animation -"me" 00 -o=14,28 "manet_braccio_su"</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=14,28 -c "manet_dipinge"</command>
+        <command>animation -"me" 00 -o=14,28 -c "manet_dipinge"</command>
+        <command>animation -"me" 00 -o=14,28 -c "manet_dipinge"</command>
+        <command>animation -"me" 00 -o=14,28 -c "manet_dipinge"</command>
+        <command>animation -"me" 00 -o=14,28 -c "manet_dipinge"</command>
+        <command>animation -"me" 00 -o=14,28 -c "manet_tavolozza"</command>
+      </indipendent>
+    </character>
+    <character ID="ragazzo sconsolato">
+      <look>
+        <command>text "Il ne semble pas aller très bien."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>text "Pourquoi êtes-vous si triste ?"</command>
+        <command>text -"me" "Tous les gens de mon âge ont de longs cheveux rebondissants."</command>
+        <command>text -"me" "Et moi ? J'ai pratiquement perdu tous mes cheveux."</command>
+        <command>wait 0,5</command>
+        <command>text "Perdre ses cheveux dans les années 80, c'est à peu près la pire chose qui pourrait vous arriver."</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>animation -"me" 00 -o=0,0 -c "mattia_blink"</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+        <command>wait 0,5</command>
+      </indipendent>
+    </character>
+    <goto ID="spiaggia_x_grotta" icon="r" PX="541" PY="453">
+      <go>
+        <command>goto "grotta"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

@@ -1,0 +1,24 @@
+<object name="Bettpfosten">
+  <description>
+    <command>text "Der Knauf ist das neue Excalibur."</command>
+  </description>
+  <inventory />
+  <location name="scantinato">
+    <hotspot ID="fiamma ossidrica">
+      <command>load "pomello_fiamma_ossidrica"</command>
+      <command>wait 0,5</command>
+      <command>cutscene "pomello_fiamma_ossidrica"</command>
+      <command>screen -fo=1500 -w=1 -a</command>
+      <command>wait 1,2</command>
+      <command>sound "pick_vite"</command>
+      <command>pick n "vite"</command>
+      <command>throw "pomello"</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>expression "sarcastic"</command>
+      <command>text "Ich hätte auch nichts gegen 'Aufwärmen', aber doch ganz bestimmt nicht so." $261</command>
+    </hotspot>
+  </location>
+</object>

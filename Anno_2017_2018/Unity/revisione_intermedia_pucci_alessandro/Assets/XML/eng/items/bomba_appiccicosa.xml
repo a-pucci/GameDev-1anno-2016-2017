@@ -1,0 +1,48 @@
+<object name="charged and sticky bomb">
+  <description>
+    <command>text "Let's just hope nobody will mistake me for a kamikaze."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "Sometimes I'm amazed at how you can still be alive." $7</command>
+    </object>
+    <object name="fiammiferi">
+      <command>text "Sometimes I'm amazed at how you can still be alive." $7</command>
+    </object>
+  </inventory>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>sound "pick_bomba_appicicosa"</command>
+      <command>throw "bomba_appiccicosa"</command>
+      <command>show -"bomba"</command>
+      <command>hide -"cassaforte"</command>
+      <command>internal -"piano_terra/deejay" 1</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="ciccione">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "There's surely a more discreet way to discourage him from his bath." $72</command>
+    </hotspot>
+  </location>
+  <location name="catacomba">
+    <hotspot ID="fiaccola">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sometimes I'm amazed at how you can still be alive." $7</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="fiammiferi">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Sometimes I'm amazed at how you can still be alive." $7</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="picasso">
+      <command>text "It's impossible to do any worse." $73</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,12 @@
+<object name="pirita">
+  <description>
+    <command>text "Lo peor que le puede pasar a un minero de oro."</command>
+  </description>
+  <inventory />
+  <location name="bonus">
+    <hotspot ID="parete di vetro">
+      <command>pose d</command>
+      <command>text "El cristal es blindado." $151</command>
+    </hotspot>
+  </location>
+</object>

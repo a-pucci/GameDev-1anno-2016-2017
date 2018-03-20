@@ -1,0 +1,48 @@
+<object name="pied-de-biche">
+  <description>
+    <command>text "Sur le pied-de-biche, il y a deux lettres."</command>
+    <command>text "G.F."</command>
+    <command>wait 0,5</command>
+    <command>text "Humm..."</command>
+  </description>
+  <inventory />
+  <location name="retro_furgone">
+    <hotspot ID="saracinesca">
+      <command>wait 0,5</command>
+      <command>sound "shutter"</command>
+      <command>show +"saracinesca_forzata"</command>
+      <command>show -"retro_furgone_x_furgone"</command>
+      <command>hide -"me"</command>
+      <command>throw "piede_di_porco"</command>
+      <command>wait 1,5</command>
+      <command>text (50,425) -c=fuxia "Tu as réussi finalement !"</command>
+      <command>wait 0,5</command>
+      <command>text "Lorsqu'on utilise les bonnes manières, on obtient toujours ce que l'on veut, Nut."</command>
+    </hotspot>
+  </location>
+  <location name="finestra">
+    <hotspot ID="furgone">
+      <command>text "N'est-ce pas un peu trop loin ?" $252</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="parchimetro">
+      <command>wait 0,5</command>
+      <command>bitmap -"me" "parchimetro_rotto"</command>
+      <command>sound "parchimetro"</command>
+      <command>animation -"me" 00 -o=164,186 "parchimetro"</command>
+      <command>wait 1</command>
+      <command>text "Je préfère considérer ça comme de la triche plutôt qu'un cambriolage." $253</command>
+      <command>pose d</command>
+      <command>text "Après tout, nous sommes encore dans un jeu vidéo, non ?" $254</command>
+      <command>internal -g 1</command>
+      <command>achievement "high_score"</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="portiera">
+      <command>pose d</command>
+      <command>text "Il est inutile d'entrer dans la camionette. Je ne ferais qu'attirer leur attention en brisant le verre." $255</command>
+    </hotspot>
+  </location>
+</object>

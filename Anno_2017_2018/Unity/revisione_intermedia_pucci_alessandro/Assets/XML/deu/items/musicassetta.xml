@@ -1,0 +1,30 @@
+<object name="Videokassette">
+  <description>
+    <command>text "Offenbar ist das eine Videokassette ... Was auch immer das heißen mag."</command>
+    <command>text "Ich liebe Rätsel."</command>
+  </description>
+  <inventory />
+  <location name="interno_gru">
+    <hotspot ID="mangianastri">
+      <command>sound "pos_cassetta"</command>
+      <command>show +"musicassetta_off"</command>
+      <command>show -"musicassetta"</command>
+      <command>hide -"me"</command>
+      <command>throw "musicassetta"</command>
+    </hotspot>
+  </location>
+  <location name="casa_albero">
+    <hotspot ID="dragone">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Das ist eine Musicbox, keine Stereo-Anlage." $130</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="disco doro">
+      <command>text "Technischer Fortschritt im Vergleich. " $131</command>
+      <command>pose d</command>
+      <command>text "Wobei Vinyl ja qualitativ eindeutig überlegen ist." $132</command>
+    </hotspot>
+  </location>
+</object>

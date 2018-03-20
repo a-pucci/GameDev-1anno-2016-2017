@@ -1,0 +1,38 @@
+<object name="guindilla">
+  <description>
+    <command>text "El picante se concentra en las semillas."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>text "Me temo que la guindilla no es lo bastante picante." $15</command>
+    </object>
+    <object name="viagra">
+      <command>text "Es bien conocido que la guindilla es afrodisiaca, pero seguro que no puede ni igualar lo que ha conseguido la medicina moderna." $140</command>
+    </object>
+  </inventory>
+  <location name="grotta">
+    <hotstpot name="barattolo di vernice">
+      <command>if internal 0</command>
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "¿Por qué iba a mojarlo en un bote de pintura blanca?"</command>
+      <command>fie</command>
+      <command>if internal 1</command>
+      <command>wait 0,5</command>
+      <command>throw "peperoncino"</command>
+      <command>sound "pick_jalapegno_inzuppato"</command>
+      <command>pick n "jalapeno"</command>
+      <command>fie</command>
+    </hotstpot>
+  </location>
+  <location name="cabina">
+    <hotspot ID="viagra">
+      <command>text "Es bien conocido que la guindilla es afrodisiaca, pero seguro que no puede ni igualar lo que ha conseguido la medicina moderna." $140</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>text "Está acostumbrado a algo muy distinto." $141</command>
+    </hotspot>
+  </location>
+</object>

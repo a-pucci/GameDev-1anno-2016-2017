@@ -1,0 +1,42 @@
+<object name="Kaugummi">
+  <description>
+    <command>text "Ich könnte das niemals alles kauen, selbst wenn ich noch eine Ewigkeit vor mir hätte."</command>
+    <command>wait 0,5</command>
+    <command>text "Und ich fürchte, das habe ich sogar."</command>
+  </description>
+  <inventory>
+    <object name="dentiera">
+      <command>text "Das könnte das letzte Gefecht zwischen Gut und Karies entfesseln." $223</command>
+    </object>
+  </inventory>
+  <location name="ingresso">
+    <hotspot ID="moai">
+      <command>if internal -"moai" 0</command>
+      <command>internal -g 1</command>
+      <command>internal -i 1</command>
+      <command>throw "gomme_da_masticare"</command>
+      <command>fie</command>
+      <command>text "Ich will ihn nicht in Verlegenheit bringen." $38</command>
+    </hotspot>
+  </location>
+  <location name="anticamera">
+    <hotspot ID="robot">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Glaubst du ernsthaft, der kann mit dem Mund was kauen." $220</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Du würdest ernsthaft jemandem ein Kaugummi geben, der eh schon Zahnschmerzen hat?" $221</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Du hast einfach kein Herz!" $222</command>
+    </hotspot>
+  </location>
+  <location name="salotto">
+    <hotspot ID="dentiera">
+      <command>text "Das könnte das letzte Gefecht zwischen Gut und Karies entfesseln." $223</command>
+    </hotspot>
+  </location>
+</object>

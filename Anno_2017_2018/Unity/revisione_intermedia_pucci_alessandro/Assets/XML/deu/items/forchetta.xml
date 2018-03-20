@@ -1,0 +1,62 @@
+<object name="Alte Gabel">
+  <description>
+    <command>text "Rock 'n' Roll, Baby!"</command>
+  </description>
+  <inventory>
+    <object name="lenza">
+      <command>sound "pick_lenza"</command>
+      <command>pick n "arpione"</command>
+      <command>throw "lenza"</command>
+      <command>throw "forchetta"</command>
+    </object>
+    <object name="trapano">
+      <command>text "Das ist kein Wurfanker." $202</command>
+    </object>
+  </inventory>
+  <location name="bagno1">
+    <hotspot ID="freccette">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Ich glaube nicht, dass der Einsatz einer Gabel groß was ändern würde." $211</command>
+    </hotspot>
+  </location>
+  <location name="cameretta">
+    <hotspot ID="trapano">
+      <command>expression "perplexed"</command>
+      <command>text "Das ist kein Wurfanker." $202</command>
+    </hotspot>
+  </location>
+  <location name="cucina1">
+    <hotspot ID="microonde">
+      <command>text "An sich ist das ja Plastik. Ich fürchte, das würde schmelzen." $212</command>
+    </hotspot>
+  </location>
+  <location name="fogna">
+    <hotspot ID="coccodrillo">
+      <command>pose d</command>
+      <command>text "Ich denke, ich brauche etwas deutlich Effektiveres als eine einfache Gabel." $213</command>
+    </hotspot>
+    <hotspot ID="lenza">
+      <command>text "Ich nehme diesen Gegenstand am besten erstmal mit." $95</command>
+    </hotspot>
+  </location>
+  <location name="ingresso">
+    <hotspot ID="scatoloni2">
+      <command>text "Ich muss ganz sicher sein, dass ich das Ding wieder zurückbekomme, wenn ich es erst einmal geworfen habe." $214</command>
+    </hotspot>
+  </location>
+  <location name="marciapiede">
+    <hotspot ID="portiera">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Das wäre dann wohl der idiotischste Einbruchsversuch aller Zeiten." $169</command>
+    </hotspot>
+  </location>
+  <location name="retro_furgone">
+    <hotspot ID="saracinesca">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Das wäre dann wohl der idiotischste Einbruchsversuch aller Zeiten." $169</command>
+    </hotspot>
+  </location>
+</object>

@@ -1,0 +1,334 @@
+<location>
+  <script>
+    <command>4 if internal -"giardino/quarterback" 1</command>
+    <command>4 internal #"quarterback" -g 1</command>
+    <command>4 fi</command>
+    <command>4 status 0</command>
+    <comment>[esplosione bomba]</comment>
+    <command>3 pause -"pappagallo"</command>
+    <command>3 pause -"ragazzo alticcio"</command>
+    <command>3 hide +"perdita_paratia"</command>
+    <command>3 stop -ost</command>
+    <command>3 hide skinny</command>
+    <command>3 bitmap -"primo_piano_x_studio" "porta_studio_skinny"</command>
+    <command>3 screen c -fo=1500 -w=100</command>
+    <command>3 wait 1</command>
+    <command>3 sound "esplosione_bomba"</command>
+    <command>3 animation -"primo_piano_x_studio" 00 -o=33,8 -e=2500 -a "esplosione_studio"</command>
+    <command>3 wait 1</command>
+    <command>3 background &gt;"studio" "studio_esploso"</command>
+    <command>3 show +"studio/scrivania_studio_esplosa"</command>
+    <command>3 hide +"studio/scrivania_studio"</command>
+    <command>3 bitmap -"studio/pianta carnivora" "pianta_carnivora_morta_bruciata"</command>
+    <command>3 bitmap -"studio/studio_x_primo_piano" "porta_studio_aperta"</command>
+    <command>3 hide -"studio/bomba"</command>
+    <command>3 show -"studio/banconote"</command>
+    <command>3 status &gt;"studio" 1</command>
+    <command>3 screen c -fi=2000 -w=100</command>
+    <command>3 show +"perdita_paratia"</command>
+    <command>3 goto -nofade "studio"</command>
+    <command>2 transfer "clear_bedroom"</command>
+    <command>2 status 0</command>
+  </script>
+  <indipendent>
+    <command>0 wait 10</command>
+  </indipendent>
+  <entry name="toppa_bagno" X="1240" Y="763" pose="ur" />
+  <entry name="bagno" X="1197" Y="769" pose="dl" />
+  <entry name="camera_letto" X="790" Y="753" pose="d" />
+  <entry name="piano_terra" X="669" Y="890" pose="u" />
+  <entry name="studio" X="603" Y="824" pose="r" />
+  <entry name="elenco_telefonico" X="589" Y="751" pose="u" />
+  <scene bitmap="perdita_paratia" X="1243" Y="117" position="back" animated="True" start="4000" stop="6000" sound="perdita_paratia" loop="True" />
+  <scene bitmap="corrimano" X="898" Y="607" position="default" animated="False" />
+  <scene bitmap="corrimano_bucato" X="898" Y="607" position="default" animated="False" />
+  <hotspots>
+    <goto ID="primo_piano_x_studio" icon="l" PX="-340" PY="643">
+      <go>
+        <command>sound "door_open"</command>
+        <command>goto "studio"</command>
+      </go>
+    </goto>
+    <goto ID="primo_piano_x_piano_terra" icon="d" PX="717" PY="1343">
+      <go>
+        <command>goto "piano_terra"</command>
+      </go>
+    </goto>
+    <item ID="bende">
+      <look>
+        <command>text "These should be the famous fluffy wrappings of the mummy."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "bende"</command>
+      </pick>
+      <use>
+        <command>text "I'm too fond of my 'skeleton costume' to change it at this point."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="vestiti a terra">
+      <look />
+      <talk />
+    </character>
+    <item ID="berretto">
+      <look>
+        <command>pose d</command>
+        <command>text "You know those wool things that go on one's head to shelter it from the cold?"</command>
+        <command>wait 0,5</command>
+        <command>text "Perfect."</command>
+      </look>
+      <pick>
+        <command>0 hide -"me"</command>
+        <command>0 sound "skinny_hair_picking"</command>
+        <command>0 animation -skinny 00 -o=6,19 -f=11,5,52 -s=105 -a "skinny_berretto"</command>
+        <command>0 hide +"corrimano"</command>
+        <command>0 wait 1,05</command>
+        <command>0 show +"corrimano"</command>
+        <command>0 wait 3,42</command>
+        <command>0 hide +"corrimano"</command>
+        <command>0 wait 0,5</command>
+        <command>0 show -"me"</command>
+        <command>0 wait 0,7</command>
+        <command>0 sound "pick_generic"</command>
+        <command>0 pick n "capelli"</command>
+        <command>0 show +"corrimano"</command>
+        <command>0 internal 1</command>
+        <comment>1 [dopo aver già raccolto i capelli]</comment>
+        <command>1 pose d</command>
+        <command>1 text "I have picked up enough hair."</command>
+        <comment>2 [dopo aver fatto scappare Johnny con la bambola voodoo]</comment>
+        <command>2 text "I'd say that poor guy has had enough for today."</command>
+        <command>2 wait 0,5</command>
+        <command>2 pose d</command>
+        <command>2 text "But I love your sadistic side."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "What are you implying?"</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="disco doro">
+      <look>
+        <command>text "'Jelly Rock' by Aaron Wispley, a huge 1957 hit that sold more than nine million copies."</command>
+      </look>
+      <pick>
+        <command>text "Let's leave his symbol of glory alone."</command>
+      </pick>
+      <use>
+        <command>text "I don't see any record players around."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "I would have asked that young guy how difficult it was being the King. "</command>
+      </talk>
+    </item>
+    <item ID="picasso">
+      <look>
+        <command>text "He must have suffered a really bad accident."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Are you talking about the picture or the truck that obviously ran over his face?"</command>
+        <command>wait 1,5</command>
+        <command>text "Ooooook, that was WAY TOO harsh, I admit it."</command>
+      </pick>
+      <use>
+        <command>text "He would be perfect as a scarecrow."</command>
+      </use>
+      <talk>
+        <command>text "How does it feel to be the main character of an Almodòvar film?"</command>
+      </talk>
+    </item>
+    <item ID="stormtrooper">
+      <look>
+        <command>text "Young stormpeople today are completely hopeless..."</command>
+        <command>text "Damned hipsters."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "Listen to me, I will NEVER put junk like this in my rib cage."</command>
+      </pick>
+      <use>
+        <command>text "Why do I never have a flame thrower with me when I need one the most?"</command>
+      </use>
+      <talk>
+        <command>text "Don't go boasting about your junk size. You've all got the same codpiece."</command>
+      </talk>
+    </item>
+    <action ID="elenco telefonico">
+      <act>
+        <command>sound "elencotelefonico_open"</command>
+        <command>goto "elenco_telefonico"</command>
+      </act>
+    </action>
+    <character ID="pappagallo">
+      <look>
+        <command>text "Genetically programmed to undermine your reputation."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>text "Cracker."</command>
+        <command>wait 1</command>
+        <command>text "Cr-ack-er."</command>
+        <command>wait 1</command>
+        <command>text "Come on, stupid bird, repeat it! CRACKER!"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=fuxia -t "You brainless moron biped, my intellectual capacities are way superior to yours."</command>
+        <command>wait 1</command>
+        <command>text "W-what did you say?"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" -c=fuxia -t "Cracker!"</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=fuxia -t "Be quiet, or my husband will hear us!"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=fuxia -t "Cuddle me, hot stuff!"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=fuxia -t "I love when you do that thing to me..."</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 text -"me" -c=fuxia -t "Hurry! In the closet!!!"</command>
+      </indipendent>
+    </character>
+    <action ID="porta del bagno">
+      <act>
+        <comment>0 [Skinny bussa alla porta]</comment>
+        <command>0 sound "knocking"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Can I come in?"</command>
+        <comment>0 [NOTA: pronunciato non Skinny ma dal ciccione in bagno]</comment>
+        <command>0 text (1290,330) -c=lblue "Go away!"</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Ronald gets mad when I knock on the door while he's in the bath too..."</command>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "I don't know why everyone got so crabby!"</command>
+        <command>0 internal 1</command>
+        <comment>1 [dopo aver già bussato la prima volta]</comment>
+        <command>1 pose d</command>
+        <command>1 text "Better not bother him again."</command>
+      </act>
+    </action>
+    <action ID="toppa">
+      <act>
+        <command>goto "toppa_bagno"</command>
+      </act>
+    </action>
+    <goto ID="primo_piano_x_bagno" icon="ur" PX="1820" PY="400">
+      <go>
+        <command>sound "door_open"</command>
+        <command>goto "bagno"</command>
+      </go>
+    </goto>
+    <action ID="porta della camera">
+      <act>
+        <command>0 pose d</command>
+        <command>0 text "That tie on the doorknob may as well be heavier than Thor's hammer."</command>
+        <command>0 text "The universal frat house 'do not disturb' sign."</command>
+        <command>1 pose d</command>
+        <command>1 text "I may have removed the tie from the doorknob, but the fact of the matter doesn't change."</command>
+        <command>2 text "It's the most sought-after room of the party, that's for sure..."</command>
+      </act>
+    </action>
+    <item ID="cravatta">
+      <look>
+        <command>text "Those polka dots are obscene, to say the least."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "cravatta"</command>
+        <command>internal -"porta della camera" 1</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>text "Always faithful to my sweatshirt."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="primo_piano_x_camera_letto" icon="u" PX="705" PY="450">
+      <go>
+        <command>sound "door_close"</command>
+        <command>goto "camera_letto"</command>
+      </go>
+    </goto>
+    <character ID="ragazzo alticcio">
+      <look>
+        <command>text "He doesn't look particularly good..."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "I don't want my sweater stained by puke, thanks."</command>
+      </talk>
+      <indipendent>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_is_gonna_vomit"</command>
+        <command>0 animation -"me" 00 -o=0,1 -c "tizio_nausea"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_is_gonna_vomit"</command>
+        <command>0 animation -"me" 00 -o=0,1 -c "tizio_nausea"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_is_gonna_vomit"</command>
+        <command>0 animation -"me" 00 -o=0,1 -c "tizio_nausea"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_is_gonna_vomit"</command>
+        <command>0 animation -"me" 00 -o=0,1 -c "tizio_nausea"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 sound "boy_vomits"</command>
+        <command>0 animation -"me" 00 -o=0,141 "tizio_sbocca"</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>0 wait 1</command>
+        <command>1 wait 3,5</command>
+        <command>1 bitmap -"me" "tizio_esterrefatto"</command>
+        <command>1 position -"me" (1302,495)</command>
+      </indipendent>
+    </character>
+  </hotspots>
+</location>

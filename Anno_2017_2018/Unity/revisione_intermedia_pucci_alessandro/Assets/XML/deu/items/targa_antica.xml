@@ -1,0 +1,15 @@
+<object name="Antike Tafel">
+  <description>
+    <command>text "Die eher allgemeine Zahl '1861'."</command>
+  </description>
+  <inventory />
+  <location name="spiaggia">
+    <hotspot ID="calderone_presente">
+      <command>sound "pick_targa"</command>
+      <command>throw "targa_antica"</command>
+      <command>show -"targa antica"</command>
+      <command>bitmap -"targa antica" "targa_1861"</command>
+      <command>internal -"targa antica" 1</command>
+    </hotspot>
+  </location>
+</object>

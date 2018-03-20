@@ -1,0 +1,95 @@
+<location isfirstperson="True">
+  <script>
+    <command>0 hide skinny</command>
+  </script>
+  <sound file="mosche" />
+  <entry name="cucina" X="1" Y="1" pose="dl" />
+  <scene bitmap="cuore_babbuino" X="362" Y="722" position="back" animated="True" sound="cuore_babbuino" loop="True" />
+  <scene bitmap="ripiani_frigo" X="201" Y="214" position="back" animated="False" />
+  <scene bitmap="mosca_frigo1" X="1252" Y="305" position="fore" speed="60" animated="True" loop="True" />
+  <scene bitmap="mosca_frigo2" X="882" Y="204" position="fore" speed="60" animated="True" loop="True" />
+  <hotspots>
+    <character ID="Angry Bird">
+      <look>
+        <command>text -"me" "It's been 'slung' directly into the oven."</command>
+      </look>
+      <talk>
+        <command>text -"me" "Eventually YOU end up like sweet and sour pork."</command>
+      </talk>
+    </character>
+    <item ID="peperoncino">
+      <look>
+        <command>text -"me" "Did you know birds can't taste spicy foods?"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "A little 'Focus' moment."</command>
+      </look>
+      <pick>
+        <command>sound "pick_generic"</command>
+        <command>pick y "peperoncino"</command>
+      </pick>
+      <use>
+        <command>text -"me" "I love chili pepper. It's a pity my taste buds can't stand the heat..."</command>
+        <command>wait 1</command>
+        <command>text -"me" "Erm... if I still had them, I mean."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="assenzio">
+      <look>
+        <command>text -"me" "...why no unforgettable night ever started with 'I was going to eat a salad when...'?"</command>
+      </look>
+      <pick>
+        <command>sound "pick_assenzio"</command>
+        <command>pick y "assenzio"</command>
+      </pick>
+      <use>
+        <command>text -"me" "If you want, I can suggest a nice AA meeting centre."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="Game Boy">
+      <look>
+        <command>text -"me" "A historical videogaming relic... literally."</command>
+      </look>
+      <pick>
+        <command>text -"me" "Even if my social life isn't as active as before, I don't think I should squander it completely."</command>
+      </pick>
+      <use>
+        <command>text -"me" "Something tells me it doesn't work anymore."</command>
+        <command>wait 1</command>
+        <command>text -"me" "And that it's not a battery problem."</command>
+      </use>
+      <talk>
+        <command>text -"me" "How many bad grades you cost me!"</command>
+      </talk>
+    </item>
+    <item ID="cibo cinese">
+      <look>
+        <command>text -"me" "I hope it wasn't delivered in this condition..."</command>
+      </look>
+      <pick>
+        <command>text -"me" "Putting a bunch of worms in my body is not among the best ideas you've ever had."</command>
+      </pick>
+      <use>
+        <command>text -"me" "I'm not hungry, thanks."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+      <indipendent>
+        <command>sound -l "cibo_cinese"</command>
+        <command>animation -"me" 00 -o=0,0 -c "cibo_cinese_idle"</command>
+      </indipendent>
+    </item>
+    <goto ID="frigorifero_x_cucina" icon="dl" PX="-506" PY="1184">
+      <go>
+        <command>sound "frigo_close"</command>
+        <command>goto "cucina"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

@@ -1,0 +1,25 @@
+<object name="jalapeño">
+  <description>
+    <command>text "No creo ni que nadie se dé cuenta."</command>
+  </description>
+  <inventory>
+    <object name="assenzio_radioattivo">
+      <command>sound "pick_capsaicina"</command>
+      <command>throw "assenzio_radioattivo"</command>
+      <command>throw "jalapeno"</command>
+      <command>pick n "capsaicina"</command>
+    </object>
+  </inventory>
+  <location name="bagno">
+    <hotspot ID="sali">
+      <command>text "No creo que fuera suficiente. Necesito algo más potente." $4</command>
+    </hotspot>
+  </location>
+  <location name="cucina">
+    <hotspot ID="messicano">
+      <command>text "¿No notas nada raro en ese jalapeño?" $113</command>
+      <command>wait 1,5</command>
+      <command>text "Lo que yo pensaba." $114</command>
+    </hotspot>
+  </location>
+</object>

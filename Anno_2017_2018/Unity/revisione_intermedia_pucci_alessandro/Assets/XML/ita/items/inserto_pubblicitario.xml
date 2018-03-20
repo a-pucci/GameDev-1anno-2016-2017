@@ -1,0 +1,7 @@
+<object name="inserzione pubblicitaria">
+  <description>
+    <command>text "Corriere espresso 24h, 7 giorni su 7, 00-8458901."</command>
+    <command>text "Tutti i pacchi devono essere a prova d'urto, idrorepellenti e con il contenuto chiaramente indicato all'esterno."</command>
+  </description>
+  <inventory />
+</object>

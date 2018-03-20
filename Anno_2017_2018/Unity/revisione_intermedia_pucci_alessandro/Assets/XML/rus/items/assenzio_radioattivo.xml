@@ -1,0 +1,73 @@
+<object name="«острый» абсент">
+  <description>
+    <command>text "Он и раньше был ничего так... теперь же он просто огонь."</command>
+  </description>
+  <inventory>
+    <object name="jalapeno">
+      <command>sound "pick_capsaicina"</command>
+      <command>throw "assenzio_radioattivo"</command>
+      <command>throw "jalapeno"</command>
+      <command>pick n "capsaicina"</command>
+    </object>
+    <object name="peperoncino">
+      <command>text "Боюсь, перец чили недостаточно острый." $15</command>
+    </object>
+    <object name="bomba">
+      <command>text "Порой я удивлен тому, что ты еще жив." $7</command>
+    </object>
+    <object name="bomba_appiccicosa">
+      <command>text "Порой я удивлен тому, что ты еще жив." $7</command>
+    </object>
+    <object name="bomba_disinnescata">
+      <command>text "Порой я удивлен тому, что ты еще жив." $7</command>
+    </object>
+  </inventory>
+  <location name="accampamento">
+    <hotspot ID="vecchia conoscenza">
+      <command>text "Лучше не подливать этого в огонь." $3</command>
+    </hotspot>
+  </location>
+  <location name="bagno">
+    <hotspot ID="sali">
+      <command>text "Не думаю, что этого будет достаточно. Нужно что-то посильнее." $4</command>
+    </hotspot>
+  </location>
+  <location name="frigorifero">
+    <hotspot ID="peperoncino">
+      <command>text "Боюсь, перец чили недостаточно острый." $15</command>
+    </hotspot>
+  </location>
+  <location name="grotta">
+    <hotspot ID="pittore">
+      <command>text "Думаю, эти шрамы ноют и без этого." $16</command>
+    </hotspot>
+  </location>
+  <location name="primo_piano">
+    <hotspot ID="stormtrooper">
+      <command>expression "sarcastic"</command>
+      <command>text "Жаль, это не скипидар." $17</command>
+    </hotspot>
+    <hotspot ID="ragazzo alticcio">
+      <command>pose d</command>
+      <command>text "Порой ты приятно поражаешь меня своей тягой к садизму." $12</command>
+    </hotspot>
+  </location>
+  <location name="spiaggia">
+    <hotspot ID="scienziato">
+      <command>text "Лучше оставлю при себе." $18</command>
+    </hotspot>
+  </location>
+  <location name="studio">
+    <hotspot ID="cassaforte">
+      <command>text "Не думаю, что радиоактивный абсент может растопить металл." $19</command>
+    </hotspot>
+    <hotspot ID="bomba">
+      <command>pose d</command>
+      <command>expression "sarcastic"</command>
+      <command>text "Порой я удивлен тому, что ты еще жив." $7</command>
+    </hotspot>
+    <hotspot ID="pianta carnivora">
+      <command>text "Думаю, ему хорошо и без удобрений." $20</command>
+    </hotspot>
+  </location>
+</object>

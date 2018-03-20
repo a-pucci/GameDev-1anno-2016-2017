@@ -1,0 +1,6 @@
+<object name="Karte">
+  <description>
+    <command>text "Eine Karte der ganzen Umgebung."</command>
+  </description>
+  <inventory />
+</object>
