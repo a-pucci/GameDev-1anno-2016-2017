@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
-  m_Name: RuleTile_2
+  m_Name: WaterTile
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 21300104, guid: 81fe6a5417375f14da619d1050506046, type: 3}
   m_DefaultColliderType: 1

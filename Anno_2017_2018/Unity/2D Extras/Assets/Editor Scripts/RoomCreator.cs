@@ -8,13 +8,21 @@ enum Directions {UP, RIGHT, DOWN, LEFT};
 
 public class RoomCreator : EditorWindow
 {
+    public ScriptableDungeon dungeon;
     public Tilemap groundTilemap;
     public Tilemap bridgeTilemap;
-    public RuleTile bridgeTile;
-    public RuleTile groundTile;
+    public Tilemap pickupsTilemap;
 
-    public int roomsNumber;
-    public int roomSize;
+    private int roomsNumber;
+    private int roomSize;
+
+    private RuleTile bridgeTile;
+    private RuleTile groundTile;
+    private Tile barrelTile;
+    private Tile chestTile;
+    private float barrelRate;
+    private float chestRate;
+
 
     List<Vector3Int> roomsPositions = new List<Vector3Int>();
     int counter;
@@ -32,38 +40,54 @@ public class RoomCreator : EditorWindow
     {
         GUILayout.Label("Rooms Creator", EditorStyles.boldLabel);
         GUILayout.Space(10);
-        GUILayout.Label("Rooms Number", EditorStyles.label);
-        roomsNumber = (int)EditorGUILayout.IntField(roomsNumber);
-        GUILayout.Label("Room Size", EditorStyles.label);
-        roomSize = (int)EditorGUILayout.IntField(roomSize);
+        GUILayout.Label("Scriptable Dungeon", EditorStyles.label);
+        dungeon = (ScriptableDungeon)EditorGUILayout.ObjectField(dungeon, typeof(ScriptableDungeon));
+        //GUILayout.Label("Rooms Number", EditorStyles.label);
+        //roomsNumber = (int)EditorGUILayout.IntField(roomsNumber);
+        //GUILayout.Label("Room Size", EditorStyles.label);
+        //roomSize = (int)EditorGUILayout.IntField(roomSize);
+        GUILayout.Space(20);
+        GUILayout.BeginVertical("Box"); 
         GUILayout.Label("Ground Tilemap", EditorStyles.label);
         groundTilemap = (Tilemap)EditorGUILayout.ObjectField(groundTilemap, typeof(Tilemap));
         GUILayout.Label("Bridge Tilemap", EditorStyles.label);
         bridgeTilemap = (Tilemap)EditorGUILayout.ObjectField(bridgeTilemap, typeof(Tilemap));
-        GUILayout.Label("Ground Tile", EditorStyles.label);
-        groundTile = (RuleTile)EditorGUILayout.ObjectField(groundTile, typeof(RuleTile));
-        GUILayout.Label("Bridge Tile", EditorStyles.label);
-        bridgeTile = (RuleTile)EditorGUILayout.ObjectField(bridgeTile, typeof(RuleTile));
+        GUILayout.Label("Pickups Tilemap", EditorStyles.label);
+        pickupsTilemap = (Tilemap)EditorGUILayout.ObjectField(pickupsTilemap, typeof(Tilemap));
+        //GUILayout.Label("Ground Tile", EditorStyles.label);
+        //groundTile = (RuleTile)EditorGUILayout.ObjectField(groundTile, typeof(RuleTile));
+        //GUILayout.Label("Bridge Tile", EditorStyles.label);
+        //bridgeTile = (RuleTile)EditorGUILayout.ObjectField(bridgeTile, typeof(RuleTile));
+        GUILayout.EndVertical();
+
         GUILayout.Space(10);
-        if (GUILayout.Button("Create Rooms"))
+        if (GUILayout.Button("Create Dungeon"))
         {
             CreateRooms();
         }
         GUILayout.Space(10);
-        if (GUILayout.Button("Clear Tilemap"))
+        if (GUILayout.Button("Clear Tilemaps"))
         {
-            ClearTilemap();
+            ClearTilemaps();
         }
     }
 
     void CreateRooms()
     {
-        // svuota la tilemap
-        ClearTilemap();
+        roomsNumber = dungeon.roomsNumber;
+        roomSize = dungeon.roomSize;
+        bridgeTile = dungeon.bridgeTile;
+        groundTile = dungeon.groundTile;
+        barrelTile = dungeon.barrelTile;
+        chestTile = dungeon.chestTile;
+        barrelRate = dungeon.barrelsRate;
+        chestRate = dungeon.chestRate;
+
+        // svuota la tilemap        
+        ClearTilemaps();
         roomsCreated = 0;
 
-        //BoundsInt mapCells = groundTilemap.cellBounds;
-        Vector3Int roomPosition = Vector3Int.zero; // new Vector3Int(mapCells.x /2, mapCells.y/2, 0);
+        Vector3Int roomPosition = Vector3Int.zero;
        
         for (int i = 0; i < roomsNumber; i++)
         {
@@ -116,7 +140,7 @@ public class RoomCreator : EditorWindow
         }
     }
 
-    void ClearTilemap()
+    void ClearTilemaps()
     {
         foreach (var tilePosition in groundTilemap.cellBounds.allPositionsWithin)
         {
@@ -125,6 +149,10 @@ public class RoomCreator : EditorWindow
         foreach (var tilePosition in bridgeTilemap.cellBounds.allPositionsWithin)
         {
             bridgeTilemap.SetTile(tilePosition, null);
+        }
+        foreach (var tilePosition in pickupsTilemap.cellBounds.allPositionsWithin)
+        {
+            pickupsTilemap.SetTile(tilePosition, null);
         }
     }
 
