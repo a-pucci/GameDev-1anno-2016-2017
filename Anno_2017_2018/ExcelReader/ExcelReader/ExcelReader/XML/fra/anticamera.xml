@@ -1,0 +1,163 @@
+<location>
+  <script>
+    <command>0 show skinny (976,794)</command>
+    <command>0 wait 1,5</command>
+    <command>0 animation (811,627) -p=default -a "skinny_sfonda_porta"</command>
+    <command>0 sound "skinny_break_door"</command>
+    <command>0 animation (718,375) -p=back "porta_anticamera"</command>
+    <command>0 show +"porta_scantinato"</command>
+    <command>0 wait 2</command>
+    <command>0 move (632,853)</command>
+    <command>0 wait 0,5</command>
+    <command>0 pose d</command>
+    <command>0 text "C'est donc là que menait cette porte !"</command>
+    <command>0 text "Et dire que toutes ces années, personne n'a jamais pris la peine de la forcer !"</command>
+    <command>0 status &gt;"salotto" 1</command>
+    <command>0 status 1</command>
+  </script>
+  <indipendent>
+    <command>wait 5</command>
+    <command>animation (216,621) -c -p=back "bob_sx"</command>
+    <command>wait 5</command>
+    <command>animation (528,858) -c -p=divine "bob_cx"</command>
+    <command>wait 5</command>
+    <command>animation (930,683) -c -p=superdefault "bob_dx"</command>
+  </indipendent>
+  <entry name="ingresso" X="230" Y="900" pose="r" />
+  <entry name="scantinato" X="807" Y="805" pose="l" />
+  <entry name="salotto" X="1324" Y="952" pose="dr" />
+  <entry name="cucina1" X="1426" Y="987" pose="dl" />
+  <scene bitmap="lampadina_anticamera" X="271" Y="0" position="fore" animated="True" loop="True" />
+  <scene bitmap="porta_scantinato" X="718" Y="375" position="back" animated="False" />
+  <scene bitmap="parete_scantinato" X="892" Y="441" position="default" animated="False" />
+  <scene bitmap="mosche" X="212" Y="384" position="back" animated="True" loop="True" />
+  <hotspots>
+    <item ID="carta moschicida">
+      <look>
+        <command>text "Ce n'est peut-être pas très beau, mais c'est très efficace."</command>
+      </look>
+      <pick>
+        <command>text "Je ne veux pas finir comme ceux qui étaient là avant moi."</command>
+      </pick>
+      <use>
+        <command>text "Je ne vois pas comment ça pourrait m'être utile."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Sauf si tu es une mouche."</command>
+      </use>
+      <talk>
+        <command>text "La prochaine fois, choisissez un endroit plus approprié pour atterrir."</command>
+      </talk>
+    </item>
+    <item ID="bara">
+      <look>
+        <command>text "Aussi incroyable que cela puisse paraître, le père de Ronald l'a acheté il y a quelques années en prévision de ses propres funérailles."</command>
+        <command>text "Il l'a trouvé en vente dans une foire mortuaire."</command>
+        <command>wait 0,5</command>
+        <command>text "Il ne sera pas content quand il découvrira que ces imbéciles l'ont endommagé."</command>
+      </look>
+      <pick>
+        <command>text "Apporte-moi un monte-charge et je ne te décevrai pas."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "J'ai été ressuscité; il faudra t'y faire."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="mano autostoppista">
+      <look>
+        <command>text "Les temps sont durs pour les autostoppeurs."</command>
+      </look>
+      <talk>
+        <command>pose d</command>
+        <command>text "Il faut vraiment que je te pose cette question."</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Tu cherches un ascenseur pour le Neuvième Monde ?"</command>
+      </talk>
+      <indipendent>
+        <command>wait 2,5</command>
+        <command>sound "skeletral_hand"</command>
+        <command>animation -"me" 00 -o=27,17 -c "mano_autostop"</command>
+        <command>wait 2,5</command>
+      </indipendent>
+    </character>
+    <character ID="ritratto">
+      <look>
+        <command>text "Zeno a toujours été un gars introverti, mais je le considère comme un véritable ami."</command>
+        <command>text "Je le voyais rarement sans un roman dans les mains."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Je n'ai jamais vu une telle passion pour les livres."</command>
+      </look>
+      <talk>
+        <command>text "N'aie pas peur du monde extérieur, Zeno. Je comprends parfaitement ce que tu ressens."</command>
+      </talk>
+    </character>
+    <character ID="robot">
+      <look>
+        <command>text "Il semble être un peu court en énergie."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>bitmap -"me" "robot_l"</command>
+        <command>0 text "Salut, petit robot."</command>
+        <command>0 text -"me" -c=fuxia "C1 n'est pas programmé pour parler."</command>
+        <command>0 text "Mais tu viens de le faire !"</command>
+        <command>0 text -"me" -c=fuxia "C1 n'est pas programmé pour s'expliquer."</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "robot"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "robot_interact"</command>
+        <command>animation -"me" 00 -o=19,19 -c "robot_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <goto ID="anticamera_x_scantinato" icon="r" PX="1270" PY="623">
+      <go>
+        <command>goto "scantinato"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_ingresso" icon="l" PX="-339" PY="650">
+      <go>
+        <command>goto "ingresso"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_cucina" icon="r" PX="2098" PY="431">
+      <go>
+        <command>goto "cucina1"</command>
+      </go>
+    </goto>
+    <goto ID="anticamera_x_salotto" icon="ul" PX="890" PY="-60">
+      <go>
+        <command>goto "salotto"</command>
+      </go>
+    </goto>
+    <item ID="sveglia">
+      <look>
+        <command>text "C'est le vieux réveil que Ronald utilisait quand il était enfant."</command>
+        <command>text "Je ne pensais pas qu'il l'avait encore."</command>
+      </look>
+      <pick>
+        <command>sound "pick_clock"</command>
+        <command>pick y "sveglia"</command>
+      </pick>
+      <use>
+        <command>text "Il a sonné pour la dernière fois il y a plusieurs années. Ensuite, il est... ACCIDENTELLEMENT tombé sur le sol et a cessé de fonctionner."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+  </hotspots>
+</location>

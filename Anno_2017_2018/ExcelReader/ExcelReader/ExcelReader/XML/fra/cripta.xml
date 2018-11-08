@@ -1,0 +1,124 @@
+<location>
+  <script>
+    <command>0 wait 0,5</command>
+    <command>0 lookat -"nonnina"</command>
+    <command>0 wait 1</command>
+    <command>0 pose d</command>
+    <command>0 text "Mais… c'est grand-mère ! Enfin, la grand-mère de Ronald !"</command>
+    <command>0 status 1</command>
+  </script>
+  <entry name="cimitero" X="1027" Y="1027" pose="u" />
+  <scene bitmap="lumini_sx" X="488" Y="853" position="back" animated="True" loop="True" />
+  <scene bitmap="lumini_up" X="803" Y="758" position="back" animated="True" loop="True" />
+  <scene bitmap="lumini_dx" X="1304" Y="809" position="back" animated="True" loop="True" />
+  <scene bitmap="nonnino_dracula" X="662" Y="170" position="back" start="5000" stop="10000" animated="True" sound="dracula" loop="True" />
+  <scene bitmap="candelabro_sx" X="353" Y="131" position="back" animated="True" loop="True" />
+  <scene bitmap="lumiere" X="1373" Y="54" position="back" animated="True" loop="True" />
+  <scene bitmap="lumiere_occhi" X="1413" Y="151" position="back" start="2500" stop="5000" animated="True" loop="True" />
+  <scene bitmap="sedia_front" X="614" Y="686" position="default" animated="False" />
+  <hotspots>
+    <character ID="Illuminati">
+      <look>
+        <command>text "Je ne savais pas qu'ils avaient aussi des adeptes dans le monde arachnide."</command>
+      </look>
+      <talk>
+        <command>text "Dans le royaume de l'au-delà, vous auriez du mal à prendre racine avec ce modèle d'entreprise."</command>
+      </talk>
+    </character>
+    <action ID="lapide di Wilson">
+      <act>
+        <command>text "'Ci-gît Wilson Percival Higgsbury, scientifique exceptionnel blessé mortellement avec une lame de rasoir.'"</command>
+      </act>
+    </action>
+    <action ID="lapide di Woodie">
+      <act>
+        <command>text "'Ci-gît Woodie le bûcheron, asphyxié après avoir inhalé de la poudre d'argent.'"</command>
+      </act>
+    </action>
+    <action ID="lapide di Wilbur">
+      <act>
+        <command>text "'Ci-gît Wilbur, roi des Singes Primitifs mort sur place après avoir glissé sur une peau de banane.'"</command>
+      </act>
+    </action>
+    <action ID="lapide di Willow">
+      <act>
+        <command>text "'Ci-gît Willow l'incendiaire, morte de joie lors d'un grand spectacle de feux d'artifice.'"</command>
+      </act>
+    </action>
+    <character ID="nonnina">
+      <look>
+        <command>text "* J'espère que même après son décès, elle est toujours myope comme une taupe. *"</command>
+        <command>pose d</command>
+        <command>text "* ... pour que je puisse encore me faire passer pour Ronald. *"</command>
+      </look>
+      <talk>
+        <command>0 text "Salut, grand-mère, je suis ... Je suis Ronald."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"me" "&lt; charabia incompréhensible &gt;"</command>
+        <command>0 text "Erm, grand-mère ... Je ne comprends vraiment rien de ce que tu dis."</command>
+        <command>0 expression -"me" "irritated"</command>
+        <command>0 text -"me" "&lt; charabia incompréhensible &gt;"</command>
+        <command>1 dialog "nonnina"</command>
+      </talk>
+    </character>
+    <item ID="gomitolo di ragnatela">
+      <look>
+        <command>text "Le fil d'une toile d'araignée est fait d'un matériau si résistant qu'à côté de lui, la cotte de maille en Mithril de Frodon aurait l'air fragile."</command>
+      </look>
+      <pick>
+        <command>text "Trop collante. Je ne pourrai plus la décoller de mes mains."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Le résultat ressemblerait plus à une armure corporelle qu'à un sweat."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="asciugamano">
+      <look>
+        <command>text "L'objet « le plus souvent utile qu'un autostoppeur interstellaire peut avoir »"</command>
+      </look>
+      <pick>
+        <command>text "'Seulement en cas d'urgence.'"</command>
+      </pick>
+      <use>
+        <command>0 text "Je pourrais m'en servir pour gréer un mini-radeau."</command>
+        <command>0 internal 1</command>
+        <command>1 text "Je pourrais l'utiliser en combats à mains nues."</command>
+        <command>1 internal 2</command>
+        <command>2 text "Je pourrais m'en servir pour me protéger la tête contre des vapeurs toxiques."</command>
+        <command>2 internal 3</command>
+        <command>3 text "Je pourrais m'en servir pour faire des signes de détresse."</command>
+        <command>3 internal 4</command>
+        <command>4 text "Je pourrais m'en servir pour me sécher, si la serviette est toujours assez propre."</command>
+        <command>4 internal 0</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "Je ne suis pas sûre qu'elle puisse me donner la réponse à la grande question sur la vie, l'univers et le reste."</command>
+      </talk>
+    </item>
+    <goto ID="cripta_x_cimitero" icon="d" PX="1003" PY="1376">
+      <go>
+        <command>1 wait 0,5</command>
+        <command>1 lookat -"nonnina"</command>
+        <command>1 text -"nonnina" "Attends une minute, Ronald."</command>
+        <command>1 move (925,961)</command>
+        <command>1 wait 0,5</command>
+        <command>1 text -"nonnina" "C'est dangereux là-bas. Il n'y a que des athées."</command>
+        <command>1 text -"nonnina" "Prends ça."</command>
+        <command>1 animation -"nonnina" 00 -o=23,9 -a "nonnina_bibbia"</command>
+        <command>1 wait 0,8</command>
+        <command>1 animation -skinny 00 -o=115,32 "skinny_bibbia"</command>
+        <command>1 nolook</command>
+        <command>1 sound "pick_bibbia"</command>
+        <command>1 pick n "bibbia"</command>
+        <command>1 map y</command>
+        <command>1 internal 2</command>
+        <command>goto "cimitero"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

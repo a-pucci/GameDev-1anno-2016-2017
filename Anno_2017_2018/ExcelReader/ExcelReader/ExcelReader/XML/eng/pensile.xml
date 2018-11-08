@@ -1,0 +1,82 @@
+<location isfirstperson="True">
+  <script>
+    <command>0 internal -"spina" 0</command>
+  </script>
+  <entry name="bagno1" X="0" Y="0" pose="u" />
+  <scene bitmap="phon" X="810" Y="137" position="default" animated="False" />
+  <scene bitmap="dentifricio_spremuto" X="894" Y="249" position="back" animated="False" />
+  <hotspots>
+    <item ID="pillole">
+      <look>
+        <command>text -"me" "The psych meds of cousin Jason."</command>
+        <command>wait 1</command>
+        <comment>[pensandoci bene]</comment>
+        <command>text -"me" "Come to think of it, we've suddenly lost track of him."</command>
+      </look>
+      <pick>
+        <command>sound "pick_pills"</command>
+        <command>pick y "pillole"</command>
+        <command>hide +"bagno1/pillole_pensile"</command>
+      </pick>
+      <use>
+        <command>text -"me" "I've been through so many troubles, but luckily I still have my sanity."</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Too bad the same doesn't apply to the person I'm talking to..."</command>
+      </use>
+      <talk>
+        <command>text -"me" "Right, maybe it wouldn't be a bad idea for you to just take a couple..."</command>
+      </talk>
+    </item>
+    <item ID="rasoio elettrico">
+      <look>
+        <command>text -"me" "I don't know what's more disgusting: this or the hair removal strips of Ronald's mother."</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>text -"me" "What am I supposed to shave?"</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "Besides, this isn't exactly the height of hygiene."</command>
+      </use>
+      <talk>
+        <comment>[in stile esorcista]</comment>
+        <command>text -"me" "Must... control... stupid... out-of-body... urges!"</command>
+      </talk>
+      <indipendent>
+        <command>sound -l "razor"</command>
+        <command>animation -"me" 00 -o=0,0 -c "rasoio"</command>
+      </indipendent>
+    </item>
+    <action ID="spina">
+      <act>
+        <command>internal -g -i 1</command>
+      </act>
+      <indipendent>
+        <command>0 wait 5</command>
+        <command>1 animation -"me" 00 -o=0,0 "spina_oscilla"</command>
+        <command>1 internal -g ++</command>
+        <command>1 if internal -"spina" 15</command>
+        <command>1 achievement "ossessivo_compulsivo"</command>
+        <command>1 fi</command>
+        <command>1 internal -g -i 0</command>
+      </indipendent>
+    </action>
+    <action ID="dentifricio">
+      <act>
+        <command>sound "toothpaste"</command>
+        <command>animation -"me" 00 -o=0,0 "dentifricio"</command>
+        <command>show +"dentifricio_spremuto"</command>
+        <command>hide -"me"</command>
+      </act>
+    </action>
+    <goto ID="pensile_x_bagno1" icon="dl" PX="-526" PY="1233">
+      <go>
+        <command>sound "closing_pensile"</command>
+        <command>wait 0,2</command>
+        <command>internal -"spina" -g -i 0</command>
+        <command>goto "bagno1"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

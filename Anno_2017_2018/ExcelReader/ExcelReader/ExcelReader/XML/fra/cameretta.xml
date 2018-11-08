@@ -1,0 +1,199 @@
+<location>
+  <script>
+    <command>0 screen -w=100 -fo=1500 -a</command>
+    <command>0 hide skinny</command>
+    <command>0 wait 1,5</command>
+    <command>0 sound "skinny_wardrobe"</command>
+    <command>0 animation -"armadio" 00 -o=1,1 "skinny_armadio"</command>
+    <command>0 bitmap -"armadio" "armadio_aperto"</command>
+    <command>0 show +"anta_armadio"</command>
+    <command>0 wait 0,5</command>
+    <command>0 show skinny</command>
+    <command>0 animation -skinny 00 -o=-2,42 "skinny_esce_armadio"</command>
+    <command>0 pause -"Noce"</command>
+    <command>0 wait 0,5</command>
+    <command>0 move (820,774)</command>
+    <command>0 lookat -"Noce"</command>
+    <command>0 wait 0,7</command>
+    <command>0 text -"Noce" -c=fuxia "Bien l'bonjour !"</command>
+    <command>0 text "Salut Nut. Pardon, mais je n'ai pas bien dormi cette nuit."</command>
+    <command>0 expression -"Noce" "perplexed"</command>
+    <command>0 text -"Noce" -c=fuxia "Es-tu vraiment sûr de vouloir lui parler ?"</command>
+    <command>0 expression -"Noce" ""</command>
+    <command>0 text "Je n'ai pas d'autre choix."</command>
+    <command>0 text -"Noce" -c=fuxia "Si tu veux mon avis, il va faire une crise cardiaque et il finira par te tenir compagnie dans l'armoire."</command>
+    <command>0 expression "sarcastic"</command>
+    <command>0 text "J'espère que non."</command>
+    <command>0 expression "normal"</command>
+    <command>0 dialog "noce"</command>
+    <command>0 move (94,406)</command>
+    <command>1 background "cameretta_traslocata"</command>
+    <command>1 hide -"traslocatore grasso"</command>
+    <command>1 hide -"traslocatore scemo"</command>
+    <command>1 hide -"armadio"</command>
+    <command>1 hide -"Noce"</command>
+    <command>1 show -"trapano"</command>
+    <command>1 hide +"timer_bomba"</command>
+    <command>1 hide +"joypad"</command>
+    <command>1 hide +"anta_armadio"</command>
+    <command>1 hide +"gabbia_noce"</command>
+    <command>1 hide +"coperte_letto"</command>
+    <command>1 hide +"scrivania"</command>
+    <command>1 hide +"porta_bagno_chiusa_cameretta"</command>
+    <command>1 show +"porta_bagno"</command>
+    <command>1 show +"scrivania_vuota"</command>
+    <command>1 wait 0,5</command>
+    <command>1 lookat -"armadio"</command>
+    <command>1 wait 0,5</command>
+    <command>1 expression "scared"</command>
+    <command>1 text "Qu'est-il arrivé à mon armoire ?!"</command>
+    <command>1 pose d</command>
+    <command>1 text "Je ne peux pas être séparé de mon armoire. C'est une question de vie ou de mort !"</command>
+    <command>1 show -"cameretta_x_salotto"</command>
+    <command>1 wait 1</command>
+    <command>1 expression "sarcastic"</command>
+    <command>1 text "Enfin, je veux dire... tu sais bien."</command>
+    <command>1 status 2</command>
+    <command>3 load "pomello_excalibur"</command>
+    <command>3 show -"mostro di polvere forzuto"</command>
+    <command>3 show skinny (556,1032)</command>
+    <command>3 lookat -"mostro di polvere forzuto"</command>
+    <command>3 screen c -w=5 -fo=500</command>
+    <command>3 wait 1</command>
+    <command>3 bitmap -"mostro di polvere forzuto" "mostro_polvere_cameretta_l"</command>
+    <command>3 text -"mostro di polvere forzuto" -c=yello "C'est ça la boule ?"</command>
+    <command>3 expression "sarcastic"</command>
+    <command>3 text "Oui, ce n'est pas une boule de cristal, c'est sûr."</command>
+    <command>3 wait 0,5</command>
+    <command>3 expression "normal"</command>
+    <command>3 expression -"mostro di polvere forzuto" "perplexed"</command>
+    <command>3 text -"mostro di polvere forzuto" -c=yello -nt "…"</command>
+    <command>3 text -"mostro di polvere forzuto" -c=yello "Je ne comprends pas."</command>
+    <command>3 expression -"mostro di polvere forzuto" ""</command>
+    <command>3 text "Oui, c'est ça."</command>
+    <command>3 wait 1</command>
+    <command>3 bitmap -"mostro di polvere forzuto" "mostro_polvere_cameretta"</command>
+    <command>3 text -"mostro di polvere forzuto" -c=yello "A nous deux, boule."</command>
+    <command>3 wait 0,5</command>
+    <command>3 cutscene "pomello_excalibur"</command>
+    <command>3 screen -fo=1500 -w=500 -a</command>
+    <command>3 pose dr</command>
+    <command>3 hide -"mostro di polvere forzuto"</command>
+    <command>3 hide -"pomello"</command>
+    <command>3 show -"pomello_a_terra"</command>
+    <command>3 wait 1</command>
+    <command>3 status &gt;"salotto" 2</command>
+    <command>3 status 2</command>
+  </script>
+  <entry name="bagno1" X="254" Y="900" pose="r" />
+  <entry name="salotto" X="1750" Y="833" pose="l" />
+  <scene bitmap="timer_bomba" X="667" Y="56" position="back" animated="True" loop="True" />
+  <scene bitmap="joypad" X="504" Y="110" position="back" animated="True" loop="True" />
+  <scene bitmap="gabbia_noce" X="504" Y="404" position="default" animated="False" />
+  <scene bitmap="porta_bagno" X="0" Y="166" position="back" animated="False" />
+  <scene bitmap="porta_bagno_chiusa_cameretta" X="0" Y="166" position="back" animated="False" />
+  <scene bitmap="letto" X="0" Y="735" position="fore" animated="False" />
+  <scene bitmap="coperte_letto" X="0" Y="855" position="fore" animated="False" />
+  <scene bitmap="scrivania" X="1118" Y="654" position="fore" animated="False" />
+  <scene bitmap="scrivania_vuota" X="1118" Y="935" position="fore" animated="False" />
+  <scene bitmap="parete_cameretta" X="1907" Y="253" position="default" animated="False" />
+  <scene bitmap="anta_armadio" X="1019" Y="49" position="fore" animated="False" />
+  <hotspots>
+    <item ID="trapano">
+      <look>
+        <command>text "L'un des déménageurs a dû la laisser ici."</command>
+      </look>
+      <pick>
+        <command>sound "pick_drill"</command>
+        <command>pick y "trapano"</command>
+      </pick>
+      <use>
+        <command>text "Pas avant d'avoir trouvé un endroit approprié."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="Noce">
+      <look>
+      </look>
+      <talk>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=22,8 -c "noce_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="Sigmund Freud">
+      <look>
+        <command>text "Un désastre que j'ai causé avec de la marmelade d'abricot il y a quelques années."</command>
+        <command>expression "perplexed"</command>
+        <command>text "Je n'ai jamais compris comment les parents de Ronald ont pu prendre ça pour le visage de Sigmund Freud."</command>
+      </look>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Il y a des symboles phalliques partout, pas vrai Sig ?"</command>
+      </talk>
+    </character>
+    <item ID="armadio">
+      <look>
+      </look>
+      <pick>
+      </pick>
+      <use>
+      </use>
+      <talk>
+      </talk>
+    </item>
+    <character ID="traslocatore grasso">
+      <look />
+      <talk />
+    </character>
+    <character ID="traslocatore scemo">
+      <look />
+      <talk />
+    </character>
+    <character ID="mostro di polvere forzuto">
+      <look />
+      <talk />
+    </character>
+    <action ID="pomello">
+      <act>
+        <command>expression "sarcastic"</command>
+        <command>sound "skinny_pomello"</command>
+        <command>animation -skinny 00 -o=4,-3 -a "skinny_pomello"</command>
+        <command>animation -skinny 00 -o=4,-3 -p=super "skinny_pomello_up"</command>
+        <command>wait 0,5</command>
+        <command>text "Un échec cuisant mon pote."</command>
+        <command>internal #"mostro_polvere_forzuto" 1</command>
+      </act>
+    </action>
+    <action ID="pomello_a_terra">
+      <act>
+        <command>sound "pick_pomello"</command>
+        <command>pick y "pomello"</command>
+      </act>
+    </action>
+    <action ID="cabinato">
+      <act>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Tu crois vraiment que c'est le bon moment pour jouer à des jeux?"</command>
+      </act>
+    </action>
+    <goto ID="cameretta_x_bagno1" icon="l" PX="-693" PY="579">
+      <go>
+        <command>goto "bagno1"</command>
+      </go>
+    </goto>
+    <goto ID="cameretta_x_salotto" icon="r" PX="2481" PY="547">
+      <go>
+        <command>goto "salotto"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

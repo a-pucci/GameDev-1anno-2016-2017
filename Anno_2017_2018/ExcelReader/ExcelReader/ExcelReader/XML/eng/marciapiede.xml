@@ -1,0 +1,167 @@
+<location>
+  <script>
+    <command>0 status 1</command>
+    <command>2 blackscreen</command>
+    <command>2 achievement "wardrobe"</command>
+    <command>2 wait 1</command>
+    <command>2 text (761,695) -c=fuxia "For a moment, I assumed the worst."</command>
+    <command>2 text (761,695) -c=fuxia "We need to celebrate, take this."</command>
+    <command>2 wait 1</command>
+    <command>2 text (1196,439) "HOW THE HELL OFTEN DO I HAVE TO TELL YOU I'M ALLERGIC?!?"</command>
+    <command>2 text (761,695) -c=fuxia "IT'S A DAMNED NUT! DO YOU EVEN HAVE EYES IN THOSE SOCKETS?!"</command>
+    <command>2 wait 1</command>
+    <command>2 screen c -fi=500 -w=2000 -fo=500 "Several hours later..."</command>
+    <command>2 wait 1</command>
+    <command>2 text (1196,439) "Something stinks here."</command>
+    <command>2 text (761,695) -c=fuxia "It wasn't me."</command>
+    <command>2 wait 0,5</command>
+    <command>2 text (1196,439) "I mean... where the hell did those two go?"</command>
+    <command>2 wait 1</command>
+    <command>2 text (1196,439) "I'll get out, I have to check."</command>
+    <command>2 status &gt;"retro_furgone" 1</command>
+    <command>2 status &gt;"ingresso" 2</command>
+    <command>2 blackscreen</command>
+    <command>2 goto -nofade "retro_furgone"</command>
+    <command>3 hide skinny</command>
+    <command>3 screen -w=500 -fo=1500</command>
+    <command>3 wait 0,5</command>
+    <command>3 text (1320,530) -c=fuxia "Those two are still not coming."</command>
+    <command>3 text (1320,430) "What are they doing now?"</command>
+    <command>3 wait 1</command>
+    <command>3 text (1320,430) "I'm going back to take a look."</command>
+    <command>3 wait 0,5</command>
+    <command>3 internal -"marciapiede_x_ingresso" -g 1</command>
+    <command>3 status &gt;"retro_furgone" 1</command>
+    <command>3 status &gt;"salotto" 3</command>
+    <command>3 status &gt;"bagno1" 3</command>
+    <command>3 status &gt;"cucina1" 2</command>
+    <command>3 goto "retro_furgone"</command>
+    <command>4 load "furgone"</command>
+    <command>4 show -"traslocatore scemo"</command>
+    <command>4 show -"traslocatore grasso"</command>
+    <command>4 expression -"traslocatore scemo" "sad"</command>
+    <command>4 hide skinny</command>
+    <command>4 screen -w=500 -fo=1500</command>
+    <command>4 wait 1</command>
+    <command>4 text -"traslocatore scemo" "I don't like these kind of days."</command>
+    <command>4 wait 0,5</command>
+    <command>4 expression -"traslocatore grasso" "angry"</command>
+    <command>4 text -"traslocatore grasso" "You're telling me. If I find out who pried my van open, ugh..."</command>
+    <command>4 expression -"traslocatore scemo" ""</command>
+    <command>4 text -"traslocatore scemo" "Remember your heart condition, boss."</command>
+    <command>4 wait 1</command>
+    <command>4 expression -"traslocatore grasso" ""</command>
+    <command>4 text -"traslocatore grasso" "You're right, let's just think about delivering everything and forget today, ok?"</command>
+    <command>4 wait 1</command>
+    <command>4 screen -fi=1000 -w=1</command>
+    <command>4 blackscreen</command>
+    <command>4 wait 1</command>
+    <command>4 text (761,695) -c=fuxia "Are you ready for the new house?"</command>
+    <command>4 text (1196,439) "I haven't even thought about it, actually. I just want to talk to Ronald as soon as possible."</command>
+    <command>4 text (761,695) -c=fuxia "Why all this rush?"</command>
+    <command>4 text (761,695) -c=fuxia "Sorry, but I wasn't paying any attention earlier. I was too busy with my nuts."</command>
+    <command>4 text (1196,439) "Basically, according to other-wordly laws, the perpetrators of a blood sin will be condemned to eternal damnation when they die."</command>
+    <command>4 text (761,695) -c=fuxia "But Ronald's was an accident."</command>
+    <command>4 text (1196,439) "That doesn't change anything, it's irrelevant."</command>
+    <command>4 text (1196,439) "The only way to prevent this from happening is to confess his 'crime' to someone else."</command>
+    <command>4 wait 0,5</command>
+    <command>4 text (1196,439) "Within five years."</command>
+    <command>4 wait 1</command>
+    <command>4 text (761,695) -c=fuxia "And how much time does he have left, exactly?"</command>
+    <command>4 wait 1,5</command>
+    <command>4 text (1196,439) "Three days."</command>
+    <command>4 text (761,695) -c=fuxia "AND YOU'RE JUST THINKING ABOUT IT NOW?!?"</command>
+    <command>4 text (1196,439) "I didn't want to overwhelm him, I wanted to give him his space!"</command>
+    <command>4 wait 0,5</command>
+    <command>4 text (761,695) -c=fuxia "I really have no words."</command>
+    <command>4 wait 1,5</command>
+    <command>4 stop "cantiere_theme"</command>
+    <command>4 blackscreen</command>
+    <command>4 cutscene "furgone"</command>
+    <command>4 goto -nofade "intro"</command>
+    <command>5 show -"Noce"</command>
+    <command>5 status &gt;"cantiere" 1</command>
+    <command>5 status 1</command>
+  </script>
+  <entry name="vicolo" X="159" Y="926" pose="r" />
+  <entry name="retro_furgone" X="1400" Y="914" pose="dl" />
+  <scene bitmap="cassetta_lettere" X="1611" Y="689" position="fore" animated="False" />
+  <scene bitmap="furgone_marciapiede" X="370" Y="246" position="back" animated="False" />
+  <scene bitmap="portiera_finestrino" X="522" Y="367" position="default" animated="False" />
+  <hotspots>
+    <item ID="tana">
+      <look>
+        <command>text "I have a new appreciation of the quality of life inside the wardrobe."</command>
+      </look>
+      <pick>
+        <command>text "Better not touch it; I think it's part of the scenery."</command>
+      </pick>
+      <use>
+        <command>text "I don't see any ostriches in the neighborhood."</command>
+      </use>
+      <talk>
+        <command>text "Bugs, I need you to be done with these holes. You're ruining our lawn."</command>
+      </talk>
+    </item>
+    <item ID="triciclo">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <character ID="traslocatore scemo">
+      <look />
+      <talk />
+    </character>
+    <character ID="traslocatore grasso">
+      <look />
+      <talk />
+    </character>
+    <action ID="portiera">
+      <act>
+        <command>wait 0,5</command>
+        <command>text "No way, it's closed."</command>
+      </act>
+    </action>
+    <character ID="Noce">
+      <look>
+        <command>pose d</command>
+        <command>text "You should be able to recognize Nut by now."</command>
+      </look>
+      <talk>
+        <command>0 text -"me" -c=fuxia "Took you long enough, hmm?"</command>
+        <command>0 text "And where did you pop up from?"</command>
+        <command>0 text -"me" -c=fuxia "This van is a wreck. I got out through a hole hidden in the floor. "</command>
+        <command>0 text "Is there a way to get in from under there?"</command>
+        <command>0 text -"me" -c=fuxia "Negative, dude. My head may be huge, but nowhere near like yours."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "How about taking a ride with me?"</command>
+        <command>0 text -"me" -c=fuxia "All aboard!"</command>
+        <command>0 sound "pick_generic"</command>
+        <command>0 pick y "noce"</command>
+        <command>0 internal 1</command>
+        <command>1 text "Jump in."</command>
+        <command>1 sound "pick_generic"</command>
+        <command>1 pick y "noce"</command>
+      </talk>
+    </character>
+    <goto ID="marciapiede_x_vicolo" icon="l" PX="-665" PY="787">
+      <go>
+        <command>goto "vicolo"</command>
+      </go>
+    </goto>
+    <goto ID="marciapiede_x_retro_furgone" icon="ur" PX="1583" PY="495">
+      <go>
+        <command>goto "retro_furgone"</command>
+      </go>
+    </goto>
+    <goto ID="marciapiede_x_ingresso" icon="d" PX="933" PY="1258">
+      <go>
+        <command>0 expression "sarcastic"</command>
+        <command>0 text "I see we are dealing with a Nobel laureate here..."</command>
+        <command>1 expression "sarcastic"</command>
+        <command>1 text "Do I need to remind you about the huge plum watching the door?"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

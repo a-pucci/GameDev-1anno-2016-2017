@@ -1,0 +1,165 @@
+<location>
+  <script />
+  <entry name="museo" X="140" Y="960" pose="r" />
+  <entry name="sala_vikingi_egizi" X="3017" Y="911" pose="l" />
+  <sound name="loop_botanica" X="820" />
+  <sound name="mach_museo_loop" X="2450" />
+  <scene bitmap="stagno" X="562" Y="613" position="back" animated="True" loop="True" />
+  <scene bitmap="farfalle" X="486" Y="269" position="back" animated="True" loop="True" />
+  <scene bitmap="indiano_rose" X="1359" Y="221" position="back" start="4000" stop="5500" animated="True" loop="True" />
+  <scene bitmap="vetri_serra" X="0" Y="0" position="back" animated="False" />
+  <scene bitmap="cactus_ballano" X="160" Y="439" position="back" animated="True" loop="True" />
+  <scene bitmap="worm" X="1742" Y="424" position="back" animated="True" start="1500" stop="3000" loop="True" />
+  <scene bitmap="soldato_carro_armato" X="1992" Y="219" position="back" animated="True" loop="True" />
+  <scene bitmap="soldato_voto_10" X="2357" Y="392" position="back" animated="True" loop="True" />
+  <scene bitmap="soldato_appeso" X="2227" Y="7" position="back" animated="True" loop="True" />
+  <scene bitmap="foto_telecamera" X="3125" Y="346" position="fore" animated="False" />
+  <hotspots>
+    <goto ID="sala_botanica_IIWW_x_museo" icon="l" PX="-750" PY="650">
+      <go>
+        <command>goto "museo"</command>
+      </go>
+    </goto>
+    <character ID="cactus ballerini">
+      <look>
+        <command>pose d</command>
+        <command>text "C'est un piège !"</command>
+      </look>
+      <talk>
+        <command>text "Désolé les gars, mais je ne peux pas remplir mon sweat avec des épines."</command>
+      </talk>
+    </character>
+    <character ID="scimmia">
+      <look>
+        <command>expression "happy"</command>
+        <command>text "Les singes sont toujours si adorablement irrévérencieux."</command>
+      </look>
+      <talk>
+        <command>text "Ne t'avise pas de commencer une bataille de « boule de neige », je te préviens."</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "moneky"</command>
+        <command>animation -"me" 00 -o=0,0 -c "scimmia"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <character ID="rana">
+      <look>
+        <command>text "Bécoté par des centaines de vieilles filles à cause d'un conte de fées ridicule."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "Je ne l'envie pas du tout."</command>
+      </look>
+      <talk>
+        <comment>[cantando]</comment>
+        <command>text "Hello, my baby. Hello, my honey. Hello, my ragtime gal..."</command>
+        <command>wait 1</command>
+        <command>text "Non hein ?"</command>
+      </talk>
+      <indipendent>
+        <command>wait 2</command>
+        <command>sound "frog"</command>
+        <command>animation -"me" 00 -o=0,0 -c "rana"</command>
+        <command>wait 2</command>
+      </indipendent>
+    </character>
+    <action ID="audioguida">
+      <act>
+        <command>dialog "audioguida_botanica_IIWW"</command>
+      </act>
+    </action>
+    <item ID="carro armato">
+      <look>
+        <command>text "Quand j'étais jeune, je rêvais d'en avoir un rien que pour moi."</command>
+        <command>wait 1</command>
+        <command>text "Et maintenant qu'il y en a un devant moi, j'en rêve encore."</command>
+      </look>
+      <pick>
+        <command>text "Malheureusement, la seule chose que je pourrais vraiment prendre ici, c'est ce bouquet."</command>
+        <command>wait 0,5</command>
+        <command>text "Et je ne le ferai pas."</command>
+      </pick>
+      <use>
+        <command>text "Ce n'est qu'un modèle d'exposition."</command>
+        <command>text "Il doit seulement rester la carrosserie, l'intérieur doit être vide."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Je n'ai plus 3 ans."</command>
+      </talk>
+    </item>
+    <character ID="maggiore T.J. Kong">
+      <look>
+        <command>text "Ce rodéo est surement l'acte le plus étonnant et le plus inapproprié de tous les temps."</command>
+      </look>
+      <talk>
+        <command>text "Si j'étais toi, je ne me moquerais pas de ce missile."</command>
+        <command>text "Ce médecin nazi est encore en train de dire merci."</command>
+      </talk>
+      <indipendent>animation -"me" 00 -o=0,0 -c "soldato_missile"</indipendent>
+    </character>
+    <item ID="bomba disinnescata">
+      <look>
+        <command>text "Un des premiers modèles de bombes à retardement."</command>
+        <command>wait 0,5</command>
+        <command>text "Je suppose que le pourcentage de membres coupés à cause de l'explosion précoce des grenades à main a considérablement diminué après son invention."</command>
+      </look>
+      <pick>
+        <command>0 lookat -"telecamera2"</command>
+        <command>0 text -"telecamera2" "Ne vous avisez pas d'y toucher !"</command>
+        <command>1 pose d</command>
+        <command>1 text "J'ai peut-être mis l'agent de sécurité hors-jeu, mais je vous rappelle que la zone est toujours surveillée par des caméras."</command>
+        <command>2 sound "pick_bomba"</command>
+        <command>2 pick y "bomba_disinnescata"</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Il suffit de lire la description : elle est désamorcée."</command>
+      </use>
+      <talk>
+        <command>text "Si seulement tu pouvais suggérer quel fil doit être coupé, beaucoup de problèmes pourraient être évités tu sais ?"</command>
+      </talk>
+    </item>
+    <goto ID="sala_botanica_IIWW_x_sala_vikingi_egizi" icon="r" PX="4014" PY="602">
+      <go>
+        <command>goto "sala_vikingi_egizi"</command>
+      </go>
+    </goto>
+    <action ID="telecamera1">
+      <act>
+        <command>text "Hey Ralph, quoi de neuf ?"</command>
+        <command>wait 0,5</command>
+        <command>1 text -"me" "Coupez."</command>
+        <command>0 text -"me" "Absolument rien."</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera2" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera3" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera4" -g 1</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera1" -g 1</command>
+        <command>2 wait 1</command>
+        <command>2 expression "sarcastic"</command>
+        <command>2 text "Ralph, je ne peux pas t'entendre si tu parles si doucement."</command>
+      </act>
+    </action>
+    <action ID="telecamera2">
+      <act>
+        <command>text "Hey Ralph, quoi de neuf ?"</command>
+        <command>wait 0,5</command>
+        <command>1 text -"me" "Coupez."</command>
+        <command>0 text -"me" "Absolument rien."</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera1" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera3" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera4" -g 1</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera2" -g 1</command>
+        <command>2 wait 1</command>
+        <command>2 expression "sarcastic"</command>
+        <command>2 text "Ralph, je ne peux pas t'entendre si tu parles si doucement."</command>
+      </act>
+    </action>
+  </hotspots>
+</location>

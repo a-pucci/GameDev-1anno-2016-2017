@@ -1,0 +1,142 @@
+<location>
+  <script>
+  </script>
+  <entry name="giardino" X="492" Y="851" pose="r" />
+  <scene bitmap="trilly" X="1528" Y="394" position="back" animated="True" start="2500" stop="6000" sound="trilly" loop="True" />
+  <scene bitmap="parete_casa_albero" X="0" Y="0" position="fore" animated="False" />
+  <hotspots>
+    <character ID="dragone">
+      <look>
+        <command>text "In Oriental mythology, the dragon is a symbol of balance and wisdom."</command>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "But not even a talisman this size could make up for your stupidity."</command>
+        <command>wait 0,5</command>
+        <command>text "Unfortunately for me."</command>
+      </look>
+      <talk>
+        <command>0-1 text "Shenron, revive Krilin!" 1</command>
+        <command>0 wait 0,5</command>
+        <command>0-1 bitmap -"me" "dragone_cinese_l"</command>
+        <command>2 bitmap -"me" "dragone_metal_l"</command>
+        <command>0 text -"me" "Don't get smart with me." 2</command>
+        <command>1 text -"me" "It is time that you stop." 3</command>
+        <command>0 internal -g 1</command>
+        <command>0-1 dialog "dragone"</command>
+        <command>2 dialog "scelta_pezzo"</command>
+      </talk>
+    </character>
+    <item ID="manifesto">
+      <look>
+        <command>text "It says 'birthday cake'."</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "I don't know what I expected, but I'm disappointed."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Wait a minute..."</command>
+        <command>0 wait 1</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Since when do I speak Chinese?"</command>
+        <command>0 internal -"poster" -g 1</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "angry"</command>
+        <command>text "You've been a very bad boy. No birthday cake for you."</command>
+      </pick>
+      <use>
+        <command>text "I don't think this kind of thing has any purpose besides decoration."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="poster">
+      <look>
+        <command>text "'I hate ideograms'."</command>
+        <command>text "I suppose it's the first thing Chinese students learn to write."</command>
+        <command>0 wait 0,5</command>
+        <command>0 pose d</command>
+        <command>0 text "Wait a minute..."</command>
+        <command>0 wait 1</command>
+        <command>0 expression "perplexed"</command>
+        <command>0 text "Since when do I speak Chinese?"</command>
+        <command>0 internal -"manifesto" -g 1</command>
+        <command>0 internal 1</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "If I find one that says 'Kick my ass' I promise I'll give it to you as a gift."</command>
+      </pick>
+      <use>
+        <command>text "I don't think this kind of thing has any purpose besides decoration."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <item ID="pugnale">
+      <look>
+        <command>text "It was probably thrown by an amateur hitman..."</command>
+        <command>wait 1</command>
+        <command>expression "sarcastic"</command>
+        <command>text "...with serious sight problems."</command>
+      </look>
+      <pick>
+        <command>text "It's too high, I can't reach it."</command>
+      </pick>
+      <use>
+        <command>text "I could probably do worse, but it'd be difficult and I don't wanna risk it."</command>
+        <command>pose d</command>
+        <command>text "When I play darts that badly, at least my excuse is that I'm just getting out of the shower."</command>
+      </use>
+      <talk>
+        <command>default e -talk</command>
+      </talk>
+    </item>
+    <character ID="eremita">
+      <look>
+        <command>text "That is the strangest form of meditation I've ever seen."</command>
+      </look>
+      <talk>
+        <command>0 text "Erm, excuse me...."</command>
+        <command>0 wait 1</command>
+        <command>0 text "&lt;coughing&gt;"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Mister...?"</command>
+        <command>0 wait 1</command>
+        <command>0 text "I don't wanna bother you, but..."</command>
+        <command>0 wait 1</command>
+        <command>0 text "DAMMIT OLD MAN, I'M TALKING TO YOU!"</command>
+        <command>1-2 text "WAKE UP, OLD MAN!"</command>
+        <command>pause -"me"</command>
+        <command>stop -a "eremita_idle"</command>
+        <command>wait 1</command>
+        <command>0 text -"eremita" "Your approach is ill-suited for a civil discussion between adults."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "You're right, I went too far."</command>
+        <command>0 text -"eremita" "I forgive you."</command>
+        <command>1 text -"eremita" "You needn't shout like that."</command>
+        <command>2 text -"eremita" "As I told you already, you do not need to shout."</command>
+        <command>1-2 wait 0,5</command>
+        <command>1-2 text "You're right, forgive me."</command>
+        <command>1-2 text -"eremita" "I forgive you."</command>
+        <command>1 internal -g 2</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "eremita"</command>
+      </talk>
+      <indipendent>
+        <command>sound "hermit"</command>
+        <command>animation -"me" 00 -o=31,12 -c "eremita_idle"</command>
+      </indipendent>
+    </character>
+    <goto ID="casa_albero_x_giardino" icon="l" PX="-582" PY="681">
+      <go>
+        <command>goto "giardino"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

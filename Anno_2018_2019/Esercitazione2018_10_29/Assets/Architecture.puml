@@ -1,0 +1,53 @@
+@startuml
+hide empty fields
+hide empty methods
+
+Class GameManager
+Class Siren
+Class Person << "ScriptableObject" >>
+{
+	+ face : Sprite
+	+ name : string
+	+ surname : surname
+	+ birthdate : Birthdate
+	+ birthplace : string
+	+ country : string
+}
+
+Class Document
+{
+ + code : int
+ + RandomCodeGenerator() : void
+}
+
+Class Baloon
+
+Class DailyList << "ScriptableObject" >>
+{
+    + Person[] dailyPeople
+}
+
+Class PersonGenerator
+{
+    {static} - string[] maleNames
+    {static} - string[] femaleNames
+    {static} - string[] surnames
+    {static} - string[] cities
+    {static} - string[] countries
+    {static} + GenerateRandomPerson() : Person
+    {static} - GetRandomName() : string
+    {static} - GetRandomElement() : string
+    {static} - GetRandomDate() : string
+    {static} - GetRandomId() : string
+}
+
+GameManager -- DailyList : usa >
+DailyList *-- Person
+DailyList -- PersonGenerator
+PersonGenerator - Person
+Person -- Document : possiede >
+Person -- Birthdate : usa >
+Person - Baloon : usa >
+Siren -- Baloon : usa >
+
+@enduml

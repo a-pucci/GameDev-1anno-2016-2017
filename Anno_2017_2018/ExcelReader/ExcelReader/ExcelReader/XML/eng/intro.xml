@@ -1,0 +1,90 @@
+<location>
+  <script>
+    <command>0 hide skinny</command>
+    <command>0 throw -a "gomme_da_masticare"</command>
+    <command>0 throw -a "gomma_gigante"</command>
+    <command>0 throw -a "gomma_presa_rapida"</command>
+    <command>0 throw -a "gomma_solidificata"</command>
+    <command>0 throw -a "tubo"</command>
+    <command>0 screen -w=500 -fo=1500</command>
+    <command>0 wait 1,5</command>
+    <command>0 scroll (0,1230) 4</command>
+    <command>0 wait 1,5</command>
+    <command>0 sound "intro_sfx#1"</command>
+    <command>0 animation -"armadio" 00 -o=0,0 "intro_caduta"</command>
+    <command>0 bitmap -"armadio" "armadio_aperto"</command>
+    <command>0 hide -"custode"</command>
+    <command>0 wait 1</command>
+    <command>0 scroll (0,2350) 3</command>
+    <command>0 wait 2</command>
+    <command>0 achievement "volo_angelo"</command>
+    <command>0 screen -fi=500 -w=500</command>
+    <command>0 blackscreen</command>
+    <command>0 hide +"toro_molla"</command>
+    <command>0 wait 1,5</command>
+    <command>0 text -"custode" -c=yello "Damned spoiled brats..."</command>
+    <command>0 wait 1,5</command>
+    <command>0 text -"custode" -c=yello "Hey boy, is everything ok?"</command>
+    <command>0 blackscreen</command>
+    <command>0 show -"custode"</command>
+    <command>0 show -"toro_skinny"</command>
+    <command>0 screen -w=500 -fo=500</command>
+    <command>0 wait 0,3</command>
+    <command>0 sound "intro_sfx#2"</command>
+    <command>0 animation -"toro_skinny" 00 -o=0,0 "skinny_toro_sveglia"</command>
+    <command>0 bitmap -"toro_skinny" "toro_sveglio_terrorizzato"</command>
+    <command>0 wait 1</command>
+    <comment>0 [Skinny riprende i sensi e guarda terrorizzato il custode]</comment>
+    <command>0 text -"custode" -c=yello -t "Tell me, that fall cut out your tongue?"</command>
+    <command>0 bitmap -"toro_skinny" "toro_sveglio_triste"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"toro_skinny" -t "N-n-no, sir..."</command>
+    <command>0 text -"custode" -c=yello -t "Isn't it too early to wear your costume? It's only afternoon..."</command>
+    <command>0 wait 0,5</command>
+    <command>0 bitmap -"toro_skinny" "toro_sveglio_perplesso"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"toro_skinny" -t "Erm... what?"</command>
+    <command>0 text -"custode" -c=yello -t "You probably hit your head too hard on the ground..."</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"custode" -c=yello -t "It's Halloween today!"</command>
+    <command>0 text -"custode" -c=yello -t "Otherwise why would you wear that stupid skeleton costume?"</command>
+    <command>0 bitmap -"toro_skinny" "toro_sveglio_normale"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"toro_skinny" -t "Oh, erm... Yes - yes, of course! Erm... for Halloween, obviously!"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"custode" -c=yello -t "Bah! Try not to make too much trouble while you're still around, capiche?"</command>
+    <command>0 wait 1</command>
+    <command>0 sound "intro_sfx#3"</command>
+    <comment>0 [skinny perde nuovamente i sensi]</comment>
+    <command>0 animation -"toro_skinny" 00 -o=0,0 "skinny_toro_sviene"</command>
+    <command>0 bitmap -"toro_skinny" "toro_svenuto2"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"custode" -c=yello -t "Brats..."</command>
+    <command>0 wait 1</command>
+    <command>0 stop "intro_theme"</command>
+    <command>0 screen -fi=1000 -w=500</command>
+    <command>0 goto "discarica"</command>
+  </script>
+  <scene bitmap="toro_molla" X="905" Y="2783" position="back" animated="True" start="12000" loop="True" />
+  <scene bitmap="casco_astronauta_intro" X="1310" Y="2990" position="back" animated="True" loop="True" />
+  <scene bitmap="erbetta_intro" X="838" Y="3137" position="back" animated="False" />
+  <scene bitmap="salumi_intro" X="-52" Y="2414" position="back" animated="True" loop="True" />
+  <hotspots>
+    <item ID="armadio">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <item ID="toro_skinny">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+    <character ID="custode">
+      <look />
+      <talk />
+    </character>
+  </hotspots>
+</location>

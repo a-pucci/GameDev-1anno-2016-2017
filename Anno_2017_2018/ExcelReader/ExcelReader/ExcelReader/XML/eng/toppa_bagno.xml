@@ -1,0 +1,34 @@
+<location>
+  <script>
+    <command>0 animation -"ciccione" 00 -o=0,0 "ciccione_cutscene1"</command>
+    <command>0 animation -"ciccione" 00 -o=0,0 "ciccione_cutscene2"</command>
+    <command>0 animation -"ciccione" 00 -o=0,0 "ciccione_cutscene3"</command>
+    <command>0 wait 1</command>
+    <command>0 text -"ciccione" "Damn, I'm out again."</command>
+    <command>0 wait 0,5</command>
+    <command>0 internal &gt;"toppa_bagno" -g -i 1</command>
+    <command>0 status 1</command>
+  </script>
+  <indipendent>
+    <command>0 wait 10</command>
+    <command>1 animation -"ciccione" 00 -o=0,0 "ciccione_cutscene4"</command>
+    <command>1 animation -"ciccione" 00 -o=0,0 "ciccione_cutscene5"</command>
+  </indipendent>
+  <entry name="primo_piano" X="1" Y="1" pose="u" />
+  <scene bitmap="fronde_albero_giardino" X="722" Y="0" position="back" animated="False" />
+  <scene bitmap="motore_toppa" X="1191" Y="191" position="back" animated="True" loop="True" />
+  <scene bitmap="mantello_toppa" X="1254" Y="281" position="default" animated="False" />
+  <scene bitmap="finestra_toppa" X="679" Y="0" position="default" animated="False" />
+  <scene bitmap="perdita_vasca_toppa" X="928" Y="872" position="back" animated="True" loop="True" />
+  <hotspots>
+    <character ID="ciccione">
+      <look />
+      <talk />
+    </character>
+    <goto ID="toppa_bagno_x_primo_piano" PX="990" PY="1334">
+      <go>
+        <command>goto "primo_piano"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>

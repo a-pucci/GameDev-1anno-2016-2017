@@ -1,0 +1,307 @@
+### ACCAMPAMENTO ###
+
+bidone_fuoco
+cicada_accampamento
+covone_paglia
+maiali
+pick_pirite
+
+
+### ANTICAMERA ###
+
+skinny_break_door
+
+
+### BAGNO ###
+
+acqua_defluisce
+bagnoschiuma_pensilina
+ciccione_emerge
+ciccione_immersione
+closing_pensile
+door_opened
+leva
+loop_engine_piscina
+loop_perdita
+opening_pensile
+pesce
+pick_pass
+sali_minerali
+
+
+### BAGNO1 ###
+
+bathroom_door_opening_try
+housemover_door
+key_rotation
+pick_pirite
+sink_drop
+use_bag
+
+
+### BARACCA ###
+
+calderone
+watchperson_drinks
+
+
+### BONUS ###
+
+
+
+### CABINA ###
+
+free_telephone_line
+wrong_telephone_number
+
+
+### CAMERA_LETTO ###
+
+rabbit
+
+
+### CAMERETTA ###
+
+skinny_wardrobe
+
+
+### CAMERETTA_RONALD ###
+
+ronald_sviene
+ronald_urla
+
+
+### CANTIERE ###
+
+
+
+### CASA_ALBERO ###
+
+trilly
+
+
+### CATACOMBA ###
+
+libro_aperto
+libro_loop
+pick_bagnoschiuma
+torcia_1
+
+
+### CIMITERO ###
+
+cripta_aperta
+cripta_chiusa
+raga_tentacolo
+risate_teppistelli
+
+
+### CRIPTA ###
+
+dracula
+pick_bibbia
+
+
+### CUCINA ###
+
+mattonella
+pesca
+use_canna
+
+
+### CUCINA1 ###
+
+micro_closing
+micro_opening
+nose
+pick_registratore
+pizza_clock
+skinny_knick_knack
+
+
+### DISCARICA ###
+
+cicada
+engine_loud
+it
+landfill_sounds
+pick_battery
+wardrobe_closed
+
+
+### ELENCO_TELEFONICO ###
+
+pick_inserto_telefonico
+
+
+### FINESTRA ###
+
+
+
+### FOGNA ###
+
+crocodile
+skinny_caduta
+
+
+### FRIGORIFERO ###
+
+cuore_babbuino
+
+
+### GIARDINO ###
+
+pick_lettera_amore
+
+
+### GROTTA ###
+
+
+
+### INGRESSO ###
+
+moai_baloon
+moai_chewing_gum
+pick_gum_masticati
+skinny_run1
+skinny_run2
+
+
+### INTERNO_GRU ###
+
+chiave_girata
+engine
+engine_on
+gru_theme
+hook_button
+inserted_key
+lever_left_right
+lever_up_down
+ronzio_cavo
+valvola esplode
+
+
+### INTRO ###
+
+intro_sfx#1
+intro_sfx#2
+intro_sfx#3
+
+
+### MACCHINA_TEMPO ###
+
+
+
+### MARCIAPIEDE ###
+
+pick_generic
+
+
+### METEORITE ###
+
+brace
+
+
+### MUSEO ###
+
+trex
+
+
+### PENSILE ###
+
+
+
+### PIANO_TERRA ###
+
+
+
+### PRESA_ARMADIO ###
+
+presa_armadio1
+presa_armadio2
+
+
+### PRIMO_PIANO ###
+
+boy_is_gonna_vomit
+boy_vomits
+esplosione_bomba
+knocking
+perdita_paratia
+pick_generic
+skinny_hair_picking
+
+
+### RETRO_FURGONE ###
+
+
+
+### SALA_BOTANICA_IIWW ###
+
+pick_bomba
+
+
+### SALA_TELECAMERE ###
+
+guardia_gira
+guardia_infarto
+
+
+### SALA_VIKINGI_EGIZI ###
+
+vikinglira
+
+
+### SALOTTO ###
+
+traslocatore_grasso_russa
+traslocatore_scemo_russa
+
+
+### SCANTINATO ###
+
+cambio_disco
+detective_gallo
+owl
+sarcophagus
+
+
+### SGABUZZINO ###
+
+api
+pick_generic
+
+
+### SPIAGGIA ###
+
+pick_monete
+pick_semi
+pick_soldi
+skinny_salto
+tempo_apre
+
+
+### STUDIO ###
+
+calamaro
+door_closed
+pianta_carnivora_morde
+ritratto_opening
+
+
+### TOPPA_BAGNO ###
+
+
+
+### TV ###
+
+tv_channel
+tv_switch_on
+
+
+### VICOLO ###
+
+detonatore
+detonatore_bomb
+
+

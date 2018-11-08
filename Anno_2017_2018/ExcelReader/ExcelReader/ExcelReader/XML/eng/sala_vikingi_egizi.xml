@@ -1,0 +1,154 @@
+<location>
+  <script />
+  <entry name="sala_botanica_IIWW" X="242" Y="991" pose="r" />
+  <entry name="museo" X="3270" Y="996" pose="l" />
+  <sound name="pentolone" X="1430" />
+  <sound name="onde" X="800" />
+  <sound name="mach_museo_vik" X="800" />
+  <scene bitmap="vikingo_mago" X="238" Y="294" position="back" animated="True" stop="1000" loop="True" />
+  <scene bitmap="vikingo_scudo" X="622" Y="384" position="back" animated="True" loop="True" />
+  <scene bitmap="vikingo_birra" X="989" Y="244" position="back" animated="True" stop="500" loop="True" />
+  <scene bitmap="vikingo_lira" X="1187" Y="160" position="back" animated="True" sound="vikinglira" loop="True" />
+  <scene bitmap="onde" X="98" Y="672" position="back" animated="True" loop="True" />
+  <scene bitmap="drakkar" X="230" Y="356" position="back" animated="False" />
+  <scene bitmap="coda_sfinge" X="1535" Y="896" position="fore" start="2400" stop="5000" animated="True" loop="True" foreground="True" />
+  <scene bitmap="sarcofago" X="3184" Y="784" position="fore" start="3500" stop="4500" animated="True" loop="True" foreground="True" />
+  <hotspots>
+    <goto ID="sala_vikingi_egizi_x_sala_botanica_IIWW" icon="l" PX="-688" PY="661">
+      <go>
+        <command>goto "sala_botanica_IIWW"</command>
+      </go>
+    </goto>
+    <item ID="drakkar">
+      <look>
+        <command>text "With such threatening bows, I can only imagine the effect it would have to face them on the high seas."</command>
+      </look>
+      <pick>
+        <command>text "If I just had some extra space in the wardrobe..."</command>
+      </pick>
+      <use>
+        <command>text "The Norman people were fascinating, but I'm afraid we're out of time."</command>
+      </use>
+      <talk>
+        <command>text "Oars in their hands, and they go out to have fun plundering vessels."</command>
+      </talk>
+    </item>
+    <action ID="audioguida">
+      <act>
+        <command>dialog "audioguida_vikingi_egizi"</command>
+      </act>
+    </action>
+    <item ID="martello di Thor">
+      <look>
+        <command>text "The hammer of Thor, the god of thunder and lightning."</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "As well as the public face of a hair product line."</command>
+      </look>
+      <pick>
+        <command>text "Maybe I might have the courage, but I for SURE don't have the pure soul needed to lift it."</command>
+      </pick>
+      <use>
+        <command>expression "sarcastic"</command>
+        <command>text "Does it look like I wear a stars and stripes costume?"</command>
+      </use>
+      <talk>
+        <command>text "You can rest easy, Mjolnir. No imitation will ever be a match for you."</command>
+        <command>wait 0,5</command>
+        <command>text "So much for Stark and company."</command>
+      </talk>
+    </item>
+    <item ID="calderone">
+      <look>
+        <command>text "Druidic potions, basically the equivalent of modern homeopathy."</command>
+      </look>
+      <pick>
+        <command>default e -pick</command>
+      </pick>
+      <use>
+        <command>text "It's a real shame this is just a reproduction."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "calderone"</command>
+      </indipendent>
+    </item>
+    <item ID="acchiappasogni">
+      <look>
+        <command>expression "perplexed"</command>
+        <command>text "I don't want to be a know-it-all, but I remember these were used by the Native Americans, not by Egyptians."</command>
+      </look>
+      <pick>
+        <command>text "Perhaps it's the very last thing I need."</command>
+      </pick>
+      <use>
+        <command>text "Unfortunately since I'm dead, I've completely lost the ability to dream during sleep."</command>
+        <command>wait 0,5</command>
+        <command>text "Clean slate."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <character ID="faraonessa">
+      <look>
+        <command>text "It certainly cannot be said she doesn't know how to sit on that throne."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>bitmap -"me" "faraonessa_l"</command>
+        <command>0 dialog "mummia"</command>
+        <command>1 text -"me" "Did you bring the wedding rings?"</command>
+        <command>1 bitmap -"me" "faraonessa"</command>
+        <command>1 resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>animation -"me" 00 -o=22,13 -c "faraonessa_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <goto ID="sala_vikingi_egizi_x_museo" icon="r" PX="4145" PY="698">
+      <go>
+        <command>goto "museo"</command>
+      </go>
+    </goto>
+    <action ID="telecamera3">
+      <act>
+        <command>text "Hey Ralph, what's new?"</command>
+        <command>wait 0,5</command>
+        <command>1 text -"me" "Cut it out." 2</command>
+        <command>0 text -"me" "Absolutely nothing." 3</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera1" -g 1</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera2" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera4" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera3" -g 1</command>
+        <command>2 wait 1</command>
+        <command>2 expression "sarcastic"</command>
+        <command>2 text "Ralph, I can't hear you when you talk so quietly." 4</command>
+      </act>
+    </action>
+    <action ID="telecamera4">
+      <act>
+        <command>text "Hey Ralph, what's new?"</command>
+        <command>wait 0,5</command>
+        <command>1 text -"me" "Cut it out." 2</command>
+        <command>0 text -"me" "Absolutely nothing." 3</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera1" -g 1</command>
+        <command>0 internal -"sala_botanica_IIWW/telecamera2" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera3" -g 1</command>
+        <command>0 internal -"sala_vikingi_egizi/telecamera4" -g 1</command>
+        <command>2 wait 1</command>
+        <command>2 expression "sarcastic"</command>
+        <command>2 text "Ralph, I can't hear you when you talk so quietly." 4</command>
+      </act>
+    </action>
+  </hotspots>
+</location>

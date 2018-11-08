@@ -1,0 +1,245 @@
+<location isfirstperson="True">
+  <script>
+    <command>0-1 hide skinny</command>
+    <command>0-1 internal &gt;"cabina" -i -g 0</command>
+    <command>0-1 hide -"cornetta alzata"</command>
+    <command>0-1 show -"cornetta"</command>
+    <command>0-1 show -"cabina_x_giardino"</command>
+  </script>
+  <indipendent>
+    <command>0 wait 5</command>
+    <command>1 sound -l "free_telephone_line"</command>
+    <command>1 wait 5</command>
+    <command>2 sound -l "wrong_telephone_number"</command>
+    <command>2 wait 5</command>
+    <command>3 wait 5</command>
+  </indipendent>
+  <entry name="giardino" X="1" Y="1" pose="d" />
+  <scene bitmap="cabina_telefonica" X="704" Y="0" position="default" animated="False" />
+  <scene bitmap="cornetta_intermedia" X="606" Y="274" position="back" animated="False" />
+  <hotspots>
+    <action ID="viagra">
+      <act>
+        <command>sound "pick_pills"</command>
+        <command>pick y "viagra"</command>
+      </act>
+    </action>
+    <character ID="skinny_mic">
+      <look />
+      <talk />
+    </character>
+    <character ID="altoparlante">
+      <look />
+      <talk />
+    </character>
+    <goto ID="cabina_x_giardino" icon="l" PX="-614" PY="1161">
+      <go>
+        <command>goto "giardino"</command>
+      </go>
+    </goto>
+    <item ID="bocchetta">
+      <look>
+        <command>text -"me" "It's the hole where you put the coins in."</command>
+      </look>
+      <pick>
+        <command>text -"me" "I certainly don't want to tamper with the telephone booth."</command>
+        <command>text -"me" "Do I look like a small-time crook, maybe?"</command>
+      </pick>
+      <use>
+        <command>text -"me" "I'll quickly brief you on how it works."</command>
+        <command>text -"me" "You put coins in it, so you can call someone."</command>
+        <command>wait 0,5</command>
+        <command>text -"me" "All clear?"</command>
+      </use>
+      <talk>
+        <command>text -"me" "You know, the thing you need to use to talk is the receiver."</command>
+      </talk>
+    </item>
+    <action ID="cornetta">
+      <act>
+        <command>sound "cornet_up"</command>
+        <command>hide -"me"</command>
+        <command>show +"cornetta_intermedia"</command>
+        <command>wait 0,2</command>
+        <command>hide +"cornetta_intermedia"</command>
+        <command>show -"cornetta alzata"</command>
+        <command>hide -"cabina_x_giardino"</command>
+        <command>wait 0,5</command>
+        <command>internal &gt;"cabina" -i -g 1</command>
+        <command>buffer "call"</command>
+        <command>status 1</command>
+      </act>
+    </action>
+    <action ID="cornetta alzata">
+      <act>
+        <command>sound "cornet_down"</command>
+        <command>stop "free_telephone_line"</command>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>hide -"me"</command>
+        <command>show +"cornetta_intermedia"</command>
+        <command>wait 0,2</command>
+        <command>hide +"cornetta_intermedia"</command>
+        <command>show -"cornetta"</command>
+        <command>show -"cabina_x_giardino"</command>
+        <command>stop -b "call"</command>
+        <command>status 0</command>
+      </act>
+    </action>
+    <action ID="tasto 0">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed1"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "0"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto galassia">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed0"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "g"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto OK">
+      <act>
+        <command>sound "key_pushed2"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if status 1</command>
+        <command>internal &gt;"cabina" -i -g 2</command>
+        <comment>[tentando di far partire la chiamata senza aver inserito monete]</comment>
+        <command>text (960,90) "Do you think telephone booths work for charity?"</command>
+        <command>wait 1</command>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "cornet_down"</command>
+        <command>hide -"cornetta alzata"</command>
+        <command>show +"cornetta_intermedia"</command>
+        <command>wait 0,2</command>
+        <command>hide +"cornetta_intermedia"</command>
+        <command>show -"cornetta"</command>
+        <command>show -"cabina_x_giardino"</command>
+        <command>fie</command>
+        <command>internal &gt;"cabina" -i -g 3</command>
+        <command>check "call"</command>
+      </act>
+    </action>
+    <action ID="tasto 7">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed0"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "7"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto 8">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed1"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "8"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto 9">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed2"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "9"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto 4">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed0"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "4"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto 5">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed1"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "5"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto 6">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed2"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "6"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto 1">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed0"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "1"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto 2">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed1"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "2"</command>
+        <command>fi</command>
+      </act>
+    </action>
+    <action ID="tasto 3">
+      <act>
+        <command>internal &gt;"cabina" -i -g 0</command>
+        <command>sound "key_pushed2"</command>
+        <command>hide -"me"</command>
+        <command>wait 0,2</command>
+        <command>show -"me"</command>
+        <command>if shown -"cornetta alzata"</command>
+        <command>buffer "call" "3"</command>
+        <command>fi</command>
+      </act>
+    </action>
+  </hotspots>
+</location>

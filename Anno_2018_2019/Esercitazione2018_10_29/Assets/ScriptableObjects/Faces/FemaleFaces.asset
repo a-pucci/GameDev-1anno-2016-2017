@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e58b85542f01647b0b7e33838de047, type: 3}
+  m_Name: FemaleFaces
+  m_EditorClassIdentifier: 
+  faces:
+  - {fileID: 21300000, guid: 7c4dd7e9cd25a104b84decfc746f115a, type: 3}
+  - {fileID: 21300002, guid: 7c4dd7e9cd25a104b84decfc746f115a, type: 3}
+  - {fileID: 21300004, guid: 7c4dd7e9cd25a104b84decfc746f115a, type: 3}
+  - {fileID: 21300006, guid: 7c4dd7e9cd25a104b84decfc746f115a, type: 3}
+  - {fileID: 21300000, guid: 63d2bdc777e0f154fbc509e52de4637d, type: 3}
+  - {fileID: 21300002, guid: 63d2bdc777e0f154fbc509e52de4637d, type: 3}
+  - {fileID: 21300004, guid: 63d2bdc777e0f154fbc509e52de4637d, type: 3}
+  - {fileID: 21300006, guid: 63d2bdc777e0f154fbc509e52de4637d, type: 3}
+  - {fileID: 21300000, guid: 6d7ab02e854a7074c9b5b77f979b492b, type: 3}
+  - {fileID: 21300002, guid: 6d7ab02e854a7074c9b5b77f979b492b, type: 3}
+  - {fileID: 21300004, guid: 6d7ab02e854a7074c9b5b77f979b492b, type: 3}
+  - {fileID: 21300006, guid: 6d7ab02e854a7074c9b5b77f979b492b, type: 3}

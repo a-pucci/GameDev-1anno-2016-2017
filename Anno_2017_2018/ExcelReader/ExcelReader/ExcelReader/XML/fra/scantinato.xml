@@ -1,0 +1,139 @@
+<location>
+  <script>
+  </script>
+  <entry name="anticamera" X="1057" Y="566" pose="dr" />
+  <entry name="fogna" X="273" Y="778" pose="r" />
+  <scene bitmap="seggiola_back" X="1189" Y="509" position="default" animated="False" />
+  <scene bitmap="seggiola_front" X="1207" Y="693" position="default" animated="False" />
+  <scene bitmap="civetta_idle" X="560" Y="388" position="back" animated="True" start="1500" stop="6000" sound="owl" loop="True" />
+  <scene bitmap="sarcofago" X="416" Y="267" position="back" animated="True" start="3000" stop="7000" sound="sarcophagus" loop="True" />
+  <scene bitmap="distillatore" X="357" Y="350" position="back" animated="False" />
+  <scene bitmap="bancone_scantinato" X="1291" Y="378" position="default" animated="False" />
+  <scene bitmap="parete_fogna" X="0" Y="322" position="default" animated="False" />
+  <scene bitmap="corrimano_scantinato" X="880" Y="269" position="default" animated="False" />
+  <hotspots>
+    <action ID="scrigno">
+      <act>
+        <command>0 sound "detective_gallo"</command>
+        <command>0 animation -"me" 00 -o=66,37 -p=back "scrigno_opening"</command>
+        <command>0 bitmap -"me" "scrigno_aperto"</command>
+        <command>0 hide -nc -"me"</command>
+        <command>0 internal 1</command>
+      </act>
+    </action>
+    <item ID="cintura di castità">
+      <look>
+        <command>text "Quand on dit que « l'espoir est le dernier à mourir »."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Tu ne sauras jamais ce que je cache en-dessous mon inventaire. Jamais."</command>
+      </pick>
+      <use>
+        <command>text "On dirait que le travail a presque trop bien été fait jusqu'à maintenant."</command>
+      </use>
+      <talk>
+        <command>text "C'est dur la vie dans une cage, n'est-ce pas ?"</command>
+      </talk>
+    </item>
+    <item ID="jukebox">
+      <look>
+        <command>text "Maintenant je comprends mieux tous les zéros sur les factures d'électricité."</command>
+      </look>
+      <pick>
+        <command>text "Il irait bien dans le salon, mais je n'ai plus les muscles que j'avais avant."</command>
+      </pick>
+      <use>
+        <command>0 sound "cambio_disco"</command>
+        <command>0 wait 0,3</command>
+        <command>0 ost "scantinato_theme"</command>
+        <command>0 internal -g -i 1</command>
+        <command>0 internal 1</command>
+        <command>1 sound "cambio_disco"</command>
+        <command>1 wait 0,3</command>
+        <command>1 ost "fogna_theme"</command>
+        <command>1 internal -g -i 0</command>
+        <command>1 internal 0</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=48,37 -c "jukebox_idle"</command>
+        <command>1 animation -"me" 00 -o=101,90 -c "jukebox_acceso"</command>
+      </indipendent>
+    </item>
+    <character ID="barman">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "Et voilà pourquoi on se plaint du chômage chez les jeunes."</command>
+      </look>
+      <talk>
+        <command>0 text "C'est un bel endroit que vous avez là."</command>
+        <command>0 text -"me" -c=lblue "…"</command>
+        <command>0 internal -g 1</command>
+        <command>dialog "barista"</command>
+      </talk>
+    </character>
+    <item ID="boccale">
+      <look>
+        <command>expression "sarcastic"</command>
+        <command>text "À en juger par toute cette poussière et le regard du barman, je suis prêt à parier que cet endroit a connu des jours meilleurs."</command>
+      </look>
+      <pick>
+        <command>sound "pick_mug"</command>
+        <command>pick y "boccale_vuoto"</command>
+      </pick>
+      <use>
+        <command>text "Je dirais qu'il manque un élément de base."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "La BIÈRE !"</command>
+      </use>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Peut-être que si j'étais ivre je n'aurais pas de problèmes..."</command>
+      </talk>
+    </item>
+    <goto ID="scantinato_x_fogna" icon="l" PX="-330" PY="621">
+      <go>
+        <command>goto "fogna"</command>
+      </go>
+    </goto>
+    <item ID="fiamma ossidrica">
+      <look>
+        <command>pose d</command>
+        <command>text "Mon grand-père a travaillé dans une usine de soudure pour carrosserie de voitures."</command>
+        <command>text "Je me souviens que, sur son lit de mort, déjà complètement aveugle, il a confondu le chalumeau avec le bras de ma grand-mère."</command>
+        <command>wait 1</command>
+        <command>text "Qu'il repose en paix."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "C'est un peu trop lourd, tu ne crois pas ?"</command>
+      </pick>
+      <use>
+        <command>0 text "Il y a toujours du gaz à l'intérieur, si un jour tu décides de suivre les traces de mon grand-père."</command>
+        <command>1 text "J'ai consommé le peu de gaz restant."</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <goto ID="scantinato_x_anticamera" icon="ul" PX="209" PY="-119">
+      <go>
+        <command>goto "anticamera"</command>
+      </go>
+    </goto>
+    <character ID="t-rex">
+      <look>
+        <command>text "Le « cow-boy T-Rex » : chef incontesté de l'ouest « très sauvage » jusqu'à la fin du Crétacé."</command>
+      </look>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Ça serait intéressant de lui demander comment il a réussi à extraire son revolver de l'étui."</command>
+      </talk>
+    </character>
+  </hotspots>
+</location>

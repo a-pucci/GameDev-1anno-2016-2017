@@ -1,0 +1,216 @@
+<location>
+  <script>
+    <command>0 wait 1</command>
+    <command>0 lookat -"I tre fratelli Orco"</command>
+    <command>0 pause -"Uno"</command>
+    <command>0 pause -"Due"</command>
+    <command>0 pause -"I tre fratelli Orco"</command>
+    <command>0 bitmap -"Uno" "orco_1_l"</command>
+    <command>0 bitmap -"Due" "orco_2_1_felice"</command>
+    <command>0 text -"Uno" "Hey Deux, sais-tu ce qui est rond, doux et juteux ?"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"Due" "Une tomate ?"</command>
+    <command>0 text -"Uno" "Non, idiot. Un petit ENFANT."</command>
+    <command>0 animation -"Due" 00 -o=61,28 "orco_2_si_rattrista"</command>
+    <command>0 bitmap -"Due" "orco_2_1_triste"</command>
+    <command>0 text -"Due" "Combien de fois devrais-je te le dire... J'ai arrêté de manger des enfants."</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"Due" "Je suis fruitarien maintenant."</command>
+    <command>0 wait 0,5</command>
+    <command>0 bitmap -"Tre" "orco_3_l"</command>
+    <command>0 bitmap -"Due" "orco_2_3_triste"</command>
+    <command>0 text -"Tre" "Et qu'est-ce que ça veut dire ?"</command>
+    <command>0 text -"Due" "Je me nourris seulement de fruits, et seulement ceux qui sont déjà tombés des arbres."</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"Tre" "Tu ne tiendras pas plus d'une semaine..."</command>
+    <command>0 text -"Due" "Tu verras."</command>
+    <command>0 bitmap -"Due" "orco_2_1_triste"</command>
+    <command>0 text -"Uno" "Tu es vraiment le mouton noir de la famille."</command>
+    <command>0 bitmap -"Uno" "orco_1"</command>
+    <command>0 bitmap -"Due" "orco_2_triste"</command>
+    <command>0 bitmap -"Tre" "orco_3"</command>
+    <command>0 resume -"Uno"</command>
+    <command>0 resume -"Due"</command>
+    <command>0 resume -"Tre"</command>
+    <command>0 resume -"I tre fratelli Orco"</command>
+    <command>0 status 1</command>
+    <command>1 bitmap -"Due" "orco_2_triste"</command>
+    <command>1 bitmap -"Uno" "orco_1"</command>
+    <command>1 bitmap -"Tre" "orco_3"</command>
+    <command>2 stop "meteorite_theme"</command>
+    <command>2 pause -"Uno"</command>
+    <command>2 stop "brace"</command>
+    <command>2 load "matrimonio"</command>
+    <command>2 hide -"sala_vikingi_egizi/faraonessa"</command>
+    <command>2 hide -"cucina/Gesoo"</command>
+    <command>2 hide -"cucina/Giuda"</command>
+    <command>2 show +"cucina/bicchieri_giuda"</command>
+    <command>2 show +"cucina/bicchieri_gesoo"</command>
+    <command>2 status &gt;"cucina" 1</command>
+    <command>2 show +"sposi"</command>
+    <command>2 hide +"mummia_griglia"</command>
+    <command>2 hide -"mummia"</command>
+    <command>2 show +"griglia"</command>
+    <command>2 wait 1</command>
+    <command>2 pose ur</command>
+    <command>2 wait 1</command>
+    <command>2 cutscene -s "matrimonio"</command>
+    <command>2 screen c -w=500 -fo=1500 -a</command>
+    <command>2 hide +"sposi"</command>
+    <command>2 status &gt;"primo_piano" 2</command>
+    <command>2 bitmap -"primo_piano/vestiti a terra" -"vestiti_mummie"</command>
+    <command>2 show -"primo_piano/vestiti a terra"</command>
+    <command>2 show -"primo_piano/porta della camera"</command>
+    <command>2 hide -"primo_piano/primo_piano_x_camera_letto"</command>
+    <command>2 show -"primo_piano/bende"</command>
+    <command>2 internal #"quarterback" -g 0</command>
+    <command>2 wait 0,5</command>
+    <command>2 ost &gt;"meteorite" "meteorite_theme"</command>
+    <command>2 resume -"Uno"</command>
+    <command>2 sound "brace"</command>
+    <command>2 wait 1</command>
+    <command>2 status 1</command>
+  </script>
+  <indipendent>
+    <command>0 animation (290,595) -p=superback "acqua1"</command>
+    <command>0 animation (290,595) -p=superback "acqua2"</command>
+  </indipendent>
+  <entry name="mappa" X="1018" Y="1017" pose="u" />
+  <sound filename="brace" />
+  <scene bitmap="mummia_griglia" X="1344" Y="179" position="back" animated="False" />
+  <scene bitmap="griglia" X="1344" Y="179" position="back" animated="False" />
+  <scene bitmap="brace" X="1419" Y="590" position="back" animated="True" loop="True" />
+  <scene bitmap="radici_albero" X="99" Y="769" position="back" animated="False" />
+  <scene bitmap="freccia" X="795" Y="224" position="back" animated="True" loop="True" />
+  <scene bitmap="sposi" X="1376" Y="0" position="back" animated="False" />
+  <hotspots>
+    <character ID="I tre fratelli Orco">
+      <look>
+        <command>text "Ils s'entendent sans doute très bien."</command>
+      </look>
+      <talk>
+        <command>text "Il est préférable de ne pas s'impliquer dans les affaires privées."</command>
+      </talk>
+      <indipendent>
+        <command>wait 30</command>
+        <command>bitmap -"Uno" "orco_1"</command>
+        <command>bitmap -"Due" "orco_2_triste"</command>
+        <command>bitmap -"Tre" "orco_3"</command>
+        <command>wait 30</command>
+        <command>bitmap -"Tre" "orco_3_l"</command>
+        <command>bitmap -"Due" "orco_2_3_triste"</command>
+        <command>text -"Tre" "Deux, ne sois pas triste. En fait, je comprends parfaitement ton choix de vie."</command>
+        <command>animation -"Due" 00 -o=61,28 -c "orco_2_si_risolleva"</command>
+        <command>bitmap -"Due" "orco_2_3_felice"</command>
+        <command>text -"Due" "Vraiment ?"</command>
+        <command>wait 0,5</command>
+        <command>text -"Tre" "Moi aussi je ne mange... que les enfants qui tombent dans ma bouche."</command>
+        <command>animation -"Due" 00 -o=61,28 "orco_2_si_rattrista"</command>
+        <command>bitmap -"Due" "orco_2_triste"</command>
+        <command>bitmap -"Tre" "orco_3"</command>
+        <command>resume -"Tre"</command>
+        <command>wait 30</command>
+        <command>pause -"Uno"</command>
+        <command>bitmap -"Uno" "orco_1_l"</command>
+        <command>bitmap -"Due" "orco_2_1_triste"</command>
+        <command>text -"Uno" "Deux, tu veux entendre une nouvelle qui va te rendre heureux ?"</command>
+        <command>text -"Uno" "Je bois du jus."</command>
+        <command>bitmap -"Tre" "orco_3_l"</command>
+        <command>text -"Tre" "Devine à quel parfum, deux..."</command>
+        <command>animation -"Due" 00 -o=61,28 -c "orco_2_si_risolleva"</command>
+        <command>bitmap -"Due" "orco_2_1_felice"</command>
+        <command>text -"Due" "Pamplemousse ?"</command>
+        <command>text -"Uno" "ENFANT."</command>
+        <command>text -"Tre" "Euh, je peux en avoir un peu ? Hahahah"</command>
+        <command>animation -"Due" 00 -o=61,28 "orco_2_si_rattrista"</command>
+        <command>bitmap -"Due" "orco_2_triste"</command>
+        <command>bitmap -"Uno" "orco_1"</command>
+        <command>bitmap -"Tre" "orco_3"</command>
+        <command>resume -"Uno"</command>
+      </indipendent>
+    </character>
+    <character ID="Tre">
+      <look />
+      <talk />
+      <indipendent>
+        <command>animation (675,472) -p=back "orco_3_idle"</command>
+      </indipendent>
+    </character>
+    <character ID="Due">
+      <look />
+      <talk />
+    </character>
+    <character ID="Uno">
+      <look />
+      <talk />
+      <indipendent>
+        <command>wait 3</command>
+        <command>sound "orco_1_idle"</command>
+        <command>animation -"me" 00 -o=29,48 -c "orco_1_beve"</command>
+        <command>wait 5</command>
+      </indipendent>
+    </character>
+    <character ID="alieno">
+      <look>
+        <command>text "Maintenant, je comprends ce qu'ils voulaient dire les médias quand ils parlaient d'une invasion extraterrestre mystérieuse dans les années 80."</command>
+      </look>
+      <talk>
+        <command>text "J'aurais pu exterminer des hordes entières pour abattre ton vaisseau à 300 points."</command>
+      </talk>
+    </character>
+    <character ID="Flowey">
+      <look>
+        <command>text "Tellement de spoilers possible, je ne saurais par où commencer."</command>
+      </look>
+      <talk>
+        <command>expression "sarcastic"</command>
+        <command>text "Je n'ai pas besoin de LV. Je suis un type acide."</command>
+      </talk>
+      <indipendent>
+        <command>0 animation -"me" 00 -o=141,50 -c "flowey_idle"</command>
+        <command>1 animation -"me" 00 -o=253,71 -c "flowey_glitch"</command>
+      </indipendent>
+    </character>
+    <item ID="torcia">
+      <look>
+        <command>text "Quand j'étais jeune, j'en avais une comme ça."</command>
+        <command>text "Je la gardais sous mon oreiller pour me défendre contre les « méchants monstres »."</command>
+      </look>
+      <pick>
+        <command>sound "pick_torcia"</command>
+        <command>pick y "torcia_scarica"</command>
+      </pick>
+      <use>
+        <command>wait 0,5</command>
+        <command>sound "use_torcia"</command>
+        <command>bitmap -"me" "torcia_down"</command>
+        <command>wait 1</command>
+        <command>sound "use_torcia"</command>
+        <command>bitmap -"me" "torcia"</command>
+        <command>wait 1</command>
+        <command>text "Humm... J'ai bien peur que les piles soient mortes."</command>
+      </use>
+      <talk>
+        <command>text "Je ne t'ai toujours pas pardonné toutes les fois où tu m'as laissé seul dans cet horrible jeu."</command>
+      </talk>
+    </item>
+    <character ID="mummia">
+      <look>
+        <command>text "Il est sans aucun doute la force vive de cette fête."</command>
+      </look>
+      <talk>
+        <command>expression "happy"</command>
+        <command>text "C'est toujours un plaisir de vous voir."</command>
+        <command>text -"me" -c=lblue "..."</command>
+      </talk>
+    </character>
+    <action ID="incisione">
+      <act>
+        <command>text "Ah, l'amour... gravé pour toujours dans la mémoire éternelle."</command>
+        <command>wait 0,5</command>
+        <command>expression "sarcastic"</command>
+        <command>text "Enfin jusqu'à ce qu'ils coupent l'arbre."</command>
+      </act>
+    </action>
+  </hotspots>
+</location>

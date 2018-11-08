@@ -1,0 +1,54 @@
+<location>
+  <script>
+    <command>0 hide skinny</command>
+    <command>0 show -"armadio"</command>
+    <command>0 wait 1,5</command>
+    <command>0 sound "presa_armadio1"</command>
+    <command>0 animation -"armadio" 00 -o=36,141 -e=2000 -a "presa_armadio1"</command>
+    <command>0 wait 2,8</command>
+    <command>0 internal -"interno_gru/leva in basso" -g 2</command>
+    <command>0 hide +"interno_gru/leva_d_ud"</command>
+    <command>0 show +"interno_gru/leva_cx_ud"</command>
+    <command>0 goto "interno_gru"</command>
+    <command>1 sound "presa_armadio2"</command>
+    <command>1 animation -"armadio" 00 -o=36,141 "presa_armadio2"</command>
+    <command>1 hide +"cassa_presa_armadio"</command>
+    <command>1 screen -fi=2000 -w=1000 -a</command>
+    <command>1 animation -"armadio" 00 -o=36,141 "presa_armadio3"</command>
+    <command>1 if shown -"discarica/il basso"</command>
+    <command>1 area &gt;"discarica" "discarica4"</command>
+    <command>1 fi</command>
+    <command>1 if not shown -"discarica/il basso"</command>
+    <command>1 area &gt;"discarica" "discarica3"</command>
+    <command>1 fi</command>
+    <command>1 stop "engine"</command>
+    <command>1 hide +"discarica/gru_sinistra"</command>
+    <command>1 hide +"discarica/braccio_gru_sinistra"</command>
+    <command>1 hide +"discarica/gru_centro"</command>
+    <command>1 hide +"discarica/braccio_gru_centro"</command>
+    <command>1 show +"discarica/porta_gru_aperta"</command>
+    <command>1 show -"discarica/armadio recuperato"</command>
+    <command>1 internal -"discarica/il basso" -g 1</command>
+    <command>1 hide -"discarica/armadio"</command>
+    <command>1 hide -"discarica/volantino"</command>
+    <command>1 hide +"cimitero/armadio"</command>
+    <command>1 status &gt;"discarica" 3</command>
+    <command>1 status &gt;"interno_gru" 4</command>
+    <command>1 hide -nc -"interno_gru/bottone"</command>
+    <command>1 hide -"interno_gru/leva a sinistra"</command>
+    <command>1 hide -"interno_gru/leva a destra"</command>
+    <command>1 hide -"interno_gru/leva in basso"</command>
+    <command>1 stop -a "presa_armadio3"</command>
+    <command>1 goto -nofade "discarica"</command>
+  </script>
+  <entry name="interno_gru" X="0" Y="0" pose="u" />
+  <scene bitmap="cassa_presa_armadio" X="672" Y="738" position="fore" animated="False" />
+  <hotspots>
+    <item ID="armadio">
+      <look />
+      <pick />
+      <use />
+      <talk />
+    </item>
+  </hotspots>
+</location>

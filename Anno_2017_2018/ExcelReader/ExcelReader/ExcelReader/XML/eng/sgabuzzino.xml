@@ -1,0 +1,234 @@
+<location>
+  <script>
+    <command>0 wait 0,8</command>
+    <command>0 expression "scared"</command>
+    <command>0 wait 1</command>
+    <command>0 text -"Boogeyman" "Check this out, we have guests!"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"Boogeyman" "Let me welcome you to my little GLOOMY abode."</command>
+    <command>0 wait 1</command>
+    <command>0 pose d</command>
+    <command>0 text "For you, author of this videogame: from now on you can count on my unconditional hate."</command>
+    <command>0 wait 0,5</command>
+    <command>0 lookat -"Boogeyman"</command>
+    <command>0 wait 0,5</command>
+    <command>0 text "Nice to meet you."</command>
+    <command>0 text -"Boogeyman" "My pleasure... believe me."</command>
+    <command>0 wait 0,5</command>
+    <command>0 text -"Boogeyman" "*evil laugh*"</command>
+    <command>0 wait 1</command>
+    <command>0 text -nt "*gulp*"</command>
+    <command>0 status 1</command>
+    <command>1 load "boogeyman"</command>
+  </script>
+  <indipendent>
+    <command>0 wait 10</command>
+    <command>1 sound -l "api"</command>
+    <command>1 wait 10</command>
+  </indipendent>
+  <entry name="cucina" X="1376" Y="1017" pose="l" />
+  <scene bitmap="bandiera_scostata_sgabuzzino_buio" X="1080" Y="434" position="back" animated="False" />
+  <scene bitmap="bandiera_scostata_sgabuzzino_luce" X="1080" Y="434" position="back" animated="False" />
+  <scene bitmap="secchio_goccia" X="1576" Y="0" position="back" animated="True" start="2500" stop="5000" loop="True" />
+  <scene bitmap="rigagnolo_sgabuzzino" X="903" Y="932" position="back" animated="True" loop="True" />
+  <scene bitmap="secchio_bolle" X="1069" Y="807" position="back" animated="True" loop="True" />
+  <scene bitmap="alveare" X="47" Y="0" position="back" animated="True" loop="True" />
+  <scene bitmap="palla_di_natale" X="115" Y="260" position="back" animated="True" loop="True" />
+  <scene bitmap="acquario" X="69" Y="381" position="back" animated="True" loop="True" />
+  <scene bitmap="pollo_carrucola" X="67" Y="239" position="back" animated="False" />
+  <hotspots>
+    <character ID="Boogeyman">
+      <look>
+        <command>expression "scared"</command>
+        <command>text "And now even the last of my secret fears is coming alive..."</command>
+        <command>text -"Boogeyman" "*evil laugh*"</command>
+      </look>
+      <talk>
+        <command>expression "scared"</command>
+        <command>text -"Boogeyman" "Come closer... I can't hear you from there!"</command>
+        <command>wait 1</command>
+        <command>expression "normal"</command>
+        <command>text "Erm... I just remembered I have an urgent meeting to attend. I have to go."</command>
+      </talk>
+    </character>
+    <character ID="finto Boogeyman">
+      <look>
+        <command>text "Little impertinent kid..."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "He has a bright future ahead of him."</command>
+      </look>
+      <talk>
+        <command>pause -"me"</command>
+        <command>expression "angry"</command>
+        <command>text "You're having fun, eh?"</command>
+        <command>expression "normal"</command>
+        <command>text -"me" "Tyler didn't want me in the way so he closed me in here. I had to do something to fill all this time."</command>
+        <command>wait 0,5</command>
+        <command>text "Tyler?"</command>
+        <command>text -"me" "My older brother. He's the guy who arranged the party."</command>
+        <command>text -"me" "I was bored, so I thought it would be fun to scare anyone who walked into the storage room by mistake."</command>
+        <command>wait 0,5</command>
+        <command>text "If I was in your shoes, I would have done much worse."</command>
+        <command>resume -"me"</command>
+      </talk>
+      <indipendent>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>sound "boogeyman_bu"</command>
+        <command>animation -"me" 00 -o=16,10 -c "boogeyman_idle"</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+        <command>wait 1</command>
+      </indipendent>
+    </character>
+    <item ID="casco Master Chief">
+      <look>
+        <command>text "Who doesn't know Master Chief?"</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>text "And NO, I'm not talking about the cooking talent show."</command>
+      </look>
+      <pick>
+        <command>default n -pick</command>
+      </pick>
+      <use>
+        <command>text "Obviously with a safety helmet like this one, doing wheelies on a motorbike would look very cool."</command>
+      </use>
+      <talk>
+        <command>text "'The Russians are coming!!!'"</command>
+        <command>wait 1</command>
+        <command>pose d</command>
+        <command>text "Erm, sorry, that was another videogame."</command>
+      </talk>
+    </item>
+    <item ID="polaroid">
+      <look>
+        <command>text "The best way to arouse a hipster."</command>
+      </look>
+      <pick>
+        <command>0 lookat -"Boogeyman"</command>
+        <command>0 text "Boogey, let's hypothetically accept that I get closer to the shadow..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"Boogeyman" "Yes...?"</command>
+        <command>0 wait 0,5</command>
+        <command>0 text "Well, should... should I be afraid for my safety?"</command>
+        <command>0 text -"Boogeyman" "Not at all, I will gladly take care of your soul..."</command>
+        <command>0 wait 0,5</command>
+        <command>0 text -"Boogeyman" "*evil laugh*"</command>
+        <command>0 wait 1</command>
+        <command>0 text "Thanks for reassuring me."</command>
+        <command>1 pause -"finto Boogeyman"</command>
+        <command>1 lookat -"finto Boogeyman"</command>
+        <command>1 expression "sarcastic"</command>
+        <command>1 text "With your permission, I'll take it, Boogey."</command>
+        <command>1 text -"finto Boogeyman" "Go ahead, you earned it."</command>
+        <command>1 expression "normal"</command>
+        <command>1 lookat -"me"</command>
+        <command>1 wait 0,5</command>
+        <command>1 sound "pick_generic"</command>
+        <command>1 pick y "polaroid"</command>
+        <command>1 resume -"finto Boogeyman"</command>
+      </pick>
+      <use>
+        <comment>[cantando]</comment>
+        <command>text "*sings* But first let me take a selfie!"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <item ID="cervello">
+      <look>
+        <command>text "It's so grim and wonderful that I could stay here staring at it for hours."</command>
+        <command>text "What does the label say? A.B. Normal?"</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "I finally found something to give you for your next birthday."</command>
+      </pick>
+      <use>
+        <command>pose d</command>
+        <command>expression "sarcastic"</command>
+        <command>text "I invite you to do the same, from time to time at least."</command>
+      </use>
+      <talk>
+        <command>pose d</command>
+        <command>text "This could be the first interesting discussion since the beginning of the game."</command>
+      </talk>
+      <indipendent>
+        <command>animation -"me" 00 -o=0,0 -c "cervello_teca"</command>
+      </indipendent>
+    </item>
+    <item ID="pigotta">
+      <look>
+        <command>text "One of those old rag dolls people played with once upon a time."</command>
+        <command>text "My grandma would have crawled through glass to have one of these when she was young."</command>
+      </look>
+      <pick>
+        <command>sound "pick_doll"</command>
+        <command>pick y "pigotta"</command>
+      </pick>
+      <use>
+        <command>expression "perplexed"</command>
+        <command>text "It's more a girly thing..."</command>
+        <command>wait 0,5</command>
+        <command>pose d</command>
+        <command>expression "normal"</command>
+        <command>text "I'm not judging, of course."</command>
+      </use>
+      <talk>
+        <command>text "Too many horror films taught me that it's better not to."</command>
+      </talk>
+    </item>
+    <item ID="bandiera">
+      <look>
+        <command>text "A faithful reproduction of the Rebellion Flag in Metal Slug."</command>
+        <command>wait 1</command>
+        <comment>[con finta commozione, alla Aldo, Giovanni e Giacomo in "3 uomini e una gamba"]</comment>
+        <command>text "I can't stand this, too many memories."</command>
+      </look>
+      <pick>
+        <command>pose d</command>
+        <command>text "Absolutely not! Among us nerds there's a code of honour."</command>
+      </pick>
+      <use>
+        <command>sound "bandiera_metal_slug"</command>
+        <command>hide -"me"</command>
+        <command>show -"pigotta"</command>
+        <command>0 show +"bandiera_scostata_sgabuzzino_buio"</command>
+        <command>1 show +"bandiera_scostata_sgabuzzino_luce"</command>
+      </use>
+      <talk>
+        <command>default -talk</command>
+      </talk>
+    </item>
+    <action ID="locandina">
+      <act>
+        <command>0 pause -"finto Boogeyman"</command>
+        <command>sound "use_volantino"</command>
+        <command>document "locandina"</command>
+        <command>sound "use_volantino"</command>
+        <command>0 wait 0,5</command>
+        <command>0 lookat -"finto Boogeyman"</command>
+        <command>0 text "Where did those come from?"</command>
+        <command>0 text -"finto Boogeyman" "They're the posters for a horrorbilly concert that will be held tonight at the old cemetery."</command>
+        <command>0 text -"finto Boogeyman" "My brother didn't want any interference for his party, so... he tore down as many as he could."</command>
+        <command>0 text -"finto Boogeyman" "The whole neighborhood was practically wallpapered with them."</command>
+        <command>0 wait 0,5</command>
+        <command>0 map "graveyard"</command>
+        <command>0 nolook</command>
+        <command>0 resume -"finto Boogeyman"</command>
+        <command>0 internal 1</command>
+      </act>
+    </action>
+    <goto ID="sgabuzzino_x_cucina" icon="r" PX="2433" PY="691">
+      <go>
+        <command>sound "door"</command>
+        <command>screen -fi=200 -w=1</command>
+        <command>goto -nofade "cucina"</command>
+      </go>
+    </goto>
+  </hotspots>
+</location>
