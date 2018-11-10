@@ -1,31 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Net.Mime;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour 
 {
 	#region Fields
-
-	// Static
-
+	
 	// Public
-	public DailyList dailyPeople;
-	public Document document;
-	public PersonGenerator personGenerator;
-	public Image person;
-	
-	// Hidden Public
-	
+	public DailyQueue dailyQueue;
+	public PersonObj person;
+	public GameObject endScreen;
+
 	// Private
-
-	// Properties
-
-	// Components
-
-	// Events
+	private int queueIndex = 0;
 
 	#endregion
 
@@ -33,7 +19,10 @@ public class GameManager : MonoBehaviour
 
 	private void Start () 
 	{
+		FindObjectOfType<Alarm>().StartTalking += ListenSpeaking;
+		
 		FillList();
+		NextPerson();
 	}
 
 	#endregion
@@ -42,16 +31,40 @@ public class GameManager : MonoBehaviour
 
 	private void FillList()
 	{
-		for (int i = 0; i < dailyPeople.people.Length; i++)
+		for (int i = 0; i < dailyQueue.queue.Length; i++)
 		{
-			if (dailyPeople.people[i] == null)
+			if (dailyQueue.queue[i] == null)
 			{
-				var sex = (Sex)UnityEngine.Random.Range(0, 1);
-				dailyPeople.people[i] = personGenerator.GenerateRandomPerson(sex);
+				var sex = (Sex)Random.Range(0, 1);
+				dailyQueue.queue[i] = PersonGenerator.GenerateRandomPerson(sex);
 			}
 		}
 	}
+
+	private void NextPerson()
+	{
+		if (queueIndex < dailyQueue.queue.Length)
+		{
+			person.NewPerson(dailyQueue.queue[queueIndex]);
+			queueIndex++;
+		}
+		else
+		{
+			endScreen.SetActive(true);
+		}
+	}
+
+	private void ListenSpeaking()
+	{
+		FindObjectOfType<Baloon>().AlarmSpeakEnded += NextPerson;
+	}
 	
 	#endregion
+}
 
+public enum Speakers
+{
+	Alarm,
+	PersonArriving,
+	PersonLeaving
 }

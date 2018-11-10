@@ -2,52 +2,132 @@
 hide empty fields
 hide empty methods
 
-Class GameManager
-Class Siren
+class DailyQueue << "ScriptableObject" >>
+{
+    + Person[] queue
+}
+
+class Document << "ScriptableObject" >>
+{
+    + documentPicture : Sprite
+    + id : int
+}
+
 Class Person << "ScriptableObject" >>
 {
 	+ face : Sprite
 	+ name : string
-	+ surname : surname
-	+ birthdate : Birthdate
+	+ surname : strnig
+	+ birthdate : string
 	+ birthplace : string
 	+ country : string
+	+ document : Document	
+	+ arrivalDialogue : string
+	+ acceptDialogue : string
+	+ denyDialogue : string
 }
 
-Class Document
+Class Names << "ScriptableObject" >>
 {
- + code : int
- + RandomCodeGenerator() : void
+    + string[] names
+    
+    + GetRandomName() : string
+}
+
+Class Images << "ScriptableObject" >>
+{
+    + Sprite[] faces
+    
+    + GetImageAt() : Sprite
+    + SortImages() : void
+}
+
+Class GameManager
+{
+    + dailyQueue : DailyQueue
+    + person : PersonObj
+    
+    - FillList() : void
+    - NextPerson() : void
+    - listenSpeaking() : void
+}
+
+Class Alarm
+{
+    + baloonPrefab : GameObject
+    - CallNextPerson() : void
+    - ListenSpeaking() : void
 }
 
 Class Baloon
-
-Class DailyList << "ScriptableObject" >>
 {
-    + Person[] dailyPeople
+    + text : Text
+    + AlarmSpeakinEnded : Action
+    + LeavingSpeakEnded : Action
+
+    + Speak() : void
+    - Move() : void
+}
+
+Class DocumentObj
+{
+    + documentPicture : Image
+    + documentId : Text
+    + name : Text
+    + surname : Text
+    + birthDate : Text
+    + birthPlace : Text
+    + country : Text
+    - person : Person
+    
+    + SetOwner() : void
+    - FillDocument() : void
+}
+
+Class PersonObj
+{
+    + baloonPrefab : GameObject
+    + documentObj : DocumentObj
+    + StartTalking : Action
+    - face : Image
+    
+    + NewPerson() : void
+    - Accepted() : void
+    - Denied() : void
+    - Arrival() : void    
 }
 
 Class PersonGenerator
 {
-    {static} - string[] maleNames
-    {static} - string[] femaleNames
-    {static} - string[] surnames
-    {static} - string[] cities
-    {static} - string[] countries
+    {static} - Names[] maleNames
+    {static} - Names[] femaleNames
+    {static} - Names[] surnames
+    {static} - Names[] cities
+    {static} - Names[] countries
+    {static} - Images[] maleFaces
+    {static} - Images[] maleDocumentFaces
+    {static} - Images[] femaleFaces
+    {static} - Images[] femaleDocumentFaces
+    
     {static} + GenerateRandomPerson() : Person
+    {static} - LoadAssets() : void
     {static} - GetRandomName() : string
-    {static} - GetRandomElement() : string
+    {static} - SetRandomFace() : void
     {static} - GetRandomDate() : string
-    {static} - GetRandomId() : string
+    {static} - GetRandomId() : int
 }
 
-GameManager -- DailyList : usa >
-DailyList *-- Person
-DailyList -- PersonGenerator
-PersonGenerator - Person
-Person -- Document : possiede >
-Person -- Birthdate : usa >
-Person - Baloon : usa >
-Siren -- Baloon : usa >
+GameManager ---> PersonGenerator : use
+GameManager --> DailyQueue : use
+GameManager --> PersonObj : refer
+PersonGenerator --> Names : use
+PersonGenerator --> Images : use
+PersonGenerator -> Person : create
+Person --> Document : use
+PersonObj --> Person : use
+DailyQueue --> Person : use
+PersonObj --> DocumentObj : use
+Alarm -> Baloon : use 
+Baloon <-- PersonObj : use
 
 @enduml

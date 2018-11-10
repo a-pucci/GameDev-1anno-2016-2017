@@ -1,42 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class Alarm : MonoBehaviour 
 {
 	#region Fields
 
-	// Static
-
 	// Public
-	public Vector3 baloonPosition;
-	// Hidden Public
+	public GameObject baloonPrefab;
 	
-	// Private
-
-	// Properties
-
-	// Components
-
 	// Events
+	public event Action StartTalking; 
 
 	#endregion
 
 	#region Unity Callbacks
 
-	private void Start () 
+	private void Start ()
 	{
-		
+		FindObjectOfType<PersonObj>().StartTalking += ListenSpeaking;
 	}
 	
-	private void Update () 
-	{
-		
-	}
-
 	#endregion
 
 	#region Methods
+
+	private void CallNextPerson()
+	{
+		GameObject baloon = Instantiate(baloonPrefab, transform.parent);
+		baloon.GetComponent<Baloon>().Speak(transform, "AVANTI IL PROSSIMO!", Speakers.Alarm);
+		
+		if (StartTalking != null)
+		{
+			StartTalking();
+		}
+	}
+
+	private void ListenSpeaking()
+	{
+		FindObjectOfType<Baloon>().LeavingSpeakEnded += CallNextPerson;
+	}
 
 	#endregion
 

@@ -1,49 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Linq;
+using Sirenix.OdinInspector;
 
 [CreateAssetMenu(fileName = "NewImages", menuName = "ScriptableObjects/Images")]
 public class Images : ScriptableObject 
 {
 	#region Fields
 
-	// Static
-
 	// Public
 	public Sprite[] faces;
 	
-	// Hidden Public
-	
-	// Private
-
-	// Properties
-
-	// Components
-
-	// Events
-
 	#endregion
 
 	#region Unity Callbacks
 
-	private void Start () 
-	{
-		
-	}
-	
-	private void Update () 
-	{
-		
-	}
-
 	#endregion
 
 	#region Methods
-	
-	public Sprite GetRandomImage()
+
+	public Sprite GetImageAt(int index)
 	{
-		int randomNumber = Random.Range(0, faces.Length);
-		return faces[randomNumber];
+		return faces[index];
+	}
+
+	[Button]
+	private void SortImages()
+	{
+		Sprite[] newFaces = faces.OrderBy(x => x.name).ToArray();
+		faces = newFaces;
 	}
 	
 	#endregion

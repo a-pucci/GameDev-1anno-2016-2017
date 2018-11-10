@@ -1,26 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewNames", menuName = "ScriptableObjects/Names")]
 public class Names : ScriptableObject 
 {
 	#region Fields
 
-	// Static
-
 	// Public
 	public string[] names;
-
-	// Hidden Public
-
-	// Private
-
-	// Properties
-
-	// Components
-
-	// Events
 
 	#endregion
 

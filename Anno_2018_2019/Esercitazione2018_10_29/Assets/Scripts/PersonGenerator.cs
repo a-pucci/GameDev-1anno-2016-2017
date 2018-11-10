@@ -1,34 +1,22 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Boo.Lang.Environments;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class PersonGenerator : MonoBehaviour
+public static class PersonGenerator
 {
 	#region Fields
 
-	// Static
-
-	// Public
-	public Names maleNames;
-	public Names femaleNames;
-	public Names surnames;
-	public Names cities;
-	public Names countries;
-	public Images maleFaces;
-	public Images femaleFaces;
-
-	// Hidden Public
-	
 	// Private
+	private static Names maleNames;
+	private static Names femaleNames;
+	private static Names surnames;
+	private static Names cities;
+	private static Names countries;
 	
-	// Properties
-
-	// Components
-
-	// Events
+	private static Images maleFaces;
+	private static Images maleDocumentFaces;
+	private static Images femaleFaces;
+	private static Images femaleDocumentFaces;
 
 	#endregion
 
@@ -38,56 +26,76 @@ public class PersonGenerator : MonoBehaviour
 
 	#region Methods
 
-	public Person GenerateRandomPerson(Sex sex)
+	public static Person GenerateRandomPerson(Sex sex)
 	{
+		LoadAssets();
+		
 		var newPerson = ScriptableObject.CreateInstance<Person>();
+		newPerson.document = ScriptableObject.CreateInstance<Document>();
 
-		newPerson.face = GetRandomFace(sex);
+		SetRandomFace(sex, ref newPerson);
 		newPerson.name = GetRandomName(sex);
 		newPerson.surname = surnames.GetRandomElement();
 		newPerson.birthdate = GetRandomDate();
 		newPerson.birthplace = cities.GetRandomElement();
 		newPerson.country = countries.GetRandomElement();
-		newPerson.documentId = GenerateRandomId();
+		newPerson.document.id = GetRandomId();
 		
 		return newPerson;
 	}
 	
-	private string GetRandomName(Sex sex)
+	private static void LoadAssets()
+	{
+		maleNames = Resources.Load<Names>("ScriptableObjects/Names/MaleNames");
+		femaleNames = Resources.Load<Names>("ScriptableObjects/Names/FemaleNames");
+		surnames = Resources.Load<Names>("ScriptableObjects/Names/Surnames");
+		cities = Resources.Load<Names>("ScriptableObjects/Names/Cities");
+		countries = Resources.Load<Names>("ScriptableObjects/Names/Countries");
+		
+		maleFaces = Resources.Load<Images>("ScriptableObjects/Faces/MaleFaces");
+		maleDocumentFaces = Resources.Load<Images>("ScriptableObjects/Faces/MaleDocumentFaces");
+		femaleFaces = Resources.Load<Images>("ScriptableObjects/Faces/FemaleFaces");
+		femaleDocumentFaces = Resources.Load<Images>("ScriptableObjects/Faces/FemaleDocumentFaces");
+	}
+	
+	private static string GetRandomName(Sex sex)
 	{
 		switch (sex)
 		{
 			case Sex.Male:
 				return maleNames.GetRandomElement();
-				break;	
 			
 			case Sex.Female:
 				return femaleNames.GetRandomElement();
-				break;
 			
 			default:
 				return "";
 		}
 	}
 
-	private Sprite GetRandomFace(Sex sex)
+	private static void SetRandomFace(Sex sex, ref Person person )
 	{
+		int randomNumber;
+		
 		switch (sex)
 		{
 			case Sex.Male:
-				return maleFaces.GetRandomImage();
+				randomNumber = Random.Range(0, maleFaces.faces.Length);
+
+				person.face = maleFaces.GetImageAt(randomNumber);
+				person.document.documentPicture = maleDocumentFaces.GetImageAt(randomNumber); 
 				break;	
 			
 			case Sex.Female:
-				return femaleFaces.GetRandomImage();
+				randomNumber = Random.Range(0, femaleFaces.faces.Length);
+
+				person.face = femaleFaces.GetImageAt(randomNumber);
+				person.document.documentPicture = femaleDocumentFaces.GetImageAt(randomNumber); 
 				break;
-			
-			default:
-				return null;
 		}
 	}
 
-	private string GetRandomDate()
+	private static string GetRandomDate()
 	{
 		DateTime startDate = new DateTime(1950, 1, 1);
 		DateTime endDate = new DateTime(2000, 1, 1);
@@ -95,7 +103,7 @@ public class PersonGenerator : MonoBehaviour
 		return startDate.AddDays(Random.Range(0, range)).ToShortDateString();
 	}
 	
-	private int GenerateRandomId()
+	private static int GetRandomId()
 	{
 		return Random.Range(11111, 99999);
 	}
