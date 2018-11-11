@@ -17,6 +17,8 @@ public static class PersonGenerator
 	private static Images maleDocumentFaces;
 	private static Images femaleFaces;
 	private static Images femaleDocumentFaces;
+	
+	private static bool assetsLoaded = false;
 
 	#endregion
 
@@ -28,7 +30,11 @@ public static class PersonGenerator
 
 	public static Person GenerateRandomPerson(Sex sex)
 	{
-		LoadAssets();
+		if (!assetsLoaded)
+		{
+			LoadAssets();
+			assetsLoaded = true;
+		}
 		
 		var newPerson = ScriptableObject.CreateInstance<Person>();
 		newPerson.document = ScriptableObject.CreateInstance<Document>();
