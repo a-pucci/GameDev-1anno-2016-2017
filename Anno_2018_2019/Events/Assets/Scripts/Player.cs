@@ -7,35 +7,9 @@ public class Player : MonoBehaviour
 {
 	#region Fields
 
-	// Static
-
-	// Public
-
-	// Hidden Public
-		
-	// Private
-
-	// Properties
-
-	// Components
-
 	// Events
 	
 	public event Action Died;
-
-	#endregion
-
-	#region Unity Callbacks
-
-	private void Start () 
-	{
-		
-	}
-	
-	private void Update () 
-	{
-		
-	}
 
 	#endregion
 

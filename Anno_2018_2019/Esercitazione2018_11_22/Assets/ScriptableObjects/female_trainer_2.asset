@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7763097c477dc2940afad609cf83b2e7, type: 3}
+  m_Name: female_trainer_2
+  m_EditorClassIdentifier: 
+  front: {fileID: 21300000, guid: 8b091c9410c66d346820f4fe4964f266, type: 3}
+  back: {fileID: 21300000, guid: f8ac1db4461c5bd41b5525c6e9f5f60b, type: 3}
+  pokedex: {fileID: 11400000, guid: 2566131b7c3d9ff43afed2a8c32c0ac9, type: 2}
+  battleRoster:
+  - {fileID: 11400000, guid: 5071ecb0772ec7b459f7402f9b5ae4c4, type: 2}
+  - {fileID: 11400000, guid: a55dc16b10f01004ab5ce5e26d90ac5e, type: 2}
+  - {fileID: 11400000, guid: cfcb026ae7de3eb49b6d682d9c114d79, type: 2}
+  - {fileID: 11400000, guid: f61d70d03a3818840a9c89b51173af67, type: 2}
+  - {fileID: 11400000, guid: 542b38e330b84d74594863e92b519ba6, type: 2}
+  - {fileID: 11400000, guid: 49845fc73fc62e6428d357949acc2b0b, type: 2}
