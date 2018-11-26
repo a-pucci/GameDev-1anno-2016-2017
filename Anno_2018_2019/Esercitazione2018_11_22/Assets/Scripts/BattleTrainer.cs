@@ -24,7 +24,7 @@ public class BattleTrainer : MonoBehaviour
 	// Private
 	private Image image;
 	private List<Pokemon> roster;
-	private bool areAllPokemonExhaust;
+	private bool pokemonExhaust;
 	
 	// Properties
 
@@ -33,6 +33,7 @@ public class BattleTrainer : MonoBehaviour
 	// Events
 	public event Action<string> RosterEmpty;
 	public event Action<Actions> ActionTaken;
+	public event Action PokemonChanged;
 
 	#endregion
 
@@ -74,11 +75,12 @@ public class BattleTrainer : MonoBehaviour
 
 	private void ChangeExhaustedPokemon(Pokemon exhaustedPokemon)
 	{
+		pokemonExhaust = true;
 		RemoveExhaustedPokemon(exhaustedPokemon);
 		
 		if (roster.Count == 0)
 		{
-			areAllPokemonExhaust = true;
+			
 			if (RosterEmpty != null)
 			{
 				RosterEmpty(trainer.name);
@@ -106,11 +108,15 @@ public class BattleTrainer : MonoBehaviour
 	private void UsePokemon(Pokemon pokemon)
 	{
 		battlePokemon.Change(pokemon);
-		if (ActionTaken != null && !areAllPokemonExhaust)
+		if (ActionTaken != null && !pokemonExhaust)
 		{
 			ActionTaken(Actions.PokemonChanged);
 		}
-		areAllPokemonExhaust = false;
+		else if(PokemonChanged != null)
+		{
+			PokemonChanged();
+		}
+		pokemonExhaust = false;
 	}
 
 	#endregion

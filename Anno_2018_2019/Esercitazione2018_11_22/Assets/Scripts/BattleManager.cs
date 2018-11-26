@@ -76,7 +76,7 @@ public class BattleManager : MonoBehaviour
 	private void AddTrainerAction(Actions trainerAction)
 	{
 		turnActions[trainersIndex-1] = trainerAction;
-
+	
 		fightingPokemons.Add(trainers[trainersIndex - 1].battlePokemon);
 			
 		ChangeTurn();
@@ -140,6 +140,7 @@ public class BattleManager : MonoBehaviour
 			{
 				resolveIndex = 0;
 				ChangeTurn();
+				fightingPokemons.Clear();
 			}
 		}
 	}
@@ -147,21 +148,17 @@ public class BattleManager : MonoBehaviour
 	private void SetTrainers()
 	{
 		playerOne.isOpponent = false;
-		playerOne.RosterEmpty += BattleEnded;
 		trainers.Add(playerOne);
 
 		opponentOne.isOpponent = true;
-		opponentOne.RosterEmpty += BattleEnded;
 		trainers.Add(opponentOne);
 		
 		if (twoPlayers)
 		{
 			playerTwo.isOpponent = false;
-			playerTwo.RosterEmpty += BattleEnded;
 			trainers.Add(playerTwo);
 			
 			opponentTwo.isOpponent = true;
-			opponentTwo.RosterEmpty += BattleEnded;
 			trainers.Add(opponentTwo);
 		}
 		else
@@ -172,7 +169,9 @@ public class BattleManager : MonoBehaviour
 
 		foreach (BattleTrainer trainer in trainers)
 		{
+			trainer.RosterEmpty += BattleEnded;
 			trainer.ActionTaken += AddTrainerAction;
+			trainer.PokemonChanged += ChangeTurn;
 		}
 
 		turnActions = new List<Actions>(new Actions[trainers.Count]);

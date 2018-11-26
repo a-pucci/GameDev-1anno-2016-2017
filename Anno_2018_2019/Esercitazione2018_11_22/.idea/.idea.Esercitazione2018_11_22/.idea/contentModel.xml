@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\a_puc\.Rider2018.2\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\a_puc\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\a_puc\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_Esercitazione2018_11_22.-1087388813.00" t="ExcludeRecursive" />
-    <e p="D:\Repository Git\Git Lezione\Anno_2018_2019\Esercitazione2018_11_22" t="IncludeRecursive">
+    <e p="C:\Users\a_puc\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_Esercitazione2018_11_22.-1568525728.00" t="ExcludeRecursive" />
+    <e p="C:\Users\a_puc\Documents\Repository Git\Git Lezione\Anno_2018_2019\Esercitazione2018_11_22" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />

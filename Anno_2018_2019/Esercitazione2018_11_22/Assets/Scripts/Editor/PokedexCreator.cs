@@ -91,6 +91,7 @@ public static class PokedexCreator
                                 break;
                         }
                     }
+                    EditorUtility.SetDirty(pokemonObj);
                     
                     float prog = progressCounter / 151 - 1;
                     EditorUtility.DisplayProgressBar("Pokedex", "Creating Pokedex " + progressCounter + " / " + 151, prog);
@@ -99,6 +100,7 @@ public static class PokedexCreator
             }
             EditorUtility.ClearProgressBar();
         }
+        AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
         Debug.Log("Pokedex Created");
     }
