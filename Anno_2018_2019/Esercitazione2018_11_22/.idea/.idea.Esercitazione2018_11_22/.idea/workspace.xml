@@ -2,174 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90ecf2c8-c8f3-44f0-9283-a3b0b6361eee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Esercitazione2018_11_22/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Esercitazione2018_11_22/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Esercitazione2018_11_22/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Esercitazione2018_11_22/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Attributes Overview.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/100_VOLTORB.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/100_VOLTORB.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/101_ELECTRODE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/101_ELECTRODE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/102_EXEGGCUTE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/102_EXEGGCUTE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/103_EXEGGUTOR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/103_EXEGGUTOR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/104_CUBONE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/104_CUBONE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/105_MAROWAK.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/105_MAROWAK.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/106_HITMONLEE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/106_HITMONLEE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/107_HITMONCHAN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/107_HITMONCHAN.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/108_LICKITUNG.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/108_LICKITUNG.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/109_KOFFING.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/109_KOFFING.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/10_CATERPIE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/10_CATERPIE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/110_WEEZING.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/110_WEEZING.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/111_RHYHORN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/111_RHYHORN.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/112_RHYDON.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/112_RHYDON.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/113_CHANSEY.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/113_CHANSEY.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/114_TANGELA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/114_TANGELA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/115_KANGASKHAN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/115_KANGASKHAN.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/116_HORSEA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/116_HORSEA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/117_SEADRA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/117_SEADRA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/118_GOLDEEN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/118_GOLDEEN.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/119_SEAKING.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/119_SEAKING.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/11_METAPOD.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/11_METAPOD.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/120_STARYU.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/120_STARYU.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/121_STARMIE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/121_STARMIE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/122_MR. MIME.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/122_MR. MIME.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/123_SCYTHER.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/123_SCYTHER.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/124_JYNX.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/124_JYNX.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/125_ELECTABUZZ.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/125_ELECTABUZZ.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/126_MAGMAR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/126_MAGMAR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/127_PINSIR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/127_PINSIR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/128_TAUROS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/128_TAUROS.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/129_MAGIKARP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/129_MAGIKARP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/12_BUTTERFREE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/12_BUTTERFREE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/130_GYARADOS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/130_GYARADOS.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/131_LAPRAS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/131_LAPRAS.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/132_DITTO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/132_DITTO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/133_EEVEE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/133_EEVEE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/134_VAPOREON.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/134_VAPOREON.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/135_JOLTEON.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/135_JOLTEON.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/136_FLAREON.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/136_FLAREON.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/137_PORYGON.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/137_PORYGON.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/138_OMANYTE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/138_OMANYTE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/139_OMASTAR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/139_OMASTAR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/13_WEEDLE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/13_WEEDLE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/140_KABUTO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/140_KABUTO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/141_KABUTOPS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/141_KABUTOPS.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/142_AERODACTYL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/142_AERODACTYL.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/143_SNORLAX.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/143_SNORLAX.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/144_ARTICUNO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/144_ARTICUNO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/145_ZAPDOS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/145_ZAPDOS.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/146_MOLTRES.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/146_MOLTRES.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/147_DRATINI.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/147_DRATINI.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/148_DRAGONAIR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/148_DRAGONAIR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/149_DRAGONITE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/149_DRAGONITE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/14_KAKUNA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/14_KAKUNA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/150_MEWTWO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/150_MEWTWO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/151_MEW.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/151_MEW.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/15_BEEDRILL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/15_BEEDRILL.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/16_PIDGEY.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/16_PIDGEY.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/17_PIDGEOTTO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/17_PIDGEOTTO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/18_PIDGEOT.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/18_PIDGEOT.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/19_RATTATA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/19_RATTATA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/1_BULBASAUR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/1_BULBASAUR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/20_RATICATE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/20_RATICATE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/21_SPEAROW.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/21_SPEAROW.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/22_FEAROW.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/22_FEAROW.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/23_EKANS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/23_EKANS.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/24_ARBOK.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/24_ARBOK.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/25_PIKACHU.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/25_PIKACHU.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/26_RAICHU.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/26_RAICHU.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/27_SANDSHREW.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/27_SANDSHREW.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/28_SANDSLASH.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/28_SANDSLASH.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/29_NIDORAN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/29_NIDORAN.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/2_IVYSAUR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/2_IVYSAUR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/30_NIDORINA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/30_NIDORINA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/31_NIDOQUEEN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/31_NIDOQUEEN.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/32_NIDORAN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/32_NIDORAN.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/33_NIDORINO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/33_NIDORINO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/34_NIDOKING.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/34_NIDOKING.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/35_CLEFAIRY.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/35_CLEFAIRY.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/36_CLEFABLE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/36_CLEFABLE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/37_VULPIX.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/37_VULPIX.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/38_NINETALES.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/38_NINETALES.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/39_JIGGLYPUFF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/39_JIGGLYPUFF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/3_VENUSAUR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/3_VENUSAUR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/40_WIGGLYTUFF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/40_WIGGLYTUFF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/41_ZUBAT.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/41_ZUBAT.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/42_GOLBAT.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/42_GOLBAT.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/43_ODDISH.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/43_ODDISH.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/44_GLOOM.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/44_GLOOM.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/45_VILEPLUME.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/45_VILEPLUME.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/46_PARAS.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/46_PARAS.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/47_PARASECT.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/47_PARASECT.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/48_VENONAT.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/48_VENONAT.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/49_VENOMOTH.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/49_VENOMOTH.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/4_CHARMANDER.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/4_CHARMANDER.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/50_DIGLETT.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/50_DIGLETT.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/51_DUGTRIO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/51_DUGTRIO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/52_MEOWTH.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/52_MEOWTH.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/53_PERSIAN.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/53_PERSIAN.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/54_PSYDUCK.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/54_PSYDUCK.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/55_GOLDUCK.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/55_GOLDUCK.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/56_MANKEY.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/56_MANKEY.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/57_PRIMEAPE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/57_PRIMEAPE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/58_GROWLITHE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/58_GROWLITHE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/59_ARCANINE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/59_ARCANINE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/5_CHARMELEON.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/5_CHARMELEON.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/60_POLIWAG.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/60_POLIWAG.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/61_POLIWHIRL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/61_POLIWHIRL.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/62_POLIWRATH.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/62_POLIWRATH.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/63_ABRA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/63_ABRA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/64_KADABRA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/64_KADABRA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/65_ALAKAZAM.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/65_ALAKAZAM.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/66_MACHOP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/66_MACHOP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/67_MACHOKE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/67_MACHOKE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/68_MACHAMP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/68_MACHAMP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/69_BELLSPROUT.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/69_BELLSPROUT.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/6_CHARIZARD.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/6_CHARIZARD.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/70_WEEPINBELL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/70_WEEPINBELL.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/71_VICTREEBEL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/71_VICTREEBEL.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/72_TENTACOOL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/72_TENTACOOL.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/73_TENTACRUEL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/73_TENTACRUEL.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/74_GEODUDE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/74_GEODUDE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/75_GRAVELER.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/75_GRAVELER.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/76_GOLEM.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/76_GOLEM.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/77_PONYTA.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/77_PONYTA.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/78_RAPIDASH.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/78_RAPIDASH.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/79_SLOWPOKE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/79_SLOWPOKE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/7_SQUIRTLE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/7_SQUIRTLE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/80_SLOWBRO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/80_SLOWBRO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/81_MAGNEMITE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/81_MAGNEMITE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/82_MAGNETON.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/82_MAGNETON.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/83_FARFETCH.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/83_FARFETCH.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/84_DODUO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/84_DODUO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/85_DODRIO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/85_DODRIO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/86_SEEL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/86_SEEL.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/87_DEWGONG.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/87_DEWGONG.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/88_GRIMER.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/88_GRIMER.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/89_MUK.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/89_MUK.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/8_WARTORTLE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/8_WARTORTLE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/90_SHELLDER.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/90_SHELLDER.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/91_CLOYSTER.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/91_CLOYSTER.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/92_GASTLY.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/92_GASTLY.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/93_HAUNTER.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/93_HAUNTER.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/94_GENGAR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/94_GENGAR.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/95_ONIX.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/95_ONIX.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/96_DROWZEE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/96_DROWZEE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/97_HYPNO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/97_HYPNO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/98_KRABBY.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/98_KRABBY.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/99_KINGLER.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/99_KINGLER.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pokedex/9_BLASTOISE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pokedex/9_BLASTOISE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/female_trainer_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/female_trainer_1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/female_trainer_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/female_trainer_2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/male_trainer_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/male_trainer_1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/male_trainer_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/male_trainer_2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/pokedex.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/pokedex.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleTrainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleTrainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/PokedexCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/PokedexCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SpritesSlicer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/SpritesSlicer.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,203 +56,64 @@
     <session id="756878932">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="15" />
+          <entry key="cs" value="16" />
           <entry key="puml" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="15" />
+          <entry key="C#" value="16" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="PlantUML file" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="495" />
+          <entry key="cs" value="1461" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="495" />
+          <entry key="C#" value="1461" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/TypeChart.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-              <folding>
-                <marker date="1543238637229" expanded="false" signature="6:78" ph="..." />
-                <marker date="1543238637229" expanded="true" signature="207:1314" ph="{...}" />
-                <marker date="1543238637229" expanded="true" signature="413:1111" ph="{...}" />
-                <marker date="1543238637229" expanded="true" signature="641:1108" ph="{...}" />
-                <marker date="1543238637229" expanded="true" signature="696:1104" ph="{...}" />
-                <marker date="1543238637229" expanded="true" signature="785:1090" ph="{...}" />
-                <marker date="1543238637229" expanded="true" signature="813:1084" ph="{...}" />
-                <marker date="1543238637229" expanded="true" signature="1194:1258" ph="{...}" />
-                <marker date="1543238637229" expanded="true" signature="1284:1312" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/UML.puml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PokemonButton.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="27" />
-              <folding>
-                <marker date="1543242504492" expanded="false" signature="6:83" ph="..." />
-                <marker date="1543242504492" expanded="true" signature="127:547" ph="{...}" />
-                <marker date="1543242504492" expanded="true" signature="316:450" ph="{...}" />
-                <marker date="1543242504492" expanded="true" signature="475:545" ph="{...}" />
-                <marker date="1543242504492" expanded="true" signature="507:542" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BattleRoster.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-              <folding>
-                <marker date="1543242491883" expanded="false" signature="6:114" ph="..." />
-                <marker date="1543242491883" expanded="true" signature="158:871" ph="{...}" />
-                <marker date="1543242491883" expanded="false" signature="162:405" ph="Fields" />
-                <marker date="1543242491883" expanded="true" signature="179:200" ph="/* Static ... */" />
-                <marker date="1543242491883" expanded="true" signature="238:267" ph="/* Hidden Public ... */" />
-                <marker date="1543242491883" expanded="true" signature="306:347" ph="/* Properties ... */" />
-                <marker date="1543242491883" expanded="false" signature="408:444" ph="Unity Callbacks" />
-                <marker date="1543242491883" expanded="true" signature="447:869" ph="Methods" />
-                <marker date="1543242491883" expanded="true" signature="513:723" ph="{...}" />
-                <marker date="1543242491883" expanded="true" signature="556:720" ph="{...}" />
-                <marker date="1543242491883" expanded="true" signature="762:855" ph="{...}" />
-                <marker date="1543242491883" expanded="true" signature="794:829" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PokedexCreator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
-              <folding>
-                <marker date="1543242743323" expanded="false" signature="6:122" ph="..." />
-                <marker date="1543242743323" expanded="true" signature="158:5333" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="247:4964" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="459:4851" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="561:4795" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="694:4781" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="1490:4463" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="1557:4441" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="2198:2798" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="2294:2764" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="2987:4193" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="3092:4159" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="3352:4043" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="3468:4001" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="5037:5331" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="5172:5304" ph="{...}" />
-                <marker date="1543242743323" expanded="true" signature="5233:5294" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Pokedex.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="23" />
-              <folding>
-                <marker date="1543065641703" expanded="false" signature="6:66" ph="..." />
-                <marker date="1543065641703" expanded="true" signature="188:865" ph="{...}" />
-                <marker date="1543065641703" expanded="true" signature="254:315" ph="{...}" />
-                <marker date="1543065641703" expanded="true" signature="413:748" ph="{...}" />
-                <marker date="1543065641703" expanded="true" signature="597:651" ph="{...}" />
-                <marker date="1543065641703" expanded="true" signature="827:862" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/BattleManager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SpritesSlicer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="49">
+              <caret line="160" column="8" lean-forward="true" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="8" />
               <folding>
-                <marker date="1543242346114" expanded="false" signature="6:95" ph="..." />
-                <marker date="1543242346114" expanded="true" signature="140:4957" ph="{...}" />
-                <marker date="1543242346114" expanded="false" signature="144:838" ph="Fields" />
-                <marker date="1543242346114" expanded="true" signature="161:182" ph="/* Static ... */" />
-                <marker date="1543242346114" expanded="true" signature="841:979" ph="Unity Callbacks" />
-                <marker date="1543242346114" expanded="true" signature="887:966" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="983:4955" ph="Methods" />
-                <marker date="1543242346114" expanded="true" signature="1027:1511" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="1055:1160" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="1199:1275" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="1282:1488" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="1566:1709" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="1747:2275" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="1836:1993" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="1914:1989" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="2011:2269" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="2102:2265" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="2182:2260" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="2366:2514" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="2544:3264" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="2565:3261" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="2609:3169" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="2684:3144" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="3177:3257" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="3293:3924" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="3439:3576" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="3583:3677" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="3724:3856" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="3965:4092" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="4161:4942" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="4383:4939" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="4574:4902" ph="{...}" />
-                <marker date="1543242346114" expanded="true" signature="4979:5013" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PokemonTypes.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-              <folding>
-                <marker date="1543065641692" expanded="false" signature="6:78" ph="..." />
-                <marker date="1543065641692" expanded="true" signature="105:258" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="6:136" ph="..." />
+                <marker date="1543252877552" expanded="true" signature="183:5044" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="518:623" ph="/* [FoldoutGroup(&quot;Slice Settings&quot;)][PropertyOrder(-5)] ... */" />
+                <marker date="1543252877552" expanded="true" signature="1005:1048" ph="{...}" />
+                <marker date="1543252877552" expanded="false" signature="1178:2090" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="1224:2057" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="1504:1942" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="1684:1915" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="2241:3128" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="2287:3095" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="2624:2980" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="2704:2962" ph="{...}" />
+                <marker date="1543252877552" expanded="false" signature="3282:4282" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="3328:4249" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="3773:4134" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="3849:4116" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="4347:4887" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="4410:4862" ph="{...}" />
+                <marker date="1543252877552" expanded="true" signature="4917:5042" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -481,7 +175,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ScriptablePokemon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ScriptablePokedex.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Pokedex.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/SpritesSlicer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Trainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TypesEnum.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TypeChart.cs" />
@@ -497,6 +190,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BattleRoster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PokemonButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/PokedexCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/SpritesSlicer.cs" />
       </list>
     </option>
   </component>
@@ -603,12 +297,12 @@
       <workItem from="1543139715797" duration="13854000" />
       <workItem from="1543170961755" duration="2672000" />
       <workItem from="1543221166180" duration="6556000" />
-      <workItem from="1543239637922" duration="7277000" />
+      <workItem from="1543239637922" duration="10340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69719000" />
+    <option name="totallyTimeSpent" value="72782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -644,7 +338,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="1120" y="214" width="136" height="42" id="PlantUML" order="3" weight="0.72617245" />
+      <window_info anchor="right" x="1120" y="214" width="136" height="42" id="PlantUML" order="3" weight="0.57034796" />
       <window_info anchor="right" id="Errors In Solution" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Unit Tests Coverage" order="6" />
@@ -681,13 +375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SpritesSlicer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -865,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UML.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BattleRoster.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -997,6 +677,41 @@
             <marker date="1543242346114" expanded="true" signature="4383:4939" ph="{...}" />
             <marker date="1543242346114" expanded="true" signature="4574:4902" ph="{...}" />
             <marker date="1543242346114" expanded="true" signature="4979:5013" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UML.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SpritesSlicer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="160" column="8" lean-forward="true" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="8" />
+          <folding>
+            <marker date="1543252877552" expanded="true" signature="6:136" ph="..." />
+            <marker date="1543252877552" expanded="true" signature="183:5044" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="518:623" ph="/* [FoldoutGroup(&quot;Slice Settings&quot;)][PropertyOrder(-5)] ... */" />
+            <marker date="1543252877552" expanded="true" signature="1005:1048" ph="{...}" />
+            <marker date="1543252877552" expanded="false" signature="1178:2090" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="1224:2057" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="1504:1942" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="1684:1915" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="2241:3128" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="2287:3095" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="2624:2980" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="2704:2962" ph="{...}" />
+            <marker date="1543252877552" expanded="false" signature="3282:4282" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="3328:4249" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="3773:4134" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="3849:4116" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="4347:4887" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="4410:4862" ph="{...}" />
+            <marker date="1543252877552" expanded="true" signature="4917:5042" ph="{...}" />
           </folding>
         </state>
       </provider>
