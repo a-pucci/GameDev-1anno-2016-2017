@@ -22,7 +22,7 @@ public class BattleRoster : MonoBehaviour
 	// Components
 
 	// Events
-	public Action<Pokemon> PokemonChosen;
+	public event Action<Pokemon> PokemonChosen;
 
 	#endregion
 
@@ -50,6 +50,6 @@ public class BattleRoster : MonoBehaviour
 		}
 		Destroy(gameObject);
 	}
-
+	
 	#endregion
 }

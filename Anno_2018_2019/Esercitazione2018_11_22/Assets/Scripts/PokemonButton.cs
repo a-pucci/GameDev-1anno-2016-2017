@@ -1,4 +1,5 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,7 @@ public class PokemonButton : MonoBehaviour
 
 	private Pokemon pokemon;
 
-	public Action<Pokemon> PokemonChosen;
+	public event Action<Pokemon> PokemonChosen;
 
 	public void SetPokemon(Pokemon newPokemon)
 	{

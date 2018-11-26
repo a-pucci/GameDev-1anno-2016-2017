@@ -15,8 +15,9 @@ MonoBehaviour:
   back: {fileID: 21300000, guid: 71c517d910c432745b838ee6f665a3fa, type: 3}
   pokedex: {fileID: 11400000, guid: 2566131b7c3d9ff43afed2a8c32c0ac9, type: 2}
   battleRoster:
-  - {fileID: 11400000, guid: 65774db471c03ae43a235fe960b4660c, type: 2}
-  - {fileID: 11400000, guid: dba19f1c6ace25c49b8977c324a871f5, type: 2}
-  - {fileID: 11400000, guid: 68d6e2c63c8668e47ba9ec7ddfc6a645, type: 2}
-  - {fileID: 11400000, guid: dae803d1f4bb1494d9cccb584222dd46, type: 2}
-  - {fileID: 11400000, guid: 27e2368cfc3e8d44eaad873f68c63b09, type: 2}
+  - {fileID: 11400000, guid: bfc841fff6a2b8f44a22d4dcebb2311c, type: 2}
+  - {fileID: 11400000, guid: 6c4b4e297d9fe804aba028f4757a18ee, type: 2}
+  - {fileID: 11400000, guid: d541aa2ae1349374190dc96f5be0d2bd, type: 2}
+  - {fileID: 11400000, guid: 406a041747477d14c8ff8c714aebbcf6, type: 2}
+  - {fileID: 11400000, guid: 7dbc1f4c2638b924ab0dcca8032d5391, type: 2}
+  - {fileID: 11400000, guid: 5676df33f840ef740af1eaedd19ae70f, type: 2}

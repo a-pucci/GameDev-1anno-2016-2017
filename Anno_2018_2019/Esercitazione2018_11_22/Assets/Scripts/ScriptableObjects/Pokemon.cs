@@ -15,7 +15,7 @@ public class Pokemon : ScriptableObject
 	public int id;
 
 	[Space(20)]
-	public List<string> type = new List<string>();
+	public List<PokemonTypes> types = new List<PokemonTypes>();
 
 	[Space(20)]
 	[MultiLineProperty]

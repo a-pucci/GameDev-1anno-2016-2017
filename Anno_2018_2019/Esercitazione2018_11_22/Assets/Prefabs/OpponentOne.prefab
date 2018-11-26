@@ -132,8 +132,9 @@ MonoBehaviour:
   battlePokemon: {fileID: 114490583470956008}
   battleRosterPrefab: {fileID: 114819331252586380, guid: 0895061760c7dab4dbcbb359d59e4df0,
     type: 2}
-  ChangeButton: {fileID: 114821205025872412}
+  changeButton: {fileID: 114821205025872412}
   isOpponent: 1
+  isMyTurn: 0
 --- !u!114 &114490583470956008
 MonoBehaviour:
   m_ObjectHideFlags: 1

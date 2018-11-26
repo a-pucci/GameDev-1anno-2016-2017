@@ -49,8 +49,14 @@ public class TypeChart : ScriptableObject
 			}
 		}
 	}
+	
 	public float AttackEffect(PokemonTypes attackerType, PokemonTypes defenderType)
 	{
 		return typeChart[(int)attackerType, (int)defenderType];
+	}
+
+	private void OnEnable()
+	{
+		InitializeMatrix();
 	}
 }

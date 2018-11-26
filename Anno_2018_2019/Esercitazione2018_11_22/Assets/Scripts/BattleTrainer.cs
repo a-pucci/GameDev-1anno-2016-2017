@@ -15,21 +15,24 @@ public class BattleTrainer : MonoBehaviour
 	public Trainer trainer;
 	public BattlePokemon battlePokemon;
 	public BattleRoster battleRosterPrefab;
-	public Button ChangeButton;
+	public Button changeButton;
 	
 	// Hidden Public
 	[HideInInspector] public bool isOpponent;
+	[HideInInspector] public bool isMyTurn;
 	
 	// Private
 	private Image image;
 	private List<Pokemon> roster;
+	private bool areAllPokemonExhaust;
 	
 	// Properties
 
 	// Components
 
 	// Events
-	public Action<bool> RosterEmpty;
+	public event Action<string> RosterEmpty;
+	public event Action<Actions> ActionTaken;
 
 	#endregion
 
@@ -37,7 +40,7 @@ public class BattleTrainer : MonoBehaviour
 
 	private void Start()
 	{
-		roster = trainer.battleRoster;
+		roster = new List<Pokemon>(trainer.battleRoster);
 		image = GetComponent<Image>();
 		image.sprite = isOpponent ? trainer.front : trainer.back;
 		
@@ -45,53 +48,69 @@ public class BattleTrainer : MonoBehaviour
 		
 		UsePokemon(roster[0]);
 		
-		battlePokemon.IsExaust += ChangePokemon;
-		ChangeButton.onClick.AddListener(OnClick);
+		battlePokemon.IsExhaust += ChangeExhaustedPokemon;
+		battlePokemon.Attack += Attack;
+		changeButton.onClick.AddListener(OnClick);
 	}
 
 	private void OnClick()
 	{
-		ChangePokemon();
+		if (isMyTurn)
+		{
+			ChangePokemon();
+		}
 	}
 
 	#endregion
 
 	#region Methods
 
-	[Button]
 	private void ChangePokemon()
 	{
-		RemoveExaustedPokemons();
+		BattleRoster rosterInstance = Instantiate(battleRosterPrefab, transform.parent);
+		rosterInstance.CreateRoster(roster);
+		rosterInstance.PokemonChosen += UsePokemon;
+	}
+
+	private void ChangeExhaustedPokemon(Pokemon exhaustedPokemon)
+	{
+		RemoveExhaustedPokemon(exhaustedPokemon);
 		
-		if (roster.IsNullOrEmpty())
+		if (roster.Count == 0)
 		{
+			areAllPokemonExhaust = true;
 			if (RosterEmpty != null)
 			{
-				RosterEmpty(isOpponent);
+				RosterEmpty(trainer.name);
 			}
 		}
 		else
 		{
-			BattleRoster rosterInstance = Instantiate(battleRosterPrefab, transform.parent);
-			rosterInstance.CreateRoster(roster);
-			rosterInstance.PokemonChosen += UsePokemon;
+			ChangePokemon();
 		}
 	}
 
-	private void RemoveExaustedPokemons()
+	private void Attack()
 	{
-		foreach (Pokemon pokemon in roster)
+		if (ActionTaken != null && isMyTurn)
 		{
-			if (pokemon.hp <= 0)
-			{
-				roster.Remove(pokemon);
-			}
+			ActionTaken(Actions.AttackEnemy);
 		}
+	}
+
+	private void RemoveExhaustedPokemon(Pokemon exhaustedPokemon)
+	{
+		roster.Remove(exhaustedPokemon);
 	}
 
 	private void UsePokemon(Pokemon pokemon)
 	{
 		battlePokemon.Change(pokemon);
+		if (ActionTaken != null && !areAllPokemonExhaust)
+		{
+			ActionTaken(Actions.PokemonChanged);
+		}
+		areAllPokemonExhaust = false;
 	}
 
 	#endregion

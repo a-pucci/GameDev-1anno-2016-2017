@@ -1,0 +1,147 @@
+@startuml
+
+hide empty method
+hide empty field
+
+enum PokemonTypes
+enum Actions
+
+class BattleManager << M , cyan >>
+class BattleTrainer << M , cyan >>
+class BattlePokemon << M , cyan >>
+class BattleRoster << M , cyan >>
+class PokemonButton << M , cyan >>
+class Speaker << M, cyan >>
+
+class Trainer << S , brown >>
+class Pokemon << S , brown >>
+class Pokedex << S , brown >>
+class TypeChart << S , brown >>
+class Evolution
+
+'------------------------------------'
+
+BattleManager : + twoPlayers : bool
+BattleManager : + playerOne : BattleTrainer
+BattleManager : + playerTwo : BattleTrainer
+BattleManager : + opponentOne : BattleTrainer
+BattleManager : + opponentTwo : BattleTrainer
+BattleManager : + typeChart : TypeChart
+BattleManager : + speaker : Speaker
+BattleManager : - trainers : List<battleTrainers>
+BattleManager : - turnActions : Actions
+BattleManager : - fightingPokemons : List<BattlePokemon>
+BattleManager : - void SetTrainers()
+BattleManager : - void ChangeTurn()
+BattleManager : - void AddTrainerAction()
+BattleManager : - void PrepareToResolveTurn()
+BattleManager : - List<T> SwapListElements()
+BattleManager : - void ResolveTurn()
+BattleManager : - void Fight()
+BattleManager : - void BattleEnded()
+
+BattleTrainer : + trainer : Trainer
+BattleTrainer : + battlePokemon : BattlePokemon
+BattleTrainer : + battleRosterPrefab : BattleRoster
+BattleTrainer : + changeButton : Button
+BattleTrainer : + isOpponent : bool
+BattleTrainer : + isMyTurn : bool
+BattleTrainer : - image : Image
+BattleTrainer : - roster : List<Pokemon>
+BattleTrainer : - areAllPokemonsExhaust : bool
+BattleTrainer : - RosterEmpty : Action
+BattleTrainer : - void ChangePokemon()
+BattleTrainer : - void ChangeExhaustedPokemon()
+BattleTrainer : - void RemoveExhaustedPokemon()
+BattleTrainer : - void Attack()
+BattleTrainer : - void UsePokemon()
+
+BattlePokemon : + pokemon : Pokemon
+BattlePokemon : + isOpponent : bool
+BattlePokemon : + image : Image
+BattlePokemon : + attackButton : Button
+BattlePokemon : + hp : float
+BattlePokemon : + speed : int
+BattlePokemon : + types : List<PokemonTypes>
+BattlePokemon : + isExhaust : Action<Pokemon>
+BattlePokemon : + Attack : Action
+BattlePokemon : + void Change()
+BattlePokemon : + void TakeDamage()
+BattlePokemon : + int AttackEnemy()
+BattlePokemon : + PokemonTypes GetPokemonType()
+
+BattleRoster : + buttonPrefab : PokemonButton
+BattleRoster : + PokemonChosen : Action<Pokemon>
+BattleRoster : - pokemonIcons : List<Image>
+BattleRoster : + void CreateRoster()
+BattleRoster : - Chosen()
+
+PokemonButton : + button : Button
+PokemonButton : + icon : Image
+PokemonButton : + pokemonName : Text
+PokemonButton : + PokemonChosen : Action<Pokemon>
+PokemonButton : - pokemon : Pokemon
+PokemonButton : + void SetPokemon()
+PokemonButton : - OnClick()
+
+Speaker : + baloon : GameObject
+Speaker : + speechText : Text
+Speaker : + SpeakEnded : Action
+Speaker : + void Speak()
+Speaker : - IEnumerator SpeakingTime()
+
+Trainer : + front : Sprite
+Trainer : + back : Sprite
+Trainer : + pokedex : Pokedex
+Trainer : + battleRoster : List<Pokemon>
+Trainer : - rosterSize : int
+Trainer : + void ClearRoster()
+Trainer : + void FillRoster()
+
+Pokemon : + name : string
+Pokemon : + front : Sprite
+Pokemon : + back : Sprite
+Pokemon : + icon : Sprite
+Pokemon : + id : int
+Pokemon : + types : List<PokemonTypes>
+Pokemon : + description : string
+Pokemon : + hp : int
+Pokemon : + spd : int
+Pokemon : evolutions : List<Evolution>
+
+Evolution : + id : int
+Evolution : + name : string
+Evolution : + lvl : int
+
+Pokedex : + pokemons : Pokemon[]
+Pokedex : + Pokemon GetRandomPokemon()
+Pokedex : - void FillPokedex()
+Pokedex : - void ClearPokedex()
+
+TypeChart : + typeChart : float [,]
+TypeChart : + float AttackEffect()
+TypeChart : - void InitializeMatrix()
+
+'----------------------------------------------------------'
+
+BattleManager *-- Actions
+BattleManager *-- BattleTrainer
+BattleManager -- TypeChart
+BattleManager -- Speaker
+
+BattleTrainer -- Trainer
+BattleTrainer -- BattlePokemon
+BattleTrainer -- BattleRoster
+
+BattlePokemon -- Pokemon
+BattlePokemon *-- PokemonTypes
+
+BattleRoster *-- PokemonButton
+
+Trainer -- Pokedex
+
+Pokedex *-- Pokemon
+
+Pokemon *-- Evolution
+
+@enduml

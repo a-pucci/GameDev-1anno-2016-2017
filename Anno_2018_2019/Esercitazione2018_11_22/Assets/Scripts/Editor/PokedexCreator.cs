@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEditor;
 using System.Linq;
 using System.Xml;
+using System;
 
 public static class PokedexCreator
 {
@@ -41,7 +43,9 @@ public static class PokedexCreator
                                 break;
                     
                             case "type":
-                                pokemonObj.type.Add(xChild.InnerText);
+                                string typeString = xChild.InnerText;
+                                PokemonTypes typeEnum = StringToEnumType(typeString);
+                                pokemonObj.types.Add(typeEnum);
                                 break;
                     
                             case "stats":
@@ -97,5 +101,18 @@ public static class PokedexCreator
         }
         AssetDatabase.Refresh();
         Debug.Log("Pokedex Created");
+    }
+    
+    private static PokemonTypes StringToEnumType(string stringType)
+    {
+        PokemonTypes type = PokemonTypes.Normal;
+        foreach (PokemonTypes enumType in Enum.GetValues(typeof(PokemonTypes)))
+        {
+            if (stringType == enumType.ToString())
+            {
+                type = enumType;
+            }
+        }
+        return type;
     }
 }

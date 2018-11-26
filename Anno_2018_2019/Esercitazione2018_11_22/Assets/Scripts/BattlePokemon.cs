@@ -31,7 +31,8 @@ public class BattlePokemon : MonoBehaviour
 	// Components
 
 	// Events
-	public event Action IsExaust;
+	public event Action<Pokemon> IsExhaust;
+	public event Action Attack;
 
 	#endregion
 
@@ -44,7 +45,10 @@ public class BattlePokemon : MonoBehaviour
 
 	private void OnClick()
 	{
-		Attack();
+		if (Attack != null)
+		{
+			Attack();
+		}
 	}
 
 	#endregion
@@ -57,42 +61,28 @@ public class BattlePokemon : MonoBehaviour
 		image.sprite = isOpponent ? pokemon.front : pokemon.back;
 		Hp = pokemon.hp;
 		Speed = pokemon.spd;
-		Types = StringToEnumTypes(pokemon.type);
+		Types = pokemon.types;
 	}
 
 	public void TakeDamage(float value)
 	{
 		Hp -= value;
 		
-		if (Hp <= 0 && IsExaust != null)
+		if (Hp <= 0 && IsExhaust != null)
 		{
-			IsExaust();
+			IsExhaust(pokemon);
 		}
 	}
 
-	public void Attack()
-	{	int dmg = Random.Range(10, 15);
-		Debug.Log(dmg);
-		//return dmg;
-	}
-
-	private List<PokemonTypes> StringToEnumTypes(List<string> stringTypes)
+	public int AttackEnemy()
 	{
-		List<PokemonTypes> newTypes = new List<PokemonTypes>();
-			
-		foreach (string type in stringTypes)
-		{
-			foreach (PokemonTypes enumType in Enum.GetValues(typeof(PokemonTypes)))
-			{
-				if (type == enumType.ToString())
-				{
-					newTypes.Add(enumType);
-				}
-			}
-		}
-		return newTypes;
+		return Random.Range(10, 20);
 	}
-	
+
+	public PokemonTypes GetPokemonType()
+	{
+		return Types[Random.Range(0, Types.Count)];
+	}
 
 	#endregion
 }

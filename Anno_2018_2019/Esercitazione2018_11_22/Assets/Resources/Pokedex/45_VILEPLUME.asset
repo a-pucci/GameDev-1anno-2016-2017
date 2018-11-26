@@ -16,7 +16,7 @@ MonoBehaviour:
   back: {fileID: 0}
   icon: {fileID: 0}
   id: 0
-  type: []
+  types: 
   description: 
   hp: 0
   spd: 0
