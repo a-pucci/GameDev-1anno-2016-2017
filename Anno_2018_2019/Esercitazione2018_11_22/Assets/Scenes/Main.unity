@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a08953e765315b341a3f0c075da17d9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  twoPlayers: 1
+  twoPlayers: 0
   playerOne: {fileID: 1162393743}
   playerTwo: {fileID: 972979025}
   opponentOne: {fileID: 510253733}
