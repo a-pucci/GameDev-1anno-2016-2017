@@ -16,7 +16,7 @@ public class SpritesSlicer : OdinEditorWindow
 	[TabGroup("Slice By Cell Size")][PropertyOrder(-4)][OnValueChanged("UpdateValues")]
 	public int cellHeight;
 	[Space(10)][TabGroup("Slice By Cell Size")][PropertyOrder(-4)][ReadOnly][LabelText("Textures Count After Slice")]
-	public int texturesAfterCellSlice;
+	public SliceCounter slicedCounterBySize;
 	
 	[Space(10)][TabGroup("Slice By Cell Count")][PropertyOrder(-3)][OnValueChanged("UpdateValues")]
 	public int rowsCount;
@@ -25,7 +25,7 @@ public class SpritesSlicer : OdinEditorWindow
 	[Space(10)][TabGroup("Slice By Cell Count")][PropertyOrder(-3)][ReadOnly][LabelText("Textures Size After Slice")]
 	public Size texturesSizeAfterCountSlice;
 	[TabGroup("Slice By Cell Count")][PropertyOrder(-3)][ReadOnly][LabelText("Textures Count After Slice")]
-	public int texturesAfterCountSlice;
+	public SliceCounter slicedCounterByCell;
 	
 	[FoldoutGroup("Slice Settings")][PropertyOrder(-5)]
 	public PivotPositions pivot;
@@ -157,31 +157,43 @@ public class SpritesSlicer : OdinEditorWindow
 			{ 
 				texturesSizeAfterCountSlice.height = textures[0].height / columnsCount;
 				texturesSizeAfterCountSlice.width = textures[0].width / rowsCount;
-				texturesAfterCountSlice = columnsCount * rowsCount;
+				slicedCounterByCell.columns = columnsCount;
+				slicedCounterByCell.rows = rowsCount;
+				slicedCounterByCell.count = columnsCount * rowsCount;
 			}
 			catch
 			{
-				texturesAfterCountSlice = 0;
+				slicedCounterByCell.columns = 0;
+				slicedCounterByCell.rows = 0;
+				slicedCounterByCell.count = 0;
 			}
 			
 			try
 			{
-				texturesAfterCellSlice = (firstTextureSize.width / cellWidth) * (firstTextureSize.height / cellHeight);
+				slicedCounterBySize.columns = firstTextureSize.width / cellWidth;
+				slicedCounterBySize.rows = firstTextureSize.height / cellHeight;
+				slicedCounterBySize.count = (firstTextureSize.width / cellWidth) * (firstTextureSize.height / cellHeight);
 			}
 			catch
 			{
-				texturesAfterCellSlice = 0;
+				slicedCounterBySize.columns = 0;
+				slicedCounterBySize.rows = 0;
+				slicedCounterBySize.count = 0;
 			}
 		}
 		else
 		{
 			firstTextureSize.width = 0;
 			firstTextureSize.height = 0;
-			texturesAfterCellSlice = 0;
+			slicedCounterBySize.columns = 0;
+			slicedCounterBySize.rows = 0;
+			slicedCounterBySize.count = 0;
 			
 			texturesSizeAfterCountSlice.height = 0;
 			texturesSizeAfterCountSlice.width = 0;
-			texturesAfterCountSlice = 0;
+			slicedCounterByCell.columns = 0;
+			slicedCounterByCell.rows = 0;
+			slicedCounterByCell.count = 0;
 		}
 	}
 
@@ -210,5 +222,14 @@ public class SpritesSlicer : OdinEditorWindow
 	{
 		[HorizontalGroup] public int width;
 		[HorizontalGroup] public int height;
+	}
+
+	[Serializable]
+	[InlineProperty(LabelWidth = 70)]
+	public struct SliceCounter
+	{
+		[HorizontalGroup] public int rows;
+		[HorizontalGroup] public int columns;
+		[HorizontalGroup] public int count;
 	}
 }
