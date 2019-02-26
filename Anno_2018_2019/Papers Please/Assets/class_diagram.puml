@@ -1,0 +1,45 @@
+@startuml
+
+hide empty methods
+hide empty fields
+
+class Queue {
+    Popped : Event
+    Pop() : void
+}
+
+class UIManager {
+    Evaluated : Event
+    Rang : Event
+}
+
+class Day << (S, red) >>
+
+class Generator << (S, red) >> {
+    maleData : GenderData
+    femaleData : GenderData
+    surnames : List<string>
+    cities : List<string>
+    nations : List<Nation>
+    Create() : void
+}
+
+class Person << (S, red) >> {
+    sprite : Sprite
+    firstName : string
+    surname : string
+    sex : Sex
+    birthDate : Date
+    city : string
+    country : string
+    ID : string
+}
+
+Day o- Person
+UIManager - Queue 
+Queue - Day
+Queue -- Generator
+Character -- Queue
+UIPassport -- Queue
+
+@enduml

@@ -1,0 +1,152 @@
+@startuml
+
+hide empty fields
+hide empty methods
+'hide <<Tool>>
+
+package Crafting <<Rectangle>> {
+
+    class CraftingTable <<(T, orange) Tool>> { 
+    
+    }
+
+    class CraftingSystem <<(M, lightblue)>> { 
+    
+    }
+
+    class Recipe <<(S, red)>> {
+        + category : Category
+        + appliance : Appliance
+        + tool : Tool
+        + ingredients : Set[]
+        + result : Set
+    }
+                
+    class Appliance <<(S, red)>>
+
+    class Category <<(S, red)>> {
+        + sprite : Sprite
+    }
+    
+    Category - Recipe
+    Appliance -- Recipe
+    Recipe -- CraftingTable
+    
+    CraftingSystem o-- Recipe
+    
+}
+
+package Inventory <<Rectangle>> {
+
+    class Tool <<(S, red)>> {
+        + durability : int
+    }
+
+    class Set {
+        + item : Item
+        + quantity : int
+    }
+    
+    class Item <<(S, red)>> {
+        + sprite : Sprite
+        - description : string    
+        + stack : int
+        + effects : Effects[]
+        + Inspect() : string
+    }
+    
+    class Inventory <<(M, lightblue)>> {
+        - slots : List<Set>
+        + Changed : event
+        + Add(Set) : void
+        + Remove(Set) : void
+    } 
+    
+    Recipe - Item
+    (Recipe, Item) . Set
+    CraftingSystem o-- Item
+    Tool <|-- Item
+    Item --o Inventory
+    Set -o Inventory    
+}
+
+package Environment <<Rectangle>> {
+
+    class Interactable <<(M, lightblue)>> {
+        
+    }
+    
+}
+
+package InteractionSystem <<Rectangle>> {
+
+    class Interaction {
+        name : string
+        destination : Interactable
+        condition : string
+        effect : Effect
+    }
+    
+    class Effect {
+        script : string[]
+    }
+    
+    class Parser <<(M, lightblue)>> {
+        Execute() : IEnumerator
+    }
+    
+    class CheatSheet <<(S, red)>> {
+    }
+  
+    class Command {
+    }
+    
+    Interaction *- Effect
+    Effect -- Parser
+    CheatSheet - Parser
+    CheatSheet *-- Command
+    
+    Interactable - Item
+    (Interactable, Item) . Interaction
+
+}
+
+package Survival <<Rectangle>> {
+
+    class Character <<(M, lightblue)>> {
+        + hunger: VitalSign
+        + thirst : VitalSign
+        + temperature : VitalSign
+        + oxygen : VitalSign
+        + rest : VitalSign
+    }
+    
+    class VitalSign {
+        value : float
+        Changed : Action
+        Dead : Action
+    }
+    
+    Character *- VitalSign
+
+}
+
+package UI <<Rectangle>> {
+
+    class UICharacter <<(M, lightblue)>> {
+    }
+
+    class UIInventory <<(M, lightblue)>> {
+    }
+
+    class UISlot <<(M, lightblue)>> {
+    }
+    
+    UIInventory *- UISlot
+    
+    Inventory -- UIInventory
+    UICharacter -- Character
+    
+}
+
+@enduml

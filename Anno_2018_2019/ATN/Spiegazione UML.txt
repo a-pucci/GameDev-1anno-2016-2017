@@ -1,0 +1,30 @@
+La classe Day si occupa di gestire le 3 fasi della giornata.
+Scorre tra le 3 fasi e permette al giocatore/killer di fare le azioni possibili in quella fase.
+Il Day ha una lista di Eventi che vengono lanciati a caso nella fase Evening.
+
+Ogni Evento ha una percentuale di trigger, l'id di un item con cui interagisce e una lista di Eventi che possono essere sbloccati a seguito dell'Evento stesso
+
+IPhase è un'interfaccia per tutte le altre fasi.
+ogni fase derivata definisce le azioni possibili in quella fase specifica
+
+L'Apartment gestisce i due Character principali, la lista degli Item sbloccati, il Diary e la lista delle SuspectCard
+
+Le Suspect Card contengono una list di SuspectData, una struct fatta da ID e string. L'ID viene usato durante il check delle incongruenze.
+La Suspect Card contiene anche una lista di SuspectData e serve per tenere traccia delle incongruenze.
+
+Il Diary è formato da una lista di string.
+
+Il Character ha un float per lo stress, una lista di Item che porta quando va a visitare un Neighbour, e un bool pe tenere traccia se questo giorno ha sbagliato il Check delle incongruenze.
+Le azioni che può fare sono: usare un oggetto, visitare un vicino, fare il check delle incongruenze, aumentare/diminuire stress, raccogliere oggetti, provare ad indovinare il Killer.
+
+La Location serve per gestire gli appartamenti e contiene il riferimento al Neighbour, se la luce è accesa o spenta e una lista di Item trovabili nella location.
+
+Il Neighbour ha un Trait, due float per tenere traccia delle relationships, una lista di Fact, un bool per sapere se ha un indizio per scoprire il Killer e un Fact contenente l'indizio.
+
+Il NeighbourObject è un MonoBehaviour perchè ha dei dati che vengono cambiati a runtime
+
+Fact è una struct che contiene un float per indicare il livello minimo per poter essere raccontato, l'ID di un item con cui interagisce, una stringa con il fatto che viene raccontato e una lista di Fact sbloccati.
+
+Il gioco finisce quando un Fact non ha più Fact sbloccabili (ultima foglia dell'albero) o se il killer, dopo aver ucciso gli altri Neighbour, uccide i Character
+
+

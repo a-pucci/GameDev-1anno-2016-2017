@@ -1,0 +1,172 @@
+@startuml
+hide empty methods
+hide empty fields
+
+class Day
+{
+    + apartment : Apartment
+    - phases : List<Phase>
+    - events : List<Event>
+    + NextPhase()
+    - EventConsequences()
+}
+
+interface IPhase
+{ 
+     {abstract} void PlayerAction()
+     {abstract} void KillerAction() 
+     {abstract} void DoEvent() 
+}
+
+class Morning
+{
+    + PlayerAction()
+}
+
+class Afternoon
+{
+    + PlayerAction()
+    + KillerAction()
+}
+
+class Evening
+{
+    + PlayerAction()
+    + DoEvent()
+}
+
+class Event << S, red >>
+{
+    + triggerPercentage : float
+    + itemInteractionID : int 
+    + unlockedEvents : List<Event>
+    
+    + DoEvent();
+}
+
+class Character << M, cyan >>
+{   
+    + stress : float
+    + carriedItems : List<Items>
+    - wrongMismatch : bool
+    
+    + void UseItem()
+    + void VisitNeighbour()
+    + bool CheckMismatch()
+    + void IncreaseStress()
+    + void DecreaseStress()
+    + void BringItem()
+    + bool CheckStress()
+    + void PickUpItem()
+    + void ReadDiary()
+    + bool GuessKiller()
+}
+
+class Killer << M, cyan >>
+{
+    + void Kill()
+}
+
+class Diary << M, cyan >>
+{
+    + notes : List<string>    
+    + void AddNote()
+}
+
+class SuspectCard << S, red >>
+{
+    + data : List<suspectData>
+    + mismatches : List<SuspectData>
+    
+    + void AddData()  
+    + void MoveDataToMismatches()
+}
+
+class SuspectData << Struct >>
+{
+    + ID : int
+    + data : string
+}
+
+class Neighbour << S, red >>
+{
+    + trait : TraitTypes
+    + relationshipRaymond : float 
+    + relationshipWalter : float  
+    + facts : List<Fact>    
+    + hasKeyClue : bool
+    + keyClueFact : Fact   
+}
+
+class NeighbourObject << M, cyan >>
+{
+    + neighbour : Neighbour
+    + relationshipRaymond : float 
+    + relationshipWalter : float 
+    + facts : List<Fact> 
+    + void IncreaseRelationship()
+    + void DecreaseRelationship()
+    + void TriggerEnding()
+    + void RemoveFact()
+    + void Talk()
+}
+
+
+class Fact << Struct >>
+{
+    + minRelationship : float
+    + itemInteractionID : int 
+    + fact : string
+    + relationshipChange : float
+    + unlockedFacts : List<Fact>
+}
+
+class Location << M, cyan >>
+{
+    + items : List<Items>
+    - resident : NeighbourObject
+    - lightsOn : bool    
+}
+
+class Apartment << M, cyan >>
+{
+    + characters : List<Character>
+    + availableItems : List<Item>
+    + diary : Diary
+    + suspectsCards : List<SuspectCard>
+}
+
+class Item << S, red >>
+{
+    + ID : int
+    + sprite : sprite
+    + description : string
+}
+
+enum TraitTypes
+{
+    Surly,
+    Chatty
+}
+
+'--------------- RELATIONSHIPS ------------
+
+Day o-- IPhase
+Day o-- Event
+Day - Apartment
+IPhase <|-- Morning
+IPhase <|-- Afternoon
+IPhase <|-- Evening
+SuspectCard o-- SuspectData
+Character <|-- Killer
+NeighbourObject <|-- Killer
+Apartment o-- SuspectCard 
+NeighbourObject -- Neighbour
+Neighbour -- TraitTypes
+Neighbour o-- Fact
+Location -- NeighbourObject
+Apartment o-- Character
+Apartment o-- Item
+Apartment -- Diary
+
+@enduml

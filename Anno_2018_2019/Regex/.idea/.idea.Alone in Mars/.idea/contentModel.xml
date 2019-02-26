@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Frank\.Rider2018.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Frank\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Frank\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Alone in Mars.-461421954.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Frank\Documents\Unity Projects\Alone in Mars" t="IncludeRecursive">
+      <e p="Alone in Mars.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Sirenix" t="Include">
+            <e p="Assemblies" t="Include">
+              <e p="link.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Attributes.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Editor.xml" t="Include" />
+              <e p="Sirenix.Serialization.Config.xml" t="Include" />
+              <e p="Sirenix.Utilities.Editor.xml" t="Include" />
+              <e p="Sirenix.Utilities.xml" t="Include" />
+            </e>
+            <e p="Odin Inspector" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                  <e p="BuildAOTAutomation.cs" t="Include" />
+                  <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                  <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                  <e p="VectorIntDrawers.cs" t="Include" />
+                </e>
+                <e p="VectorIntFormatters.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Appliance.cs" t="Include" />
+          <e p="Category.cs" t="Include" />
+          <e p="Character.cs" t="Include" />
+          <e p="CheatSheet.cs" t="Include" />
+          <e p="CraftingSystem.cs" t="Include" />
+          <e p="CraftingTable.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="ApplianceDrawer.cs" t="Include" />
+            <e p="AssetProcessor.cs" t="Include" />
+            <e p="ItemDrawer.cs" t="Include" />
+            <e p="SetDrawer.cs" t="Include" />
+            <e p="ToolDrawer.cs" t="Include" />
+          </e>
+          <e p="Effect.cs" t="Include" />
+          <e p="Extensions.cs" t="Include" />
+          <e p="Interactable.cs" t="Include" />
+          <e p="Interaction.cs" t="Include" />
+          <e p="Inventory.cs" t="Include" />
+          <e p="Item.cs" t="Include" />
+          <e p="Parser.cs" t="Include" />
+          <e p="Recipe.cs" t="Include" />
+          <e p="Set.cs" t="Include" />
+          <e p="Tool.cs" t="Include" />
+          <e p="UICharacter.cs" t="Include" />
+          <e p="UIInventory.cs" t="Include" />
+          <e p="UISlot.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

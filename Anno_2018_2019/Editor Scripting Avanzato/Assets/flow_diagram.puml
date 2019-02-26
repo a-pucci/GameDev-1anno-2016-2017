@@ -1,0 +1,95 @@
+@startuml
+
+(*)  --> "Splash Screen"
+--> "<b><color:blue>Main Menu"
+
+If "new game?" then
+-left> [Yes] "<b><color:blue>Intro"
+-> "Tutorial"
+---> "<b><color:blue>Game Mode"
+else
+---> [No] "<b><color:blue>Game Mode"
+Endif
+
+-up-> "<b><color:red>[Menu]</b> <b><color:blue>Game Pause"
+
+-up--> if "continue?" then
+--> [Yes] "<b><color:blue>Game Mode"
+else
+-left> [No] "<b><color:blue>Main Menu"
+
+partition Crafting {
+
+"<b><color:blue>Game Mode" --> "<b><color:red>[LT]</b> Recipes List Panel + Recipe Detail Panel"
+
+
+--> "<b><color:red>[up/down (L-stick)]</b> Select Crafting Category"
+
+"<b><color:red>[LT]</b> Recipes List Panel + Recipe Detail Panel" --> if "has ingredients?" then
+--> "<b><color:red>[A]</b> Craft Recipe"
+--> if "inventory not full?" then
+--> Drop Items
+else
+--> "Add To Inventory"
+endif
+
+
+"<b><color:red>[LT]</b> Recipes List Panel + Recipe Detail Panel" --> "<b><color:red>[left/right (L-stick)]</b> Select Recipe"
+
+
+}
+
+partition Inventory {
+
+"<b><color:blue>Game Mode" --> "<b><color:red>[RT]</b> <b><color:blue>Inventory Mode"
+"<b><color:red>[RT]</b> <b><color:blue>Inventory Mode" ---> "<b><color:red>[left/right (L-stick)]</b> Select Item" 
+"<b><color:red>[RT]</b> <b><color:blue>Inventory Mode" ---> if "not slot empty?" then
+--> "<b><color:red>[A]</b> Grab Item/Release Item" 
+--> "<b><color:red>[left/right (L-stick)]</b> Select Slot"
+
+"<b><color:blue>Game Mode" --> "<b><color:red>[left/right (R-stick)]</b> Select Item"
+--> "<b><color:red>[D-pad)]</b> Activate Interaction" 
+
+}
+
+partition Player {
+
+"<b><color:blue>Game Mode" --> "<b><color:red>[L-stick]</b>Move Player/Drive Rover"
+"<b><color:blue>Game Mode" --> "<b><color:red>[A/B/X/Y]</b>Interact"
+
+"<b><color:red>[A/B/X/Y]</b>Interact" --> "Diary"
+--> "<b><color:blue>Diary Mode"
+
+"<b><color:red>[A/B/X/Y]</b>Interact" --> "Computer"
+--> "<b><color:blue>Chat Mode"
+
+"<b><color:red>[A/B/X/Y]</b>Interact" --> "Closet"
+--> "<b><color:blue>Space Suit Mode"
+--> Upgrade
+
+}
+
+partition Map {
+
+"<b><color:blue>Game Mode" --> "<b><color:red>[View]</b> <b><color:blue>Map Mode"
+"<b><color:red>[View]</b> <b><color:blue>Map Mode" --> "<b><color:red>[LT]</b> Zoom-out"
+"<b><color:red>[View]</b> <b><color:blue>Map Mode" ---> "<b><color:red>[X]</b> Add/Remove Placeholder"
+"<b><color:red>[View]</b> <b><color:blue>Map Mode" ---> "<b><color:red>[A]</b> Pin Destination"
+"<b><color:red>[View]</b> <b><color:blue>Map Mode" --> "<b><color:red>[RT]</b> Zoom-in"
+"<b><color:red>[View]</b> <b><color:blue>Map Mode" --> "<b><color:red>[L-stick]</b> Navigate"
+
+
+}
+
+'partition Diary {
+'
+'"<b><color:blue>Game Mode" --> "<b><color:red>[RB]</b> <b><color:blue>Diary Mode"
+'--> "<b><color:red>[left/right L-stick]</b> Select Page"
+'}
+
+
+
+
+
+
+@enduml
